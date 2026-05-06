@@ -94,7 +94,9 @@ export function CaseDetail({ id, navigate }: Props) {
       try {
         const form = new FormData();
         form.append('image', file);
-        const res = await fetch(`${apiBase}/upload/${c.category}/${c.template_key}/${c.idx}`, {
+        // template_key is 'category/template-name'; extract basename for the route
+        const templateBasename = c.template_key.split('/').pop();
+        const res = await fetch(`${apiBase}/upload/${c.category}/${templateBasename}/${c.idx}`, {
           method: 'POST',
           body: form,
         });
