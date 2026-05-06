@@ -256,9 +256,10 @@
   overflow: hidden;
 }
 .cd-header {
-  padding: var(--s-6) var(--s-6) var(--s-4);
+  padding: var(--s-7) var(--s-6) var(--s-4);
   border-bottom: 1px solid var(--line);
   flex-shrink: 0;
+  padding-top: calc(var(--s-6) + 8px);
 }
 .cd-tags {
   display: flex;
@@ -330,7 +331,7 @@
 .cd-tab-body {
   flex: 1;
   overflow-y: auto;
-  padding: var(--s-5) var(--s-6) var(--s-8);
+  padding: var(--s-5) var(--s-6) var(--s-10);
 }
 
 /* Prompt block */
@@ -359,10 +360,12 @@
   gap: var(--s-2);
 }
 .cd-prompt pre {
-  padding: var(--s-4);
+  padding: var(--s-4) var(--s-4) var(--s-6);
   font-size: 13px;
   line-height: 1.55;
   overflow-x: auto;
+  overflow-y: auto;
+  max-height: 55vh;
   white-space: pre-wrap;
   word-break: break-word;
   color: var(--text-mute);
