@@ -1,6 +1,6 @@
 {
-  "type": "2x2 反转 4 格漫画",
-  "goal": "生成一张 2×2 四格漫画，讲一个有节奏与反转的小故事",
+  "type": "2x2 Inverted 4-Panel Comic",
+  "goal": "Generate a 2×2 four-panel comic telling a rhythmic and twisty short story.",
   "story": {
     "theme": "合并分支前夜：程序员与 Git 的心理战",
     "structure": "起 / 承 / 转 / 合",

@@ -1,6 +1,6 @@
 {
-  "type": "动漫 Key Visual",
-  "goal": "生成一张可作为国产仙侠 MMORPG 首发主视觉的单图，竖版 3:4，印刷级信息分层",
+  "type": "Anime Key Visual",
+  "goal": "Generate a single image suitable for the main visual of a domestic fantasy MMORPG launch, in vertical 3:4 format, with print-quality information layering.",
   "ip": {
     "title": "青麓行",
     "tagline": "一刃开山，再续人间道"

@@ -1,6 +1,6 @@
 {
   "type": "Web hero banner",
-  "goal": "生成 21:9 超宽首屏，用于高分辨率显示器与官网首屏一屏定调，强暗色、偏研发协作工具",
+  "goal": "Generate a 21:9 ultra-wide first screen for high-resolution displays and website homepage tuning, strong dark colors, focused on research and collaboration tools.",
   "aspect_ratio": "21:9",
   "layout": {
     "left_column": {

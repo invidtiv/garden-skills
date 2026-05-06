@@ -1,6 +1,6 @@
 {
-  "type": "拟物风应用图标集",
-  "goal": "单张 4×3 格展示 12 枚可打包上架主题商店级别的拟物应用图标，英文两至八字母小标签在图标下方",
+  "type": "Collection of skeuomorphic application icons.",
+  "goal": "A single 4x3 grid showcasing 12 packable, theme-store-level app icons, with English tags of two to eight letters positioned below the icons.",
   "theme": "个人效率与轻娱乐综合（无真实 Apple 或第三方商标）",
   "style": {
     "rendering": "skeuomorphic 3D + 柔光 + 1px 上沿高光 + 深柔影",

@@ -1,6 +1,6 @@
 {
-  "type": "商业报告执行摘要页",
-  "goal": "生成一张以电动车交付与能源部署为核心叙事的投资人简报式单页，偏制造与实物流",
+  "type": "Business Report Executive Summary Page",
+  "goal": "Generate a single page investor briefing centered on electric vehicle delivery and energy deployment, with a focus on manufacturing and logistics.",
   "style": {
     "color_palette": "石墨黑 + 银灰 + 白",
     "tone": "冷静、偏硬的工业感，但不冰冷",

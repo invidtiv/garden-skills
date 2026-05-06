@@ -1,0 +1,22 @@
+{
+  "publishes": {
+    "faint-tangle-j58e": {
+      "siteUrl": "https://faint-tangle-j58e.here.now/",
+      "claimToken": "4d8194708cf5fbfc907c5b1973c2688610854a8495f68ec8b1253e6c3143c573",
+      "claimUrl": "https://here.now/claim?slug=faint-tangle-j58e&token=4d8194708cf5fbfc907c5b1973c2688610854a8495f68ec8b1253e6c3143c573",
+      "expiresAt": "2026-05-06T22:14:20.754Z"
+    },
+    "grassy-denim-qwk8": {
+      "siteUrl": "https://grassy-denim-qwk8.here.now/",
+      "claimToken": "93b7a2d6da16e44efaf4c8fa0c4bd09a56044317a1caef5aeff999ccaa0398a5",
+      "claimUrl": "https://here.now/claim?slug=grassy-denim-qwk8&token=93b7a2d6da16e44efaf4c8fa0c4bd09a56044317a1caef5aeff999ccaa0398a5",
+      "expiresAt": "2026-05-07T18:43:55.640Z"
+    },
+    "mystic-pickle-4vap": {
+      "siteUrl": "https://mystic-pickle-4vap.here.now/",
+      "claimToken": "f52a842fe08304a87e1ac3d053b4cac515fa9a7898fd53765d4b5d8e6b5e9d36",
+      "claimUrl": "https://here.now/claim?slug=mystic-pickle-4vap&token=f52a842fe08304a87e1ac3d053b4cac515fa9a7898fd53765d4b5d8e6b5e9d36",
+      "expiresAt": "2026-05-07T18:48:44.971Z"
+    }
+  }
+}

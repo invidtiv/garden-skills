@@ -1,6 +1,6 @@
 {
-  "type": "礼盒包装展示图",
-  "goal": "生成一张兼具产品介绍与旗舰发布感的礼盒展示图，包含外盒 + 内容物 + 品牌信息层",
+  "type": "Gift Box Packaging Display",
+  "goal": "Generate a gift box display image that combines product introduction with a flagship launch feel, including the outer box, contents, and brand information layer.",
   "package": {
     "type": "硬质卡纸天地盖礼盒，开盖约 70°，内为模切托",
     "shape": "扁平方体，长边略大于手机对角线",

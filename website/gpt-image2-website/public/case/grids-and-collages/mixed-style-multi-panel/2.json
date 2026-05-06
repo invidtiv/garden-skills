@@ -1,6 +1,6 @@
 {
-  "type": "5 格混合风格拼贴",
-  "goal": "生成以一位虚构高大男子篮球运动员上篮动作为锚的 5 格跨风格墙贴，统一紫金与球场木地板配色线索",
+  "type": "5-Panel Mixed Style Collage",
+  "goal": "Generate a 5-panel cross-style wall sticker anchored by a fictional tall male basketball player in a dunking pose, with consistent purple and gold color cues matching the wooden basketball court floor.",
   "subject": {
     "description": "一位虚构的高大男子篮球运动员，强壮臂膀与发带造型，黄紫无袖球衣，右臂弯曲持球上篮瞬间，可辨识但卡通夸张处理。",
     "consistency_rule": "五格为同一动作冻结帧，只变媒介"

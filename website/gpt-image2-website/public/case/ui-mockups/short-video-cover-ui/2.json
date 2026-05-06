@@ -1,6 +1,6 @@
 {
-  "type": "VTuber / 主播预告封面",
-  "goal": "生成一张可爱粉系女性 VTuber 杂谈直播开播预告封面，整体像真实 YouTube / Bilibili 直播缩略图",
+  "type": "VTuber / Streamer Preview Cover",
+  "goal": "Generate a cover image for a chat livestream of a cute pink-themed female VTuber, resembling a real YouTube/Bilibili livestream thumbnail.",
   "platform": "Bilibili 直播 / YouTube Live 通用",
   "aspect_ratio": "16:9",
   "style": "二次元 anime 风格，高饱和度可爱粉系，闪光、爱心、星星装饰",

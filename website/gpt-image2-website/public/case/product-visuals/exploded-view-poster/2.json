@@ -1,6 +1,6 @@
 {
-  "type": "产品爆炸视图海报",
-  "goal": "生成一张高科技、工程美学风格的产品海报，主体为 Apple Vision Pro 2 的垂直爆炸视图，左右辅以技术 callout，整体可作为产品站技术长图或发布会长图首屏",
+  "type": "Product Exploded View Poster",
+  "goal": "Generate a product poster in a high-tech, engineering aesthetic style, featuring a vertical exploded view of the Apple Vision Pro 2, flanked by technical callouts, suitable as a long image for product stations or event launches.",
   "subject": "Apple Vision Pro 2 空间计算头显",
   "style": {
     "rendering": "高光泽铝镁合金与织物的精密 3D 渲染，微距镜头感，关键芯片与透镜边缘带柔和辉光",

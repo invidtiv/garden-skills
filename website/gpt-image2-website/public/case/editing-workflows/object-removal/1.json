@@ -1,6 +1,6 @@
 {
-  "type": "杂物去除工作流",
-  "goal": "以 REFERENCE_0 为基础，消除干扰路人，不改动主角群体与主要构图，使成片像本就只有这一群人",
+  "type": "Clutter removal workflow.",
+  "goal": "Based on REFERENCE_0, eliminate distracting passersby without altering the main group and primary composition, making it appear as if only this group exists in the final image.",
   "reference_0": {
     "assumed_input": "假定原图：大学校园户外草坪，第二排为 Tim Cook、Sundar Pichai 与 Jensen Huang 等两排着学士服与方帽的合影者面向镜头，两侧与后排缝隙间可见零星误入画面的散步游客与推婴儿车者，午后天光、浅景深、草地与远处钟楼略虚化"
   },

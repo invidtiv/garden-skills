@@ -1,6 +1,6 @@
 {
-  "type": "杂物去除工作流",
-  "goal": "以 REFERENCE_0 为基础，彻底移除路侧电线杆与交叠电线，不削弱 Oprah Winfrey 作为唯一叙事主体，让观众视线不再被线条切碎",
+  "type": "Clutter removal workflow.",
+  "goal": "Based on REFERENCE_0, completely remove roadside utility poles and overlapping wires without weakening Oprah Winfrey's role as the sole narrative subject, ensuring the viewer's gaze is no longer fragmented by lines.",
   "reference_0": {
     "assumed_input": "假定原图：Oprah Winfrey 在北美城市街角人行道行走半身照，着米色长大衣与深围巾，微侧身看镜头，身后为多层砖楼与路牌，右侧前景有一根灰色混凝土电线杆，杆顶有多条横斜电线切过淡蓝天空，午后斜阳在面部与衣料形成清晰明暗分界"
   },

@@ -1,6 +1,6 @@
 {
-  "type": "生活方式产品场景图",
-  "goal": "生成一张商品出现在真实户外露营场景中的视觉，氛围真实、克制、品质感强，可作为品牌主视觉或社媒封面使用",
+  "type": "Lifestyle product scene image.",
+  "goal": "Create a visual of the product in a realistic outdoor camping scene, with an authentic, restrained atmosphere, high-quality feel, suitable for brand main visuals or social media covers.",
   "subject": {
     "product_name": "Wacaco Minipresso GR2 便携手压意式机",
     "visual_description": "深灰与橙色点缀的圆筒手压意式机，正从铜色出口接出一小股 crema 色咖啡液入透明玻璃杯",

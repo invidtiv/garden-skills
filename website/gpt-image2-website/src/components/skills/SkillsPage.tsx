@@ -13,7 +13,7 @@ const SKILL_TREE_URL = `${REPO_URL}/tree/main/skills/gpt-image-2`;
 const MODES = [
   {
     tag: 'A',
-    name: 'Garden 本地',
+    name: 'Garden Local',
     eyebrow: 'FULL CONTROL',
     trigger: (
       <>
@@ -22,7 +22,7 @@ const MODES = [
         <code>OPENAI_API_KEY</code>
       </>
     ),
-    body: '完整跑通 选模板 → 渲染 prompt → 调脚本 → 出图落盘。Skill 是真正的图像工具持有者。',
+    body: 'Full pipeline: select template → render prompt → call script → output to disk. Skill is the true image tool holder.',
     flow: [
       'scripts/check-mode.js',
       'references/<cat>/<tpl>.md',
@@ -32,42 +32,42 @@ const MODES = [
   },
   {
     tag: 'B',
-    name: 'Host‑Native',
+    name: 'Host-Native',
     eyebrow: 'DELEGATED',
     trigger: (
       <>
         <code>ENABLE_GARDEN_IMAGEGEN</code>
-        <span className="and">未启用</span>
+        <span className="and">not enabled</span>
         <span>·</span>
-        <span>宿主自带 image_generation</span>
+        <span>host has native image_generation</span>
       </>
     ),
-    body: '本 Skill 退化成提示词工程指引；最终 prompt 交给 ChatGPT / Codex / Gemini / Cursor 等宿主自己的 image 工具。',
+    body: 'This Skill degrades to prompt engineering guidance; the final prompt is handed to ChatGPT / Codex / Gemini / Cursor etc. host native image tools.',
     flow: [
       'scripts/check-mode.js',
       'references/<cat>/<tpl>.md',
-      '宿主 image_generation()',
-      '由宿主决定保存位置',
+      'host image_generation()',
+      'host decides save location',
     ],
   },
   {
     tag: 'C',
-    name: 'Advisor 顾问',
+    name: 'Advisor',
     eyebrow: 'PROMPT ONLY',
     trigger: (
       <>
         <code>ENABLE_GARDEN_IMAGEGEN</code>
-        <span className="and">未启用</span>
+        <span className="and">not enabled</span>
         <span>·</span>
-        <span>宿主无图像工具</span>
+        <span>host has no image tools</span>
       </>
     ),
-    body: '退化成 prompt 顾问。最终 prompt 写好后，交给用户在 ChatGPT / Midjourney / DALL·E / Sora / Nano Banana 等任意工具中执行。',
+    body: 'Degrades to prompt advisor. Once the final prompt is written, hand it to the user to execute in ChatGPT / Midjourney / DALL·E / Sora / Nano Banana or any other tool.',
     flow: [
       'scripts/check-mode.js',
       'references/<cat>/<tpl>.md',
-      '渲染后的 prompt（保存 + 展示）',
-      '由用户拿去执行',
+      'rendered prompt (save + display)',
+      'user executes',
     ],
   },
 ];
@@ -75,62 +75,62 @@ const MODES = [
 const STEPS = [
   {
     n: '01',
-    title: '探测运行模式',
-    body: '任何任务的第一步：跑 check-mode.js，得到 A / B / C，决定后续走哪条分支。',
+    title: 'Detect Run Mode',
+    body: 'First step for any task: run check-mode.js, get A / B / C, decide which branch to follow.',
     code: 'node skills/gpt-image-2/scripts/check-mode.js --json',
   },
   {
     n: '02',
-    title: '识别视觉类型',
-    body: '判断任务属于 18 个分类中的哪一个（海报 / UI / 产品 / 学术图 / 信息图 / 编辑工作流 …）。',
+    title: 'Identify Visual Type',
+    body: 'Determine which of the 18 categories the task belongs to (poster / UI / product / academic / infographic / editing workflow …).',
     code: null,
   },
   {
     n: '03',
-    title: '只读最近的一份模板',
-    body: '从 references/ 中按 <category>/<template>.md 的层级，仅打开当前任务最贴近的那一份模板。',
+    title: 'Read Only the Nearest Template',
+    body: 'From references/, open only the single template most relevant to the current task, following the <category>/<template>.md hierarchy.',
     code: 'references/poster-and-campaigns/banner-hero.md',
   },
   {
     n: '04',
-    title: '把用户输入映射到字段',
-    body: 'JSON 模板里 {argument …} 是可填空位；用户给了什么填什么，default 可兜底，关键信息缺失时才发起精确询问。',
+    title: 'Map User Input to Fields',
+    body: 'In JSON templates {argument …} are fillable slots; fill what the user provided, defaults can cover gaps, only ask precise questions when critical info is missing.',
     code: null,
   },
   {
     n: '05',
-    title: '渲染最终 prompt',
-    body: '拍平 JSON 或保留结构化自然语言段落（部分 hand-drawn / scientific 模板），输出可直接喂给图像模型的字符串。',
+    title: 'Render Final Prompt',
+    body: 'Flatten JSON or preserve structured natural language paragraphs (some hand-drawn / scientific templates), output a string ready to feed directly to the image model.',
     code: null,
   },
   {
     n: '06',
-    title: '按模式分叉执行',
-    body: 'Mode A 调脚本出图、Mode B 调宿主工具、Mode C 把 prompt 给用户。一句话总结：当前模式 / prompt 落点 / 图片落点。',
+    title: 'Branch by Mode',
+    body: 'Mode A calls script to generate, Mode B calls host tool, Mode C gives prompt to user. One-line summary: current mode / prompt destination / image destination.',
     code: null,
   },
 ];
 
 const CONSTRAINTS = [
   {
-    eyebrow: '保持',
-    title: '严格按模板格式渲染',
-    body: 'JSON 模板就按 JSON 输出；结构化自然语言模板按段落输出。不要把 SKILL.md 里的"模式说明"塞进最终 prompt——那是给 Agent 看的元信息。',
+    eyebrow: 'Maintain',
+    title: 'Strict Template Format Rendering',
+    body: 'JSON templates output as JSON; structured natural language templates output as paragraphs. Do not stuff "mode explanations" from SKILL.md into the final prompt - that is meta-info for the Agent.',
   },
   {
-    eyebrow: '禁止',
-    title: '虚构定量数据',
-    body: '学术配图 / 技术图示中，数值、坐标轴、等值线、色标范围、公式必须真实，没有数据就直接交白图、不杜撰。',
+    eyebrow: 'Prohibit',
+    title: 'Fabricated Quantitative Data',
+    body: 'In academic / technical diagrams, values, axes, contour lines, color scales, and formulas must be real. If no data exists, deliver a blank diagram - do not fabricate.',
   },
   {
-    eyebrow: '推荐',
-    title: '只读取最近的一份模板',
-    body: '不要一次性读整个 references/。按 <category>/<template>.md 的两级层级，只打开当前任务最贴近的那一份。',
+    eyebrow: 'Recommend',
+    title: 'Read Only the Nearest Template',
+    body: 'Do not read the entire references/ directory at once. Follow the <category>/<template>.md two-level hierarchy and open only the single template most relevant to the current task.',
   },
   {
-    eyebrow: '推荐',
-    title: 'Prompt 永远落盘',
-    body: 'A 必须、B 推荐、C 必须，命名形如 garden-gpt-image-2/prompt/<task-slug>-<YYYYMMDD-HHMMSS>.md，方便复用与版本管理。',
+    eyebrow: 'Recommend',
+    title: 'Always Save Prompt to Disk',
+    body: 'A = mandatory, B = recommended, C = mandatory. Name like garden-gpt-image-2/prompt/<task-slug>-<YYYYMMDD-HHMMSS>.md for easy reuse and version management.',
   },
 ];
 
@@ -138,7 +138,7 @@ export function SkillsPage({ navigate }: Props) {
   const [activeMode, setActiveMode] = useState<'A' | 'B' | 'C'>('A');
 
   useEffect(() => {
-    document.title = 'Skill · GPT‑IMAGE 2 Toolkit';
+    document.title = 'Skill · GPT-IMAGE 2 Toolkit';
     return () => {
       document.title = 'GPT-IMAGE 2 · The Visual Production Model';
     };
@@ -163,7 +163,7 @@ export function SkillsPage({ navigate }: Props) {
         <div className="sp-hero-meta mono">
           <span>03 / SKILL DOCS</span>
           <span className="sp-meta-sep" />
-          <span>GPT‑IMAGE 2 TOOLKIT</span>
+          <span>GPT-IMAGE 2 TOOLKIT</span>
           <span className="sp-meta-sep" />
           <span>v1 · {new Date().getFullYear()}</span>
           <span className="sp-meta-sep" />
@@ -195,11 +195,11 @@ export function SkillsPage({ navigate }: Props) {
         </h1>
 
         <p className="sp-hero-lede">
-          这是一个面向 GPT‑Image‑2 的<strong>聚焦型</strong>技能。它只做两件事——
-          生成 (<code className="mono">/images/generations</code>) 和编辑
-          (<code className="mono">/images/edits</code>)；
-          但能在 Garden 本地、Host‑Native 委托、Advisor 顾问 三种环境下自适应地工作，
-          并把 {Object.keys(cases.categories).length} 大类、{cases.summary.templates}+ 个结构化模板沉淀到 <code className="mono">references/</code> 里。
+          This is a <strong>focused</strong> Skill for GPT-Image-2. It does only two things -
+          generate (<code className="mono">/images/generations</code>) and edit
+          (<code className="mono">/images/edits</code>);
+          but adapts to three environments: Garden Local, Host-Native delegation, and Advisor mode,
+          and distills {Object.keys(cases.categories).length} major categories and {cases.summary.templates}+ structured templates into <code className="mono">references/</code>.
         </p>
 
         <dl className="sp-hero-stats">
@@ -224,8 +224,8 @@ export function SkillsPage({ navigate }: Props) {
         <div className="sp-hero-divider" />
 
         <p className="sp-hero-quote serif-italic">
-          “最终交给图像模型的，永远是渲染后的 prompt 字符串本身——
-          可以是拍平的 JSON，也可以是结构化自然语言段落。”
+          "What ultimately goes to the image model is always the rendered prompt string itself -
+          whether flattened JSON or structured natural language paragraphs."
         </p>
       </header>
 
@@ -233,10 +233,10 @@ export function SkillsPage({ navigate }: Props) {
       <section className="sp-section sp-modes">
         <div className="sp-section-head">
           <span className="eyebrow">01 · RUNTIME MODES</span>
-          <h2 className="serif sp-section-title">第一步永远是 check‑mode.js</h2>
+          <h2 className="serif sp-section-title">Step One Is Always check‑mode.js</h2>
           <p className="sp-section-sub">
-            同一份 Skill，在三种环境下行为差异显著。模式由两个环境变量与宿主能力共同决定，
-            check‑mode.js 给出 <code className="mono">mode = A / A? / B-or-C</code> 与建议下一步。
+            The same Skill behaves very differently in three environments. Mode is determined by two environment variables and host capabilities;
+            check‑mode.js yields <code className="mono">mode = A / A? / B-or-C</code> and suggests next steps.
           </p>
         </div>
 
@@ -288,10 +288,10 @@ export function SkillsPage({ navigate }: Props) {
       <section className="sp-section sp-workflow">
         <div className="sp-section-head">
           <span className="eyebrow">02 · WORKFLOW</span>
-          <h2 className="serif sp-section-title">六步通用 · 第七步分叉</h2>
+          <h2 className="serif sp-section-title">Six Steps Universal · Seventh Step Branches</h2>
           <p className="sp-section-sub">
-            无论 A / B / C，前 6 步完全一致；区别只在第 7‑8 步如何把渲染好的 prompt
-            送进图像模型，以及落盘到哪里。
+            Regardless of A / B / C, the first 6 steps are identical; the difference is only in steps 7-8:
+            how to send the rendered prompt to the image model, and where to save it.
           </p>
         </div>
 
@@ -316,23 +316,23 @@ export function SkillsPage({ navigate }: Props) {
         <div className="sp-fork">
           <div className="sp-fork-head">
             <span className="eyebrow">FORK · STEP 07</span>
-            <h3 className="serif sp-fork-title">prompt 渲染好之后，按模式分发</h3>
+            <h3 className="serif sp-fork-title">After Prompt Rendering, Distribute by Mode</h3>
           </div>
           <div className="sp-fork-grid">
             <div className="sp-fork-cell">
-              <span className="mono sp-fork-tag">07‑A</span>
-              <h4 className="serif sp-fork-name">保存 + 调脚本</h4>
-              <p>把最终 prompt 保存到 <code className="mono">prompt/</code>，调 <code className="mono">generate.js</code> / <code className="mono">edit.js</code>，图片落到 <code className="mono">image/</code>。</p>
+              <span className="mono sp-fork-tag">07-A</span>
+              <h4 className="serif sp-fork-name">Save + Call Script</h4>
+              <p>Save final prompt to <code className="mono">prompt/</code>, call <code className="mono">generate.js</code> / <code className="mono">edit.js</code>, images land in <code className="mono">image/</code>.</p>
             </div>
             <div className="sp-fork-cell">
-              <span className="mono sp-fork-tag">07‑B</span>
-              <h4 className="serif sp-fork-name">交给宿主工具</h4>
-              <p>不要调 <code className="mono">generate.js</code>（必失败）。直接把 prompt 喂进宿主自带的 <code className="mono">image_generation</code> 类工具。</p>
+              <span className="mono sp-fork-tag">07-B</span>
+              <h4 className="serif sp-fork-name">Delegate to Host Tool</h4>
+              <p>Do not call <code className="mono">generate.js</code> (will fail). Feed prompt directly into host's native <code className="mono">image_generation</code> tools.</p>
             </div>
             <div className="sp-fork-cell">
-              <span className="mono sp-fork-tag">07‑C</span>
-              <h4 className="serif sp-fork-name">写给用户</h4>
-              <p>必须保存 prompt 到 <code className="mono">prompt/</code> 并在对话中完整展示，附一句"如何使用 / 推荐工具"。</p>
+              <span className="mono sp-fork-tag">07-C</span>
+              <h4 className="serif sp-fork-name">Write to User</h4>
+              <p>Must save prompt to <code className="mono">prompt/</code> and display it fully in conversation, with a note on "how to use / recommended tools".</p>
             </div>
           </div>
         </div>
@@ -343,11 +343,11 @@ export function SkillsPage({ navigate }: Props) {
         <div className="sp-section-head">
           <span className="eyebrow">03 · TEMPLATE INDEX</span>
           <h2 className="serif sp-section-title">
-            {Object.keys(cases.categories).length} 个分类 · {cases.summary.templates} 个结构化模板
+            {Object.keys(cases.categories).length} categories · {cases.summary.templates} structured templates
           </h2>
           <p className="sp-section-sub">
-            每个模板都是一份 Markdown 文件，里面定义了 JSON / 结构化自然语言模板、
-            参数表、变体说明、典型案例。点任意模板可以跳到使用了它的图集。
+            Each template is a Markdown file defining JSON / structured natural language templates,
+            parameter tables, variant notes, and typical cases. Click any template to jump to its gallery cases.
           </p>
         </div>
 
@@ -394,7 +394,7 @@ export function SkillsPage({ navigate }: Props) {
       <section className="sp-section sp-rules">
         <div className="sp-section-head">
           <span className="eyebrow">04 · GUARDRAILS</span>
-          <h2 className="serif sp-section-title">让 Skill 始终保持稳定的几条硬约束</h2>
+          <h2 className="serif sp-section-title">Hard Constraints to Keep Skill Stable</h2>
         </div>
         <div className="sp-rules-grid">
           {CONSTRAINTS.map((c, i) => (
@@ -411,10 +411,10 @@ export function SkillsPage({ navigate }: Props) {
       <section className="sp-cta">
         <div className="sp-cta-text">
           <h3 className="serif sp-cta-title">
-            准备好了？回去看 <span className="serif-italic">{cases.summary.cases} 张</span> 已经跑通的图。
+            Ready? Browse <span className="serif-italic">{cases.summary.cases}</span> proven cases.
           </h3>
           <p className="sp-cta-sub">
-            想自己跑这个 Skill？源码 / 模板 / 三种运行模式都开源在 <code className="mono">ConardLi/garden-skills</code>。
+            Want to run this Skill yourself? Source / templates / three runtime modes are all open-source at <code className="mono">ConardLi/garden-skills</code>.
           </p>
         </div>
         <div className="sp-cta-actions">
@@ -422,7 +422,7 @@ export function SkillsPage({ navigate }: Props) {
             className="sp-cta-btn"
             onClick={() => navigate({ name: 'home' })}
           >
-            <span>浏览图集</span>
+            <span>Browse Gallery</span>
             <span className="sp-cta-btn-arrow" aria-hidden="true">→</span>
           </button>
           <a

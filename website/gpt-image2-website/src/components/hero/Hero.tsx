@@ -10,11 +10,11 @@ interface Props {
 
 const TICKER = [
   'TEXT RENDERING',
-  '多语言版式',
+  'MULTILINGUAL LAYOUT',
   'IMAGE EDITING',
-  '高保真参考图',
+  'HIGH-FIDELITY REFERENCE',
   'POSTER · UI · INFOGRAPHIC',
-  '4K 输出',
+  '4K OUTPUT',
   'API · CHATGPT · LOVART',
   '70+ STRUCTURED TEMPLATES',
 ];
@@ -318,9 +318,9 @@ export function Hero({ navigate }: Props) {
           </h1>
 
           <p className="hero-lede">
-            从「猜一张好看的图」走到「理解一个视觉任务，并交付成品」。
+            From "hoping for a nice image" to "understanding a visual task and delivering a finished product."
             <span className="hero-lede-em">GPT‑Image‑2</span>{' '}
-            把文字渲染、指令遵循、参考图编辑与跨语言版式打包成一个可被工作流真正使用的视觉模型。
+            bundles text rendering, instruction following, reference-image editing, and multilingual layout into a visual model that actually fits real workflows.
           </p>
 
           <div className="hero-stats">
@@ -357,7 +357,7 @@ export function Hero({ navigate }: Props) {
                   ?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span>浏览图集</span>
+              <span>Browse Gallery</span>
               <span className="btn-arrow" aria-hidden="true">
                 ↓
               </span>
@@ -367,7 +367,7 @@ export function Hero({ navigate }: Props) {
               onClick={() => setExpanded((x) => !x)}
               aria-expanded={expanded}
             >
-              <span>{expanded ? '收起模型卡片' : '展开模型详情'}</span>
+              <span>{expanded ? 'Collapse Model Card' : 'Expand Model Details'}</span>
               <span
                 className="btn-arrow"
                 aria-hidden="true"
@@ -382,7 +382,7 @@ export function Hero({ navigate }: Props) {
               className="btn btn-ghost-2"
               onClick={() => navigate({ name: 'skills' })}
             >
-              <span>查看 Skill 工程</span>
+              <span>View Skill Project</span>
               <span className="btn-arrow" aria-hidden="true">
                 →
               </span>
@@ -391,7 +391,7 @@ export function Hero({ navigate }: Props) {
 
           <div className="hero-scroll-hint mono" aria-hidden="true">
             <span className="hero-scroll-line" />
-            SCROLL · 滚动浏览
+            SCROLL TO EXPLORE
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 {
-  "type": "开放世界游戏截图",
-  "goal": "生成 16:9 横图，观感为 Unreal 级 PBR 实时画面截屏而非预渲染海报，含完整可辨中文 UI",
+  "type": "Open World Game Screenshot",
+  "goal": "Generate a 16:9 horizontal image, resembling a screenshot of Unreal-level PBR real-time graphics rather than a pre-rendered poster, including fully recognizable Chinese UI.",
   "game_meta": {
     "game_name": "霜火编年史·极北卷",
     "engine_feel": "现代 3A（接近 Unreal 5 Nanite+Lumen 观感）",

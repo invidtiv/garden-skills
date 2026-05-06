@@ -1,6 +1,6 @@
 {
-  "type": "教学示意 Slide",
-  "goal": "生成一张帮助具备线性代数基础的学习者用几何直觉理解单头自注意力的教学页，不推导公式只建立心智模型",
+  "type": "Teaching demonstration slide.",
+  "goal": "Generate a teaching page to help learners with a foundational understanding of linear algebra intuitively grasp single-head self-attention, focusing on building mental models without deriving formulas.",
   "style": {
     "color_palette": "白底 + 靛青 + 暗灰",
     "rendering": "扁平信息图 + 极细等距网格淡印，不抢主图"

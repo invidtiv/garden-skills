@@ -1,6 +1,6 @@
 {
-  "type": "化妆品系列套装",
-  "goal": "生成 4:5 竖版，四件包装系统统一，可单独上详情页分切",
+  "type": "Cosmetics Series Set",
+  "goal": "Generate a 4:5 vertical image featuring a unified packaging system, each piece can be individually separated for detailed pages.",
   "brand": {
     "name": "锋序 EDGE ORDER",
     "positioning": "专业男士理容、无性别营销花词"

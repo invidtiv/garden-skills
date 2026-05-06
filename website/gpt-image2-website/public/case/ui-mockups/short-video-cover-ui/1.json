@@ -1,6 +1,6 @@
 {
-  "type": "短视频科普类封面样机",
-  "goal": "生成一张面向 B 站 / YouTube 知识区的高点击率视频封面图，包含主标题、副标题、主视觉、bullet 要点",
+  "type": "Short Video Science Popularization Cover Mockup",
+  "goal": "Generate a high click-rate video cover image for the knowledge section on Bilibili/YouTube, including a main title, subtitle, main visual, and bullet points.",
   "platform": "通用短视频封面（适配 B 站 / YouTube）",
   "aspect_ratio": "16:9",
   "background": {

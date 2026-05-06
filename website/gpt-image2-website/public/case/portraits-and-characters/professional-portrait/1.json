@@ -1,6 +1,6 @@
 {
-  "type": "现代商务职业肖像",
-  "goal": "生成一张可立即用作上市公司高管简介图、主论坛嘉宾头像条与公开媒体报道配角图的胸像，气质稳重可信",
+  "type": "Modern Business Professional Portrait",
+  "goal": "Produce a portrait suitable for the profile of executives at a listed company, featuring prominently on the main forum guest banner and as a side image in public media reports, conveying a stable and trustworthy demeanor.",
   "subject": {
     "gender": "以 Tim Cook 为公众熟知原型的美国男性企业高管",
     "age_range": "55-65 岁",

@@ -1,6 +1,6 @@
 {
-  "type": "产品精修工作流",
-  "goal": "以 REFERENCE_0 为基础，提升高端立香水瓶主图整体档次，让玻璃通透、金盖抛光与标贴字清晰同时成立",
+  "type": "Product Refinement Workflow",
+  "goal": "Based on REFERENCE_0, enhance the overall quality of the high-end standing perfume bottle main image, ensuring the glass is transparent, the gold cap is polished, and the label text is clear.",
   "reference_0": {
     "assumed_input": "假定原图：深色影棚台面上直立长方形厚底玻璃瓶，内盛淡金琥珀色液体，配拉丝金色按压盖，正面矩形纸质标签有衬线体英文品名，背侧窗光形成纵向高光柱，台面上有瓶体柔影、瓶肩有数粒微尘与指印残渍，标签纤维略起毛"
   },

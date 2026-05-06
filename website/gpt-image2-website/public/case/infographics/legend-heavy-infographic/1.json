@@ -1,6 +1,6 @@
 {
-  "type": "高密度因果链信息图海报",
-  "goal": "生成单页、图例多、可打印的科普长图，解释气候变化如何通过物理与农业经济链条影响主粮",
+  "type": "High-density causal chain infographics poster",
+  "goal": "Generate a printable, illustrated infographic explaining how climate change affects staple crops through physical and agricultural economic chains.",
   "style": {
     "aesthetic": "半剖面地球与农田俯瞰的合成主视觉，叠加清晰箭头、细线标注、气候学家常用的色标（但保持扁平矢量）+ 信息块放射状",
     "color_palette": "深海洋蓝、干旱砂黄、作物绿、警讯橙、浅灰白底",

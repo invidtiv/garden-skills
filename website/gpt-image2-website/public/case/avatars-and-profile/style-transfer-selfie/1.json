@@ -1,6 +1,6 @@
 {
-  "type": "风格化自拍 / 人设转换",
-  "goal": "基于 REFERENCE_0 中的 Stephen Curry，保留可识别面部结构与体型比例，将整体切换为赛博朋克风街头夜景，单张肖像输出",
+  "type": "Stylized selfies / Character transformation",
+  "goal": "Based on Stephen Curry in REFERENCE_0, retain recognizable facial structure and body proportions, switching the overall look to a cyberpunk street night scene, single portrait output.",
   "reference_0": {
     "assumed_input": "假定参考图：球场边通道半身照，自然短发、无帽，勇士配色球衣或休闲卫衣，面光平柔、背景为室内或球场模糊，表情专注微笑"
   },

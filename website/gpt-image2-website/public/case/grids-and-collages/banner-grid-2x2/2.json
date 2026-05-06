@@ -1,6 +1,6 @@
 {
-  "type": "2x2 课程 banner 套装",
-  "goal": "生成 2×2 饮品 seasonal banner 套装，整体 1:1，品牌为星巴克风格绿色系，文字中文为主",
+  "type": "2x2 Course Banner Set",
+  "goal": "Generate a 2×2 seasonal beverage banner set, overall 1:1, in a Starbucks-style green palette, with primarily Chinese text.",
   "brand": {
     "name": "星巴克 · 四季特饮 2026",
     "logo_position": "每格左上绿色圆形人鱼简化章 + 字标",

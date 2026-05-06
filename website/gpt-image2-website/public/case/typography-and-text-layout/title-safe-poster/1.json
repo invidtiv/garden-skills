@@ -1,6 +1,6 @@
 {
-  "type": "日式高能量大字海报",
-  "goal": "生成以中文主标语为绝对主体的竖版活动海报，气质接近日本昭和末平成初促销页但用中文，装饰几何极少、可读性第一",
+  "type": "Japanese high-energy large text poster.",
+  "goal": "Generate a vertical event poster with the Chinese slogan as the absolute focus, closely resembling Japanese promotional pages from the late Showa to early Heisei periods but in Chinese, with minimal geometric decoration and prioritizing readability.",
   "headline": {
     "text": "一起跑过",
     "language": "中文主标，英文与数字为辅",

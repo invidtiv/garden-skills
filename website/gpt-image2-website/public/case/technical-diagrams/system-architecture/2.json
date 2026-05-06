@@ -1,6 +1,6 @@
 {
-  "type": "技术系统架构图（暗色工程感）",
-  "goal": "生成一张 618 大促期秒杀与下单链路的总览位图，强调 CDN/边缘、业务微服务、消息与数据层的分层，以及主从与缓存的职责边界",
+  "type": "Technical System Architecture Diagram (Dark Engineering Style)",
+  "goal": "Generate an overview diagram for the 618 sales event's flash sales and ordering process, emphasizing the layering of CDN/edge, business microservices, and message/data layers, as well as the responsibility boundaries between master/slave and cache.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid lines #1E293B at 32px spacing",

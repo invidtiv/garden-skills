@@ -1,6 +1,6 @@
 {
-  "type": "杂志封面",
-  "goal": "生成就时装片气质的 4:5 或 3:4 竖版封面，主标题中文、装饰英文，主视觉为全身或膝上像",
+  "type": "Magazine cover.",
+  "goal": "Generate a fashion magazine-style vertical cover in 4:5 or 3:4 format, with the main title in Chinese, decorative text in English, and the main visual as a full-body or knee-up shot.",
   "publication": {
     "name": "VOGUE 服饰与美容",
     "tagline": "时尚 · 电影 · 音乐",

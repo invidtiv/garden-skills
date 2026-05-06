@@ -1,6 +1,6 @@
 {
-  "type": "VTuber Debut 个人资料卡",
-  "goal": "生成 9:16 竖版出道资料卡，可直接作为微博超话首图、B 站动态首图、微信视频号「账号资料页」主视觉参考",
+  "type": "VTuber Debut Profile Card",
+  "goal": "Generate a 9:16 vertical debut profile card, suitable for direct use as the main visual for Weibo super topics, Bilibili dynamic images, and WeChat video account profile pages.",
   "character": {
     "name": "樱下川 初日",
     "style": "日系 TV anime 赛璐璐 + 赛璐璐阴影两层",

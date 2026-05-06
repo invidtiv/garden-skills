@@ -1,6 +1,6 @@
 {
-  "type": "4x4 同一人物表情与微动作集合",
-  "goal": "一张图内 4×4 格，每格为 Sam Altman 在办公环境中的一种开发者日常瞬间，作专栏插图或播客封面元素拼盘",
+  "type": "4x4 Collection of the Same Character's Expressions and Micro-Movements",
+  "goal": "A 4×4 grid within a single image, each cell capturing a moment of Sam Altman's daily developer life in the office, suitable for column illustrations or podcast cover element collage.",
   "subject": {
     "description": "Sam Altman，短发、清瘦、略放松坐姿或站姿、常穿灰色或深蓝圆领针织衫或轻薄夹克",
     "consistency": "十六格中五官比例、发际线、胡茬感一致，仅眼眉嘴角度与手势变化"

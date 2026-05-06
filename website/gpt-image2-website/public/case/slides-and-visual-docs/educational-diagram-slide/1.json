@@ -1,6 +1,6 @@
 {
-  "type": "教学示意 Slide",
-  "goal": "生成一张让初高中衔接段学生能在一分钟内掌握光合作用主线的教学示意图，可直接作课件单页或教材插页",
+  "type": "Teaching demonstration slide.",
+  "goal": "Generate a teaching diagram that allows middle and high school students to grasp the main concept of photosynthesis in one minute, suitable for direct use as a presentation single page or textbook insert.",
   "style": {
     "color_palette": "温和米色 + 学院蓝 + 浅灰",
     "rendering": "清晰矢量感插图 + 无衬线中文黑体，标注线为统一深灰 1.5pt"

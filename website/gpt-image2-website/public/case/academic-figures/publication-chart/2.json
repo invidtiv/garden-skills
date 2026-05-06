@@ -1,6 +1,6 @@
 {
-  "type": "Publication-Ready Line Chart（学术出版级折线图，log–log）",
-  "goal": "生成 scaling law 风格训练曲线图：x 为 log10(compute in FLOP), y 为 log10(test cross-entropy), 2–3 model families with different markers, shaded ±std band (illustrative)",
+  "type": "Publication-Ready Line Chart (Academic Publishing Level, log–log)",
+  "goal": "Generate a scaling law style training curve graph: x as log10(compute in FLOP), y as log10(test cross-entropy), with 2-3 model families using different markers, shaded ±std band (illustrative).",
   "canvas": {
     "aspect_ratio": "4:3",
     "background": "white #FFFFFF",

@@ -1,6 +1,6 @@
 {
-  "type": "单页多分镜漫画",
-  "goal": "生成一张完整的单页漫画，含 6 个不规则分镜，叙事为轻松校园误会",
+  "type": "Single Page Multi-Scene Comic",
+  "goal": "Create a complete single-page comic containing six irregular panels, narrating a light-hearted campus misunderstanding.",
   "story": {
     "summary": "女生在走廊被风掀起裙摆一角，错以为身后男生在拍照，其实对方只是在回微信。",
     "main_character": "齐肩短发女生，水手服，书包侧袋露出画筒，表情丰富。",

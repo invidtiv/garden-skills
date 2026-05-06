@@ -1,6 +1,6 @@
 {
-  "type": "品牌主海报",
-  "goal": "生成一张可作为消费电子品牌单节点传播主图的海报，人物与产品为画面双锚点，整图克制、以一句中文主张为核心，整体气质接近 Apple 式极简但不复制任何官方标徽",
+  "type": "Brand Main Poster",
+  "goal": "Generate a poster that can serve as the main image for a consumer electronics brand's single-node communication, featuring both the character and product as dual focal points, with a restrained overall design centered around a single Chinese slogan, achieving an Apple-like minimalist feel without copying any official logos.",
   "brand": {
     "name": "创变者·责任科技年度论坛",
     "industry": "科技、公共政策与开发者生态的跨界论坛（主视觉不冒充 Apple 官方发布物料）"

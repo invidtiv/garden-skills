@@ -1,6 +1,6 @@
 {
-  "type": "手绘地图信息图",
-  "goal": "生成一张东京新宿夜间美食导览的插画地图，偏复古旅行海报气质",
+  "type": "Hand-Drawn Map Infographic",
+  "goal": "Generate an illustrated map of nighttime food in Shinjuku, Tokyo, styled like a vintage travel poster.",
   "style": "偏褐黄染色羊皮纸 + 水彩墨线，局部朱红与乌贼墨色点缀夜景",
   "title_section": {
     "city": "日本东京·新宿站东口至歌舞伎町一带",

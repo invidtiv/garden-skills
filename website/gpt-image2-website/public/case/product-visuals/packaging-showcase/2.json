@@ -1,6 +1,6 @@
 {
-  "type": "礼盒包装展示图",
-  "goal": "生成一张兼具节日感与产品可读性的礼赠套装展示图，外盒、内衬与内容物一屏讲清",
+  "type": "Gift Box Packaging Display",
+  "goal": "Generate a gift set display image that combines a festive feel with product readability, clearly presenting the outer box, inserts, and contents all on one screen.",
   "package": {
     "type": "硬质翻盖礼盒，开盖 75° 斜立，内附浅槽",
     "shape": "扁长方体，长边对观众略呈斜透视",

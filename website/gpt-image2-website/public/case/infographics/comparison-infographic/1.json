@@ -1,6 +1,6 @@
 {
-  "type": "双列对比信息图",
-  "goal": "让读者根据习惯在两款旗舰间做理性选择, 不制造对立辱骂",
+  "type": "Dual-Column Comparison Infographic",
+  "goal": "Let readers make rational choices between two flagship models based on habits, without creating opposition or insults.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "warm off-white #F8F6F2",

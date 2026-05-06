@@ -1,6 +1,6 @@
 {
-  "type": "极简瑞士排版大字海报",
-  "goal": "生成果壳极简、以栅格与字号层级为唯一趣味的 2:3 或 1:1 可裁海报，无插画无照片，无渐变",
+  "type": "Minimalist Swiss typographic large text poster.",
+  "goal": "Generate a minimalist poster in 2:3 or 1:1 format, with grid and font size hierarchy as the only interest, without illustrations, photos, or gradients.",
   "headline": {
     "text": "秩序即善意",
     "language": "中文",

@@ -1,6 +1,6 @@
 {
-  "type": "AI 安全事件讨论样机（带传播感）",
-  "goal": "生成一张高仿真度的 X 爆款推文截图，呈现开发者发布 Claude 行为异常发现，引发社区关注，并被官方账号快速回应",
+  "type": "AI Security Incident Discussion Mockup (With Viral Feel)",
+  "goal": "Generate a high-fidelity screenshot of a trending tweet from X, showcasing a developer's discovery of abnormal behavior in Claude, triggering community attention and a quick response from the official account.",
   "platform": {
     "name": "Twitter / X",
     "color_mode": "light",

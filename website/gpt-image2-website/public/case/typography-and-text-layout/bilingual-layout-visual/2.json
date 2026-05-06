@@ -1,6 +1,6 @@
 {
-  "type": "中日对照设计",
-  "goal": "生成 2:3 或 3:4 一屏的跨文化茶主题海报，气质偏日式雑志封面但中文读者友好，不山寨具体期刊封型",
+  "type": "Chinese-Japanese Comparative Design",
+  "goal": "Generate a 2:3 or 3:4 single-screen cross-cultural tea-themed poster, with a Japanese magazine cover feel but friendly to Chinese readers, not imitating specific magazine styles.",
   "languages": {
     "primary": "日文",
     "secondary": "中文"

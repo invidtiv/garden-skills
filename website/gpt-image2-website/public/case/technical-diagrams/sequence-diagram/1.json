@@ -1,6 +1,6 @@
 {
-  "type": "工程感时序图（UML sequence diagram）",
-  "goal": "生成一张 OAuth 2.0 授权码 + PKCE 时序位图，用于安全评审与移动/Web 公钥客户对接说明，消息编号完整、sync/return 风格区分",
+  "type": "Engineering Style Sequence Diagram (UML)",
+  "goal": "Generate a sequence diagram for OAuth 2.0 authorization code + PKCE, for security assessments and integration instructions with mobile/Web public key clients, with complete message numbering and distinguishing styles for sync/return.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

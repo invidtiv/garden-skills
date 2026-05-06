@@ -1,6 +1,6 @@
 {
-  "type": "城市风貌插画地图",
-  "goal": "生成一张代表北京传统中轴风貌的插画地图，适合文旅宣传折页、公众号头图与展览背板",
+  "type": "Cityscape Illustrated Map",
+  "goal": "Generate an illustrated map representing the traditional central axis style of Beijing, suitable for cultural tourism brochures, WeChat header images, and exhibition backdrops.",
   "style": "淡彩故宫红与城砖灰为基调的水彩手绘，米色水彩纸底",
   "title_section": {
     "city": "中国北京",

@@ -1,6 +1,6 @@
 {
-  "type": "角色综合设定 sheet",
-  "goal": "生成 3:4 竖版一屏的蒸汽朋克侦探主角设定，偏欧美 anime、线条干净，可直送原画拆分",
+  "type": "Comprehensive Angle Setting Sheet",
+  "goal": "Generate a 3:4 vertical single-screen steampunk detective character design, leaning towards Western anime, with clean lines, suitable for direct artwork breakdown.",
   "character": {
     "name": "Arthur Crone 阿瑟·克朗",
     "concept": "地下城与钟塔都市的私探，前警局物证科，左臂在事故后换成黄铜蒸汽义肢",

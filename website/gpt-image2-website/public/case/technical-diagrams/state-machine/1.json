@@ -1,6 +1,6 @@
 {
-  "type": "工程感状态机 / 生命周期图（UML state diagram）",
-  "goal": "生成一张 B2C 主单从 CREATED 到各终态的 UML 状态位图，终态用靶心、过渡边标事件与 guard，自循环只用于支付重试",
+  "type": "Engineering Style State Machine / Lifecycle Diagram (UML)",
+  "goal": "Generate a UML state diagram for B2C main orders from CREATED to various end states, with end states represented by target icons, transition edges marked by events and guards, and self-loops only for payment retries.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

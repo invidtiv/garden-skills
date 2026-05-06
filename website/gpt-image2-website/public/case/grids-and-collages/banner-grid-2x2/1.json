@@ -1,6 +1,6 @@
 {
-  "type": "2x2 课程 banner 套装",
-  "goal": "生成一组 4 张统一风格的硬件 campaign banner，整体 1:1 外框，2×2 等分，白缝分隔",
+  "type": "2x2 Course Banner Set",
+  "goal": "Generate a set of 4 campaign banners in a unified style for hardware, with an overall 1:1 frame, divided into 2×2 sections with white seams.",
   "brand": {
     "name": "Apple · Vision 系列",
     "logo_position": "每格左上角小苹果符号 + 次行小字 'Vision Pro 2'（非官方、仅为视觉演练）",

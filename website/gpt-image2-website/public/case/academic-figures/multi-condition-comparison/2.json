@@ -1,6 +1,6 @@
 {
-  "type": "横向 1×N 多工况对比",
-  "goal": "生成一张材料学论文 results 章节用的 1×4 横向多工况微观组织对比图，所有 panel 严格统一、白底、定性渲染，不含任何虚构尺寸数值",
+  "type": "Horizontal 1×N Multi-Condition Comparison",
+  "goal": "Create a 1×4 horizontal multi-condition microscopic organization comparison image for the results section of a materials science paper, with all panels strictly uniform, white background, qualitative rendering, devoid of any fabricated dimensional values.",
   "canvas": {
     "aspect_ratio": "4:1",
     "background": "pure white #FFFFFF",

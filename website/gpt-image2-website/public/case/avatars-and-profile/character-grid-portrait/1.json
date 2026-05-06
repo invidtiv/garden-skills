@@ -1,6 +1,6 @@
 {
-  "type": "3x3 朝代与时代肖像系列",
-  "goal": "生成一张 3×3 宫格，主体为同一位虚构的中国女性主体，每格为不同时代服饰与背景的半身肖像，可作文创历表或长图分镜参考",
+  "type": "3x3 Series of Dynastic and Temporal Portraits",
+  "goal": "Generate a 3×3 grid featuring the same fictional Chinese female character, with each panel displaying half-length portraits in different era costumes and backgrounds, suitable for cultural creative timelines or long image storyboard references.",
   "subject": {
     "description": "一位约 30 岁的虚构中国女性主体，深棕至黑色长发（随时代变化可盘发、束发或卷发），鹅蛋脸，暖调浅至中等肤色，深棕色眼瞳，眉形柔和自然，五官端正、线条含蓄，具有典型东方骨相（平直鼻梁、不过度立体的面部结构）；整体气质温和克制、带有东方审美的内敛感",
     "consistency": "九格为同一人：面部比例、骨相、肤色与气质保持一致，仅发型、服饰与配饰根据时代变化"

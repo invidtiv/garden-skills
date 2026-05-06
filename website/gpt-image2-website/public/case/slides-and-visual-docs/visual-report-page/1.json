@@ -1,6 +1,6 @@
 {
-  "type": "商业报告执行摘要页",
-  "goal": "生成一张可作为上市公司季度业绩一页通、投研速览与内部高管会封面图的执行摘要单页，风格理性克制",
+  "type": "Business Report Executive Summary Page",
+  "goal": "Generate a single summary page suitable for quarterly performance reports of listed companies, investment research briefings, and internal executive meeting covers, with a rational and restrained style.",
   "style": {
     "color_palette": "商业蓝 + 浅灰 + 白",
     "tone": "理性、可信赖、偏保守",

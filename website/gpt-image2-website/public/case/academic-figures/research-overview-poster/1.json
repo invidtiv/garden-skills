@@ -1,6 +1,6 @@
 {
-  "type": "学术研究总览图（research overview / framework figure for thesis defense）",
-  "goal": "生成一张可直接放进硕士开题答辩 PPT 首页的研究总览图，主题为锂电池热失控早期预警，要求正式克制、白底、工程化配色、明显论文图感，绝无商业路演感",
+  "type": "Academic Research Overview Figure (Research Overview / Framework Figure for Thesis Defense)",
+  "goal": "Generate a research overview diagram suitable for the title slide of a master's thesis defense PPT, focused on early warning of thermal runaway in lithium batteries, requiring formal restraint, white background, engineered colors, and a distinct academic feel, without any commercial presentation vibe.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "pure white #FFFFFF",

@@ -1,6 +1,6 @@
 {
-  "type": "2x2 反转 4 格漫画",
-  "goal": "生成一张 2×2 四格漫画，讲一个有节奏与反转的职场小剧场",
+  "type": "2x2 Inverted 4-Panel Comic",
+  "goal": "Generate a 2×2 four-panel comic telling a rhythmic and twisty workplace skit.",
   "story": {
     "theme": "周一战报会：数据很漂亮，但没人敢问那句",
     "structure": "起 / 承 / 转 / 合",

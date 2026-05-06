@@ -1,6 +1,6 @@
 {
-  "type": "Qualitative Comparison Grid（论文级多方法多样本对比网格）",
-  "goal": "生成语义分割定性对比图：5 列 × 4 行，类调色板一致、Ours 列高亮，英文图题",
+  "type": "Qualitative Comparison Grid (Paper-Level Multi-Method Multi-Sample Comparison Grid)",
+  "goal": "Generate a qualitative comparison chart for semantic segmentation: 5 columns × 4 rows, consistent color palettes, highlighting the 'Ours' column, with English titles.",
   "canvas": {
     "aspect_ratio": "4:3",
     "background": "white #FFFFFF",

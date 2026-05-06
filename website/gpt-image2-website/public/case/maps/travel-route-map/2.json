@@ -1,6 +1,6 @@
 {
-  "type": "旅行路线图",
-  "goal": "生成一张美国 66 号公路经典中段七日自驾攻略主图，适合横屏封面与长图首屏",
+  "type": "Travel itinerary map.",
+  "goal": "Generate a main image for a classic seven-day road trip guide along Route 66 in America, suitable for landscape covers and long-format initial screens.",
   "style": "做旧麻黄地图纸 + 丝网印刷式扁平色块，路边元素带美式公路漫画味",
   "title_section": {
     "title_text": "Route 66 七日·西部光与尘",

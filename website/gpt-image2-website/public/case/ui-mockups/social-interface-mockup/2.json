@@ -1,6 +1,6 @@
 {
-  "type": "小红书风格图文动态详情页样机",
-  "goal": "生成一张高仿真度的小红书笔记详情页截图，亲切、生活化",
+  "type": "Xiaohongshu Style Image and Text Dynamic Detail Page Mockup",
+  "goal": "Generate a high-fidelity screenshot of a Xiaohongshu note detail page, warm and relatable.",
   "platform": {
     "name": "小红书",
     "color_mode": "light",

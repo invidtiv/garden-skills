@@ -1,6 +1,6 @@
 {
-  "type": "神话角色系列肖像",
-  "goal": "生成单张 4×3 宫格，十二主神胸像或半身，每格下方英文神名 + 中文司职，美术馆展签式排版",
+  "type": "Mythical Character Series Portraits",
+  "goal": "Generate a single 4×3 grid, featuring busts or half-bodies of twelve main deities, with English names and corresponding Chinese positions below each grid cell, formatted like art museum exhibition labels.",
   "theme": {
     "mythology": "希腊神话奥林匹斯十二主神",
     "subject_count": 12

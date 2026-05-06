@@ -13,15 +13,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "横向 4 段式 — 大模型长上下文检索增强问答",
-          "brief": "面向 ACL / EMNLP / TPAMI 风格的 Graphical Abstract，把\"长上下文 QA 中的检索-排序-推理\"压缩成 Problem → Method → Mechanism → Outcome 四段式，比例 2:1，全英标注，灰蓝主色 + 单一暖色提示重点结果。",
+          "title": "Horizontal 4-Section - Large Model Long Context Retrieval-Enhanced Q&A",
+          "brief": "Graphical Abstract targeting ACL / EMNLP / TPAMI style, compressing 'Retrieval-Sorting-Inference in Long Context QA' into a four-part structure: Problem → Method → Mechanism → Outcome, ratio 2:1, fully in English annotations, gray-blue as the main color + a single warm color highlighting key results.",
           "format": "json",
           "file": "academic-figures/graphical-abstract/1.json"
         },
         {
           "idx": 2,
-          "title": "方形 1:1 — 锂电池硅碳负极循环稳定性",
-          "brief": "面向 ACS Energy Letters / Journal of Power Sources 等要求方形 Graphical Abstract 的期刊。2×2 网格布局：左上为研究问题（硅负极体积膨胀），右上为方法（梯度孔径硅碳复合材料），左下为关键机制（柔性 SEI 缓冲），右下为定性结果（容量保持率柱图）。",
+          "title": "Square 1:1 — Lithium battery silicon-carbon anode cycling stability.",
+          "brief": "Aimed at journals like ACS Energy Letters / Journal of Power Sources that require square Graphical Abstracts. 2×2 grid layout: top left for research questions (silicon anode volume expansion), top right for methods (gradient pore silicon-carbon composite), bottom left for key mechanisms (flexible SEI buffering), bottom right for qualitative results (capacity retention bar chart).",
           "format": "json",
           "file": "academic-figures/graphical-abstract/2.json"
         }
@@ -36,15 +36,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "硅碳负极循环过程中的体积膨胀与 SEI 演化机理",
-          "brief": "典型工程类期刊机制图。中心是硅碳复合颗粒的简化剖面，周围按\"嵌锂 → 体积膨胀 → SEI 应力累积 → SEI 破裂 → 新 SEI 重构\"五阶段展开，第 3、4 阶段叠加低饱和暖色作为应力 / 失效高亮。可直接用于论文正文 mechanism figure 或答辩 PPT 机制说明页。",
+          "title": "Volume Expansion and SEI Evolution Mechanism in Silicon-CARBON Anode Cycling Process",
+          "brief": "Typical mechanism diagram for engineering journals. Centered on a simplified profile of silicon-carbon composite particles, outlined with five stages: 'Lithium Insertion → Volume Expansion → SEI Stress Accumulation → SEI Rupture → New SEI Reconstruction'; stages 3 and 4 highlighted with low-saturation warm colors for stress/failure emphasis. Suitable for paper mechanism figures or defense PPT mechanism explanation pages.",
           "format": "json",
           "file": "academic-figures/mechanism-diagram/1.json"
         },
         {
           "idx": 2,
-          "title": "三段式因果链 — 光催化降解水中有机污染物机制",
-          "brief": "环境 / 化工类机制图变体 1（左 → 中 → 右 三段式因果链）。左侧为初始体系（光催化剂 + 污染物 + 紫外光），中间为多阶段反应机制（电子-空穴对生成 → 自由基产生 → 污染物开环 → 矿化），右侧为最终产物（CO₂ + H₂O + 无机离子）。整图保持期刊正文 figure 风格。",
+          "title": "Three-Part Causal Chain - Photocatalytic Degradation Mechanism of Organic Pollutants in Water",
+          "brief": "Environmental / Chemical Mechanism Diagram Variant 1 (Left → Middle → Right Three-Section Causal Chain). The left side shows the initial system (Photocatalyst + Pollutants + UV Light), the middle shows multi-stage reaction mechanisms (Electron-Hole Pair Generation → Free Radical Production → Pollution Opening → Mineralization), and the right side shows final products (CO₂ + H₂O + Inorganic Ions). The entire image maintains journal figure style.",
           "format": "json",
           "file": "academic-figures/mechanism-diagram/2.json"
         }
@@ -60,14 +60,14 @@
         {
           "idx": 1,
           "title": "RAG-based Long-Context QA pipeline",
-          "brief": "检索增强长上下文问答的端到端流程，从原始文档到最终答案，适合 ACL / NeurIPS 式 method overview。五阶段串联、标签全英文、适合双栏版式。",
+          "brief": "End-to-end process for retrieval-enhanced long-context question answering, from the original document to the final answer, suitable for ACL / NeurIPS-style method overview. Five-stage linkage, fully English labels, suitable for dual-column layout.",
           "format": "json",
           "file": "academic-figures/method-pipeline-overview/1.json"
         },
         {
           "idx": 2,
-          "title": "图像扩散模型训练 pipeline（4 阶段）",
-          "brief": "文生图扩散模型在训练阶段的模块级总览，从图文对到可生成权重的四阶段前向。强调数据、噪声、U-Net 与 VAE 的角色分工，无训练 loss 支路、纯推理式布局。",
+          "title": "Image Diffusion Model Training Pipeline (4 Stages)",
+          "brief": "Overview of the module-level training phase of text-to-image diffusion models, transitioning from text-image pairs to weight generation through four phases. Emphasizes the roles of data, noise, U-Net, and VAE, with no training loss branches and a purely inference-style layout.",
           "format": "json",
           "file": "academic-figures/method-pipeline-overview/2.json"
         }
@@ -82,15 +82,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "2×2 — 不同进风系数 λ 下的炉膛温度场分布对比（定性场图）",
-          "brief": "燃烧 / 能源工程方向典型 result figure。同一炉膛纵剖面在 4 种过量空气系数下的温度场对比，4 个 panel 共享同一 viridis-like 色标，标签 (a)(b)(c)(d) 严格统一。无真实 CFD 数据，按定性场图渲染（色标只显示 low → high，无数值刻度）。",
+          "title": "2×2 — Comparison of Furnace Temperature Field Distribution under Different Air Inlet Coefficients λ (Qualitative Field Map)",
+          "brief": "Typical result figure in combustion/energy engineering. A comparison of the temperature field in the same combustion chamber section at four different excess air coefficients, with all four panels sharing the same viridis-like color scale, and labels (a)(b)(c)(d) strictly unified. No real CFD data, rendered according to qualitative field maps (color scale shows only low → high, without numerical scales).",
           "format": "json",
           "file": "academic-figures/multi-condition-comparison/1.json"
         },
         {
           "idx": 2,
-          "title": "1×4 横向 — 不同退火温度下镍基合金微观组织对比（micrograph）",
-          "brief": "材料科学方向 result figure 横向变体。一行 4 个 SEM micrograph，对比 700 / 800 / 900 / 1000 ℃ 退火后的 γ' 相形貌。所有 panel 共享同一比例尺，labels (a)(b)(c)(d) 位置统一。无真实图像数据，按定性 micrograph 风格渲染（不出现具体晶粒尺寸数值）。",
+          "title": "1×4 Horizontal — Comparison of Microstructure of Nickel-Based Alloys at Different Annealing Temperatures (Micrograph)",
+          "brief": "Lateral variant of result figures in materials science. One row of 4 SEM micrographs comparing the morphology of γ' phase after annealing at 700 / 800 / 900 / 1000 ℃. All panels share the same scale, with labels (a)(b)(c)(d) positioned consistently. No real image data, rendered in a qualitative micrograph style (without specific grain size values).",
           "format": "json",
           "file": "academic-figures/multi-condition-comparison/2.json"
         }
@@ -105,15 +105,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Encoder-only Transformer（12 层，768-d，8-head）",
-          "brief": "典型 BERT / RoBERTa 系编码器，用于下游分类或表示学习。自注意力堆叠、残差与层归一化可辨，张量从 token 到池化后 logits。",
+          "title": "Encoder-only Transformer (12 Layers, 768-d, 8-head)",
+          "brief": "Typical BERT/RoBERTa encoder for downstream classification or representation learning. Clearly discernible self-attention stacks, residuals, and layer normalization; tensors from tokens to pooled logits.",
           "format": "json",
           "file": "academic-figures/neural-network-architecture/1.json"
         },
         {
           "idx": 2,
-          "title": "Vision Transformer (ViT-B/16) 分类架构",
-          "brief": "从图像到 patch 序列、经 Transformer encoder 与 [CLS] 分类头，张量随空间 token 与模型宽度展开，含 PatchEmbed 与位置编码。适合 CVPR 论文 model figure。",
+          "title": "Vision Transformer (ViT-B/16) Classification Architecture",
+          "brief": "From image to patch sequence, through Transformer encoder and [CLS] classification head, the tensor expands with spatial tokens and model width, including PatchEmbed and positional encoding. Suitable for CVPR paper model figures.",
           "format": "json",
           "file": "academic-figures/neural-network-architecture/2.json"
         }
@@ -128,15 +128,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "SWE-Bench Verified 上多代理系统的 Resolve Rate 对比",
-          "brief": "软件工程基准 SWE-Bench 上的方法对比，纵轴为 resolve rate、横轴为公开代理系统名称，Ours 用强调色。适合系统论文主文图或附录表图。",
+          "title": "SWE-Bench Verified Resolve Rate Comparison of Multi-Agent Systems",
+          "brief": "Method comparison on the software engineering benchmark SWE-Bench, with the vertical axis as resolve rate and the horizontal axis as public proxy system names, with 'Ours' highlighted in color. Suitable for main text figures or appendix tables in system papers.",
           "format": "json",
           "file": "academic-figures/publication-chart/1.json"
         },
         {
           "idx": 2,
-          "title": "LLM 预训练「Scaling law」双对数曲线（Test loss vs. compute C）",
-          "brief": "纵轴为测试交叉熵、横轴为训练算力 C（FLOP，log₁₀），多系列等参放大曲线与趋势线，体现幂律区段。采用折线模板变体，论文常见 NeurIPS 式。",
+          "title": "LLM Pre-training 'Scaling Law' Log-Log Curve (Test Loss vs. Compute C)",
+          "brief": "Vertical Axis as Test Cross-Entropy, Horizontal Axis as Training Computing Power C (FLOPS, log₁₀), Multiple Series Equal Reference Enlarged Curves and Trend Lines Reflecting Power Law Segment. Using Line Chart Template Variant, Common in Papers, NeurIPS Style.",
           "format": "json",
           "file": "academic-figures/publication-chart/2.json"
         }
@@ -151,15 +151,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "三种图像生成模型 × 四个固定 Prompt",
-          "brief": "同一文本提示下对比 DALL·E 3、Midjourney v6、Stable Diffusion XL 与 Ours，四行文本提示、五列（含 Input 为 prompt 文本卡片）。适用于生成类论文 supplementary。",
+          "title": "Three Image Generation Models × Four Fixed Prompts",
+          "brief": "Comparison of DALL·E 3, Midjourney v6, Stable Diffusion XL, and Ours Under the Same Text Prompt, Four Lines of Text Prompts, Five Columns (Including Input as Prompt Text Cards). Suitable for Generative Papers Supplementary.",
           "format": "json",
           "file": "academic-figures/qualitative-comparison-grid/1.json"
         },
         {
           "idx": 2,
-          "title": "Cityscapes 语义分割 — 四方法与 Ground Truth 对比",
-          "brief": "同一张街景输入下比较经典 FCN、DeepLabV3+、Mask2Former 与 Ours，首列为 Input RGB，一列为 GT，最后一列为 Ours。单元格为彩色 overlay 或侧-by-side 小图。适用于 CVPR 分割论文。",
+          "title": "Cityscapes Semantic Segmentation — Four Methods vs. Ground Truth Comparison",
+          "brief": "Comparison of Classic FCN, DeepLabV3+, Mask2Former, and Ours Under the Same Street View Input, First Column is Input RGB, One Column is GT, Last Column is Ours. Cells are Color Overlays or Side-by-Side Small Images. Suitable for CVPR Segmentation Papers.",
           "format": "json",
           "file": "academic-figures/qualitative-comparison-grid/2.json"
         }
@@ -174,15 +174,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "中文硕士开题答辩首页 — 锂电池热失控早期预警",
-          "brief": "硕士开题答辩 PPT 首页用研究总览图，主题是\"基于多源传感数据的锂电池热失控早期预警\"。上方主标题 + 副标题，中间为\"背景 → 目标 → 三个研究模块（机理 / 模型 / 验证）\"层级结构，下方为预期成果带，全部中文标注，模块严格等大，色调克制（深蓝 + 灰蓝 + 黑灰），可直接放进硕士开题答辩首页。",
+          "title": "Chinese Master's Thesis Defense Homepage - Early Warning for Lithium Battery Thermal Runaway",
+          "brief": "Master's Thesis Proposal PPT Cover Using Research Overview, Theme: 'Early Warning of Lithium Battery Thermal Runaway Based on Multi-Source Sensor Data'. Main Title + Subtitle at the top, 'Background → Objectives → Three Research Modules (Mechanism / Model / Verification)' hierarchical structure in the middle, Expected Results Band at the bottom, all in Chinese, modules strictly equal in size, subdued color tone (Deep Blue + Gray Blue + Black Gray), suitable for direct use in the master's thesis proposal cover.",
           "format": "json",
           "file": "academic-figures/research-overview-poster/1.json"
         },
         {
           "idx": 2,
-          "title": "左右双栏（变体 2）— 博士中期答辩 · 多模态大模型辅助医疗影像诊断",
-          "brief": "博士中期答辩首页 + 项目进度，左栏 = 4 个研究内容模块（垂直堆叠），右栏 = 极简 gantt 时间表（按学期划分里程碑）。中英双语，主标题英文 + 中文副标题，色调保持深蓝 / 灰蓝 / 黑灰，时间轴用细线 + 节点圆。",
+          "title": "Two-Column (Variant 2) — PhD Mid-term Defense · Multimodal Large Model-Assisted Medical Imaging Diagnosis",
+          "brief": "Doctorate Mid-Term Defense Homepage + Project Progress, Left Column = 4 Research Content Modules (Vertically Stacked), Right Column = Minimalist Gantt Timeline (Milestones Divided by Semester). Bilingual Chinese and English, Main Title in English + Subtitle in Chinese, Color Scheme of Deep Blue / Gray Blue / Black Gray, Timeline with Fine Lines + Node Circles.",
           "format": "json",
           "file": "academic-figures/research-overview-poster/2.json"
         }
@@ -197,15 +197,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "CRISPR-Cas9 靶向双链断裂与非同源末端连接",
-          "brief": "以 guide RNA 与目标 DNA 配对、Cas9 切割、NHEJ 或 HDR 为叙事主线，白底、标注线与基因序列样式符号，适合作 Nature Methods 风格图注或综述插图。",
+          "title": "CRISPR-Cas9 Targeting Double-Strand Breaks and Non-Homologous End Joining",
+          "brief": "With guide RNA pairing with target DNA, Cas9 cutting, and NHEJ or HDR as the narrative backbone, featuring a white background, labeled lines, and gene sequence style symbols, suitable for Nature Methods-style captions or review illustrations.",
           "format": "txt",
           "file": "academic-figures/scientific-schematic/1.txt"
         },
         {
           "idx": 2,
-          "title": "双光子与纠缠光子对产生的简化实验光路",
-          "brief": "泵浦激光、非线性 BBO 晶体中的自发参量下转换、分束与符合计数，带角度标注，适合 PRL 式 optics schematic，强调几何与波长标注。",
+          "title": "Simplified Experimental Light Path for Two-Photon and Entangled Photon Pair Production",
+          "brief": "Pump Laser, Spontaneous Parametric Down-Conversion in Nonlinear BBO Crystal, Beam Splitting and Coincidence Counting, with Angle Annotations, suitable for PRL-style optics schematic emphasizing geometry and wavelength labeling.",
           "format": "txt",
           "file": "academic-figures/scientific-schematic/2.txt"
         }
@@ -220,15 +220,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "开放世界奇幻 RPG 黄昏雪原越肩视角",
-          "brief": "左下资源条、右下技能轮、左上小地图与右上任务追踪是现代 3A 开放世界默认 HUD 四分法，本例用女性游侠背身强化「正在玩」临场感。",
+          "title": "Open World Fantasy RPG Over-the-Shoulder View of Twilight Snowfield",
+          "brief": "The bottom left resource bar, bottom right skill wheel, top left mini-map, and top right task tracker represent the modern 3A open-world default HUD quadrants, with this example enhancing the sense of 'currently playing' through a female ranger seen from behind.",
           "format": "json",
           "file": "assets-and-props/game-screenshot-mockup/1.json"
         },
         {
           "idx": 2,
-          "title": "国产仙侠 MMO 云端浮岛斗法（第三人称略高机位）",
-          "brief": "血条在头顶、右侧竖向技能栏、左下聊天与系统飘字是 PC 仙侠 MMO 常见布局；本例突出「御剑近身 + 法宝光效」以区隔西幻。",
+          "title": "Domestic Xianxia MMO Cloud Floating Island Duel (Third-Person Slightly Elevated View)",
+          "brief": "Health bar at the top, vertical skill bar on the right, chat and system floating text on the bottom-left is a common layout for PC Xianxia MMOs; this example highlights 'Close Sword Control + Magical Tool Effects' to distinguish from Western fantasy.",
           "format": "json",
           "file": "assets-and-props/game-screenshot-mockup/2.json"
         }
@@ -243,15 +243,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "iOS 拟物风 12 应用图标集（4×3 网格）",
-          "brief": "亮面玻璃、皮纹、金属倒角与统一 24% 圆角方底，是千年代末高端智能手机主题包最具辨识度的「一眼拟物」配方。",
+          "title": "iOS Skeuomorphic 12 App Icon Set (4×3 Grid)",
+          "brief": "Glossy glass, leather texture, metal chamfer, and uniform 24% rounded square base create the most recognizable 'instant recognizable' formula for a high-end smartphone theme package at the turn of the millennium.",
           "format": "json",
           "file": "assets-and-props/retro-skeuomorphic-icons/1.json"
         },
         {
           "idx": 2,
-          "title": "Y2K Aero 风水晶玻璃音乐主题 8 图标（2×4）",
-          "brief": "透明折射、高饱和品红与电青、镀铬描边是 Windows Vista / 早期媒体播放器皮肤常用的 Y2K 水晶系语言，与扁平时代形成强反差，适合歌单 / 电音向视觉包。",
+          "title": "Y2K Aero Wind Crystal Glass Music Theme 8 Icons (2×4)",
+          "brief": "Transparent refraction, high-saturation magenta and electric blue, chrome outlines are common Y2K crystal languages used in Windows Vista / early media player skins, forming a strong contrast with the flat era, suitable for playlist/electronic music visual packages.",
           "format": "json",
           "file": "assets-and-props/retro-skeuomorphic-icons/2.json"
         }
@@ -266,15 +266,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Taylor Swift 3×3 古今形象肖像网格（自汉至现代九格）",
-          "brief": "同一可识别名人在时间轴上切换衣冠与场域，是角色网格中「单维变量（时代）多档位」的教科书式用法，对脸型一致与每格打光可区分的要求高。",
+          "title": "Taylor Swift 3x3 Evolutionary Portrait Grid (From Han to Modern Nine Grid)",
+          "brief": "The Same Recognizable Celebrity Switching Attire and Setting on a Timeline, Exemplifying the Textbook Use of 'Single-Dimensional Variable (Era) Multiple Levels' in Character Grid, with High Requirements for Consistent Face Shape and Distinguishable Lighting in Each Frame.",
           "format": "json",
           "file": "avatars-and-profile/character-grid-portrait/1.json"
         },
         {
           "idx": 2,
-          "title": "Sam Altman 4×4 开发者人设与表情合辑",
-          "brief": "「同一公人物」在统一浅灰工位语境下以表情与微动作为主变量，是科技报道配图与社媒条漫常用的 4×4 规格。",
+          "title": "Sam Altman 4×4 Developer Character and Expression Collection",
+          "brief": "The 'Same Public Figure' in a uniform light gray workspace context uses expressions and subtle movements as main variables, commonly in 4×4 format for tech reporting illustrations and social media comics.",
           "format": "json",
           "file": "avatars-and-profile/character-grid-portrait/2.json"
         }
@@ -289,15 +289,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "唐、宋、元、明、清五朝帝王胸像横五联",
-          "brief": "五联长图或横排 banner 在教育类公众号与博物馆数字展陈中常见，格量少于九格时每格面积更大、服饰考据更显眼。",
+          "title": "Five Dynasties' Emperors Busts (Tang, Song, Yuan, Ming, Qing) Horizontal Five Panels",
+          "brief": "Five-part long images or horizontal banners are common in educational public accounts and digital exhibitions in museums; when the number of segments is less than nine, each segment has a larger area and clothing details are more prominent.",
           "format": "json",
           "file": "avatars-and-profile/cultural-portrait-series/1.json"
         },
         {
           "idx": 2,
-          "title": "希腊神话十二主神胸像 4×3 格古典油画",
-          "brief": "奥林匹斯十二神为英语世界通识教育固定组合，古典油画厚涂 + 司职标签是海外慕课与桌游美术常采版式。",
+          "title": "Classical Oil Painting of Twelve Olympian Gods Busts 4x3",
+          "brief": "The Twelve Olympians serve as a fixed combination for general education in the English-speaking world; classical oil painting with thick texture + occupational tags are often used in overseas MOOCs and board game art.",
           "format": "json",
           "file": "avatars-and-profile/cultural-portrait-series/2.json"
         }
@@ -312,15 +312,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "微信场景 16 枚「打工人日常」Q 萌贴纸合图",
-          "brief": "4×4 排布、白描边、轻阴影、每格带两字或三字中文情绪标签，是国内 IM 表情包投放最常用商业规格之一。",
+          "title": "WeChat Scene 16 'Working People's Daily' Q Cute Sticker Compilation",
+          "brief": "4×4 Layout, Fine Outline, Light Shadows, Each Square with Two or Three Character Chinese Emotion Labels, One of the Most Common Commercial Specifications for IM Emoji Packs in China.",
           "format": "json",
           "file": "avatars-and-profile/sticker-set/1.json"
         },
         {
           "idx": 2,
-          "title": "Taylor Swift 梗图 9 枚 3×3 贴纸（简笔 Q 版）",
-          "brief": "以明星 public 形象做漫化二创梗图时，强调「神似不写真」与统一线色，避免侵犯肖像的写实照片感；九格为专辑宣发 / 粉圈活动常见投放量。",
+          "title": "Taylor Swift Meme 9-Piece 3x3 Sticker Set (Simple Q Version)",
+          "brief": "When creating cartoon adaptations of celebrity public images, emphasize 'resemblance without realism' and a unified line color to avoid infringing on the realistic photo feel of portraits; a nine-panel layout is commonly used for album promotions / fan circle activities.",
           "format": "json",
           "file": "avatars-and-profile/sticker-set/2.json"
         }
@@ -335,15 +335,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "将 Stephen Curry 参考照转为雨夜赛博朋克城市场",
-          "brief": "高饱和霓虹、湿路面反射与机能风穿搭共同构成「次世代夜都市」标准审美，是风格转换中场景与光比变化幅度大、但身份锚点须钉死的人像任务。",
+          "title": "Transform the reference photo of Stephen Curry into a rain-soaked cyberpunk urban scene.",
+          "brief": "High-saturation neon, wet pavement reflections, and functional style combine to form the 'next generation night city' standard aesthetic, characterized by significant scene and light ratio variations in style transformation, but fixed identity anchors in portrait tasks.",
           "format": "json",
           "file": "avatars-and-profile/style-transfer-selfie/1.json"
         },
         {
           "idx": 2,
-          "title": "将 Beyoncé 参考照转为吉卜力工作室式手绘动画风",
-          "brief": "柔线轮廓、平涂肤色与层叠田园云隙光是吉卜力美术最具辨识度的组合，在名人肖像转换中需弱化 Hollywood 硬修容、转向手绘通透色阶。",
+          "title": "Transform the reference photo of Beyoncé into a Studio Ghibli-style hand-drawn animated look.",
+          "brief": "Soft line contours, flat skin tones, and layered pastoral light gaps are the most recognizable combinations in Ghibli art. In celebrity portrait transformations, weaken Hollywood's hard contouring and shift to hand-drawn transparent color gradations.",
           "format": "json",
           "file": "avatars-and-profile/style-transfer-selfie/2.json"
         }
@@ -358,15 +358,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Mark Zuckerberg 元宇宙创作者主题的 Kawaii 3D 拟猫胸像",
-          "brief": "将公众人物的温和气质翻译为低威胁 Q 版动物拟人 + 轻科技符号，是主题 3D 头像里品牌人格化、又不落入写实像侵权的常见商业化落点。",
+          "title": "Kawaii 3D Cat Bust of Metaverse Creator Mark Zuckerberg",
+          "brief": "Translate a public figure's gentle temperament into a low-threat chibi-style anthropomorphic animal along with light-tech symbols, representing brand personification in a thematic 3D avatar while avoiding common pitfalls of realistic image infringement.",
           "format": "json",
           "file": "avatars-and-profile/themed-3d-icon/1.json"
         },
         {
           "idx": 2,
-          "title": "Jensen Huang 为灵感的 Minecraft 体素 3D 皮套头像",
-          "brief": "名人标志性皮衣与发布会手势在降采样体素中仍可被联想，是主题 3D 与像素体素两风格交界处的轻量个人 IP 头像方案。",
+          "title": "Jensen Huang Inspired Minecraft Voxel 3D Skin Avatar",
+          "brief": "The Celebrity's Iconic Leather Jacket and Release Event Gesture Can Still be Associated in Downsampled Voxels, Making it a Lightweight Personal IP Avatar Solution at the Intersection of 3D and Pixelated Styles.",
           "format": "json",
           "file": "avatars-and-profile/themed-3d-icon/2.json"
         }
@@ -381,15 +381,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "国潮气泡水「荔潮」",
-          "brief": "透明玻瓶+金属旋盖，米白主标水墨荔枝与金线，底部配料与营养成分条带，配竹编垫与切半荔枝静物，4:5 商拍。",
+          "title": "Guochao Bubble Water 'Li Chao'",
+          "brief": "Transparent glass bottle + metal screw cap, off-white main label with ink-painted lychee and gold stripes, with bottom ingredient and nutritional info strip, paired with bamboo mat and halved lychee still life, 4:5 commercial photography.",
           "format": "json",
           "file": "branding-and-packaging/beverage-label-design/1.json"
         },
         {
           "idx": 2,
-          "title": "精酿「雾港 IPA」酒标",
-          "brief": "470ml 棕色长颈瓶+侧招纸标，主插画为夜航灯塔与海雾，IBU 与酒精度在正面下半，背标故事区，配橡木条与开瓶器场景，偏美式西海岸 IPA 调性但中文沟通。",
+          "title": "Craft Brew 'Fog Harbor IPA' Label",
+          "brief": "470ml Brown Long Neck Bottle + Side Label, Main Illustration of a Night Sailing Lighthouse and Sea Fog, IBU and Alcohol Content on Bottom Half of Front, Back Label Story Section, with Oak Strips and Bottle Opener Scene, Leaning Towards American West Coast IPA Tone but Communicating in Chinese.",
           "format": "json",
           "file": "branding-and-packaging/beverage-label-design/2.json"
         }
@@ -404,15 +404,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "草本茶新中式品牌「清篱」",
-          "brief": "定位 25–40 岁注重养生的都市白领，标志为篱形叶片与茶汤涟漪几何化，主色松烟绿 + 米汤白，配名片、外带杯与线上海报 mockup。",
+          "title": "Herbal Tea New Chinese Brand 'Qingli'",
+          "brief": "Targeting urban white-collar workers aged 25-40 who focus on health, the logo features geometric designs of fence-like leaves and tea ripples, with the main colors being pine smoke green and rice soup white, paired with business cards, takeaway cups, and online poster mockups.",
           "format": "json",
           "file": "branding-and-packaging/brand-identity-board/1.json"
         },
         {
           "idx": 2,
-          "title": "独立咖啡馆「砖缝光」",
-          "brief": "社区小馆定位，主色燧石黑与窑变橙，字标强调砖缝与光束负形，含杯套、门牌、小程序码卡片 mockup。",
+          "title": "Independent Coffee Shop 'Brick Seam Light'",
+          "brief": "Community Bistro Branding, Main Colors: Flint Black and Kiln Color Orange, Text Logo Emphasizes Brick Joints and Light Beam Negative Shape, includes Cup Sleeve, Nameplate, Mini Program Code Card Mockup.",
           "format": "json",
           "file": "branding-and-packaging/brand-identity-board/2.json"
         }
@@ -427,15 +427,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "国货高端护肤「云纹瓷」光感修护系列礼盒",
-          "brief": "品牌名「东篱」，定位东方极简高奢，莫兰迪青灰瓷瓶 + 细腰曲线，礼盒半开露出一瓶一罐，真丝底与柔光，适合天旗舰店首屏。",
+          "title": "High-end domestic skincare 'Cloud Pattern Porcelain' Light Perception Repair Series Gift Box",
+          "brief": "Brand Name 'Dongli', Positioned as Eastern Minimalist Luxury, Morandi Blue-Gray Ceramics + Slim Waist Curves, Gift Box Half Open Revealing One Bottle and One Can, Silk Base and Soft Light, Suitable for Flagship Store Homepage.",
           "format": "json",
           "file": "branding-and-packaging/cosmetic-packaging/1.json"
         },
         {
           "idx": 2,
-          "title": "男士剃须理容套装（洁面 + 须泡 + 须后 + 皮套刀架）",
-          "brief": "深海军蓝 + 冷银，直立挤压管与金属盖，外盒为抽拉式，摄影台偏冷，强调清晨浴室理性气质。",
+          "title": "Men's shaving grooming set (cleanser + shaving cream + aftershave + leather razor holder).",
+          "brief": "Deep Ocean Navy + Cool Silver, Upright Squeeze Tube with Metal Cap, Pull-out Style Outer Box, Cool Photography Setting Emphasizing a Rational Morning Bath Atmosphere.",
           "format": "json",
           "file": "branding-and-packaging/cosmetic-packaging/2.json"
         }
@@ -450,15 +450,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "故宫建筑精灵「小脊兽蹲蹲」",
-          "brief": "以太和殿脊兽为灵感的 Q 版黄色琉璃小兽，头顶迷你屋脊线，6 个常用表情 + 文创胶带、书签、导览易拉宝应用格。",
+          "title": "Palace Museum architectural spirit 'Little Spine Beast'.",
+          "brief": "Q-version yellow glazed small beast inspired by the ridge beast of the Hall of Supreme Harmony, featuring a mini roof line on top, with 6 common expressions + cultural and creative tape, bookmarks, and guide pop-up applications.",
           "format": "json",
           "file": "branding-and-packaging/mascot-brand-kit/1.json"
         },
         {
           "idx": 2,
-          "title": "美团外卖小袋鼠速达强化版 Brand Kit",
-          "brief": "在品牌已有袋鼠认知基础上做「30 分钟必达」子 IP 变体，黄黑主色，三视图、6 表情、头盔配送箱与电动车遮罩、小程序开屏、保温袋大印刷位。",
+          "title": "Meituan Takeaway Little Kangaroo Express Enhanced Brand Kit",
+          "brief": "Create a '30-Minute Delivery' sub-IP variant based on the brand's existing kangaroo recognition, with yellow and black as the main colors, featuring three views, six expressions, helmet delivery boxes, electric vehicle coverings, app splash screens, and large prints on thermal bags.",
           "format": "json",
           "file": "branding-and-packaging/mascot-brand-kit/2.json"
         }
@@ -473,15 +473,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "LeBron James 户外半身照换纽约时代广场夜景",
-          "brief": "典型的人像从日间户外杂乱背景置换为标志性城市夜景，需统一冷暖对比与重新生成与霓虹灯方向一致的边缘光、地面反光，是体育明星肖像电商 / 社媒素材方向的代表任务。",
+          "title": "LeBron James Outdoor Half-Body Photo Replaced with New York Times Square at Night",
+          "brief": "Typical portrait switching from a messy daytime outdoor background to an iconic city nightscape, requiring uniform cold-warm contrast and regenerated edge lighting and ground reflections consistent with neon light directions, representing tasks for sports star portrait e-commerce/social media materials.",
           "format": "json",
           "file": "editing-workflows/background-replacement/1.json"
         },
         {
           "idx": 2,
-          "title": "白底精拍 AirPods Pro 3 主图换日落沙滩",
-          "brief": "典型电商主图从影棚白底迁往生活方式场景，强调产品身份不变、新环境下阴影与亚克力充电盒反光的重算，是 3C 小电类目详情页最常用背景替换类需求。",
+          "title": "White background detailed image of AirPods Pro 3, replaced with a sunset beach.",
+          "brief": "Typical e-commerce main image transitioning from studio white background to lifestyle scenes, emphasizing unchanged product identity and recalculating shadows and reflections of acrylic charging cases in a new environment, a common background replacement requirement in the 3C small electronics category.",
           "format": "json",
           "file": "editing-workflows/background-replacement/2.json"
         }
@@ -496,15 +496,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Tesla Cybertruck 电单车展示图，车身从不锈钢银换为磨砂黑",
-          "brief": "典型车品 / 科技露出图中仅更换车漆材质与色而不改车型轮廓与场景透视，是局部对象替换里对高光与金属颗粒感重算要求最高的用例之一。",
+          "title": "Tesla Cybertruck Electric Bike Display Image, Changing Body from Stainless Steel Silver to Matte Black",
+          "brief": "Typical automotive product/technology exposure image that only changes the paint material and color without altering the vehicle's contour or scene perspective, one of the highest demands for recalculating highlights and metal particle textures in object replacements.",
           "format": "json",
           "file": "editing-workflows/local-object-replacement/1.json"
         },
         {
           "idx": 2,
-          "title": "LeBron James 比赛上身照，球衣从湖人紫金换为迈阿密热火红黑",
-          "brief": "典型运动肖像中仅替换队服主色而保留队形、织纹与球员可识别性，对布料褶皱阴影与热印号码边缘的贴合度要求高，属于服饰类局部替换代表场景。",
+          "title": "LeBron James Game Upper Body Shot, Jersey Changed from Lakers Purple and Gold to Miami Heat Red and Black",
+          "brief": "In typical sports portraits, only the primary color of the jersey is changed while preserving the formation, fabric texture, and player recognition; high requirements for aligning fabric wrinkles, shadows, and the edges of heat-printed numbers, falling under typical clothing object replacement scenarios.",
           "format": "json",
           "file": "editing-workflows/local-object-replacement/2.json"
         }
@@ -519,15 +519,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "大学毕业典礼草坪合影，去除画面边缘误入路人",
-          "brief": "群体合影中保留主体排面完整、仅抹掉边缘干扰人物，是人物类杂物去除最典型、对「无接缝」要求极高的一类任务。",
+          "title": "University graduation lawn group photo, removing unintended passersby from the edges.",
+          "brief": "Retaining Complete Main Subject in Group Photo while Only Removing Edge Interference Characters, Very Typical of Object Removal Tasks with Extremely High 'Seamless' Requirements.",
           "format": "json",
           "file": "editing-workflows/object-removal/1.json"
         },
         {
           "idx": 2,
-          "title": "Oprah Winfrey 城市街拍，去除人行道旁电线杆与空中电线",
-          "brief": "单人人像街拍里竖线杆与横飞线对构图切割感强，去除后需同时修补天空与路面透视，是街景类杂物去除代表用例。",
+          "title": "Oprah Winfrey Urban Street Photography, Removing Sidewalk Poles and Power Lines",
+          "brief": "In single-person street photography, vertical poles and horizontal lines create strong compositional cut effects; after removal, both sky and ground perspective need to be repaired, representing typical street scene clutter removal cases.",
           "format": "json",
           "file": "editing-workflows/object-removal/2.json"
         }
@@ -542,15 +542,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Taylor Swift 头像级肖像，金长发变为深冷棕中卷",
-          "brief": "发色与卷度改变但保留面型与妆面结构，是发型 / 发色路径下最典型、也最易踩「换脸」边线的任务，需强约束灯向与发际线自然度。",
+          "title": "Taylor Swift Avatar-level Portrait, Golden Long Hair Transformed to Deep Cool Brown Curls",
+          "brief": "Changes in Hair Color and Curliness while Retaining Face Shape and Makeup Structure, This is the Most Typical and Easiest Task to Cross the 'Face Swap' Boundary in Hair Style / Color Path, Requiring Strong Constraints on Lighting Direction and Hairline Naturalness.",
           "format": "json",
           "file": "editing-workflows/portrait-local-edit/1.json"
         },
         {
           "idx": 2,
-          "title": "Elon Musk 胸像，增加整齐短络腮胡与上唇髭，其余不变",
-          "brief": "须型为局部毛发增量编辑，在棚拍或发布会风格肖像中常用来测试「更成熟 / 更亲和」两档反馈，对下颌阴影重算与肤色一致性要求高。",
+          "title": "Elon Musk Bust, adding Neat Short Goatee and Mustache, rest unchanged",
+          "brief": "The mustache style is for partial hair incremental editing, often used in studio or press conference style portraits to test two feedback categories: 'more mature / more approachable', with high demands for recalculating jaw shadow and skin tone consistency.",
           "format": "json",
           "file": "editing-workflows/portrait-local-edit/2.json"
         }
@@ -565,15 +565,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "AirPods Pro 3 白底主图质感与标签锐化",
-          "brief": "小体积白色塑料与开盖结构在电商主图中易显灰雾与微痕，精修强调克制的光泽提升与合模线净化，是 3C 白底图最典型精修路径。",
+          "title": "AirPods Pro 3 White Background Image Texture and Label Sharpening",
+          "brief": "Small white plastic objects with open-lid structures tend to show gray haze and micro-scratches in e-commerce main images. The retouching focuses on enhancing subtle gloss and purifying seam lines, representing the most typical retouching path for 3C white-background images.",
           "format": "json",
           "file": "editing-workflows/product-retouching/1.json"
         },
         {
           "idx": 2,
-          "title": "香水瓶柱面与金属盖高光精修、液体通透感强化",
-          "brief": "玻璃、液体与金属三材质交界处易出现脏点、焦散断裂与标贴气泡感，是美妆香氛精修中「质感升级不整容」的标杆场景。",
+          "title": "Refined highlights on the fragrance bottle's cylindrical surface and metal cap, enhancing liquid transparency.",
+          "brief": "The junctions of glass, liquid, and metal materials often show smudges, caustics, and label bubble effects, representing a benchmark scene for 'texture upgrade without cosmetic surgery' in beauty and fragrance retouching.",
           "format": "json",
           "file": "editing-workflows/product-retouching/2.json"
         }
@@ -588,15 +588,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "国产二次元 RPG《星枢编年史》立项板",
-          "brief": "近未来东方城邦 + 星轨神话，三人队伍 + 机甲与符箓混搭，KV 占上半 60%，左下三角色卡，右下地图与系统关键词，底部工作室落款。",
+          "title": "Domestic 2D RPG 'Star Pivot Chronicle' Project Board",
+          "brief": "Near-future Eastern city-state + Star Trail Myth, three-person team + mecha and talisman mix, with KV occupying the upper 60%, bottom left three character cards, bottom right map and system keywords, and studio signature at the bottom.",
           "format": "json",
           "file": "grids-and-collages/anime-pitch-board/1.json"
         },
         {
           "idx": 2,
-          "title": "都市玄幻网络动画《江声异闻录》IP 板",
-          "brief": "当代重庆雾都与水下古城交织，主角为青年律师兼兼职「契印人」，主视觉为江面裂隙与楼群剪影，偏悬疑治愈调。",
+          "title": "Urban Fantasy Web Animation 'Jiangsheng Yiwenzhuan' IP Board",
+          "brief": "Contemporary Chongqing's foggy city intertwined with an underwater ancient city, featuring a young lawyer also working as a 'contractor' with a primary visual of river cracks and building silhouettes, leaning towards a suspenseful healing tone.",
           "format": "json",
           "file": "grids-and-collages/anime-pitch-board/2.json"
         }
@@ -611,15 +611,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Apple Vision Pro 第二代·空间计算四象限",
-          "brief": "以「沉浸办公 / 协奏创作 / 空间健身 / 远程在场」为四格主题，统一苹果式留白与无衬线标题，每格 4:5 内区，可拆成四张社交投放。",
+          "title": "Apple Vision Pro 2nd Generation · Spatial Computing Quadrants",
+          "brief": "Themed around 'Immersive Work / Collaborative Creation / Space Fitness / Remote Presence' in four panels, featuring Apple's style of whitespace and sans-serif headings, with each panel in a 4:5 ratio, suitable for splitting into four social media posts.",
           "format": "json",
           "file": "grids-and-collages/banner-grid-2x2/1.json"
         },
         {
           "idx": 2,
-          "title": "星巴克中国「四季特饮」2×2",
-          "brief": "春樱 / 夏冷萃 / 秋枫拿铁 / 冬焙茶四主题，同品牌色带与字系，每格一饮品 hero + 场景光，适朋友圈与小程序金刚位。",
+          "title": "Starbucks China 'Seasonal Special Drinks' 2×2.",
+          "brief": "Four themes: Spring Cherry / Summer Cold Brew / Autumn Maple Latte / Winter Roasted Tea, featuring the same brand color bands and fonts, with each section showcasing a beverage hero + ambient lighting, suitable for social media and mini-programs.",
           "format": "json",
           "file": "grids-and-collages/banner-grid-2x2/2.json"
         }
@@ -634,15 +634,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Taylor Swift 时代巡演风「7 日穿搭」灵感板",
-          "brief": "以 Taylor Swift 公开造型语言为灵感的 7 套全身搭配，同一女性模特造型延续（风格化、非肖像写实），上四下三错位，适合音乐粉向穿搭账号。",
+          "title": "Taylor Swift Era Tour '7 Day Outfits' Inspiration Board",
+          "brief": "Seven full-body outfits inspired by Taylor Swift's public style language, featuring the same female model with stylized, non-portrait realism, arranged with four outfits on top and three on the bottom, suitable for fashion accounts targeting music fans.",
           "format": "json",
           "file": "grids-and-collages/lookbook-grid/1.json"
         },
         {
           "idx": 2,
-          "title": "9 宫格 self-care 日常（治愈插画）",
-          "brief": "3×3 无叙事清单，每格一图标+短句，柔粉与鼠尾草绿，可打印为打卡表或发社群。",
+          "title": "9-Panel Self-Care Routine (Healing Illustration)",
+          "brief": "3×3 Non-Narrative Checklist, Each Square with an Icon + Short Phrase, Soft Pink and Sage Green, Printable as a Check-in Sheet or for Sharing in Communities.",
           "format": "json",
           "file": "grids-and-collages/lookbook-grid/2.json"
         }
@@ -657,15 +657,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "同一中国女性五画风肖像（摄影 / 日漫 / 水墨 / 油画 / 赛博）",
-          "brief": "28 岁齐肩黑发、米白衬衫为跨格识别锚；中央大格为影棚柔光摄影，四角依次为日式 anime、大写意水墨、伦勃朗式古典油画、赛博霓虹氛围，一图展示同一面容的媒介实验墙。",
+          "title": "Five Portrait Styles of the Same Chinese Woman (Photography / Japanese Manga / Ink / Oil Painting / Cyberpunk)",
+          "brief": "28-Year-Old Shoulder-Length Black Hair, Beige Shirt as Cross-Grid Recognition Anchor; Central Square is Soft Light Photography, Corners Feature Japanese Anime, Bold Ink Wash, Rembrandt-Style Classical Oil Painting, Cyber Neon Atmosphere, A Single Image Showcasing a Media Experiment Wall of the Same Face.",
           "format": "json",
           "file": "grids-and-collages/mixed-style-multi-panel/1.json"
         },
         {
           "idx": 2,
-          "title": "LeBron James 运动姿态「五连画风」墙贴",
-          "brief": "以篮球运动员突破上篮为统一点，中央大格为赛场摄影，四格为 anime、美漫厚涂、像素游戏、3D 卡通，适合体育自媒体头图。人物为可辨识公众人物，采用风格化、非商业代言写实。",
+          "title": "LeBron James Sports Pose 'Five in a Row' Wall Sticker",
+          "brief": "Using a basketball player driving to the hoop as the unified subject, the central large tile is arena photography, four surrounding tiles are anime, American comic thick-paint style, pixel game, and 3D cartoon. Suitable for sports social media header images. Figure is a recognizable public person, stylized and non-commercial realistic portrayal.",
           "format": "json",
           "file": "grids-and-collages/mixed-style-multi-panel/2.json"
         }
@@ -680,15 +680,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "iPhone 16 Pro 全方位解析（便当格 8 模块）",
-          "brief": "Apple Newsroom 式浅灰白底、一大块 hero 放钛原色机背与「为何值得换」三条，其余为规格对比、算力/影像芯片、价格段、系统亮点与选购提示。适合数码自媒体一图流。",
+          "title": "Comprehensive Analysis of iPhone 16 Pro ( Bento Grid 8 Modules)",
+          "brief": "Apple Newsroom-Style Light Gray and White Background, Large Hero Featuring Natural Titanium Back with 'Why It’s Worth Upgrading' Three Points, Remaining for Specification Comparisons, Computational/Imaging Chips, Price Range, System Highlights, and Purchasing Tips. Suitable for Digital Media One-Image Flow.",
           "format": "json",
           "file": "infographics/bento-grid-infographic/1.json"
         },
         {
           "idx": 2,
-          "title": "Tesla Model Y 改款全面盘点",
-          "brief": "面向「考虑换电车」的读者，bento 强调续航区间、电耗、空间、FSD/辅助驾驶、充电与价格带，不采用过分促销语气。",
+          "title": "Tesla Model Y Refresh Comprehensive Overview",
+          "brief": "Targeting readers considering electric vehicle swaps, Bento emphasizes range, energy consumption, space, FSD/assisted driving, charging, and price bands, avoiding overly promotional language.",
           "format": "json",
           "file": "infographics/bento-grid-infographic/2.json"
         }
@@ -703,15 +703,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "iPhone 16 Pro 与三星 Galaxy S25 Ultra 谁更适合你",
-          "brief": "从屏幕形态、长焦、录像、系统生态、维修与起售价看差异，避免攻击品牌，用「你更看重什么」作结。3:4 竖版、浅暖底、中央 VS 符号可细线可几何。",
+          "title": "Which is Right for You: iPhone 16 Pro or Samsung Galaxy S25 Ultra",
+          "brief": "Analyze differences in screen form, telephoto, video recording, system ecosystem, maintenance, and starting price, avoiding brand attacks, concluding with 'What do you value more?'. 3:4 portrait format, light warm background, central VS symbols can be fine lines or geometric.",
           "format": "json",
           "file": "infographics/comparison-infographic/1.json"
         },
         {
           "idx": 2,
-          "title": "燕麦奶 Oat 饮 vs 全脂牛奶",
-          "brief": "从蛋白品质、脂溶性营养、价格、升糖/饱腹、环境足迹到咖啡拉花适配，帮助乳糖不耐与健身人群自判。不宣称医疗功效，语气科普。",
+          "title": "Oat Milk Beverage vs Whole Milk",
+          "brief": "Assessing protein quality, fat-soluble nutrients, price, glycemic index/satiety, environmental footprint, and coffee latte art compatibility, to assist lactose-intolerant individuals and fitness enthusiasts in self-assessment. No medical efficacy claimed, tone is educational.",
           "format": "json",
           "file": "infographics/comparison-infographic/2.json"
         }
@@ -726,15 +726,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "如何在家自制希腊酸奶",
-          "brief": "厨房手账感、竖版 3:4，适合公众号或小红书。步骤 6 条，材料与时长写清，无电脑字体要求。",
+          "title": "How to Make Greek Yogurt at Home",
+          "brief": "Kitchen Notebook Feel, Portrait 3:4, Suitable for Public Accounts or Xiaohongshu. 6 Steps, Clearly Written Ingredients and Duration, No Computer Font Requirements.",
           "format": "txt",
           "file": "infographics/hand-drawn-infographic/1.txt"
         },
         {
           "idx": 2,
-          "title": "番茄红素的益处与摄入要点（马卡龙手账风）",
-          "brief": "偏科普+生活方式，用柔和粉绿配色与 macaron 风，分条写抗氧化语境、脂溶性、食物来源、吸收小贴士，不宣称医疗功效。",
+          "title": "Benefits and intake tips for lycopene (macaron planner style).",
+          "brief": "Focused on popular science + lifestyle, using soft pink-green colors and macaron style, itemizing antioxidants, fat-soluble nutrients, food sources, and absorption tips without claiming medical effects.",
           "format": "txt",
           "file": "infographics/hand-drawn-infographic/2.txt"
         }
@@ -749,15 +749,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Northwind AI 的 2025 年度关键指标一页",
-          "brief": "B2B SaaS 风暗色底，主标 ARR 与 NRR，附 pipeline、客诉、上云与员工人数，像投资人会前「一页快览」而非正式年报。所有金额与百分比为**示意**。",
+          "title": "Northwind AI 2025 Annual Key Metrics One-Pager",
+          "brief": "B2B SaaS Dark Background, Main Labels ARR and NRR, includes Pipeline, Customer Complaints, Cloud Migration, and Employee Count, resembling a 'One-Page Overview' for Investors rather than a Formal Annual Report. All amounts and percentages are **indicative**.",
           "format": "json",
           "file": "infographics/kpi-dashboard-infographic/1.json"
         },
         {
           "idx": 2,
-          "title": "个人 2025 读书报告 Wrapped",
-          "brief": "类 Spotify Wrapped 的年度阅读快照：总本数、总页、体裁分布、最长一本、最忙阅读月、豆瓣均分(示意)与想读队列缩减，暖亮底+紫粉强调。适合导出为一张图**发到微信朋友圈**或收藏。",
+          "title": "Personal 2025 Reading Report Wrapped",
+          "brief": "Annual Reading Snapshot like Spotify Wrapped: Total Books, Total Pages, Genre Distribution, Longest Book, Busiest Reading Month, Douban Average Score (Indication) and Reduced Want-to-Read Queue, Warm Bright Background + Pink-Purple Emphasis. Suitable for Export as One Image to **Share on WeChat Moments** or Save.",
           "format": "json",
           "file": "infographics/kpi-dashboard-infographic/2.json"
         }
@@ -772,15 +772,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "气候变化对全球主粮作物的因果链",
-          "brief": "以半剖面地球 / 农区为视觉锚，辐射状编号块解释升温、CO₂ 施肥效应、水分胁迫、病虫害与价格传导，适合环境经济学课堂或机构科普长图主视觉。",
+          "title": "Causal Chain of Climate Change on Global Staple Crops",
+          "brief": "Using half-sectioned Earth / agricultural area as a visual anchor, radiating numbered blocks explaining warming, CO₂ fertilization effects, water stress, pest damage, and price transmission, suitable for environmental economics lectures or institutional science communication long visuals.",
           "format": "json",
           "file": "infographics/legend-heavy-infographic/1.json"
         },
         {
           "idx": 2,
-          "title": "大语言模型关键演化 2017–2026 时间系谱",
-          "brief": "以水平时间链 / 系谱树为心，从 Transformer 到 GPT、开源 Llama 系列、多模态与推理 o1 类，强调「架构、数据、算力、对齐」四标签，适合技术博客头图或课程讲义。",
+          "title": "Key Evolution of Large Language Models Timeline 2017–2026",
+          "brief": "Centering on a horizontal timeline/tree, from Transformer to GPT, open-source Llama series, multi-modal, and reasoning o1 categories, emphasizing the four labels of 'Architecture, Data, Computing Power, Alignment,' suitable for technical blog headers or course materials.",
           "format": "json",
           "file": "infographics/legend-heavy-infographic/2.json"
         }
@@ -795,15 +795,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "新手家庭健身 7 步入门",
-          "brief": "无器械起步，从热身、呼吸、分部位训练到拉伸与恢复，配色薄荷+珊瑚+深棕，适合运动小白跟练海报。",
+          "title": "7-step beginner guide to home fitness.",
+          "brief": "No-equipment workout start, transitioning from warm-up, breathing, segment training to stretching and recovery, in mint, coral, and deep brown colors, suitable for novice athlete follow-along posters.",
           "format": "json",
           "file": "infographics/step-by-step-infographic/1.json"
         },
         {
           "idx": 2,
-          "title": "10 分钟戚风备料+烘烤(家用 6 寸模)",
-          "brief": "把称量、分蛋、打蛋白、翻拌、入炉、倒扣冷却浓缩为 6 步，时间轴是「你动手的前 10 分钟 + 烤时另计」。暖橙+鼠尾草色，烤箱与打蛋器小插画。",
+          "title": "10 Minutes Chiffon Preparation + Baking (Home 6-Inch Mold)",
+          "brief": "Condense weighing, separating eggs, whipping egg whites, folding, baking, and cooling into 6 steps; the timeline is 'the first 10 minutes you set up + baking time is counted separately.' Use warm orange and sage colors, with small illustrations of an oven and a whisk.",
           "format": "json",
           "file": "infographics/step-by-step-infographic/2.json"
         }
@@ -818,15 +818,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "上海武康路·梧桐区周末探吃地图",
-          "brief": "法租界街区尺度小、店密、网感强，适合作为「单街区美食地图片」的标杆：地标与轻食/咖啡/烘焙组合，配梧桐叶与武康大楼剪影，主标题突出 City Walk + 好味。",
+          "title": "Wukang Road, Shanghai - Weekend Food Exploration Map",
+          "brief": "The small-scale, dense shopping areas of the French Concession, ideal as a benchmark for 'Single Block Food Scene': landmarks combined with light meals/coffee/bakery, paired with sycamore leaves and Wu Kang Building silhouettes, highlighting the main title 'City Walk + Good Taste.'",
           "format": "json",
           "file": "maps/food-map/1.json"
         },
         {
           "idx": 2,
-          "title": "东京新宿·深夜拉面与居酒屋巷地图",
-          "brief": "高密度夜间餐饮街区：以歌舞伎町与东口拉面横丁为精神原型，用「蒸汽、红灯笼、丼、拉面、烧鸟」为符号，配日式复古羊皮纸，适合日料自媒体与赴日攻略封面。",
+          "title": "Shinjuku, Tokyo - Late Night Ramen and Izakaya Alley Map",
+          "brief": "High-density nighttime dining district: inspired by Kabukicho and East Exit Ramen Alley, using symbols like 'steam, red lanterns, bowls, ramen, yakitori', paired with Japanese vintage parchment, suitable for Japanese cuisine media and travel guide covers.",
           "format": "json",
           "file": "maps/food-map/2.json"
         }
@@ -841,15 +841,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "北京中轴线·从永定门到钟鼓楼",
-          "brief": "以世界遗产中轴线为叙事主轴，突出故宫、天坛、钟鼓楼与景山万春亭的南北对位，国潮与 watercolor 可并存；是「单城文化推广主视觉」的典型命题。",
+          "title": "Beijing Central Axis: From Yongding Gate to Bell and Drum Towers",
+          "brief": "Using the central axis of world heritage as the narrative axis, highlighting the north-south alignment of the Forbidden City, Temple of Heaven, Bell and Drum Towers, and Jingshan Park's Wanchun Pavilion, showcasing the coexistence of national trends and watercolor; this is a typical theme for 'Single City Cultural Promotion Main Visual.'",
           "format": "json",
           "file": "maps/illustrated-city-map/1.json"
         },
         {
           "idx": 2,
-          "title": "成都·巷陌与烟火市井文化地图",
-          "brief": "突出「无轴线城市」的向心平原与河网：以锦江为柔曲线骨架，宽窄巷子、望平街、青羊宫与东郊记忆为节点，配熊猫与茶碗符号，是西南休闲城市主视觉的常用结构。",
+          "title": "Chengdu: Alleys and Everyday Cultural Map",
+          "brief": "Highlighting the Centripetal Plain and River Network of the 'Axis-Free City': Using Jinjiang as a Soft Curved Framework, with Kuanzhai Alley, Wangping Street, Qingyang Palace, and Dongjiao Memory as Nodes, Featuring Panda and Teacup Symbols, a Common Structure in the Main Visual of Southwest Leisure Cities.",
           "format": "json",
           "file": "maps/illustrated-city-map/2.json"
         }
@@ -864,15 +864,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Starbucks 星巴克中国门店网络（扁平招商风）",
-          "brief": "全国性连锁咖啡品牌典型「沿海与省会密度高、西部阶梯递减」的分布节奏；用reserve 与普通门店分层级，色板为品牌绿，适合官网「关于我们」与加盟说明页头图（示意为主）。",
+          "title": "Starbucks China Store Network (Flat Recruitment Style)",
+          "brief": "Typical distribution pattern of a national coffee chain brand with 'high density along the coast and provincial capitals, gradually decreasing in the west'; using reserves and regular stores for hierarchical structuring, with a color palette of brand green, suitable for the official 'about us' page and franchise instruction header images (with a focus on representation).",
           "format": "json",
           "file": "maps/store-distribution-map/1.json"
         },
         {
           "idx": 2,
-          "title": "海底捞全球服务网络与旗舰店锚点",
-          "brief": "中餐连锁出海的代表：以中国大陆为核心、向东亚东南亚欧美扩散；适合「全球火锅」主叙事，强调密度差与旗舰店城市，红底与火锅图形符号为品牌资产。",
+          "title": "Haidilao Global Service Network and Flagship Store Anchors",
+          "brief": "Representative of Chinese restaurant chains going global: centered in mainland China, expanding to East Asia, Southeast Asia, and Europe/America; suitable for a 'Global Hot Pot' narrative, emphasizing density differences and flagship store cities, using a red background and hot pot graphic symbols as brand assets.",
           "format": "json",
           "file": "maps/store-distribution-map/2.json"
         }
@@ -887,15 +887,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "京都三日古典慢走（机铁 + 步行为主）",
-          "brief": "关西最经典的「少城市跳点、多点寺庙庭园与町家」的三天节奏；东西向动线不回头，适合作为旅行路线图模板的代表：手绘羊皮纸、站点小插画、侧栏条列。",
+          "title": "Three-Day Classical Slow Walking in Kyoto (Mainly Train + Walking)",
+          "brief": "The classic three-day itinerary of Kansai featuring 'fewer city stops, more temples, gardens, and townhouses'; a non-repeating east-west flow, suitable as a travel route map template: hand-drawn parchment, site illustrations, sidebar listings.",
           "format": "json",
           "file": "maps/travel-route-map/1.json"
         },
         {
           "idx": 2,
-          "title": "美国 66 号公路七日西部段（公路片气质）",
-          "brief": "长距离自驾线模板代表：以芝加哥方向感为起点、洛杉矶方向感为收束的「中段西部七日」选段，强调路边小镇、汽旅文化与国家公园节点，用沙漠色与路牌符号强化识别。",
+          "title": "Seven-Day Western Segment of Route 66 in the USA (Road Movie Aesthetic)",
+          "brief": "Long-distance driving route template representative: a segment 'Midwest Seven Days' starting from the directional sense of Chicago and concluding in Los Angeles, emphasizing roadside small towns, motel culture, and national park landmarks, using desert colors and street sign symbols for enhanced recognition.",
           "format": "json",
           "file": "maps/travel-route-map/2.json"
         }
@@ -910,15 +910,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "沈霜辞「墨羽」古风女剑客人设表",
-          "brief": "中国古典武侠女侠方向：高马尾、墨蓝与月白、软剑＋发簪，三视比例严锁，是古装战斗向 gacha 与动画常用的规格。",
+          "title": "Shen Shuangci 'Ink Feather' Ancient Style Female Swordswoman Character Sheet",
+          "brief": "Direction for Chinese classical martial arts female heroes: high ponytail, dark blue and moon white, soft sword + hairpin, strictly proportioned in three views, commonly used specifications for period combat gacha and animation.",
           "format": "json",
           "file": "portraits-and-characters/character-sheet/1.json"
         },
         {
           "idx": 2,
-          "title": "阿瑟·克朗「雾都侦探」蒸汽朋克设定表",
-          "brief": "欧美维多利亚架空都市侦探：高帽、长风衣、机械左臂、齿轮放大镜，表情的「推理兴奋」与「被背叛」为剧情常用。",
+          "title": "Arthur Conan Doyle 'Fog City Detective' Steampunk Setting Sheet",
+          "brief": "Victorian Fantasy Urban Detective: High Hat, Long Coat, Mechanical Left Arm, Gear Magnifying Glass. Expressions of 'Excitement in Reasoning' and 'Feeling Betrayed' are commonly used in the plot.",
           "format": "json",
           "file": "portraits-and-characters/character-sheet/2.json"
         }
@@ -933,15 +933,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Elon Musk 工业总部窗光半身影",
-          "brief": "科技制造跨界创始人：极简办公室＋大窗冷侧光、暗部有细节，右上预留标题安全区，整体偏冷、略颗粒。",
+          "title": "Elon Musk Half-Body Silhouette with Window Light at Industrial Headquarters",
+          "brief": "Tech Manufacturing Cross-Industry Founder: Minimalist Office + Large Window Cool Side Light, Details in Shadows, Title Safety Zone in Upper Right, Overall Cool Tone with Slight Grain.",
           "format": "json",
           "file": "portraits-and-characters/founder-portrait/1.json"
         },
         {
           "idx": 2,
-          "title": "Sam Altman 暖侧光＋书墙文献风",
-          "brief": "偏「思想型创始人」的柔和侧光＋书墙虚景，适合人物专访长文、播客主视觉，预留左侧竖排大引语位。",
+          "title": "Sam Altman Warm Side Light + Bookshelf Literature Style",
+          "brief": "Soft sidelighting and a blurred book wall for 'thoughtful founders,' suitable for long-form interviews and podcast visuals, with a reserved space on the left for a large vertical quote.",
           "format": "json",
           "file": "portraits-and-characters/founder-portrait/2.json"
         }
@@ -956,15 +956,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Tim Cook 风格企业领袖胸像",
-          "brief": "科技制造业 CEO 气质：深海军蓝、银发、无夸张戏剧光，背板浅灰＋极弱环境交代，是「可上官网 About」级别的克制用法。",
+          "title": "Tim Cook Style Corporate Leader Bust",
+          "brief": "Tech Manufacturing CEO Aura: Deep Navy Blue, Silver Hair, No Dramatic Lighting, Light Gray Background + Very Subtle Environmental Details, Suitable for 'About' Page on Official Website.",
           "format": "json",
           "file": "portraits-and-characters/professional-portrait/1.json"
         },
         {
           "idx": 2,
-          "title": "Sundar Pichai 风格全球科技业务负责人画像",
-          "brief": "偏技术决策者的暖灰背景、略休闲但仍有西装结构，适合作业软件品类或全球化团队首页。",
+          "title": "Sundar Pichai Style Global Technology Business Leader Portrait",
+          "brief": "Warm gray background for technical decision-makers, slightly casual yet maintaining a suit structure, suitable for operational software category or global team homepage.",
           "format": "json",
           "file": "portraits-and-characters/professional-portrait/2.json"
         }
@@ -979,15 +979,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "樱下川「初日」个人资料卡（9:16）",
-          "brief": "春日系日系 anime 少女、和洋折衷服装，debut 信息与标签完整，是「新 V 首曝」高复用规格。",
+          "title": "Sakura Chuan 'First Day' Character Profile Card (9:16)",
+          "brief": "Spring-themed Japanese anime girl in hybrid traditional and modern clothing, with complete debut information and tags, representing the 'New V First Reveal' high-reusability specification.",
           "format": "json",
           "file": "portraits-and-characters/virtual-host/1.json"
         },
         {
           "idx": 2,
-          "title": "铁犀「深潜」直播预告横封（16:9）",
-          "brief": "男性机甲风味 VTuber、复古管线与做旧金属，大表情与主标题，适合 B 站与微信视频号直播预约封面双裁。",
+          "title": "Iron Rhino 'Deep Dive' Live Stream Preview Banner (16:9)",
+          "brief": "Male mech-inspired VTuber with retro piping and aged metal, with large expressions and main title, suitable for dual cropping for Bilibili and WeChat video account live stream reservation covers.",
           "format": "json",
           "file": "portraits-and-characters/virtual-host/2.json"
         }
@@ -1002,22 +1002,22 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Notion 式「一块白板装下团队记忆」（浅色 Hero）",
-          "brief": "典型 SaaS 首屏：左列标题副标题双 CTA，右列为「产品多区块界面」的 3D 轻透视，米灰渐变＋低噪，适合 B 站落地与官网首屏 A/B 测试素底。",
+          "title": "Notion-style 'A Whiteboard Capturing Team Memories' (Light Hero)",
+          "brief": "Typical SaaS homepage: left column with title, subtitle, and dual CTAs; right column features a 3D light perspective of 'multi-block product interface' with beige gradient and low noise, suitable for Bilibili landing pages and A/B testing for official homepage.",
           "format": "json",
           "file": "poster-and-campaigns/banner-hero/1.json"
         },
         {
           "idx": 2,
-          "title": "Linear 式暗色工程效率 Hero（全宽横条）",
-          "brief": "深色底＋高对比紫青点缀，主视觉为「问题列表＋Sprint 燃尽」抽象界面，强研发气质，适合作业流 / DevOps 品类落地页。",
+          "title": "Linear Style Dark Engineering Efficiency Hero (Full Width Horizontal Bar)",
+          "brief": "Dark Background + High Contrast Purple-Cyan Accents, Main Visual is an Abstract Interface of 'Problem List + Sprint Burnout', Strong R&D Vibe, Suitable for Workflow / DevOps Category Landing Page.",
           "format": "json",
           "file": "poster-and-campaigns/banner-hero/2.json"
         },
         {
           "idx": 3,
-          "title": "Easy Dataset 开源 AI 数据集工作台 Hero（明色横版）",
-          "brief": "为 ConardLi/easy-dataset 生成的 16:9 明色调 README / 官网首屏宣传图。左侧突出 Easy Dataset、Fine-tuning / RAG / Eval 三个场景，右侧用 SaaS 工作台表达从多格式文档到高质量数据集的流程。",
+          "title": "Easy Dataset Open Source AI Dataset Workbench Hero (Bright Horizontal Layout)",
+          "brief": "16:9 bright-tone README / homepage promotional image generated for ConardLi/easy-dataset. The left side highlights Easy Dataset, Fine-tuning / RAG / Eval three scenarios, while the right side uses a SaaS workspace to express the process from multi-format documents to high-quality datasets.",
           "format": "json",
           "file": "poster-and-campaigns/banner-hero/3.json"
         }
@@ -1032,15 +1032,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Apple 精神传承 × Tim Cook（「再来一步」主视觉）",
-          "brief": "在合法表述下用品牌气质词与人物肖像＋产品同框，主句短、色板与官网银灰系一致，适合发布会后社交首图或线下灯箱。",
+          "title": "Apple Legacy × Tim Cook (Main Visual of 'One More Step')",
+          "brief": "In a legal context, use brand essence words with character portraits and products together; main sentences should be short, and the color palette consistent with the official website's silver-gray, suitable for social media banners after press conferences or offline lightboxes.",
           "format": "json",
           "file": "poster-and-campaigns/brand-poster/1.json"
         },
         {
           "idx": 2,
-          "title": "Nike 体育精神 × LeBron James（城市晨跑主视觉）",
-          "brief": "用篮球巨星人像与一句中文主张完成「人的意志」主叙事，黑红经典对比，主视觉偏竖版、适合开屏与电梯海报。",
+          "title": "Nike Sports Spirit × LeBron James (Urban Morning Run Main Visual)",
+          "brief": "Use the portrait of a basketball superstar and a Chinese slogan to convey the main narrative of 'the will of the people', with classic black and red contrast; the main visual is portrait format, suitable for splash screens and elevator posters.",
           "format": "json",
           "file": "poster-and-campaigns/brand-poster/2.json"
         }
@@ -1055,15 +1055,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "可口可乐夏季畅爽季（全渠道 KV 系统图）",
-          "brief": "红与白为主、单 anchor 大玻璃瓶装视觉，claim 在中文夏促语境，下方 1:1、9:16、16:9 三格线框小稿展示同一系統延展。",
+          "title": "Coca-Cola Summer Refreshing Season (Omnichannel KV System Graphic)",
+          "brief": "Predominantly Red and White, Single Anchor Large Glass Bottle Visual, Claim in Chinese Summer Promotion Context, Below 1:1, 9:16, 16:9 Three-Grid Line Frame Mockups Showcase Same System Extension.",
           "format": "json",
           "file": "poster-and-campaigns/campaign-kv/1.json"
         },
         {
           "idx": 2,
-          "title": "Apple Vision 空间计算续章（产品季 KV）",
-          "brief": "以「二代头戴」为 anchor 的发布季主视觉，冷银＋空灵的界面雾气，主 claim 双行，下方三比例展陈同一材质语言。",
+          "title": "Apple Vision Spatial Computing Sequel (Product Season KV)",
+          "brief": "Main visual for the release season anchored by 'Second Generation Headphones,' featuring cool silver and ethereal interface fog, with a dual-line main claim and three proportional displays of the same material language below.",
           "format": "json",
           "file": "poster-and-campaigns/campaign-kv/2.json"
         }
@@ -1078,15 +1078,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "《时代》式年度人物特辑 × Sam Altman",
-          "brief": "高对比、红框记忆点、封面中央肖像与底部导读栏，主标题为中文专题名，期号用英文，整体像新闻周刊旗舰期。",
+          "title": "TIME Style Annual Person Feature × Sam Altman",
+          "brief": "High contrast, red frame memory points, central cover portrait with bottom reading bar, main title in Chinese topic name, issue number in English, resembling a flagship issue of a newsweekly.",
           "format": "json",
           "file": "poster-and-campaigns/editorial-cover/1.json"
         },
         {
           "idx": 2,
-          "title": "《Vogue 服饰与美容》中国版概念封面 × Taylor Swift",
-          "brief": "时尚大刊的柔光时装肖像，主标题竖排，一侧竖栏英文刊名，整体暖金与米白，适合高奢与音乐跨界专题。",
+          "title": "Vogue China Concept Cover × Taylor Swift",
+          "brief": "Soft light fashion portraits for high-end magazines, with vertically arranged main title, a vertical column for the English magazine name, in warm gold and off-white, suitable for high luxury and music crossover specials.",
           "format": "json",
           "file": "poster-and-campaigns/editorial-cover/2.json"
         }
@@ -1101,15 +1101,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Tesla Cybertruck 工程结构爆炸主视觉",
-          "brief": "电动皮卡品类里最具辨识度的不锈钢蒙皮与线控架构，适合作为「硬核工程 + 发布会主视觉」的代表；九层垂直展开、左右双语式技术标注，突出结构进化与品牌叙事。",
+          "title": "Tesla Cybertruck Engineering Structure Explosion Main Visual",
+          "brief": "The most recognizable stainless steel skin and wire-controlled architecture in the electric pickup category, suitable for representing 'hardcore engineering + main visual for press events'; nine layers of vertical unfolding, with bilingual technical annotations, highlighting structural evolution and brand narrative.",
           "format": "json",
           "file": "product-visuals/exploded-view-poster/1.json"
         },
         {
           "idx": 2,
-          "title": "Apple Vision Pro 2 头显光机与算力模块爆炸主视觉",
-          "brief": "空间计算品类的代表形态；Pancake 光路、眼动与透视传感器、M 系列系留算力等分层，适合作为「近眼显示 + 工程拆解」主视觉，与深紫极光背景形成科技仪式感。",
+          "title": "Apple Vision Pro 2 Headset Optical Module and Computational Module Explosion Main Visual",
+          "brief": "Representative Form of Spatial Computing Category; Pancake Light Path, Eye Movements, Perspective Sensors, M Series Tethered Computing layered, Suitable as 'Near-Eye Display + Engineering Breakdown' Main Visual, Creating a Tech Ceremony Aesthetic with Deep Purple Aurora Background.",
           "format": "json",
           "file": "product-visuals/exploded-view-poster/2.json"
         }
@@ -1124,15 +1124,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "便携意式机与露营木桌（户外咖啡季）",
-          "brief": "户外生活电器典型用法：晨间湖边营地、手冲级仪式感但设备为电动便携机；无具体名人入画，以器具与光营造「可上小红书封面」的克制杂志感。",
+          "title": "Portable espresso machine with a camping wooden table (outdoor coffee season).",
+          "brief": "Typical Use of Outdoor Electric Appliances: Morning Lakeside Camping, with a hand-drip ritual feel but using an electric portable machine; no specific celebrities depicted, creating a 'magazine feel' suitable for Xiaohongshu covers through tools and lighting.",
           "format": "json",
           "file": "product-visuals/lifestyle-product-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "Apple Watch Ultra 2 与晨跑（LeBron James 运动背影）",
-          "brief": "运动穿戴典型「跑道 + 腕部特写可联想」的构图：以 LeBron James 晨跑中的背影与抬腕看表动作为主叙事，表盘朝读者，品牌可读，无正脸，符合运动社交传播习惯。",
+          "title": "Apple Watch Ultra 2 with Morning Run (LeBron James in Motion)",
+          "brief": "A typical composition of 'Track + Wrist Close-up Association' in sports wear: featuring LeBron James's silhouette during a morning run and the wrist-raising gesture to check the watch as the main narrative, watch face towards the reader, brand visible, no frontal view, aligning with sports social communication habits.",
           "format": "json",
           "file": "product-visuals/lifestyle-product-scene/2.json"
         }
@@ -1147,15 +1147,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "iPhone 16 Pro 首发套装式包装展示",
-          "brief": "数码旗舰常见「黑底白字 + 撕膜体验」的礼盒叙事；本案例以深空黑硬盒、开盖泡棉位与主机、线缆、说明卡同屏呈现，适合电商首屏与开箱活动主视觉。",
+          "title": "iPhone 16 Pro Launch Package Display",
+          "brief": "Narrative for a digital flagship's common 'black background white text + unboxing experience' gift box; this case presents a deep space black hard box, showing foam inserts, main unit, cables, and instruction card on one screen, suitable for e-commerce first screens and unboxing event visuals.",
           "format": "json",
           "file": "product-visuals/packaging-showcase/1.json"
         },
         {
           "idx": 2,
-          "title": "星巴克中国「冬悦」节日礼盒",
-          "brief": "食品零售节日档典型「中国红 + 咖啡绿 + 烫金」组合；本案例为双杯装咖啡豆 + 马克杯 + 星礼卡，适合门店橱窗与礼赠电商页。",
+          "title": "Starbucks China 'Winter Joy' holiday gift box.",
+          "brief": "Typical festive combination for food retail: 'China Red + Coffee Green + Hot Stamping'; this case features double cup coffee beans + mug + star gift card, suitable for store windows and gifting e-commerce pages.",
           "format": "json",
           "file": "product-visuals/packaging-showcase/2.json"
         }
@@ -1170,15 +1170,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "海蓝之谜（La Mer）经典面霜单页主视觉",
-          "brief": "高端护肤面霜品类里最具符号性的瓷瓶、薄荷绿与烫银字，配合丝绒与暗角暖光，呈现「可上杂志跨页」的 luxury still life，强调质地叙事而非白底平铺。",
+          "title": "La Mer Classic Cream Single Page Main Visual",
+          "brief": "In the high-end skincare cream category, the most iconic porcelain bottle, mint green, and hot silver lettering combine with velvet and warm dim lighting to create a luxury still life 'fit for magazine spreads', emphasizing texture narrative over flat white backgrounds.",
           "format": "json",
           "file": "product-visuals/premium-studio-product/1.json"
         },
         {
           "idx": 2,
-          "title": "Rolex 星期日历型 40 暗调金表影棚主视觉",
-          "brief": "奢侈品腕表在暗调高反差下的金壳、总统链与表盘细节，是「影棚 + 无 lifestyle」的教科书级用例；适合官网 hero、平面投放与经销商灯箱。",
+          "title": "Rolex Day-Date 40 Dark Tone Gold Watch Studio Main Visual",
+          "brief": "Luxury watches captured in dark, high-contrast settings showcasing gold cases, presidential chains, and dial details serve as a textbook case for 'studio + no lifestyle'; suitable for website hero images, print advertising, and dealership lightboxes.",
           "format": "json",
           "file": "product-visuals/premium-studio-product/2.json"
         }
@@ -1193,15 +1193,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "AirPods Pro 3 单品白底主图（数码耳机典型）",
-          "brief": "TWS 降噪耳机类目里最常见的上架主图需求：充电盒与耳机本体的材质、合模线、闪电口与耳塞细节需清晰可辨，白底无道具，适合作为 Apple 系配件店与平台首图规范参考。",
+          "title": "AirPods Pro 3 Product Image on White Background (Typical Digital Headphones)",
+          "brief": "The most common primary image requirements for TWS Noise-Canceling Headphones: Clear materials, molding lines, charging ports, and earbud details of the case and earbuds, with a plain white background and no props, suitable as a reference for Apple accessory stores and platform primary image standards.",
           "format": "json",
           "file": "product-visuals/white-background-product/1.json"
         },
         {
           "idx": 2,
-          "title": "Dyson Supersonic Nural 吹风机白底主图（小家电典型）",
-          "brief": "高端小家电常需「科技灰 + 金属环 + 进风口细节」在同一张白底里交代清楚；本案例强调主机 + 磁吸风嘴组合，适合品牌旗舰店与京东家电首图。",
+          "title": "Dyson Supersonic Nural Hair Dryer Main Image on White Background (Typical Small Appliance)",
+          "brief": "High-end small appliances often require a clear depiction of 'tech gray + metal ring + air intake details' on a single white background; this case emphasizes the host + magnetic air nozzle combination, suitable for brand flagship stores and JD electrical appliances first images.",
           "format": "json",
           "file": "product-visuals/white-background-product/2.json"
         }
@@ -1216,15 +1216,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "赛博朋克上海 2099·外滩雨夜",
-          "brief": "东方都会 × 高密霓虹的科幻母题；前景行人剪影、中景悬浮车道与江面航迹、远景陆家嘴超巨构与全息广告，色板为品红+电青+雨雾灰，是概念场景模板在「近未来东亚都市」向的代表题。",
+          "title": "Cyberpunk Shanghai 2099 · Rainy Night at the Bund",
+          "brief": "Eastern Metropolis × High-Density Neon Sci-Fi Theme; foreground pedestrian silhouettes, mid-ground suspended road and river traces, background towering Lujiazui structures and holographic ads, color palette of magenta + electric cyan + rainy gray, representing conceptual scene templates in 'Near-Future East Asian Urban' themes.",
           "format": "json",
           "file": "scenes-and-illustrations/concept-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "火星黎明·穹顶外骨骼工人面向太阳",
-          "brief": "太空拓荒史诗向：近景渺小火星服剪影、中景矿车轨迹与制氧站管线、穹顶外高压橙雾与远地平线上刚升起的苍白太阳，是「非地球尺度」与「第一缕工业黎明」的命题。",
+          "title": "Mars Dawn - Dome Exoskeleton Worker Facing the Sun",
+          "brief": "Epic of Space Pioneering: Close-up silhouettes of small Mars suits, mid-range trajectories of mining vehicles and oxygen station pipelines, high-pressure orange fog outside the dome with the pale sun just rising on the distant horizon, addressing 'non-Earth scale' and 'the first rays of industrial dawn.'",
           "format": "json",
           "file": "scenes-and-illustrations/concept-scene/2.json"
         }
@@ -1239,15 +1239,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "京都春日·町屋咖啡馆与 Taylor Swift 背影",
-          "brief": "以日本町屋木格窗、新绿与和纸灯光为底，美国知名艺人在靠窗高凳上看街景的柔和背影，猫或街景不抢戏；是「春樱季 × 旅拍情绪」的治愈系代表配置。",
+          "title": "Spring Day in Kyoto: Townhouse Café and a Back View of Taylor Swift",
+          "brief": "Featuring Japanese machiya wooden lattice windows, fresh greens, and washi paper lighting as the base, a well-known American artist gently overlooks the street scene from a high stool by the window, with cats or street views not stealing attention; this is a representative configuration of 'Spring Cherry Blossom Season × Travel Photography Mood.'",
           "format": "json",
           "file": "scenes-and-illustrations/healing-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "北海道初雪·木造小屋与橘猫",
-          "brief": "以雪、暖灯与围炉意象构成「初雪天安心感」；无人物、仅动物，适合作为节气海报与夜间推文配图。",
+          "title": "Hokkaido's First Snow: Wooden Cabin and Orange Cat",
+          "brief": "Composed of snow, warm lights, and the imagery of gathering around a stove to create a 'sense of comfort on the first snow day'; featuring no people, only animals, suitable for seasonal posters and nighttime social media posts.",
           "format": "json",
           "file": "scenes-and-illustrations/healing-scene/2.json"
         }
@@ -1262,15 +1262,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "雨夜东京·便利店氖光在积水里走散",
-          "brief": "都市孤独感与安全感并置：小主体为远角便利店门廊的窄条暖光，大面积冷雨灰留白，配一句中文旁白，适合作为深夜推文尾图与锁屏情绪壁纸。",
+          "title": "Rainy Night Tokyo · Convenience Store Neon Lights Scattered in Puddles",
+          "brief": "Juxtaposing urban loneliness and safety: a small subject of warm light from the distant convenience store porch, large areas of cold rainy grey whitespace, accompanied by a Chinese caption, suitable as a late-night post's ending image and lock screen emotional wallpaper.",
           "format": "json",
           "file": "scenes-and-illustrations/minimalist-mood-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "一个人的清晨咖啡·雾白与杯沿一线金",
-          "brief": "与雨夜对仗的「晨间独处」：偏左上的一只白杯与上升直线蒸汽，大面雾米白与一线暖金，适合清晨推送与产品无关的普适情绪品牌。",
+          "title": "A Person's Morning Coffee - Misty White with a Line of Gold on the Rim",
+          "brief": "Contrasting 'Morning Solitude' with a rainy night: a white cup on the upper left with ascending straight steam, large areas in misty white and a line of warm gold, suitable for morning pushes and universally emotional brands unrelated to products.",
           "format": "json",
           "file": "scenes-and-illustrations/minimalist-mood-scene/2.json"
         }
@@ -1285,15 +1285,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "中秋夜·会飞的小狐狸与第一缕月华",
-          "brief": "中国传统节日 + 夜空中童话飞行物：小狐狸乘月饼形云舸掠过屋顶与河灯，画面保留一句可亲子朗读的旁白，暖橙、薄靛、米白为板。",
+          "title": "Mid-Autumn Night: The Flying Little Fox and the First Ray of Moonlight",
+          "brief": "Chinese Traditional Festival + Fairy-Tale Flying Objects in the Night Sky: A little fox riding a mooncake-shaped cloud ship over rooftops and river lanterns, featuring a line of narration suitable for parent-child reading, with warm orange, light indigo, and off-white as the color palette.",
           "format": "json",
           "file": "scenes-and-illustrations/picture-book-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "兔子先生的下午茶与迟到的怀表",
-          "brief": "经典童话感但不直接复制名著：高礼帽、三层层架点心与会冒气的茶壶，以「时间迟到一点点也没关系」的温柔教训为内核，适读年龄 3–6。",
+          "title": "Mr. Rabbit's afternoon tea and the late pocket watch.",
+          "brief": "Classic Fairy Tale Feel Yet Not a Direct Copy of a Classic Work: Top Hat, Three-Tier Dessert Stand with Steaming Teapot, Core Message of 'It's Okay to Be a Bit Late', Suitable for Ages 3-6.",
           "format": "json",
           "file": "scenes-and-illustrations/picture-book-scene/2.json"
         }
@@ -1308,15 +1308,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "如何看懂一份大模型评测报告（公开课单页）",
-          "brief": "面向产品与技术读者的「测评 literacy」一页通：从榜单到指标拆解，用温馨插画＋分块信息，适合培训开场或公众号长图首屏。是该模板在「技术科普 × 高信息密度」方向的代表用例。",
+          "title": "How to Understand a Large Model Evaluation Report (Public Course One-Pager)",
+          "brief": "A one-page guide to 'Review Literacy' for product and technology readers: from rankings to metrics breakdown, using warm illustrations + segmented information, suitable for training openings or as the first screen of long graphics for public accounts. A representative case of this template in the 'Technical Popularization × High Information Density' direction.",
           "format": "json",
           "file": "slides-and-visual-docs/dense-explainer-slides/1.json"
         },
         {
           "idx": 2,
-          "title": "AI Agent 工作机制（分步与组件一页通）",
-          "brief": "用同一套版式把「感知—规划—行动—工具—记忆」串成可讲课的一页，适合企业内训与工程师向分享，突出流程而非口号。",
+          "title": "AI Agent Work Mechanism (Step-by-Step and Component Overview)",
+          "brief": "Use the same layout to string together 'Perception - Planning - Action - Tools - Memory' into a lecture-ready page, suitable for corporate training and engineer-focused discussions, emphasizing the process rather than slogans.",
           "format": "json",
           "file": "slides-and-visual-docs/dense-explainer-slides/2.json"
         }
@@ -1331,15 +1331,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "光合作用如何运作（初高中衔接）",
-          "brief": "经典理科示意：叶横剖＋六步从光到糖，温和学院配色，主图锚定、步骤编号清晰，是教科补页与公开课封面的高复用用例。",
+          "title": "How photosynthesis works (transition for middle to high school).",
+          "brief": "Classic Science Illustration: Leaf Cross-Section + Six Steps from Light to Sugar, Gentle Academic Color Palette, Main Image Anchoring, Clear Step Numbering, High Reusability Example for Educational Supplement Pages and Open Course Covers.",
           "format": "json",
           "file": "slides-and-visual-docs/educational-diagram-slide/1.json"
         },
         {
           "idx": 2,
-          "title": "Transformer 自注意力一图说清（大学 / 内训向）",
-          "brief": "用同一结构讲「QKV—softmax—加权和」的直觉，主图为序列与小矩阵示意，是工程师入职培训中视觉化大模型的标配一页。",
+          "title": "Transformer Self-Attention Illustrated Clearly (University / Internal Training)",
+          "brief": "Use the same structure to illustrate the intuition behind 'QKV - softmax - weighted sum', with the main visual as a sequence and small matrix diagram, a standard page for visualizing large models in engineer onboarding training.",
           "format": "json",
           "file": "slides-and-visual-docs/educational-diagram-slide/2.json"
         }
@@ -1354,15 +1354,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "关于促进人工智能产业高质量发展的若干措施（政策解读单页）",
-          "brief": "典型的产业促进类政策一页通：机构抬头、分块要点、数据高亮与底部溯源区齐全，主色政蓝，适合白皮书摘要图或内参封面拉页。",
+          "title": "Measures to Promote High-Quality Development of the AI Industry (Policy Interpretation One-Page)",
+          "brief": "Typical one-page summary for industry promotion policies: complete with agency header, segmented key points, highlighted data, and source area at the bottom; primary color political blue, suitable for white paper summary graphics or internal reference cover pages.",
           "format": "json",
           "file": "slides-and-visual-docs/policy-style-slide/1.json"
         },
         {
           "idx": 2,
-          "title": "某控股年度战略报告「封面拉页式」单页",
-          "brief": "用政策风的秩序感承载企业内部战略摘要：对高管汇报与内刊封面通用，主色政红增强「年初定调」感，突出里程碑数字。",
+          "title": "Annual Strategic Report 'Cover Pullout' Single Page",
+          "brief": "Use a formal order inspired by policies to carry internal corporate strategy summaries: suitable for executive reports and internal newsletters covers, with a dominant political red color enhancing the sense of 'setting the tone at the beginning of the year', highlighting milestone numbers.",
           "format": "json",
           "file": "slides-and-visual-docs/policy-style-slide/2.json"
         }
@@ -1377,15 +1377,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "苹果 2025 财年 Q4 业绩简报执行摘要",
-          "brief": "消费硬件与软服并重的典型单页：四格 KPI、营收趋势小图、一句核心判断，商业蓝主色，适合投研社群传播或内部战报头图。",
+          "title": "Apple FY 2025 Q4 Performance Brief Executive Summary",
+          "brief": "Typical single page balancing consumer hardware and software: Four KPI boxes, small revenue trend chart, one core judgment, commercial blue main color, suitable for investment research community communication or internal report headers.",
           "format": "json",
           "file": "slides-and-visual-docs/visual-report-page/1.json"
         },
         {
           "idx": 2,
-          "title": "Tesla 2025 全球交付与经营一页通",
-          "brief": "更偏汽车与能源业务的交付与平均售价结构叙事，黑银冷色强调制造感，适合产经报道配图或内部分享。",
+          "title": "Tesla 2025 Global Deliveries and Operations One-Pager",
+          "brief": "Narrative focusing on delivery and average price structure for automotive and energy businesses, using black and silver tones to emphasize a manufacturing feel, suitable for industrial economics reports or internal sharing.",
           "format": "json",
           "file": "slides-and-visual-docs/visual-report-page/2.json"
         }
@@ -1400,15 +1400,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "国产仙侠游《青麓行》首发 KV",
-          "brief": "三人一兽的东方玄幻构图，青绿主色与金色天光，标题区置顶，适合横竖裁切，强调主角剑意与门派的史诗感。",
+          "title": "Domestic Xianxia Game 'Qinglu Walk' Launch KV",
+          "brief": "An Eastern fantasy composition featuring three people and one beast, with a dominant teal color and golden light, title area placed on top, suitable for horizontal and vertical cropping, emphasizing the epic sense of the protagonist's sword intent and sect.",
           "format": "json",
           "file": "storyboards-and-sequences/anime-key-visual/1.json"
         },
         {
           "idx": 2,
-          "title": "蒸汽朋克少女单角色强氛围 KV",
-          "brief": "单主视觉+极强逆光与齿轮城市场景，赛博与维多利亚混搭，适合女性向新番或音游主宣。",
+          "title": "Steampunk Girl Single Character Strong Atmosphere KV",
+          "brief": "Single main visual with strong backlighting and gear city market scene, blending cyber and Victorian styles, suitable for female-oriented new anime or music game promotions.",
           "format": "json",
           "file": "storyboards-and-sequences/anime-key-visual/2.json"
         }
@@ -1423,15 +1423,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "《三体》核心人物关系图（9 人）",
-          "brief": "以叶文洁、汪淼、史强、罗辑、章北海、程心、维德、智子拟人、云天明为节点，用颜色与线型区分敌友、技术联盟与执剑关系，适合科普与「入坑」长图。",
+          "title": "Core Character Relationship Diagram of 'The Three-Body Problem' (9 Characters)",
+          "brief": "Using Ye Wenjie, Wang Miao, Shi Qiang, Luo Ji, Zhang Beihai, Cheng Xin, Wei De, Zhi Zi (personified), and Yun Tianming as nodes, with colors and line styles to distinguish enemies, technology alliances, and sword-bearing relationships, suitable for science communication and 'getting into it' long visuals.",
           "format": "json",
           "file": "storyboards-and-sequences/character-relationship-diagram/1.json"
         },
         {
           "idx": 2,
-          "title": "科技巨头「云端理事会」卡通组织架构图",
-          "brief": "以美国知名行业领袖为 Q 版头像节点，用汇报线、产品协作、公开竞争三种关系，做一张可对内分享的趣味组织图，非真实公司结构，仅供视觉创意。",
+          "title": "Cartoon Organizational Structure Diagram of Tech Giant 'Cloud Council'",
+          "brief": "Using well-known American industry leaders as Q-version avatar nodes, illustrating a fun organizational chart with reporting lines, product collaboration, and open competition relationships, not representing a real company structure, purely for visual creativity.",
           "format": "json",
           "file": "storyboards-and-sequences/character-relationship-diagram/2.json"
         }
@@ -1446,15 +1446,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "程序员与「合并不了」的周一",
-          "brief": "互联网打工人段子四格，主角是戴眼镜的年轻男程序员，从满怀信心到被现实打脸的反转节奏，对话短、可截屏发微信群。",
+          "title": "Programmer's Unmergeable Monday",
+          "brief": "Four-panel comic about internet workers, featuring a young male programmer with glasses, showing a transition from confidence to a reality check, with short dialogues suitable for screenshots to share in WeChat groups.",
           "format": "json",
           "file": "storyboards-and-sequences/four-panel-comic/1.json"
         },
         {
           "idx": 2,
-          "title": "周一早会上的 Tim Cook 梗四格",
-          "brief": "用会议室场景做职场讽刺，主角造型偏美式卡通，梗落在「PPT 很满、结论很虚」，适合内部通讯或社媒长图裁切。",
+          "title": "Four Panels of Tim Cook Memes at the Monday Morning Meeting",
+          "brief": "Create a workplace satire using a conference room scene, featuring a character styled in an American cartoon manner, with the punchline focusing on 'the PPT is overloaded, the conclusions are vague', suitable for internal communications or social media long image crops.",
           "format": "json",
           "file": "storyboards-and-sequences/four-panel-comic/2.json"
         }
@@ -1469,15 +1469,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "仙侠少年剑意初成（彩色跨页 8 格）",
-          "brief": "国产仙侠战斗页，主角为束发青衫少年，对手为雾中妖影，大格起势、大格收刀，适合「连载漫画」内页或 PV 分镜展示。",
+          "title": "The Sword Intent of a Young Hero in Xianxia Begins to Form (Colorful Spreading 8 Panels)",
+          "brief": "Domestic Xianxia Battle Page, Protagonist is a Young Man in a Blue Robe, Opponent is a Misty Demon Shadow, Large Action Frames, Suitable for 'Serialized Comic' Inner Pages or PV Storyboard Display.",
           "format": "json",
           "file": "storyboards-and-sequences/manga-spread-page/1.json"
         },
         {
           "idx": 2,
-          "title": "校园走廊误会-dialogue 6 格（黑白 + 网点）",
-          "brief": "青春校园向，主角为短发女生，与楼梯转角男生擦肩而过引发一连串误会，适合「少女漫画单页」式叙事，强调表情特写与空镜。",
+          "title": "Campus Corridor Misunderstanding - Dialogue in 6 Panels (Black and White + Halftone)",
+          "brief": "Youth Campus Theme, featuring a short-haired girl as the protagonist, who brushes past a boy at the staircase corner, triggering a series of misunderstandings, suitable for 'shoujo manga single-page' style narrative, emphasizing facial close-ups and blank shots.",
           "format": "json",
           "file": "storyboards-and-sequences/manga-spread-page/2.json"
         }
@@ -1492,15 +1492,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "番茄炒蛋 5 分钟家常版",
-          "brief": "5 步竖版食谱卡，食材区在右上，底部署成品，手绘水彩+米色纸感，色板与番茄/蛋一致。",
+          "title": "5-Minute Home Cooking of Tomato and Eggs.",
+          "brief": "5-Step Vertical Recipe Card, Ingredients Area at Top Right, Finished Product at Bottom, Hand-Drawn Watercolor + Beige Paper Texture, Color Palette Matches Tomato/Egg.",
           "format": "json",
           "file": "storyboards-and-sequences/recipe-process-flowchart/1.json"
         },
         {
           "idx": 2,
-          "title": "意式拿铁（家庭半自动）6 步流程",
-          "brief": "从磨豆到拉花简易心形的拿铁制作流程，偏扁平插画风，适合咖啡角菜单或教程海报。",
+          "title": "Italian Latte (Home Semi-Automatic) 6-Step Process",
+          "brief": "A simple latte-making process from grinding beans to creating a heart shape, in a flat illustration style, suitable for coffee corner menus or tutorial posters.",
           "format": "json",
           "file": "storyboards-and-sequences/recipe-process-flowchart/2.json"
         }
@@ -1515,15 +1515,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "电商核心数据模型（用户 · 地址 · 商品 · 订单 · 券）",
-          "brief": "覆盖 `users` 到 `orders`、`order_items`、`skus`，以及 `payments`、`coupons` 与多对多 `coupon_redemptions`。类型使用 PostgreSQL 习惯（`uuid`、`timestamptz`、`numeric(12,2)`），与典型 Prisma / SQLAlchemy 模型一致。",
+          "title": "Core e-commerce data model (User · Address · Product · Order · Coupon).",
+          "brief": "Covering `users` to `orders`, `order_items`, `skus`, as well as `payments`, `coupons`, and many-to-many `coupon_redemptions`. Types follow PostgreSQL conventions (`uuid`, `timestamptz`, `numeric(12,2)`), consistent with typical Prisma / SQLAlchemy models.",
           "format": "json",
           "file": "technical-diagrams/er-diagram/1.json"
         },
         {
           "idx": 2,
-          "title": "多作者博客平台（分类 · 标签 · 评论 · 点赞）",
-          "brief": "`posts` 多对多 `tags` 经 `post_tags`，`categories` 树形自关联；`comments` 支持二级回复 `parent_id`；`likes` 以 `(user_id, post_id)` 保证唯一。适合文档站与社区轻量 CMS。",
+          "title": "Multi-author Blog Platform (Categories · Tags · Comments · Likes)",
+          "brief": "`posts` many-to-many `tags` via `post_tags`, `categories` tree self-referencing; `comments` support secondary replies with `parent_id`; `likes` ensure uniqueness with `(user_id, post_id)`. Suitable for documentation sites and lightweight community CMS.",
           "format": "json",
           "file": "technical-diagrams/er-diagram/2.json"
         }
@@ -1538,15 +1538,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "用户注册（短信验证码 + 邮箱验证 + 风控分支）",
-          "brief": "从提交手机号与密码到发送短信、人机校验、device_id 行为评分分支，邮箱验证链接 24h 内有效；未通过风控进入人工复核队列（子流程块）。`exception_branch` 控制异常颜色边。",
+          "title": "User registration (SMS verification code + email verification + risk control branch).",
+          "brief": "From submitting phone number and password to sending text messages, human-machine verification, device_id behavior scoring branches, email verification link valid within 24 hours; those failing risk control enter the manual review queue (subprocess block). `exception_branch` controls the color edge for exceptions.",
           "format": "json",
           "file": "technical-diagrams/flowchart-decision/1.json"
         },
         {
           "idx": 2,
-          "title": "订单退款审核（原路退 / 部分退 / 财务驳回）",
-          "brief": "BPMN 泳道标清用户、商户 BFF、订单服务、支付适配、财务。含「已超售后期」「风控命中」「部分退款金额>剩余」等决策；启用泳道。",
+          "title": "Order Refund Review (Full Refund / Partial Refund / Financial Rejection)",
+          "brief": "BPMN Swimlane clarifying User, Merchant BFF, Order Service, Payment Adaptation, and Finance. Including decisions like 'Oversold After Period', 'Risk Control Hit', 'Partial Refund Amount > Remaining'; Activate Swimlane.",
           "format": "json",
           "file": "technical-diagrams/flowchart-decision/2.json"
         }
@@ -1561,15 +1561,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "前端工程师必备技能谱（TypeScript 生态为轴）",
-          "brief": "从语言/运行时到构建、可观测、端侧与体验指标，对齐全链路交付责任，适合「高级工程师」与「全栈化前端」自评时一张图说清能力边界。",
+          "title": "Essential Skill Set for Front-end Engineers (Centered on TypeScript Ecosystem)",
+          "brief": "From language/runtime to building, observability, edge computing, and experience metrics, aligning full-chain delivery responsibilities, suitable for a single image to clearly delineate capability boundaries for 'senior engineers' and 'full-stack front-end' self-assessment.",
           "format": "json",
           "file": "technical-diagrams/mind-map-tech/1.json"
         },
         {
           "idx": 2,
-          "title": "Kubernetes 知识全景（自集群到可观测的闭环）",
-          "brief": "以集群生命周期、工作负载、网络、安全、存储、交付与 SRE 观测六扇面展开，覆盖 CNI/Cilium、Gateway API、OPA 与 HPA/VPA/CA，是平台组新人「八周上手」的导航图。",
+          "title": "Kubernetes Knowledge Panorama (From Self-Cluster to Observable Closed Loop)",
+          "brief": "Expanding across six facets of cluster lifecycle, workload, networking, security, storage, delivery, and SRE observation, covering CNI/Cilium, Gateway API, OPA, and HPA/VPA/CA, serving as a navigation map for platform newcomers' 'eight-week onboarding.'",
           "format": "json",
           "file": "technical-diagrams/mind-map-tech/2.json"
         }
@@ -1584,15 +1584,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "AWS 多可用区生产 VPC（ALB + WAF、NAT、RDS、ElastiCache、ECS）",
-          "brief": "公网子网内 ALB+WAF、Private 子网内 ECS/任务与多 AZ 数据面，ElastiCache 与 RDS 的跨子网、NAT 出口与 IGW/CloudFront 入站路径一眼区分，是电商平台云上网络评审里最常见的定稿图。",
+          "title": "AWS Multi-AZ Production VPC (ALB + WAF, NAT, RDS, ElastiCache, ECS)",
+          "brief": "Public subnet including ALB+WAF, private subnet hosting ECS/tasks and multi-AZ data interfaces, highlighting the cross-subnet paths of ElastiCache and RDS, with NAT exits and IGW/CloudFront inbound paths clearly distinguished; this is the most common finalized diagram in cloud network reviews for e-commerce platforms.",
           "format": "json",
           "file": "technical-diagrams/network-topology/1.json"
         },
         {
           "idx": 2,
-          "title": "企业 SD-WAN：总部双机热备 + 分支 CPE 与 云专线融合",
-          "brief": "总部与两地分支经 MPLS+Internet 双上行（Active/Active）、hub 级防火墙、控制器纳管、以及一条至 VPC 的 VPN/Direct Connect 汇流，是零售或制造总部「一张网管门店」HLD 常见形态。",
+          "title": "Enterprise SD-WAN: Dual-machine hot backup at headquarters + branch CPE integrated with cloud dedicated lines.",
+          "brief": "Headquarters and two branch locations connected via MPLS + Internet dual uplinks (Active/Active), hub-level firewalls, controller management, and a VPN/Direct Connect to VPC, represent a common form of 'Single Network Managing Stores' HLD for retail or manufacturing headquarters.",
           "format": "json",
           "file": "technical-diagrams/network-topology/2.json"
         }
@@ -1607,15 +1607,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "OAuth 2.0 授权码 + PKCE（User / Web / Keycloak / Resource）",
-          "brief": "浏览器端机密公开场景下的标准四角色握手，从 `/authorize` 到 `code` 换 `access_token` 再带 `Bearer` 调业务 API，是内部 IdP 迁移说明里引用频率最高的一段时序。",
+          "title": "OAuth 2.0 Authorization Code + PKCE (User / Web / Keycloak / Resource)",
+          "brief": "Standard four-party handshake in a browser-side confidential disclosure scenario, from '/authorize' to code exchange for 'access_token' followed by 'Bearer' for API calls, is the most frequently cited timing in internal IdP migration documentation.",
           "format": "json",
           "file": "technical-diagrams/sequence-diagram/1.json"
         },
         {
           "idx": 2,
-          "title": "微信 Native 支付「统一下单—调起微信—支付结果」（用户 / 商户 / 微信）",
-          "brief": "用户在微信内 H5/小程序外跳 Native 的常规三线模型：商户统一下单拿 prepay_id，客户端 `chooseWXPay` 调起，异步 notify 与查询补偿闭环，适合贴进对接章节。",
+          "title": "WeChat Native Payment 'Unified Ordering - Invoke WeChat - Payment Result' (User / Merchant / WeChat)",
+          "brief": "A standard three-line model for users jumping from WeChat's H5/mini-program to Native: merchants place unified orders to get prepay_id, the client calls `chooseWXPay`, with asynchronous notifications and query compensation closing the loop, suitable for integration chapters.",
           "format": "json",
           "file": "technical-diagrams/sequence-diagram/2.json"
         }
@@ -1630,15 +1630,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "B2C 主单 OMS 状态机（从创建到终态含补偿）",
-          "brief": "含「配货中」与微信/对公等支付后履约分支、超时关单与整单退款终态，与 `order_status` 枚举、幂等重试在评审里一一对齐，是交易域最常用的「一张图对齐全仓」主单机。",
+          "title": "B2C Main Order OMS State Machine (from Creation to Final State including Compensation)",
+          "brief": "Includes 'In Distribution' and Payment Fulfillment Branch Post WeChat/Corporate Payments, Timeout Closed Orders and Full Refund End States, Aligning with `order_status` Enumeration, Idempotent Retries in Review, Is the Most Common 'One Image Aligning Full Warehouse' Main Machine in Transaction Domain.",
           "format": "json",
           "file": "technical-diagrams/state-machine/1.json"
         },
         {
           "idx": 2,
-          "title": "内容平台 `Article` 审核与上下架状态机",
-          "brief": "覆盖草稿、机审、人审、已发布、用户举报后的下架、以及软删与从下架恢复，满足「信安 + 产品」对 `visibility` 与 `review_job_id` 联动的说明需求。",
+          "title": "Content Platform `Article` Review and Listing Status Management",
+          "brief": "Covering drafts, machine reviews, human reviews, published items, takedowns after user reports, soft deletions, and reactivations from takedowns, fulfilling the explanatory needs for the linkage between `visibility` and `review_job_id` for 'Information Security + Product'.",
           "format": "json",
           "file": "technical-diagrams/state-machine/2.json"
         }
@@ -1653,15 +1653,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "多租户 AI 客服 SaaS 生产架构",
-          "brief": "React/Next.js 公网入口、Kong 网关、FastAPI 业务层、Postgres+Redis+Kafka+Qdrant 数据面，以及 OpenAI、Stripe、Twilio 等外部依赖分区清晰，是 ToB 智能客服产线最常被引用的一类「全栈+向量检索+计费等」总览图。",
+          "title": "Multi-tenant AI Customer Service SaaS Production Architecture",
+          "brief": "React/Next.js Public Entrance, Kong Gateway, FastAPI Business Layer, Postgres + Redis + Kafka + Qdrant Data Plane, and Clear Division of External Dependencies like OpenAI, Stripe, Twilio - a commonly referenced overview map in ToB Intelligent Customer Service involving 'Full Stack + Vector Retrieval + Billing'.",
           "format": "json",
           "file": "technical-diagrams/system-architecture/1.json"
         },
         {
           "idx": 2,
-          "title": "区域电商节秒杀下单链路（CDN + 微服务 + 主从 + MQ）",
-          "brief": "高并发读路径经 CDN 与 Nginx 进入订单域，库存与订单解耦、RabbitMQ 削峰、MySQL 主从与 Redis 热点库存，是业务侧和基础设施同学对齐时的标准「大促架构」一屏讲清版。",
+          "title": "Regional E-commerce Festival Flash Sale Ordering Process (CDN + Microservices + Master-Slave + MQ)",
+          "brief": "High concurrency reading paths enter the order domain through CDN and Nginx, decoupling inventory from orders, using RabbitMQ for peak shaving, MySQL master-slave, and Redis for hotspot inventory, serving as the standard 'Big Promotion Architecture' explained on one screen for alignment between business and infrastructure teams.",
           "format": "json",
           "file": "technical-diagrams/system-architecture/2.json"
         }
@@ -1676,15 +1676,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "东西互鉴当代工艺展（中英对照）",
-          "brief": "中文主标题最大，英文为气质副行，下附展期与场馆，主视觉在右下为抽象山水几何切割，朱砂红＋古纸色，美术馆投放通用。",
+          "title": "Contemporary Craft Exhibition of Mutual Learning Between East and West (Bilingual)",
+          "brief": "Chinese main title is the largest, English is a stylish subtitle, followed by exhibition dates and venue, with the main visual in the lower right as an abstract landscape geometric cut, vermilion red + ancient paper color, suitable for art museum displays.",
           "format": "json",
           "file": "typography-and-text-layout/bilingual-layout-visual/1.json"
         },
         {
           "idx": 2,
-          "title": "静冈 × 福鼎「一叶渡海」茶与器联展（中日对照）",
-          "brief": "`main_en` 排印日文书名「海を越える一葉」，`main_zh` 为中文并列名；`subtitle_en` 内为日文副行。和纸底＋靛与若草，主视觉为茶碗与单叶。",
+          "title": "Shizuoka × Fuding 'One Leaf Crosses the Sea' Tea and Utensils Exhibition (Chinese-Japanese Comparison)",
+          "brief": "`main_en` typeset Japanese book title 'A Leaf Crossing the Sea', `main_zh` is the Chinese parallel title; `subtitle_en` contains the Japanese sub-line. Washi paper background + indigo and young grass, main visual features a tea bowl and a single leaf.",
           "format": "json",
           "file": "typography-and-text-layout/bilingual-layout-visual/2.json"
         }
@@ -1699,15 +1699,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "春季城市马拉松公益劝募（日式高能量）",
-          "brief": "朱红＋米黄＋半色调网点，主标四字占幅超半，下缘英文与主办方小字，适合地铁灯箱与通栏下刊。",
+          "title": "Spring city marathon charity fundraiser (Japanese high energy).",
+          "brief": "Vermilion + cream + half-tone dots, with the main title taking up more than half the space, English at the bottom and small text for the organizers, suitable for subway lightboxes and full-column publications.",
           "format": "json",
           "file": "typography-and-text-layout/title-safe-poster/1.json"
         },
         {
           "idx": 2,
-          "title": "建筑事务所开年论坛（瑞士极简字即图）",
-          "brief": "纯黑字白底、仅一条线做节奏，全幅留白大于 60%，适合作业现场围挡与主屏待机。",
+          "title": "Architectural Firm New Year Forum (Swiss Minimalist Typography)",
+          "brief": "Pure Black Text on White Background, Only One Line for Rhythm, Full White Space Greater Than 60%, Suitable for Job Site Barriers and Main Screen Standby.",
           "format": "json",
           "file": "typography-and-text-layout/title-safe-poster/2.json"
         }
@@ -1722,22 +1722,22 @@
       "cases": [
         {
           "idx": 1,
-          "title": "微信双人聊天 — Elon Musk × Mark Zuckerberg \"八角笼约架\"对话",
-          "brief": "复刻 2023 年硅谷顶流梗——Elon 提出和 Zuck 在八角笼里 cage match，Zuck 回复 \"send location\"。这里把它搬到中文微信场景：Elon Musk 用中英混合发挑衅，Zuck 一本正经技术宅式接招，包含文字、语音条、Cybertruck 自拍、定位卡片、表情包等典型微信元素。是该模板\"名人朋友圈式互怼\"方向的代表案例。",
+          "title": "WeChat Two-Person Chat — Elon Musk × Mark Zuckerberg 'Octagon Cage Match' Dialogue",
+          "brief": "Recreate the 2023 Silicon Valley meme—Elon proposing a cage match with Zuck, and Zuck replying 'send location.' Here, it is adapted to a Chinese WeChat context: Elon Musk provocatively mixes Chinese and English, while Zuck responds seriously in a tech-savvy manner, featuring typical WeChat elements like text, voice notes, a Cybertruck selfie, location cards, and emoticons. This is a representative case of the 'celebrity friend's circle banter' template.",
           "format": "json",
           "file": "ui-mockups/chat-interface-scene/1.json"
         },
         {
           "idx": 2,
-          "title": "硅谷 CEO 微信群聊 — 「Tech CEO 互助会 (8)」深夜吐槽现场",
-          "brief": "把\"产品组日常\"升级成顶配名人群聊——Tim Cook、Sundar Pichai、Sam Altman、Jensen Huang、Mark Zuckerberg、Satya Nadella、Jeff Bezos 都在群里，本机视角是 Elon Musk。内容是周五深夜大家互相吐槽：GPU 不够用、Vision Pro 退货、Gemini 又延期、@所有人 提醒、撤回消息、发红包等典型微信交互。是该模板\"高梗职场群聊\"方向的代表案例。",
+          "title": "Silicon Valley CEO WeChat Group Chat — 'Tech CEO Mutual Aid (8)' Midnight Rant",
+          "brief": "Upgrade 'Product Team Daily' into a high-end celebrity group chat — featuring Tim Cook, Sundar Pichai, Sam Altman, Jensen Huang, Mark Zuckerberg, Satya Nadella, and Jeff Bezos, with the user's perspective being Elon Musk. Content includes late-night Friday banter: not enough GPUs, returning Vision Pro, Gemini delayed again, @everyone reminders, message withdrawals, sending red envelopes, etc. This serves as a representative case for the template 'Highbrow Workplace Group Chat'.",
           "format": "json",
           "file": "ui-mockups/chat-interface-scene/2.json"
         },
         {
           "idx": 3,
-          "title": "Claude Opus 4.7 AI 助手对话 — 帮 Elon Musk 整理\"硅谷 CEO 群\"周报",
-          "brief": "典型的 AI 助手桌面产品截图，用户视角是 Elon Musk，把案例 2 的群聊上下文丢给 Claude，让它帮整理成\"硅谷 drama 周报\"。包含用户提问、Claude 结构化回答、再次追问让 Claude 改写成 Twitter / X 推文。是该模板\"AI 产品演示 + 名人使用场景\"方向的代表案例。",
+          "title": "Claude Opus 4.7 AI Assistant Conversation — Helping Elon Musk Organize the 'Silicon Valley CEO Group' Weekly Report",
+          "brief": "Typical product screenshot of an AI assistant from the user's perspective, featuring Elon Musk, where he shares the group chat context from case 2 with Claude to help compile a 'Silicon Valley Drama Weekly.' Includes user questions, Claude's structured responses, and follow-up questions to rephrase into a Twitter/X post. A representative case for the 'AI Product Demo + Celebrity Usage Scenarios' template.",
           "format": "json",
           "file": "ui-mockups/chat-interface-scene/3.json"
         }
@@ -1752,15 +1752,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Elon Musk 直播带 Cybertruck（科技带货旗舰场景）",
-          "brief": "典型的\"科技公司创始人本人下场带货\"场景，主播是 Elon Musk，商品是 Tesla Cybertruck，整体氛围既像真实直播截图，又有发布会主视觉的高级感。是该模板最具代表性的旗舰用例。",
+          "title": "Elon Musk Live Streaming with Cybertruck (Tech Flagship Sales Scene)",
+          "brief": "Typical scene of a 'Tech Company Founder Personally Promoting Products,' featuring Elon Musk as the host and Tesla Cybertruck as the product, blending the feel of a real live-stream screenshot with the elegance of an event visual. A flagship example of this template.",
           "format": "json",
           "file": "ui-mockups/live-commerce-ui/1.json"
         },
         {
           "idx": 2,
-          "title": "Taylor Swift 直播开箱限定香水（明星个人 IP 带货）",
-          "brief": "明星个人 IP 跨界美妆带货的典型场景。商品紧扣明星人设、聊天与礼物文案围绕粉丝向语言展开，是该模板\"明星 + 美妆 / 文创\"方向的代表用例。",
+          "title": "Taylor Swift Live Unboxing Limited Edition Perfume (Celebrity Personal IP Merchandise)",
+          "brief": "Typical scenario for celebrity personal IP cross-border beauty sales. Products closely tied to the celebrity's persona, with chat and gift copy centered on fan-oriented language, representing the 'Celebrity + Beauty/Cultural Creativity' direction of this template.",
           "format": "json",
           "file": "ui-mockups/live-commerce-ui/2.json"
         }
@@ -1775,15 +1775,15 @@
       "cases": [
         {
           "idx": 1,
-          "title": "DERMA CALM 敏感肌精华 — 临床感落地页 hero（女性向护肤）",
-          "brief": "典型的\"敏感肌护肤品牌\"电商详情页主视觉，三栏结构 + 临床感配色 + 模特 + 产品 + 卖点徽章，是该模板最具代表性的女性向护肤用例。",
+          "title": "DERMA CALM Sensitive Skin Serum — Clinical Feel Landing Page Hero (Targeting Women's Skincare)",
+          "brief": "Typical main visual of an e-commerce detail page for a 'Sensitive Skin Skincare Brand,' featuring a three-column structure, clinical color scheme, models, products, and selling point badges, representing the template's most iconic female-centered skincare use case.",
           "format": "json",
           "file": "ui-mockups/product-card-overlay/1.json"
         },
         {
           "idx": 2,
-          "title": "NEX SKIN 男士护肤暗色科技款落地页（男性向数码感）",
-          "brief": "男士护肤品牌的暗色科技感 hero 主视觉，硬朗、专业、可信赖，底部带销量条。是该模板\"男性向 / 数码感\"方向的代表用例。",
+          "title": "NEX SKIN Men's Skincare Dark Tech Landing Page (Male-oriented Digital Feel)",
+          "brief": "Dark tech-inspired hero visual for a men's skincare brand, strong, professional, and trustworthy, with a sales bar at the bottom. This is a representative case of the template's 'masculine / tech-savvy' direction.",
           "format": "json",
           "file": "ui-mockups/product-card-overlay/2.json"
         }
@@ -1798,22 +1798,22 @@
       "cases": [
         {
           "idx": 1,
-          "title": "知识科普封面 — 「99% 的人都不知道的 Claude 用法」（高对比醒目风）",
-          "brief": "典型的\"知识科普 / 工具教程\"短视频封面，深色渐变 + 高亮黄标题 + 主体人物 + 三条要点，是该模板最具代表性的\"高点击率知识号\"用例。",
+          "title": "Knowledge popular science cover — 'The Claude usage 99% of people don't know' (high contrast eye-catching style).",
+          "brief": "Typical cover for a 'Knowledge Popularization/Tool Tutorial' short video, featuring a dark gradient, bright yellow title, main character, and three key points, representing the template's most iconic 'High-Click-Through Rate Knowledge Account' use case.",
           "format": "json",
           "file": "ui-mockups/short-video-cover-ui/1.json"
         },
         {
           "idx": 2,
-          "title": "可爱风 VTuber 直播预告封面 — 「樱粉杂谈直播」",
-          "brief": "典型的女性 VTuber 直播开播预告封面，粉色主调 + 卡通主播 + 多层文字丝带，是该模板\"VTuber / 主播预告\"方向的代表案例。",
+          "title": "Cute Style VTuber Live Stream Preview Cover — 'Cherry Pink Chat Live'",
+          "brief": "Typical cover for a female VTuber live stream launch announcement, featuring a pink color scheme, cartoon host, and multi-layered text ribbons, representing the 'VTuber/Streamer Announcement' template.",
           "format": "json",
           "file": "ui-mockups/short-video-cover-ui/2.json"
         },
         {
           "idx": 3,
-          "title": "开箱评测封面 — 「我把 Vision Pro 2 拆了」（强诱因）",
-          "brief": "典型的 YouTube 数码博主开箱评测视频封面，主体半身 + 神秘包装盒 + 强好奇感标题。是该模板\"开箱评测\"方向的代表案例。",
+          "title": "Unboxing Review Cover — 'I Took Apart the Vision Pro 2' (Strong Incentive)",
+          "brief": "Typical YouTube digital creator unboxing review video cover featuring a semi-body shot, mysterious packaging box, and a title that generates strong curiosity. A representative case for the 'Unboxing Review' template.",
           "format": "json",
           "file": "ui-mockups/short-video-cover-ui/3.json"
         }
@@ -1828,22 +1828,22 @@
       "cases": [
         {
           "idx": 1,
-          "title": "Elon Musk 在 X 上发火星殖民推文（Twitter / X 暗色模式）",
-          "brief": "典型的\"知名科技人物在 X 上发布一条带配图的高互动推文\"场景，深色模式 + 中文界面 + 多图九宫格，是该模板最具传播力的代表案例。",
+          "title": "Elon Musk Tweets on Mars Colonization on X (Twitter / X Dark Mode)",
+          "brief": "Typical scene of a 'Famous Tech Figure Posting a High-Engagement Image-Enhanced Tweet on X,' featuring a dark mode, Chinese interface, and a multi-image grid, representing the template’s most shareable case.",
           "format": "json",
           "file": "ui-mockups/social-interface-mockup/1.json"
         },
         {
           "idx": 2,
-          "title": "小红书风格上海 City Walk 笔记（浅色模式）",
-          "brief": "典型小红书图文笔记详情页，亲切、生活化、带 4 张可滑动配图。是该模板\"内容创作者 + 生活方式\"方向的代表案例。",
+          "title": "Little Red Book Style Shanghai City Walk Notes (Light Mode)",
+          "brief": "Typical Xiaohongshu note detail page, friendly and lifestyle-oriented, featuring 4 swipable images. A representative case for the 'Content Creator + Lifestyle' template.",
           "format": "json",
           "file": "ui-mockups/social-interface-mockup/2.json"
         },
         {
           "idx": 3,
-          "title": "Anthropic 官方账号在 X 上发布 Claude Opus 4.7（品牌官方公告）",
-          "brief": "科技品牌账号在 X 上发布产品更新公告的典型场景，浅色模式 + 高互动量级 + 单图发布主视觉，是该模板\"品牌官方账号\"方向的代表案例。",
+          "title": "Anthropic Official Account on X Releases Claude Opus 4.7 (Official Brand Announcement)",
+          "brief": "Typical Scene of Tech Brand Account Releasing Product Update Announcement on X, Light Mode + High Interaction Level + Single Image Main Visual, Represents 'Brand Official Account' Template.",
           "format": "json",
           "file": "ui-mockups/social-interface-mockup/3.json"
         }

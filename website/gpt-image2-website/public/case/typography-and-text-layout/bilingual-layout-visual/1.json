@@ -1,6 +1,6 @@
 {
-  "type": "中英对照文化海报",
-  "goal": "生成 3:4 竖版文化展览主视觉，可用于主海报、请柬、线上首图，双语不是简单机翻要语气体面",
+  "type": "Chinese-English Comparative Cultural Poster",
+  "goal": "Generate a 3:4 vertical main visual for a cultural exhibition, suitable for main posters, invitations, and online hero images, with bilingual text that feels natural, not just simple machine translation.",
   "languages": {
     "primary": "中文",
     "secondary": "英文"

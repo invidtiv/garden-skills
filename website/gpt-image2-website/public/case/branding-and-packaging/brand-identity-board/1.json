@@ -1,6 +1,6 @@
 {
-  "type": "品牌识别系统板",
-  "goal": "生成一张可作为 VI summary 的品牌板，3:4 竖版，四宫格分区清晰",
+  "type": "Brand Identity System Board",
+  "goal": "Generate a brand board for a VI summary, in 3:4 portrait orientation, with clearly divided quadrants.",
   "brand": {
     "name": "清篱",
     "tagline": "一味草木，半日清欢",

@@ -1,6 +1,6 @@
 {
-  "type": "媒体大片级创始人肖像",
-  "goal": "生成 4:5 竖版人物专访封面气质图，以 Sam Altman 公众可联想的外貌为线索：清瘦、短发、温和表情，着简约深色服装，不卡通化，用于文化与科技交叉刊物或深度报道头图",
+  "type": "Media Blockbuster-Level Founder Portrait",
+  "goal": "Generate a 4:5 vertical character interview cover image, referencing the public appearance of Sam Altman: slender, short hair, mild expression, dressed in simple dark clothing, suitable for cultural and technology interdisciplinary publications or in-depth report header images.",
   "subject": {
     "identity": "人工智能与创业投资领域美国企业家、公共讲者",
     "gender": "美国男性",

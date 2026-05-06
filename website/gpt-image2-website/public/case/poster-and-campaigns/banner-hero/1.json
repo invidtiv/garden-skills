@@ -1,6 +1,6 @@
 {
   "type": "Web hero banner",
-  "goal": "生成 16:9 横向整幅官网 hero，可直接配顶部导航，不含导航与页脚，仅中央横幅内容区",
+  "goal": "Generate a 16:9 horizontal full-width website hero, directly compatible with a top navigation, excluding navigation and footer, only the central banner content area.",
   "aspect_ratio": "16:9",
   "layout": {
     "left_column": {

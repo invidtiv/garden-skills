@@ -1,6 +1,6 @@
 {
-  "type": "方形 Graphical Abstract（ACS / Wiley 风格）",
-  "goal": "生成一张严格 1:1 方形的期刊 Graphical Abstract，四象限严格等大，工程化克制配色，内容关于硅碳复合负极循环稳定性",
+  "type": "Square Graphical Abstract (ACS/Wiley style).",
+  "goal": "Generate a strictly 1:1 square journal graphical abstract with evenly sized quadrants, engineered restrained colors, focusing on cycle stability of silicon-carbon composite anodes.",
   "canvas": {
     "aspect_ratio": "1:1",
     "background": "pure white #FFFFFF",

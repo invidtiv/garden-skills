@@ -1,6 +1,6 @@
 {
-  "type": "双列对比信息图",
-  "goal": "在膳食语境下讲清两种日常饮品的差异, 不制造焦虑",
+  "type": "Dual-Column Comparison Infographic",
+  "goal": "Clarify the differences between two common beverages in a dietary context without inducing anxiety.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "cream #FAF3E8",

@@ -1,6 +1,6 @@
 {
-  "type": "人像局部修改工作流",
-  "goal": "以 REFERENCE_0 为基础，为 Elon Musk 增加与本人年龄相符的深棕短髭，不下沉胖脸颊、不改动表情",
+  "type": "Portrait Partial Modification Workflow",
+  "goal": "Based on REFERENCE_0, add a deep brown short beard to Elon Musk that matches his age, without making his cheeks appear heavier or altering his expression.",
   "reference_0": {
     "assumed_input": "假定原图：Elon Musk 正脸对镜头半身像，面净无须，短发、轻微笑，黑色圆领衫，中灰拉绒背景，左右对称柔光、眼下有浅眼袋结构，两颊略红润"
   },

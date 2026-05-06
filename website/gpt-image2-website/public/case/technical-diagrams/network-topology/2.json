@@ -1,6 +1,6 @@
 {
-  "type": "工程感网络拓扑图",
-  "goal": "生成一张企业级 SD-WAN 逻辑拓扑位图，含 Internet、MPLS、各站点 CPE、中心汇聚防火墙与 orchestrator、以及上云专线的加密隧道（IPsec/BGP 标注），大框表示站点与安全域",
+  "type": "Engineering Style Network Topology Diagram",
+  "goal": "Generate an enterprise-grade SD-WAN logical topology diagram, including Internet, MPLS, CPE at various sites, central aggregation firewalls and orchestrators, and encrypted tunnels for cloud connections (labeled IPsec/BGP), with large frames indicating sites and security domains.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

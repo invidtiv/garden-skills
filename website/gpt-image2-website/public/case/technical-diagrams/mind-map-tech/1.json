@@ -1,6 +1,6 @@
 {
-  "type": "工程感技术思维导图（放射式 mind map）",
-  "goal": "生成一张暗色 grid 底纹的前端工程师技能脑图，中央强调 TypeScript/浏览器平台，主分支 6 条、分支色一致贯穿子节点，mono 等宽小卡",
+  "type": "Engineering Style Technical Mind Map (Radial Mind Map)",
+  "goal": "Create a mind map of frontend engineer skills with a dark grid background, emphasizing TypeScript/browser platform at the center, with six main branches, consistently colored for sub-nodes, using mono fixed-width small cards.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

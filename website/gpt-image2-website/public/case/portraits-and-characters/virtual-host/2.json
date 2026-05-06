@@ -1,6 +1,6 @@
 {
-  "type": "VTuber 直播预览缩略图",
-  "goal": "生成 16:9 强点击的直播缩略图，主标题在画面安全区内，小字不挤在 9:16 切图危险区，适配微信与横屏首帧",
+  "type": "VTuber Live Preview Thumbnail",
+  "goal": "Generate 16:9 High-Click Live Stream Thumbnail, with Main Title in Safe Area and Small Text Not Crowded into 9:16 Cut Danger Zone, Adaptable for WeChat and Horizontal First Frame",
   "aspect_ratio": "16:9",
   "character": {
     "name": "铁犀 深潜",

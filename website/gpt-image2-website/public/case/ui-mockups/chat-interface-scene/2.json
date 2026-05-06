@@ -1,6 +1,6 @@
 {
-  "type": "微信群聊样机",
-  "goal": "生成一张高仿真度的微信工作群聊天界面截图，群名 'Tech CEO 互助会 (8)'，群成员是真实硅谷 CEO，对话内容是深夜互相吐槽与工作梗",
+  "type": "WeChat Group Chat Mockup",
+  "goal": "Generate a high-fidelity screenshot of a WeChat work group chat interface, group name 'Tech CEO Mutual Aid Society (8)', with real Silicon Valley CEOs as members, discussing late-night complaints and work-related jokes.",
   "platform": {
     "name": "微信",
     "color_mode": "light",

@@ -1,6 +1,6 @@
 {
-  "type": "风格化自拍 / 人设转换",
-  "goal": "基于 REFERENCE_0 中的 Beyoncé，保留五官可识别与优雅气质，将整体转为 2D 动画电影常见的高完成度手绘感，单张、非 3D",
+  "type": "Stylized selfies / Character transformation",
+  "goal": "Based on Beyoncé in REFERENCE_0, retain recognizable facial features and elegant temperament, transforming the overall look to a high-quality hand-drawn style common in 2D animated films, single frame, non-3D.",
   "reference_0": {
     "assumed_input": "假定参考图：红毯或内场礼服半身照、长卷发、精致眼妆与修容，主光为摄影棚或闪光，背景虚化"
   },

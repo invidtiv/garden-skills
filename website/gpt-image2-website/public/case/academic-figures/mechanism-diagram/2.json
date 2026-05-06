@@ -1,6 +1,6 @@
 {
-  "type": "三段式因果链机制图",
-  "goal": "生成一张环境催化方向论文正文用机制示意图，按'初始体系 → 多阶段反应机制 → 最终产物'三段式因果链组织，学术克制、工程化配色",
+  "type": "Three-Part Causal Chain Mechanism Diagram",
+  "goal": "Generate a schematic diagram of the mechanisms for an environmental catalysis paper, structured as 'initial system → multi-stage reaction mechanisms → final products' following a three-part causal chain, with academic restraint and engineered color palette.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "pure white #FFFFFF",

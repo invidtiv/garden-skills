@@ -1,6 +1,6 @@
 {
-  "type": "局部对象替换工作流",
-  "goal": "以 REFERENCE_0 为基础，将画面中的 Tesla Cybertruck 车身从不锈钢原色改为磨砂黑涂装，展陈场地与人物（若有）保持不变",
+  "type": "Partial Object Replacement Workflow",
+  "goal": "Based on REFERENCE_0, change the Tesla Cybertruck's body color from stainless steel to matte black, keeping the exhibition space and any characters (if present) unchanged.",
   "reference_0": {
     "assumed_input": "假定原图：侧前 3/4 角停了特斯拉 Cybertruck，车身为原厂的拉丝不锈钢银色，有典型三角折面与轮拱黑色塑料包边，停在某开放空间展厅、地面有柔光反射，主光自左前上方，轮胎与轮辋、车窗玻璃与车侧反光镜均已入画"
   },

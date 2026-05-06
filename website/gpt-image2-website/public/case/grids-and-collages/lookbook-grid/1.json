@@ -1,6 +1,6 @@
 {
-  "type": "7 日穿搭 lookbook",
-  "goal": "生成一张可发小红书 / Instagram 的 7 日 lookbook 信息图，3:4",
+  "type": "7-Day Outfit Lookbook",
+  "goal": "Generate a 7-day lookbook infographic suitable for posting on Xiaohongshu/Instagram, in 3:4 format.",
   "title_block": {
     "main_title": "一周穿什么 · 时代巡演系灵感",
     "subtitle": "7 days · sequins & knits",

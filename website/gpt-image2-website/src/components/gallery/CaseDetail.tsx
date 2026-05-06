@@ -53,9 +53,9 @@ export function CaseDetail({ id, navigate }: Props) {
     return (
       <div className="cd-overlay cd-overlay-open">
         <div className="cd-card">
-          <p>找不到案例 {id}</p>
+          <p>Case not found {id}</p>
           <button className="btn btn-primary" onClick={() => navigate({ name: 'home' })}>
-            返回首页
+            Back to Home
           </button>
         </div>
       </div>
@@ -131,10 +131,10 @@ export function CaseDetail({ id, navigate }: Props) {
               </div>
             ) : (
               <div className="cd-media-empty">
-                <div className="serif cd-media-empty-title">提示词已就绪 · 图片待生成</div>
+                <div className="serif cd-media-empty-title">Prompt Ready · Image Pending</div>
                 <p className="cd-media-empty-hint">
-                  这条案例的最终 prompt 已经写好，但还没有跑过一次生成。
-                  你可以把右侧 prompt 直接喂给 GPT‑Image‑2 / DALL·E 3 / Midjourney 等任意工具。
+                  The final prompt for this case is ready, but hasn't been run through generation yet.
+                  You can feed the prompt on the right directly to GPT‑Image‑2 / DALL·E 3 / Midjourney or any other tool.
                 </p>
               </div>
             )}
@@ -143,7 +143,7 @@ export function CaseDetail({ id, navigate }: Props) {
           {/* Thumbnail row of related cases */}
           {related.length > 0 && (
             <div className="cd-related">
-              <div className="mono cd-related-label">同模板其他案例</div>
+              <div className="mono cd-related-label">Other Cases from Same Template</div>
               <div className="cd-related-grid">
                 {related.slice(0, 6).map((r) => (
                   <button
@@ -227,7 +227,7 @@ export function CaseDetail({ id, navigate }: Props) {
               className={`cd-tab ${tab === 'template' ? 'cd-tab-on' : ''}`}
               onClick={() => setTab('template')}
             >
-              <span className="mono cd-tab-num">02</span> 模板说明
+              <span className="mono cd-tab-num">02</span> Template Guide
             </button>
             <button
               role="tab"
@@ -235,7 +235,7 @@ export function CaseDetail({ id, navigate }: Props) {
               className={`cd-tab ${tab === 'usage' ? 'cd-tab-on' : ''}`}
               onClick={() => setTab('usage')}
             >
-              <span className="mono cd-tab-num">03</span> 如何用 Skill
+              <span className="mono cd-tab-num">03</span> How to Use Skill
             </button>
           </div>
 
@@ -244,14 +244,14 @@ export function CaseDetail({ id, navigate }: Props) {
               <div className="cd-prompt">
                 <div className="cd-prompt-head">
                   <span className="mono cd-prompt-label">
-                    {c.format === 'json' ? 'JSON · 渲染后的提示词' : 'TEXT · 自然语言提示词'}
+                    {c.format === 'json' ? 'JSON · Rendered Prompt' : 'TEXT · Natural Language Prompt'}
                   </span>
                   <div className="cd-prompt-actions">
                     <button className="cd-act" onClick={onCopy}>
                       <span aria-hidden="true">
                         {copied ? '✓' : '⧉'}
                       </span>
-                      {copied ? '已复制' : '复制'}
+                      {copied ? 'Copied' : 'Copy'}
                     </button>
                     <a
                       className="cd-act"
@@ -260,12 +260,12 @@ export function CaseDetail({ id, navigate }: Props) {
                       rel="noopener noreferrer"
                     >
                       <span aria-hidden="true">↗</span>
-                      源文件
+                      Source File
                     </a>
                   </div>
                 </div>
                 <pre className="cd-code mono">
-                  <code>{c.prompt_content || '— 加载失败 —'}</code>
+                  <code>{c.prompt_content || '— Load Failed —'}</code>
                 </pre>
               </div>
             )}
@@ -273,14 +273,14 @@ export function CaseDetail({ id, navigate }: Props) {
             {tab === 'template' && (
               <div className="cd-template">
                 <div className="cd-template-head">
-                  <span className="mono cd-template-label">SKILL 模板</span>
+                  <span className="mono cd-template-label">SKILL TEMPLATE</span>
                   <div className="cd-template-actions">
                     <a
                       className="cd-act cd-act-ghost"
                       href={`https://github.com/ConardLi/garden-skills/blob/main/skills/gpt-image-2/${tpl.md_path}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      title="在 garden-skills 仓库中查看模板原文"
+                      title="View template source in garden-skills repo"
                     >
                       <span aria-hidden="true">↗</span>
                       GitHub
@@ -289,7 +289,7 @@ export function CaseDetail({ id, navigate }: Props) {
                       className="cd-act"
                       onClick={() => navigate({ name: 'skills' })}
                     >
-                      完整 Skill 文档 →
+                      Full Skill Docs →
                     </button>
                   </div>
                 </div>
@@ -303,14 +303,14 @@ export function CaseDetail({ id, navigate }: Props) {
                   </div>
                 )}
                 <div className="cd-template-summary">
-                  <Bullet n="01" k="分类">
+                  <Bullet n="01" k="Category">
                     {c.category_label} · {cases.categories[c.category]?.label}
                   </Bullet>
-                  <Bullet n="02" k="模板路径">
+                  <Bullet n="02" k="Template Path">
                     <code className="mono">{tpl.md_path}</code>
                   </Bullet>
-                  <Bullet n="03" k="同模板案例">
-                    {tpl.cases_count} 条（含本条）
+                  <Bullet n="03" k="Cases Using This Template">
+                    {tpl.cases_count} cases (including this one)
                   </Bullet>
                 </div>
               </div>
@@ -319,12 +319,12 @@ export function CaseDetail({ id, navigate }: Props) {
             {tab === 'usage' && (
               <div className="cd-usage">
                 <div className="cd-usage-head">
-                  <span className="mono cd-usage-label">如何在 Skill 中复现这张图</span>
+                  <span className="mono cd-usage-label">How to Reproduce This Image in Skill</span>
                 </div>
                 <p className="cd-usage-intro">
-                  这是一段你可以直接对带 GPT‑Image‑2 Skill 的 Agent 说的话——
-                  它会自动从 <code className="mono">references/</code> 找到对应模板，
-                  把参数填进去，渲染最终 prompt 并出图。
+                  This is a message you can send directly to an Agent with the GPT‑Image‑2 Skill —
+                  it will automatically find the matching template from <code className="mono">references/</code>,
+                  fill in the parameters, render the final prompt, and generate the image.
                 </p>
                 <div className="cd-chat">
                   {usageDialog.map((m, i) => (
@@ -332,11 +332,11 @@ export function CaseDetail({ id, navigate }: Props) {
                   ))}
                 </div>
                 <div className="cd-usage-tips">
-                  <div className="mono cd-usage-tips-label">三种运行模式</div>
+                  <div className="mono cd-usage-tips-label">Three Run Modes</div>
                   <div className="cd-usage-tips-list">
-                    <ModeRow tag="A" name="Garden 本地" body="完整跑通：渲染 prompt → 调 generate.js → 出图落盘" />
-                    <ModeRow tag="B" name="Host-Native" body="渲染 prompt → 调用宿主自带的图像工具（ChatGPT / Cursor / Codex / Gemini）" />
-                    <ModeRow tag="C" name="Advisor 顾问" body="只渲染 prompt 给你；你拿去任意 GPT-Image-2 / DALL·E 3 / Midjourney 中执行" />
+                    <ModeRow tag="A" name="Garden Local" body="Full pipeline: render prompt → call generate.js → output to disk" />
+                    <ModeRow tag="B" name="Host-Native" body="Render prompt → call host native image tools (ChatGPT / Cursor / Codex / Gemini)" />
+                    <ModeRow tag="C" name="Advisor" body="Only render prompt for you; take it to any GPT-Image-2 / DALL·E 3 / Midjourney to execute" />
                   </div>
                 </div>
               </div>

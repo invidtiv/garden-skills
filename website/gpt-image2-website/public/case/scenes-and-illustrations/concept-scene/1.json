@@ -1,6 +1,6 @@
 {
-  "type": "电影感概念大场景",
-  "goal": "生成一张可作为 3A 级开放世界 or 赛博风剧集先导海报的上海未来夜景 key art，不含可识别商业 logo",
+  "type": "Cinematic concept large scene.",
+  "goal": "Generate key art for a 3A open-world or cyberpunk series pilot poster depicting a futuristic night scene in Shanghai, without recognizable commercial logos.",
   "world": {
     "theme": "赛博朋克长江口超级都市 2099",
     "tone": "酸雨、霓虹、超高密度与江面反光的湿润空气"

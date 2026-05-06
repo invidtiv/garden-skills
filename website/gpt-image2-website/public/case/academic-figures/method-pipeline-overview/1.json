@@ -1,6 +1,6 @@
 {
-  "type": "学术论文方法 Pipeline 总览图（method overview figure）",
-  "goal": "生成一张可直接放进顶会论文 method 章节首页的 pipeline 总览图，要求极简、白底、几何精确、出版物级可读",
+  "type": "Academic Paper Method Pipeline Overview Figure (Method Overview Figure)",
+  "goal": "Create a pipeline overview image for the methods section of a top conference paper, ultra-minimalist, white background, geometrically precise, publication-ready.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "pure white #FFFFFF or very light gray #FAFAFA",

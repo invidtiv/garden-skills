@@ -1,6 +1,6 @@
 {
-  "type": "作品角色关系图海报",
-  "goal": "生成一张高完成度科幻 IP 人物关系图，3:4 竖版，风格为现代信息海报 + 略偏硬科幻冷色",
+  "type": "Character relationship chart poster.",
+  "goal": "Generate a highly complete character relationship diagram for a sci-fi IP, in a 3:4 vertical format, styled as a modern information poster with a slightly hard sci-fi cool color tone.",
   "ip": {
     "name": "三体（系列核心人物关系）",
     "tone": "冷静理性 + 轻微末日肃杀感，头像为风格化非写实漫像"

@@ -1,6 +1,6 @@
 {
-  "type": "AI 助手对话界面样机",
-  "goal": "生成一张高仿真度的 Claude AI 助手对话界面截图，用户视角是 Elon Musk，正在让 Claude 帮他整理硅谷 CEO 群的周报，整体像真实 Claude 桌面应用截图",
+  "type": "AI Assistant Dialogue Interface Mockup",
+  "goal": "Generate a high-fidelity screenshot of the Claude AI assistant chat interface, with the user perspective being Elon Musk, who is asking Claude to help organize the weekly report for the Silicon Valley CEO group, resembling a real Claude desktop application screenshot.",
   "platform": {
     "name": "Claude",
     "color_mode": "light",

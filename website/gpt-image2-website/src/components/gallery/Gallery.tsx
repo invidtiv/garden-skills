@@ -40,7 +40,7 @@ export function Gallery({ navigate }: Props) {
     <section className="gal" id="gallery">
       <header className="gal-head">
         <div className="gal-head-left">
-          <div className="eyebrow">02 / GALLERY · 案例图集</div>
+          <div className="eyebrow">02 / GALLERY · CASE STUDIES</div>
           <h2 className="gal-title serif">
             <span>{cases.summary.cases}</span>
             <span className="serif-italic gal-title-em"> handcrafted </span>
@@ -48,8 +48,7 @@ export function Gallery({ navigate }: Props) {
             <span className="gal-title-acc">.</span>
           </h2>
           <p className="gal-sub">
-            每个案例都对应 Skill 中的一份模板，参数已经填好；可以直接交给图像
-            模型出图，也可以拿来比较模板的边界。
+            Each case maps to a template in the Skill with parameters already filled. Feed the prompt directly to the image model, or use it to explore the template's boundaries.
           </p>
         </div>
 
@@ -59,7 +58,7 @@ export function Gallery({ navigate }: Props) {
               {allReady.length}
               <span className="gal-progress-num-total">/{cases.summary.cases}</span>
             </div>
-            <div className="mono gal-progress-label">IMAGES READY · 已生成</div>
+            <div className="mono gal-progress-label">IMAGES READY · GENERATED</div>
             <div className="gal-progress-bar">
               <div
                 className="gal-progress-bar-fill"
@@ -81,7 +80,7 @@ export function Gallery({ navigate }: Props) {
               className={`gal-toggle-btn ${mode === 'masonry' ? 'gal-toggle-on' : ''}`}
               onClick={() => setMode('masonry')}
             >
-              <ToggleIcon kind="masonry" /> 瀑布流
+              <ToggleIcon kind="masonry" /> Masonry
             </button>
             <button
               role="tab"
@@ -89,7 +88,7 @@ export function Gallery({ navigate }: Props) {
               className={`gal-toggle-btn ${mode === 'category' ? 'gal-toggle-on' : ''}`}
               onClick={() => setMode('category')}
             >
-              <ToggleIcon kind="category" /> 分类查看
+              <ToggleIcon kind="category" /> Categories
             </button>
           </div>
 
@@ -99,14 +98,14 @@ export function Gallery({ navigate }: Props) {
               className={`gal-chip ${filter === 'ready' ? 'gal-chip-on' : ''}`}
               onClick={() => setFilter('ready')}
             >
-              <span className="gal-chip-dot" /> 已生成
+              <span className="gal-chip-dot" /> Generated
               <span className="gal-chip-count mono">{allReady.length}</span>
             </button>
             <button
               className={`gal-chip ${filter === 'all' ? 'gal-chip-on' : ''}`}
               onClick={() => setFilter('all')}
             >
-              全部
+              All
               <span className="gal-chip-count mono">{cases.summary.cases}</span>
             </button>
           </div>
@@ -116,7 +115,7 @@ export function Gallery({ navigate }: Props) {
             <SearchIcon />
             <input
               type="search"
-              placeholder="搜索标题 / 模板 / 分类…"
+              placeholder="Search title / template / category…"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
@@ -142,7 +141,7 @@ export function Gallery({ navigate }: Props) {
                 className={`gal-cat ${activeCat === 'all' ? 'gal-cat-on' : ''}`}
                 onClick={() => setActiveCat('all')}
               >
-                全部
+                All
                 <span className="mono gal-cat-num">{filter === 'ready' ? allReady.length : cases.summary.cases}</span>
               </button>
               {ORDERED_CATEGORIES.map((key) => {

@@ -1,6 +1,6 @@
 {
-  "type": "电影感概念大场景",
-  "goal": "生成一张可作家园建设模拟游戏资料片主视觉的火星清晨户外场景，氛围肃穆而充满希望",
+  "type": "Cinematic concept large scene.",
+  "goal": "Generate an outdoor scene of Mars in the morning, suitable for the main visual of a simulation game expansion on community building, with a solemn yet hopeful atmosphere.",
   "world": {
     "theme": "火星北半球低纬殖民前哨第一次扩展穹顶外作业",
     "tone": "尘暴刚散、极低饱和、地景空旷，对比强烈的地平光"

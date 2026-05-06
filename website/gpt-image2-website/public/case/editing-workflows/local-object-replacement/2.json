@@ -1,6 +1,6 @@
 {
-  "type": "局部对象替换工作流",
-  "goal": "以 REFERENCE_0 为基础，将一位虚构的非裔美籍男子篮球运动员身上的紫金色球衣，替换为黑底红边的另一种风格球衣样式；头面部、四肢与背景球场不变",
+  "type": "Partial Object Replacement Workflow",
+  "goal": "Based on REFERENCE_0, replace the purple and gold jersey of a fictional African American male basketball player with a black and red bordered style jersey; keep the head, limbs, and background court unchanged.",
   "reference_0": {
     "assumed_input": "假定原图：一位身材高大健硕的虚构男子篮球运动员（深色短发与发带、强壮臂膀），在 NBA 风格球馆内场持球突破瞬间，穿以紫色为主体、金色边饰与字体的 23 号球衣，短裤同配色，中景有模糊观众与场边广告屏，强顶光与球场反射光，肌肉线条与护臂清晰"
   },

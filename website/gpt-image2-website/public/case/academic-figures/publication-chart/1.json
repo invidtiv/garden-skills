@@ -1,6 +1,6 @@
 {
-  "type": "Publication-Ready Bar Chart（学术出版级条形图）",
-  "goal": "生成一张论文中常见的 SWE-bench 风格方法对比 bar chart 的视觉版，白底、误差棒、数值顶标",
+  "type": "Publication-Ready Bar Chart (Academic Publishing Level)",
+  "goal": "Generate a visual version of a bar chart comparing methods in the common SWE-bench style, featuring a white background, error bars, and value top labels.",
   "canvas": {
     "aspect_ratio": "4:3",
     "background": "white #FFFFFF",

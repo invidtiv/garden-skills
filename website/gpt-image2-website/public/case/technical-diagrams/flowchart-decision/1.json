@@ -1,6 +1,6 @@
 {
-  "type": "工程感流程图 / 决策图",
-  "goal": "生成 3:4 竖版暗色位图，展示注册全链路及风控分支",
+  "type": "Engineering Style Flowchart / Decision Diagram",
+  "goal": "Generate a 3:4 vertical dark-themed diagram, displaying the complete registration process and risk control branches.",
   "canvas": {
     "aspect_ratio": "3:4",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

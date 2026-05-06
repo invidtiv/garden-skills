@@ -1,6 +1,6 @@
 {
-  "type": "KPI 仪表盘信息图 (personal wrapped)",
-  "goal": "把个人 2025 年读书数据做成一张有情绪的数据海报, 数字可虚构但自洽, 不冒充豆瓣官方",
+  "type": "KPI Dashboard Infographic (personal wrapped)",
+  "goal": "Create an emotionally resonant data poster using personal reading data from 2025, with fictional yet coherent numbers, without impersonating Douban's official data.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "sunrise gradient #FFECD2 to #FCB69F at 20% opacity, upper half lighter",

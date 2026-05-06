@@ -1,6 +1,6 @@
 {
-  "type": "品牌门店分布图",
-  "goal": "生成一张突出中国大陆密度与海外旗舰城市的海底捞全球网络示意，用于年度传播与展陈背板",
+  "type": "Brand Store Distribution Map",
+  "goal": "Generate a diagram illustrating Haidilao's global network, highlighting the density in mainland China and flagship cities overseas, suitable for annual communications and exhibition backdrops.",
   "brand": {
     "name": "海底捞 火锅 Haidilao",
     "logo_description": "红色底白色汉字「海」字圆形符号化图形与英文 HAIDILAO",

@@ -1,63 +1,63 @@
 {
-  "type": "品牌门店分布图",
-  "goal": "生成一张能直接用于品牌官网、招商活动与内部分享会的星巴克中国门店覆盖示意地图",
+  "type": "Brand Store Distribution Map",
+  "goal": "Generate a coverage map for Starbucks locations in China that can be used directly on brand websites, franchise events, and internal sharing meetings.",
   "brand": {
-    "name": "Starbucks 星巴克",
-    "logo_description": "白色圆形中绿色长发双尾海妖侧影，下沿小字 STARBUCKS COFFEE",
-    "brand_color": "星绿 #00704A 为主、奶油白为底、深咖为辅助"
+    "name": "Starbucks",
+    "logo_description": "White circle with green long-haired twin-tailed siren silhouette, small text STARBUCKS COFFEE along the bottom edge",
+    "brand_color": "Starbucks green #00704A as primary, cream white as base, dark brown as accent"
   },
   "scope": {
-    "region": "中国（大陆）省级示意",
-    "base_map_style": "简化省界、浅青绿到奶白低饱和填色、无细至区县道路"
+    "region": "China (Mainland) provincial outline",
+    "base_map_style": "Simplified provincial borders, low-saturation fill from pale cyan-green to cream white, no district-level roads"
   },
   "stores": {
     "total_count": "6580+",
     "by_type": [
-      "Starbucks Reserve 烘培工坊与臻选店 18 家",
-      "标准门店 5920 家",
-      "高流量交通枢纽与医院等特殊点位 180 家",
-      "通过合资与授权伙伴运营的门店 462 家"
+      "Starbucks Reserve Roastery & Premium Stores: 18",
+      "Standard stores: 5,920",
+      "High-traffic transit hubs, hospitals, and special locations: 180",
+      "Joint-venture and licensed partner stores: 462"
     ],
-    "highlight_cities": "上海、北京、深圳、广州、成都、杭州、武汉、南京、重庆、西安"
+    "highlight_cities": "Shanghai, Beijing, Shenzhen, Guangzhou, Chengdu, Hangzhou, Wuhan, Nanjing, Chongqing, Xi'an"
   },
   "marker_design": {
-    "shapes": "大圆为臻选/工坊，中圆为标准店，小三角为特殊点位，小方块为伙伴运营点",
-    "rule": "尺寸与门店等级对应，不追求单点真经纬"
+    "shapes": "Large circle = Reserve/Roastery, medium circle = standard store, small triangle = special location, small square = partner-operated",
+    "rule": "Size corresponds to store tier; not intended to be geospatially exact"
   },
   "info_panel": {
     "enabled": "true",
-    "position": "右侧竖向信息条",
+    "position": "Right-side vertical info strip",
     "content": [
-      "全国门店总数 6580+",
-      "进入中国大陆市场三十余年",
-      "近一年新开 280+ 家",
-      "重点城市 Top5：上海、北京、深圳、广州、成都"
+      "Nationwide total: 6,580+",
+      "In China mainland market for over 30 years",
+      "280+ new stores opened in the past year",
+      "Top 5 cities: Shanghai, Beijing, Shenzhen, Guangzhou, Chengdu"
     ]
   },
   "legend": {
     "items": [
-      "大深绿圆：Starbucks Reserve / 工坊级",
-      "中绿圆：标准门店",
-      "小三角：枢纽/医院/景区等特殊点",
-      "小方块：伙伴运营点"
+      "Large dark-green circle: Starbucks Reserve / Roastery",
+      "Medium green circle: Standard store",
+      "Small triangle: Transit hub / hospital / scenic spot",
+      "Small square: Partner-operated"
     ]
   },
   "extras": [
-    "左上绿色海妖角标",
-    "底部招商条：本图为品牌覆盖示意，具体开店政策以当地法规与总部披露为准"
+    "Green siren corner badge top-left",
+    "Bottom franchise strip: This map is a brand coverage overview; actual store policies subject to local regulations and HQ disclosures"
   ],
   "constraints": {
     "must_keep": [
-      "点密度东密西疏、符合直觉",
-      "全图仅使用星巴克品牌色板",
-      "图例可对应解读点位形状",
-      "重点城市可一眼扫到"
+      "Point density denser in east, sparser in west — intuitive",
+      "Use only Starbucks brand color palette",
+      "Legend must map to marker shapes",
+      "Highlight cities must be instantly scannable"
     ],
     "avoid": [
-      "画成每省均匀撒点",
-      "混入非品牌色块",
-      "与真实 GIS 栅格一一对应",
-      "点密到成噪声"
+      "Evenly scattered points across every province",
+      "Non-brand color blocks",
+      "One-to-one match with real GIS grids",
+      "Noise-level point density"
     ]
   }
 }

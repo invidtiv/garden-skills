@@ -1,6 +1,6 @@
 {
-  "type": "左右双栏研究总览（研究内容 + 时间表）",
-  "goal": "生成一张博士中期答辩首页用的研究总览图，左侧展示 4 个研究内容模块，右侧展示按学期划分的进度路线，主题为多模态大模型辅助医疗影像诊断，要求正式克制、白底、工程化配色",
+  "type": "Two-Column Research Overview (Research Content + Timeline)",
+  "goal": "Generate a research overview diagram for a doctoral mid-term defense, featuring four research content modules on the left and a progress roadmap divided by semester on the right, with the theme of multimodal large models assisting medical image diagnosis, requiring a formal, restrained, white background with engineered colors.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "pure white #FFFFFF",

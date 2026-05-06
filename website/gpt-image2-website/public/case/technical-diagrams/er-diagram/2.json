@@ -1,6 +1,6 @@
 {
-  "type": "工程感 ER 图 / 数据模型图",
-  "goal": "生成一张多作者技术博客的 ER 位图，突出分类树、标签与互动表",
+  "type": "Engineering Style ER Diagram / Data Model Diagram",
+  "goal": "Generate an ER diagram for a multi-author technical blog, highlighting the category tree, tags, and interaction tables.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

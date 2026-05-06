@@ -1,6 +1,6 @@
 {
-  "type": "产品爆炸视图海报",
-  "goal": "生成一张高科技、工程美学风格的产品海报，主体为 Tesla Cybertruck 的垂直爆炸视图，左右辅以技术 callout，整体可作为发布会主视觉或详情页技术亮点图",
+  "type": "Product Exploded View Poster",
+  "goal": "Generate a product poster in a high-tech, engineering aesthetic style, featuring a vertical exploded view of the Tesla Cybertruck, flanked by technical callouts, suitable as the main visual for a product launch or technical highlight image on a detail page.",
   "subject": "Tesla Cybertruck 电动皮卡",
   "style": {
     "rendering": "简洁的高科技 3D 渲染，摄影棚灯光，车身蒙皮边缘带冷色微光勾边",

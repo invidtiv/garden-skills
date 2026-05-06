@@ -1,6 +1,6 @@
 {
-  "type": "现代商务职业肖像",
-  "goal": "生成一张全球科技公司 CEO/业务总裁级公开肖像，用于峰会嘉宾墙、内刊扉页小头像与领英高分辨率主图",
+  "type": "Modern Business Professional Portrait",
+  "goal": "Generate a public portrait of a CEO/business president of a global tech company, for use on summit guest walls, internal publication cover pages, and high-resolution LinkedIn images.",
   "subject": {
     "gender": "以 Sundar Pichai 为公众熟知原型的南亚裔美国男性",
     "age_range": "45-55 岁",

@@ -1,6 +1,6 @@
 {
-  "type": "移动端双人聊天截图样机",
-  "goal": "生成一张高仿真的微信双人聊天截图，画面像两位虚构科技 CEO 之间的真实深夜对话，整体像真实截图而非合成图",
+  "type": "Mobile Dual Chat Screenshot Mockup",
+  "goal": "Generate a high-fidelity screenshot of a WeChat two-person chat, resembling a real late-night conversation between two fictional tech CEOs, looking like an authentic screenshot rather than a composite image.",
   "platform": {
     "name": "微信",
     "color_mode": "light",

@@ -1,6 +1,6 @@
 {
-  "type": "KPI 仪表盘信息图",
-  "goal": "把一 company's 2025 年度核心数字以 dashboard 排布, 一屏可截图至路演附录",
+  "type": "KPI Dashboard Infographic",
+  "goal": "Arrange a company's 2025 core metrics on a dashboard, with a single screen suitable for screenshotting to a presentation appendix.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "vertical gradient #0B1220 to #1E293B",

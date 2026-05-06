@@ -1,6 +1,6 @@
 {
-  "type": "品牌主海报",
-  "goal": "生成一张运动品牌大节点主视觉，人物为一位虚构高大男子篮球运动员，强光影与强文案，不展示具体市售 SKU 的精确商品细节以免误导",
+  "type": "Brand Main Poster",
+  "goal": "Generate a main visual for a sports brand featuring a fictional tall male basketball player, with strong lighting and impactful copy, avoiding specific product SKUs to prevent misleading details.",
   "brand": {
     "name": "NIKE",
     "industry": "运动服饰与鞋类"

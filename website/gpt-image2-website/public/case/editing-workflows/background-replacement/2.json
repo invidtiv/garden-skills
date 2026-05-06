@@ -1,6 +1,6 @@
 {
-  "type": "背景替换工作流",
-  "goal": "以 REFERENCE_0 为输入，保留耳机与盒体产品级还原，仅将背景从纯白无缝纸换成黄昏海边沙滩，用于旗舰店场景图轮播",
+  "type": "Background Replacement Workflow",
+  "goal": "Using REFERENCE_0 as input, maintain a product-level recreation of the headphones and case, only changing the background from seamless pure white paper to a sunset beach, for use in flagship store carousel images.",
   "reference_0": {
     "assumed_input": "假定原图：画面正中央为白色 AirPods Pro 3 与 MagSafe 充电盒，盒盖微开、耳机一内一外摆放，纯白无缝背景，三灯柔光箱顶光与左右补光，瓶身与盒盖有干净高光带，地面为细微白影"
   },

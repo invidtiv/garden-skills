@@ -1,6 +1,6 @@
 {
-  "type": "旅行路线图",
-  "goal": "生成一张京都三日古典行程的可视化路线图，作为自媒体攻略首图与打印折页封面",
+  "type": "Travel itinerary map.",
+  "goal": "Generate a visual route map for a three-day classical itinerary in Kyoto, to be used as a cover image for social media guides and printed brochures.",
   "style": "复古手绘与水彩、米色羊皮纸底，边缘有轻微火漆纹",
   "title_section": {
     "title_text": "京都三日·庭园与古街",

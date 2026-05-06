@@ -1,6 +1,6 @@
 {
-  "type": "城市风貌插画地图",
-  "goal": "生成一张表现成都慢生活与历史层积的城市风貌图，可作文旅周边与站酷活动主图",
+  "type": "Cityscape Illustrated Map",
+  "goal": "Generate an urban landscape image reflecting the leisurely lifestyle and historical layers of Chengdu, suitable as the main image for travel-related activities and events.",
   "style": "清新水彩 + 局部铅笔线稿，主色为竹青、盖碗茶米白、砖红与雾灰天",
   "title_section": {
     "city": "中国成都",

@@ -1,6 +1,6 @@
 {
-  "type": "9 宫格 self-care 清单",
-  "goal": "生成一张 3×3 的每日自我关照信息图，中文标题，插画风统一，3:4 竖版",
+  "type": "9-Panel Self-Care Checklist",
+  "goal": "Generate a 3×3 daily self-care infographic, with a Chinese title, unified illustration style, in a 3:4 vertical format.",
   "title_block": {
     "main_title": "每天 9 件温柔小事",
     "subtitle": "不必全做，完成 3 个也很好",

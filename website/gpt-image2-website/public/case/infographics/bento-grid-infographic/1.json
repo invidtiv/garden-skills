@@ -1,6 +1,6 @@
 {
-  "type": "便当格 / Bento grid 高密度模块化信息图",
-  "goal": "单张 3:4 竖图把 iPhone 16 Pro 的屏幕、SoC、摄像、机身材质与起售价讲清楚，像 iOS widget 满屏但文案克制",
+  "type": "Bento grid high-density modular infographic.",
+  "goal": "A single 3:4 portrait clearly explains the iPhone 16 Pro's screen, SoC, camera, body material, and starting price, resembling an iOS widget filled with information but with restrained text.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "warm off-white #F5F2EC",

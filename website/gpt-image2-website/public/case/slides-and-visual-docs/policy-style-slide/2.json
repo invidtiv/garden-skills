@@ -1,6 +1,6 @@
 {
-  "type": "政策解读单页 Slide",
-  "goal": "生成一张在视觉上接近政府政策页严整度、但语汇为企业战略与年度经营要点的单页，可用于控股公司年终战略通报主图或内刊首屏",
+  "type": "Policy interpretation single-page slide.",
+  "goal": "Create a single page visually comparable to the neatness of a government policy page, but with terminology focused on corporate strategy and annual operational highlights, suitable for the main image of a holding company's year-end strategic report or internal publication front page.",
   "style": {
     "color_palette": "政红 + 米白 + 深灰",
     "tone": "权威、可对内对外转发",

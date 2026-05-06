@@ -9,37 +9,37 @@ interface Props {
 const STRENGTHS = [
   {
     n: '01',
-    title: '文字渲染',
+    title: 'Text Rendering',
     en: 'Text Rendering',
-    body: '海报、菜单、招牌、UI 标签、信息图——画面里的中文 / 日文 / 韩文 / 印地文都被当作核心能力训练，告别上一代 AI 图最大的「文字翻车」问题。',
+    body: 'Posters, menus, signage, UI labels, infographics — Chinese / Japanese / Korean / Hindi text in images is trained as a core capability. Say goodbye to the "text gibberish" problem that plagued previous-gen AI images.',
   },
   {
     n: '02',
-    title: '指令遵循',
+    title: 'Instruction Following',
     en: 'Instruction Following',
-    body: '可以非常具体地告诉它：主体放哪里、文案怎么排、风格偏杂志还是电商、哪些元素必须保留。比上一代真正接近"按 brief 出图"。',
+    body: 'You can be very specific: where to place the subject, how to arrange copy, whether the style leans magazine or e-commerce, which elements must stay. Much closer to "brief-to-image" than the previous generation.',
   },
   {
     n: '03',
-    title: '编辑能力',
+    title: 'Image Editing',
     en: 'Image Editing',
-    body: '吃进参考图、产品图、Logo、草稿，做背景替换、局部重绘、风格统一、Logo / 包装保留——是「视觉工作流引擎」而不只是抽卡。',
+    body: 'Ingest reference images, product shots, logos, sketches — then replace backgrounds, inpaint locally, unify style, preserve logo / packaging. It\'s a "visual workflow engine" not just a slot machine.',
   },
   {
     n: '04',
-    title: '尺寸自由',
+    title: 'Resolution Flexibility',
     en: 'Resolution Flexibility',
-    body: '1024 方图 · 1536×1024 · 1024×1536 · 2K · 4K 横竖图都可。超过 2560×1440 的输出仍标为实验性（experimental）。',
+    body: '1024 square · 1536×1024 · 1024×1536 · 2K · 4K landscape and portrait. Outputs above 2560×1440 are still marked experimental.',
   },
 ];
 
 const SURFACES = [
-  { name: 'ChatGPT', tag: 'Images 2.0', body: '所有计划可用；Images with Thinking 需要 Plus / Pro / Business。' },
-  { name: 'OpenAI API', tag: 'gpt-image-2', body: '/images/generations & /images/edits，能接进自己的产品。' },
-  { name: 'Codex', tag: 'via tooling', body: '取决于环境是否接入图像工具；可让 Codex 写 prompt + 调用工具一气呵成。' },
-  { name: 'Lovart', tag: 'design-grade', body: '商业视觉、UI mockup、多语言海报等工作流，包装为设计平台。' },
-  { name: 'OpenRouter', tag: 'gpt-5.4-image-2', body: '把 GPT-5.4 推理 + Image 2 图像组合起来的对话式生成。' },
-  { name: '302.ai', tag: '兼容网关', body: '提供 gpt-image-2 的生成 / 编辑接口，第三方网关入口。' },
+  { name: 'ChatGPT', tag: 'Images 2.0', body: 'Available on all plans; Images with Thinking requires Plus / Pro / Business.' },
+  { name: 'OpenAI API', tag: 'gpt-image-2', body: '/images/generations & /images/edits — plug into your own product.' },
+  { name: 'Codex', tag: 'via tooling', body: 'Depends on whether the environment has image tools wired in; lets Codex write prompt + call tool in one go.' },
+  { name: 'Lovart', tag: 'design-grade', body: 'Commercial visuals, UI mockups, multilingual posters — packaged as a design platform.' },
+  { name: 'OpenRouter', tag: 'gpt-5.4-image-2', body: 'Combines GPT-5.4 reasoning + Image 2 generation in a conversational flow.' },
+  { name: '302.ai', tag: 'compatible gateway', body: 'Provides gpt-image-2 generation / editing APIs — third-party gateway entry.' },
 ];
 
 export function ModelCard({ expanded, onClose }: Props) {
@@ -66,9 +66,9 @@ export function ModelCard({ expanded, onClose }: Props) {
               <span className="serif-italic">gpt</span>‑image‑2
             </h2>
             <p className="mc-sub">
-              OpenAI 2026 年 4 月 21 日发布的视觉生产模型。它强的地方不是「更炫」，
-              而是「更能用」——把文字渲染、参考图编辑、跨语言版式、灵活尺寸打包
-              成一个能塞进真实工作流的多模态图像模型。
+              OpenAI's visual production model released April 21, 2026. Its strength isn't "more dazzling" —
+              it's "more usable" — bundling text rendering, reference-image editing, multilingual layout, and flexible sizing
+              into a multimodal image model that fits real workflows.
             </p>
           </div>
           <button className="mc-close" onClick={onClose} aria-label="Close">
@@ -77,7 +77,7 @@ export function ModelCard({ expanded, onClose }: Props) {
         </header>
 
         <section className="mc-section">
-          <div className="mc-sec-label mono">01 · 关键能力</div>
+          <div className="mc-sec-label mono">01 · Key Capabilities</div>
           <div className="mc-strengths">
             {STRENGTHS.map((s) => (
               <article key={s.n} className="mc-strength">
@@ -93,7 +93,7 @@ export function ModelCard({ expanded, onClose }: Props) {
         </section>
 
         <section className="mc-section">
-          <div className="mc-sec-label mono">02 · 入口分布</div>
+          <div className="mc-sec-label mono">02 · Entry Points</div>
           <div className="mc-surfaces">
             {SURFACES.map((s) => (
               <article key={s.name} className="mc-surface">
@@ -108,13 +108,13 @@ export function ModelCard({ expanded, onClose }: Props) {
         </section>
 
         <section className="mc-section">
-          <div className="mc-sec-label mono">03 · 一句话总结</div>
+          <div className="mc-sec-label mono">03 · One-Line Summary</div>
           <blockquote className="mc-quote serif">
             <span className="mc-quote-mark">"</span>
             <span>
-              GPT-Image-2 的强，不只是「画得更像」，而是它开始接近一个能理解
-              <span className="mc-em">文案、布局、品牌、参考图和最终用途</span>
-              的视觉生产模型。
+              GPT-Image-2's strength isn't just "drawing better" — it's approaching a visual production model that understands
+              <span className="mc-em">copy, layout, brand, reference images, and end use</span>
+              .
             </span>
           </blockquote>
         </section>
@@ -125,7 +125,7 @@ export function ModelCard({ expanded, onClose }: Props) {
             <span>OpenAI Platform · Image API · Lovart</span>
           </div>
           <button className="btn btn-ghost" onClick={onClose}>
-            <span>收起卡片</span>
+            <span>Collapse Card</span>
             <span className="btn-arrow">↑</span>
           </button>
         </footer>

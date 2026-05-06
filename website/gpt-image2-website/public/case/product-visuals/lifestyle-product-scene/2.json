@@ -1,6 +1,6 @@
 {
-  "type": "生活方式产品场景图",
-  "goal": "生成一张运动员晨跑中佩戴智能手表的生活场景主图，真实光线、可识别商品，用于官网或社媒活动",
+  "type": "Lifestyle product scene image.",
+  "goal": "Generate a main image depicting an athlete jogging in the morning while wearing a smartwatch, with realistic lighting and recognizable products, for use on a website or social media campaigns.",
   "subject": {
     "product_name": "Apple Watch Ultra 2",
     "visual_description": "钛金属表壳、橙色活动表带、显示跑步体能界面与心率的 Always-On 屏幕",

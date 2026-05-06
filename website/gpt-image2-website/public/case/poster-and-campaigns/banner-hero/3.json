@@ -1,19 +1,39 @@
 {
   "type": "Web hero banner",
-  "goal": "为开源项目 Easy Dataset 生成 16:9 横版明色调宣传图，适合 GitHub README hero banner、官网首屏、公众号封面和技术分享首图",
+  "goal": "16:9 horizontal bright-tone promotional image generated for the open-source project Easy Dataset, suitable for GitHub README hero banner, homepage, WeChat official account cover, and technical sharing cover image.",
   "aspect_ratio": "16:9",
   "layout": {
     "left_column": {
       "headline": "Easy Dataset",
       "subhead": "一站式构建 LLM 微调、RAG 与评测数据集",
       "slogan": "从文档到高质量数据集",
-      "badges": ["Fine-tuning", "RAG", "Eval"]
+      "badges": [
+        "Fine-tuning",
+        "RAG",
+        "Eval"
+      ]
     },
     "right_column": {
       "centerpiece": "明亮的 SaaS 工作台界面悬浮在浅色背景中，表现从多格式文档输入到高质量数据集输出的流程",
-      "input_cards": ["PDF", "Markdown", "DOCX", "TXT", "EPUB"],
-      "workspace_elements": ["数据表格", "QA 卡片", "切分面板", "评测分数卡", "导出面板"],
-      "output_cards": ["Fine-tuning Dataset", "RAG Knowledge Base", "Eval Benchmark"],
+      "input_cards": [
+        "PDF",
+        "Markdown",
+        "DOCX",
+        "TXT",
+        "EPUB"
+      ],
+      "workspace_elements": [
+        "数据表格",
+        "QA 卡片",
+        "切分面板",
+        "评测分数卡",
+        "导出面板"
+      ],
+      "output_cards": [
+        "Fine-tuning Dataset",
+        "RAG Knowledge Base",
+        "Eval Benchmark"
+      ],
       "scale": "占右侧 60%，使用柔和青绿色数据线串联输入、工作台与输出"
     },
     "bottom_feature_strip": [
@@ -49,12 +69,24 @@
   },
   "style": {
     "aesthetic": "明亮、高级、开源 AI SaaS、干净的产品官网视觉",
-    "palette": ["#F8FAFC", "#EAF7F6", "#172033", "#14B8A6", "#F6B84B", "#6366F1"],
+    "palette": [
+      "#F8FAFC",
+      "#EAF7F6",
+      "#172033",
+      "#14B8A6",
+      "#F6B84B",
+      "#6366F1"
+    ],
     "typography": "现代无衬线，中文类似思源黑体，英文类似 Inter",
     "lighting": "soft daylight, clean shadows, subtle cyan glow"
   },
   "footer": {
-    "items": ["github.com/ConardLi/easy-dataset", "Open Source", "AGPL-3.0", "14k+ Stars"],
+    "items": [
+      "github.com/ConardLi/easy-dataset",
+      "Open Source",
+      "AGPL-3.0",
+      "14k+ Stars"
+    ],
     "placement": "右下角或底部信息区，使用简洁开源徽章样式"
   },
   "constraints": {

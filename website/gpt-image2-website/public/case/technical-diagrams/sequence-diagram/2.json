@@ -1,6 +1,6 @@
 {
-  "type": "工程感时序图（UML sequence diagram）",
-  "goal": "生成一张微信支付 JSAPI/Native 混合视角的时序位图，突出商户系统、微信支付平台与手机微信客户端三方的同步调用与 notify_url 回调",
+  "type": "Engineering Style Sequence Diagram (UML)",
+  "goal": "Create a timeline diagram with a mixed perspective of WeChat Pay JSAPI/Native, highlighting the synchronous calls and notify_url callbacks among the merchant system, WeChat Pay platform, and WeChat mobile client.",
   "canvas": {
     "aspect_ratio": "4:3",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

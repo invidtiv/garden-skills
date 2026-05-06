@@ -1,6 +1,6 @@
 {
-  "type": "工程感状态机 / 生命周期图（UML state diagram）",
-  "goal": "生成一张文章实体 `Article` 在 CMS 与机审/人审服务之间的状态机位图，终态与违规分支清晰，可贴在内容安全 SOP 附录",
+  "type": "Engineering Style State Machine / Lifecycle Diagram (UML)",
+  "goal": "Create a state machine diagram for the article entity 'Article' between CMS and automated/manual review services, with clear terminal states and violation branches, suitable for posting in the content safety SOP appendix.",
   "canvas": {
     "aspect_ratio": "4:3",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

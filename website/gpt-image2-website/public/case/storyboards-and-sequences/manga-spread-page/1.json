@@ -1,6 +1,6 @@
 {
-  "type": "跨页 spread 漫画",
-  "goal": "生成左右连贯的一张横向漫画跨页，8 个分镜，中央装订线不切断主角面部",
+  "type": "Spread Comic",
+  "goal": "Generate a coherent horizontal comic spread with 8 panels, ensuring the central binding line does not cut across the main character's face.",
   "story": {
     "summary": "雾隐峰顶，少年为护山门印记独战妖将，以一念剑意化虚为实，终逼退黑雾。",
     "main_character": "束发青衫少年，左肩云纹，佩古剑「静渊」，黑瞳，身形清瘦但站姿极稳。",

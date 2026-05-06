@@ -1,6 +1,6 @@
 {
-  "type": "角色综合设定 sheet",
-  "goal": "生成 4:3 横版一屏展示完整可投产角色案，前侧背三视、九表情、三衣装、两件道具、色板，风格 anime 赛璐璐偏写实比例",
+  "type": "Comprehensive Angle Setting Sheet",
+  "goal": "Generate a 4:3 horizontal single-screen presentation of a complete production-ready character case, with front-side views, nine expressions, three outfits, two props, and a color palette, styled in an anime cel-shaded semi-realistic proportion.",
   "character": {
     "name": "沈霜辞 · 号墨羽",
     "concept": "边关女镖师出身，以快剑与轻身术行走江湖，外冷内执，剑名「照夜」",

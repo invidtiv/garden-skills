@@ -13,19 +13,19 @@ export function Footer({ navigate }: Props) {
         <div className="ftr-cta">
           <div className="eyebrow">03 / NEXT</div>
           <h2 className="ftr-cta-title serif">
-            想知道每张图<span className="serif-italic"> 怎么 </span>来的？
+            Want to know <span className="serif-italic"> how </span> each image was made?
           </h2>
           <p className="ftr-cta-sub">
-            这些案例并不是手写 prompt 凑出来的，而是由 <strong>gpt-image-2 Skill</strong>
-            统一调度——选模板、问关键参数、渲染最终 prompt、调用图像工具。
-            点开 Skill 工程介绍，看完整工作流。
+            These cases weren't hand-crafted prompts — they're orchestrated by the <strong>gpt-image-2 Skill</strong>
+            : pick template, ask key parameters, render final prompt, call image tool.
+            Open the Skill project page to see the full workflow.
           </p>
           <div className="ftr-cta-btns">
             <button
               className="btn btn-primary"
               onClick={() => navigate({ name: 'skills' })}
             >
-              <span>查看 Skill 工程</span>
+              <span>View Skill Project</span>
               <span className="btn-arrow">→</span>
             </button>
             <button
@@ -34,7 +34,7 @@ export function Footer({ navigate }: Props) {
                 document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              <span>回到首页</span>
+              <span>Back to Home</span>
               <span className="btn-arrow">↑</span>
             </button>
           </div>

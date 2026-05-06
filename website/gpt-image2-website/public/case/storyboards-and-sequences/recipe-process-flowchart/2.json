@@ -1,6 +1,6 @@
 {
-  "type": "食谱步骤图",
-  "goal": "生成一张拿铁制作流程图，将配方嵌入步骤信息区，强调在家可复制",
+  "type": "Recipe step diagrams",
+  "goal": "Generate a flowchart for the latte-making process, embedding the recipe within the steps section, emphasizing its reproducibility at home.",
   "recipe": {
     "name": "意式拿铁",
     "subtitle": "双份浓缩 + 薄奶泡",

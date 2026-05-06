@@ -1,6 +1,6 @@
 {
-  "type": "高密度讲解型 Slide",
-  "goal": "生成一张单页培训讲义，向非算法背景的听众解释典型 AI Agent 在软件环境中如何完成一次任务",
+  "type": "High-density explanatory Slide",
+  "goal": "Generate a single-page training handout explaining to an audience without an algorithm background how a typical AI agent completes a task in a software environment.",
   "style": {
     "format": "单页多段讲解 + 中央流程锚点",
     "blend": "Irasutoya 柔和温馨插画 + 商业咨询式信息分块",

@@ -1,6 +1,6 @@
 {
-  "type": "Kawaii 3D 角色图标",
-  "goal": "生成 1:1 圆角方形主图，供社交平台小头像、播客或开发者社区展示用，主体为可联想到 Mark Zuckerberg 的拟猫化 3D 角色，不出现可读姓名文字",
+  "type": "Kawaii 3D Character Icon",
+  "goal": "Generate a 1:1 rounded square main image for social media profile pictures, podcasts, or developer community displays, featuring a cat-like 3D character reminiscent of Mark Zuckerberg, without any readable name text.",
   "character": {
     "subject": "圆脸灰毛短毛猫、略卷发感头顶两撮、小圆眼镜片无 logo",
     "personality": "专注、极客、轻微害羞",

@@ -1,6 +1,6 @@
 {
-  "type": "高密度讲解型 Slide",
-  "goal": "生成一张可作为公开课单页、公众号长图首页、内部分享讲义的高密度讲解 Slide，帮助读者在一张图内建立对大模型测评体系的完整认知框架",
+  "type": "High-density explanatory Slide",
+  "goal": "Generate a high-density explanation slide suitable for open class handouts, WeChat long images, and internal sharing materials, helping readers establish a complete cognitive framework for large model evaluation systems in one image.",
   "style": {
     "format": "单页分栏信息图 + 中央锚点 illustration（ponchi-e 式柔和块面）",
     "blend": "Irasutoya 柔和温馨插画 + 霞关风格 Slides 高信息密度与编号秩序",

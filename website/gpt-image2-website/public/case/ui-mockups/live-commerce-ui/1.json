@@ -1,6 +1,6 @@
 {
-  "type": "电商直播 UI 样机",
-  "goal": "生成一张高仿真的直播带货截图风格视觉图，主体是主播肖像，叠加完整直播间界面元素，整体既像真实直播截图，也具备发布会主视觉的商业感",
+  "type": "E-commerce live streaming UI prototype.",
+  "goal": "Generate a high-fidelity visual styled as a livestream shopping screenshot, featuring a host portrait, overlaid with complete livestream room interface elements, giving the appearance of a real livestream screenshot while maintaining a commercial look of a press release.",
   "subject": {
     "source_mode": "celebrity-name",
     "celebrity_name": "Elon Musk",

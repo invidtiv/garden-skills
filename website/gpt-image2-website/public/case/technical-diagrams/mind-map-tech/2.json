@@ -1,6 +1,6 @@
 {
-  "type": "工程感技术思维导图（放射式 mind map）",
-  "goal": "生成一张 Kubernetes 体系脑图，中央写 Kubernetes 平台工程，6 个一级域覆盖架构、工作负载、网络、安全、存储、交付与 SRE 可观测，强调 CNCF 组件名用英文、中文说明在二级节点可中英混排",
+  "type": "Engineering Style Technical Mind Map (Radial Mind Map)",
+  "goal": "Generate a mind map of the Kubernetes system, with 'Kubernetes Platform Engineering' at the center, covering six primary domains: architecture, workloads, networking, security, storage, delivery, and SRE observability, emphasizing CNCF component names in English, with Chinese explanations that can be mixed for secondary nodes.",
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "deep slate #0F172A with subtle 1px grid #1E293B at 32px spacing",

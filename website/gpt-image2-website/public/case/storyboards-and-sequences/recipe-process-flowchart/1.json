@@ -1,6 +1,6 @@
 {
-  "type": "食谱步骤图",
-  "goal": "生成一张可作为公众号 / 小红书 / 家庭食谱内页的番茄炒蛋步骤图",
+  "type": "Recipe step diagrams",
+  "goal": "Generate a step-by-step diagram for tomato scrambled eggs, suitable for WeChat, Xiaohongshu, or family recipe book pages.",
   "recipe": {
     "name": "番茄炒蛋",
     "subtitle": "5 分钟家常版",

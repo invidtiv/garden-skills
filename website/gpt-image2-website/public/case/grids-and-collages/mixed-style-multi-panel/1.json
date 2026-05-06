@@ -1,6 +1,6 @@
 {
-  "type": "5 格混合风格拼贴",
-  "goal": "生成一张多风格拼贴图，同一中国女性为唯一主体，仅画风变化，中央格最大",
+  "type": "5-Panel Mixed Style Collage",
+  "goal": "Generate a multi-style collage featuring the same Chinese woman as the sole subject, with variations in artistic style, the central box being the largest.",
   "subject": {
     "description": "同一位东亚女性，约 28 岁，齐肩直黑发，细眉，米白棉质衬衫，双手自然交叠于腹前，表情平静带浅笑。禁止更换发型与衣色以便跨格识别。",
     "consistency_rule": "五格中五官比例与衣款一致，仅渲染手法不同"

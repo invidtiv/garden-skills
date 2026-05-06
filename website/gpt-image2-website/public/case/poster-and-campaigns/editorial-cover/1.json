@@ -1,6 +1,6 @@
 {
-  "type": "杂志封面",
-  "goal": "生成 3:4 竖版刊物封面，新闻周刊气质，主标题与人物同屏叠压但可读，底部与侧边多列导读不糊边",
+  "type": "Magazine cover.",
+  "goal": "Generate a 3:4 vertical magazine cover with a news weekly feel, where the main title overlaps with the character but remains readable, and with multiple columns of reading guides at the bottom and sides without blurring edges.",
   "publication": {
     "name": "TIME 风格示意刊（非本社官方，仅为版式与气质参考）",
     "tagline": "The Future of Power",

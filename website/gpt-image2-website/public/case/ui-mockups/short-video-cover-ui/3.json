@@ -1,6 +1,6 @@
 {
-  "type": "开箱评测视频封面",
-  "goal": "生成一张面向 YouTube 数码评测频道的高点击率开箱评测视频封面",
+  "type": "Unboxing Review Video Cover",
+  "goal": "Generate a high click-rate unboxing review video cover for a YouTube digital review channel.",
   "platform": "YouTube",
   "aspect_ratio": "16:9",
   "background": {

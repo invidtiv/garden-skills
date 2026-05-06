@@ -1,6 +1,6 @@
 {
-  "type": "媒体大片级创始人肖像",
-  "goal": "生成 3:4 竖版可用于科技财经媒体专题开篇或长文头图的创始人环境人像，人物可辨识为美国企业家 Elon Musk 的公众形象，气质硬朗有叙事，不戏谑、不漫展风",
+  "type": "Media Blockbuster-Level Founder Portrait",
+  "goal": "Generate a 3:4 vertical founder environmental portrait suitable for the opening or header image of a technology and finance media feature, recognizable as the public image of American entrepreneur Elon Musk, with a strong narrative quality, serious tone, not caricatured or exaggerated style.",
   "subject": {
     "identity": "航天与智能电动车领域连续创业者、上市公司高管",
     "gender": "美国男性",

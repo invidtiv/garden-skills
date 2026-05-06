@@ -1,6 +1,6 @@
 {
-  "type": "背景替换工作流",
-  "goal": "以 REFERENCE_0 为输入，保留人物与穿搭不变，仅将背景换成纽约时代广场夜晚实景，让成片像同一场次补拍于夜景地标前",
+  "type": "Background Replacement Workflow",
+  "goal": "Using REFERENCE_0 as input, retain the characters and outfits while changing the background to a nighttime scene at Times Square in New York, making the final image feel like it was shot in front of a nighttime landmark during the same event.",
   "reference_0": {
     "assumed_input": "假定原图：一位身材高大健硕的虚构非裔美籍男性篮球运动员面向镜头的上半身人像（深色短发与发带、阳刚轮廓），穿紫金色 23 号无袖球衣（队徽抽象为简化纹样、不指向任何具体真实球队），白天户外篮球场围栏与绿树作为背景，顶光略硬，面部与球衣高光清晰，景深中等"
   },

@@ -1,6 +1,6 @@
 {
-  "type": "移动端社交平台动态详情页样机",
-  "goal": "生成一张高仿真度的 X (Twitter) 帖子详情页截图，看起来像粉丝刚从手机上截下来的真实推文",
+  "type": "Mobile Social Platform Post Detail Page Mockup",
+  "goal": "Generate a high-fidelity screenshot of a post detail page from X (Twitter), appearing as if a fan just took a real tweet screenshot from their phone.",
   "platform": {
     "name": "Twitter / X",
     "color_mode": "dark",

@@ -1,6 +1,6 @@
 {
-  "type": "技术系统架构图（暗色工程感）",
-  "goal": "生成一张用于多租户 AI 客服 SaaS 产线技术评审的架构总览位图，强调公网入口、应用 VPC、数据与消息平面及外部 API 的 trust boundary 划分",
+  "type": "Technical System Architecture Diagram (Dark Engineering Style)",
+  "goal": "Create an architecture overview diagram for a multi-tenant AI customer service SaaS production line technical review, emphasizing public internet entry, application VPC, data and message planes, and the trust boundary delineation with external APIs.",
   "canvas": {
     "aspect_ratio": "16:9",
     "background": "deep slate #0F172A with subtle 1px grid lines #1E293B at 32px spacing",

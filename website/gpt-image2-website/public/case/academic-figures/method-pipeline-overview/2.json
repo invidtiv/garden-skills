@@ -1,6 +1,6 @@
 {
-  "type": "学术论文方法 Pipeline 总览图（method overview figure）",
-  "goal": "生成一张可直接放进顶会论文或 SIGGRAPH 附件的 diffusion training pipeline 总览图，白底、几何精确、可单色印刷",
+  "type": "Academic Paper Method Pipeline Overview Figure (Method Overview Figure)",
+  "goal": "Generate an overview diagram of the diffusion training pipeline suitable for inclusion in a top conference paper or SIGGRAPH attachment, with a white background, geometrically precise, and suitable for monochrome printing.",
   "canvas": {
     "aspect_ratio": "2:1",
     "background": "pure white #FFFFFF",

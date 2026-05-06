@@ -1,6 +1,6 @@
 {
-  "type": "贴纸套装 sticker set",
-  "goal": "生成一张 1:1 总图，内含 16 个可独立裁切的 Q 萌人形贴纸，用于微信聊天面板上传为专辑缩略图或整图切分使用",
+  "type": "Sticker Set",
+  "goal": "Generate a 1:1 overall image containing 16 independently cuttable Q-moe character stickers, for use as album thumbnails or image splitting on WeChat chat panels.",
   "theme": "都市打工人日常（通勤、开会、摸鱼、加班、干饭、躺平、奋斗、吐槽）",
   "style": {
     "rendering": "3D Q 萌 + 软光 + 亚光材质，非写实",
