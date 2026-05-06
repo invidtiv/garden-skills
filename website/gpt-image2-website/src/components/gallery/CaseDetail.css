@@ -129,6 +129,23 @@
   margin: 0;
 }
 
+.cd-upload {
+  margin-top: var(--s-6);
+}
+.cd-upload-label {
+  cursor: pointer;
+  display: inline-block;
+}
+.cd-upload-btn {
+  display: inline-block;
+}
+.cd-upload-hint {
+  font-size: 11px;
+  color: var(--text-mute);
+  margin-top: var(--s-2);
+  opacity: 0.7;
+}
+
 /* Related thumbnails */
 .cd-related {
   border-top: 1px solid var(--line);

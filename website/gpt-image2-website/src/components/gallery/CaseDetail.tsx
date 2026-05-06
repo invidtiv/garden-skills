@@ -17,6 +17,8 @@ export function CaseDetail({ id, navigate }: Props) {
   const related = c ? getRelatedCases(c.id) : [];
   const [tab, setTab] = useState<Tab>('prompt');
   const [copied, setCopied] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [uploaded, setUploaded] = useState(false);
   // Progressive image load: show the (already-cached) thumb instantly, then
   // crossfade to the full PNG once it decodes. Reset on case change.
   const [fullLoaded, setFullLoaded] = useState(false);
@@ -65,13 +67,34 @@ export function CaseDetail({ id, navigate }: Props) {
   const usageDialog = buildUsageDialog(c, tpl.label);
 
   const onCopy = async () => {
-    if (!c.prompt_content) return;
+    if (!c || !c.prompt_content) return;
     try {
       await navigator.clipboard.writeText(c.prompt_content);
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
       // ignore
+    }
+  };
+
+  const onUpload = async (file: File) => {
+    if (!c || uploading) return;
+    setUploading(true);
+    try {
+      const form = new FormData();
+      form.append('image', file);
+      const res = await fetch(`http://100.84.218.5:3002/upload/${c.category}/${c.template_key}/${c.idx}`, {
+        method: 'POST',
+        body: form,
+      });
+      if (res.ok) {
+        setUploaded(true);
+        setTimeout(() => window.location.reload(), 800);
+      }
+    } catch {
+      // ignore
+    } finally {
+      setUploading(false);
     }
   };
 
@@ -136,6 +159,23 @@ export function CaseDetail({ id, navigate }: Props) {
                   The final prompt for this case is ready, but hasn't been run through generation yet.
                   You can feed the prompt on the right directly to GPT‑Image‑2 / DALL·E 3 / Midjourney or any other tool.
                 </p>
+                <div className="cd-upload">
+                  <label className="cd-upload-label">
+                    <input
+                      type="file"
+                      accept="image/png,image/jpeg,image/webp"
+                      style={{ display: 'none' }}
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) onUpload(file);
+                      }}
+                    />
+                    <span className="btn btn-primary cd-upload-btn">
+                      {uploading ? 'Uploading…' : uploaded ? 'Uploaded!' : 'Upload Generated Image'}
+                    </span>
+                  </label>
+                  <p className="cd-upload-hint mono">PNG / JPG / WebP · max 10MB</p>
+                </div>
               </div>
             )}
           </div>
