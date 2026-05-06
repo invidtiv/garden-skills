@@ -264,8 +264,8 @@
 .cd-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s-2);
-  margin-bottom: var(--s-3);
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
 }
 .cd-tag {
   font-size: 10px;
@@ -332,7 +332,7 @@
 .cd-tab-body {
   flex: 1;
   overflow-y: auto;
-  padding: var(--s-5) var(--s-6) var(--s-10);
+  padding: var(--s-5) var(--s-6) var(--s-12);
 }
 
 /* Prompt block */
@@ -361,7 +361,7 @@
   gap: var(--s-2);
 }
 .cd-prompt pre {
-  padding: var(--s-4) var(--s-4) var(--s-6);
+  padding: var(--s-4) var(--s-4) var(--s-8);
   font-size: 13px;
   line-height: 1.55;
   overflow-x: auto;
