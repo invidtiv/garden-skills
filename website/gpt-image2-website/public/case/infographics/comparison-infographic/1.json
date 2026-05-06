@@ -4,45 +4,45 @@
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "warm off-white #F8F6F2",
-    "split_line": "细竖线 1px #D6D0C8, 中缝上方有小型几何 VS(非涂鸦)"
+    "split_line": "Fine Vertical Line 1px #D6D0C8, Small Geometric VS (Non-Graffiti) Above the Center Seam"
   },
   "header": {
-    "main_title": "iPhone 16 Pro 还是 Galaxy S25 Ultra？7 个维度直观看懂",
-    "subtitle": "没有绝对胜负, 只有你是否在意 iOS/安卓生态与长焦风格"
+    "main_title": "iPhone 16 Pro or Galaxy S25 Ultra? Understandable at a glance across 7 dimensions",
+    "subtitle": "There are no absolute wins or losses, only whether you care about the iOS/Android ecosystem and telephoto style."
   },
   "columns": [
     {
       "id": "left",
       "name": "iPhone 16 Pro",
-      "color_theme": "钛灰+雾蓝, 主辅 #1C1C1E + #0A84FF",
-      "header_visual": "钛金属直边机身侧视简笔 + 灵动岛小药丸轮廓(抽象)",
-      "tagline": "iOS 生态、杜比视界录像、A 系列算力、配件丰富"
+      "color_theme": "Titanium gray + misty blue, main and accent #1C1C1E + #0A84FF",
+      "header_visual": "Side view sketch of a titanium metal flat-edged body + dynamic island small pill outline (abstract)",
+      "tagline": "iOS ecosystem, Dolby Vision recording, A-series processing power, rich accessories"
     },
     {
       "id": "right",
       "name": "Galaxy S25 Ultra",
-      "color_theme": "深墨+钛金点缀, 主辅 #111111 + #C9A962",
-      "header_visual": "方框直角屏简笔+ S Pen 小斜笔轮廓(无商标)",
-      "tagline": "安卓开放、定制主题、S Pen 批注、长焦望远玩法"
+      "color_theme": "Deep ink + titanium embellishments, main and secondary #111111 + #C9A962",
+      "header_visual": "Simple line drawing of a square corner screen + an S Pen small slanted pen outline (no trademark).",
+      "tagline": "Android openness, custom themes, S Pen annotations, telephoto gameplay"
     }
   ],
   "comparison_rows": {
-    "count": "7",
-    "structure": "中缝左图标+中文维度名, 每侧表现+星级(1-5)或对勾/横线",
+    "count": "Fluorescent blue-purple gradient background steals the spotlight.",
+    "structure": "Left icon in the middle seam + Chinese dimension name, performance on each side + star rating (1-5) or check mark/cross line",
     "items": [
-      "屏幕与握持(直边 vs 略宽方屏)",
-      "长焦出片(偏真实 vs 高倍细节)",
-      "视频工作流(杜比+生态统一 vs 可拓展存储)",
-      "系统与多设备(与 Mac 接力 vs 与 Windows DeX 等)",
-      "可维修与固件(官方渠道+保值 vs 机海节奏)",
-      "起售价(人民币示意区间, 以电商实时为准)",
-      "适合的人(果粉+全家桶 / 爱折腾+安卓)"
+      "Screen and grip (straight edge vs slightly wider square screen)",
+      "Long focal output (realistic vs high detail)",
+      "video workflow (Dolby + ecological unity vs. expandable storage)",
+      "System and Multi-Device (Relay with Mac vs Windows DeX, etc.)",
+      "Repairable and firmware (official channels + value retention vs. machine sea rhythm)",
+      "Starting price (RMB indicative range, subject to real-time e-commerce)",
+      "Suitable people (Apple fans + family bucket / tinkerer + Android)."
     ],
-    "marker_style": "1-5 星+浅底横条+少量文字(≤6字)",
-    "highlight_winner_per_row": "true, 以浅琥珀底微亮, 不一边倒"
+    "marker_style": "1-5 stars + light bottom horizontal bar + a small amount of text (≤6 characters)",
+    "highlight_winner_per_row": "true, with a slight amber base, not one-sided"
   },
   "footer": {
-    "verdict": "要无缝办公与录视频优先 iPhone; 要大屏手写+安卓自由度优先 S25 Ultra。线下摸真机后决定。",
+    "verdict": "for seamless office work and video recording, prioritize iPhone; for large-screen handwriting + freedom on Android, prioritize S25 Ultra. Decision after physical product testing.",
     "winner_badge": {
       "enabled": "false",
       "label": "Editor's Choice",
@@ -51,13 +51,13 @@
   },
   "constraints": {
     "must_keep": [
-      "左右列宽对称",
-      "每行有微型图标(镜头/屏幕/钱袋等抽象)",
+      "Symmetrical widths for left and right columns",
+      "Each line has miniature icons (lens/screen/purse, etc. abstract)",
       "色块对比可辨但不血拼红绿"
     ],
     "avoid": [
-      "使用真实机模摄影抠图作商标展示",
-      "用侮辱性词形容任一品牌"
+      "Use real model photography cut-out for trademark display",
+      "Use derogatory terms to describe any brand"
     ]
   }
 }

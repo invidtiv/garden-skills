@@ -7,7 +7,7 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "Aurora CMS · article.status 状态机",
+    "title": "Aurora CMS · article.status State Machine",
     "subtitle": "DRAFT → REVIEW → PUBLISHED / REJECTED / TAKEN_DOWN / DELETED",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
@@ -126,12 +126,12 @@
       {
         "from": "S3",
         "to": "S5",
-        "label": "reject [reason_code] / notify 微信 公众号模板消息"
+        "label": "Reject [reason_code] / notify WeChat public account template message"
       },
       {
         "from": "S4",
         "to": "S6",
-        "label": "report_spam [count>阈值] / hide_cdn"
+        "label": "Report_spam [count>threshold] / hide_cdn"
       },
       {
         "from": "S4",
@@ -174,27 +174,27 @@
       "self_loop": "loop only if used",
       "label_format": "event [guard] / action"
     },
-    "rule_routing": "正交 / 小角度斜线，避免压字"
+    "rule_routing": "Orthogonal / small angle diagonal lines, avoid text compression."
   },
   "composite_states": {
     "enabled": true,
-    "rule": "可选：将 PENDING_REVIEW 与 HUMAN_REVIEW 包在 composite 'Moderation' 大框，标注 entry=assign_job_id"
+    "rule": "Optional: Enclose PENDING_REVIEW and HUMAN_REVIEW within a composite 'Moderation' large frame, labeled entry=assign_job_id"
   },
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "终态 / 人审 / 机审 颜色与形状约定；DELETED 为软删终态",
+    "content": "Final State / Human Review / Machine Review Color and Shape Agreement; DELETED as Soft Delete Final State",
     "style": "small panel, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "initial / final 形状正确",
-      "transition 全带 label",
-      "legend 必画"
+      "Initial / final shape is correct",
+      "transition all with labels",
+      "Legend must be drawn"
     ],
     "avoid": [
-      "用流程图形状代替 state",
-      "微信 字样与业务字段在图中拼写错误"
+      "Use flowchart shapes to replace state",
+      "WeChat Text and Business Fields Are Misspelled in the Image"
     ]
   }
 }

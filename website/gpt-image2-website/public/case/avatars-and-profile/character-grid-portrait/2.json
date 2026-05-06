@@ -2,99 +2,99 @@
   "type": "4x4 Collection of the Same Character's Expressions and Micro-Movements",
   "goal": "A 4×4 grid within a single image, each cell capturing a moment of Sam Altman's daily developer life in the office, suitable for column illustrations or podcast cover element collage.",
   "subject": {
-    "description": "Sam Altman，短发、清瘦、略放松坐姿或站姿、常穿灰色或深蓝圆领针织衫或轻薄夹克",
-    "consistency": "十六格中五官比例、发际线、胡茬感一致，仅眼眉嘴角度与手势变化"
+    "description": "Sam Altman, Short Hair, Lean, Slightly Relaxed Sitting or Standing Posture, Often Wearing Gray or Deep Blue Round Neck Knit Sweater or Lightweight Jacket",
+    "consistency": "In the sixteen grids, facial features proportions, hairline, stubble feel are consistent, only the angles of the eyes, eyebrows, mouth, and gestures vary"
   },
-  "style": "高分辨率写实棚拍+自然顶侧柔光，背景统一为浅灰墙与橡木色桌面、一台合盖笔记本与一杯黑咖啡的轻微位移",
+  "style": "High resolution realistic studio shot + natural top-side soft light, background uniformly light gray wall and oak-colored desktop, with a slightly displaced closed notebook and a cup of black coffee",
   "layout": {
     "format": "4x4 grid",
     "panel_count": 16,
-    "gap": "2px 白线分隔",
+    "gap": "2px white line separator",
     "panels": [
       {
-        "expression": "微笑解释",
-        "action": "双手掌心向上摊开",
-        "outfit": "灰针织套头衫"
+        "expression": "Smile explanation",
+        "action": "Both hands open palms facing up",
+        "outfit": "Gray knitted pullover"
       },
       {
-        "expression": "专注皱眉",
-        "action": "俯看笔记本屏幕",
-        "outfit": "同左"
+        "expression": "Focused frown",
+        "action": "Looking down at the laptop screen",
+        "outfit": "Align left"
       },
       {
-        "expression": "恍然大悟",
-        "action": "食指轻敲太阳穴",
-        "outfit": "同左"
+        "expression": "Suddenly enlightened",
+        "action": "Index finger lightly tapping the temple",
+        "outfit": "Align left"
       },
       {
-        "expression": "轻笑",
-        "action": "举杯咖啡未饮",
-        "outfit": "同左"
+        "expression": "Soft smile",
+        "action": "A coffee cup raised but not yet drunk.",
+        "outfit": "Align left"
       },
       {
-        "expression": "略疲惫",
-        "action": "双掌揉眼",
-        "outfit": "深蓝开领衬衫"
+        "expression": "Slightly tired.",
+        "action": "Both palms rubbing eyes",
+        "outfit": "Deep blue open-collar shirt"
       },
       {
-        "expression": "思考",
-        "action": "下巴抵交叠指节",
-        "outfit": "同左"
+        "expression": "Thinking",
+        "action": "Chin resting on overlapping knuckles",
+        "outfit": "Align left"
       },
       {
-        "expression": "听对方说话",
-        "action": "头微偏、耳朝画外",
-        "outfit": "同左"
+        "expression": "Listening to the other party speaking",
+        "action": "Head slightly tilted, ear facing out of the frame.",
+        "outfit": "Align left"
       },
       {
-        "expression": "小惊讶",
-        "action": "身体后仰",
-        "outfit": "同左"
+        "expression": "Little surprise",
+        "action": "Body leaning back",
+        "outfit": "Align left"
       },
       {
-        "expression": "肯定点头",
-        "action": "竖拇指低角度",
-        "outfit": "灰套头+薄夹克肩搭椅背"
+        "expression": "Nod in affirmation",
+        "action": "Thumbs up at a low angle.",
+        "outfit": "Gray pullover + thin jacket draped over the chair back"
       },
       {
-        "expression": "浅愁",
-        "action": "视线朝窗外",
-        "outfit": "同左"
+        "expression": "Light melancholy.",
+        "action": "gaze towards the window",
+        "outfit": "Align left"
       },
       {
-        "expression": "被逗笑",
-        "action": "低头捂嘴",
-        "outfit": "同左"
+        "expression": "being amused",
+        "action": "Bowing head with hand over mouth",
+        "outfit": "Align left"
       },
       {
-        "expression": "认真否定",
-        "action": "单掌向前轻推",
-        "outfit": "同左"
+        "expression": "Seriously deny",
+        "action": "A single palm lightly pushes forward",
+        "outfit": "Align left"
       },
       {
-        "expression": "松一口气",
-        "action": "靠椅背仰颈",
-        "outfit": "同灰套头衫"
+        "expression": "Take a breath.",
+        "action": "Leaning back against the chair",
+        "outfit": "Same gray pullover"
       },
       {
-        "expression": "疑问",
-        "action": "侧头+单侧挑眉",
-        "outfit": "同左"
+        "expression": "Question.",
+        "action": "Side head + single eyebrow raise",
+        "outfit": "Align left"
       },
       {
-        "expression": "鼓励",
-        "action": "双掌合十轻击",
-        "outfit": "同左"
+        "expression": "Encouragement",
+        "action": "Both palms pressed together lightly",
+        "outfit": "Align left"
       },
       {
-        "expression": "收工",
-        "action": "合盖笔电、视线看镜头",
-        "outfit": "同左"
+        "expression": "Wrap up work",
+        "action": "Closed laptop, gaze looking at the camera",
+        "outfit": "Align left"
       }
     ]
   },
   "constraints": {
-    "must_keep": "十六格是同一可识别个人，无换脸、无增龄夸张",
-    "avoid": "单格与相邻格构图像复制粘贴、桌面杂物超过三件"
+    "must_keep": "The sixteen grids depict the same identifiable individual, no face swapping, no exaggerated aging",
+    "avoid": "Cell and adjacent cell composition resembles copy-pasting, more than three items on the desktop"
   }
 }

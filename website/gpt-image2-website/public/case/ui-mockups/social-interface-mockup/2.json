@@ -2,60 +2,60 @@
   "type": "Xiaohongshu Style Image and Text Dynamic Detail Page Mockup",
   "goal": "Generate a high-fidelity screenshot of a Xiaohongshu note detail page, warm and relatable.",
   "platform": {
-    "name": "小红书",
+    "name": "Xiaohongshu (Little Red Book)",
     "color_mode": "light",
-    "language": "中文"
+    "language": "Chinese."
   },
   "header": {
-    "status_bar": "顶部状态栏，时间 '15:24'，5G、Wi-Fi、电量",
-    "navigation": "左侧返回箭头 + 头像 '小满 Maya' + 红色 '+ 关注' 按钮，右侧三点菜单"
+    "status_bar": "Top status bar, time '15:24', 5G, Wi-Fi, battery",
+    "navigation": "Left side return arrow + avatar 'Xiaoman Maya' + red '+ Follow' button, right side three-dot menu"
   },
   "post": {
     "author": {
-      "avatar": "戴贝雷帽的年轻东亚女生头像",
-      "display_name": "小满 Maya",
-      "tag": "穿搭 | 探店 | 上海"
+      "avatar": "Avatar of a young East Asian girl wearing a beret.",
+      "display_name": "Little Fullness Maya",
+      "tag": "Outfit | Store Exploration | Shanghai"
     },
-    "title": "上海周末 City Walk 路线分享 ｜ 安福路 → 武康路 → 五原路",
-    "cover_image": "穿米色风衣的女生侧身行走在梧桐树下，背景是武康大楼一角",
+    "title": "Shanghai weekend City Walk route sharing | Anfu Road → Wukang Road → Wuyuan Road",
+    "cover_image": "A girl in a beige trench coat walking sideways under a sycamore tree, with a corner of the Wukang Building in the background.",
     "swipeable_images_count": 4,
     "swipeable_images": [
-      "1/4 武康大楼外景 + 樱花前景",
-      "2/4 安福路咖啡店外摆位特写",
-      "3/4 五原路彩色门头小店招牌",
-      "4/4 当日穿搭平铺图（风衣 + 牛仔裤 + 白色乐福鞋）"
+      "1/4 Wukang Building exterior + cherry blossom foreground",
+      "2/4 close-up of outdoor seating at Anfu Road café",
+      "3/4 colorful shop sign on Wuyuan Road",
+      "4/4 daily outfit flat lay (trench coat + jeans + white loafers)"
     ],
-    "body_text": "周末突然想出门走走，安排了一条 3 公里 city walk 路线 🚶‍♀️\n📍 安福路咖啡 → 武康路打卡 → 五原路小店扫货\n全程都是梧桐树荫，太适合周末发呆了，附穿搭 ↓",
+    "body_text": "Suddenly wanted to go out for a walk this weekend, arranged a 3 km city walk route 🚶‍♀️\n📍 Anfu Road Coffee → Wukang Road check-in → Wuyuan Road small shop for shopping\nThe whole route was under the sycamore tree shade, perfect for dawdling on the weekend, outfit attached ↓",
     "tags": [
-      "#周末出片",
+      "#Weekend Release",
       "#City Walk",
-      "#上海周末去哪儿",
-      "#武康路",
-      "#秋日穿搭"
+      "#Where to Go in Shanghai on the Weekend",
+      "#Wukang Road",
+      "#Autumn Outfit"
     ]
   },
-  "interaction_bar": "点赞 ❤️ 12.3w · 收藏 ⭐️ 8.7w · 评论 💬 4.2k · 分享 🔗",
+  "interaction_bar": "Like ❤️ 123k · Collect ⭐️ 87k · Comment 💬 4.2k · Share 🔗",
   "comments_preview": {
     "count": 3,
     "messages": [
-      "用户Lily: 想要详细攻略！求咖啡店名字 🥺",
-      "上海土著阿May: 这条路线我也走过，超出片！",
-      "穿搭小红薯: 求风衣链接 🔗 太好看了"
+      "User Lily: I want a detailed guide! Please give me the coffee shop name 🥺",
+      "Shanghai local Ah May: I've walked this route too, absolutely amazing!",
+      "Outfit Little Sweet Potato: Requesting trench coat link 🔗 It's so beautiful."
     ]
   },
   "footer": {
-    "comment_bar": "底部输入栏 '说点什么...' + 笑脸、@、图片图标"
+    "comment_bar": "Bottom Input Bar 'Say Something...' + Smile, @, Image Icon"
   },
   "style": {
-    "rendering": "小红书浅色模式经典配色：白底 + 红色品牌色 + 黑色正文",
-    "aspect_ratio": "9:19.5 高仿真手机截图"
+    "rendering": "Xiaohongshu light mode classic color scheme: white background + red brand color + black body text",
+    "aspect_ratio": "9:19.5 high-fidelity smartphone screenshot"
   },
   "constraints": {
-    "must_feel": "像真实小红书图文笔记，而不是设计稿",
+    "must_feel": "Like a real Xiaohongshu graphic note, rather than a design draft",
     "must_keep": [
-      "封面图 9:16 比例占据上半屏",
-      "标题、正文、tags 层级分明",
-      "评论区文案有真实小红书口吻"
+      "Cover image 9:16 ratio occupies the upper half of the screen",
+      "The levels of titles, body text, and tags are clearly defined.",
+      "Comment section copy has a genuine Xiaohongshu tone"
     ]
   }
 }

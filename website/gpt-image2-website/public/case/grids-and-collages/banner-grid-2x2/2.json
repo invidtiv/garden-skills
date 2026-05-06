@@ -2,61 +2,61 @@
   "type": "2x2 Course Banner Set",
   "goal": "Generate a 2×2 seasonal beverage banner set, overall 1:1, in a Starbucks-style green palette, with primarily Chinese text.",
   "brand": {
-    "name": "星巴克 · 四季特饮 2026",
-    "logo_position": "每格左上绿色圆形人鱼简化章 + 字标",
+    "name": "Starbucks · Seasonal Special Drinks 2026",
+    "logo_position": "Each grid has a green circular mermaid simplified emblem + logo at the top left",
     "primary_color": "#00704A",
     "secondary_color": "#27251F"
   },
   "layout": {
     "format": "2x2 grid",
     "panel_count": 4,
-    "gap": "16px 浅奶白分割",
+    "gap": "16px light milk white separation",
     "panel_aspect_ratio": "4:5",
     "overall_aspect_ratio": "1:1"
   },
   "panels": [
     {
       "position": "top-left",
-      "course": "春",
-      "headline": "樱花白桃拿铁回归",
-      "visual": "粉白渐变饮品杯、花瓣与木桌浅景深，晨光侧窗",
-      "cta": "到店一杯"
+      "course": "Spring",
+      "headline": "Cherry blossom white peach latte returns.",
+      "visual": "Pink-white gradient drink cup, petals and wooden table with shallow depth of field, morning light from the side window",
+      "cta": "A drink upon arrival"
     },
     {
       "position": "top-right",
-      "course": "夏",
-      "headline": "青柠冷萃，气泡撞醒午后",
-      "visual": "玻璃高杯、冰块与青柠片、冷凝结水珠特写",
-      "cta": "立刻下单"
+      "course": "Summer",
+      "headline": "Lime cold brew, bubbles awaken the afternoon",
+      "visual": "Glass goblet, ice cubes and lime slices, close-up of condensation droplets",
+      "cta": "Order Now"
     },
     {
       "position": "bottom-left",
-      "course": "秋",
-      "headline": "枫糖绵云拿铁",
-      "visual": "琥珀奶泡表面枫糖纹、暖秋落叶虚化背景，手持杯身",
-      "cta": "尝季节限定"
+      "course": "Autumn",
+      "headline": "Maple Sugar Fluffy Cloud Latte",
+      "visual": "Amber milk foam surface with maple sugar pattern, warm autumn leaves blurred background, holding the cup",
+      "cta": "Try seasonal limited"
     },
     {
       "position": "bottom-right",
-      "course": "冬",
-      "headline": "焙茶米乳，暖胃不加负担",
-      "visual": "陶土色纸杯、蒸汽、围巾与初雪街景虚焦",
-      "cta": "分享好友"
+      "course": "Winter",
+      "headline": "Roasted tea rice milk, warm and easy on the stomach",
+      "visual": "Terracotta color paper cup, steam, scarf and initially snowy street view with soft focus",
+      "cta": "Share with friends"
     }
   ],
   "style": {
-    "art_style": "暖食摄影感 + 轻微颗粒 + 高饱和但不过分",
-    "typography": "中文圆体标题 + 英文小副标，统一 CTA 绿色描边白芯按钮"
+    "art_style": "Warm food photography feel + slight grain + high saturation but not excessive",
+    "typography": "Chinese rounded title + English small subtitle, with a unified CTA green outlined white core button."
   },
   "constraints": {
     "must_keep": [
-      "四格同一条绿色主色与暗棕辅助色",
-      "每格有清晰饮品主体，不被文案遮挡",
-      "CTA 文案 4 字内"
+      "Four sections with the same green primary color and dark brown secondary color",
+      "Each grid has a clear main beverage, not obscured by text",
+      "CTA Copy Within 4 Characters"
     ],
     "avoid": [
-      "各格色温差异大到像四个品牌",
-      "文字小于饮品主体面积的不合理堆叠"
+      "The color temperature differences in each box are large enough to resemble four brands",
+      "Text should not be stacked irrationally than the main area of the beverage."
     ]
   }
 }

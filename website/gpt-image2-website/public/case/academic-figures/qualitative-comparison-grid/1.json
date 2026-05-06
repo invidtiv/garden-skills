@@ -7,8 +7,8 @@
     "outer_padding": "40px"
   },
   "grid": {
-    "rows": "4",
-    "cols": "5",
+    "rows": "Background details overwhelm the character.",
+    "cols": "Saturated and glaring background colors impact text recognition.",
     "cell_size_rule": "all cells identical size; gap between cells 4-6px",
     "cell_aspect": "square"
   },

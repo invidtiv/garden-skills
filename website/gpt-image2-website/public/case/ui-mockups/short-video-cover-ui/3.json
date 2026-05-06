@@ -4,38 +4,38 @@
   "platform": "YouTube",
   "aspect_ratio": "16:9",
   "background": {
-    "color_palette": "深空黑 #0A0A0A + 局部暖橙渐变 + 红色品牌色",
-    "texture": "极轻微的电路板纹理 + 主体附近发光线条"
+    "color_palette": "Deep space black #0A0A0A + local warm orange gradient + red brand color",
+    "texture": "Very slight circuit board texture + glowing lines near the main subject."
   },
   "main_visual": {
-    "subject": "一台尚未拆封的银白色科技产品包装盒，外盒印 'Apple Vision Pro 2' 字样，盒角已被局部撕开露出内里发光",
-    "host": "30 岁出头的亚洲男性数码博主在画面左侧 1/3 处半身出镜，戴黑色棒球帽与黑色 T 恤，双眼瞪大，张嘴做出 'OMG' 表情，右手指向包装盒方向",
+    "subject": "An unopened silver-white tech product packaging box, with 'Apple Vision Pro 2' printed on the outer box, corner partially torn revealing glowing interior",
+    "host": "Asian male digital blogger in his early 30s appears in the left third of the frame, wearing a black baseball cap and black t-shirt, eyes wide open, mouth making an 'OMG' expression, right hand pointing towards the packaging box",
     "extras": [
-      "盒子周围环绕 5 条向外辐射的发光金色线条",
-      "盒子局部撕开处透出内部蓝白光"
+      "Surrounding the box are 5 glowing golden lines radiating outward",
+      "The torn area of the box reveals a blue and white light from inside"
     ]
   },
   "title_block": {
     "main_title": "全网首发！\n我把 Vision Pro 2 拆了",
-    "title_style": "白色超粗黑体大字，关键词 '拆了' 使用红色描边 + 黑色衬影",
-    "sub_title": "真的值这个价吗？",
-    "label_badge": "右上角红色圆形 '独家' 徽章 + 黑色 'EXCLUSIVE' 小字"
+    "title_style": "White ultra-bold black text, with the keyword '拆了' using red outline + black shadow",
+    "sub_title": "Is it really worth this price?",
+    "label_badge": "Top right corner red circular 'Exclusive' badge + black 'EXCLUSIVE' small text"
   },
   "platform_marks": {
-    "channel_handle": "@数码老司机",
+    "channel_handle": "@Digital Old Driver",
     "duration_label": "12:48",
-    "extras": "右下小字 '1.2M views · 2 hours ago'"
+    "extras": "Bottom right small text '1.2M views · 2 hours ago'"
   },
   "style": {
-    "rendering": "像真实 YouTube 数码评测频道封面，强诱因 + 强好奇感",
-    "lighting": "包装盒处主光最强，主播脸部次强，背景渐暗"
+    "rendering": "Like a real YouTube digital review channel cover, with strong incentives + strong curiosity",
+    "lighting": "The main light is the strongest at the packaging box, the host's face is second strongest, and the background gradually darkens"
   },
   "constraints": {
-    "must_feel": "强诱因 + 强好奇感，让人忍不住点击",
+    "must_feel": "Strong Incentive + Strong Curiosity, Making It Irresistible to Click",
     "avoid": [
-      "主播表情过夸到掉档次",
-      "出现抖音水印",
-      "标题过长换行混乱"
+      "The anchor's expressions are exaggerated to a low level.",
+      "Include Douyin watermark",
+      "Title too long results in chaotic line breaks."
     ]
   }
 }

@@ -2,36 +2,36 @@
   "type": "Series of portraits of emperors from various dynasties.",
   "goal": "Produce a horizontal five-panel visual flow or 5×1 grid, featuring a bust of a representative monarch from the Chinese imperial era in each panel, with inscriptions below indicating temple names or customary titles + given names, suitable for historical popularization long images or scroll-style electronic screens.",
   "theme": {
-    "dynasty": "唐、宋、元、明、清各选一位",
+    "dynasty": "Choose one from Tang, Song, Yuan, Ming, and Qing dynasties",
     "subject_count": 5
   },
   "style": {
-    "art_style": "工笔重彩人物半身+略见山水云气底纹，绢本设色感",
-    "consistency": "五像须为同一虚拟宫廷画师笔法，线条与渲染力度统一",
-    "color_palette": "低饱和土黄绢底+石青+朱砂+墨"
+    "art_style": "Meticulous heavy-color portrait bust + slight glimpse of landscape and cloud texture, feeling of silk color",
+    "consistency": "The five images must use the same virtual court painter's brushstroke, with consistent lines and rendering strength.",
+    "color_palette": "Low saturation earthy yellow silk background + stone blue + cinnabar red + ink"
   },
   "layout": {
-    "format": "1x5 横条或 5 联等宽竖幅拼合",
-    "background": "连续云纹与海水江崖淡底，不断档",
+    "format": "1x5 horizontal strip or 5 equal-width vertical panels combined",
+    "background": "Continuous cloud patterns and a faint background of sea cliffs, uninterrupted.",
     "panel_design": {
-      "portrait_shape": "每格圆角矩形内胸像",
-      "label_position": "格底居中",
-      "label_content": "尊号或庙号习惯读法 + 名讳，例如「唐太宗 李世民」「宋太祖 赵匡胤」「元世祖 忽必烈」「明成祖 朱棣」「清圣祖 玄烨」"
+      "portrait_shape": "Each grid contains a bust in a rounded rectangle",
+      "label_position": "The bottom of the frame is centered.",
+      "label_content": "Respectful title or temple name customary reading + personal name, for example 'Emperor Taizong of Tang Li Shimin', 'Emperor Taizu of Song Zhao Kuangyin', 'Yuan Shizu Kublai', 'Ming Chengzu Zhu Di', 'Qing Shengzu Xuanye'"
     }
   },
   "subjects": {
     "auto_select": false,
-    "user_list": "唐：李世民；宋：赵匡胤；元：忽必烈；明：朱棣；清：康熙帝（玄烨）"
+    "user_list": "Tang: Li Shimin; Song: Zhao Kuangyin; Yuan: Kublai Khan; Ming: Zhu Di; Qing: Emperor Kangxi (Xuanye)"
   },
   "constraints": {
     "must_keep": [
-      "冠服与补子 / 朝珠等符合各朝常见图像志",
-      "标签汉字准确、无漏字",
-      "五像气质庄敬、无戏谑表情"
+      "Crown and vestments / tassels, etc. comply with common image records of each dynasty",
+      "Label Chinese characters must be accurate with no missing characters.",
+      "Five images should portray dignified qualities, without sarcastic expressions."
     ],
     "avoid": [
-      "明清官服混穿、清帝无朝冠乱画",
-      "背景出现现代建筑"
+      "Ming and Qing official uniforms mixed, Qing emperor with no crown drawn randomly",
+      "Modern architecture appears in the background"
     ]
   }
 }

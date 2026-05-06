@@ -8,8 +8,8 @@
     "module_gap": "16px"
   },
   "header": {
-    "main_title": "iPhone 16 Pro 全方位解析：手感、算力、影像一次看懂",
-    "subtitle": "钛金属 · A18 Pro · 三摄系统 · iOS 18 同步亮点（参数以 Apple 公开展示为口径，图内数字为设计示意）",
+    "main_title": "iPhone 16 Pro comprehensive analysis: feel, processing power, and imaging understood at once",
+    "subtitle": "Titanium metal · A18 Pro · triple-camera system · iOS 18 synchronized highlights (parameters based on Apple’s public presentation, numbers in the image are design references)",
     "title_position": "top-left, large bold sans-serif"
   },
   "palette": {
@@ -21,79 +21,79 @@
       "dusty blue #B4C5D6",
       "warm peach #F2D4C4"
     ],
-    "rule": "module_tints 轮换，accent 仅用于大数字与 CTA 级关键词"
+    "rule": "Module_tints rotate, accent only used for large numbers and CTA-level keywords"
   },
   "layout": {
     "style": "asymmetric bento with one 2x2 hero",
-    "module_count": "8",
-    "grid": "1 hero 2x2 左上; 右列上下各一 1x2+1x1; 下区两排填满",
+    "module_count": "Overexposed background obscures the outlines.",
+    "grid": "1 hero 2x2 top left; one 1x2 + one 1x1 in each of the upper and lower right columns; bottom area filled with two rows",
     "alignment": "invisible 12-column grid, strict gap"
   },
   "modules": [
     {
       "id": "M1-hero",
       "size": "large (2x2)",
-      "role": "TOP 1 / 主推荐",
-      "content": "左侧钛金属原色 Pro 产品侧视 + 主摄模组特写; 三行加粗: 「更轻的钛框」「5 倍长焦可日常」「4K/120 杜比视界」; 星评五星; 小字: 建议容量 256 GB 起"
+      "role": "TOP 1 / Main Recommendation",
+      "content": "Left side titanium metal original color Pro product side view + main camera module close-up; three bold lines: 'Lighter titanium frame' '5x telephoto for everyday use' '4K/120 Dolby Vision'; star rating five stars; small text: recommended capacity starting from 256 GB"
     },
     {
       "id": "M2",
       "size": "medium (1x2 vertical)",
-      "role": "屏幕与显示",
-      "content": "标题「ProMotion 与峰值亮度」: 极细示意曲线表示刷新率, 大数字 120 Hz 与 2000+ nit 样例标注（示意）+ 小字: 常亮显示、文字锐度"
+      "role": "Screen and display",
+      "content": "Title 'ProMotion and Peak Brightness': Very fine indicative curve representing refresh rate, large numbers 120 Hz and 2000+ nits example annotations (indicative) + small text: Always-on display, text sharpness."
     },
     {
       "id": "M3",
       "size": "small (1x1)",
-      "role": "关键数字",
-      "content": "巨大数字「A18 Pro」+ 小标签「3 nm 级 第二代」+ 小图标 CPU/GPU/NE"
+      "role": "Key numbers",
+      "content": "Giant number 'A18 Pro' + small tag '3nm level second generation' + small icons CPU/GPU/NE"
     },
     {
       "id": "M4",
       "size": "small (1x1)",
-      "role": "接口 / 体验",
-      "content": "四个迷你图标+标签: ProRes / USB-C / 空间视频 / 操作按钮(示意)"
+      "role": "Interface / Experience",
+      "content": "Four mini icons + labels: ProRes / USB-C / spatial video / operation button (illustrated)"
     },
     {
       "id": "M5",
       "size": "medium (2x1 wide)",
-      "role": "多摄对比条",
-      "content": "横向三枚镜头剪影 + 0.5× / 1× / 5× 小字, 用浅灰条表示焦段, 高亮 5× 日常可用人像"
+      "role": "Multiple camera comparison bar",
+      "content": "Horizontal silhouette of three lenses + 0.5× / 1× / 5× small text, using light gray bars to indicate focal lengths, highlighting 5× for everyday portrait use."
     },
     {
       "id": "M6",
       "size": "small (1x1)",
-      "role": "起售价提示",
-      "content": "人民币「¥7,999 起(示意)」+ 行小字: 以官网实时为准 + 以旧换新可再减"
+      "role": "Starting price prompt",
+      "content": "Chinese Yuan 'From ¥7,999 (indicative)' + small print: subject to real-time accuracy on the official website + extra discount for trade-in."
     },
     {
       "id": "M7",
       "size": "medium (1x2)",
-      "role": "iOS 18 同屏要点",
-      "content": "列表 3 条: 锁屏/控制项自定义; 与 Mac/iPad 连续互通小图标; 端侧与云端 AI 用隐私图标点到为止"
+      "role": "iOS 18 screen-sharing highlights",
+      "content": "List 3 items: Lock screen/control item customization; small icons for continuous interaction with Mac/iPad; endpoint and cloud AI use privacy icons to the end"
     },
     {
       "id": "M8",
       "size": "small (1x1)",
       "role": "Footer",
-      "content": "小字: 配壳膜更保值 · 下一张滑看配件清单 →; 不放入真实 URL"
+      "content": "Small text: Shell film holds value better · Next slide to view accessory list →; Do not include a real URL"
     }
   ],
   "module_internal_style": {
     "padding": "20px",
-    "typography": "Inter / 思源黑; module 内小标题 14px 粗, 正文 12px",
-    "rule": "每格必有 micro-title 与至少一个小图形或数字",
-    "imagery": "产品为示意渲染风, 非实拍商标特写"
+    "typography": "Inter / Source Han Black; module internal subtitle 14px bold, body 12px",
+    "rule": "Each grid must have a micro-title and at least one small graphic or number",
+    "imagery": "Product is a conceptual rendering style, not a real shot trademark close-up."
   },
   "constraints": {
     "must_keep": [
-      "统一 24px 圆角",
-      "8 个模块都填实",
+      "Unified 24px rounded corners",
+      "All 8 modules are filled",
       "至少一格里含类条形对比或大数字"
     ],
     "avoid": [
-      "全图渐变玻璃拟态破坏 bento 简洁",
-      "与 Apple 官方图逐像素复刻"
+      "The entire image features gradient glass mimicking disruptive bento simplicity",
+      "Pixel-perfect replication of Apple official images"
     ]
   }
 }

@@ -2,46 +2,46 @@
   "type": "Media Blockbuster-Level Founder Portrait",
   "goal": "Generate a 4:5 vertical character interview cover image, referencing the public appearance of Sam Altman: slender, short hair, mild expression, dressed in simple dark clothing, suitable for cultural and technology interdisciplinary publications or in-depth report header images.",
   "subject": {
-    "identity": "人工智能与创业投资领域美国企业家、公共讲者",
-    "gender": "美国男性",
-    "age_range": "35-45 岁",
-    "appearance": "短发、清爽，肤色较浅，可轻微胡茬，眼镜可选",
-    "outfit": "墨绿或深棕羊绒圆领衫外搭无结构炭灰单西，不系领带"
+    "identity": "Entrepreneurs and public speakers in the field of artificial intelligence and venture capital in the United States.",
+    "gender": "American male",
+    "age_range": "35-45 years old",
+    "appearance": "Short hair, refreshing, lighter skin tone, slight stubble, glasses optional",
+    "outfit": "Dark green or deep brown cashmere crew neck sweater paired with an unstructured charcoal gray blazer, no tie"
   },
   "composition": {
     "shot": "胸到腰半身，肩线水平",
-    "framing": "人物略靠右，左侧 1/3 为暗书墙与一道窄暖光带，为竖排大引语预留",
-    "title_safe_area": "左上交叠区域与左中竖长条为白字可压暗底处"
+    "framing": "Character slightly right, with the left 1/3 being a dark book wall and a narrow warm light strip, reserved for vertically placed large quotes.",
+    "title_safe_area": "Upper left overlapping area and upper middle vertical strip have white text that can compress the dark background"
   },
   "environment": {
-    "location": "有整墙书籍与少量抽象画的室内空间，景深浅，书脊不辨读",
-    "depth": "前景无遮挡物，书墙退后两米外虚化"
+    "location": "An indoor space with a full wall of books and a few abstract paintings, shallow depth of field, with book spines unreadable",
+    "depth": "Foreground without obstructions, book wall blurred two meters back"
   },
   "lighting": {
-    "style": "单一大柔光自左前 30° 扫过面部与单西肩线",
-    "key_light": "暖日光灯或窗光 4200-4600K，面部三角光干净",
-    "fill_light": "对侧 1:3 弱泡沫板反",
-    "color_temp": "整体略暖、心理距离亲和"
+    "style": "A single large soft light sweeps across the face and the single shoulder line from the left front at 30°",
+    "key_light": "Warm daylight or window light 4200-4600K, clean triangular lighting on the face",
+    "fill_light": "Opposite side 1:3 weak foam board reflection",
+    "color_temp": "Overall, it is slightly warm and has a friendly psychological distance."
   },
   "expression": {
-    "mood": "平静、倾听感，略带笑意的克制",
-    "gaze": "正视镜头下沿三分之一处，略「穿过镜头」的访谈感"
+    "mood": "Calm, listening feel, with a hint of restrained smile",
+    "gaze": "At one-third from the bottom facing the camera, with a slight 'interview through the lens' feel."
   },
   "style": {
-    "rendering": "高分辨率、噪点低，印刷杂志可用",
-    "tone": "对比中等，不压成低长调黑白",
-    "color_palette": "书墙暖木棕 + 服装冷灰 + 肤色的自然中间调"
+    "rendering": "High resolution, low noise, suitable for print magazines",
+    "tone": "Medium contrast, not compressed into low long tone black and white",
+    "color_palette": "Book wall warm wood brown + clothing cool gray + natural mid-tone skin color."
   },
   "constraints": {
     "must_keep": [
-      "书墙不出现可辨真书封面与政治口号",
-      "左区留白不碎、不断裂",
-      "无 OpenAI 字标在画面内"
+      "The book wall should not display recognizable real book covers or political slogans.",
+      "Left area remains blank without fragmentation or cracking",
+      "No OpenAI logo within the frame."
     ],
     "avoid": [
-      "过锐导致塑料肤",
-      "强逆光剪影丢失眼神",
-      "与人物公开照片逐像素复刻"
+      "Over-sharpened leading to plastic skin.",
+      "Strong Backlight Silhouette Loses Eye Expression",
+      "Pixel-perfect replication of publicly available photographs of characters"
     ]
   }
 }

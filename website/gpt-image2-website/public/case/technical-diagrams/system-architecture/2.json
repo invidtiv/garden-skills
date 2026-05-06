@@ -7,32 +7,32 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "NimbusMart 电商 · 秒杀下单 · 技术架构",
-    "subtitle": "sharded + cache-aside + async settle · 华东生产",
+    "title": "NimbusMart e-commerce · Flash sale ordering · Technical architecture",
+    "subtitle": "Sharded + cache-aside + async settle · East China production",
     "position": "top-left, large mono font (JetBrains Mono / SF Mono), light gray text"
   },
   "color_semantics": {
-    "rule": "颜色按'角色'编码，不按'技术'编码",
+    "rule": "Colors coded by 'role', not by 'technology'",
     "palette": [
       {
         "role": "User / Client / Edge",
         "color": "cyan #22D3EE",
-        "use_for": "终端用户、Web、Mobile、CLI"
+        "use_for": "End Users, Web, Mobile, CLI"
       },
       {
         "role": "Gateway / API / BFF",
         "color": "blue #60A5FA",
-        "use_for": "API 网关、负载均衡、CDN、BFF"
+        "use_for": "API Gateway, Load Balancing, CDN, BFF"
       },
       {
         "role": "Business Services",
         "color": "emerald #34D399",
-        "use_for": "微服务、应用层、业务逻辑"
+        "use_for": "Microservices, Application Layer, Business Logic"
       },
       {
         "role": "Data / Persistence",
         "color": "violet #A78BFA",
-        "use_for": "数据库、缓存、对象存储、搜索"
+        "use_for": "Database, cache, object storage, search."
       },
       {
         "role": "Middleware / Queue",
@@ -42,36 +42,36 @@
       {
         "role": "Infra / Platform",
         "color": "amber #FBBF24",
-        "use_for": "K8s、容器运行时、云平台"
+        "use_for": "K8s, container runtime, cloud platform"
       },
       {
         "role": "Security / Auth",
         "color": "rose #FB7185",
-        "use_for": "鉴权、密钥、审计、防火墙"
+        "use_for": "Authentication, keys, audits, firewalls."
       },
       {
         "role": "External / 3rd Party",
         "color": "slate #94A3B8",
-        "use_for": "外部 SaaS、第三方 API"
+        "use_for": "External SaaS, third-party API"
       }
     ]
   },
   "regions": {
-    "rule": "用大虚线框包围属于同一'部署单元'的节点，框上方有 region label",
+    "rule": "Surround nodes belonging to the same 'deployment unit' with a large dashed box, with a region label above the box",
     "items": [
       {
         "id": "R1",
-        "label": "Edge · CDN 与 L7 入口",
+        "label": "Edge · CDN and L7 ingress",
         "color_border": "cyan dashed"
       },
       {
         "id": "R2",
-        "label": "Service Mesh · 订单 / 库存 / 支付",
+        "label": "Service Mesh · Orders / Inventory / Payments",
         "color_border": "emerald dashed"
       },
       {
         "id": "R3",
-        "label": "Data · 主从、缓存、消息",
+        "label": "Data · Master-slave, cache, messaging",
         "color_border": "violet dashed"
       }
     ]
@@ -81,13 +81,13 @@
     "items": [
       {
         "id": "N1",
-        "label": "顾客终端 (H5/小程序)",
+        "label": "Customer terminal (H5/Mini Program)",
         "role": "User / Client / Edge",
         "region": "R1"
       },
       {
         "id": "N2",
-        "label": "阿里云 CDN (静态 + 防刷)",
+        "label": "Alibaba Cloud CDN (static + anti-scraping)",
         "role": "Gateway / API / BFF",
         "region": "R1"
       },
@@ -117,7 +117,7 @@
       },
       {
         "id": "N7",
-        "label": "Risk Engine (反作弊)",
+        "label": "Risk Engine (Anti-Cheat)",
         "role": "Security / Auth",
         "region": "R2"
       },
@@ -129,25 +129,25 @@
       },
       {
         "id": "N9",
-        "label": "Redis Cluster (库存热点)",
+        "label": "Redis Cluster (Inventory Hotspot)",
         "role": "Data / Persistence",
         "region": "R3"
       },
       {
         "id": "N10",
-        "label": "MySQL 8 主",
+        "label": "MySQL 8 master",
         "role": "Data / Persistence",
         "region": "R3"
       },
       {
         "id": "N11",
-        "label": "MySQL 8 从 (只读)",
+        "label": "MySQL 8 slave (read-only)",
         "role": "Data / Persistence",
         "region": "R3"
       },
       {
         "id": "N12",
-        "label": "微信支付网关回调入口",
+        "label": "WeChat Payment Gateway Callback Entrance",
         "role": "External / 3rd Party",
         "region": "R1"
       }
@@ -173,7 +173,7 @@
         "from": "N2",
         "to": "N3",
         "style": "sync",
-        "label": "回源"
+        "label": "Return source"
       },
       {
         "from": "N3",
@@ -221,7 +221,7 @@
         "from": "N5",
         "to": "N10",
         "style": "sync",
-        "label": "行锁扣减"
+        "label": "movement lock reduction"
       },
       {
         "from": "N6",
@@ -233,7 +233,7 @@
         "from": "N11",
         "to": "N4",
         "style": "sync",
-        "label": "SELECT 订单快照"
+        "label": "SELECT Order Snapshot"
       },
       {
         "from": "N12",
@@ -244,16 +244,16 @@
     ],
     "sync_call": {
       "style": "solid line 1.5px in slate #64748B, with small filled triangle arrowhead at the target end",
-      "use_for": "同步请求 / 调用"
+      "use_for": "Synchronous request / call"
     },
     "async_event": {
       "style": "dashed line 1.5px in slate #64748B, with hollow triangle arrowhead",
-      "use_for": "异步事件 / 消息发布订阅 / 回调"
+      "use_for": "Asynchronous Events / Publish-Subscribe Messaging / Callbacks"
     },
     "data_flow_label": {
-      "rule": "edges 上可选标小标签，用 mono 字体 9pt，背景与画布融合"
+      "rule": "Edge optional label with mono font 9pt, background blends with the canvas"
     },
-    "rule_routing": "尽量正交（水平 / 垂直）走线；如果必须斜线，控制在 ≤ 30°；边不要穿过节点"
+    "rule_routing": "Try to make lines orthogonal (horizontal/vertical); if diagonal lines are necessary, keep them ≤ 30°; don't let edges cross nodes"
   },
   "legend": {
     "enabled": true,
@@ -263,20 +263,20 @@
   },
   "constraints": {
     "must_keep": [
-      "暗色背景 + 细 grid",
-      "颜色按 role 编码",
-      "节点统一圆角和尺寸基线",
-      "等宽字体（mono）贯穿全图",
-      "edges 不穿过节点，标签不与边重叠",
-      "区域虚线框颜色与区域含义匹配",
-      "legend 必须画出"
+      "Dark background + fine grid",
+      "Colors coded by role",
+      "Nodes have consistent rounded corners and size baseline",
+      "Monospaced font (mono) throughout the entire image",
+      "Edges do not pass through nodes, labels do not overlap with edges",
+      "The color of the dashed box matches the meaning of the area",
+      "Legend must be shown"
     ],
     "avoid": [
-      "彩虹色 / 高饱和霓虹色",
-      "用 emoji 当节点图标",
-      "3D 立方体 / 透视效果 / 玻璃质感",
-      "节点超过 15 个",
-      "声称可导出 SVG"
+      "Rainbow Color / High Saturation Neon Color",
+      "Use emoji as node icon",
+      "3D cube / perspective effect / glass texture",
+      "Over 15 nodes",
+      "Claims to export SVG"
     ]
   }
 }

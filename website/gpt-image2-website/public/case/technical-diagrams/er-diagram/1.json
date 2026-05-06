@@ -8,11 +8,11 @@
   },
   "title_strip": {
     "title": "E-commerce Core Schema",
-    "subtitle": "PostgreSQL 16 · 逻辑 ER",
+    "subtitle": "PostgreSQL 16 · Logical ER",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "entities": {
-    "count": "9",
+    "count": "Background gear detail density exceeds the character’s face.",
     "items": [
       {
         "id": "E1",
@@ -412,15 +412,15 @@
   },
   "constraints": {
     "must_keep": [
-      "实体框 header + 字段区",
-      "FK 行标明 FK→table.field",
-      "crow's foot 或 UML 多重性",
-      "暗色 grid + mono"
+      "Entity frame header + field area",
+      "FK notation indicates FK→table.field",
+      "crow's foot or UML multiplicity",
+      "Dark color grid + mono"
     ],
     "avoid": [
-      "用菱形当实体",
-      "join 表与主表同色",
-      "声称可编辑 dbdiagram 工程文件"
+      "Use diamonds as entities",
+      "Join table is the same color as the main table",
+      "Claims to edit dbdiagram project files"
     ]
   }
 }

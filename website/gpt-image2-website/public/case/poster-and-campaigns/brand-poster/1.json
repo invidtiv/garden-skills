@@ -2,39 +2,39 @@
   "type": "Brand Main Poster",
   "goal": "Generate a poster that can serve as the main image for a consumer electronics brand's single-node communication, featuring both the character and product as dual focal points, with a restrained overall design centered around a single Chinese slogan, achieving an Apple-like minimalist feel without copying any official logos.",
   "brand": {
-    "name": "创变者·责任科技年度论坛",
-    "industry": "科技、公共政策与开发者生态的跨界论坛（主视觉不冒充 Apple 官方发布物料）"
+    "name": "Innovators · Responsible Technology Annual Forum",
+    "industry": "Cross-disciplinary forum on technology, public policy, and developer ecosystem (main visuals should not impersonate Apple official release materials)."
   },
   "visual_tone": {
-    "aesthetic": "极简未来感 + 温和平光人像",
-    "color_palette": "深空灰 + 银白 + 极淡青高光",
-    "lighting": "左前侧柔光，面部对比克制，产品边缘有细腻菲涅尔高光"
+    "aesthetic": "Extremely minimal futuristic feel + warm soft light portrait.",
+    "color_palette": "Deep space gray + silver white + very light cyan highlights",
+    "lighting": "Left front side soft light, facial contrast restrained, with delicate Fresnel highlights on the product edges"
   },
   "centerpiece": {
-    "type": "人物 + 产品",
-    "description": "Tim Cook 半身正面，微笑自然，着深蓝圆领针织与无 logo 深灰外套；其右手侧悬浮一台无 logo 的银色笔记本电脑开屏，屏上为抽象多窗口界面示意；人物与电脑共同占据画面约一半高度，留出上方与左侧给标题区",
-    "scale": "人物连同电脑约占画面 55%"
+    "type": "Character + Product.",
+    "description": "Tim Cook half-body frontal, smiling naturally, wearing a dark blue round-neck knit and a no-logo dark gray jacket; on his right side, a no-logo silver laptop is floating open, displaying an abstract multi-window interface; the person and the laptop together occupy about half the height of the picture, leaving space at the top and left for the title area.",
+    "scale": "Character including the computer occupies about 55% of the image."
   },
   "slogan": {
-    "main": "再走一步，就到下一幕",
-    "sub": "创变者年会 · 生态与责任专场"
+    "main": "Take one more step, and you will reach the next scene",
+    "sub": "Innovator Annual Meeting · Ecosystem and Responsibility Special Session"
   },
   "logo_placement": {
-    "position": "右下角小字与几何符号组合",
-    "size": "适中不抢主视觉，仅占画面宽约 6%"
+    "position": "Small text in the lower right corner combined with geometric symbols",
+    "size": "Moderate and not stealing the main visual, only occupying about 6% of the screen width."
   },
-  "aspect_ratio": "3:4 竖版，四周预留安全裁切 5%",
+  "aspect_ratio": "3:4 vertical version, with 5% safe cutting margin all around",
   "constraints": {
     "must_keep": [
-      "主句八字以内，一眼可读",
-      "人物可辨识为温和专业的公众人物气质，不漫画化、不丑化",
-      "不出现可识别的真实 Apple 商标、不做官方代言人暗示",
-      "全图主色不超过三种大面积色块"
+      "Main sentence within eight characters, readable at a glance",
+      "Character should be recognizable as a mild and professional public figure, not cartoonish or grotesque.",
+      "No recognizable real Apple trademarks, no official endorsement implications",
+      "The primary colors in the entire image do not exceed three major blocks"
     ],
     "avoid": [
-      "在一张图里塞多机型",
-      "超过两种字体家族",
-      "人物背后堆满促销贴纸"
+      "Stuff Multiple Models in One Image",
+      "More than two font families",
+      "Behind the character is piled with promotional stickers."
     ]
   }
 }

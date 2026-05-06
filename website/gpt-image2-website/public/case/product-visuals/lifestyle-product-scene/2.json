@@ -3,28 +3,28 @@
   "goal": "Generate a main image depicting an athlete jogging in the morning while wearing a smartwatch, with realistic lighting and recognizable products, for use on a website or social media campaigns.",
   "subject": {
     "product_name": "Apple Watch Ultra 2",
-    "visual_description": "钛金属表壳、橙色活动表带、显示跑步体能界面与心率的 Always-On 屏幕",
-    "position": "画面右下，占据前景，略放大表盘"
+    "visual_description": "Titanium metal case, orange active strap, Always-On screen displaying running performance interface and heart rate",
+    "position": "In the lower right, occupying the foreground, slightly enlarged dial."
   },
   "scene": {
-    "location": "洛杉磯海边塑胶跑道，一侧棕榈影与低护栏，远处海雾",
-    "time_of_day": "秋日清晨 7:10",
-    "weather_or_mood": "微汗、清朗、专注",
+    "location": "Plastic track by the beach in Los Angeles, with palm shadows on one side and low railings, distant sea fog.",
+    "time_of_day": "Autumn Morning 7:10",
+    "weather_or_mood": "Slight Sweat, Clear and Focused",
     "extra_props": [
-      "停在后景模糊处的深灰水壶",
-      "跑道上被拉伸的影子"
+      "Dark gray kettle parked in the blurred background",
+      "Stretched shadow on the runway"
     ]
   },
   "lighting": {
     "type": "自然光",
-    "direction": "低角度侧顺光，强调手臂肌肉线条与表壳拉丝",
-    "intensity": "明亮但不反差过硬",
-    "color_temp": "略暖，符合南加州晨跑"
+    "direction": "Low-angle side lighting, emphasizing the muscle lines of the arms and the brushed surface of the case",
+    "intensity": "Bright but not overly contrasting",
+    "color_temp": "Slightly warm, suitable for a morning run in Southern California."
   },
   "human_presence": {
     "enabled": "true",
-    "form": "一位虚构的高大男性运动员背影与中景体量，无正脸；抬左腕看表，头微低，深色短卷发与无袖训练背心可辨",
-    "rule": "人物不抢过腕部产品，可识别为高水平运动员轮廓但不需肖像级正脸"
+    "form": "A fictional tall male athlete's back view and mid-shot volume, no frontal face; lifting the left wrist to check the watch, head slightly down, distinguishable short dark curly hair and sleeveless training vest",
+    "rule": "Character should not overshadow wrist products; recognizable as a high-level athlete's silhouette but does not require a portrait-quality frontal view."
   },
   "text_overlay": {
     "enabled": "false",
@@ -32,21 +32,21 @@
     "headline": ""
   },
   "style": {
-    "rendering": "35mm 纪实摄影风 + 轻颗粒，非影棚",
-    "depth": "浅景深强调表盘",
-    "consistency": "海雾灰蓝 + 表带橙为唯一点色"
+    "rendering": "35mm documentary photography style + light grain, non-studio",
+    "depth": "Shallow depth of field emphasizes the dial.",
+    "consistency": "Sea fog gray blue + strap orange as the only accent color"
   },
   "constraints": {
     "must_keep": [
-      "表带与界面信息清晰可读",
-      "光线与影子方向一致",
-      "场景为真实户外跑道而非影棚"
+      "watch strap and interface information are clear and readable",
+      "The direction of light is consistent with the direction of shadows",
+      "Scene as Real Outdoor Running Track Rather Than Studio"
     ],
     "avoid": [
-      "对运动员面部可识别度夸张",
-      "刻意贴近任何具体真实公众人物的肖像细节",
-      "表盘 UI 字糊",
-      "其他腕表品牌入镜"
+      "Exaggerated facial recognition of athletes",
+      "Deliberately close to the portrait details of any specific real public figure",
+      "watch dial UI text is blurry",
+      "Other watch brands appearing"
     ]
   }
 }

@@ -55,8 +55,8 @@
     }
   },
   "lifelines": {
-    "rule": "每个 actor header 下方画一条垂直虚线 (1px dashed slate #475569)，从 header 底部一直延伸到画布底部",
-    "spacing": "lifelines 之间等距，间距 ≥ 200px"
+    "rule": "Draw a vertical dashed line (1px dashed slate #475569) below each actor header, extending from the bottom of the header to the bottom of the canvas",
+    "spacing": "Lifelines equidistant, spacing ≥ 200px"
   },
   "messages": {
     "count": 10,
@@ -65,14 +65,14 @@
         "id": "M1",
         "from": "A1",
         "to": "A2",
-        "label": "1. 点击「使用企业账户登录」",
+        "label": "1. Click 'Login with Corporate Account'",
         "type": "sync"
       },
       {
         "id": "M2",
         "from": "A2",
         "to": "A2",
-        "label": "2. 生成 code_verifier，推导 code_challenge=S256(verifier)",
+        "label": "2. Generate code_verifier, derive code_challenge=S256(verifier)",
         "type": "self"
       },
       {
@@ -86,14 +86,14 @@
         "id": "M4",
         "from": "A3",
         "to": "A1",
-        "label": "4. 302 → 展示登录/ MFA 页",
+        "label": "4. 302 → Show login/MFA page",
         "type": "return"
       },
       {
         "id": "M5",
         "from": "A1",
         "to": "A3",
-        "label": "5. 提交 username + password + TOTP",
+        "label": "5. Submit username + password + TOTP",
         "type": "sync"
       },
       {
@@ -128,7 +128,7 @@
         "id": "M10",
         "from": "A4",
         "to": "A2",
-        "label": "10. 200 { tenant_id, entitlements[] }，aud 匹配 portal-spa",
+        "label": "10. 200 { tenant_id, entitlements[] }, aud matches portal-spa",
         "type": "return"
       }
     ],
@@ -138,21 +138,21 @@
       "return": "dashed line 1.5px slate #64748B, hollow triangle arrowhead",
       "self": "horizontal arrow that loops out to the right and back to the same lifeline (bracket shape)"
     },
-    "label_format": "<编号>. <消息内容>，mono 10pt，标在 arrow 上方居中"
+    "label_format": "<number>. <message content>, mono 10pt, centered above the arrow"
   },
   "activation_bars": {
     "enabled": true,
-    "rule": "在 actor lifeline 上画细长矩形（4-6px 宽）覆盖该 actor 处理消息的时间段；颜色用 actor 的 type color，半透明",
-    "vertical_extent": "从该 actor 收到一个 message 开始，到它发出 return 结束"
+    "rule": "Draw a slender rectangle (4-6px wide) on the actor lifeline covering the time period the actor processes messages; color to use the actor's type color, semi-transparent",
+    "vertical_extent": "Starts when the actor receives a message, and ends when it emits a return."
   },
   "annotations": {
     "notes": {
       "enabled": true,
-      "rule": "在 M3 旁附便签：PKCE 防止 code 被截获后换 token；state 与 OIDC nonce 需校验"
+      "rule": "Sticky Note Next to M3: PKCE Prevents Code from Being Intercepted and Token Swapped; State and OIDC Nonce Need to be Verified"
     },
     "loops_alts": {
       "enabled": false,
-      "rule": "如失败分支可用 alt 框，本次仅主路径"
+      "rule": "If failure branches can use the alt box, this time only the main path"
     }
   },
   "legend": {
@@ -163,18 +163,18 @@
   },
   "constraints": {
     "must_keep": [
-      "actor headers 等大小、等间距、水平对齐",
-      "lifelines 垂直、等间距",
-      "messages 严格按时间从上到下",
-      "每条 message 有编号 + 简洁标签",
-      "sync / return 用不同箭头风格",
-      "暗色 grid + 等宽字体",
-      "legend 必画"
+      "actor headers same size, equal spacing, horizontally aligned",
+      "Lifelines vertical, evenly spaced",
+      "Messages strictly ordered by time from top to bottom",
+      "Each message has a number + concise label",
+      "Sync / return use different arrow styles",
+      "Dark color grid + monospace font",
+      "Legend must be drawn"
     ],
     "avoid": [
-      "return 用实线箭头",
-      "用 emoji 当 actor 图标",
-      "声称可编辑 SVG"
+      "Return uses solid line arrows",
+      "Use emoji as actor icon",
+      "Claims to edit SVG"
     ]
   }
 }

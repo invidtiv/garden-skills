@@ -2,67 +2,67 @@
   "type": "Business Report Executive Summary Page",
   "goal": "Generate a single summary page suitable for quarterly performance reports of listed companies, investment research briefings, and internal executive meeting covers, with a rational and restrained style.",
   "style": {
-    "color_palette": "商业蓝 + 浅灰 + 白",
-    "tone": "理性、可信赖、偏保守",
-    "typography": "无衬线现代体 + 数字加粗，英文数字与中文标签混排时对齐基线"
+    "color_palette": "Commercial blue + light gray + white",
+    "tone": "Rational, trustworthy, somewhat conservative",
+    "typography": "No sans-serif modern type + bold numbers, English numbers aligned with Chinese labels when mixed"
   },
   "header": {
     "company_or_team": "Apple Inc.",
-    "report_period": "2025 财年第 4 财季（截至 2025 年 9 月 27 日）",
-    "main_title": "业务概览与执行摘要",
-    "subtitle": "四项关键指标 + 单句核心判断"
+    "report_period": "2025 fiscal year Q4 (as of September 27, 2025)",
+    "main_title": "Business overview and executive summary",
+    "subtitle": "Four key indicators + a single core judgment"
   },
   "kpi_cards": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
       {
-        "label": "总营收",
-        "value": "949 亿美元",
+        "label": "Total revenue",
+        "value": "94.9 billion dollars",
         "change": "+6% YoY"
       },
       {
-        "label": "服务收入",
-        "value": "264 亿美元",
+        "label": "Service Revenue",
+        "value": "26.4 billion USD",
         "change": "+12% YoY"
       },
       {
-        "label": "毛利率",
+        "label": "Gross profit margin",
         "value": "46.2%",
         "change": "+0.3 pp"
       },
       {
-        "label": "经营现金流",
-        "value": "237 亿美元",
-        "change": "TTM 对比 +4%"
+        "label": "Operating Cash Flow",
+        "value": "23.7 billion USD",
+        "change": "TTM Comparison +4%"
       }
     ]
   },
   "trend_chart": {
     "enabled": "true",
-    "type": "折线 + 浅面积",
-    "metric": "近八个季度总营收",
-    "x_axis": "Q4 FY23 至 Q4 FY25 连续八个季度",
-    "y_axis": "亿美元"
+    "type": "Polygon + shallow area",
+    "metric": "Total revenue over the past eight quarters.",
+    "x_axis": "Q4 FY23 to Q4 FY25 Continuous Eight Quarters",
+    "y_axis": "Hundred million dollars."
   },
   "core_judgment": {
-    "headline": "在换机周期温和拉长背景下，高毛利服务与产品组合仍支撑整体盈利能力，但需关注区域监管与汇兑对出货节奏的扰动。"
+    "headline": "In the Context of a Gentle Lengthening of the Device Replacement Cycle, High-Margin Services and Product Combinations Still Support Overall Profitability, but Attention Must be Paid to Regional Regulations and Currency Exchange Disturbances Affecting Shipment Rhythm."
   },
   "footer": {
-    "source": "数据来源：本页为设计排版示意，以公司法定披露文件与电话会口径为准",
-    "confidentiality": "对外使用须经 IR 与法务审阅"
+    "source": "Data source: This page serves as a design layout example, based on the company’s official disclosure documents and call content.",
+    "confidentiality": "External use must be reviewed by IR and legal"
   },
   "constraints": {
     "must_keep": [
-      "四枚 KPI 数字在版面中最醒目，单位与口径一致",
-      "趋势图纵轴与 KPI 叙事不矛盾",
-      "核心判断仅一句、语气中性不煽情",
-      "色板主色 ≤ 3"
+      "Four KPI numbers are the most eye-catching on the layout, units and caliber consistent",
+      "The vertical axis of the trend chart does not contradict the KPI narrative.",
+      "Core judgment is just one sentence, with a neutral tone and no exaggeration.",
+      "Main colors in the color palette ≤ 3"
     ],
     "avoid": [
-      "堆砌超过六个 KPI",
-      "装饰性插画与漫画元素",
-      "多种装饰字体",
-      "深色底上浅色细字"
+      "Stacking more than six KPIs",
+      "decorative illustrations and comic elements",
+      "Multiple decorative fonts",
+      "Light text on a dark background"
     ]
   }
 }

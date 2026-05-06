@@ -2,53 +2,53 @@
   "type": "Open World Game Screenshot",
   "goal": "Generate a 16:9 horizontal image, resembling a screenshot of Unreal-level PBR real-time graphics rather than a pre-rendered poster, including fully recognizable Chinese UI.",
   "game_meta": {
-    "game_name": "霜火编年史·极北卷",
-    "engine_feel": "现代 3A（接近 Unreal 5 Nanite+Lumen 观感）",
-    "perspective": "第三人称越肩约 2.5m 距离"
+    "game_name": "Chronicles of Frost and Fire · The Northern Volume",
+    "engine_feel": "Modern 3A (approaching the Unreal 5 Nanite + Lumen visual experience)",
+    "perspective": "Third person over shoulder about 2.5m away"
   },
   "scene": {
-    "environment": "覆雪针叶林缘、中景冰河与断桥、远景覆雪山脉与孤塔",
-    "time_of_day": "蓝调时刻将尽、西天余暖金边",
-    "weather": "小雪与风卷雪雾",
-    "lighting": "冷青主光 + 暖金轮廓光 + 雪地次表面散射"
+    "environment": "snow-covered coniferous forest edge, mid-ground glacial river with broken bridge, distant snow-capped mountains and solitary tower",
+    "time_of_day": "The blue-toned moment will soon end, with the western sky's warmth framed in gold",
+    "weather": "Little snow and wind swirling snow mist",
+    "lighting": "Cool cyan main light + warm gold rim light + subsurface scattering on snow"
   },
   "character": {
-    "description": "女性游侠主角，银灰长辫、毛领皮甲与弓袋，背向镜头左肩微转、右手握未张弓",
-    "position": "画面下三分之一居中略左，留出右前侧空间"
+    "description": "Female ranger protagonist, silver-gray long braid, fur-collared leather armor and quiver, slightly turned left shoulder away from the camera, right hand holding an undrawn bow.",
+    "position": "Lower third of the screen centered slightly to the left, leaving space on the front right side"
   },
   "ui_elements": {
     "hud": {
       "enabled": true,
       "items": [
-        "左下：红条生命+蓝条耐力+圆形简笔头像轮廓",
-        "右下：四格扇形技能图标+药水与食物快捷栏",
-        "左上：圆形小地图带指北针与当前坐标（中文区名「融雪溪谷」）",
-        "右上：任务追踪框体三行「主线：寻找春之露」「距目标 420m」「按 M 打开大地图」"
+        "Lower left: red bar for health + blue bar for stamina + circular simple outline of avatar",
+        "Lower right: four-section fan-shaped skill icons + potion and food shortcut bar",
+        "Upper left: circular small map with compass and current coordinates (Chinese area name 'Melting Snow Valley')",
+        "Top right: Task tracking box with three lines 'Main line: Find the Spring Dew', '420m to target', 'Press M to open the large map'"
       ]
     },
     "subtitle": {
       "enabled": true,
-      "speaker": "灵狐伙伴",
-      "text": "前面结冰的吊桥缺了一截，当心别滑下去。"
+      "speaker": "Spirit fox partner",
+      "text": "The icy suspension bridge in front is missing a section, be careful not to slip down."
     },
     "interaction_prompt": {
       "enabled": true,
-      "text": "按 [E] 稳固绳索"
+      "text": "Press [E] to secure the rope"
     }
   },
   "style": {
-    "rendering": "PBR + ACES 感 tonemapping + 轻胶片颗粒",
-    "color_palette": "冰蓝+月白+暖金路标"
+    "rendering": "PBR + ACES style tonemapping + light film grain",
+    "color_palette": "Ice blue + moon white + warm gold road signs"
   },
   "aspect_ratio": "16:9",
   "constraints": {
     "must_keep": [
-      "HUD 与场景透视一致、无悬浮错位",
-      "中文无乱码、无英文机翻腔"
+      "HUD consistent with scene perspective, no floating misalignment",
+      "Chinese has no garbled text and no English machine translation tone."
     ],
     "avoid": [
-      "无任何 HUD 的纯插画感",
-      "同屏 UI 组件超过 8 个主元素"
+      "Pure illustration feel with no HUD.",
+      "More than 8 main elements of UI components on the same screen"
     ]
   }
 }

@@ -2,20 +2,20 @@
   "type": "WeChat Group Chat Mockup",
   "goal": "Generate a high-fidelity screenshot of a WeChat work group chat interface, group name 'Tech CEO Mutual Aid Society (8)', with real Silicon Valley CEOs as members, discussing late-night complaints and work-related jokes.",
   "platform": {
-    "name": "微信",
+    "name": "WeChat",
     "color_mode": "light",
-    "language": "中文（自然带入英文术语和品牌名）"
+    "language": "Chinese (naturally incorporating English terms and brand names)"
   },
   "header": {
-    "status_bar": "顶部状态栏，时间 '23:58'，5G、Wi-Fi、电量 19%（深夜低电量氛围）",
-    "navigation": "左上返回箭头 + 蓝色 '消息(27)'，中间标题 'Tech CEO 互助会 (8)'，右上三点菜单"
+    "status_bar": "Top status bar, time '23:58', 5G, Wi-Fi, battery 19% (late night low battery atmosphere)",
+    "navigation": "Upper left return arrow + blue 'Messages (27)', middle title 'Tech CEO Support Group (8)', upper right three-dot menu"
   },
   "group": {
-    "name": "Tech CEO 互助会",
+    "name": "Tech CEO Mutual Aid",
     "member_count": 8,
-    "self_identity": "Elon Musk（本机视角，自己消息显示在右侧绿色气泡）",
+    "self_identity": "Elon Musk (device perspective, self message displayed in right green bubble)",
     "members": [
-      "Elon Musk（本人 / 自己）",
+      "Elon Musk (self)",
       "Tim Cook",
       "Sundar Pichai",
       "Mark Zuckerberg",
@@ -30,118 +30,118 @@
       {
         "role": "system",
         "type": "system-message",
-        "text": "—————— 以上是新消息 ——————",
-        "timestamp": "下午 23:50"
+        "text": "—————— The above is the new message ——————",
+        "timestamp": "11:50 PM"
       },
       {
         "role": "member",
         "name": "Sam Altman",
-        "avatar": "Sam Altman 真实肖像头像，浅蓝灰色衬衫，OpenAI 风格背景",
+        "avatar": "Sam Altman Real Portrait Avatar, Light Blue Gray Shirt, OpenAI Style Background",
         "type": "text",
-        "text": "@Jensen Huang 哥，下一批 H100 真的求加单，我这边 GPT-5.5 又跑不动了 🥲",
+        "text": "@Jensen Huang, bro, please add another order for the next batch of H100, my GPT-5.5 is having issues again 🥲",
         "timestamp": "23:50",
-        "highlight": "@Jensen Huang 蓝色高亮"
+        "highlight": "@Jensen Huang blue highlight"
       },
       {
         "role": "member",
         "name": "Jensen Huang",
-        "avatar": "Jensen Huang 真实肖像头像，标志性黑色皮夹克",
+        "avatar": "Jensen Huang realistic portrait, iconic black leather jacket",
         "type": "text",
-        "text": "排队，前面还有微软、Meta、xAI、特斯拉，你猜你第几",
+        "text": "Standing in line, ahead are Microsoft, Meta, xAI, Tesla. Guess which number you are.",
         "timestamp": "23:51"
       },
       {
         "role": "member",
         "name": "Tim Cook",
-        "avatar": "Tim Cook 真实肖像头像，灰白短发 + 苹果灰背景",
+        "avatar": "Tim Cook realistic portrait avatar, gray-white short hair + Apple gray background",
         "type": "text",
-        "text": "兄弟们安慰一下，Vision Pro 这周退货率冲到 21%，我快撑不住了",
+        "text": "Brothers, comfort me, the return rate for Vision Pro shot up to 21% this week, I'm about to collapse",
         "timestamp": "23:52"
       },
       {
         "role": "member",
         "name": "Mark Zuckerberg",
-        "avatar": "Mark Zuckerberg 真实肖像头像，灰色 T 恤",
+        "avatar": "Mark Zuckerberg realistic portrait, gray t-shirt",
         "type": "text",
-        "text": "Quest 3 这边欢迎过来抄一抄。😎",
+        "text": "Quest 3, welcome to come and take a look. 😎",
         "timestamp": "23:53"
       },
       {
         "role": "system",
         "type": "system-message",
-        "text": "Mark Zuckerberg 撤回了一条消息",
+        "text": "Mark Zuckerberg retracted a message",
         "timestamp": "23:53"
       },
       {
         "role": "member",
         "name": "Sundar Pichai",
-        "avatar": "Sundar Pichai 真实肖像头像，沉稳微笑",
+        "avatar": "Sundar Pichai Real Portrait Avatar, Calm Smile",
         "type": "text",
-        "text": "顺便同步一下，Gemini 3 发布会再往后推一周，市场部不要再发倒计时图了",
+        "text": "By the way, synchronize this, the Gemini 3 launch event is postponed by another week, the marketing department should stop sending countdown images",
         "timestamp": "23:54"
       },
       {
         "role": "member",
         "name": "Satya Nadella",
-        "avatar": "Satya Nadella 真实肖像头像，深色西装",
+        "avatar": "Satya Nadella Real Portrait Avatar, Dark Suit",
         "type": "text",
-        "text": "理解，Copilot 这边今天又被 X 上喷了一轮，团队心态需要安抚",
+        "text": "Understanding, Copilot has been criticized on X again today, team morale needs to be reassured",
         "timestamp": "23:55"
       },
       {
         "role": "self",
         "type": "text",
-        "text": "@所有人 周五晚 9 点（PT）我在 X 直播 debug Grok，欢迎各家 CEO 来连麦互怼，Tim 可以带苹果 logo 抠图素材 😏",
+        "text": "@everyone 9 PM (PT) this Friday, I will be live on X debugging Grok, all CEOs are welcome to join and debate, Tim can bring the Apple logo image materials 😏",
         "timestamp": "23:56",
-        "highlight": "@所有人 蓝色高亮"
+        "highlight": "@everyone blue highlight"
       },
       {
         "role": "self",
         "type": "image",
-        "description": "Cybertruck 仪表盘的夜间自拍，副驾上是一只柴犬抱着 SpaceX 玩偶（DOGE 梗），照片右下角微信图片角标",
+        "description": "Cybertruck Dashboard Night Selfie, with a Shiba Inu in the passenger seat holding a SpaceX Plush Toy (DOGE Meme), WeChat Image Corner Icon at Bottom Right of Photo",
         "timestamp": "23:56"
       },
       {
         "role": "member",
         "name": "Jeff Bezos",
-        "avatar": "Jeff Bezos 真实肖像头像，光头 + 笑容",
+        "avatar": "Jeff Bezos realistic portrait, bald + smile",
         "type": "red-packet",
-        "description": "微信红包卡片：金色封面，标题 '熬夜辛苦费' + Bezos 头像水印，下方 '已被领取 3/8'",
+        "description": "WeChat Red Packet Card: Golden Cover, Title 'Overnight Hardship Fee' + Bezos Avatar Watermark, Below 'Received 3/8'",
         "timestamp": "23:57"
       },
       {
         "role": "member",
         "name": "Tim Cook",
-        "avatar": "Tim Cook 头像",
+        "avatar": "Tim Cook avatar",
         "type": "sticker",
-        "description": "微信收藏表情包：动画 GIF，库克风格人物双手合十 '感恩'，文字 '兄弟们我先睡了 🍎'",
+        "description": "WeChat Favorite Emoji Pack: Animated GIF, Cook-Style Character with Hands Together 'Gratitude', Text 'Brothers, I'm Going to Sleep 🍎'",
         "timestamp": "23:58"
       }
     ]
   },
   "footer": {
-    "input_bar": "底部输入栏 + 语音、+号；输入框灰色提示文字 '@所有人'"
+    "input_bar": "Bottom Input Bar + Voice, Plus Sign; Input Box Gray Hint Text '@everyone'"
   },
   "style": {
-    "rendering": "iOS 微信浅色群聊界面，9:19.5 纵向比例，所有头像清晰、可辨识为真实 CEO，气泡颜色与微信官方一致",
-    "celebrity_likeness": "群成员头像应用每位 CEO 公开的高识别度肖像，避免变形与不雅 artifact"
+    "rendering": "iOS WeChat light group chat interface, 9:19.5 vertical ratio, all avatars clear and recognizable as real CEOs, bubble colors consistent with WeChat official",
+    "celebrity_likeness": "Group member avatars use publicly available high-recognition portraits of each CEO to avoid distortion and unsightly artifacts"
   },
   "constraints": {
-    "must_feel": "像真实 CEO 群截图，节奏自然有起承转合，含有 @ 全员 + 撤回 + 红包 + 表情包 + 图片这些典型微信交互",
+    "must_feel": "Like a real CEO group chat screenshot, with a natural rhythm and flow, including typical WeChat interactions like @everyone + retract + red envelope + emoji + images",
     "must_keep": [
-      "群名 'Tech CEO 互助会 (8)' 在顶部",
-      "群成员名字与头像严格对应，每个名字都拼写正确（特别是 Pichai / Nadella / Zuckerberg）",
-      "@所有人 与 @Jensen Huang 蓝色高亮",
-      "撤回消息以系统消息样式呈现：'Mark Zuckerberg 撤回了一条消息'",
-      "红包卡片严格遵循微信红包样式，金色封面 + 默认文案样式",
-      "Elon Musk（自己）的气泡为绿色右对齐，其他成员白色左对齐"
+      "Group name 'Tech CEO Mutual Aid Association (8)' at the top",
+      "Group member names strictly correspond to avatars, each name spelled correctly (especially Pichai / Nadella / Zuckerberg)",
+      "@everyone and @Jensen Huang blue highlight",
+      "Withdraw message presented in system message style: 'Mark Zuckerberg has withdrawn a message.'",
+      "Red Envelope Card Strictly Follows WeChat Red Envelope Style, Golden Cover + Default Copy Style",
+      "Elon Musk (self) bubble is green right-aligned, other members are white left-aligned"
     ],
     "avoid": [
-      "出现 iMessage / Telegram / Slack 风格元素",
-      "群成员名字拼错（如 Zuckerburg / Nadela 等）",
-      "头像与名字对应错乱",
-      "时间戳倒退",
-      "对话内容涉及不当影射或非公开私人信息"
+      "Include design elements in the style of iMessage / Telegram / Slack",
+      "Group member names misspelled (e.g., Zuckerburg / Nadela, etc.)",
+      "Avatar and name correspondence is chaotic.",
+      "Timestamp rollback",
+      "The dialogue content involves improper insinuations or non-public private information"
     ]
   }
 }

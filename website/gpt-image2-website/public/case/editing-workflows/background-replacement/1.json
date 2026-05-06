@@ -2,24 +2,24 @@
   "type": "Background Replacement Workflow",
   "goal": "Using REFERENCE_0 as input, retain the characters and outfits while changing the background to a nighttime scene at Times Square in New York, making the final image feel like it was shot in front of a nighttime landmark during the same event.",
   "reference_0": {
-    "assumed_input": "假定原图：一位身材高大健硕的虚构非裔美籍男性篮球运动员面向镜头的上半身人像（深色短发与发带、阳刚轮廓），穿紫金色 23 号无袖球衣（队徽抽象为简化纹样、不指向任何具体真实球队），白天户外篮球场围栏与绿树作为背景，顶光略硬，面部与球衣高光清晰，景深中等"
+    "assumed_input": "Assumed original image: A half-body portrait of a fictional tall and muscular African-American male basketball player facing the camera (with dark short hair and headband, masculine outline), wearing a sleeveless jersey in purple and gold with number 23 (team logo abstracted into simplified patterns, not pointing to any specific real team), with a daytime outdoor basketball court fence and green trees in the background, slightly hard top light, clear highlights on the face and jersey, medium depth of field"
   },
   "edit": {
-    "preserve": "人物的五官、表情、身体姿势、紫金色 23 号球衣的图案与数字、肤色与肌肉轮廓、发须造型",
+    "preserve": "Character's facial features, expression, body posture, purple golden 23 jersey pattern and number, skin color and muscle contours, facial hair style.",
     "replace_only": "背景整体替换为时代广场夜晚：近景有轻微雾化的人群剪影与路面反光，中远景为密集 LED 广告牌、十字街口与星点车灯，以蓝紫冷色霓虹为主、夹杂暖色广告面光源",
-    "lighting_rematch": "按新背景主光方向自画面左右两侧与斜上方来光，在面部与肩膀重新生成与夜景一致的边缘轮廓光与球面料微反光，下颌与球衣褶皱阴影略加深但保持可识别，不让肤色漂成不自然品红",
-    "shadow_reflection": "在脚下路面生成柔和接触阴影，与时代广场湿路面微弱倒影衔接，不凭空出现与透视不符的物体"
+    "lighting_rematch": "Based on the main light direction of the new background, generate light from the left and right sides of the image and from the diagonal top, regenerating edge contour light and slight reflections on the face and shoulders consistent with the night scene; slightly deepen the shadow of the chin and jersey wrinkles while keeping them recognizable without making the skin tone turn into an unnatural magenta.",
+    "shadow_reflection": "Generate Soft Contact Shadows on the Ground Beneath, Connecting with Weak Reflections on the Wet Pavement of Times Square, Avoiding the Appearance of Non-Perspective Objects Out of Nowhere"
   },
   "constraints": {
     "do_not": [
-      "修改球衣号码、队名区域文字或队标形状",
-      "改变人物脸形、表情或增删身体配件",
-      "贴近任何具体真实运动员的肖像细节"
+      "Modify jersey number, team name area text, or team logo shape",
+      "Change the character's face shape, expression, or add/remove body accessories.",
+      "Close to the portrait details of any specific real athlete"
     ],
     "must": [
-      "人物边缘无抠图白边与锯齿"
+      "No white edges or jaggeds at the character's edges."
     ]
   },
-  "render_style": "高分辨率运动人像摄影，夜景城市氛围真实，长焦压缩感，背景光斑自然虚化，主体锐利",
-  "aspect_ratio": "保持原图比例"
+  "render_style": "High resolution sports portrait photography, night city atmosphere is realistic, telephoto compression effect, background bokeh naturally blurred, subject sharp",
+  "aspect_ratio": "Maintain original aspect ratio"
 }

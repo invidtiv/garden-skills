@@ -7,12 +7,12 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "Aurora Retail SD-WAN 总部-分支-云 一体拓扑",
-    "subtitle": "MPLS + 双互联网 + 云专线 · BGP ASN 65001",
+    "title": "Aurora Retail SD-WAN Headquarters-Branch-Cloud Integrated Topology",
+    "subtitle": "MPLS + dual internet + cloud dedicated line · BGP ASN 65001",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "device_glyphs": {
-    "rule": "router=菱形内叉、firewall=砖墙、cloud=简笔云+文字 CPE/ctrl",
+    "rule": "Router=diamond inner fork, firewall=brick wall, cloud=simple cloud + text CPE/ctrl",
     "types": [
       {
         "type": "router",
@@ -31,7 +31,7 @@
       },
       {
         "type": "server",
-        "glyph": "rack 3-4 槽",
+        "glyph": "Rack 3-4 slots",
         "color": "emerald #34D399"
       },
       {
@@ -51,25 +51,25 @@
     "items": [
       {
         "id": "Z1",
-        "label": "总部 DC 核心 · VLAN10/20 汇聚",
+        "label": "Headquarters DC core · VLAN 10/20 aggregation",
         "color_border": "amber #FBBF24 dashed",
         "cidr": "172.20.0.0/16"
       },
       {
         "id": "Z2",
-        "label": "上海门店 · CPE-3000",
+        "label": "Shanghai Store · CPE-3000",
         "color_border": "blue #60A5FA dashed",
         "cidr": "10.30.0.0/20"
       },
       {
         "id": "Z3",
-        "label": "深圳 R&D 实验室",
+        "label": "Shenzhen R&D Laboratory",
         "color_border": "emerald #34D399 dashed",
         "cidr": "10.40.0.0/20"
       },
       {
         "id": "Z4",
-        "label": "云托管区 (VPN/DX 落地)",
+        "label": "Cloud hosting area (VPN/DX landing).",
         "color_border": "violet #A78BFA dashed",
         "cidr": "10.200.0.0/20"
       }
@@ -86,7 +86,7 @@
       {
         "id": "N2",
         "type": "router",
-        "label": "HQ 边界路由器 B (HRP)",
+        "label": "HQ Border Router B (HRP)",
         "zone": "Z1"
       },
       {
@@ -104,25 +104,25 @@
       {
         "id": "N5",
         "type": "server",
-        "label": "SD-WAN 控制器 (on-prem)\n+ 管理平面",
+        "label": "SD-WAN Controller (On-Prem)\n+ Management Plane",
         "zone": "Z1"
       },
       {
         "id": "N6",
         "type": "router",
-        "label": "门店 CPE 上海 (双上行)",
+        "label": "Store CPE Shanghai (dual uplink)",
         "zone": "Z2"
       },
       {
         "id": "N7",
         "type": "user",
-        "label": "POS/扫码枪终端 (终端 TLS 1.2)",
+        "label": "POS/Scanner terminal (terminal TLS 1.2)",
         "zone": "Z2"
       },
       {
         "id": "N8",
         "type": "router",
-        "label": "深圳 CPE 实验室",
+        "label": "Shenzhen CPE Laboratory",
         "zone": "Z3"
       },
       {
@@ -132,7 +132,7 @@
         "zone": "Z4"
       }
     ],
-    "node_label_format": "双行，上面角色下面协议/AS，mono 10pt"
+    "node_label_format": "Dual lines, character above and protocol/AS below, mono 10pt"
   },
   "connections": {
     "items": [
@@ -140,101 +140,101 @@
         "from": "N1",
         "to": "N3",
         "type": "physical",
-        "label": "10Gbps 内网·静态路由"
+        "label": "10Gbps Internal Network · Static Routing"
       },
       {
         "from": "N2",
         "to": "N3",
         "type": "physical",
-        "label": "10Gbps 内网·静态路由"
+        "label": "10Gbps Internal Network · Static Routing"
       },
       {
         "from": "N3",
         "to": "N4",
         "type": "physical",
-        "label": "L3 到核心"
+        "label": "L3 to core"
       },
       {
         "from": "N1",
         "to": "N6",
         "type": "encrypted",
-        "label": "MPLS L3VPN 标签交换 + SD-WAN overlay"
+        "label": "MPLS L3VPN label switching + SD-WAN overlay"
       },
       {
         "from": "N1",
         "to": "N6",
         "type": "redundant",
-        "label": "Internet DTLS 备链路 300Mbps"
+        "label": "Internet DTLS backup link 300Mbps"
       },
       {
         "from": "N2",
         "to": "N8",
         "type": "encrypted",
-        "label": "MPLS + 互联网混合选路"
+        "label": "MPLS + internet hybrid routing"
       },
       {
         "from": "N5",
         "to": "N6",
         "type": "logical",
-        "label": "控制/策略下发 Netconf/HTTPS"
+        "label": "Control / Strategy rollout Netconf/HTTPS"
       },
       {
         "from": "N5",
         "to": "N8",
         "type": "logical",
-        "label": "控制/策略下发"
+        "label": "Control / Strategy rollout"
       },
       {
         "from": "N4",
         "to": "N9",
         "type": "encrypted",
-        "label": "IPsec 隧道 + eBGP 65001-65555"
+        "label": "IPsec tunnel + eBGP 65001-65555"
       },
       {
         "from": "N7",
         "to": "N6",
         "type": "physical",
-        "label": "门店 LAN 1G"
+        "label": "Store LAN 1G"
       },
       {
         "from": "N6",
         "to": "N4",
         "type": "encrypted",
-        "label": "业务回总部 DC 的优选路径"
+        "label": "Preferred path for business return to headquarters DC"
       }
     ],
     "line_style": {
       "physical": "solid 2px slate #94A3B8",
       "logical": "dashed 1.5px slate #64748B",
-      "redundant": "双 violet 平行线 表示双上行",
-      "encrypted": "emerald 2px + 锁 glyph 表示国密/ IPSec 可选注记"
+      "redundant": "Double violet parallel lines indicate double ascending",
+      "encrypted": "Emerald 2px + lock glyph indicates optional note for national encryption/IPSec"
     }
   },
   "annotations": {
     "ip_cidr_labels": {
       "enabled": true,
-      "rule": "Z1~Z4 显式写 CIDR；隧道端点可写公网/33 位"
+      "rule": "Z1~Z4 explicitly write CIDR; tunnel endpoints can write public network/33 bits"
     },
     "az_labels": {
       "enabled": false,
-      "rule": "非云多 AZ 场景，关闭 AZ 标，可改标 city code"
+      "rule": "Non-cloudy AZ scene, AZ marking turned off, city code can be changed"
     }
   },
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "router/防火墙/CPE/server glyph；MPLS 与互联网双上行样式；IPsec+BGP 上云；logical 为灰虚线",
+    "content": "Router/firewall/CPE/server glyph; MPLS and internet dual uplink styles; IPsec + BGP cloud; logical is gray dashed line",
     "style": "small panel, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "站点用虚线大框+ CIDR",
-      "MPLS 与 internet 以不同线型/平行双线区分",
-      "加密跨域链路带锁或 'IPsec' 小字"
+      "Use a large dashed frame for the station + CIDR",
+      "MPLS and internet differentiated by different line types / parallel double lines",
+      "Encrypted cross-domain link with lock or 'IPsec' in small text"
     ],
     "avoid": [
-      "Cisco/华为 官方产品剪影",
-      "未标注速率的广域网粗线"
+      "Cisco/Huawei Official Product Silhouette",
+      "Broad line of the WAN without a labeled rate"
     ]
   }
 }

@@ -1,39 +1,39 @@
 {
   "type": "Sticker Set",
   "goal": "A 4:3 or 1:1 composite image featuring 9 independent Q-style stickers, with the main character being a fictional gold-brown curly-haired female singer (signature elements: gold-brown long curls, red lips, acoustic guitar), aiming for a cute cartoon style rather than photographic realism.",
-  "theme": "演唱会与歌迷路演梗、友谊手环、黑胶与话筒",
+  "theme": "Concert and fan roadshow memes, friendship wristbands, vinyl and microphones",
   "style": {
-    "rendering": "扁平+少量 cel 描边+软投影，色块干净",
-    "color_palette": "金棕发+正红+墨黑+米白，点缀薄荷绿与薰衣草紫"
+    "rendering": "Flat + slight cel shading + soft shadows, clean color blocks.",
+    "color_palette": "Golden brown hair + bright red + ink black + creamy white, accented with mint green and lavender purple."
   },
   "sticker_design": {
-    "outline": "2.5px 奶白外轮廓",
-    "shadow": "无或极轻，避免 3D 过厚",
+    "outline": "2.5px milky white outer contour",
+    "shadow": "None or very light, avoid excessive 3D thickness.",
     "with_label": true,
-    "label_style": "下方中文手写感短词，2~4 字，深棕"
+    "label_style": "Short Chinese handwritten words below, 2-4 characters, deep brown"
   },
   "layout": {
-    "background": "浅灰蓝格纹纸纹理",
+    "background": "Light gray-blue plaid paper texture.",
     "grid": "3x3",
-    "spacing": "均分留白",
+    "spacing": "Evenly Distributed White Space",
     "aspect_ratio": "1:1"
   },
   "stickers": {
     "count": 9,
     "items": [
-      "Q 版女歌手握木吉他张嘴唱+「开唱」",
-      "转圈大裙摆简形+「名场面」",
-      "猫耳发箍抱小猫+「猫奴」",
-      "暴雨中撑伞+「雨演」",
-      "手腕上套彩色纸手环+「换手环」",
-      "黑胶唱片与唱针+「黑胶」",
-      "心形手势对镜头+「比心」",
-      "笔记本写满歌词+「填词」",
-      "向台下递话筒+「大合唱」"
+      "Q Version Female Singer Holding a Wooden Guitar, Singing + 'Start Singing'",
+      "Swirling big skirt silhouette + 'iconic scene'",
+      "Cat ear headband holding a kitten + 'cat slave'",
+      "Holding an umbrella in a heavy rain + 'Rain Performance'",
+      "Colorful paper wristband on the wrist + 'Change wristband'",
+      "Vinyl record and needle + 'Vinyl'",
+      "Heart-shaped hand gesture towards the camera + 'Sending hearts'",
+      "Notebook filled with lyrics + 'lyric writing'",
+      "Handing the microphone to the audience + 'Grand Chorus'"
     ]
   },
   "constraints": {
-    "must_keep": "九格同一线宽与色板、每图可单独圆形裁切使用",
-    "avoid": "写真实公众人物全名在画面醒目位置、可识别商标 album 封面 1:1 复刻"
+    "must_keep": "The nine frames must have the same line width and color palette; each image can be used for individual circular cropping.",
+    "avoid": "Write the full name of a real public figure in a prominent position on the image, recognizable trademark album cover 1:1 replica"
   }
 }

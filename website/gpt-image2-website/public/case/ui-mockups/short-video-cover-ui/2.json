@@ -1,55 +1,55 @@
 {
   "type": "VTuber / Streamer Preview Cover",
   "goal": "Generate a cover image for a chat livestream of a cute pink-themed female VTuber, resembling a real YouTube/Bilibili livestream thumbnail.",
-  "platform": "Bilibili 直播 / YouTube Live 通用",
+  "platform": "Bilibili Live / YouTube Live Universal",
   "aspect_ratio": "16:9",
-  "style": "二次元 anime 风格，高饱和度可爱粉系，闪光、爱心、星星装饰",
+  "style": "2D anime style, high saturation cute pink tones, with sparkling, heart, and star decorations",
   "character": {
-    "description": "棕粉色双丸子头动漫女孩，琥珀色大眼，眼下一颗小痣，温柔微笑",
-    "outfit": "粉色和服 + 白色女仆围裙，胸前蝴蝶结，发饰是樱花 + 小铃铛",
-    "pose": "右手轻抓粉色装饰麦克风靠近嘴边，左手做出比心手势",
-    "position": "画面右侧 2/5"
+    "description": "Brown-pink dual bun anime girl, amber large eyes, a small mole under the eye, gentle smile.",
+    "outfit": "Pink kimono + white maid apron, bow in the chest area, hair accessories are cherry blossoms + small bells",
+    "pose": "Right hand lightly grabbing a pink decorative microphone close to the mouth, left hand making a heart gesture",
+    "position": "Right side of the image, 2/5."
   },
   "layout": {
-    "background": "粉色 → 香槟金渐变背景 + 漂浮闪光、心形泡泡、蝴蝶结点缀",
+    "background": "Pink → champagne gold gradient background + floating sparkles, heart-shaped bubbles, bow tie embellishments",
     "text_sections": [
       {
-        "type": "顶部丝带",
-        "text": "今晚 21 点开播！一起来聊聊吧 ♡"
+        "type": "Top ribbon",
+        "text": "Streaming tonight at 9 PM! Let's chat together ♡."
       },
       {
-        "type": "主标题",
-        "text": "樱粉杂谈",
-        "decorations": "标题左右各一个大桃子插画与五角星，使用珠光描边粉色字 + 白底黑描边大字"
+        "type": "Main title.",
+        "text": "Cherry blossom pink chat.",
+        "decorations": "On each side of the title, there is a large peach illustration and a pentagram, using pearlescent pink outlined letters + large black letters on a white background."
       },
       {
-        "type": "中间丝带",
-        "text": "想和大家度过开心的时光♡"
+        "type": "Middle ribbon",
+        "text": "Want to spend happy times with everyone ♡"
       },
       {
-        "type": "底部要点",
+        "type": "Bottom Key Points",
         "items": [
-          "✿ 新人友好",
-          "✿ 礼物多多回收",
-          "✿ ROMO 一起来"
+          "✿ Newcomer friendly",
+          "✿ Gift recycling abundant",
+          "✿ Join ROMO"
         ]
       },
       {
-        "type": "底部说话框",
-        "text": "评论大欢迎♪ 一起多聊聊吧～"
+        "type": "Bottom Speech Bubble",
+        "text": "Comments are very welcome♪ Let’s chat more~"
       }
     ]
   },
   "platform_marks": {
-    "handle": "@樱粉ちゃんSakuPink",
-    "live_badge": "左上角红色 'LIVE 即将开播' 徽章"
+    "handle": "@SakuPink",
+    "live_badge": "Upper left corner red 'LIVE coming soon' badge"
   },
   "constraints": {
-    "must_feel": "像真实 VTuber 主播预告封面，而不是同人插画",
+    "must_feel": "Like a real VTuber streamer announcement cover, rather than a fan art illustration",
     "avoid": [
-      "出现暗黑或冷色背景",
-      "角色表情冷漠",
-      "文字超过 3 行密集堆叠"
+      "Include dark or cool color backgrounds",
+      "character expression is indifferent",
+      "Text is densely stacked beyond 3 lines."
     ]
   }
 }

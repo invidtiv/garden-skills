@@ -2,41 +2,41 @@
   "type": "Western-style Modern Craft Beer Label Design",
   "goal": "Generate a 4:5 vertical image highlighting the specialty color and embossing layers of the paper label, allowing a breakdown of front and back for expanded imagination.",
   "brand": {
-    "name": "雾港酿造 Mist Harbor",
-    "positioning": "小型城市连锁精酿、主打西海岸 IPA",
-    "product_name": "雾港印度淡色艾尔",
+    "name": "Mist Harbor Brewing",
+    "positioning": "Small urban chain craft beer, focusing on West Coast IPA",
+    "product_name": "Mist Harbor Indian Pale Ale",
     "product_subtitle": "MIST HARBOR WEST COAST IPA",
     "volume": "470ml"
   },
   "bottle": {
-    "form": "深琥珀长颈啤酒瓶，瓶颈印一次性促销环「新鲜灌装」小字",
-    "material": "玻璃 + 凝结冷水珠、液面 2cm 酒头泡"
+    "form": "Deep amber long-neck beer bottle, with a disposable promotional ring on the neck printed with 'freshly bottled' in small text",
+    "material": "Glass + condensation cold water droplets, liquid layer 2cm with foam"
   },
   "label_design": {
-    "style": "木刻版画海浪 + 矢量灯塔光束，橙黄与靛蓝专色，边缘粗白描刀切感",
-    "primary_color": "橙黄、深靛、米纸底",
-    "background_color": "主标纸芯 #EEE3CE",
-    "illustration": "灯塔、涌浪、一行迁徙海鸟、远处城廓剪影",
-    "typography": "主标题为紧凑西文 slab serif，中文副行黑体，酒精度 6.5% vol 与 IBU 68 在正面下三角排布",
+    "style": "Woodcut wave + vector lighthouse beam, orange-yellow and indigo spot colors, with rough white edge-cut feel",
+    "primary_color": "Orange-yellow, deep indigo, rice paper base.",
+    "background_color": "Main label core #EEE3CE.",
+    "illustration": "Lighthouse, surging waves, a line of migratory seabirds, silhouette of the city in the distance",
+    "typography": "The main title is in a compact Western slab serif, with Chinese subtitles in black body, and alcohol content 6.5% vol and IBU 68 arranged in a triangle at the front.",
     "info_strip_bottom": "背标（画面可见一侧卷角示意）：原麦汁浓度、保质期、厂名、过量饮酒提示、扫码溯源框线"
   },
   "scene": {
-    "background": "老橡木条、黄铜开瓶器、两只空杯一倒扣现冷凝",
-    "lighting": "单灯侧顶硬光、强调瓶标浮雕烫边"
+    "background": "Old oak slats, brass bottle opener, two empty cups inverted showing condensation",
+    "lighting": "Single lamp side top hard light, emphasizing embossed edges on the bottle label"
   },
   "format": {
     "aspect_ratio": "4:5",
-    "composition": "瓶略偏左，右侧留白给长投影，纸标不跨越瓶肩合缝线错位"
+    "composition": "Bottle slightly to the left, right side left blank for a long shadow, paper label does not cross the bottle shoulder seam misalignment"
   },
   "constraints": {
     "must_keep": [
-      "正面保留清晰品牌名、品类、度数字号",
-      "西文与中文层级分明，不互抢",
-      "酒液颜色与「西海岸 IPA 琥珀清亮」一致"
+      "Front retains a clear brand name, category, and degree number.",
+      "clear hierarchical distinction between Western and Chinese text, not overlapping",
+      "The color of the liquor matches 'West Coast IPA amber clarity'."
     ],
     "avoid": [
-      "国潮云纹与木刻版画风混搭",
-      "信息法规字过小不可读"
+      "National tide cloud patterns mixed with woodcut print styles",
+      "Information regulations text is too small to read"
     ]
   }
 }

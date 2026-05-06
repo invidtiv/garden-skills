@@ -7,84 +7,84 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "订单退款审核流程",
-    "subtitle": "原路退 · 可部分退",
+    "title": "Order refund review process",
+    "subtitle": "Original route return · partial return possible",
     "position": "top-left"
   },
   "flow_direction": "top-to-bottom",
   "nodes": {
-    "count": "12",
+    "count": "Bust portrait, slightly side profile, right hand holding a simplified, unmarked tablet.",
     "items": [
       {
         "id": "S",
         "type": "start_end",
-        "label": "开始",
+        "label": "Start",
         "lane": "User"
       },
       {
         "id": "I1",
         "type": "io",
-        "label": "用户在订单详情点申请退款+原因码",
+        "label": "User applying for a refund + reason code in order details",
         "lane": "User"
       },
       {
         "id": "P1",
         "type": "process",
-        "label": "BFF 组装 refund_request DTO",
+        "label": "BFF Assembly refund_request DTO",
         "lane": "Merchant BFF"
       },
       {
         "id": "D1",
         "type": "decision",
-        "label": "距签收 < 7d 且品类可退？",
+        "label": "Delivery received in < 7 days and category returnable?",
         "lane": "order-service"
       },
       {
         "id": "P2",
         "type": "process",
-        "label": "写 refund_cases 表 PENDING",
+        "label": "Write the refund_cases table PENDING",
         "lane": "order-service"
       },
       {
         "id": "D2",
         "type": "decision",
-        "label": "申请额 ≤ 可退余额？",
+        "label": "Is the refund amount ≤ refundable balance?",
         "lane": "order-service"
       },
       {
         "id": "P3",
         "type": "process",
-        "label": "调用 payment-adapter 原路预检",
+        "label": "Invoke payment-adapter for pre-inspection on the original route",
         "lane": "payment-adapter"
       },
       {
         "id": "D3",
         "type": "decision",
-        "label": "微信 支付网关返回可退？",
+        "label": "WeChat Payment Gateway Can Refund?",
         "lane": "payment-adapter"
       },
       {
         "id": "P4",
         "type": "process",
-        "label": "财务人工复核高风险 SKU",
+        "label": "Financial manual review of high-risk SKUs",
         "lane": "Finance"
       },
       {
         "id": "P5",
         "type": "process",
-        "label": "标记 APPROVED 并异步调用退款 API",
+        "label": "Mark as APPROVED and asynchronously call the refund API.",
         "lane": "payment-adapter"
       },
       {
         "id": "P6",
         "type": "process",
-        "label": "通知用户与写审计日志",
+        "label": "Notify users and write audit logs.",
         "lane": "Merchant BFF"
       },
       {
         "id": "E",
         "type": "start_end",
-        "label": "结束",
+        "label": "End",
         "lane": "User"
       }
     ]
@@ -116,7 +116,7 @@
       {
         "from": "D1",
         "to": "E",
-        "label": "No (关闭)"
+        "label": "No (close)"
       },
       {
         "from": "D1",
@@ -144,7 +144,7 @@
       {
         "from": "D3",
         "to": "P4",
-        "label": "需人工"
+        "label": "Requires manual labor"
       },
       {
         "from": "D3",
@@ -176,11 +176,11 @@
   },
   "constraints": {
     "must_keep": [
-      "泳道竖列均分",
-      "微信 为对外支付品牌用语"
+      "Swimming lanes evenly divided vertically.",
+      "WeChat as External Payment Brand Language"
     ],
     "avoid": [
-      "decision 非菱形"
+      "decision not diamond-shaped"
     ]
   }
 }

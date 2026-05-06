@@ -2,24 +2,24 @@
   "type": "Product Refinement Workflow",
   "goal": "Based on REFERENCE_0, enhance the commercial quality of the AirPods Pro 3 charging case and earphones while keeping product identity and composition the same, to meet flagship store first image standards.",
   "reference_0": {
-    "assumed_input": "假定原图：1:1 白底，白色 AirPods Pro 3 与 MagSafe 盒微开，耳机一内一外，柔光三灯布光，盒盖有均匀高光、充电盒外壳可见轻微手纹与合模线浅痕，正面激光刻字与监管符号略软"
+    "assumed_input": "Assumed original image: 1:1 white background, white AirPods Pro 3 and MagSafe case slightly open, one earphone inside and one outside, soft three-light setup, the case lid has even highlights, the charging case shell shows slight fingerprints and shallow seam lines, front laser inscriptions and regulatory symbols are slightly soft"
   },
   "edit": {
-    "product": "白色 AirPods Pro 3 与 MagSafe 充电盒整体，含盒内外耳机与网孔、USB-C 接口一圈金属倒角",
-    "enhance_focus": "提升 ABS 与磨砂塑料表面的次表面散射与主高光带宽度一致性，在盒盖与耳机柄柱面增加细腻环境反射层而不产生塑料过曝死白",
-    "defect_fix": "清理盒面与内舱灰尘点、合模线旁毛细划痕、外耳柄外侧细小纤维附着",
-    "label_sharpening": "锐化刻字、型号与监管图形边缘，不改动字符内容与相对位置不拉伸变形",
-    "lighting": "主光自顶略偏前保持、阴影为干净椭圆柔影于白底、反光方向与原图一致，仅加细腻度",
-    "background": "保持高频无缝白底不染色、不替换场景"
+    "product": "The white AirPods Pro 3 and MagSafe charging case overall, including the in-box and out-of-box headphones, mesh holes, and a metallic chamfer around the USB-C interface",
+    "enhance_focus": "Enhance the consistency of subsurface scattering and main highlight bandwidth between ABS and matte plastic surfaces, adding a delicate environmental reflection layer on the box lid and headphone stem without creating plastic overexposure dead white.",
+    "defect_fix": "Clean the dust spots on the box surface and inner cabin, capillary scratches next to the joint lines, tiny fibers attached to the outer ear handle",
+    "label_sharpening": "Sharpened engravings, model and regulatory graphics edges, without changing character content or relative position, no stretching or deformation",
+    "lighting": "Main light slightly forward from the top, shadows are clean oval soft shadows on a white background, reflective direction consistent with the original image, only adding subtlety",
+    "background": "Maintain high-frequency seamless white background without color, without replacing the scene"
   },
-  "render_style": "高端商业产品摄影 + 杂志级后期，高分辨率、微颗粒真实",
+  "render_style": "High-end commercial product photography + magazine-quality post-processing, high resolution, micro-particle realism",
   "constraints": {
     "do_not": [
-      "改变开盖角度、耳机数量、接口形态或品牌标识图形",
-      "将白底换为色纸或加道具"
+      "Change the angle of opening, number of headphones, interface shape or brand logo graphic.",
+      "Change the white background to colored paper or add props"
     ],
     "must": [
-      "白点坐标与产品主结构不走样"
+      "White dot coordinates maintain the main structure of the product without distortion"
     ]
   }
 }

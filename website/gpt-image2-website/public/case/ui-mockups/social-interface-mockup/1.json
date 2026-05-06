@@ -4,69 +4,69 @@
   "platform": {
     "name": "Twitter / X",
     "color_mode": "dark",
-    "language": "中文"
+    "language": "Chinese."
   },
   "header": {
-    "status_bar": "顶部状态栏，时间 '23:47'，信号、5G、Wi-Fi、电量 87% 图标",
-    "navigation": "左侧返回箭头 + 标题 '帖子'，右侧三点菜单"
+    "status_bar": "Top status bar, time '23:47', signal, 5G, Wi-Fi, battery 87% icon",
+    "navigation": "Left side return arrow + title 'Thread', right side three-dot menu"
   },
   "post": {
     "author": {
-      "avatar": "Elon Musk 半身肖像头像，黑色 SpaceX 衬衫，背景纯黑",
+      "avatar": "Elon Musk half-body portrait, black SpaceX shirt, pure black background",
       "display_name": "Elon Musk",
       "verified_badge": true,
       "handle": "@elonmusk",
-      "extra_badges": "金色机构认证 + 'Owner' 灰色徽章"
+      "extra_badges": "Golden organizational certification + 'Owner' gray badge."
     },
     "content": {
-      "text": "今晚 Starship 第十一次试飞成功回收。下一个目标：2028 年送第一批人类去火星。Make Life Multiplanetary 不再是口号。",
+      "text": "Tonight, Starship's eleventh test flight successfully recovered. The next goal: to send the first batch of humans to Mars by 2028. Making Life Multiplanetary is no longer just a slogan.",
       "hashtags": "#Starship #Mars2028 #SpaceX",
       "media_grid": {
         "count": 3,
         "images": [
-          "Starship 不锈钢箭体在德州博卡奇卡发射台升空，巨大火焰尾焰",
-          "夜空中 Starship 第二级在轨道上的远景，地球边缘弧线可见",
-          "Starship 第一级被发射塔机械臂 'Mechazilla' 精准夹住的瞬间"
+          "Starship Stainless Steel Rocket Body Lift-Off from Boca Chica, Texas, Huge Flame Tail",
+          "In the night sky, a distant view of the Starship second stage on orbit, with the Earth's edge arc visible",
+          "Moment When Starship First Stage is Precisely Held by Launch Tower Mechanical Arm 'Mechazilla'"
         ]
       }
     },
     "metadata": {
-      "timestamp": "晚上 11:43 · 2026 年 4 月 27 日 · 286.4M 次浏览",
-      "engagement": "84.2K 转发 · 12.6K 引用 · 952K 点赞 · 38.4K 收藏"
+      "timestamp": "11:43 PM · April 27, 2026 · 286.4M views",
+      "engagement": "84.2K shares · 12.6K quotes · 952K likes · 38.4K saves"
     },
-    "actions": "底部一行操作图标：回复（带数 21.3K）、转发（带数 84.2K）、点赞（红色心形带数 952K）、收藏图标、上传图标"
+    "actions": "Bottom row of action icons: Reply (with number 21.3K), Forward (with number 84.2K), Like (red heart icon with number 952K), Collect icon, Upload icon"
   },
   "comments_preview": {
     "show": true,
     "top_comment": {
-      "avatar": "用给你的图片作为头像",
-      "name": "花园老师",
+      "avatar": "Use the given image as an avatar",
+      "name": "Garden Teacher",
       "handle": "@ConardLi",
-      "text": "见证历史，送上来自 code秘密花园 的祝福！"
+      "text": "witness history, sending blessings from the code secret garden!"
     }
   },
   "footer": {
     "reply_bar": {
-      "avatar": "当前登录用户的小头像（蓝色字母 J）",
-      "placeholder": "回复给 Elon Musk..."
+      "avatar": "Current Logged-In User's Small Avatar (Blue Letter J)",
+      "placeholder": "Reply to Elon Musk..."
     },
-    "navigation_bar": "底部 Tab：首页（高亮）、搜索、Grok、通知（红点 3）、消息"
+    "navigation_bar": "Bottom Tab: Home (highlighted), Search, Grok, Notifications (red dot 3), Messages"
   },
   "style": {
-    "rendering": "高保真移动端 UI 截图，9:19.5 纵向比例，看起来像真实 iPhone 截屏",
-    "consistency": "X 暗色模式经典配色：纯黑底 + 白字 + 蓝色链接 + 灰色分隔线"
+    "rendering": "High fidelity mobile UI screenshot, 9:19.5 vertical ratio, looks like a real iPhone screenshot",
+    "consistency": "X dark mode classic color scheme: pure black background + white text + blue links + gray separators"
   },
   "constraints": {
     "must_keep": [
-      "蓝色官方认证勾正确呈现",
-      "@elonmusk handle 必须正确",
-      "中文正文与英文 hashtags 混排自然",
-      "九宫格三图明显是 SpaceX 相关画面"
+      "Blue official certification check is accurately presented",
+      "@elonmusk handle must be correct",
+      "Chinese body text and English hashtags are mixed in naturally.",
+      "The three images in the grid clearly relate to SpaceX."
     ],
     "avoid": [
-      "出现小红书或微博的 UI 元素",
-      "互动数据顺序错乱",
-      "字体不像 X 官方字体"
+      "Include UI elements from Xiaohongshu or Weibo",
+      "Interactive data sequence is disordered.",
+      "Font is not like X official font"
     ]
   }
 }

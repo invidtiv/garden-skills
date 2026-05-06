@@ -2,37 +2,37 @@
   "type": "Cinematic concept large scene.",
   "goal": "Generate key art for a 3A open-world or cyberpunk series pilot poster depicting a futuristic night scene in Shanghai, without recognizable commercial logos.",
   "world": {
-    "theme": "赛博朋克长江口超级都市 2099",
-    "tone": "酸雨、霓虹、超高密度与江面反光的湿润空气"
+    "theme": "Cyberpunk Super City at the Yangtze River Estuary 2099",
+    "tone": "Acid rain, neon, ultra-high density, and humid air reflecting off the river surface."
   },
   "composition": {
-    "foreground": "撑透明动能伞的旅人黑色剪影，肩甲有微弱自发光与雨水滑落轨迹",
-    "midground": "沿外滩线性延展的层叠商街、磁悬浮航道与交错的士流线，黄浦东侧有巨型水下穹顶入江口",
-    "background": "刺穿低云雾层的塔群与三足式悬浮龙门吊，多面体全息天幕在楼宇间投下粉紫反射",
-    "perspective": "低机位广角仰视，地面积水作镜面"
+    "foreground": "Black silhouette of a traveler holding a transparent kinetic umbrella, with faint self-luminous and rainwater sliding tracks on shoulders.",
+    "midground": "Layered commercial streets extending linearly along the Bund, magnetic levitation routes, and intersecting taxi flows, with a giant underwater dome at the Huangpu's eastern side entering the river mouth.",
+    "background": "A cluster of towers piercing through the low clouds and mist, with a three-legged suspended gantry crane, and a polyhedral holographic canopy casting pink and purple reflections between the buildings",
+    "perspective": "Low-angle wide shot looking up, with water on the ground acting as a mirror"
   },
   "lighting": {
-    "key_light": "建筑立面条形霓虹与无人机编队航行灯在雨幕中散射",
-    "fill_light": "江面与积水路面之间的青绿次反射",
-    "atmosphere": "雨丝体素化、路面积水有扫描状干涉纹、远处有闪电残光但不抢主体"
+    "key_light": "Building Facade Strip Neon and Drone Formation Navigation Lights Scattering in Rain",
+    "fill_light": "Greenish-blue secondary reflections between the river surface and accumulated water on the road.",
+    "atmosphere": "Rain strands digitized, puddles on the road with scanned interference patterns, distant lightning afterglow without overpowering the subject"
   },
-  "color_palette": "品红、电青、深墨黑、街面琥珀警示灯点缀",
-  "title_safe_area": "画面上方约四分之一保留干净雾带供字组排版",
+  "color_palette": "Fuchsia, electric cyan, deep墨黑, street amber warning light embellishments",
+  "title_safe_area": "Approximately one quarter of the top of the screen kept clean with a fog strip for typography",
   "aspect_ratio": "21:9",
   "style": {
-    "rendering": "电影级数字绘画、材质细分到湿沥青与湿金属"
+    "rendering": "Film-level digital painting, material details down to wet asphalt and wet metal"
   },
   "constraints": {
     "must_keep": [
-      "前中后景景深层次清晰可述",
-      "主光源自上方招牌与江面、方向一致",
-      "不出现可辨识真实公司商标的中英文",
-      "人物占宽小于建筑尺度"
+      "Clear and describable depth of field for the foreground, midground, and background",
+      "Main light source from above sign and river surface, direction consistent",
+      "No identifiable real company trademarks in Chinese or English",
+      "Character occupies less width than the scale of the building."
     ],
     "avoid": [
-      "前景中景融成同灰阶",
-      "过度细节导致画面无呼吸",
-      "色板出现第五种高饱和主色"
+      "Foreground and midground blended into the same grayscale",
+      "Excessive detail leading to a lack of breathing space in the image.",
+      "The color palette features a fifth highly saturated main color"
     ]
   }
 }

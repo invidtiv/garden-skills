@@ -3,46 +3,46 @@
   "goal": "Generate 16:9 High-Click Live Stream Thumbnail, with Main Title in Safe Area and Small Text Not Crowded into 9:16 Cut Danger Zone, Adaptable for WeChat and Horizontal First Frame",
   "aspect_ratio": "16:9",
   "character": {
-    "name": "铁犀 深潜",
-    "style": "厚涂 anime + 金属材质高光",
-    "gender": "青年男性虚拟形象",
-    "age_setting": "22 岁",
-    "appearance": "深褐短发、金瞳，半脸复古呼吸面罩、肩甲外露液压管，上身战术背心内搭黑色高领，胸前有自制发光小屏幕显示波形",
-    "pose": "上半身占画面右半，左手握拳在胸前、右手前指像喊麦，大表情眉毛高挑、嘴大开笑"
+    "name": "Iron Rhino Deep Dive",
+    "style": "Thick paint anime + metallic highlight",
+    "gender": "Virtual image of a young male",
+    "age_setting": "22 years old",
+    "appearance": "Short dark brown hair, golden eyes, half face vintage breathing mask, exposed hydraulic pipes on shoulders, tactical vest with black high collar underneath, home-made glowing small screen on chest displaying waveforms",
+    "pose": "The upper body occupies the right half of the frame, left hand clenched in a fist at the chest, right hand pointing forward as if shouting, with an exaggerated expression of raised eyebrows and wide smile"
   },
   "color_theme": {
-    "main_color": "铁锈铜绿 + 海军蓝",
-    "accent_color": "荧光橙在管线与灯条，面积 ≤8%"
+    "main_color": "Rust copper green + navy blue",
+    "accent_color": "Fluorescent orange on pipelines and light strips, covering ≤8% area"
   },
   "debut_info": {
     "debut_date": "2026.6.1",
-    "platform": "Bilibili 首播 · 微信视频号 回放与切片首发",
-    "tags": "#机甲 #杂谈 #开坑独立游戏",
-    "agency": "深潜工造 Project Sublink"
+    "platform": "Bilibili Premiere · WeChat Video Account Replay and Clip Premiere",
+    "tags": "#Mecha #Miscellaneous #Starting Indie Game",
+    "agency": "Deep-sea construction Project Sublink"
   },
   "background": {
-    "type": "废弃船坞雨天夜景，远灯点点，不仿真实军港可辨读标识",
-    "fx": "雨丝斜向、金属表面雨水高光、远处偶发小爆炸橙光不喧宾"
+    "type": "Abandoned Dock Rainy Night Scene, Distant Lights Dotting, Recognizable Markings not Mimicking a Real Military Port",
+    "fx": "Rain strands diagonally, rain highlights on the metal surface, distant occasional small explosions with orange light not overshadowing the subject"
   },
   "title_overlay": {
-    "main": "首航夜：在废港里开麦",
-    "sub": "21:30 铁犀深潜 B站·微信视频号 同步"
+    "main": "First flight night: Opening a mic in a deserted port",
+    "sub": "21:30 Iron Rhino Deep Dive Bilibili·WeChat Video Account sync"
   },
   "layout": {
-    "character_position": "右 55%，左 45% 为标题与副行",
-    "info_block_position": "左上三行，左下为平台提示小字，远离画面下缘 6% 安全区",
-    "logo_position": "左下小 project 标"
+    "character_position": "Right 55%, left 45% for title and subtitle",
+    "info_block_position": "Upper left three lines, lower left for platform prompt small text, 6% safety zone away from the bottom edge of the screen",
+    "logo_position": "Lower left small project label"
   },
   "constraints": {
     "must_keep": [
-      "主标题在 9:16 中裁时仍完全可见（主体偏右、文偏左）",
-      "面罩与管线的结构线清晰、不断裂",
-      "出现「微信」字样时与 B 站并列、不用英文替代"
+      "The main title remains fully visible when cropped in 9:16 (subject is biased right, text is biased left).",
+      "The structural lines of the mask and pipeline are clear and unbroken",
+      "When 'WeChat' appears, it should be alongside B site without English substitution"
     ],
     "avoid": [
-      "可识别军徽、真实国别旗帜",
-      "全屏大颗粒噪点挡脸",
-      "小字用荧光绿底黑字等不可读方案"
+      "Identifiable military insignia, real national flag",
+      "Full screen large grain noise blocking the face",
+      "Small text in unreadable options like fluorescent green background with black text"
     ]
   }
 }

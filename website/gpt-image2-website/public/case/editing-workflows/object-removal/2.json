@@ -2,20 +2,20 @@
   "type": "Clutter removal workflow.",
   "goal": "Based on REFERENCE_0, completely remove roadside utility poles and overlapping wires without weakening Oprah Winfrey's role as the sole narrative subject, ensuring the viewer's gaze is no longer fragmented by lines.",
   "reference_0": {
-    "assumed_input": "假定原图：Oprah Winfrey 在北美城市街角人行道行走半身照，着米色长大衣与深围巾，微侧身看镜头，身后为多层砖楼与路牌，右侧前景有一根灰色混凝土电线杆，杆顶有多条横斜电线切过淡蓝天空，午后斜阳在面部与衣料形成清晰明暗分界"
+    "assumed_input": "Assumed original image: A half-length photo of Oprah Winfrey walking on a city sidewalk in North America, wearing a beige long coat and deep scarf, slightly turned towards the camera, with multiple brick buildings and street signs behind her, a gray concrete utility pole in the right foreground, topped with several diagonal power lines crossing the light blue sky, the afternoon slanting sun creates a clear light and dark division on her face and clothing"
   },
   "edit": {
-    "remove": "整根可见电线杆、杆上街灯与变压器箱简形、所有与杆相连或自画面外穿入的电线",
-    "fill_with": "天空区域延续为均匀淡蓝至浅灰层云无电线断点，建筑立面砖缝与窗格在杆后自然衔接，地面人行道与路缘线连续无塌陷阴影",
-    "preserve": "人物轮廓、步幅姿态、衣褶高光、路牌上合法公开样式文字、远处车辆虚化形态"
+    "remove": "The entire visible utility pole, with simplified street lights and transformer boxes on the pole, along with all wires connected to or entering from outside the frame.",
+    "fill_with": "The sky area continues with uniformly light blue to pale gray layered clouds without electrical line interruptions, the building facades' brick seams and window grids connect naturally behind the pole, and the ground sidewalk and curb lines are continuous without sinking shadows.",
+    "preserve": "Character outline, stride posture, highlights on clothing folds, legally public style text on road signs, blurred shapes of distant vehicles."
   },
   "constraints": {
     "do_not": [
-      "改变人物五官比例或增删手指",
-      "在天空生成明显克隆纹理砖块"
+      "Change the proportions of the character's features or add/remove fingers.",
+      "Generate Obvious Cloned Texture Blocks in the Sky"
     ],
     "must": [
-      "被去除后屋顶线与天空交叠处无锯齿与色彩断层"
+      "after removal, the line between the roof and sky overlap shows no jagged edges or color breaks"
     ]
   }
 }

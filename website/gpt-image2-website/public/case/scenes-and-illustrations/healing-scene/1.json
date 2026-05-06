@@ -2,44 +2,44 @@
   "type": "Healing-themed Daily Scene Illustration",
   "goal": "Generate an illustration of a healing scene on a spring afternoon in Japan, suitable as the header image for a travel public account, with a calm and gentle atmosphere.",
   "scene": {
-    "location": "京都祗园附近町屋改建的二层咖啡馆，和纸垂帘半卷，窗外可见新绿银杏与远处鸟居红柱一角",
-    "season": "四月晚春，樱花季尾声、新叶初盛",
-    "time_of_day": "午后 15:00 左右，斜阳光束穿过木格",
-    "weather_or_mood": "微暖、有穿堂风、街上偶有自行车铃声的遥远暗示"
+    "location": "A two-story cafe converted from a machiya near Gion, with washi paper curtains half-rolled up, showing new green ginkgo outside and a glimpse of a distant torii red pillar.",
+    "season": "Late spring in April, the tail end of the cherry blossom season, new leaves beginning to flourish",
+    "time_of_day": "Around 15:00 in the afternoon, diagonal sunlight beams filtering through wooden grids",
+    "weather_or_mood": "Mild Warmth, Drafty Air, Distant Hints of Occasional Bicycle Bells on the Street"
   },
   "subject": {
-    "human_or_animal": "一位金棕长发的虚构年轻女性背影视角：金色长发松松挽起、薄荷绿薄针织衫、坐在靠窗高凳上，手扶温玻璃茶杯，看窗外不回头",
-    "scale": "占画面约 32%"
+    "human_or_animal": "A fictional young woman with long golden brown hair back view angle: loose golden long hair, wearing a mint green thin knitted sweater, sitting on a high stool by the window, hand resting on a warm glass teacup, looking out the window without turning back",
+    "scale": "Occupies about 32% of the frame"
   },
   "props": {
     "items": [
-      "漆木桌上翻开的小说与铅笔",
-      "小瓷碟上的和果子三角一块",
-      "窗台上小陶盆的蕨类新芽"
+      "Open novel and pencil on the lacquered wooden table",
+      "A triangular piece of wagashi on a small porcelain plate",
+      "Ferns sprouts in a small ceramic pot on the windowsill."
     ]
   },
   "lighting": {
     "type": "自然光与和纸灯混光",
-    "direction": "左前侧光为主，和纸灯从画面右后补极暖的壳光",
-    "intensity": "柔，不高对比",
-    "color_temp": "金绿交织，以暖金为主"
+    "direction": "Left front side light as the main, with a paper lamp from the right rear of the scene adding a warm shell light",
+    "intensity": "Soft, low contrast.",
+    "color_temp": "Intertwined gold and green, with warm gold as the main."
   },
   "style": {
-    "art_style": "数字水彩 + 细线赛璐璐外轮廓",
-    "rendering": "轻颗粒、低饱和、书页与木纹清晰可辨",
-    "color_palette": "抹茶绿、木棕、和纸白、发梢浅金、窗外灰绿"
+    "art_style": "Digital watercolor + fine line cel shading outline.",
+    "rendering": "Light grain, low saturation, with distinguishable page and wood grain.",
+    "color_palette": "Matcha green, wood brown, washi paper white, light gold tips, gray-green outside the window"
   },
   "constraints": {
     "must_keep": [
-      "主体为侧后背影、不给清晰正脸",
-      "光向统一、窗格影子落在桌面",
-      "情绪安静、无戏剧冲突"
+      "The subject is a side-back view, does not provide a clear front face",
+      "Light direction is unified, window grid shadows fall on the table",
+      "Calm emotion, no dramatic conflict"
     ],
     "avoid": [
-      "过甜糖果色",
-      "桌上杂物超过五件",
-      "可识别品牌 logo 或街拍招牌真字",
-      "刻意贴近任何具体真实公众人物的肖像细节"
+      "Overly sweet candy colors",
+      "More than five items on the table.",
+      "Recognizable brand logo or street photography sign with real lettering",
+      "Deliberately close to the portrait details of any specific real public figure"
     ]
   }
 }

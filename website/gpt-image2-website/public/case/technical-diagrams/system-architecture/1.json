@@ -7,32 +7,32 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "AuroraDesk AI 客服平台 · 生产架构",
+    "title": "AuroraDesk AI Customer Service Platform · Production Architecture",
     "subtitle": "v2.3 · ap-southeast-1 · 2026-Q2",
     "position": "top-left, large mono font (JetBrains Mono / SF Mono), light gray text"
   },
   "color_semantics": {
-    "rule": "颜色按'角色'编码，不按'技术'编码",
+    "rule": "Colors coded by 'role', not by 'technology'",
     "palette": [
       {
         "role": "User / Client / Edge",
         "color": "cyan #22D3EE",
-        "use_for": "终端用户、Web、Mobile、CLI"
+        "use_for": "End Users, Web, Mobile, CLI"
       },
       {
         "role": "Gateway / API / BFF",
         "color": "blue #60A5FA",
-        "use_for": "API 网关、负载均衡、CDN、BFF"
+        "use_for": "API Gateway, Load Balancing, CDN, BFF"
       },
       {
         "role": "Business Services",
         "color": "emerald #34D399",
-        "use_for": "微服务、应用层、业务逻辑"
+        "use_for": "Microservices, Application Layer, Business Logic"
       },
       {
         "role": "Data / Persistence",
         "color": "violet #A78BFA",
-        "use_for": "数据库、缓存、对象存储、搜索"
+        "use_for": "Database, cache, object storage, search."
       },
       {
         "role": "Middleware / Queue",
@@ -42,22 +42,22 @@
       {
         "role": "Infra / Platform",
         "color": "amber #FBBF24",
-        "use_for": "K8s、容器运行时、云平台"
+        "use_for": "K8s, container runtime, cloud platform"
       },
       {
         "role": "Security / Auth",
         "color": "rose #FB7185",
-        "use_for": "鉴权、密钥、审计、防火墙"
+        "use_for": "Authentication, keys, audits, firewalls."
       },
       {
         "role": "External / 3rd Party",
         "color": "slate #94A3B8",
-        "use_for": "外部 SaaS、第三方 API"
+        "use_for": "External SaaS, third-party API"
       }
     ]
   },
   "regions": {
-    "rule": "用大虚线框包围属于同一'部署单元'的节点，框上方有 region label",
+    "rule": "Surround nodes belonging to the same 'deployment unit' with a large dashed box, with a region label above the box",
     "items": [
       {
         "id": "R1",
@@ -66,12 +66,12 @@
       },
       {
         "id": "R2",
-        "label": "EKS 工作负载 · 业务与编排平面",
+        "label": "EKS Workloads · Business and orchestration plane",
         "color_border": "amber dashed"
       },
       {
         "id": "R3",
-        "label": "Data Plane · 持久化与消息",
+        "label": "Data Plane · Persistence and messaging",
         "color_border": "violet dashed"
       }
     ]
@@ -129,7 +129,7 @@
       },
       {
         "id": "N9",
-        "label": "PostgreSQL 16 (主从)",
+        "label": "PostgreSQL 16 (Master-Slave)",
         "role": "Data / Persistence",
         "region": "R3"
       },
@@ -185,7 +185,7 @@
         "from": "N3",
         "to": "N2",
         "style": "sync",
-        "label": "回源"
+        "label": "Return source"
       },
       {
         "from": "N2",
@@ -197,7 +197,7 @@
         "from": "N4",
         "to": "N5",
         "style": "sync",
-        "label": "Bearer 校验"
+        "label": "Bearer Verification"
       },
       {
         "from": "N4",
@@ -262,16 +262,16 @@
     ],
     "sync_call": {
       "style": "solid line 1.5px in slate #64748B, with small filled triangle arrowhead at the target end",
-      "use_for": "同步请求 / 调用"
+      "use_for": "Synchronous request / call"
     },
     "async_event": {
       "style": "dashed line 1.5px in slate #64748B, with hollow triangle arrowhead",
-      "use_for": "异步事件 / 消息发布订阅 / 回调"
+      "use_for": "Asynchronous Events / Publish-Subscribe Messaging / Callbacks"
     },
     "data_flow_label": {
-      "rule": "edges 上可选标小标签（如 'POST /orders' / 'order.created event'），用 mono 字体 9pt，背景与画布融合"
+      "rule": "optional small labels on edges (e.g., 'POST /orders' / 'order.created event'), using mono font 9pt, background blending with the canvas"
     },
-    "rule_routing": "尽量正交（水平 / 垂直）走线；如果必须斜线，控制在 ≤ 30°；边不要穿过节点"
+    "rule_routing": "Try to make lines orthogonal (horizontal/vertical); if diagonal lines are necessary, keep them ≤ 30°; don't let edges cross nodes"
   },
   "legend": {
     "enabled": true,
@@ -281,23 +281,23 @@
   },
   "constraints": {
     "must_keep": [
-      "暗色背景 + 细 grid",
-      "颜色按 role 编码，不要按技术品牌（如 PostgreSQL 用 violet 因它是 data，不是因为 PG 官方蓝）",
-      "节点统一圆角和尺寸基线",
-      "等宽字体（mono）贯穿全图",
-      "edges 不穿过节点，标签不与边重叠",
-      "区域虚线框颜色与区域含义匹配",
-      "legend 必须画出（即使简化）"
+      "Dark background + fine grid",
+      "Colors coded by role, do not code by technical brand (e.g., PostgreSQL uses violet because it is data, not because PG official blue)",
+      "Nodes have consistent rounded corners and size baseline",
+      "Monospaced font (mono) throughout the entire image",
+      "Edges do not pass through nodes, labels do not overlap with edges",
+      "The color of the dashed box matches the meaning of the area",
+      "Legend must be shown (even if simplified)"
     ],
     "avoid": [
-      "彩虹色 / 高饱和霓虹色（除 cyan 之外其它色都要 muted）",
-      "用 emoji 当节点图标（用极简几何 glyph）",
-      "技术 logo 直接贴上去（除非是商标对照说明）",
-      "3D 立方体 / 透视效果 / 玻璃质感",
-      "同一种颜色既表'安全'又表'业务'",
-      "节点超过 15 个（请拆分到多张子图）",
-      "声称这张图可编辑 / 可导出 SVG（它是位图）",
-      "用花哨字体 / 手写体（破坏工程感）"
+      "Rainbow Color / High Saturation Neon Color (All Colors Muted Except Cyan)",
+      "Use emoji as node icon (with minimalist geometric glyph)",
+      "Directly paste the technical logo (unless it's a trademark comparison说明)",
+      "3D cube / perspective effect / glass texture",
+      "The same color represents both 'safety' and 'business'",
+      "Over 15 nodes (please split into multiple sub-images)",
+      "Claims this image is editable / exportable as SVG (it is a bitmap)",
+      "Use fancy fonts / handwritten styles (destroys engineering feel)"
     ]
   }
 }

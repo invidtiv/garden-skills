@@ -1,25 +1,25 @@
 {
   "type": "Product Exploded View Poster",
   "goal": "Generate a product poster in a high-tech, engineering aesthetic style, featuring a vertical exploded view of the Apple Vision Pro 2, flanked by technical callouts, suitable as a long image for product stations or event launches.",
-  "subject": "Apple Vision Pro 2 空间计算头显",
+  "subject": "Apple Vision Pro 2 Spatial Computing Headset",
   "style": {
-    "rendering": "高光泽铝镁合金与织物的精密 3D 渲染，微距镜头感，关键芯片与透镜边缘带柔和辉光",
-    "background_color": "深靛青向极光紫渐变的无纹理渐变",
-    "lighting": "顶侧 45° 主光 + 双侧柔光，透镜玻璃边缘有极细冷白光勾边，层间有极弱体积雾"
+    "rendering": "High gloss aluminum-magnesium alloy and fabric precision 3D rendering, macro lens feel, key chip and lens edges with soft glows",
+    "background_color": "Textured gradient from deep indigo to aurora purple",
+    "lighting": "Top side 45° main light + dual soft light, with very fine cold white light outlining the edges of the lens glass, and very weak volumetric fog between layers"
   },
   "header": {
     "logo": "Apple Vision Pro 2",
-    "subtitle": "以光学堆栈与 on-device 智能，让空间成为界面。"
+    "subtitle": "Using optical stacks and on-device intelligence to make space the interface."
   },
   "layout": {
-    "centerpiece": "Apple Vision Pro 2 的垂直堆叠爆炸视图，从下到上共 9 层：外织物头带与调节旋钮机构、后枕配重与电池系带接口、M 系系留算力与散热风道模块、R1 或后继协处理与传感器融合 PCB、多目透视与 SLAM 摄像头阵列、眼动追踪红外投射与相机环、Pancake 双眼光学模组与偏振膜组、OLED 微显示面板与接插件、前弧面玻璃与铝合金主框架与扬声器腔体",
-    "callout_layout": "左右两侧均匀分布",
+    "centerpiece": "Apple Vision Pro 2 Vertical Stacked Exploded View, 9 Layers from Bottom to Top: Outer Fabric Headband and Adjustment Knob Mechanism, Rear Pad Counterweight and Battery Strap Interface, M Series Tethered Computing and Cooling Duct Module, R1 or Subsequent Co-Processing and Sensor Fusion PCB, Multi-Lens Perspective and SLAM Camera Array, Eye Tracking Infrared Projection and Camera Ring, Pancake Dual-Eye Optical Module and Polarizing Film Set, OLED Micro Display Panel and Connectors, Front Curved Glass and Aluminum Alloy Main Frame and Speaker Cavity",
+    "callout_layout": "Even distribution on both sides",
     "callout_labels": {
-      "count": "8",
+      "count": "Overexposed background obscures the outlines.",
       "left_side": [
-        "M 系系留算力\\n在头戴功耗约束下提供图形与多模态推理。",
+        "M series tethered computing\\nprovides graphics and multimodal inference under head-worn power constraints.",
         "协处理 + 传感器融合\\n降低透视与手眼追踪的端到端时延。",
-        "Pancake 光路设计\\n在厚度与 FOV 之间折中，减轻颈部负担。"
+        "Pancake optical design\\nbalances thickness and FOV to reduce neck strain."
       ],
       "right_side": [
         "铝合金主框架 + 玻璃弧面\\n结构刚度与佩戴舒适度的承力中枢。",
@@ -31,24 +31,24 @@
     },
     "footer": {
       "left_text_block": {
-        "headline": "看见每一层，理解每一处。",
-        "body": "从微显示到透视相机，从算力到织物力学，每一层都服务于「空间里的自然交互」。"
+        "headline": "See every layer, understand every detail.",
+        "body": "From micro displays to perspective cameras, from computing power to fabric mechanics, each layer serves 'natural interaction in space'."
       },
       "right_logo": "Apple"
     }
   },
   "constraints": {
     "must_keep": [
-      "组件层级感清晰，层与层之间有适当距离",
-      "callout 引线指向正确组件",
-      "顶底品牌区不遮挡主爆炸结构",
-      "整体具备旗舰发布会长图的完整度"
+      "Clear Sense of Component Hierarchy with Appropriate Distances Between Layers",
+      "callout leader line points to the correct component",
+      "The top and bottom brand areas do not obscure the main explosion structure",
+      "Overall, it has the completeness of a flagship release event long graphic."
     ],
     "avoid": [
-      "光机与 PCBA 过密难辨",
-      "callout 与引线错位",
-      "镜面与玻璃高光方向矛盾",
-      "未来感过度卡通化"
+      "Light machines and PCBA are too densely undistinguishable",
+      "callout misaligns with leader line",
+      "Contradiction in the direction of highlights between mirror and glass",
+      "Overly cartoonish futuristic feel"
     ]
   }
 }

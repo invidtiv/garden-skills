@@ -2,42 +2,42 @@
   "type": "VTuber Debut Profile Card",
   "goal": "Generate a 9:16 vertical debut profile card, suitable for direct use as the main visual for Weibo super topics, Bilibili dynamic images, and WeChat video account profile pages.",
   "character": {
-    "name": "樱下川 初日",
-    "style": "日系 TV anime 赛璐璐 + 赛璐璐阴影两层",
-    "gender": "少女",
-    "age_setting": "18 岁（设定为虚拟艺龄）",
-    "appearance": "粉樱双马尾、薄荷绿眼瞳、露肩改良短振袖，腰封与小腿袜有樱花瓣刺绣，耳边佩戴无线麦造型小道具",
-    "pose": "半身立绘，身体微 15° 侧向、一手轻提袖角，微笑有亲和力，一手伸出像邀请进直播间"
+    "name": "Sakura River, first day.",
+    "style": "Japanese TV anime cel shading + two layers of cel shading",
+    "gender": "Young girl",
+    "age_setting": "18 years old (set as virtual artist age)",
+    "appearance": "Pink cherry double pigtails, mint green eyes, off-shoulder improved short flowing sleeves, waist cinch and calf socks with cherry blossom petal embroidery, wearing a tiny prop shaped like a wireless microphone by the ear",
+    "pose": "Half-body illustration, body slightly turned 15°, one hand lightly lifting the sleeve corner, smiling amiably, one hand outstretched as if inviting into the livestreaming room"
   },
   "color_theme": {
-    "main_color": "樱粉 + 芽绿",
-    "accent_color": "金线勾边小面积"
+    "main_color": "Cherry blossom pink + bud green.",
+    "accent_color": "Small area with gold line edging."
   },
   "debut_info": {
     "debut_date": "2026.5.10",
-    "platform": "Bilibili 直播 · 微信视频号 同步初配信",
-    "tags": "#初配信 #国V #春樱组 #晚九点见",
-    "agency": "春鸣社 VirtuaLink"
+    "platform": "Bilibili Live · WeChat Video Account Synchronization Initial Stream",
+    "tags": "#Initial Distribution #National V #Spring Sakura Group #See You at Nine",
+    "agency": "Spring Echo Society VirtuaLink"
   },
   "background": {
-    "type": "黄昏时分河边垂樱与远山城剪影，天顶渐变为浅紫到淡橙",
-    "fx": "缓缓飘落的发光樱瓣 + 少许可控粒子、镜头前景一层柔焦花瓣虚化"
+    "type": "At dusk, weeping cherry trees by the river and silhouette of distant mountains and city, with the sky gradient from light purple to pale orange",
+    "fx": "Gently falling glowing cherry petals + a few controllable particles, with a layer of softly focused petals in the foreground"
   },
   "layout": {
-    "character_position": "画面右下偏中，脚下留 12% 给社标与条型码位",
-    "info_block_position": "左上竖排：艺名、首播时间、三行小字 tag，字色深褐或深灰、白描边 1px",
-    "logo_position": "右下小「春鸣社」原创几何字与图形，面积不超过画面 4%"
+    "character_position": "Slightly towards the center of the lower right, leaving 12% below for the brand logo and barcode position.",
+    "info_block_position": "Upper left vertical arrangement: stage name, premiere time, three lines of small text tags, text color dark brown or dark gray, white outline 1px",
+    "logo_position": "Bottom right small 'Spring Ming Society' original geometric letters and shapes, area not exceeding 4% of the frame"
   },
   "aspect_ratio": "9:16",
   "constraints": {
     "must_keep": [
-      "艺名、首播日、三平台字段清晰可读，不被头发大面积遮挡",
-      "主色与服色、背景樱花一致",
+      "The artist name, premiere date, and three platform fields are clearly readable and not significantly obscured by hair",
+      "Main colors are consistent with clothing colors and background cherry blossoms.",
       "脸部无文字叠印"
     ],
     "avoid": [
-      "使用 Bilibili 小电视等受保护商标的精确形",
-      "字体系超过三种",
+      "Use the precise shape of protected trademarks like Bilibili small TV",
+      "Font system exceeds three types",
       "背景过曝吞掉线稿"
     ]
   }

@@ -2,48 +2,48 @@
   "type": "MMORPG Xianxia Game Screenshot",
   "goal": "16:9 Pseudo-Game Screen, Engine Feel Close to Recent Domestic Self-Developed MMO Gameplay, Non-Animated PV",
   "game_meta": {
-    "game_name": "九州行·劫火录",
-    "engine_feel": "高饱和后期国风 MMO（飞剑与轻功系统）",
-    "perspective": "第三人称略俯视 20°"
+    "game_name": "Journey Through the Nine Provinces: The Record of Fire Robbery.",
+    "engine_feel": "High saturation post-processing Chinese-style MMO (flying sword and lightness system)",
+    "perspective": "Third person slightly top-down 20°"
   },
   "scene": {
-    "environment": "破碎浮空山石与朱红宫阙残垣、脚下流云翻涌、远处天雷云柱",
-    "time_of_day": "将夜未夜、青紫天光",
-    "weather": "间歇性灵力碎光如尘",
-    "lighting": "法宝青金两色主光交叉、人物边缘有轮廓线感但非赛璐璐"
+    "environment": "Broken floating mountain stones and vermilion palace ruins, with rolling clouds beneath and distant thundercloud pillars.",
+    "time_of_day": "Transition from night to twilight, indigo sky light",
+    "weather": "Intermittent spiritual light fragments like dust",
+    "lighting": "Two colors of the artifact, lapis lazuli and azure, with main light crossing, figures have an outline feeling but not cel shading."
   },
   "character": {
-    "description": "可辨识为 Tim Cook 气质的中年男修者：清瘦身形、银灰道袍、简洁束发、无冠，双手捏剑诀、足踏一柄青锋飞剑，面容温和专注，为仙侠美术常见主角类型而非现代写真换脸",
-    "position": "画面中心偏下，敌向压力来自画外左侧"
+    "description": "Identifiable as a middle-aged male figure with the temperament of Tim Cook: slender build, silver-gray robe, simple hairstyle, no crown, hands forming a sword stance, standing on a flying sword, with a gentle and focused expression, typical of fantasy art protagonist types rather than modern portrait face-swaps",
+    "position": "Slightly below the center, the pressure from the enemy direction comes from the left side outside the image."
   },
   "ui_elements": {
     "hud": {
       "enabled": true,
       "items": [
-        "角色头顶：双向血条（自身绿/敌红）+ 名称「云外客」",
-        "屏幕右侧：竖向 1-0 技能与法宝轮，当前高亮「劫火」",
-        "左下：聊天窗三条「[世界] 某某：求组团本」「[系统] 你获得 灵石×3」「[战队] 队长：集火」",
-        "右上：小地图圆形+东南西北与区域名「墟海·断龙台」",
-        "正上：限时条「天劫将至 02:17」"
+        "on top of character's head: bi-directional health bars (green for self/red for enemy) + name 'Yunwai Ke'",
+        "On the right side of the screen: vertical 1-0 skill and talisman wheel, currently highlighted 'Calamity Fire'",
+        "Lower left: chat window three lines '[World] Someone: Looking for a team' '[System] You received Spirit Stones ×3' '[Team] Captain: Focus fire'",
+        "Top right: Small map circular + directions and area name 'Xuhai·Broken Dragon Platform'",
+        "Above: Limited time bar 'Cataclysm Approaching 02:17'."
       ]
     },
     "subtitle": {
       "enabled": true,
-      "speaker": "师父传念",
-      "text": "劫火将落，先断他剑脉！"
+      "speaker": "Master's teachings",
+      "text": "The calamity fire will fall; first cut off his sword vein!"
     },
     "interaction_prompt": {
       "enabled": true,
-      "text": "按 [R] 祭出镇符"
+      "text": "Press [R] to summon the talisman"
     }
   },
   "style": {
-    "rendering": "数字国风厚涂材质+实时粒子、略高对比",
-    "color_palette": "黛青+朱红+金+电青"
+    "rendering": "Digital national style thick paint texture + real-time particles, slightly higher contrast.",
+    "color_palette": "Dark blue + vermilion + gold + electric cyan"
   },
   "aspect_ratio": "16:9",
   "constraints": {
-    "must_keep": "聊天与系统字为简体中文、字体统一无乱码",
-    "avoid": "日系 JRPG 圆形指令菜单与仙侠 UI 混搭、血条样式与左下聊天重叠"
+    "must_keep": "Chat and system text in Simplified Chinese, unified font with no garbled characters",
+    "avoid": "Japanese style JRPG circular command menu mixed with Xianxia UI, health bar style overlapping with bottom-left chat"
   }
 }

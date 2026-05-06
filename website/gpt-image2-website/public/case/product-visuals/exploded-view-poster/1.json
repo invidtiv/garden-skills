@@ -1,21 +1,21 @@
 {
   "type": "Product Exploded View Poster",
   "goal": "Generate a product poster in a high-tech, engineering aesthetic style, featuring a vertical exploded view of the Tesla Cybertruck, flanked by technical callouts, suitable as the main visual for a product launch or technical highlight image on a detail page.",
-  "subject": "Tesla Cybertruck 电动皮卡",
+  "subject": "Tesla Cybertruck Electric Pickup",
   "style": {
-    "rendering": "简洁的高科技 3D 渲染，摄影棚灯光，车身蒙皮边缘带冷色微光勾边",
-    "background_color": "深空灰向电光蓝过渡的柔和渐变",
-    "lighting": "摄影棚顶光 + 微弱冷色边缘光，层与层之间带有淡淡电离感氛围光"
+    "rendering": "Minimalist high-tech 3D rendering, studio lighting, car body skin edges outlined with cool color highlights",
+    "background_color": "Soft gradient from deep space gray to electric blue",
+    "lighting": "Studio overhead light + faint cool edge light, with a subtle ionization ambient light between layers."
   },
   "header": {
     "logo": "CYBERTRUCK · Tesla",
-    "subtitle": "以线控与一体式外壳，重塑公路上的未来。"
+    "subtitle": "Reimagining the future on the road with wire control and an integrated shell."
   },
   "layout": {
-    "centerpiece": "Tesla Cybertruck 的垂直堆叠爆炸视图，从下到上共 9 层：800V 高镍电池包与热管理底盘、前双电机后单电机三电机驱动桥、线控转向与全轮转向执行机构、不锈钢 Exoskeleton 侧围与车底护板、超硬冷轧不锈钢外蒙皮三角切面、装甲玻璃前挡风与折线雨刷机构、线束域控制器与 48V 低压配电单元、赛博感极简座舱骨架与 yoke 方向柱接口、可伸缩后斗盖板与货斗照明模组",
-    "callout_layout": "左右两侧均匀分布",
+    "centerpiece": "Tesla Cybertruck Vertical Stacked Exploded View, 9 Layers from Bottom to Top: 800V High Nickel Battery Pack and Thermal Management Chassis, Front Dual Motor and Rear Single Motor Three-Motor Drive Axle, Drive-by-Wire Steering and All-Wheel Steering Actuators, Stainless Steel Exoskeleton Side Panels and Underbody Shield, Ultra-Hard Cold-Rolled Stainless Steel Outer Skin Triangular Cross Section, Armored Glass Windshield with Folding Wiper Mechanism, Wiring Domain Controller and 48V Low Voltage Power Distribution Unit, Cyberpunk Minimalist Cabin Frame and Yoke Steering Column Interface, Retractable Rear Bed Cover and Cargo Bed Lighting Module",
+    "callout_layout": "Even distribution on both sides",
     "callout_labels": {
-      "count": "8",
+      "count": "Overexposed background obscures the outlines.",
       "left_side": [
         "800V 架构电池组\\nTesla 高压平台，续航与充放电效率的底座。",
         "三电机驱动与扭矩矢量\\n公路与轻越野场景下的动力分配。",
@@ -31,24 +31,24 @@
     },
     "footer": {
       "left_text_block": {
-        "headline": "体验，源于结构的进化。",
-        "body": "从底盘中枢到不锈钢外壳，每一个模块都为电动时代的耐用与效率而设计。Cybertruck 以工程透明的方式展示未来，让技术本身成为叙事。"
+        "headline": "Experience, stemming from the evolution of structure.",
+        "body": "From chassis central to stainless steel shell, each module is designed for durability and efficiency in the electric era. Cybertruck showcases the future in an engineering-transparent way, making technology itself the narrative."
       },
       "right_logo": "T"
     }
   },
   "constraints": {
     "must_keep": [
-      "组件层级感清晰，层与层之间有适当距离",
-      "callout 引线指向正确组件",
-      "顶部 logo 和底部品牌区不能与组件重叠",
-      "整体看起来像高端发布会海报"
+      "Clear Sense of Component Hierarchy with Appropriate Distances Between Layers",
+      "callout leader line points to the correct component",
+      "The top logo and bottom brand area must not overlap with components",
+      "Overall, it looks like a high-end release event poster."
     ],
     "avoid": [
-      "组件展开过密导致看不清",
-      "callout 文字过长换行混乱",
-      "光线方向不统一",
-      "组件之间出现穿模或穿插"
+      "Overly Dense Component Expansion Results in Lack of Clarity",
+      "callout text too long causing line breaks to be confusing",
+      "The direction of light is not unified",
+      "Instances of Penetration or Interspersing Between Components"
     ]
   }
 }

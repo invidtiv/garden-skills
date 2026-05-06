@@ -2,41 +2,41 @@
   "type": "Minimalist Blank Atmosphere Image",
   "goal": "Produce a horizontal or vertical minimalist image with a morning solitude meditation character, suitable as wallpaper for collaboration with a home aromatherapy brand.",
   "mood": {
-    "feeling": "安静、可听见陶瓷轻碰声、天刚亮不急着清醒",
-    "one_sentence": "等蒸汽伸直了，再和世界打招呼。"
+    "feeling": "Quiet, can hear the light tapping sound of ceramics, not in a hurry to awaken at dawn",
+    "one_sentence": "Straighten the steam, then greet the world."
   },
   "subject": {
-    "description": "极简单柄白瓷咖啡杯 3/4 俯视，口沿一道极细金边，蒸汽一条直线上升稍偏左",
-    "scale": "杯口椭圆约占画面 11%",
-    "position": "左偏中上，右下 2/3 为留白"
+    "description": "Very simple handle white porcelain coffee cup viewed from 3/4 top down, with a very fine gold rim at the mouth, and steam rising slightly to the left in a straight line.",
+    "scale": "The oval at the cup's rim occupies about 11% of the image.",
+    "position": "Left-aligned in the middle upper, with the bottom right 2/3 left blank"
   },
   "background": {
-    "type": "有轻微颗粒的米白雾面、几乎无方向光",
-    "main_color": "米白 92%、暖金作为口沿与蒸汽芯线 2%、其余为极轻暖灰影"
+    "type": "Off-white matte with slight grain, almost no directional light",
+    "main_color": "Off-white 92%, warm gold as the rim and steam core line 2%, the rest an extremely light warm gray shadow"
   },
   "text_overlay": {
     "enabled": "true",
-    "text": "等蒸汽伸直了，再和世界打招呼。",
-    "position": "右下，齐右排布",
-    "font_style": "极细明体混英文衬线，中英混排时英文更小",
-    "color": "炭灰 60% 透明度"
+    "text": "Straighten the steam, then greet the world.",
+    "position": "Lower right, aligned to the right",
+    "font_style": "Very fine displayed mixed English serif, English is smaller when mixed with Chinese.",
+    "color": "Charcoal gray 60% transparency"
   },
   "style": {
-    "rendering": "数码纸纹、边缘干净，蒸汽用两三段线完成不拖泥带水",
-    "lighting": "无影子或仅杯底一点淡灰接触影",
-    "color_palette": "主色与辅色外无装饰色"
+    "rendering": "Digital paper texture, clean edges, steam depicted with two or three lines that are clear-cut.",
+    "lighting": "No shadows, or only a light gray contact shadow at the bottom of the cup.",
+    "color_palette": "No decorative colors outside of main and auxiliary colors."
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "留白白区主导情绪、杯体非正中",
-      "不加入手机、书、手",
-      "一句中文核心，不加标签或 hashtag"
+      "The white space area dominates the emotion, and the cup body is not centered.",
+      "No mobile phones, books, or hands",
+      "A core Chinese phrase, without tags or hashtags"
     ],
     "avoid": [
-      "咖啡拉花过花抢戏",
-      "把画面做成早餐摊热闹版",
-      "文字多行成段"
+      "Coffee latte art steals the spotlight",
+      "Make the scene a lively version of a breakfast stall",
+      "Text is formatted in multiple lines."
     ]
   }
 }

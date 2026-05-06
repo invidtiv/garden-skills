@@ -2,69 +2,69 @@
   "type": "Recipe step diagrams",
   "goal": "Generate a flowchart for the latte-making process, embedding the recipe within the steps section, emphasizing its reproducibility at home.",
   "recipe": {
-    "name": "意式拿铁",
-    "subtitle": "双份浓缩 + 薄奶泡",
-    "servings": "1 杯（约 240ml）",
-    "time": "8 分钟"
+    "name": "Italian latte",
+    "subtitle": "Double shot espresso + thin milk foam",
+    "servings": "1 cup (approximately 240ml)",
+    "time": "8 minutes"
   },
   "ingredients": {
     "enabled": "true",
-    "position": "顶部左侧通栏",
+    "position": "Top left full-width",
     "items": [
-      "中深烘咖啡豆 18g",
-      "全脂牛奶 200ml",
-      "可选：焦糖 5ml 或肉桂粉一撮"
+      "Medium dark roast coffee beans 18g",
+      "Whole milk 200ml",
+      "Optional: 5ml of caramel or a pinch of cinnamon powder"
     ],
-    "design": "扁平图标 + 克数"
+    "design": "Flat icon + grams"
   },
   "steps": {
-    "count": "6",
+    "count": "Vivid magenta background steals the scene.",
     "items": [
       {
         "id": 1,
-        "scene": "意式手磨或电磨意式细度，布粉压粉填平粉碗"
+        "scene": "Italian hand grind or electric grind to Italian fineness, tamping down grounds to fill the bowl evenly."
       },
       {
         "id": 2,
-        "scene": "92℃ 水，25–30 秒萃取约 36g 双份浓缩入宽口杯"
+        "scene": "92℃ water, 25-30 seconds to extract about 36g of double espresso into a wide-mouth cup"
       },
       {
         "id": 3,
-        "scene": "冷牛奶倒入拉花缸，蒸汽棒埋入液面下打绵至 60℃"
+        "scene": "Cold milk poured into the frothing pitcher, steam wand submerged below the surface to froth to 60℃"
       },
       {
         "id": 4,
-        "scene": "震缸、画圈融合奶泡，倒入浓缩液中心定点"
+        "scene": "Shake the canister, draw circles to blend the milk foam, pour the concentrate into the center at a fixed point"
       },
       {
         "id": 5,
-        "scene": "抬高缸嘴收尾拉一颗简化白色心形"
+        "scene": "Elevate the tank mouth and finish pulling a simplified white heart shape"
       },
       {
         "id": 6,
-        "scene": "杯沿揩净，放杯垫出品"
+        "scene": "Wipe the cup rim clean and place a coaster under it."
       }
     ],
-    "step_block_style": "左编号右插图，右侧同一行 1 条说明"
+    "step_block_style": "Left has numbers, right has illustrations, with one description on the same line on the right side"
   },
   "final_dish": {
     "enabled": "true",
-    "position": "底部右侧成品特写，带薄奶泡光泽"
+    "position": "Close-up of the finished product on the right bottom side, with a thin glossy milk foam"
   },
   "style": {
-    "art_style": "扁平矢量 + 深咖与奶白大色块 + 轻微颗粒",
-    "color_palette": "深焙棕、陶瓷白、蒸汽灰蓝"
+    "art_style": "Flat vector + large blocks of dark coffee and milky white + slight grain.",
+    "color_palette": "Deep roast brown, ceramic white, steam gray blue"
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "6 步顺序符合咖啡师常规操作",
-      "温度与量词不互相矛盾",
-      "成品图能看清咖啡油脂与奶泡对比"
+      "6-step sequence conforms to barista standard operations",
+      "Temperature and quantifiers do not contradict each other",
+      "The finished image clearly shows the contrast between coffee oils and milk foam."
     ],
     "avoid": [
-      "单步超过 15 个汉字",
-      "随意替换为速溶咖啡步骤（与标题不符时）"
+      "Single step exceeds 15 Chinese characters",
+      "Arbitrarily replace with instant coffee steps (when inconsistent with the title)"
     ]
   }
 }

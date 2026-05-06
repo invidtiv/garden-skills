@@ -2,61 +2,61 @@
   "type": "2x2 Inverted 4-Panel Comic",
   "goal": "Generate a 2×2 four-panel comic telling a rhythmic and twisty short story.",
   "story": {
-    "theme": "合并分支前夜：程序员与 Git 的心理战",
-    "structure": "起 / 承 / 转 / 合",
-    "main_character": "年轻男程序员，黑框眼镜，深灰连帽衫，工牌挂在胸前，同一造型贯穿四格"
+    "theme": "The night before merging branches: the psychological battle between programmers and Git",
+    "structure": "Beginning / Development / Turning / Conclusion",
+    "main_character": "Young male programmer, wearing black framed glasses, dark gray hoodie, name tag hanging on the chest, same look throughout the four panels"
   },
   "style": {
-    "art_style": "日漫线稿 + 平涂淡色",
-    "consistency": "4 格中主角必须是同一人，画风统一",
-    "color_palette": "米白 + 浅灰蓝 + 暖橙点缀"
+    "art_style": "Japanese manga line art + flat light color fill",
+    "consistency": "In 4 panels, the main character must be the same person, with a unified style",
+    "color_palette": "Off-white + light gray-blue + warm orange accents"
   },
   "panels": {
     "format": "2x2 grid",
     "items": [
       {
         "position": "top-left",
-        "label": "起",
-        "scene": "工位上主角双手合十，屏幕显示 Git 分支图，阳光从侧窗打进来",
-        "dialogue": "今晚必合进主分支"
+        "label": "Start",
+        "scene": "The protagonist at the workstation with hands together, screen displaying Git branch diagram, sunlight streaming in from the side window",
+        "dialogue": "Must merge into the main branch tonight."
       },
       {
         "position": "top-right",
         "label": "承",
-        "scene": "主角自信敲键盘，咖啡杯上写着「不加班」被划掉",
-        "dialogue": "冲突都解决了"
+        "scene": "The main character confidently types on the keyboard, with 'No Overtime' crossed out on the coffee cup.",
+        "dialogue": "All conflicts have been resolved"
       },
       {
         "position": "bottom-left",
-        "label": "转",
-        "scene": "手机微信弹出红色 99+，技术群满屏报错截图",
-        "dialogue": "谁动了依赖…"
+        "label": "Turn",
+        "scene": "Mobile WeChat pops up red 99+, technical group full of error screenshots",
+        "dialogue": "Who moved the dependencies..."
       },
       {
         "position": "bottom-right",
-        "label": "合",
-        "scene": "主角瘫在椅子里抱头，显示器一片红字，猫从桌下探头",
-        "dialogue": "先睡，明天合"
+        "label": "Combine",
+        "scene": "The main character is slumped in a chair holding their head, with the monitor displaying red text, and a cat peeking from under the table.",
+        "dialogue": "Sleep first, let's discuss tomorrow"
       }
     ]
   },
   "dialogue_design": {
-    "balloon_style": "白色圆角气泡，黑色描边",
-    "font_style": "圆润手写体"
+    "balloon_style": "White rounded bubble with black outline",
+    "font_style": "Rounded Handwritten Font"
   },
   "aspect_ratio": "1:1",
   "constraints": {
     "must_keep": [
-      "4 格主角是同一人",
-      "故事节奏明显（起 / 承 / 转 / 合）",
-      "对话气泡不挡脸",
-      "画风统一不漂移"
+      "The main character in 4 panels is the same person",
+      "Story rhythm is clear (introduction / development / transition / conclusion).",
+      "Dialogue bubble does not block face",
+      "The style of the painting is unified and does not drift."
     ],
     "avoid": [
-      "故事走向平淡无反转",
-      "对话超过 12 字",
-      "分格大小不一致",
-      "字体多种"
+      "The storyline is flat with no twists.",
+      "Dialogue exceeds 12 words",
+      "Inconsistent grid sizes",
+      "Multiple font types"
     ]
   }
 }

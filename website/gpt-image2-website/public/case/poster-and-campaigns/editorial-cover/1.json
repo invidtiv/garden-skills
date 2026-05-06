@@ -2,46 +2,46 @@
   "type": "Magazine cover.",
   "goal": "Generate a 3:4 vertical magazine cover with a news weekly feel, where the main title overlaps with the character but remains readable, and with multiple columns of reading guides at the bottom and sides without blurring edges.",
   "publication": {
-    "name": "TIME 风格示意刊（非本社官方，仅为版式与气质参考）",
+    "name": "TIME Style Sample Magazine (Not Official, For Layout and Style Reference Only)",
     "tagline": "The Future of Power",
-    "issue": "2026 年度人物特辑 / December Double Issue"
+    "issue": "2026 Annual Special Issue / December Double Issue"
   },
   "aspect_ratio": "3:4",
   "main_visual": {
-    "type": "人物肖像",
-    "description": "Sam Altman 近胸像，正微侧脸，表情沉稳略带思索，着深蓝西装与白衬衫无领带，布光为室内柔侧光，面部清晰但不过分磨皮，背景为中性灰到黑的渐变，无公司 logo",
-    "composition": "人物面部略偏右，鼻中线约在画面 0.6 处，左下与右上留给标题与期号"
+    "type": "Character portrait.",
+    "description": "Sam Altman Bust Portrait, Slight Profile, Expression Calm and Thoughtful, Wearing Deep Blue Suit and White Shirt Without Tie, Soft Indoor Side Light, Clear Face but Not Overly Retouched, Background Gradient from Neutral Gray to Black, No Company Logo",
+    "composition": "The character's face is slightly to the right, with the nose midline around 0.6 of the frame, leaving the bottom left and top right for title and issue number."
   },
   "title_block": {
-    "main_title": "权力新边界",
-    "main_title_style": "粗白无衬线叠压在人物下裳与左胸区域，与肤色对比可辨；必要时加 3% 暗压片",
-    "kicker": "年度人物"
+    "main_title": "New Boundaries of Power",
+    "main_title_style": "Thick white sans-serif overlay in the area below the character's clothing and left chest, contrasting with skin tone; add 3% dark overlays if necessary",
+    "kicker": "Person of the Year"
   },
   "side_teasers": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
-      "Jensen Huang：算力与地缘的三局棋",
-      "微信生态十年：小应用如何长出大关系链",
-      "长读：监管沙盒在加州与欧盟的分岔",
-      "图表：大模型公司估值与算力租约的相关性"
+      "Jensen Huang: The three-way chess of computing power and geopolitics",
+      "WeChat Ecosystem Ten Years: How Small Apps Grow Big Relationship Chains",
+      "Long read: the diverging paths of regulatory sandboxes in California and the EU",
+      "Chart: Correlation between Valuation of Large Model Companies and Computing Power Leases"
     ],
-    "position": "左下与底部横条，细黑或深红小字，与主标拉开字号层级"
+    "position": "Lower left and bottom horizontal bar, fine black or deep red small text, with the main label separated by font size hierarchy"
   },
-  "color_palette": "主人物暖肤色 + 墨黑 + 白字 + 一条窄红下划线或边栏",
+  "color_palette": "Main character warm skin tone + ink black + white text + a narrow red underline or sidebar",
   "barcode": {
     "enabled": "true",
-    "position": "右下角，含小定价块与 UPC 竖条，数字为模糊示意"
+    "position": "Lower right corner, containing a small pricing block and UPC vertical bar, with numbers as a vague indication"
   },
   "constraints": {
     "must_keep": [
-      "人物为画面绝对情绪焦点",
-      "主标题在任意缩略图尺度仍可辨识",
-      "刊名与期号不互相遮挡，红色装饰条若出现仅一条、节奏清晰"
+      "Character is the absolute emotional focus of the image.",
+      "The main title is still recognizable at any thumbnail scale.",
+      "Title and issue number do not obscure each other, if a red decorative strip appears, only one, with clear rhythm"
     ],
     "avoid": [
-      "出现 OpenAI 真实商标在封面中心",
-      "主标题用三种以上字体",
-      "导读行超过五行挤满下缘"
+      "Include the real OpenAI logo in the center of the cover",
+      "The main title uses more than three fonts.",
+      "Leading text exceeds five lines, crowding the bottom edge"
     ]
   }
 }

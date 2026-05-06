@@ -4,40 +4,40 @@
   "aspect_ratio": "16:9",
   "layout": {
     "left_column": {
-      "headline": "让知识与项目，都留在同一块白板里",
-      "subhead": "数据库、列表与看板可互相引用，从个人笔记到百人协作一屏切换。",
+      "headline": "Keep knowledge and projects on the same whiteboard",
+      "subhead": "Databases, lists, and boards can reference each other, switching from personal notes to hundred-person collaboration on one screen.",
       "cta": {
-        "text": "免费注册",
-        "color": "炭黑实心底",
-        "secondary": "预约演示"
+        "text": "Free registration",
+        "color": "Solid bottom in coal black",
+        "secondary": "Appointment demonstration"
       }
     },
     "right_column": {
-      "centerpiece": "无具体商标的协作文档界面大截图：含左侧目录树、中央富文本、右侧数据库属性面板，多窗口轻微 3D 层叠、屏幕边缘有柔和反光",
-      "scale": "占右侧 78%，整体略向画面中心倾"
+      "centerpiece": "A large screenshot of a collaborative document interface without specific trademarks: includes a left-side directory tree, central rich text, right-side database properties panel, slightly 3D stacked multiple windows, with soft reflections at the screen edges.",
+      "scale": "Occupies 78% of the right side, slightly tilting toward the center of the image"
     }
   },
   "background": {
-    "type": "上浅下略深的米白到浅灰蓝渐变，顶部更亮以衬托左上角 logo 位",
-    "decoration": "1-2% 覆盖率的细微噪点与两条极细对角辅助线，终稿不喧宾"
+    "type": "A gradient from light beige to slightly deeper gray-blue, with the top brighter to highlight the logo position in the upper left corner",
+    "decoration": "1-2% coverage minor noise and two very fine diagonal auxiliary lines, final draft does not distract"
   },
   "brand": {
-    "logo_position": "左上角预留「N」形几何与字标小占位，不画真实企业商标",
-    "navigation_hint": "顶部导航不画，图中仅给 logo 与 hero 的衔接留白"
+    "logo_position": "Upper left corner reserved 'N' shaped geometry and text small placement, not drawing actual corporate trademarks",
+    "navigation_hint": "Do not draw the top navigation, leave white space only for the connection between logo and hero in the image"
   },
   "safe_area": {
-    "rule": "底部 10% 与最右 5% 不放置关键小字，避免通栏裁切与移动端切边",
-    "mobile_consideration": "true，标题区在单栏折叠时仍在上半幅完整可读"
+    "rule": "Bottom 10% and far right 5% do not place key small text, to avoid full-width cuts and mobile edge cuts",
+    "mobile_consideration": "true, the title area remains fully readable in the upper half when folded into single-column mode"
   },
   "constraints": {
     "must_keep": [
-      "主标题在左列最大、对比度与背景比 ≥4.5:1",
-      "主按钮形态明确为圆角矩形实体按钮",
-      "右列界面文字用示意性灰条或模糊字，不生成可读真实 UI 小作文"
+      "The main title is the largest in the left column, with a contrast ratio with the background of ≥4.5:1.",
+      "Main button shape clearly defined as a rounded rectangle solid button",
+      "Right column interface text uses indicative gray bars or blurred text, does not generate readable real UI mini essays"
     ],
     "avoid": [
-      "主标题与 3D 产品块重叠",
-      "左列超过三行小字",
+      "The main title overlaps with the 3D product block.",
+      "Left column has more than three lines of small text",
       "背景荧光蓝紫渐变抢戏"
     ]
   }

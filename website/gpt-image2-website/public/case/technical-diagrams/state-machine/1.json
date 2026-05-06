@@ -7,7 +7,7 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "Nimbus OMS · Order 状态机",
+    "title": "Nimbus OMS · Order state machine",
     "subtitle": "CREATED → PAID → FULFILLING → SHIPPED → DELIVERED / REFUNDED / CANCELLED",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
@@ -82,7 +82,7 @@
       "fill": "category color × 12% opacity",
       "border": "1.5px solid in category color",
       "label": "state name in mono 12pt, centered, light text on dark fill",
-      "optional_internal_label": "可在大状态内部底部加 'entry: persist_status'"
+      "optional_internal_label": "Can add 'entry: persist_status' at the bottom inside the main state"
     }
   },
   "category_color_map": {
@@ -134,12 +134,12 @@
       {
         "from": "S3",
         "to": "S4",
-        "label": "handover_carrier [运单已获取] / write tracking_no"
+        "label": "handover_carrier [waybill obtained] / write tracking_no"
       },
       {
         "from": "S3",
         "to": "S6",
-        "label": "refund_before_ship [风控] / cancel_pick"
+        "label": "Refund_before_ship [risk control] / cancel_pick"
       },
       {
         "from": "S4",
@@ -149,7 +149,7 @@
       {
         "from": "S4",
         "to": "S6",
-        "label": "return_to_sender [7d 无签收] / partial_refund"
+        "label": "Return_to_sender [7d no receipt] / partial_refund"
       },
       {
         "from": "S5",
@@ -170,9 +170,9 @@
     "transition_style": {
       "default": "thin solid arrow 1.5px slate #94A3B8 with filled triangle arrowhead",
       "self_loop": "small loop curving above the state, returning to itself",
-      "label_format": "<event> [guard] / <action>，mono 9-10pt 标在边的中间，背景与 canvas 融合避免重叠"
+      "label_format": "<event> [guard] / <action>, mono 9-10pt marked centered on the edge, background fused with canvas to avoid overlap"
     },
-    "rule_routing": "尽量正交或 ≤ 30° 斜线，避免边穿过节点"
+    "rule_routing": "Try to keep orthogonal or ≤ 30° diagonal lines, avoid edges crossing nodes"
   },
   "composite_states": {
     "enabled": false,
@@ -181,20 +181,20 @@
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "category color → 进行中 / 等待 / 成功终态 / 失败终态；initial / final 形状；self-loop 为 pay_retry",
+    "content": "category color → ongoing / waiting / success terminal state / failure terminal state; initial / final shapes; self-loop as pay_retry",
     "style": "small panel, semi-transparent bg, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "initial 是实心圆 / final 是靶心",
-      "transitions 含 event [guard] / action 格式",
+      "Initial is a solid circle / final is a bullseye",
+      "transitions containing event [guard] / action format",
       "自循环为 loop 形",
-      "legend 必画"
+      "Legend must be drawn"
     ],
     "avoid": [
-      "用菱形当 state",
-      "终态画成普通矩形",
-      "声称可编辑 xstate 源"
+      "Use diamonds as states",
+      "Final State Drawn as Normal Rectangle",
+      "Claims to edit xstate source"
     ]
   }
 }

@@ -2,49 +2,49 @@
   "type": "High-density explanatory Slide",
   "goal": "Generate a high-density explanation slide suitable for open class handouts, WeChat long images, and internal sharing materials, helping readers establish a complete cognitive framework for large model evaluation systems in one image.",
   "style": {
-    "format": "单页分栏信息图 + 中央锚点 illustration（ponchi-e 式柔和块面）",
-    "blend": "Irasutoya 柔和温馨插画 + 霞关风格 Slides 高信息密度与编号秩序",
-    "color_palette": "米白底 + 朱红 + 深灰"
+    "format": "Single page multi-column infographic + central anchor point illustration (ponchi-e style soft block surface)",
+    "blend": "Irasutoya soft and warm illustration +霞关 style Slides high information density and numbering order",
+    "color_palette": "Off-white background + vermilion + dark gray"
   },
   "title_section": {
-    "main_title": "如何看懂一份大模型评测报告",
-    "subtitle": "从榜单、基准到可复现性，一张图搭好阅读框架",
-    "language": "中文"
+    "main_title": "How to understand a large model evaluation report.",
+    "subtitle": "From ranking and benchmarks to reproducibility, a single diagram sets up the reading framework.",
+    "language": "Chinese."
   },
   "centerpiece": {
     "enabled": "true",
-    "description": "画面中央偏上，一台打开的笔记本电脑屏幕显示简化的折线与柱状小图，屏幕旁立着一个举着放大镜的卡通小人，象征「带着问题读报告」；周围用细线连接三个小标签：MMLU、人工评审、长上下文"
+    "description": "Center of the screen slightly above, an open laptop screen displays a simplified line chart and bar graph, next to it stands a cartoon character holding a magnifying glass, symbolizing 'reading the report with questions'; three small labels around connected by fine lines: MMLU, human review, long context"
   },
   "sections": {
-    "count": "5",
+    "count": "Saturated and glaring background colors impact text recognition.",
     "items": [
-      "读什么：任务域是否覆盖你关心的场景（数学、代码、多轮对话、多模态）",
-      "怎么看分：主指标与分榜，区分平均榜与单题型强项",
-      "防误解：开卷 / 闭卷、是否可联网、是否用工具、同一模型多版本要核对提交号",
-      "可复现：随机种子、温度、系统提示、评测窗口与提交日期要一并记录",
-      "怎么用：将榜单结论与自家业务评测、人工抽检、线上 A/B 结果交叉验证"
+      "What to read: Does the task domain cover the scenarios you care about (math, code, multi-turn dialogue, multi-modal)",
+      "How to interpret scores: main indicators and secondary rankings, distinguishing average rankings from strengths in individual topics.",
+      "Prevent misunderstanding: open book / closed book, whether it can connect to the internet, whether tools can be used, multiple versions of the same model need to verify submission numbers",
+      "Reproducible: Random seed, temperature, system prompt, evaluation window, and submission date must be recorded together",
+      "How to use: Cross-validate list conclusions with internal business assessments, manual checks, and online A/B results."
     ],
-    "section_block_style": "每节由小插画 + 标题 + 2-3 句解释构成，语气克制不煽情"
+    "section_block_style": "Each section consists of a small illustration + title + 2-3 sentences of explanation, with a restrained tone that is not sentimental"
   },
   "annotations": {
-    "style": "细线引线 + 小标签",
-    "rule": "标注线不能与中央主体交叉，引线从区块边缘指向主图外缘"
+    "style": "Fine Line Lead + Small Tag",
+    "rule": "Annotation lines cannot intersect with the central subject, with leads pointing from the block edge to the outer edge of the main image."
   },
   "footer": {
-    "summary": "核心：榜单是起点，业务对齐、可复现与人工校验才是结论的支撑。"
+    "summary": "Core: The list is the starting point; business alignment, reproducibility, and manual verification are the support for conclusions."
   },
   "constraints": {
     "must_keep": [
-      "信息密度高，但阅读顺序从标题→中央→分栏一目了然",
-      "中央主体作为视觉锚点，五段分栏环绕或左右对称排布",
-      "插画风与说明文字气质一致，不出现写实照片风",
-      "色板严格 ≤ 3 色，强调色只用于小标题与关键数字"
+      "High information density, but reading order is clear from title → center → columns",
+      "The central subject acts as a visual anchor, surrounded by five segmented columns or symmetrically arranged left and right.",
+      "The style of the illustration matches the tone of the descriptive text, without showing realistic photo style.",
+      "The color palette is strictly ≤ 3 colors, with accent colors used only for subtitles and key numbers"
     ],
     "avoid": [
-      "段落字号与标题级差混乱",
-      "插画过细过写实破坏 Irasutoya 感",
-      "文字铺满到边缘无留白",
-      "中英日三种文字混排"
+      "The font size of paragraphs and the hierarchy of headings are confusing",
+      "Illustration that is too detailed and realistic destroys the Irasutoya feel",
+      "Text fills to the edge with no white space.",
+      "Mixed layout with Chinese, English, and Japanese text"
     ]
   }
 }

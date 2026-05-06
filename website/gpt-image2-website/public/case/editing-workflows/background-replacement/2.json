@@ -2,22 +2,22 @@
   "type": "Background Replacement Workflow",
   "goal": "Using REFERENCE_0 as input, maintain a product-level recreation of the headphones and case, only changing the background from seamless pure white paper to a sunset beach, for use in flagship store carousel images.",
   "reference_0": {
-    "assumed_input": "假定原图：画面正中央为白色 AirPods Pro 3 与 MagSafe 充电盒，盒盖微开、耳机一内一外摆放，纯白无缝背景，三灯柔光箱顶光与左右补光，瓶身与盒盖有干净高光带，地面为细微白影"
+    "assumed_input": "Assumed original image: Centered in the frame is a white AirPods Pro 3 and MagSafe charging case, slightly open lid, with one earphone inside and one outside, pure white seamless background, three soft lighting boxes creating top light and side fill light, the bottle body and lid have clean highlight bands, with a slight white shadow on the floor"
   },
   "edit": {
-    "preserve": "白色 AirPods Pro 3、充电盒、金属铰链、USB-C 口与盒内耳机形态、网孔与合模线、壳体材质与白平衡",
+    "preserve": "White AirPods Pro 3, charging case, metal hinge, USB-C port and the shape of in-box headphones, mesh holes and mold lines, casing material and white balance",
     "replace_only": "背景替换为日落时分的暖色沙滩：近景有细腻沙纹与几枚小贝壳，中景浅滩退潮水线柔焦，远处海平线橘粉渐变天空与低太阳轮廓，无人物、无其他品牌物",
-    "lighting_rematch": "主光来自画面左侧低角度夕阳金橙色，在白色塑料上形成长条柔和高光、在盒体棱边有窄条镜面高光；整体色温略暖但不把产品白烤成米黄发脏",
-    "shadow_reflection": "替换为贴近沙面与潮湿沙滩的柔边接触阴影，并在靠近水线一侧增加极弱环境天光反射，高光方向与夕阳一致"
+    "lighting_rematch": "Main light comes from the left side at a low angle with sunset golden orange, forming long soft highlights on white plastic, with narrow mirror highlights on the edges of the box; overall color temperature slightly warm but does not turn the product white into a dirty rice yellow",
+    "shadow_reflection": "Replace with soft-edge shadows close to sandy surfaces and wet beaches, and add very weak ambient skylight reflections on the waterline side, with highlight direction consistent with the sunset"
   },
   "constraints": {
     "do_not": [
-      "修改产品颜色、开盖角度、耳机数量或机身上的小型监管文字与 logo 形状"
+      "Modify product color, lid opening angle, headphone quantity, or small regulatory text and logo shape on the device"
     ],
     "must": [
-      "白盒与耳机仍是官方白，而非奶油灰"
+      "The white box and headphones remain official white, not cream grey"
     ]
   },
-  "render_style": "高分辨率商业产品摄影，颗粒感真实、浅景深、主体清晰、背景自然虚化",
-  "aspect_ratio": "保持原图比例 1:1"
+  "render_style": "High resolution commercial product photography, grain texture is realistic, shallow depth of field, subject is clear, background naturally blurred",
+  "aspect_ratio": "Maintain original aspect ratio 1:1"
 }

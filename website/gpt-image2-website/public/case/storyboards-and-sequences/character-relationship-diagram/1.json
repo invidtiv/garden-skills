@@ -2,86 +2,86 @@
   "type": "Character relationship chart poster.",
   "goal": "Generate a highly complete character relationship diagram for a sci-fi IP, in a 3:4 vertical format, styled as a modern information poster with a slightly hard sci-fi cool color tone.",
   "ip": {
-    "name": "三体（系列核心人物关系）",
-    "tone": "冷静理性 + 轻微末日肃杀感，头像为风格化非写实漫像"
+    "name": "The Three-body (core character relationships of the series)",
+    "tone": "Calm rationality + slight apocalyptic bleakness, avatar is a stylized non-realistic cartoonish image"
   },
   "characters": {
-    "count": "9",
+    "count": "Background gear detail density exceeds the character’s face.",
     "auto_select": "false",
-    "rule": "已指定下列 9 人",
-    "user_list": "叶文洁、史强、汪淼、罗辑、章北海、程心、托马斯·维德、智子（拟人化黑衣形象）、云天明",
+    "rule": "The following 9 people have been designated",
+    "user_list": "Ye Wenjie, Shi Qiang, Wang Miao, Luo Ji, Zhang Beihai, Cheng Xin, Thomas Wade, Zhizi (personified figure in black), Yun Tianming",
     "card_design": {
       "components": [
-        "圆角方卡头像小图",
-        "中文姓名",
-        "身份或阵营小标签"
+        "Rounded Square Card Avatar Small Image",
+        "Chinese name.",
+        "Identity or faction small tags"
       ],
-      "shape": "圆角方形"
+      "shape": "Rounded Square"
     }
   },
   "composition": {
-    "structure": "双轴布局：上区叶文洁与红岸线索偏左，中区汪淼-史强-罗辑为地球侧三角，下区章北海-程心-维德-云天明为阶梯计划与终局线，智子卡置于最右后景制造监视感",
-    "hierarchy": "罗辑、叶文洁卡片略大，其余中号，智子可略小但用线强调辐射关系"
+    "structure": "Dual-axis layout: Upper area Ye Wenjie and Hong'an clues slightly left, middle area Wang Miao - Shi Qiang - Luo Ji as Earth-side triangle, lower area Zhang Beihai - Cheng Xin - Wei De - Yun Tianming for step plan and end line, Zhizi card placed in the far right background to create a sense of surveillance",
+    "hierarchy": "Cards for Luo Ji and Ye Wenjie slightly larger, others medium size, Zhizi can be slightly smaller but with lines emphasizing radial relationships"
   },
   "relationships": {
     "types": [
       {
         "name": "精神传承 / 引路人",
-        "color": "深红",
-        "line": "细虚线"
+        "color": "Deep red",
+        "line": "Fine Dashed Line"
       },
       {
-        "name": "战友 / 警探搭档",
-        "color": "暖橙",
-        "line": "实线"
+        "name": "Comrade / detective partner",
+        "color": "Warm Orange",
+        "line": "Solid line"
       },
       {
-        "name": "技术联盟",
-        "color": "青绿",
-        "line": "实线"
+        "name": "Tech alliance",
+        "color": "Cyan green",
+        "line": "Solid line"
       },
       {
-        "name": "路线分歧 / 价值对立",
-        "color": "深紫",
-        "line": "锯齿线"
+        "name": "Route divergence / value opposition",
+        "color": "Deep purple",
+        "line": "Zigzag line"
       },
       {
-        "name": "地外监视 / 博弈",
-        "color": "品红",
-        "line": "点划线"
+        "name": "Extraterrestrial Surveillance / Game Theory",
+        "color": "Fuchsia",
+        "line": "Dotted line"
       },
       {
-        "name": "执剑与伦理张力",
-        "color": "金色",
-        "line": "双实线"
+        "name": "Sword-bearing and ethical tension",
+        "color": "Golden.",
+        "line": "Double solid line"
       }
     ],
-    "annotation_rule": "每条线中段 3 至 6 字注记，如「面壁者」「执剑人」「星舰国际」等"
+    "annotation_rule": "Each line has 3 to 6 character annotations in the middle, such as 'Wall Facers', 'Sword Bearer', 'Starship International', etc."
   },
   "title_block": {
-    "main_title": "三体·人物关系一图通",
-    "subtitle": "从红岸到黑暗森林",
-    "position": "顶部"
+    "main_title": "Three-body: A diagram of character relationships",
+    "subtitle": "From Red Shore to Dark Forest.",
+    "position": "Top"
   },
   "legend": {
     "enabled": "true",
-    "position": "右下角"
+    "position": "Bottom right corner"
   },
   "style": {
-    "art_style": "硬科幻平涂头像 + 现代网格与细线底纹",
-    "color_palette": "深空蓝灰、星尘白、警告橙、电光青点缀"
+    "art_style": "Hard Sci-Fi flat style avatar + modern grid and fine line background.",
+    "color_palette": "Deep space blue gray, stardust white, warning orange, electric cyan accents"
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "主角群视觉权重大于次要节点",
-      "线型与图例一一对应，注记简短可读",
-      "不出现 15 名以上人物"
+      "The visual weight of the main character group is greater than secondary nodes.",
+      "Line Types Correspond One-to-One with Legend, Annotations Are Short and Readable",
+      "No more than 15 characters"
     ],
     "avoid": [
-      "线团式交叉无层次",
-      "同屏超过 6 种线型",
-      "标签字号小于姓名"
+      "Yarn Ball Style Crossing with No Layers",
+      "More than 6 types of line shapes on the same screen",
+      "Label font size is smaller than the name."
     ]
   }
 }

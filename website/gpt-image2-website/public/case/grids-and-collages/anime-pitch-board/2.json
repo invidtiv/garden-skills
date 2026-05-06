@@ -2,63 +2,63 @@
   "type": "Anime Project Pitch Board",
   "goal": "Generate a pitch page for a city-themed urban fantasy web animation, emphasizing local city qualities and a seasonally animatable structure.",
   "ip": {
-    "title": "江声异闻录",
+    "title": "Tales of River Sounds.",
     "title_localized": "WHISPERS OF THE RIVERSCape",
-    "tagline": "水记得每一句谎言",
+    "tagline": "Water remembers every lie.",
     "logline": "能听见建筑记忆的年轻律师，被一桩跨江大桥案拖入水下古城的契印战争，他必须在法条与妖契之间，选择让城市继续假装正常。",
-    "genre": "都市玄幻 / 律政悬疑 / 季番 12 话"
+    "genre": "Urban fantasy / legal suspense / seasonal series 12 episodes."
   },
   "regions": {
     "main_kv": {
-      "position": "上半 58%",
-      "content": "夜雨江面，大桥悬索在雾中发冷白光，水下半透明古城阙影与现代表面投影重叠，前景男主撑透明伞背对镜头、西装下摆被风掀起，水纹形成淡淡契印光纹",
-      "style": "写実背景 + anime 人物 + 电影色分级青橙"
+      "position": "Upper half 58%",
+      "content": "Night rain on the river surface, the bridge's suspension cables emit cold white light in the mist, underwater semi-transparent ancient city wall shadows overlap with modern facade projections, foreground male protagonist holding a transparent umbrella with his back to the camera, suit hem lifted by the wind, water ripples forming faint imprint light patterns",
+      "style": "Realistic background + anime characters + film color grading in blue and orange"
     },
     "character_cards": {
-      "position": "左下",
-      "count": "3",
+      "position": "Lower left",
+      "count": "Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.",
       "items": [
-        "江澄 · 主角 · 律师 / 可读取构筑物「记忆残响」",
-        "商澜 · 对手律师 · 实为契印会代理人，与主角旧同学关系",
-        "老船娘 · 引导者 · 江底摆渡人、身份成谜"
+        "Jiang Cheng · Protagonist · Lawyer / Readable structure 'Memory Echo'.",
+        "Shang Lan · Rival lawyer · Actually the agent of the contract seal meeting, in relation to the protagonist's old classmate",
+        "Old shipwoman · guide · ferry operator at the riverbed, identity a mystery"
       ],
-      "card_design": "竖长圆角卡 + 胸像 + 名 + 双身份小字"
+      "card_design": "Vertical long rounded corner card + bust + name + dual identity small text"
     },
     "world_setting": {
-      "position": "右下",
-      "content": "地表现代律所线与地下江契线双线叙事，每 3 话解锁一座「记忆码头」。",
+      "position": "Bottom right",
+      "content": "Dual Narrative of Modern Law Firms Above Ground and Underground Jiangqi Line, Unlocking a 'Memory Dock' Every 3 Conversations.",
       "extras": [
-        "小地图：两江交汇 + 三处标注点",
-        "三道具：法典、湿契纸、老船票"
+        "Small map: intersection of two rivers + three marked points",
+        "Three props: Codex, Wet Contract Paper, Old Ship Ticket"
       ]
     },
     "title_block": {
-      "position": "顶部居中大标题区",
+      "position": "Top centered main title area",
       "components": [
-        "江声异闻录 大字",
-        "英文副题双行小写混排"
+        "Tales of River Sounds in large characters.",
+        "The English subtitle is in lowercase and mixed in two lines"
       ]
     },
     "footer_meta": {
-      "position": "底栏",
+      "position": "Bottom bar",
       "content": "RIVER GHOST PICTURES · bible one-pager 2026"
     }
   },
   "style": {
-    "art_style": "近写实场景 + anime 角色 + 雨与体积雾",
-    "color_palette": "雨灰、江绿、路灯琥珀、内透蓝",
-    "typography": "宋黑混排、英文短词全小写加字距"
+    "art_style": "Near-realistic scene + anime character + rain and volumetric fog.",
+    "color_palette": "Rain gray, river green, streetlamp amber, internal blue",
+    "typography": "Song Hei mixed layout, all lowercase for short English words with letter spacing"
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "城市可辨为山城江景气质但不复刻商标建筑",
-      "logline 与主视觉情绪一致",
-      "分区网格对齐"
+      "City identifiable as a mountainous riverside landscape but not replicating trademark buildings",
+      "Logline consistent with main visual mood",
+      "Aligned zone grid"
     ],
     "avoid": [
-      "过度血腥或恐怖特写",
-      "标题区域超过两种字体家族"
+      "Overly bloody or horror close-up",
+      "Title area exceeds two font families."
     ]
   }
 }

@@ -14,9 +14,9 @@
     "position": "bottom-center, italic compact sans-serif, smaller font size"
   },
   "grid_layout": {
-    "rows": "2",
-    "cols": "2",
-    "panel_count": "4",
+    "rows": "Replace the background with Times Square at night: in the foreground, there are slightly misty silhouettes of crowds and reflections on the pavement; in the mid-distance, there are dense LED billboards, intersections, and sparkling car lights, primarily in cool blue-purple neon, mixed with warm-colored light sources from advertisements.",
+    "cols": "Replace the background with Times Square at night: in the foreground, there are slightly misty silhouettes of crowds and reflections on the pavement; in the mid-distance, there are dense LED billboards, intersections, and sparkling car lights, primarily in cool blue-purple neon, mixed with warm-colored light sources from advertisements.",
+    "panel_count": "Background details overwhelm the character.",
     "rule": "2 × 2 == 4; all panels identical size; consistent vertical and horizontal alignment"
   },
   "panels": {

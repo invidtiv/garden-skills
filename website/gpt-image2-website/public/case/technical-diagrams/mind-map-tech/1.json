@@ -7,8 +7,8 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "Web 前端能力图谱（交付级）",
-    "subtitle": "TypeScript 优先 · 2026",
+    "title": "Web front-end capability map (delivery level)",
+    "subtitle": "TypeScript priority · 2026",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "central_node": {
@@ -71,42 +71,42 @@
     "connector_style": "thick branch-colored line 2px from central node to primary node, slight curve"
   },
   "secondary_nodes": {
-    "rule": "每个 primary 下挂 4-6 个 secondary，沿主分支方向呈树枝状展开",
+    "rule": "Each primary hangs 4-6 secondary, branching out along the main branch direction",
     "items_per_primary": {
       "B1": [
-        "TypeScript 5.6（satisfies / infer 进阶）",
+        "TypeScript 5.6 (satisfies / infer advanced)",
         "JavaScript ES2024+（Iterator helpers）",
         "CSS（grid/subgrid, @layer, color-mix）",
-        "平台 API（Fetch, BroadcastChannel, File System Access 权限模型）"
+        "Platform API (Fetch, BroadcastChannel, File System Access permission model)"
       ],
       "B2": [
-        "React 19 / Next.js App Router (RSC 心智)",
-        "Vue 3.5 组合式 + Vapor 模式",
-        "跨端：React Native 新架构 / Expo SDK 53",
-        "Web Components + Lit 3（设计系统外溢）"
+        "React 19 / Next.js App Router (RSC Mindset)",
+        "Vue 3.5 compositional + Vapor mode",
+        "Cross-platform: React Native new architecture / Expo SDK 53",
+        "Web Components + Lit 3 (design system spillover)"
       ],
       "B3": [
-        "TanStack Query 5 + 乐观更新 / 去重",
-        "Zustand 轻量 + XState 复杂状态",
-        "tRPC 或 OpenAPI-typed 客户端",
-        "GraphQL（persisted query + 复杂缓存）"
+        "TanStack Query 5 + Optimistic Updates / Deduplication",
+        "Zustand lightweight + XState complex state",
+        "tRPC or OpenAPI-typed client",
+        "GraphQL (persisted query + complex caching)"
       ],
       "B4": [
-        "Vite / Rolldown 迁移评估",
-        "pnpm workspace + Changesets 版本策略",
-        "ESLint 9 flat config + TypeScript-ESLint 严格集",
-        "CI：Playwright sharding + 报告归档"
+        "Vite / Rolldown migration assessment",
+        "pnpm workspace + Changesets version strategy",
+        "ESLint 9 flat config + TypeScript-ESLint strict set",
+        "CI: Playwright Sharding + Report Archiving"
       ],
       "B5": [
-        "Vitest 单测 + happy-dom 环境",
-        "Playwright trace / codegen / 可访问性断言",
-        "Storybook 8 + 视觉回归与 a11y",
-        "MSW 2 拦截 OpenAPI 契约"
+        "Vitest single test + happy-dom environment",
+        "Playwright trace / codegen / accessibility assertions",
+        "Storybook 8 + Visual Regression and A11y",
+        "MSW 2 intercept OpenAPI contracts"
       ],
       "B6": [
-        "Core Web Vitals：INP 优先、long tasks 切分",
-        "OpenTelemetry 浏览器 + RUM 关联 trace_id",
-        "Bundle：rollup-plugin-visualizer + source-map 审计",
+        "Core Web Vitals: Prioritize INP, Split Long Tasks",
+        "OpenTelemetry browser + RUM associate trace_id",
+        "Bundle: rollup-plugin-visualizer + source-map Audit",
         "Image：AVIF/ WebP2、priority hints、responsive srcset"
       ]
     },
@@ -121,12 +121,12 @@
   },
   "tertiary_nodes": {
     "enabled": false,
-    "rule": "不展开第三层以避免拥挤；若画布中心仍显空可在 B3 的 tRPC 下点出 zod 模式"
+    "rule": "No expansion of the third layer to avoid crowding; if the center of the canvas still appears empty, you can point out the zod mode under B3's tRPC"
   },
   "highlights": {
     "must_know": {
       "enabled": true,
-      "rule": "对三项加 ★ 与加粗 2.5px 边框：'★ TypeScript 5.6'、'★ React 19 / Next'、'★ OpenTelemetry 浏览器 + RUM'",
+      "rule": "Add ★ and bold 2.5px border to the three items: '★ TypeScript 5.6', '★ React 19 / Next', '★ OpenTelemetry browser + RUM'",
       "starred_literal": [
         "★ TypeScript 5.6",
         "★ React 19 / Next.js App Router",
@@ -137,20 +137,20 @@
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "branch 色 → 六大域；星标 → 岗位硬门槛；连线粗细 → 主 / 次层级",
+    "content": "branch color → six major domains; star → job hard thresholds; line thickness → primary / secondary level",
     "style": "small panel, semi-transparent bg, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "中央节点唯一、居中、字号最大",
-      "每条主分支一色到底",
-      "等宽字体、暗色细 grid、节点层级大中小分明",
-      "放射均匀，避免全挤在右上象限"
+      "The central node is unique, centered, and has the largest font size.",
+      "Each main branch is one color all the way through",
+      "Monospaced font, dark fine grid, clear hierarchy of nodes large, medium, small",
+      "Radiate evenly, avoiding crowding in the upper right quadrant."
     ],
     "avoid": [
-      "用 emoji 当节点主图标",
-      "三级全展开",
-      "声称是 XMind 可打开源文件"
+      "Use emoji as node main icon",
+      "Three-level full expansion",
+      "Claims to be XMind file that can be opened"
     ]
   }
 }

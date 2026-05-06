@@ -2,74 +2,74 @@
   "type": "Comprehensive Angle Setting Sheet",
   "goal": "Generate a 3:4 vertical single-screen steampunk detective character design, leaning towards Western anime, with clean lines, suitable for direct artwork breakdown.",
   "character": {
-    "name": "Arthur Crone 阿瑟·克朗",
-    "concept": "地下城与钟塔都市的私探，前警局物证科，左臂在事故后换成黄铜蒸汽义肢",
-    "art_style": "anime 线条 + 金属材质分块明暗示意",
-    "gender": "青年男性",
-    "age_setting": "28 岁"
+    "name": "Arthur Crone",
+    "concept": "Private Eyes in the Dungeon and Clock Tower City, Former Evidence Department of Police Station, Left Arm Replaced with Brass Steam Prosthetic After Incident",
+    "art_style": "anime lines + metal material block shading indication",
+    "gender": "Young male",
+    "age_setting": "28 years old"
   },
   "sections": {
     "three_view": {
       "enabled": "true",
       "items": [
-        "正面全身",
-        "侧面全身",
+        "Full body from the front.",
+        "Side full body",
         "背面全身"
       ],
-      "annotations": "棕发微卷、胡茬、灰蓝眼，左臂为黄铜与皮革绑带、小型压力表在手臂外侧；长风衣后摆有齿轮镂刻暗纹不抢戏"
+      "annotations": "Brown hair slightly curled, stubble, grey-blue eyes, left arm with brass and leather strap, small pressure gauge on the outer side of the arm; the back of the long coat has gear-engraved patterns that do not steal the show."
     },
     "expression_grid": {
       "enabled": "true",
-      "count": "9",
+      "count": "Background gear detail density exceeds the character’s face.",
       "items": [
-        "戏谑",
-        "阴郁",
-        "暴怒",
-        "惊愕",
-        "恶心",
-        "温柔一次",
-        "推理兴奋",
-        "被背叛的空白",
-        "点烟（道具烟斗不出烟圈细节）"
+        "Mockery",
+        "Gloomy",
+        "Fury",
+        "Shock",
+        "Nausea",
+        "Gentle once",
+        "Inference excitement",
+        "void of betrayal",
+        "Lighting a cigarette (prop pipe without smoke ring details)"
       ]
     },
     "outfit_variants": {
       "enabled": "true",
-      "count": "3",
+      "count": "Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.",
       "items": [
-        "日常灰呢长风衣 + 格纹马甲 + 高帽，围巾墨绿",
-        "雨夜：黑色涂蜡斗篷与宽檐，义肢加防雨布套",
-        "化装舞会潜入：带半脸铜面具与燕尾，仍保留长风衣剪影以便识别"
+        "Casual gray wool long trench coat + plaid vest + tall hat, scarf in dark green",
+        "Rainy night: black waxed cape with wide brim, prosthetic with rainproof fabric cover",
+        "Masquerade infiltration: wearing a half-face copper mask and tailcoat, retaining a long trench coat silhouette for recognition"
       ]
     },
     "props_and_weapons": {
       "enabled": "true",
       "items": [
-        "可伸缩黄铜放大镜，柄内有微型指南针",
-        "手杖剑，杖头为可旋转齿轮装饰"
+        "Telescopic brass magnifying glass with a mini compass in the handle",
+        "Sword cane, with the cane head decorated with a rotating gear."
       ]
     },
     "color_palette": {
       "enabled": "true",
-      "main": "烟灰、黄铜、深棕",
-      "accent": "暗酒红在内衬与领带"
+      "main": "Ash, brass, deep brown",
+      "accent": "Dark burgundy in the lining and tie"
     }
   },
   "layout": {
-    "background": "浅黄灰方格，横向为主，分栏有英文与中文双标注",
-    "grid": "左列三视，右列上表情、下分衣装与道具、最下色带"
+    "background": "Light yellow-gray checkered pattern, horizontal orientation as the main, columns have dual annotations in English and Chinese.",
+    "grid": "Left column has three views, right column has expressions above, clothing and props below, and color band at the bottom"
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "义肢在三个视角中结构一致、齿比不乱",
-      "九格为同一脸骨相",
-      "雾与煤烟氛围不在设定稿中体现，只在线稿细节暗示工业城市"
+      "The prosthetic has a consistent structure across three angles, with stable gear ratio.",
+      "The nine squares feature the same facial bone structure.",
+      "The atmosphere of fog and smoke is not reflected in the draft, only hinted at in the details of the line drawing suggesting an industrial city"
     ],
     "avoid": [
-      "可识别伦敦地标照片拼贴",
-      "可辨识福尔摩斯版权造型逐帧复刻",
-      "三视高度漂移"
+      "Identifiable London landmark photo collage",
+      "Identifiable Sherlock Holmes copyright design frame-by-frame replica",
+      "Height drift in the three views"
     ]
   }
 }

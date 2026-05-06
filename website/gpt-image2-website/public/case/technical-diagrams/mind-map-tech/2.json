@@ -7,8 +7,8 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "Kubernetes 知识谱系（平台与 SRE）",
-    "subtitle": "1.30+ 发行线 · 生产导向",
+    "title": "Kubernetes knowledge lineage (platform and SRE)",
+    "subtitle": "1.30+ Release Line · Production-oriented",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "central_node": {
@@ -18,7 +18,7 @@
     "fill": "amber #FBBF24 × 18% opacity",
     "border": "2px solid amber #FBBF24",
     "label_style": "mono bold 16pt",
-    "position": "几何中心略偏上，为底部 legend 预留白"
+    "position": "Geometric center slightly above, reserved white space for bottom legend"
   },
   "primary_branches": {
     "count": 6,
@@ -67,63 +67,63 @@
       "border": "1.5px solid branch color",
       "label": "mono bold 13pt"
     },
-    "connector_style": "2px 曲线，从中央连向各 primary，颜色=分支色"
+    "connector_style": "2px curve, connecting from the center to each primary, color = branch color"
   },
   "secondary_nodes": {
-    "rule": "每 primary 4-5 个 secondary",
+    "rule": "Each primary has 4-5 secondary",
     "items_per_primary": {
       "B1": [
-        "kubeadm / kops / 托管：EKS·ACK·GKE 选型",
-        "etcd 备份：快照周期 + 跨 region 容灾",
-        "升级策略：in-place 小版本 / 蓝绿大版本",
-        "节点 OS：Bottlerocket / Container-Optimized OS"
+        "kubeadm / kops / managed: EKS·ACK·GKE selection",
+        "etcd backup: snapshot interval + cross-region disaster recovery",
+        "Upgrade strategy: in-place small version / blue-green large version",
+        "Node OS: Bottlerocket / Container-Optimized OS"
       ],
       "B2": [
-        "Pod / Deployment / StatefulSet / DaemonSet / Job 生命周期",
-        "HPA v2、VPA、Cluster Autoscaler 联动与噪声抑制",
-        "资源模型：request/limit、QoS class、cpuset/NUMA",
-        "工作负载身份：ServiceAccount、IRSA/Workload Identity"
+        "Pod / Deployment / StatefulSet / DaemonSet / Job Lifecycle",
+        "HPA v2, VPA, Cluster Autoscaler linkage and noise suppression",
+        "Resource model: request/limit, QoS class, cpuset/NUMA",
+        "Workload identity: ServiceAccount, IRSA/Workload Identity"
       ],
       "B3": [
-        "CNI 对比：Cilium（eBPF）/ Calico，NetworkPolicy 默认拒绝",
-        "Service / EndpointSlice、Headless 与 gRPC 友好",
-        "Gateway API 替代 Ingress 的路由与 TLS 分层",
-        "CoreDNS 与集群外 DNS/PrivateLink 联调"
+        "CNI Comparison: Cilium (eBPF) / Calico, NetworkPolicy Default Deny",
+        "Service / EndpointSlice, Headless Friendly with gRPC",
+        "Gateway API replaces Ingress routing and TLS layering",
+        "CoreDNS and External Cluster DNS/PrivateLink Coordination"
       ],
       "B4": [
-        "RBAC：Role/ClusterRole 最小化 + audit log",
-        "OPA Gatekeeper / Kyverno 策略即代码",
+        "RBAC: Role/ClusterRole Minimization + Audit Log",
+        "OPA Gatekeeper / Kyverno policy as code",
         "Pod Security Admission（baseline/restricted）",
-        "镜像供应链：cosign 验签、私有 Harbor、SBOM 扫描"
+        "Mirrored supply chain: cosign verification, private Harbor, SBOM scanning"
       ],
       "B5": [
-        "CSI 插件：EBS / 云盘快照策略",
-        "StorageClass 动态供给与拓扑感知（region/AZ）",
-        "有状态工作负载与 volume resize / snapshot",
-        "临时存储：emptyDir 限额与本地 SSD"
+        "CSI Plugin: EBS / Cloud Disk Snapshot Policy",
+        "StorageClass Dynamic Provisioning and Topology Awareness (Region/AZ)",
+        "Stateful workloads with volume resize / snapshot",
+        "Temporary storage: emptyDir limit and local SSD"
       ],
       "B6": [
-        "Argo CD / Flux：ApplicationSet、多集群 bootstrap",
-        "Prometheus + Thanos / Mimir，Recording rule 降噪",
-        "OpenTelemetry Operator + Tempo 链路",
-        "日志：Loki / sidecar 采集，KPI：apiserver 延迟、etcd fysnc、控制面 SLO"
+        "Argo CD / Flux: ApplicationSet, Multi-Cluster Bootstrap",
+        "Prometheus + Thanos / Mimir, Recording Rule Noise Reduction",
+        "OpenTelemetry Operator + Tempo tracing",
+        "Log: Loki / sidecar collection, KPI: apiserver latency, etcd fysnc, control plane SLO"
       ]
     },
     "secondary_node_style": {
       "shape": "rounded rectangle, corner radius 8px",
       "fill": "branch color × 8% opacity",
-      "border": "1.2px solid 分支色",
+      "border": "1.2px solid branch color",
       "label": "mono 11pt"
     }
   },
   "tertiary_nodes": {
     "enabled": true,
-    "rule": "仅在 B6 的 'OpenTelemetry' 下再挂 2 个小叶：'Collector pipeline' 与 'trace → logs 关联'，线更细 1px，避免其它域展开"
+    "rule": "Only hang 2 small leaves below 'OpenTelemetry' in B6: 'Collector pipeline' and 'trace → logs linkage', lines thinner at 1px, to avoid expanding other domains."
   },
   "highlights": {
     "must_know": {
       "enabled": true,
-      "rule": "星标 '★ Cilium'、'★ Gateway API'、'★ OPA / Kyverno' 与 '★ Argo CD'",
+      "rule": "Star markers '★ Cilium', '★ Gateway API', '★ OPA / Kyverno' and '★ Argo CD'",
       "starred_literal": [
         "★ Cilium (eBPF)",
         "★ Gateway API",
@@ -135,18 +135,18 @@
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "颜色 → 六大平台域；★ → 新集群落地必会；B6 有唯一 tertiary 展开允许",
+    "content": "Color → Six major platform domains; ★ → New cluster landing is a must; B6 has unique tertiary expansion allowed",
     "style": "small panel, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "六主分支等角排布、连线不压字",
-      "服务名/组件名以英文可辨（Cilium, Gateway API, Argo CD, Prometheus）",
-      "节点层级与字号阶梯清晰"
+      "Hexa-main branches arranged in equal angles, connecting lines do not cover text",
+      "Service name/component name clearly discernible in English (Cilium, Gateway API, Argo CD, Prometheus)",
+      "Node hierarchy and font size steps are clear"
     ],
     "avoid": [
-      "K8s 徽标大贴图（可文字标题代替）",
-      "超过 2 个 tertiary 全图开花"
+      "K8s logo large sticker (text title can be substituted)",
+      "More than 2 tertiaries will cause the entire image to bloom"
     ]
   }
 }

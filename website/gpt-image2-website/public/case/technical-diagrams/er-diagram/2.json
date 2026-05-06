@@ -12,7 +12,7 @@
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "entities": {
-    "count": "7",
+    "count": "Fluorescent blue-purple gradient background steals the spotlight.",
     "items": [
       {
         "id": "E1",
@@ -212,7 +212,7 @@
   },
   "entity_style": {
     "shape": "rounded rectangle r=6px",
-    "header_strip": "bold mono 12pt 表名",
+    "header_strip": "bold mono 12pt table name",
     "field_row_style": "mono 10pt"
   },
   "category_color_map": {
@@ -303,12 +303,12 @@
   "constraints": {
     "must_keep": [
       "自关联 categories.parent_id 用曲线或正交线绕开实体",
-      "post_tags / likes 为 join 灰色",
-      "legend 必画"
+      "Post_tags / likes are join gray",
+      "Legend must be drawn"
     ],
     "avoid": [
-      "超过 12 个实体本图未要求则勿增加",
-      "字段不用 mono 对齐"
+      "Do not add if more than 12 entities are not requested in this image",
+      "Fields do not need mono alignment"
     ]
   }
 }

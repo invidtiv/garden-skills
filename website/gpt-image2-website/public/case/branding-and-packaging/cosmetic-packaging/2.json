@@ -2,47 +2,47 @@
   "type": "Cosmetics Series Set",
   "goal": "Generate a 4:5 vertical image featuring a unified packaging system, each piece can be individually separated for detailed pages.",
   "brand": {
-    "name": "锋序 EDGE ORDER",
-    "positioning": "专业男士理容、无性别营销花词"
+    "name": "Edge Order",
+    "positioning": "Professional men's grooming, no gender marketing jargon"
   },
   "product": {
-    "name": "四步晨理套装",
+    "name": "Four-step morning routine set",
     "subtitle": "CLEANSE · LATHER · SHAVE · CALM",
-    "volume": "洁面膏 100g 软管 + 须泡 150ml 压力罐 + 须后水 100ml 细雾瓶 + 直柄三片刀 + 皮套",
-    "form": "全系列同直径圆柱家族感，高矮错落；刀柄拉丝不锈钢与深蓝树脂拼接",
-    "key_ingredient": "低刺激甜菜碱表活 + 薄荷乳酸须后复配"
+    "volume": "Facial cleanser 100g tube + shaving foam 150ml pressure can + aftershave 100ml fine mist bottle + straight-handle three-blade razor + leather case.",
+    "form": "The entire series has a family feel with the same diameter cylindrical design, with varying heights; knife handle made of brushed stainless steel and deep blue resin splicing",
+    "key_ingredient": "Low-irritant betaine surfactant + mint lactic acid aftercare formulation."
   },
   "design": {
-    "bottle_material": "雾面 PETG 与金属铝罐混搭，外盒为海军蓝细条纹纸",
-    "label_material": "白底大标题 + 细横线分栏，烫银小字",
-    "primary_color": "#0A1628 海军靛",
-    "accent_color": "拉丝银 + 白字",
-    "typography": "类似 DIN 的窄无衬线数字 + 中文黑体",
-    "consistency_rule": "四件同一 logo 高宽、同一行距与端盖色系"
+    "bottle_material": "Matte PETG mixed with metal aluminum cans, with the outer box made of navy blue striped paper",
+    "label_material": "White background with large title + thin horizontal line styling, embossed silver small text.",
+    "primary_color": "#0A1628 Navy Indigo",
+    "accent_color": "Brushed silver + white text",
+    "typography": "Narrow sans-serif numbers similar to DIN + Chinese black body",
+    "consistency_rule": "Four items with the same logo height and width, same line spacing and end cap color scheme"
   },
   "outer_box": {
     "enabled": "true",
-    "shape": "长扁抽拉套盒，拉出一半可见内托 EVA 灰",
-    "finish": "击凸条纹 + 局部 UV 刀形剪影"
+    "shape": "Long flat pull-out box, half pulled out revealing inner EVA gray",
+    "finish": "Impact embossed stripes + partial UV knife silhouette"
   },
   "scene": {
-    "background": "深灰微水泥台面，左侧一道冷色窗光硬边",
-    "props": "白毛巾一折、一枚水滴停在刀背上（CG 可）",
-    "lighting": "主光 45° 高侧、弱背轮廓光分离物体边缘"
+    "background": "Deep gray micro-cement countertop with a cold color window light hard edge on the left side",
+    "props": "A white towel folded, with a droplet resting on the knife's back (CG acceptable).",
+    "lighting": "Main light 45° high side, weak back contour light separating object edges"
   },
   "format": {
     "aspect_ratio": "4:5",
-    "composition": "四件成轻微弧形排列、刀架略近镜头形成尺度对比"
+    "composition": "Four items arranged in a slightly curved shape, knife holder slightly closer to the camera for scale contrast"
   },
   "constraints": {
     "must_keep": [
-      "金属拉丝方向一致、避免乱高光花斑",
-      "同套字号阶梯一致、非随意缩放",
-      "压力罐与细雾瓶有法规感排版留白"
+      "Metal brushing direction consistent, avoid chaotic highlights and spots.",
+      "The same set of font sizes maintains consistency in steps, not randomly scaled",
+      "Pressure tanks and fine mist bottles have a regulatory sense of layout and whitespace"
     ],
     "avoid": [
-      "女性化花卉图形",
-      "色板出现嫩粉大色块"
+      "Feminine floral graphic.",
+      "The color palette features large blocks of soft pink"
     ]
   }
 }

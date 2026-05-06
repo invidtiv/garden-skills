@@ -2,60 +2,60 @@
   "type": "Brand Store Distribution Map",
   "goal": "Generate a diagram illustrating Haidilao's global network, highlighting the density in mainland China and flagship cities overseas, suitable for annual communications and exhibition backdrops.",
   "brand": {
-    "name": "海底捞 火锅 Haidilao",
-    "logo_description": "红色底白色汉字「海」字圆形符号化图形与英文 HAIDILAO",
-    "brand_color": "正红、暖金与浅米灰"
+    "name": "Haidilao Hot Pot",
+    "logo_description": "Red Background with White Chinese Character '海' as Circular Symbol along with English HAIDILAO",
+    "brand_color": "Bright red, warm gold, and light beige."
   },
   "scope": {
-    "region": "世界简图：东亚、东南亚、中东、欧陆与北美为区块重点",
-    "base_map_style": "浅灰大陆剪影 + 国家边界粗线，无街道"
+    "region": "World map: East Asia, Southeast Asia, the Middle East, Continental Europe, and North America as focal blocks",
+    "base_map_style": "Light gray continent silhouette + thick lines for national borders, no streets."
   },
   "stores": {
     "total_count": "1360+",
     "by_type": [
-      "中国境内旗舰店与主题店 32 家",
-      "中国境内标准门店 1020+ 家",
-      "境外直营与合营 240+ 家",
-      "外卖与快取卫星厨房点位 80+ 家"
+      "32 flagship stores and themed stores within China.",
+      "Over 1020 standard stores within China.",
+      "Overseas direct operation and joint ventures over 240",
+      "Over 80 satellite kitchens for takeout and quick pickup"
     ],
-    "highlight_cities": "北京、上海、深圳、香港、新加坡、伦敦、洛杉矶、东京、悉尼、迪拜"
+    "highlight_cities": "Beijing, Shanghai, Shenzhen, Hong Kong, Singapore, London, Los Angeles, Tokyo, Sydney, Dubai"
   },
   "marker_design": {
-    "shapes": "红色小火锅图标为基形，外圈大小区分旗舰店、标准、境外、卫星厨房，金色描边为境外",
-    "rule": "大陆区域内点更密、境外城市用少量大点锚定"
+    "shapes": "Red Hot Pot Icon as Base Shape, Outer Circle Size Distinguishes Flagship, Standard, Overseas, Satellite Kitchen, Gold Outline for Overseas",
+    "rule": "Denser points in mainland areas, with few large points anchoring overseas cities."
   },
   "info_panel": {
     "enabled": "true",
-    "position": "左下色块区",
+    "position": "Lower left color block area",
     "content": [
-      "全球 1360+ 个服务点",
-      "进入十数个国家和地区",
-      "近一年新开 120+ 家",
-      "境外旗舰城市：新加坡、伦敦、洛杉矶、东京"
+      "Over 1360 service points worldwide",
+      "Entering dozens of countries and regions.",
+      "Opened over 120 new locations in the past year.",
+      "Overseas flagship cities: Singapore, London, Los Angeles, Tokyo"
     ]
   },
   "legend": {
     "items": [
-      "大红点：中国境内旗舰店/主题店",
-      "中红点：标准门店",
-      "金环红点：境外城市门店",
-      "小方：外卖厨房"
+      "Large red dot: flagship stores/theme stores within China.",
+      "Medium red dot: standard store",
+      "Golden ring red dot: overseas city stores.",
+      "Small square: take-out kitchen"
     ]
   },
   "extras": [
-    "底纹浅烫金祥云（克制）",
-    "免责：为品牌传播用手绘信息图，非政府统计用图"
+    "Light hot-stamped gold cloud pattern (restrained)",
+    "Disclaimer: Hand-drawn infographic for brand communication, not for government statistics"
   ],
   "constraints": {
     "must_keep": [
-      "中国区域明显更密，境外以节点城市为锚点",
-      "色板不偏离红金系统",
-      "图例、侧栏、标题层级完整"
+      "The Chinese region is noticeably denser, with foreign areas anchored by key cities.",
+      "The color palette does not deviate from the red-gold system",
+      "Legend, sidebar, title hierarchy complete"
     ],
     "avoid": [
-      "把门店画满太平洋海沟",
-      "用真实世界地图底图产生版权疑义",
-      "混用其他餐饮品牌色"
+      "Fill the storefront drawing with the Pacific Ocean trench",
+      "Use a real-world map as a base to raise copyright issues",
+      "Mix other dining brand colors"
     ]
   }
 }

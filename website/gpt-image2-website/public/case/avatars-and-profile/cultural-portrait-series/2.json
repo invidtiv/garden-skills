@@ -2,38 +2,38 @@
   "type": "Mythical Character Series Portraits",
   "goal": "Generate a single 4×3 grid, featuring busts or half-bodies of twelve main deities, with English names and corresponding Chinese positions below each grid cell, formatted like art museum exhibition labels.",
   "theme": {
-    "mythology": "希腊神话奥林匹斯十二主神",
+    "mythology": "Greek mythology of the Twelve Olympian gods",
     "subject_count": 12
   },
   "style": {
-    "art_style": "17-18 世纪欧洲古典油画厚涂，暗背景提光人物",
-    "color_palette": "深蓝幕布+金边饰+暖棕肤色+少量红袍"
+    "art_style": "17th-18th century European classical oil painting thick application, dark background highlighting figures",
+    "color_palette": "Deep blue curtain + gold trim + warm brown skin tone + small amount of red robe"
   },
   "layout": {
     "format": "4x3 grid",
-    "background": "每格独立深褐或午夜蓝晕影，四边内框金线 1px 感",
+    "background": "Each grid has an independent dark brown or midnight blue halo, with a 1px gold line frame on all sides",
     "panel_design": {
-      "label_content": "下行：英文神名（首字母大写）+ 中文短司职，例如「Zeus 天空与雷霆」「Hera 婚姻与家庭」"
+      "label_content": "Downward: English name of the deity (capitalized) + short Chinese role, for example 'Zeus Sky and Thunder' 'Hera Marriage and Family'"
     }
   },
   "subjects": {
     "user_list": [
-      "Zeus 宙斯 天空与雷霆",
-      "Hera 赫拉 婚姻与家庭",
-      "Poseidon 波塞冬 海洋与地震",
-      "Demeter 得墨忒耳 农业与丰产",
-      "Athena 雅典娜 智慧与战争",
-      "Apollo 阿波罗 光明与箭术",
-      "Artemis 阿尔忒弥斯 狩猎与月亮",
-      "Ares 阿瑞斯 战争",
-      "Aphrodite 阿佛洛狄忒 爱与美",
-      "Hephaestus 赫菲斯托斯 火与工匠",
-      "Hermes 赫尔墨斯 信使与旅者",
-      "Dionysus 狄俄尼索斯 酒与狂欢"
+      "Zeus sky and thunder",
+      "Hera Goddess of marriage and family",
+      "Poseidon, the god of the sea and earthquakes",
+      "Demeter Goddess of agriculture and harvest",
+      "Athena, Goddess of Wisdom and War",
+      "Apollo, God of Light and Archery",
+      "Artemis, Goddess of Hunting and the Moon",
+      "Ares, God of War",
+      "Aphrodite, Goddess of Love and Beauty",
+      "Hephaestus God of fire and craftsmanship",
+      "Hermes God of messengers and travelers",
+      "Dionysus God of wine and festivity"
     ]
   },
   "constraints": {
-    "must_feel": "博物馆陈列级统一光源自左上来、神性庄严、无现代插科打诨",
-    "avoid": "与罗马神名混排、司职文字张冠李戴、格与格画风像来自 12 位不同 AI 种子"
+    "must_feel": "Museum display level uniform light source comes from the upper left, with a divine solemnity, no modern jokes",
+    "avoid": "Mixing Roman god names, misplacing professions, styles and aesthetics resembling 12 different AI seeds"
   }
 }

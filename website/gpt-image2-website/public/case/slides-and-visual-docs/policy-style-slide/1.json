@@ -2,51 +2,51 @@
   "type": "Policy interpretation single-page slide.",
   "goal": "Generate a rigorous and authoritative single page suitable for policy interpretation by industry authorities, editable for both portrait and landscape.",
   "style": {
-    "color_palette": "政蓝 + 米白 + 深灰",
-    "tone": "严谨、克制、公开透明",
-    "typography": "思源宋体大标题 + 思源黑体正文"
+    "color_palette": "Political blue + beige + deep gray.",
+    "tone": "Rigorous, restrained, open, and transparent.",
+    "typography": "Source Han Serif large title + Source Han Sans regular text"
   },
   "header": {
-    "agency_name": "省工业和信息化厅 数字经济处（政策解读专页）",
-    "agency_logo": "抽象化几何徽章图形（不模仿国徽、不含可识别政府徽标细部）",
-    "main_title": "关于促进人工智能产业高质量发展的若干措施",
-    "subtitle": "政策核心要点一图读懂",
-    "release_date": "2026 年 4 月 18 日"
+    "agency_name": "Provincial Department of Industry and Information Technology, Digital Economy Division (Policy Interpretation Special Page)",
+    "agency_logo": "Abstract geometric badge graphics (not imitating national emblems, not containing identifiable government logo details)",
+    "main_title": "Measures to promote the high-quality development of the artificial intelligence industry",
+    "subtitle": "Understand the core points of the policy in one image.",
+    "release_date": "April 18, 2026"
   },
   "sections": {
-    "count": "5",
+    "count": "Saturated and glaring background colors impact text recognition.",
     "items": [
-      "发展背景：算力、数据、场景协同需求上升，需引导资源向根技术与行业应用双轮配置",
-      "主要目标：三年内培育若干细分赛道标杆企业与开源生态，安全与伦理底线同步夯实",
-      "重点任务：算力与调度平台、行业数据集与标准、示范场景与联合攻关、人才与产教融合",
-      "保障措施：财政引导基金与政府采购试点、企业合规清单、数据跨境流程指引",
-      "实施时间表：2026Q2 前发布试点清单，按季度滚动评估与公开通报"
+      "Development background: The demand for computing power, data, and scene collaboration is rising, requiring resources to be guided toward a dual-wheel configuration of core technology and industry applications",
+      "Main goal: to cultivate several benchmark enterprises and open-source ecosystems in specific sectors within three years, solidifying safety and ethical bottom lines simultaneously.",
+      "Key tasks: computing power and scheduling platform, industry datasets and standards, demonstration scenarios and joint tackling, talent and integration of industry and education.",
+      "Guarantee measures: Financial guidance funds and government procurement pilot projects, corporate compliance lists, data cross-border process guidelines",
+      "Implementation timeline: Release pilot list before Q2 2026, rolling assessments and public reports quarterly"
     ],
-    "section_block_style": "编号 + 小标题 + 2-3 行说明，每节左缘配极淡线性图标"
+    "section_block_style": "Number + subtitle + 2-3 lines of description, each section with a very light linear icon on the left edge"
   },
   "highlight_numbers": {
     "enabled": "true",
     "items": [
-      "5 大重点任务与配套清单",
-      "3 年滚动实施与评估",
-      "首批开放 20 个行业场景试点"
+      "5 major key tasks with supporting checklist",
+      "3 years of rolling implementation and evaluation",
+      "The first batch opens 20 industry scene pilot projects"
     ]
   },
   "footer": {
-    "source": "来源：政策文本全文以主管部门公开发布平台为准，此处为设计排版示意",
-    "qr_code": "右下角方形二维码位：标注「政策原文与解读材料」"
+    "source": "Source: The full text of policy documents is subject to the platform publicly released by the competent authority; this is a design layout illustration.",
+    "qr_code": "Square QR code position in the lower right corner: labeled 'Original policy text and interpretation materials'"
   },
   "constraints": {
     "must_keep": [
-      "主标题在版面中字号最大、权重最高",
-      "机构名与装饰性机构图形必须清晰可读，但不冒充真实国徽或具体机关印章",
-      "主色 ≤ 3 种，高亮区与正文对比充足",
-      "数据高亮区醒目但不使用促销式荧光黄堆叠"
+      "The main title has the largest font size and the highest weight in the layout.",
+      "Institution names and decorative institutional graphics must be clearly readable, but must not impersonate real national emblems or specific institutional seals",
+      "Main colors ≤ 3, with adequate contrast between highlighted areas and text.",
+      "Data highlight areas should be prominent but avoid promotional fluorescent yellow stacking."
     ],
     "avoid": [
-      "使用卡通体、花体、综艺体等娱乐化标题字",
-      "插图低幼或过度装饰",
-      "出现商业品牌与电商促销元素",
+      "Use entertainment style titles such as cartoon, decorative, and variety fonts",
+      "Illustration is overly juvenile or excessively decorative",
+      "Include business brands and e-commerce promotional elements",
       "背景色饱和刺目影响正文识别"
     ]
   }

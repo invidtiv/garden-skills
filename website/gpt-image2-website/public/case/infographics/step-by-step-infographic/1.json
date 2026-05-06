@@ -6,57 +6,57 @@
     "background": "warm cream #FAF6EE, subtle paper grain 5% opacity"
   },
   "header": {
-    "main_title": "新手家庭健身 7 步入门(无器械起步)",
-    "subtitle": "每次 20–30 分钟 · 先学动作质量再谈强度",
-    "optional_finished_image": "右上角 圆角方框: 做平板支撑的剪影+绿色对勾"
+    "main_title": "Beginner home fitness 7-step guide (no equipment needed).",
+    "subtitle": "Each session lasts 20-30 minutes · First learn the quality of actions, then talk about intensity",
+    "optional_finished_image": "Top right corner rounded square: silhouette of a plank position + green check mark"
   },
   "palette": {
     "primary": "mint #6BBF90",
     "secondary": "coral #E07A5F",
     "neutral": "deep brown #4A3A2E",
-    "rule": "3 主色, 每步小插画同一扁平手绘风"
+    "rule": "3 main colors, each step's illustration in the same flat hand-drawn style"
   },
   "layout": {
     "style": "vertical-zigzag",
     "options_explained": {
-      "use": "奇数步偏左, 偶数步偏右, 用弧箭头串联"
+      "use": "Odd steps lean left, even steps lean right, connected by curved arrows."
     }
   },
   "steps": {
-    "count": "7",
+    "count": "Fluorescent blue-purple gradient background steals the spotlight.",
     "structure_per_step": [
-      "大圆形编号章",
-      "4–8 字加粗小标题",
-      "简笔人物或器材图标(瑜伽垫/椅子)",
-      "1–2 行说明(不超过此行数)"
+      "Large round number stamp.",
+      "4-8 bold small titles",
+      "Simplified character or equipment icons (yoga mat/chair)",
+      "1–2 lines of description (no more than this number of lines)"
     ],
     "items": [
-      "01 清场地: 半平米防滑垫, 移走杂物, 换运动鞋",
-      "02 关节热身: 肩环绕、猫牛式、半蹲画圈各 1 分钟",
-      "03 呼吸: 鼻吸 4 拍, 口缓呼 6 拍, 全程记呼吸不分屏",
-      "04 蹲起基础: 椅子坐站 12 次×2 组, 膝盖不内扣",
-      "05 上肢推: 墙姿俯卧撑或跪姿, 8–10 次×2 组",
-      "06 核心: 死虫式或侧板各 20 秒×2, 不憋气",
-      "07 冷身: 前屈拉伸大腿后侧、胸扩胸各 20 秒, 喝温水"
+      "01 Clear the Area: Half Square Meter Non-slip Mat, Remove Clutter, Change to Sports Shoes",
+      "02 Joint Warm-up: Shoulder Circles, Cat-Cow Pose, Half Squat Circles, Each for 1 Minute",
+      "03 Breathing: Nose Inhale 4 Counts, Mouth Slow Exhale 6 Counts, Remember Breathing Throughout Without Screen Division",
+      "04 Squat basics: Chair sit-stand 12 times × 2 sets, knees not caving inward",
+      "05 Upper body push: Wall push-ups or kneeling position, 8–10 times × 2 sets",
+      "06 Core: Dead bug style or side plank, each for 20 seconds × 2, don’t hold your breath",
+      "07 Cool down: Forward bend stretch for the back of thighs and chest expansion, each for 20 seconds, drink warm water"
     ]
   },
   "connectors": {
     "style": "hand-drawn curved arrows with 2pt stroke in neutral brown",
-    "rule": "步与步间可加小小脚印"
+    "rule": "Small footprints can be added between steps."
   },
   "footer": {
-    "tip": "若胸痛、眩晕、关节锐痛, 立即停练并就医。孕妇与术后人群需遵医嘱。",
-    "credit": "家庭健身小抄·可发微信家庭群与好友"
+    "tip": "If experiencing chest pain, dizziness, or sharp joint pain, stop training immediately and seek medical attention. Pregnant women and postoperative individuals should follow medical advice.",
+    "credit": "Family fitness cheat sheet · Can be sent to WeChat family group and friends"
   },
   "constraints": {
     "must_keep": [
-      "7 个编号风格一致",
-      "每步插画同风",
-      "无菱形决策框"
+      "7 numbered items with consistent style",
+      "Each step illustration has the same style",
+      "No diamond decision frame"
     ],
     "avoid": [
-      "Helvetica 纯排字",
-      "把步骤写成 12 行长文"
+      "Helvetica pure typesetting",
+      "Write the steps in a 12-line long text"
     ]
   }
 }

@@ -7,12 +7,12 @@
     "outer_padding": "60px"
   },
   "title_strip": {
-    "title": "AWS 多可用区生产网络 · Nimbus Storefront",
+    "title": "AWS Multi-AZ Production Network · Nimbus Storefront",
     "subtitle": "VPC 10.20.0.0/16 · ap-northeast-1a/1b · TLS1.2+",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "device_glyphs": {
-    "rule": "每种设备使用统一的极简几何 glyph，不贴真实云厂商位图",
+    "rule": "Each device uses a unified minimalist geometric glyph, without attaching real cloud vendor bitmaps",
     "types": [
       {
         "type": "load_balancer",
@@ -67,7 +67,7 @@
       },
       {
         "id": "Z1",
-        "label": "VPC 生产\\n10.20.0.0/16",
+        "label": "VPC production\\n10.20.0.0/16",
         "color_border": "amber #FBBF24 dashed",
         "cidr": "10.20.0.0/16"
       },
@@ -85,19 +85,19 @@
       },
       {
         "id": "Z4",
-        "label": "Private 10.20.32.0/19 · AZ-1a/1b 合并数据面",
+        "label": "Private 10.20.32.0/19 · AZ-1a/1b Merged Data Plane",
         "color_border": "emerald #34D399 dashed",
         "parent": "Z1"
       }
     ],
-    "zone_label_position": "每框左上 mono 11pt，第二行 CIDR 与 AZ"
+    "zone_label_position": "In each frame, the top left is mono 11pt, second line CIDR and AZ"
   },
   "nodes": {
     "items": [
       {
         "id": "N1",
         "type": "user",
-        "label": "顾客浏览器 / 手机 App",
+        "label": "Customer browser / mobile app",
         "zone": "Z0"
       },
       {
@@ -109,7 +109,7 @@
       {
         "id": "N3",
         "type": "firewall",
-        "label": "WAFv2 托管规则集",
+        "label": "WAFv2 managed rule sets",
         "zone": "Z2"
       },
       {
@@ -121,7 +121,7 @@
       {
         "id": "N5",
         "type": "load_balancer",
-        "label": "ALB 备节点 (AZ-1b)",
+        "label": "ALB backup node (AZ-1b)",
         "zone": "Z3"
       },
       {
@@ -161,7 +161,7 @@
         "zone": "Z0"
       }
     ],
-    "node_label_format": "第一行服务名、第二行规格或角色，mono 10pt 在 glyph 下"
+    "node_label_format": "First row service name, second row specifications or role, mono 10pt under glyph"
   },
   "connections": {
     "items": [
@@ -175,19 +175,19 @@
         "from": "N2",
         "to": "N3",
         "type": "physical",
-        "label": "Origin 回源"
+        "label": "Origin backsource"
       },
       {
         "from": "N3",
         "to": "N4",
         "type": "encrypted",
-        "label": "HTTP 到 ALB"
+        "label": "HTTP to ALB"
       },
       {
         "from": "N3",
         "to": "N5",
         "type": "encrypted",
-        "label": "跨 AZ 健康检查"
+        "label": "Cross-AZ health check"
       },
       {
         "from": "N4",
@@ -199,7 +199,7 @@
         "from": "N5",
         "to": "N8",
         "type": "physical",
-        "label": "Target group (备用 path)"
+        "label": "Target Group (Backup Path)"
       },
       {
         "from": "N8",
@@ -217,19 +217,19 @@
         "from": "N8",
         "to": "N6",
         "type": "physical",
-        "label": "outbound 依赖"
+        "label": "Outbound dependency"
       },
       {
         "from": "N8",
         "to": "N7",
         "type": "physical",
-        "label": "outbound 依赖 (AZ-1b 任务)"
+        "label": "Outbound dependency (AZ-1b task)"
       },
       {
         "from": "N6",
         "to": "N2",
         "type": "physical",
-        "label": "SNAT 访问 S3/STS"
+        "label": "SNAT Access S3/STS"
       },
       {
         "from": "N2",
@@ -243,34 +243,34 @@
       "logical": "dashed line 1.5px slate #64748B",
       "encrypted": "solid line 2px emerald #34D399 + lock glyph"
     },
-    "label_format": "协议/端口/方向用 mono 9pt 放在连线中央"
+    "label_format": "Use mono 9pt for protocol/port/direction placed in the center of the connection line"
   },
   "annotations": {
     "ip_cidr_labels": {
       "enabled": true,
-      "rule": "Z1~Z4 内框顶角重复印 CIDR；关键路由注明 route table: 0.0.0.0/0 → IGW/ NAT"
+      "rule": "Z1~Z4 inner frame top corners repeat CIDR; key routes noted in the route table: 0.0.0.0/0 → IGW/NAT"
     },
     "az_labels": {
       "enabled": true,
-      "rule": "Public 两框分写 ap-northeast-1a 与 1b；Private 可写 双列 AZ"
+      "rule": "Public Two Frame Write Split ap-northeast-1a and 1b; Private Writable Dual Column AZ"
     }
   },
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "glyph 类型、physical vs logical/encrypted 线、zone 边框色",
+    "content": "Glyph type, physical vs logical/encrypted lines, zone border color",
     "style": "small panel, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "大虚线框分 Internet / VPC / 子网",
-      "连线侧写清 TLS / 端口 / 回源",
-      "不使用官方 AWS 彩色商标块",
-      "legend 必画"
+      "Large dashed frame dividing Internet / VPC / subnet.",
+      "Outline clear TLS / port / origin.",
+      "No use of official AWS colored trademark blocks",
+      "Legend must be drawn"
     ],
     "avoid": [
-      "同类型 glyph 不同造型",
-      "节点超过 16 个导致糊在一起"
+      "Different shapes of the same type of glyph",
+      "Over 16 nodes causing them to blur together"
     ]
   }
 }

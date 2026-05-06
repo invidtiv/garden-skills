@@ -2,61 +2,61 @@
   "type": "2x2 Course Banner Set",
   "goal": "Generate a set of 4 campaign banners in a unified style for hardware, with an overall 1:1 frame, divided into 2×2 sections with white seams.",
   "brand": {
-    "name": "Apple · Vision 系列",
-    "logo_position": "每格左上角小苹果符号 + 次行小字 'Vision Pro 2'（非官方、仅为视觉演练）",
+    "name": "Apple · Vision Series",
+    "logo_position": "Each grid has a small apple symbol at the top left + a line of small text 'Vision Pro 2' (unofficial, for visual rehearsal only)",
     "primary_color": "#F5F5F7",
     "secondary_color": "#1D1D1F"
   },
   "layout": {
     "format": "2x2 grid",
     "panel_count": 4,
-    "gap": "16px 冷白微分隔 + 1px 发丝线",
+    "gap": "16px cool white subtle separation + 1px hairline",
     "panel_aspect_ratio": "4:5",
     "overall_aspect_ratio": "1:1"
   },
   "panels": [
     {
       "position": "top-left",
-      "course": "空间办公",
-      "headline": "多窗协作，一抬眼就对齐",
-      "visual": "用户佩戴头显的剪影，半空中悬浮多枚半透明窗口，一支 Apple Pencil 状指针虚影",
-      "cta": "了解效率"
+      "course": "Space Office.",
+      "headline": "Multi-window collaboration, aligning at a glance",
+      "visual": "Silhouette of a user wearing a headset, multiple semi-transparent windows floating in mid-air, and a ghostly pointer shaped like an Apple Pencil",
+      "cta": "Understand efficiency."
     },
     {
       "position": "top-right",
-      "course": "空间音频创作",
-      "headline": "把混音台放进客厅空气里",
-      "visual": "抽象环形声场与发光推子轨道围绕沙发场景",
-      "cta": "观看短片"
+      "course": "Spatial Audio Creation.",
+      "headline": "Place the mixing console in the air of the living room",
+      "visual": "Abstract circular sound field and glowing fader tracks surrounding the sofa scene",
+      "cta": "watch short film"
     },
     {
       "position": "bottom-left",
-      "course": "空间健身",
-      "headline": "教练在面前一米处示范",
-      "visual": "客厅地毯上的人做深蹲，AR 等身教练轮廓线稿叠在前方",
-      "cta": "预约体验"
+      "course": "Space Fitness.",
+      "headline": "The coach demonstrates one meter in front.",
+      "visual": "A person does squats on the living room carpet, AR full-body coach outline sketched in the foreground",
+      "cta": "Appointment experience"
     },
     {
       "position": "bottom-right",
-      "course": "远程在场",
-      "headline": "对方的目光方向，对得上你",
-      "visual": "多人 FaceTime 风格圆角卡片悬浮成弧形墙，主视角人物眼神交会强调",
-      "cta": "加入候补名单"
+      "course": "Remote presence.",
+      "headline": "The direction of the other party's gaze aligns with you",
+      "visual": "Multiple people FaceTime style rounded corner cards suspended in an arc-shaped wall, emphasizing eye contact of main view characters",
+      "cta": "Join the waiting list"
     }
   ],
   "style": {
-    "art_style": "苹果风极简 3D 渲染 + 亚光金属与磨砂玻璃 + 大留白",
-    "typography": "中文西文统一使用类似 SF 的无衬线，标题 10 字内"
+    "art_style": "Apple-style minimalist 3D rendering + matte metal and frosted glass + significant white space",
+    "typography": "Chinese and Western unified use of sans-serif similar to SF, titles within 10 characters"
   },
   "constraints": {
     "must_keep": [
-      "四格白底/浅灰与深字对比一致，CTA 药丸按钮同位置（右下或下中）",
-      "每格可独立成稿，不依赖其他三格才读懂",
-      "标题每行 ≤ 12 字"
+      "Four sections with white background/light gray and deep text contrast consistent, CTA pill button in the same position (bottom right or bottom center)",
+      "Each grid can stand independently, without relying on the other three grids for understanding",
+      "Each line of the title contains ≤ 12 characters."
     ],
     "avoid": [
-      "四格用四种无关插画语言",
-      "单格出现超过 1 个主 CTA 文案"
+      "Four sections use four unrelated illustration languages",
+      "More than one main CTA copy appears in a single cell"
     ]
   }
 }

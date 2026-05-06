@@ -8,7 +8,7 @@
   },
   "title_strip": {
     "title": "WeChat Pay · unified order to notify",
-    "subtitle": "mchid 1900006XXX · H5/公众号场景",
+    "subtitle": "mchid 1900006XXX · H5/public account scene",
     "position": "top-left, JetBrains Mono / SF Mono, light gray"
   },
   "actors": {
@@ -16,13 +16,13 @@
     "items": [
       {
         "id": "A1",
-        "name": "Payer (WeChat 内用户)",
+        "name": "Payer (user within WeChat)",
         "type": "user",
         "icon_glyph": "stick figure outline"
       },
       {
         "id": "A2",
-        "name": "商户后端 order-svc (Python)",
+        "name": "Merchant backend order-svc (Python)",
         "type": "client",
         "icon_glyph": "server rack outline"
       },
@@ -34,7 +34,7 @@
       },
       {
         "id": "A4",
-        "name": "手机微信 (客户端)",
+        "name": "Mobile WeChat (client)",
         "type": "client",
         "icon_glyph": "phone outline"
       }
@@ -55,8 +55,8 @@
     }
   },
   "lifelines": {
-    "rule": "每个 actor header 下方画垂直虚线 lifeline",
-    "spacing": "lifelines 之间等距，间距 ≥ 200px"
+    "rule": "Draw a vertical dashed line lifeline below each actor header",
+    "spacing": "Lifelines equidistant, spacing ≥ 200px"
   },
   "messages": {
     "count": 12,
@@ -72,7 +72,7 @@
         "id": "M2",
         "from": "A2",
         "to": "A2",
-        "label": "2. 生成 out_trade_no、attach、notify_url 幂等 key",
+        "label": "2. Generate out_trade_no, attach, notify_url idempotent key",
         "type": "self"
       },
       {
@@ -93,49 +93,49 @@
         "id": "M5",
         "from": "A2",
         "to": "A1",
-        "label": "5. 200 { timeStamp, nonceStr, package: prepay_id=..., signType, paySign } 给 H5/JS",
+        "label": "5. 200 { timeStamp, nonceStr, package: prepay_id=..., signType, paySign } to H5/JS",
         "type": "return"
       },
       {
         "id": "M6",
         "from": "A1",
         "to": "A4",
-        "label": "6. wx.chooseWXPay / 调起收银台",
+        "label": "6. wx.chooseWXPay / invoke cash register",
         "type": "sync"
       },
       {
         "id": "M7",
         "from": "A4",
         "to": "A3",
-        "label": "7. 用户确认指纹/密码，扣款",
+        "label": "7. User confirms fingerprint/password, deducts payment",
         "type": "sync"
       },
       {
         "id": "M8",
         "from": "A3",
         "to": "A2",
-        "label": "8. POST notify_url? 签名 X-Wechatpay-Signature, body { out_trade_no, transaction_id, trade_state: SUCCESS }",
+        "label": "8. POST notify_url? Signature X-Wechatpay-Signature, body { out_trade_no, transaction_id, trade_state: SUCCESS }",
         "type": "async"
       },
       {
         "id": "M9",
         "from": "A2",
         "to": "A3",
-        "label": "9. 200 应答 { code: SUCCESS }（必须在 5s 内）",
+        "label": "9. 200 response { code: SUCCESS } (must be within 5 seconds)",
         "type": "return"
       },
       {
         "id": "M10",
         "from": "A1",
         "to": "A2",
-        "label": "10. 前端轮询或 WebSocket 收到 order_status=PAID",
+        "label": "10. Front-end polling or WebSocket receives order_status=PAID",
         "type": "sync"
       },
       {
         "id": "M11",
         "from": "A2",
         "to": "A3",
-        "label": "11. 补偿：GET /v3/pay/transactions/out-trade-no/{out_trade_no} 若 notify 未达",
+        "label": "11. Compensation: GET /v3/pay/transactions/out-trade-no/{out_trade_no} if notify未到",
         "type": "sync"
       },
       {
@@ -152,39 +152,39 @@
       "return": "dashed line 1.5px slate #64748B, hollow triangle arrowhead",
       "self": "bracket on lifeline"
     },
-    "label_format": "编号 + 消息摘要，含关键 HTTP / 字段名"
+    "label_format": "Number + message summary, including key HTTP/field names"
   },
   "activation_bars": {
     "enabled": true,
-    "rule": "商户后端与 pay API 在请求处理段画激活条",
+    "rule": "Merchant backend drawing activation bar in the request processing segment with pay API",
     "vertical_extent": "自收到至返回"
   },
   "annotations": {
     "notes": {
       "enabled": true,
-      "rule": "在 M3 侧注释：mTLS/平台证书 与 APIv3 密钥用于验签与加密敏感字段"
+      "rule": "Side Note on M3: mTLS/Platform Certificate and APIv3 Key Used for Signature Verification and Encrypting Sensitive Fields"
     },
     "loops_alts": {
       "enabled": true,
-      "rule": "alt 框：notify 重试 与 查询单补偿"
+      "rule": "alt box: notify retry and query single compensation"
     }
   },
   "legend": {
     "enabled": true,
     "position": "bottom-right",
-    "content": "sync vs return vs notify(callback)；external actor 为 slate",
+    "content": "Sync vs return vs notify(callback); external actor is slate",
     "style": "small panel, mono 10pt"
   },
   "constraints": {
     "must_keep": [
-      "messages 时间序自上而下",
-      "编号连续",
-      "return 为虚线",
-      "legend 必画"
+      "Messages time sequence from top to bottom",
+      "Continuous numbering",
+      "Return is a dashed line",
+      "Legend must be drawn"
     ],
     "avoid": [
-      "用 emoji 当图标",
-      "声称可编辑 PlantUML 源"
+      "Use emoji as icon",
+      "Claims to edit PlantUML source"
     ]
   }
 }

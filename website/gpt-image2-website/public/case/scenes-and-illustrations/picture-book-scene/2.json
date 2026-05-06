@@ -2,43 +2,43 @@
   "type": "Children's Book Interior Illustrations",
   "goal": "Generate a children's book page inspired by an English garden tea party, conveying a gentle humor theme of 'Don't be hard on yourself.'",
   "story": {
-    "theme": "总是担心迟到的兔子先生，第一次学会在午后停三秒看云",
-    "scene": "爬满白色蔷薇的篱笆小院，圆桌上铺方格台布、点心塔与茶壶冒着螺旋热气",
-    "moment": "怀表在桌边自己长出小脚轻轻走远，他却没有追，只笑了一下"
+    "theme": "Mr. Rabbit, always worried about being late, learns to pause for three seconds in the afternoon to look at the clouds for the first time.",
+    "scene": "A small courtyard with a fence covered in white roses, a round table set with a checkered tablecloth, dessert tower and teapot emitting spiral steam",
+    "moment": "The pocket watch grows little legs by the table and gently walks away on its own, but he doesn't chase it, just smiles once."
   },
   "main_character": {
-    "description": "穿浅灰小马甲的垂耳兔，长耳朵一只竖起一只折下，三瓣嘴弯成细笑",
-    "expression": "从焦虑转为放松的过渡神态",
-    "pose": "原本要去抓表，手停在半空，视线转向天上一朵小绵羊云"
+    "description": "A lop-eared rabbit wearing a light gray vest, with one long ear upright and the other folded down, its three-part mouth curved into a slight smile.",
+    "expression": "Transitional expressions from anxiety to relaxation.",
+    "pose": "Originally intended to check the watch, hand paused in mid-air, gaze turned toward a small sheep cloud in the sky"
   },
   "secondary_characters": {
     "items": [
-      "点心上站着一只用樱桃当帽的瓢虫，夸张礼貌鞠躬",
-      "茶碟边两只蚂蚁合力抬方糖，形成笑点"
+      "On the pastry, a ladybug wearing a cherry as a hat stands, exaggerated polite bowing",
+      "Two ants working together to lift a sugar cube on the edge of a tea saucer create a humorous point"
     ]
   },
   "style": {
-    "art_style": "蜡笔与水彩混色、边缘略毛茸茸",
-    "color_palette": "奶黄、草绿、蔷薇粉、天蓝、巧克力棕",
-    "rendering": "低对比、边缘柔、食物要有「好吃」的圆润造型"
+    "art_style": "crayon and watercolor blend, edges slightly furry",
+    "color_palette": "Milk yellow, grass green, rose pink, sky blue, chocolate brown.",
+    "rendering": "Low contrast, soft edges, food should have a 'delicious' rounded shape"
   },
   "text_overlay": {
     "enabled": "true",
-    "text": "世界偶尔迟到一分钟，也仍然爱你。",
-    "position": "画面左上，避开主角视线方向",
-    "font_style": "略幼稚圆体、字距略大"
+    "text": "The world occasionally arrives one minute late, yet still loves you.",
+    "position": "In the upper left of the image, avoid the direction of the main character's gaze.",
+    "font_style": "Slightly childish round font with slightly larger letter spacing."
   },
   "aspect_ratio": "4:3",
   "constraints": {
     "must_keep": [
-      "不复制现有童话角色外观专利组合",
-      "故事温和、可大声朗读不拗口",
-      "点心与台布有清晰可数的层次"
+      "No copying existing fairy tale character design patents",
+      "The story is gentle, easy to read aloud, and not awkward.",
+      "Pastries and tablecloth have clear countable layers"
     ],
     "avoid": [
-      "把怀表画成有压迫感的钟面怪兽",
-      "出现英文整句大标题与中文抢位",
-      "过暗的英伦阴天影响学龄前观看"
+      "Draw the pocket watch as a clock face monster with a sense of oppression",
+      "Include a complete English sentence title with Chinese takedown",
+      "Too dark British overcast weather affects preschool viewing."
     ]
   }
 }

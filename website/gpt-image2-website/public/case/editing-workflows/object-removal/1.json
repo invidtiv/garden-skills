@@ -2,20 +2,20 @@
   "type": "Clutter removal workflow.",
   "goal": "Based on REFERENCE_0, eliminate distracting passersby without altering the main group and primary composition, making it appear as if only this group exists in the final image.",
   "reference_0": {
-    "assumed_input": "假定原图：大学校园户外草坪，第二排为 Tim Cook、Sundar Pichai 与 Jensen Huang 等两排着学士服与方帽的合影者面向镜头，两侧与后排缝隙间可见零星误入画面的散步游客与推婴儿车者，午后天光、浅景深、草地与远处钟楼略虚化"
+    "assumed_input": "Assumed original image: An outdoor lawn on a university campus, with the second row featuring Tim Cook, Sundar Pichai, and Jensen Huang among others, dressed in bachelor's gowns and caps facing the camera, with random pedestrians and strollers visible between the gaps on the sides and back rows, afternoon daylight, shallow depth of field, grass and a distant clock tower slightly blurred"
   },
   "edit": {
-    "remove": "画面左右边缘及中后排人物间隙中的非合影路人，含半身与移动模糊残影、婴儿车、彩色背包肩带",
-    "fill_with": "继续草坪草纹、远处灌木线、浅灰步道路缘与与已有区域一致的离焦钟塔轮廓，不凭空新增树木或建筑，光线方向与色温与周边匹配",
-    "preserve": "所有合影者脸部、学士服摆线、方帽穗、前排蹲姿者肢体与交叠关系、整体透视与对焦点"
+    "remove": "In the gaps between the characters at the edges of the image and in the middle rear row, there are non-group photo passersby, including half-body and motion blur remnants, baby strollers, and colorful backpack shoulder straps.",
+    "fill_with": "Continue the lawn grass texture, distant shrub line, light gray sidewalk edge matching the existing area’s out-of-focus clock tower outline, without adding trees or buildings out of thin air, with the direction and color temperature of the light matching the surroundings",
+    "preserve": "All subjects' faces, graduation gown arrangement, square cap tassels, body position and overlap of those squatting in the front row, overall perspective and focal points."
   },
   "constraints": {
     "do_not": [
-      "裁切或缩小合影主体范围",
-      "在补全区生成第二套重复的人脸"
+      "crop or reduce the scope of the group photo subject",
+      "Generate a Second Set of Duplicate Faces in the Compounding Area"
     ],
     "must": [
-      "被去除区无贴图感与条带状模糊"
+      "area removed has no texture and band-like blurriness"
     ]
   }
 }

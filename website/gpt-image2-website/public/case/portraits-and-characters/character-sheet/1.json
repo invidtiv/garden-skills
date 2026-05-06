@@ -2,74 +2,74 @@
   "type": "Comprehensive Angle Setting Sheet",
   "goal": "Generate a 4:3 horizontal single-screen presentation of a complete production-ready character case, with front-side views, nine expressions, three outfits, two props, and a color palette, styled in an anime cel-shaded semi-realistic proportion.",
   "character": {
-    "name": "沈霜辞 · 号墨羽",
-    "concept": "边关女镖师出身，以快剑与轻身术行走江湖，外冷内执，剑名「照夜」",
-    "art_style": "anime 半写实，身体比例七头身略修长",
-    "gender": "少女",
-    "age_setting": "外观 20 岁"
+    "name": "Shen Shuangci · Also known as Mo Yu.",
+    "concept": "A female bodyguard from the border, navigating the world with swift swordplay and agility, externally cold but internally firm, sword named 'Zhao Ye'.",
+    "art_style": "anime semi-realistic, body proportion seven heads tall slightly elongated",
+    "gender": "Young girl",
+    "age_setting": "Appearance of a 20-year-old"
   },
   "sections": {
     "three_view": {
       "enabled": "true",
       "items": [
-        "正面全身",
-        "侧面全身",
+        "Full body from the front.",
+        "Side full body",
         "背面全身"
       ],
-      "annotations": "发色为鸦青偏蓝，瞳色为冷灰，右颊浅疤可选画；发髻高盘留一缕垂肩，腰佩软剑、右小腿绑暗袋"
+      "annotations": "Hair color is raven blue, eye color is cool gray, a shallow scar on the right cheek optional; hair bun high with a strand falling to shoulder, soft sword at the waist, dark pouch tied to the right calf"
     },
     "expression_grid": {
       "enabled": "true",
-      "count": "9",
+      "count": "Background gear detail density exceeds the character’s face.",
       "items": [
-        "微笑",
-        "轻蔑",
-        "怒目",
-        "惊讶",
-        "委屈",
-        "认真",
-        "疲惫",
-        "对敌冷酷",
-        "闭目调息"
+        "Smile",
+        "Contemptuous",
+        "Angry glare",
+        "Surprise",
+        "Injustice",
+        "Serious",
+        "Exhaustion.",
+        "Cold towards the enemy",
+        "Close eyes and adjust breathing"
       ]
     },
     "outfit_variants": {
       "enabled": "true",
-      "count": "3",
+      "count": "Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.",
       "items": [
-        "行旅常服：月白内衫、墨青交领半臂、布腰带与阔腿裤便于打斗",
-        "夜行潜踪：全墨紧身劲装，只留银色滚边，面有薄纱半遮",
-        "节典盛装：在常服外加大袖玄纹披风，头饰为银羽发冠（仅庆典剧情用）"
+        "travel attire: moon white inner shirt, dark green crossed collar half-sleeves, fabric belt and wide-leg pants for ease in fighting",
+        "Night stealth: all-black tight-fitting gear, with only silver piping left, face partially covered with sheer fabric",
+        "Ceremonial attire: a large-sleeved cloak with ornate patterns over everyday wear, with a headpiece of a silver feather crown (for ceremonial narrative use only)"
       ]
     },
     "props_and_weapons": {
       "enabled": "true",
       "items": [
-        "照夜软剑，剑身有暗格可藏一枚铜哨",
-        "家传铜纹发簪，可作简易撬锁工具"
+        "Night-illuminating soft sword, blade with a hidden compartment to store a copper whistle",
+        "Family heirloom copper patterned hairpin, can be used as a simple lock-picking tool"
       ]
     },
     "color_palette": {
       "enabled": "true",
-      "main": "墨青、月白、鸦青",
-      "accent": "极少量银与朱砂在绳结与下唇妆"
+      "main": "Deep teal, moon white, crow blue",
+      "accent": "A very small amount of silver and cinnabar at the knot and on the lower lip makeup."
     }
   },
   "layout": {
-    "background": "米白 5% 灰点阵稿纸，细线分栏，每区有淡灰中文区名",
-    "grid": "上排三视，中排九格表情，下左三衣、下中道具、下右色块条"
+    "background": "Off-white 5% gray dotted draft paper, fine line columns, each area labeled with light gray Chinese area names",
+    "grid": "Top row three views, middle row nine-expression grid, bottom left three garments, bottom middle props, bottom right color block strips"
   },
   "aspect_ratio": "4:3",
   "constraints": {
     "must_keep": [
-      "三视身长与头身比一致，足尖到头顶刻度可对齐",
-      "九宫同一张脸，仅变眉眼嘴",
-      "色板实块与上屏服装颜色一致"
+      "The body length and head-to-body ratio in the three views are consistent, and the scale from toe to head can be aligned",
+      "The same face across the nine squares, only the eyebrows, eyes, and mouth change.",
+      "The solid blocks in the color palette match the clothing color displayed on screen"
     ],
     "avoid": [
-      "三视画成三个不同人",
-      "衣装三格脸轮廓不一致",
-      "书法字体占满格挡标注"
+      "The three views portray three different individuals",
+      "inconsistent three-part face contour in outfit",
+      "Calligraphy font occupies the entire block label."
     ]
   }
 }

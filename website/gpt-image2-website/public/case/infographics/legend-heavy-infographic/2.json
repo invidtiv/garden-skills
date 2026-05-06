@@ -2,56 +2,56 @@
   "type": "High-density causal chain / genealogical infographics poster",
   "goal": "Use a highly saturated image to showcase the milestones of large language models and multimodal achievements from 2017 to 2026, allowing readers to quickly glance at the stage divisions.",
   "style": {
-    "aesthetic": "时间轴为粗发光管线，节点为品牌圆点 + 型号缩写，辅以微型芯片/数据卷轴线稿，整体偏深空蓝+电紫科技风但保持可读",
-    "color_palette": "深空靛、电紫、信号青、警示琥珀、白字",
-    "language": "中文主叙述 + 英文缩写作副标"
+    "aesthetic": "The timeline is a bold glowing line, nodes are brand dots + model abbreviations, supplemented with microchips/data scroll line art, overall leaning towards deep space blue + electric purple tech style but keeping readability",
+    "color_palette": "Deep space indigo, electric purple, signal cyan, warning amber, white text",
+    "language": "Chinese main narrative + English abbreviations as subtitles."
   },
   "header": {
-    "main_title_cn": "从 Transformer 到推理模型：大语言模型 2017–2026 演化地图",
+    "main_title_cn": "From Transformer to inference models: Evolution map of large language models 2017-2026.",
     "main_title_en": "LANDMARKS IN LLM AND MULTIMODAL RESEARCH (2017–2026)",
-    "subtitle": "非穷尽清单：聚焦公开论文与主流路线，不暗示商业排名"
+    "subtitle": "Non-exhaustive list: Focus on published papers and mainstream routes, without implying commercial rankings"
   },
   "centerpiece": {
-    "description": "中央为蛇形分岔时间管，左侧 2017「Attention is All You Need」，向右分支 GPT 系、BART/T5 系、开源 LLaMA/Mistral 系、多模态 CLIP-Flamingo-Gemini-类，末端 2025–2026 标「on-device / memory / 长上下文 / test-time compute 推理体」小问号",
-    "highlight": "青绿色脉冲沿主线流动，在「2018 GPT-1」「2019 BERT 双向」「2020 GPT-3」「2022 Instruct/RLHF」「2023 长上下文+工具使用」「2024 开源 MoE+多模态」「2025–2026 推理+代理」等节点有亮标"
+    "description": "The center features a serpentine branching timeline, with 'Attention is All You Need' from 2017 on the left, branching to the right into the GPT series, BART/T5 series, open-source LLaMA/Mistral series, and multimodal CLIP-Flamingo-Gemini types, ending with a small question mark labeled 'on-device / memory / long context / test-time compute inference' for 2025-2026.",
+    "highlight": "Cyan green pulse flows along the main line, with bright markers at nodes such as '2018 GPT-1', '2019 BERT Bidirectional', '2020 GPT-3', '2022 Instruct/RLHF', '2023 Long Context + Tool Use', '2024 Open Source MoE + Multimodal', '2025–2026 Reasoning + Agents'"
   },
   "sections": {
-    "count": "10",
+    "count": "Label (one side of the image shows a corner roll indication): original wort concentration, shelf life, manufacturer name, excessive drinking warning, QR code tracing outline.",
     "items": [
-      "01 2017 Transformer 自注意力 取代 RNN 序列瓶颈",
-      "02 2018 预训练语言模型 BERT / GPT-1 范式成型",
-      "03 2019 双向上下文与 T5 文本到文本统一",
-      "04 2020 175B 量级的提示学习（in-context）",
-      "05 2021 指令调优+RLHF 人机对齐主线（概念）",
-      "06 2022 Chat 上线 工具链与插件生态前夜",
-      "07 2023 长上下文+检索（RAG） 工程上普及",
-      "08 2024 开源 7B–70B 与 MoE/端侧 推理",
-      "09 多模态对齐：文-图-音 统一 token 化",
-      "10 2025+ test-time 推理+代理+代码执行：SWE-bench 等硬基准"
+      "01 2017 Transformer Self-Attention Replaces RNN Sequence Bottleneck",
+      "02 2018 Pre-trained Language Model BERT / GPT-1 Paradigm Formed",
+      "03 2019 Bidirectional Context and T5 Text-to-Text Unification",
+      "04 2020 Prompt Learning at 175B Scale (In-context)",
+      "05 2021 Instruction Tuning + RLHF Human-Machine Alignment Main Line (concept)",
+      "06 2022 Chat goes online, on the eve of the toolchain and plugin ecosystem",
+      "07 2023 Long Context + Retrieval (RAG) becoming widespread in engineering",
+      "08 2024 Open source 7B–70B with MoE/edge inference",
+      "09 Multimodal alignment: text-image-audio unified tokenization",
+      "10 2025+ test-time reasoning + agents + code execution: SWE-bench and other hard benchmarks"
     ]
   },
   "section_block_style": {
     "components": [
-      "编号",
-      "中文标题",
-      "英文一行",
-      "极短备注（人名/机构用缩写）",
-      "1 个小图标（键盘、权重块、眼形）"
+      "Number",
+      "Chinese title.",
+      "English in one line",
+      "Very short note (abbrev. for names/institutions).",
+      "1 small icon (keyboard, weight block, eye shape)"
     ],
-    "alignment": "时间轴上侧奇数、下侧偶数，避免文字跨越主干"
+    "alignment": "Odd numbers on the upper side of the timeline, even numbers on the lower side, avoid text crossing the main trunk"
   },
   "footer": {
-    "core_message": "技术史不是「一个模型更聪明」，而是算力、数据、算法与产品反馈同时迁移。",
+    "core_message": "The history of technology is not 'one model smarter', but the simultaneous migration of computing power, data, algorithms, and product feedback.",
     "core_message_en": "Progress couples capacity, data, alignment, and deployment — not a single FLOP number."
   },
   "constraints": {
     "must_keep": [
-      "不虚构具体市占率或未公开参数量，仅阶段定性描述",
-      "年份节点与主标题 2017–2026 一致"
+      "No fictitious specific market share or unpublished parameter quantities, only stage qualitative descriptions",
+      "Year nodes consistent with main title 2017-2026"
     ],
     "avoid": [
-      "用真实可识别商标作为整图主视觉",
-      "超过 4 种主色造成印刷脏"
+      "Use real identifiable trademarks as the main visual of the entire image",
+      "More than 4 main colors will cause printing dirtiness"
     ]
   }
 }

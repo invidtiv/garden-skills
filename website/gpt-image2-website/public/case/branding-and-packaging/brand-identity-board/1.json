@@ -2,64 +2,64 @@
   "type": "Brand Identity System Board",
   "goal": "Generate a brand board for a VI summary, in 3:4 portrait orientation, with clearly divided quadrants.",
   "brand": {
-    "name": "清篱",
-    "tagline": "一味草木，半日清欢",
-    "industry": "新中式冲饮与草本小罐茶",
-    "personality": "克制、温润、可信赖、略文人气质"
+    "name": "Clear fence",
+    "tagline": "A simple mix of flora, half a day of joy",
+    "industry": "New Chinese-style instant drinks and herbal small can tea.",
+    "personality": "Restraint, gentle, reliable, with a slight scholarly temperament"
   },
   "regions": {
     "logo": {
-      "position": "左上大区 约 40% 宽",
-      "primary_logo": "「清」字作行书骨架，与三片简笔篱叶组成圆形章；横排字标为「清篱」二字 + 英文 CHING LI 全大写 3pt 行",
+      "position": "Upper left large area approximately 40% wide",
+      "primary_logo": "\"Qing\" character as cursive skeletal structure, combined with three simple strokes of fence leaves to form a circular seal; horizontally arranged text reads \"清篱\" + English CHING LI in all caps, 3pt row",
       "secondary_logos": [
-        "纯图形圆形章（无字）",
-        "竖排「清 / 篱」与圆章左右组合",
-        "深绿底反白一版"
+        "Pure Graphic Circle Seal (No Text)",
+        "Vertical arrangement of 'Qing / Li' combined with a round seal on the sides.",
+        "Deep green background with reversed white"
       ],
-      "background_test": "左半浅米底 + 右半深松绿底各放一版主组合"
+      "background_test": "Left half light beige background + right half deep pine green background each contains a main combination"
     },
     "color_palette": {
-      "position": "右上",
+      "position": "Top right",
       "primary": [
-        "#2F4F4F 松烟绿",
-        "#C7B89E 米汤白"
+        "#2F4F4F Pine Smoke Green",
+        "#C7B89E Rice Soup White"
       ],
       "secondary": [
-        "#8C9A8E 鼠尾草灰绿",
-        "#1A1A1A 墨点黑"
+        "#8C9A8E Sage Grey Green",
+        "#1A1A1A Ink Dot Black"
       ],
-      "swatch_design": "圆角色块 + HEX + 中文名 + 5% 白细边"
+      "swatch_design": "Round Character Block + HEX + Chinese Name + 5% White Fine Edge"
     },
     "typography": {
-      "position": "左下",
-      "headline_font": "中文为类似思源宋的 modern serif 横排，英文衬线为 Cormorant 气质",
-      "body_font": "中文为类似 PingFang 的 clean sans 正文 9pt 演示",
-      "demo_block": "Aa 清茶回甘 · Brew calm，0123456789，一行长条款假文占位"
+      "position": "Lower left",
+      "headline_font": "Chinese is in a modern serif layout similar to Source Serif, while the English is in a Cormorant-style serif.",
+      "body_font": "Chinese text is presented in a clean sans-serif font similar to PingFang at 9pt.",
+      "demo_block": "Aa Refreshing Tea Taste · Brew calm, 0123456789, a line of long placeholder text"
     },
     "applications": {
-      "position": "右下",
+      "position": "Bottom right",
       "mockups": [
-        "名片正反面，正面大面积留白 + 松烟绿细边，反面小圆章",
-        "牛皮纸小罐茶包装筒顶视 + 标贴",
-        "微信公众号封面图 16:9 缩略：茶汤显微距 + 一句话标题位"
+        "Business card front and back, front with large areas of whitespace + soft smoke green thin border, back with a small round seal",
+        "Top view of kraft paper tea packaging cylindrical jar + label",
+        "WeChat Official Account Cover Image 16:9 Thumbnail: Tea Soup Microscope + One-Sentence Title Placement"
       ]
     }
   },
   "style": {
-    "art_style": "现代极简品牌板，浅米背景 + 5% 噪点，细灰 8px 基线格作为装饰",
-    "grid": "淡灰 1pt 线仅出现在 logo 与色板区外沿"
+    "art_style": "Modern minimalist brand board, light beige background + 5% noise, fine gray 8px baseline grid as decoration",
+    "grid": "Light gray 1pt line appears only on the edge of the logo and color palette area"
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "色板内 HEX 数字清晰可读，≤6 主色",
-      "四个区块边界不糊在一起",
-      "mockup 光照统一为左上 45° 软光"
+      "HEX numbers in the color palette are clearly readable, with ≤6 main colors",
+      "Four block boundaries are not blurred together",
+      "Mockup lighting unified to soft light at 45° from the top left"
     ],
     "avoid": [
-      "书法字与几何 logo 在 mockup 上乱缩放变形",
-      "同屏 >2 个字体家族",
-      "国潮红金大面积喧宾"
+      "Calligraphy characters and geometric logos are randomly scaled and distorted on the mockup.",
+      "More than 2 font families on the same screen",
+      "Large areas of national tide red and gold competing for attention"
     ]
   }
 }

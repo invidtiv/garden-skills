@@ -2,63 +2,63 @@
   "type": "3x3 Series of Dynastic and Temporal Portraits",
   "goal": "Generate a 3×3 grid featuring the same fictional Chinese female character, with each panel displaying half-length portraits in different era costumes and backgrounds, suitable for cultural creative timelines or long image storyboard references.",
   "subject": {
-    "description": "一位约 30 岁的虚构中国女性主体，深棕至黑色长发（随时代变化可盘发、束发或卷发），鹅蛋脸，暖调浅至中等肤色，深棕色眼瞳，眉形柔和自然，五官端正、线条含蓄，具有典型东方骨相（平直鼻梁、不过度立体的面部结构）；整体气质温和克制、带有东方审美的内敛感",
-    "consistency": "九格为同一人：面部比例、骨相、肤色与气质保持一致，仅发型、服饰与配饰根据时代变化"
+    "description": "A fictional Chinese female subject around 30 years old, with deep brown to black long hair (can be styled up, tied, or curled according to the trend), oval face, warm light to medium skin tone, deep brown eyes, soft and natural eyebrows, defined features with subtle lines, typical Eastern bone structure (straight nose ridge, not overly three-dimensional facial structure); overall temperament is gentle and restrained, with a sense of understated Eastern aesthetics",
+    "consistency": "The nine squares feature the same person: facial proportions, bone structure, skin color, and temperament remain consistent, with only hairstyles, clothing, and accessories changing according to the era."
   },
-  "style": "高分辨率半写实油彩+数码精修，每格有轻微时代对应纸张或绢色纹理边，但整体光源均为柔和棚拍与统一白平衡倾向",
+  "style": "High resolution semi-realistic oil paint + digital retouching, each grid has slight era-corresponding paper or silk color texture edges, but the overall light source is soft studio shots with uniform white balance tendency",
   "layout": {
     "format": "3x3 grid",
     "panel_count": 9,
-    "gap": "1px 浅灰线分隔，角落圆角 8px 感",
+    "gap": "1px light gray line separation, corner rounded 8px feel",
     "panels": [
       {
         "position": "row1-col1",
-        "scenario": "汉朝：交领深衣、步摇简化、席地而坐背景为竹简与低案"
+        "scenario": "Han Dynasty: cross-collar deep robe, simplified hairpin, sitting on the ground with a background of bamboo slips and a low table."
       },
       {
         "position": "row1-col2",
-        "scenario": "唐制：高髻齐胸襦、披帛、背后莲花纹屏风"
+        "scenario": "Tang style: high bun with chest-length top, draped cloak, screen with lotus pattern at the back"
       },
       {
         "position": "row1-col3",
-        "scenario": "宋制：对襟长衫、珍珠妆、书房窗棂与梅花插瓶"
+        "scenario": "Song system: Mandarin gown, pearl makeup, study window lattice and plum blossom vase"
       },
       {
         "position": "row2-col1",
-        "scenario": "元制：姑姑冠简化款、长袍、草原穹顶帷幔虚景"
+        "scenario": "Yuan system: Simplified version of aunt's crown, robe, prairie dome drapery virtual scene"
       },
       {
         "position": "row2-col2",
-        "scenario": "明制：立领长袄、马面裙、园林漏窗"
+        "scenario": "Ming style: stand collar long gown, horse front skirt, garden leakage window"
       },
       {
         "position": "row2-col3",
-        "scenario": "清制：旗装常服、一耳坠三珠、内廷廊柱虚景"
+        "scenario": "Qing style: flag dress uniform, one ear hanging three pearls, virtual scenery of inner court columns"
       },
       {
         "position": "row3-col1",
-        "scenario": "民国：波浪短发与立领短袄、手拎藤箱、月历画背景"
+        "scenario": "Republic of China: wavy short hair and standing collar short coat, holding a rattan box, with a calendar painting background"
       },
       {
         "position": "row3-col2",
-        "scenario": "建国初：灰蓝中山装、帆布挎包、集体操场与红旗远景虚化"
+        "scenario": "Early Nation Building: Gray-Blue Zhongshan Suit, Canvas Shoulder Bag, Collective Playground with Blurred Red Flag in the Background"
       },
       {
         "position": "row3-col3",
-        "scenario": "现代：米白罩衫、无线耳机挂颈、玻璃幕墙都市夜景虚化"
+        "scenario": "Modern: cream white cover-up, wireless earbuds hanging neck, glass curtain wall urban night scenery blurred"
       }
     ]
   },
   "constraints": {
     "must_keep": [
-      "九格为同一虚构人物，不得出现「像但不是」",
-      "服饰元素尊重常识不混搭严重错误",
-      "每格内眼神自然看向画外或微侧、避免九格同角度复制粘贴感"
+      "Nine frames must represent the same fictional character; 'similar but not' is not allowed.",
+      "Apparel elements respect common sense and do not mix serious errors",
+      "The gaze in each grid should naturally look outside the picture or slightly sideways, avoiding the copy-paste feel of the same angle in nine grids"
     ],
     "avoid": [
-      "把人物绘成不同种族或年龄",
-      "格线粗于 2% 边宽",
-      "刻意贴近任何具体真实公众人物的外形细节"
+      "Draw the character as different races or ages",
+      "Grid lines thicker than 2% of border width.",
+      "Deliberately close to the physical details of any specific real public figure"
     ]
   }
 }

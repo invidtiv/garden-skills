@@ -2,56 +2,56 @@
   "type": "Gift Box Packaging Display",
   "goal": "Generate a gift box display image that combines product introduction with a flagship launch feel, including the outer box, contents, and brand information layer.",
   "package": {
-    "type": "硬质卡纸天地盖礼盒，开盖约 70°，内为模切托",
-    "shape": "扁平方体，长边略大于手机对角线",
-    "exterior_color": "磨砂深空黑 + 正面仅压凹苹果轮廓与银色 iPhone 字样",
-    "interior_color": "深灰再生纸浆模内托，表面有细纤维纹理",
-    "logo": "盒面无多余文字，仅极简苹果形压凹",
-    "ribbon": "无丝带，商业电子风"
+    "type": "Rigid cardboard天地盖 gift box, with a cover opening at approximately 70°, featuring a die-cut tray inside.",
+    "shape": "Flat rectangular prism, long edge slightly larger than the phone's diagonal.",
+    "exterior_color": "Matte Deep Space Black + only embossed concave Apple outline and silver iPhone lettering on the front.",
+    "interior_color": "Deep gray recycled paper pulp mold insert, with fine fiber texture on the surface",
+    "logo": "The box surface has no extra text, only a minimalist embossed apple shape",
+    "ribbon": "No ribbons, commercial electronic style."
   },
   "contents": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
       "自然钛色 iPhone 16 Pro 本体，背部三摄模组朝外平放于托内",
-      "编织 USB-C 数据线卷成圆，用再生纸束线",
-      "直角小卡：多语言快速指南与苹果 logo 白卡",
-      "一枚取卡针嵌在卡纸槽内"
+      "Woven USB-C data cable rolled into a circle, bound with recycled paper",
+      "Right-angle small card: multilingual quick guide and white card with apple logo",
+      "A card removal pin embedded in the card paper slot"
     ],
-    "arrangement": "手机横向居中，线缆与卡纸在右侧凹槽，取卡针贴近卡纸，盖内侧无反光干扰"
+    "arrangement": "Phone horizontally centered, cable and card paper in the right side groove, sim ejector close to the card paper, cover’s inner side with no reflective interference."
   },
   "scene": {
-    "background_surface": "冷灰微纹理水泥感台面，无强反光",
-    "background_color_tone": "深灰、黑、钛银点缀",
+    "background_surface": "Cool gray slightly textured cement-like tabletop, no strong reflections",
+    "background_color_tone": "Deep gray, black, titanium silver embellishments",
     "extra_decorations": [
-      "无"
+      "None"
     ]
   },
   "lighting": {
-    "key_light": "左前 40° 柔光，主高光落在相机岛与侧键",
-    "fill_light": "对侧很弱，保留盒内深灰层次"
+    "key_light": "Left front 40° soft light, main highlight falls on the camera island and side buttons",
+    "fill_light": "Opposite side is very weak, retaining the deep gray layers inside the box"
   },
   "text_overlay": {
     "enabled": "true",
     "brand": "iPhone 16 Pro",
-    "headline": "为下一程创作保留仪式感",
-    "subline": "首发套装 · 含主机与随附配件",
-    "position": "画面右上，轻量无衬线排版"
+    "headline": "Preserve a sense of ceremony for the next creation",
+    "subline": "Launch set · Includes main unit and accompanying accessories",
+    "position": "In the upper right of the image, lightweight sans-serif typography."
   },
   "style": {
-    "rendering": "高分辨率商业产品摄影，泡棉与钛金属材质清晰可辨",
-    "consistency": "色板与材质一致，画面克制不杂乱"
+    "rendering": "High resolution commercial product photography, foam and titanium metal materials clearly discernible",
+    "consistency": "The color palette is consistent with the material, and the composition is restrained and not cluttered"
   },
   "constraints": {
     "must_keep": [
-      "外盒可识别、压凹与灰阶层次清晰",
-      "内容物可数且位置合理",
-      "盒盖打开角度自然、透视正确",
-      "无手、无人物"
+      "Outer box is recognizable with clear embossing and grayscale levels",
+      "Contents are countable and positioned reasonably",
+      "The angle of the box lid opening is natural and the perspective is correct",
+      "No hands, no characters."
     ],
     "avoid": [
-      "第三方便携壳或贴纸误入画面",
-      "把数据线画成错接口",
-      "内托灰阶死黑成一块"
+      "Third-party portable shell or sticker accidentally enters the frame",
+      "Draw the data cable with incorrect connectors",
+      "Inner support gray scale dead black merges into one piece"
     ]
   }
 }

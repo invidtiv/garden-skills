@@ -2,87 +2,87 @@
   "type": "Spread Comic",
   "goal": "Generate a coherent horizontal comic spread with 8 panels, ensuring the central binding line does not cut across the main character's face.",
   "story": {
-    "summary": "雾隐峰顶，少年为护山门印记独战妖将，以一念剑意化虚为实，终逼退黑雾。",
-    "main_character": "束发青衫少年，左肩云纹，佩古剑「静渊」，黑瞳，身形清瘦但站姿极稳。",
-    "supporting": "黑雾中浮现金瞳妖将上半身轮廓，无具体人脸，以爪与长戟为识别。"
+    "summary": "At the peak of Misty Peak, the boy fights alone against the demon general to protect the mountain gate's seal, turning his sword intent from illusion to reality, ultimately driving back the black mist.",
+    "main_character": "A youth in a blue gown with his hair tied back, cloud patterns on his left shoulder, wielding an ancient sword 'Silent Abyss', with black pupils, slim physique but an extremely steady stance.",
+    "supporting": "The outline of a demon general's upper body with golden pupils floats in the black mist, with no specific human face, identified by claws and a long halberd."
   },
   "style": {
-    "art_style": "现代少年漫画 + 国风甲胄与布料褶皱细描 + 速度线",
-    "tone": "肃杀中见少年意气",
-    "color": "全彩平涂，夜色主调，剑光为青白高光"
+    "art_style": "Modern shonen manga + traditional styled armor and detailed fabric folds + speed lines",
+    "tone": "Youthful spirit seen amidst the somberness",
+    "color": "Full-color flat painting, nighttime as the main tone, sword light as cyan-white highlights"
   },
   "page_layout": {
-    "panel_count": "8",
-    "reading_direction": "日式：从右到左、从上到下，跨页先右页后左页",
-    "format": "横向 spread，画面分左右两页，中央 gutter 留白安全区",
+    "panel_count": "Overexposed background obscures the outlines.",
+    "reading_direction": "Japanese style: from right to left, from top to bottom, facing page starts with right page then left page",
+    "format": "Horizontal spread, the image is divided into two pages, with a central gutter as a safe whitespace.",
     "panels": [
       {
         "id": 1,
-        "size": "右页大格 占上半",
-        "scene": "少年立于断崖，脚下云海翻涌，远天一道血红裂缝",
-        "text": "旁白：三百年一开的雾门，今夕又响。"
+        "size": "Large box on the right page occupying the upper half",
+        "scene": "The young boy stands on the cliff, with a sea of clouds swirling beneath him, and a blood-red fissure in the far sky",
+        "text": "Narration: The fog gate that opens every three hundred years, tonight it sounds again."
       },
       {
         "id": 2,
-        "size": "右页右下中格",
-        "scene": "黑雾中伸出覆鳞巨爪，抓向少年胸前印记",
-        "text": "妖将：把山门印交出来。"
+        "size": "Middle box in the lower right of the right page",
+        "scene": "Giant claw covered in scales reaching out from black mist, grabbing towards the mark on the boy's chest",
+        "text": "Demon General: Hand over the mountain gate stamp."
       },
       {
         "id": 3,
-        "size": "右页左下小格",
-        "scene": "少年拇指顶开剑镡半寸，一道青光泄出如细线",
-        "text": "少年：我若给，你接得住么。"
+        "size": "Small box in the lower left of the right page",
+        "scene": "The young boy pushes open the sword hilt half an inch with his thumb, a beam of green light leaks out like a fine line",
+        "text": "Young boy: If I give, can you catch?"
       },
       {
         "id": 4,
-        "size": "左页上中格",
-        "scene": "少年踏瓦向前，青瓦碎裂飞溅，动势为俯冲",
+        "size": "Middle upper cell on the left page",
+        "scene": "The young boy steps on the tiles forward, blue tiles shattering and splashing, in a dive momentum",
         "text": ""
       },
       {
         "id": 5,
-        "size": "左页中右斜格",
-        "scene": "剑光拉成半弧，与黑雾长戟对撞，冲击波呈环形",
-        "text": "破。"
+        "size": "Diagonal cell in the middle right of the left page",
+        "scene": "The sword light arcs in half a curve, colliding with the long spear of black mist, shockwaves taking on a circular shape",
+        "text": "Break."
       },
       {
         "id": 6,
-        "size": "左页中小格",
-        "scene": "少年侧身落地，发带断裂飘落",
-        "text": "心声：手臂麻了。还不能退。"
+        "size": "Small cell in the middle of the left page",
+        "scene": "Young boy lands sideways, headband breaks and falls",
+        "text": "Inner voice: My arm is numb. I can't back out yet."
       },
       {
         "id": 7,
-        "size": "左页下左大格",
-        "scene": "少年双手合剑，背后浮现巨大淡青剑意虚影如鹤翼展开",
-        "text": "剑诀第二式——"
+        "size": "Large cell in the bottom left of the left page",
+        "scene": "The young boy joins his hands with the sword, a huge pale green sword intent silhouette appears behind him, unfolding like a crane's wings",
+        "text": "Sword technique second form —"
       },
       {
         "id": 8,
-        "size": "左页下右贴边大格与右页下缘衔接",
-        "scene": "雾散，妖影远遁，只余月光与满山石屑；少年以剑支地单膝微屈",
-        "text": "旁白：他听见更远处，钟声。下一劫，在城里。"
+        "size": "Large cell in the bottom right of the left page connects with the lower edge of the right page",
+        "scene": "The fog disperses, the demon shadows retreat far away, leaving only moonlight and the scattered stones on the mountains; a boy kneels slightly with his sword planted on the ground",
+        "text": "Narration: He hears bell sounds from further away. The next calamity is in the city."
       }
     ]
   },
   "dialogue_design": {
-    "balloon_style": "白底 + 黑描边 + 尖角指向",
-    "narration_box": "矩形 + 靛青底 + 白字",
-    "thought_balloon": "云形 + 虚线尾巴",
-    "font_style": "无衬线漫画体"
+    "balloon_style": "White background + black outline + sharp corners pointing.",
+    "narration_box": "Rectangle + indigo background + white text",
+    "thought_balloon": "Cloud shape + dashed tail.",
+    "font_style": "No sans-serif comic style"
   },
   "aspect_ratio": "16:11",
   "constraints": {
     "must_keep": [
-      "分镜大中小有节奏，避免全等大格",
-      "阅读顺序不混乱",
-      "少年在多格中服装与五官一致",
-      "跨页中轴线不切脸不切剑刃主干"
+      "Framing large, medium, small in rhythm, avoid fully equal-sized grids",
+      "Reading order not chaotic",
+      "The young boy has consistent clothing and facial features across multiple frames",
+      "The central axis between pages does not cut the face or the sword's main body."
     ],
     "avoid": [
-      "全页单一等大格",
-      "台词框遮挡格间动作主线",
+      "Full page with uniform equal-sized grids",
+      "Dialogue box obscures the main line of action between frames",
       "色块突然无网点过渡的跳变"
     ]
   }

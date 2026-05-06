@@ -1,41 +1,41 @@
 {
   "type": "Cityscape Illustrated Map",
   "goal": "Generate an illustrated map representing the traditional central axis style of Beijing, suitable for cultural tourism brochures, WeChat header images, and exhibition backdrops.",
-  "style": "淡彩故宫红与城砖灰为基调的水彩手绘，米色水彩纸底",
+  "style": "Light color Forbidden City red and city brick gray in a watercolor hand-drawn style, on a beige watercolor paper base",
   "title_section": {
-    "city": "中国北京",
-    "title_text": "中轴线上的北京时间",
-    "subtitle": "从永定门到钟鼓楼的步行想象"
+    "city": "Beijing, China.",
+    "title_text": "Beijing time on the mid-axis line",
+    "subtitle": "Walking imagination from Yongdingmen to Bell and Drum Tower."
   },
   "geography_skeleton": {
-    "rivers_or_lakes": "北海与中海水库状水域以浅蓝灰晕染，不精确测绘",
-    "mountains": "西郊香山与景山以简化三角形暗示海拔对比",
-    "main_streets": "以粗金线自南向北贯穿永定门、天桥、正阳门、天安门、神武门、地安门至钟鼓楼"
+    "rivers_or_lakes": "The North Sea and the Central Sea reservoir-like water areas are lightly blue-gray tinted, with imprecise mapping",
+    "mountains": "the western suburban Xiangshan and Jingshan suggested altitude contrast with simplified triangles",
+    "main_streets": "Using a thick golden line running from south to north through Yongdingmen, Tiantan Bridge, Zhengyangmen, Tiananmen, Shenduomen, Di’anmen to Bell and Drum Tower."
   },
   "landmarks": {
     "count": 10,
-    "items": "永定门箭楼、先农坛与天坛祈年殿、前门箭楼与正阳门、人民英雄纪念碑、天安门与故宫午门、太和殿金顶一角、景山万春亭俯看中轴、地安门、鼓楼与钟楼、什刹海银锭桥远景"
+    "items": "Yongdingmen Arrow Tower, Xiannongtan, Temple of Heaven's Hall of Prayer for Good Harvest, Qianmen Arrow Tower and Zhengyangmen, People's Hero Monument, Tiananmen and the Forbidden City’s Meridian Gate, a corner of the Hall of Supreme Harmony with a golden top, Jingshan Wanchun Pavilion overlooking the central axis, Di'anmen, Drum Tower and Bell Tower, distant view of Shichahai Yin Ding Bridge."
   },
-  "centerpiece": "画面中央略偏上为故宫中轴收束点与景山万春亭俯视角度的抽象俯瞰，金顶群与中轴黄线地贴意象融合",
+  "centerpiece": "Slightly above the center of the image is an abstract aerial view from the perspective of the central axis convergence point of the Forbidden City and the Wanchun Pavilion on Jingshan, integrating the imagery of the golden roofs with the central yellow line on the ground.",
   "edge_decorations": [
-    "角楼飞檐与脊兽剪影在左右上角",
-    "几笔琉璃瓦当散点",
-    "石青色印章小章「中轴纪行」"
+    "corner tower eaves and ridge beast silhouette in the upper left and right corners",
+    "A few strokes of glass tile as a scatter",
+    "Stone Blue seal with the inscription 'Central Axis Journey'"
   ],
   "extras": [
-    "简笔罗盘",
-    "小字题跋：中轴是这座城的脊梁，可一日读完历史的起伏。"
+    "Simplified compass",
+    "Small text inscription: The central axis is the backbone of this city, where one can read the ups and downs of history in a day."
   ],
   "constraints": {
     "must_keep": [
-      "南北中轴走向一眼可读",
-      "天坛与故宫体量关系不做夸张对调",
-      "建筑可卡通化但特征可辨"
+      "The north-south axial direction is easily readable",
+      "The scale relationship between the Temple of Heaven and the Forbidden City is not exaggerated.",
+      "Buildings Can Be Cartoonized but Features Are Distinguishable"
     ],
     "avoid": [
-      "把 CBD 三件套喧宾加在中轴上",
-      "江河流向错误",
-      "饱和国潮红盖住水墨层次"
+      "Add the CBD three-piece set to the central axis",
+      "Incorrect river flow direction.",
+      "Saturated national潮 red covers the ink wash layers"
     ]
   }
 }

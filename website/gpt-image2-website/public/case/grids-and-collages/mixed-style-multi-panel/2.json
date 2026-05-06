@@ -2,55 +2,55 @@
   "type": "5-Panel Mixed Style Collage",
   "goal": "Generate a 5-panel cross-style wall sticker anchored by a fictional tall male basketball player in a dunking pose, with consistent purple and gold color cues matching the wooden basketball court floor.",
   "subject": {
-    "description": "一位虚构的高大男子篮球运动员，强壮臂膀与发带造型，黄紫无袖球衣，右臂弯曲持球上篮瞬间，可辨识但卡通夸张处理。",
-    "consistency_rule": "五格为同一动作冻结帧，只变媒介"
+    "description": "A fictional tall male basketball player with strong arms and a headband style, wearing a yellow and purple sleeveless jersey, right arm bent holding the ball at a moment of a layup, recognizable yet cartoon exaggerated treatment.",
+    "consistency_rule": "The five frames are the same action in frozen frames, with only the medium changing."
   },
   "layout": {
-    "format": "中央大 + 四角小，整体深紫渐变底#1A0A2E 向外变浅",
+    "format": "Center large + small corners, overall deep purple gradient background #1A0A2E fading outward.",
     "panel_count": 5,
-    "label_position": "每格下缘",
-    "label_design": "白字深紫条"
+    "label_position": "At the bottom edge of each grid",
+    "label_design": "White text on a deep purple bar."
   },
   "panels": [
     {
       "position": "center",
-      "style": "低饱和体育新闻摄影、快门凝固汗滴与网绳模糊",
+      "style": "Low saturation sports news photography, shutter freezing droplets of sweat with blurred net ropes",
       "label": "PHOTO"
     },
     {
       "position": "top-left",
-      "style": "90s 少年漫画速度线与集中线",
+      "style": "90s少年漫画 speed lines and convergence lines",
       "label": "ANIME"
     },
     {
       "position": "top-right",
-      "style": "美漫平涂，粗黑描边，网点阴影",
+      "style": "American comic flat color, bold black outline, with dot shading",
       "label": "COMIC"
     },
     {
       "position": "bottom-left",
-      "style": "16-bit 横版过关游戏精灵立绘 + 像素计分条",
+      "style": "16-bit horizontal platform game sprite illustration + pixel score bar",
       "label": "PIXEL"
     },
     {
       "position": "bottom-right",
-      "style": "3D 卡通、光滑皮肤与略大头身比、球场灯光 bloom",
+      "style": "3D cartoon, smooth skin with slightly large head-to-body ratio, court lighting bloom",
       "label": "3D TOON"
     }
   ],
   "global_constraints": {
-    "background": "大底统一深紫，小格有轻微内阴影分隔",
-    "spacing": "12px 分隔"
+    "background": "Deep purple uniform large bottom, small grids have slight internal shadow separation.",
+    "spacing": "12px separation"
   },
   "constraints": {
     "must_keep": [
-      "动作线一致、球衣号码区域可读但不承诺真实队规细节",
-      "不添加品牌除球衣外的二次赞助大 logo"
+      "Consistent action lines, jersey number area readable but not committing to real team rule details",
+      "No addition of large secondary sponsorship logos except for jerseys"
     ],
     "avoid": [
-      "格间球员体型突变",
-      "政治标语或观赛人群面部特写可识别",
-      "刻意贴近任何具体真实运动员的肖像细节"
+      "Sudden changes in player body types in the grid.",
+      "Political slogans or close-ups of the audience's faces should be recognizable.",
+      "Deliberately close to the portrait details of any specific real athlete"
     ]
   }
 }

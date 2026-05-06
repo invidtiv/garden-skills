@@ -2,45 +2,45 @@
   "type": "Anime Key Visual",
   "goal": "Generate a single image suitable for the main visual of a domestic fantasy MMORPG launch, in vertical 3:4 format, with print-quality information layering.",
   "ip": {
-    "title": "青麓行",
-    "tagline": "一刃开山，再续人间道"
+    "title": "The Journey of Qinglu",
+    "tagline": "One blade opens the mountain, continuing the path of humanity"
   },
   "characters": {
-    "count": "3",
+    "count": "Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.",
     "items": [
-      "少年剑修主角：高马尾、玄青劲装、护腕缠布，长剑青锋横于身前，眼神坚毅望向前方裂谷",
-      "医毒同修少女同伴：月白齐胸襦裙外罩半透轻纱，手持药葫芦与数枚银针，立于一侧略后半身位",
-      "护山灵兽青鸾幼鸟：半展开翅膀栖在主角左肩，羽毛带翡翠光泽，眼部一点金"
+      "Main character of young swordsman: high ponytail, dark blue tough outfit, bandaged wrist, long sword with a green edge held horizontally in front, eyes resolute looking towards the rift ahead",
+      "A companion of a girl studying both medicine and poison: wearing a moon-white long skirt with a semi-transparent overlay, holding a medicine gourd and several silver needles, standing slightly behind to the side",
+      "Guardian spirit beast, Qing Luan chick: half-open wings perched on the protagonist's left shoulder, feathers with emerald luster, a hint of gold in the eyes"
     ],
-    "composition_relationship": "主角略低透视居中略前，少女在右后上方形成三角，灵兽在肩侧强化动势线"
+    "composition_relationship": "The main character is slightly lower in perspective, centered and slightly forward, with a girl forming a triangle from the upper right rear, and a spirit beast enhancing the dynamic line on the shoulder."
   },
   "world": {
-    "scene": "断云山脉悬空栈道，下方云海翻涌，远峰露金色日出半圆，山壁上有巨大古代剑痕发光",
-    "lighting": "冷青主光自左侧来，边缘暖金轮廓光，体积雾穿过栈道木栏",
-    "atmosphere": "史诗、少年意气、略苍茫"
+    "scene": "Suspended walkways above the cloud mountain range, with a rolling sea of clouds below, and distant peaks revealing a golden semicircle of sunrise, with a large ancient sword scar glowing on the mountain wall.",
+    "lighting": "Cool cyan main light coming from the left, edge warm gold rim light, volumetric fog passing through wooden railing of the walkway",
+    "atmosphere": "Epic, youthful ambition, slightly desolate"
   },
   "style": {
-    "art_style": "现代 anime 半写实 + 厚涂背景 + 精细布料与金属",
-    "color_palette": "青绿、黛黑、月白、暖金，点缀少量朱砂红绳"
+    "art_style": "Modern anime semi-realistic + thick painted background + detailed fabric and metal",
+    "color_palette": "Cyan green, Dark Black, Moon White, Warm Gold, accented with a small amount of Vermilion red rope"
   },
   "title_block": {
     "enabled": "true",
-    "main_title": "青麓行",
+    "main_title": "The Journey of Qinglu",
     "sub_title": "AZURE RISE ONLINE",
-    "position": "画面顶部居中，字身后留干净云雾带避免与角色头顶重叠"
+    "position": "Centered at the top of the image, leaving a clean cloud band behind the text to avoid overlapping with the character's head."
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "主角为绝对视觉中心，脸部可识别度最高",
-      "主光方向统一，体积雾与云海透视一致",
-      "色板不超过 4 种主色大色块",
-      "中英标题不与主角发髻或剑刃主线重叠"
+      "The main character is the absolute visual center, with the highest facial recognizability.",
+      "Main light direction unified, volumetric fog and cloud sea perspective consistent",
+      "The color palette does not exceed 4 main color blocks",
+      "Chinese and English titles should not overlap with the main character's hair bun or sword blade main line"
     ],
     "avoid": [
-      "群像过密导致脸小于可识别下限",
+      "Crowd image too dense causing faces to be below the recognizable threshold",
       "背景细节量压过人物",
-      "多余高饱和荧光色块"
+      "Excess overly saturated fluorescent color blocks"
     ]
   }
 }

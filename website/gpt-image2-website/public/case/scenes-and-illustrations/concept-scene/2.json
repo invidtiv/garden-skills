@@ -2,37 +2,37 @@
   "type": "Cinematic concept large scene.",
   "goal": "Generate an outdoor scene of Mars in the morning, suitable for the main visual of a simulation game expansion on community building, with a solemn yet hopeful atmosphere.",
   "world": {
-    "theme": "火星北半球低纬殖民前哨第一次扩展穹顶外作业",
-    "tone": "尘暴刚散、极低饱和、地景空旷，对比强烈的地平光"
+    "theme": "First expansion of the dome operations at the low-latitude Mars northern hemisphere colony",
+    "tone": "Just after the dust storm, extremely low saturation, the landscape is barren, with strong contrasting horizon light"
   },
   "composition": {
-    "foreground": "背对观者的两名外骨骼工人小剪影，一蹲一站检查地桩接口，地景有细尘风纹",
-    "midground": "低伏透明复合穹顶与银色管线廊道、远处履带矿车与信号塔在尘雾中成几何剪影",
-    "background": "赤褐色高原尽头升起的苍白日盘与稀薄高层云被染成金橙",
-    "perspective": "近地平线略俯，强调地平面之宽"
+    "foreground": "Two silhouette workers in exoskeletons facing away from the viewer, one squatting and one standing checking ground stake connections, with fine dust wind patterns in the landscape",
+    "midground": "Low-lying transparent composite dome and silver pipeline corridor, with distant tracked mining vehicles and signal towers forming geometric silhouettes in the dust and haze.",
+    "background": "Pale sun disk rising at the end of the reddish-brown plateau and thin high clouds dyed golden orange",
+    "perspective": "Slightly looking down towards the horizon, emphasizing the width of the ground."
   },
   "lighting": {
     "key_light": "自地平线向上的暖侧光，尘粒被照亮为体积雾",
-    "fill_light": "近穹顶下冷蓝补光，来自反射膜",
-    "atmosphere": "空中悬浮尘、远处有轻尘卷但不遮主太阳"
+    "fill_light": "Cool blue fill light under the dome, from reflective film.",
+    "atmosphere": "Dust suspended in the air, distant light dust rolling but not obscuring the main sun."
   },
-  "color_palette": "铁锈红、土黄、日冕金白、天顶墨蓝、装备局部冷青反光",
-  "title_safe_area": "右上暗空域保留 title 与英文副题安全区",
+  "color_palette": "Rust red, earth yellow, corona gold white, zenith deep blue, with partial cool cyan reflections on equipment",
+  "title_safe_area": "Top right dark void preserves title and English subtitle safe zone",
   "aspect_ratio": "21:9",
   "style": {
-    "rendering": "《火星救援》+ 次世代游戏 concept art 混合，地材质写实"
+    "rendering": "\"The Martian\" + next-gen game concept art blended, realistic materials"
   },
   "constraints": {
     "must_keep": [
-      "人相对行星尺度渺小",
-      "主光源唯一：太阳在画面一侧",
-      "无地球植被与蓝海洋",
-      "无识别性 NASA/商业 logo，装备为泛科幻设计"
+      "Humans are insignificant compared to planetary scales",
+      "Only one main light source: the sun is on one side of the image",
+      "No terrestrial vegetation and blue oceans.",
+      "No recognizable NASA/commercial logo, gear is designed in a general sci-fi style"
     ],
     "avoid": [
-      "把火星画成与地球无差别的灰褐",
-      "天顶出现多颗大月亮破坏尺度感",
-      "前景地景过花抢戏"
+      "Paint Mars in an indistinguishable gray-brown from Earth",
+      "Multiple large moons appearing at the zenith disrupt the sense of scale.",
+      "Foreground landscape overshadowed by flowers"
     ]
   }
 }

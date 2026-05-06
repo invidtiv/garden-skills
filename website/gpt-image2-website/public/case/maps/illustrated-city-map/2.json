@@ -1,41 +1,41 @@
 {
   "type": "Cityscape Illustrated Map",
   "goal": "Generate an urban landscape image reflecting the leisurely lifestyle and historical layers of Chengdu, suitable as the main image for travel-related activities and events.",
-  "style": "清新水彩 + 局部铅笔线稿，主色为竹青、盖碗茶米白、砖红与雾灰天",
+  "style": "Fresh watercolor + partial pencil line draft, main colors bamboo green, teacup rice white, brick red and misty gray sky",
   "title_section": {
-    "city": "中国成都",
-    "title_text": "巷陌与盖碗里的城",
-    "subtitle": "在锦江转弯处遇见松弛感"
+    "city": "Chengdu, China.",
+    "title_text": "The city in the alley and the covered bowl",
+    "subtitle": "Encounter a Sense of Relaxation at the Bend of Jinjiang"
   },
   "geography_skeleton": {
-    "rivers_or_lakes": "锦江为 S 形柔线自西北向东南穿过画面，府南河一段与湖泊以浅靛晕开",
-    "mountains": "西缘龙门山与雪顶以淡紫灰长条带暗示",
-    "main_streets": "春熙路—红星路、人民南路与一环路以浅灰方格不精确交叠在平原块上"
+    "rivers_or_lakes": "The Jinjiang River forms an S-shaped soft line passing from northwest to southeast across the image, with a section of the Funan River and a lake softly blending into light indigo",
+    "mountains": "the western edge of Longmen Mountain and snow peaked hinted with a light purple-gray band",
+    "main_streets": "Chunxi Road—Hongxing Road, Renmin South Road and First Ring Road overlapping in inaccurate light gray squares on the flat land"
   },
   "landmarks": {
     "count": 10,
-    "items": "宽窄巷子合院轮廓、青羊宫八卦亭、武侯祠红墙竹影、望江楼与竹林、东郊记忆红砖水塔、339 电视塔、环球中心弧线简化、春熙路ifs 爬墙熊猫、九眼桥夜灯弧线、人民公园鹤鸣茶社与湖面"
+    "items": "The outline of Kuanzhai Alley courtyard, Qingyang Palace Bagua Pavilion, Wuhou Shrine red wall bamboo shadows, Wangjiang Tower and bamboo forest, Dongjiao Memory red brick water tower, 339 TV tower, Global Center arc simplification, Chunxi Road IFS climbing panda, Jiuyan Bridge night lamp arc, Renmin Park crane-ming teahouse and lake surface"
   },
-  "centerpiece": "画面中央偏下为锦江转弯处的小龙舟与人民公园茶社篷亭组合，上缘一只卡通大熊猫趴在城市名字标题上，手中托盖碗",
+  "centerpiece": "Center of the screen slightly below with a combination of a small dragon boat at the bend of Jinjiang River and a tent pavilion at People's Park, with a cartoon panda lying on the city name title, holding a covered bowl",
   "edge_decorations": [
-    "左下角一碟红油抄手与一碟钟水饺线描",
-    "右上角的银杏叶与二荆条小辣椒缠绕",
-    "小篆朱文「少不入川」题印（装饰性、非强文案）"
+    "Lower left corner a dish of red oil wontons and a dish of bell dumplings line drawing",
+    "Top right corner ginkgo leaves intertwined with Erjing Tiao small chili peppers",
+    "Small seal script red text 'Young people should not enter Sichuan' stamp (decorative, not strong copy)"
   ],
   "extras": [
-    "细线风玫瑰",
-    "注脚：成都是平原上的拼图，水与路决定松弛的方向。"
+    "Fine Line Wind Rose",
+    "Footnote: Chengdu is a puzzle on the plain, water and roads determine the direction of relaxation."
   ],
   "constraints": {
     "must_keep": [
-      "锦江大弯在图中成视觉主导曲线",
-      "历史街区与现代地标比例协调",
-      "整体手绘一致、非卫星图"
+      "The great bend of the Jinjiang River forms the dominant visual curve in the image",
+      "Proportions of historical districts and modern landmarks are harmonious",
+      "Overall, the hand-drawn style is consistent and not a satellite image."
     ],
     "avoid": [
-      "把重庆山城地形误画在成都图上",
-      "地标过密如车站示意图",
-      "熊猫占比盖过城名与河流"
+      "Misdraw the mountainous terrain of Chongqing on the map of Chengdu",
+      "Landmarks Too Dense Like a Station Diagram",
+      "Panda ratio overshadows city names and rivers"
     ]
   }
 }

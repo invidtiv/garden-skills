@@ -14,9 +14,9 @@
     "position": "bottom-center, italic compact sans-serif, smaller font size"
   },
   "grid_layout": {
-    "rows": "1",
-    "cols": "4",
-    "panel_count": "4",
+    "rows": "The background is simple and does not compete with the skin tone.",
+    "cols": "Background details overwhelm the character.",
+    "panel_count": "Background details overwhelm the character.",
     "rule": "1 × 4 == 4; all panels identical size; consistent horizontal alignment"
   },
   "panels": {

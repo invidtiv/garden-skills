@@ -2,24 +2,24 @@
   "type": "Product Refinement Workflow",
   "goal": "Based on REFERENCE_0, enhance the overall quality of the high-end standing perfume bottle main image, ensuring the glass is transparent, the gold cap is polished, and the label text is clear.",
   "reference_0": {
-    "assumed_input": "假定原图：深色影棚台面上直立长方形厚底玻璃瓶，内盛淡金琥珀色液体，配拉丝金色按压盖，正面矩形纸质标签有衬线体英文品名，背侧窗光形成纵向高光柱，台面上有瓶体柔影、瓶肩有数粒微尘与指印残渍，标签纤维略起毛"
+    "assumed_input": "Assumed original image: A thick-bottom rectangular glass bottle standing upright on a dark studio tabletop, filled with a light golden amber liquid, with a brushed gold press cap, the front rectangular paper label features serif font English product name, back side window light creates a vertical highlight column, there are soft shadows on the bottle body, a few specks of dust and fingerprint smudges on the bottle shoulder, the label fibers are slightly fuzzy"
   },
   "edit": {
-    "product": "瓶体玻璃、液面弯月、内液体体块、金盖与标贴区",
-    "enhance_focus": "强化玻璃对侧窗光的折射与液体内部体积光，使金盖边缘高光为窄而干净的镜面带、拉丝面方向一致",
-    "defect_fix": "去瓶身与标贴表面指纹与颗粒脏点、修掉标签边纤维毛刺、淡化瓶底与台面接触线附近尘团",
-    "label_sharpening": "标贴主标题与副标题字距不变前提下提升字缘锐度，无描边过冲",
-    "lighting": "主光自左后上方不变，台影更柔、瓶投影接触边更实一点",
-    "background": "保留深灰渐变无缝背景与台面色温"
+    "product": "Bottle body glass, liquid level crescent, inner liquid mass, gold cap and label area",
+    "enhance_focus": "Tempered Glass Enhances Light Refraction by Side Windows and Liquid Internal Volume Light, Making Gold Cap Edge Highlight a Narrow and Clean Mirror Strip, Brush Finish Direction Consistent",
+    "defect_fix": "Remove fingerprints and granular dirt from the surface of the bottle and label, fix label edge fiber burrs, and reduce dust clumps near the bottle base and tabletop contact line",
+    "label_sharpening": "Improve the sharpness of the edges of the main title and subtitle while maintaining their letter spacing, without any overdraw on the outlines.",
+    "lighting": "Main light remains unchanged from the left back above, shadow softer, bottle projection edge more realistic",
+    "background": "Retain deep gray gradient seamless background and tabletop color temperature"
   },
-  "render_style": "全球美妆大片级静物、浅景深、主体刀锐",
+  "render_style": "Global beauty still life level, shallow depth of field, sharp subject",
   "constraints": {
     "do_not": [
-      "更改装帧形状、液位高度或品名字符",
-      "把液体改成浊液或加悬浮物"
+      "Change packaging shape, liquid level height, or product name characters",
+      "Change the liquid to a turbid liquid or add suspended matter"
     ],
     "must": [
-      "金盖与标贴材质区分清晰"
+      "Clear distinction between gold cap and label material."
     ]
   }
 }

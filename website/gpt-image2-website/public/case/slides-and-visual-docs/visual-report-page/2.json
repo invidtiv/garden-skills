@@ -2,26 +2,26 @@
   "type": "Business Report Executive Summary Page",
   "goal": "Generate a single page investor briefing centered on electric vehicle delivery and energy deployment, with a focus on manufacturing and logistics.",
   "style": {
-    "color_palette": "石墨黑 + 银灰 + 白",
-    "tone": "冷静、偏硬的工业感，但不冰冷",
-    "typography": "无衬线 + 等宽感数字行（仍保持可读，不用纯代码体）"
+    "color_palette": "Graphite Black + Silver Gray + White",
+    "tone": "Calm, slightly hard industrial feel, but not cold",
+    "typography": "No sans-serif + monospaced feeling numeric lines (still readable, no pure code font)"
   },
   "header": {
     "company_or_team": "Tesla, Inc.",
-    "report_period": "2025 日历年 前三季度累计（示意页）",
-    "main_title": "全球车辆交付与经营摘要",
-    "subtitle": "关键数字 + 趋势简图"
+    "report_period": "2025 calendar year cumulative for the first three quarters (illustrative page)",
+    "main_title": "Global vehicle delivery and business summary",
+    "subtitle": "Key numbers + trend diagram"
   },
   "kpi_cards": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
       {
-        "label": "全球汽车交付量（前三季度累计）",
-        "value": "约 128 万辆",
-        "change": "同比 -4%"
+        "label": "Global vehicle delivery volume (cumulative for the first three quarters)",
+        "value": "About 1.28 Million Units",
+        "change": "Year-on-year -4%"
       },
       {
-        "label": "汽车业务毛利率（含积分与监管信用）",
+        "label": "Automobile business gross profit margin (including points and regulatory credits).",
         "value": "19.0%",
         "change": "-0.6 pp"
       },
@@ -32,35 +32,35 @@
       },
       {
         "label": "自由现金流（前三季度累计 TTM 示意）",
-        "value": "28 亿美元",
-        "change": "同比改善"
+        "value": "2.8 billion USD",
+        "change": "Year-on-year improvement"
       }
     ]
   },
   "trend_chart": {
     "enabled": "true",
-    "type": "分组柱状 + 细折线",
-    "metric": "分季度汽车交付与储能装机",
-    "x_axis": "近六个季度",
-    "y_axis": "左轴 万辆、右轴 GWh"
+    "type": "Grouped bar + fine fold line",
+    "metric": "Quarterly car deliveries and energy storage installations",
+    "x_axis": "Over the past six quarters.",
+    "y_axis": "Left axis ten thousand units, right axis GWh"
   },
   "core_judgment": {
-    "headline": "汽车单价竞争仍压制整体毛利，而储能高增部分对冲盈利波动，需持续观察区域补贴退坡与补能网络效率。"
+    "headline": "Competition in automobile unit price continues to suppress overall gross profit, while the high growth in energy storage offsets profit fluctuations, requiring continuous observation of regional subsidy decline and recharge network efficiency."
   },
   "footer": {
-    "source": "数据来源：本页为设计用示意数据，非公司真实发布数字",
-    "confidentiality": "内部讨论稿 · 勿作为投资依据"
+    "source": "Data source: This page uses illustrative data for design purposes, not the company's actual published figures.",
+    "confidentiality": "Internal discussion draft · Not to be used as investment basis"
   },
   "constraints": {
     "must_keep": [
-      "KPI 区与图例说明一致",
-      "单句判断覆盖汽车与能源两条线，避免只讲单点",
-      "全页为印刷级清晰度，小字不糊边"
+      "KPI area consistent with legend description",
+      "Single sentence judgment covers two lines of automotive and energy, avoiding only discussing a single point",
+      "Full page at print-quality clarity, small text not fuzzy"
     ],
     "avoid": [
-      "将示意数字与 SEC 真文件混同呈现",
-      "用赛车或夸张特效",
-      "超过一句以上的管理层引语块"
+      "Present the indicative numbers mixed with the real SEC documents",
+      "Use racing cars or exaggerated effects",
+      "More than one management quote block"
     ]
   }
 }

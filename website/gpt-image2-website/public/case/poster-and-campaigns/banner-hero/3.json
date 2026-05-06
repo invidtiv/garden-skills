@@ -5,8 +5,8 @@
   "layout": {
     "left_column": {
       "headline": "Easy Dataset",
-      "subhead": "一站式构建 LLM 微调、RAG 与评测数据集",
-      "slogan": "从文档到高质量数据集",
+      "subhead": "One-stop building of LLM fine-tuning, RAG, and evaluation datasets",
+      "slogan": "From documents to high-quality datasets.",
       "badges": [
         "Fine-tuning",
         "RAG",
@@ -14,7 +14,7 @@
       ]
     },
     "right_column": {
-      "centerpiece": "明亮的 SaaS 工作台界面悬浮在浅色背景中，表现从多格式文档输入到高质量数据集输出的流程",
+      "centerpiece": "Bright SaaS workspace interface floating against a light-colored background, illustrating the process from multi-format document input to high-quality dataset output",
       "input_cards": [
         "PDF",
         "Markdown",
@@ -23,52 +23,52 @@
         "EPUB"
       ],
       "workspace_elements": [
-        "数据表格",
-        "QA 卡片",
-        "切分面板",
-        "评测分数卡",
-        "导出面板"
+        "Data table",
+        "QA Card",
+        "Cut panel",
+        "Evaluation scorecard",
+        "Export panel"
       ],
       "output_cards": [
         "Fine-tuning Dataset",
         "RAG Knowledge Base",
         "Eval Benchmark"
       ],
-      "scale": "占右侧 60%，使用柔和青绿色数据线串联输入、工作台与输出"
+      "scale": "Occupies 60% of the right side, using soft cyan green data lines connecting input, workbench, and output"
     },
     "bottom_feature_strip": [
       {
-        "title": "文档解析",
-        "caption": "多格式输入"
+        "title": "Document analysis",
+        "caption": "Multiple format input"
       },
       {
-        "title": "智能切分",
-        "caption": "结构化处理"
+        "title": "Intelligent Segmentation",
+        "caption": "Structured Processing"
       },
       {
-        "title": "问答生成",
-        "caption": "QA / 多轮 / COT"
+        "title": "Question and answer generation",
+        "caption": "QA / Multi-Turn / COT"
       },
       {
-        "title": "图像 QA",
-        "caption": "视觉问答数据"
+        "title": "Image QA",
+        "caption": "visual question-answering data"
       },
       {
         "title": "自动评测",
         "caption": "Judge Model"
       },
       {
-        "title": "导出集成",
+        "title": "Export integration",
         "caption": "JSONL / ShareGPT / LLaMA Factory"
       }
     ]
   },
   "background": {
-    "type": "暖白 #F8FAFC 与极淡青蓝 #EAF7F6 的明亮背景",
-    "decoration": "浅灰网格、柔和数据流线和轻微纸感颗粒，保持清爽留白"
+    "type": "Warm White #F8FAFC and very light cyan #EAF7F6 bright background",
+    "decoration": "Light gray grid, soft data flow lines and slightly papery texture, maintaining a fresh white space."
   },
   "style": {
-    "aesthetic": "明亮、高级、开源 AI SaaS、干净的产品官网视觉",
+    "aesthetic": "Bright, upscale, open-source AI SaaS, clean product website visuals",
     "palette": [
       "#F8FAFC",
       "#EAF7F6",
@@ -77,7 +77,7 @@
       "#F6B84B",
       "#6366F1"
     ],
-    "typography": "现代无衬线，中文类似思源黑体，英文类似 Inter",
+    "typography": "Modern sans-serif, Chinese similar to Source Han Sans, English similar to Inter",
     "lighting": "soft daylight, clean shadows, subtle cyan glow"
   },
   "footer": {
@@ -87,28 +87,28 @@
       "AGPL-3.0",
       "14k+ Stars"
     ],
-    "placement": "右下角或底部信息区，使用简洁开源徽章样式"
+    "placement": "Information area in the lower right corner or bottom, using a simple open-source badge style"
   },
   "constraints": {
     "must_keep": [
-      "16:9 横版构图稳定",
-      "整体为明亮浅色调",
-      "Easy Dataset 标题大且清晰可读",
-      "Fine-tuning / RAG / Eval 三个使用场景醒目",
-      "从文档输入到数据集输出的视觉动线必须一眼可懂",
-      "文字必须正确、简洁、可读"
+      "16:9 horizontal composition stable",
+      "Overall, it has a bright, light color tone.",
+      "Easy Dataset title big and clearly readable",
+      "Fine-tuning / RAG / Eval three use cases prominent",
+      "The visual flow from document input to dataset output must be instantly understandable.",
+      "Text must be correct, concise, and readable."
     ],
     "avoid": [
-      "深色赛博朋克背景",
-      "大面积紫色渐变",
-      "人物或机器人吉祥物",
-      "夸张 3D 卡通",
-      "代码雨",
-      "伪造真实产品截图",
-      "复杂长段落",
-      "二维码",
-      "第三方品牌 logo，除 GitHub 字样外不出现真实商标",
-      "拥挤表格或过密小字"
+      "Dark cyberpunk background",
+      "Large area of purple gradient.",
+      "Character or robot mascot.",
+      "Exaggerated 3D cartoon.",
+      "Code rain.",
+      "Forgery of authentic product screenshots.",
+      "Complex long paragraph",
+      "QR code.",
+      "Third-party brand logo, no real trademarks appearing except for GitHub text",
+      "Crowded tables or overly dense small print"
     ]
   }
 }

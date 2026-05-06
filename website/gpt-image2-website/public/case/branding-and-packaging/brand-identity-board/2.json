@@ -2,63 +2,63 @@
   "type": "Brand Identity System Board",
   "goal": "Create a single-page visual identity for a community café, leaning towards a warm industrial style, 3:4.",
   "brand": {
-    "name": "砖缝光 Bricklight",
-    "tagline": "在裂缝里，借一道日常的光",
-    "industry": "独立精品咖啡与烘焙",
-    "personality": "实在、好聊、不装"
+    "name": "Bricklight",
+    "tagline": "In the Cracks, Borrow a Daily Ray of Light",
+    "industry": "Independent specialty coffee and roasting",
+    "personality": "Down-to-earth, easy to talk to, not pretentious"
   },
   "regions": {
     "logo": {
-      "position": "左上",
-      "primary_logo": "B 与 L 共用笔触形成砖缝，一道斜向光束负形从缝中穿过；下排小字「BRICKLIGHT COFFEE」",
+      "position": "Upper left",
+      "primary_logo": "B and L share brush strokes to form a brick seam, with a diagonal light beam passing through the seam; at the bottom, small text 'BRICKLIGHT COFFEE'",
       "secondary_logos": [
-        "仅光束 + 砖线图标",
-        "横排长字标去图标",
-        "单黑版反白在烧橙色底"
+        "Only beam + brick line icon.",
+        "Remove the icon from the long horizontal text label.",
+        "Single black version reversed on a burnt orange background"
       ],
-      "background_test": "浅暖灰 + 深燧石黑"
+      "background_test": "Light warm gray + deep flint black."
     },
     "color_palette": {
-      "position": "右上",
+      "position": "Top right",
       "primary": [
-        "#1E1E1E 燧石黑",
-        "#D36135 窑变橙"
+        "#1E1E1E Flint Black",
+        "#D36135 Kiln Change Orange"
       ],
       "secondary": [
-        "#EDE6DB 米窑白",
-        "#5C6670 钢蓝灰"
+        "#EDE6DB Rice Kiln White",
+        "#5C6670 Steel Blue Grey"
       ],
-      "swatch_design": "长条色带 + HEX + 用途小字如「主背景」「强强调」"
+      "swatch_design": "Long color ribbon + HEX + small text for usage like 'main background' 'strong emphasis'"
     },
     "typography": {
-      "position": "左下",
-      "headline_font": "无衬线类似 Space Grotesk 的略几何英文 + 中文黑体",
-      "body_font": "中文小字号说明体",
-      "demo_block": "Menu · 今日手冲 · 01234，三行假菜单价目"
+      "position": "Lower left",
+      "headline_font": "No sans-serif slightly geometric English similar to Space Grotesk + Chinese Hei Ti",
+      "body_font": "Chinese in small size explanatory body.",
+      "demo_block": "Menu · Today's Pour Over · 01234, three-line fake menu price list"
     },
     "applications": {
-      "position": "右下",
+      "position": "Bottom right",
       "mockups": [
-        "外带纸杯 + 热杯套，logo 不绕杯过满一圈",
-        "门头发光字夜间 mockup 小方图",
-        "微信小程序码立牌，上方一行「点单取号」小字，整体留白 40%"
+        "Takeaway paper cup + hot sleeve, logo does not wrap around the cup completely",
+        "Mockup of glowing sign on the door at night, small square image",
+        "WeChat Mini Program Code Stand, with a Small Text 'Order and Number' Above, Overall 40% White Space"
       ]
     }
   },
   "style": {
-    "art_style": "水泥质感浅底 + 极轻划痕纹理",
-    "grid": "仅用于 logo 与 app 区对齐的淡灰 12 列"
+    "art_style": "Light background with a cement texture + very faint scratch texture.",
+    "grid": "Only soft gray 12-column for logo and app area alignment."
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "HEX 与圆角色块对应",
-      "四区呼吸感，避免色块糊满",
-      "杯上 logo 不跨越杯缝可识别区"
+      "HEX corresponding to circular character blocks",
+      "Four zones with a breathing feel, avoiding blocks of color being too filled",
+      "The logo on the cup does not cross the recognizable area of the cup seam."
     ],
     "avoid": [
-      "过强锈迹与脏渍纹理",
-      "超过 6 个品牌色点"
+      "Excessively strong rust and dirt textures",
+      "More than 6 brand color points"
     ]
   }
 }

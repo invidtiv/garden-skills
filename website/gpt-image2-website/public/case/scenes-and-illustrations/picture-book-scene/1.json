@@ -2,44 +2,44 @@
   "type": "Children's Book Interior Illustrations",
   "goal": "Generate a warm Mid-Autumn festival children’s book page layout that can span across two pages or be formatted as a single page, with a clear sense of storytelling and festive symbols.",
   "story": {
-    "theme": "第一次与月亮说悄悄话的小狐狸",
-    "scene": "江南小镇的中秋夜，瓦屋顶与远河成片的莲花灯在脚下延展",
-    "moment": "小狐狸抓住一缕升起的月华，第一次感觉到风也能像桂花一样有香气"
+    "theme": "The little fox whispering to the moon for the first time",
+    "scene": "On the Mid-Autumn night in a Jiangnan town, tiled roofs and lotus lamps spread across the distant river below.",
+    "moment": "A little fox catches a wisp of rising moonlight, feeling for the first time that the wind can smell as fragrant as osmanthus"
   },
   "main_character": {
-    "description": "毛茸茸的橘色小狐狸，系一条靛青口水巾，坐在一枚略像月饼表面的圆云上",
-    "expression": "眼睛弯成月弯，嘴巴小小张开像在惊叹",
-    "pose": "前爪轻扶云边、后腿悬空，被风微微托起"
+    "description": "A fluffy orange fox, wearing a dark blue drool bib, sitting on a round cloud that resembles a mooncake surface",
+    "expression": "Eyes curved like a crescent moon, mouth slightly open as if in awe",
+    "pose": "Front paw gently resting on the edge of the clouds, hind legs suspended in the air, slightly lifted by the wind"
   },
   "secondary_characters": {
     "items": [
-      "三两只孔明灯上有简笔画小兔探出头",
-      "远处屋檐上一排熟睡的黑瓦猫剪影"
+      "A couple of Kongming lanterns with simple drawings of little rabbits peeking out",
+      "A row of sleeping black-tiled cat silhouettes on the eaves in the distance."
     ]
   },
   "style": {
-    "art_style": "水彩干叠与湿接混用、细铅笔线勾轮廓",
-    "color_palette": "柿红、月白、靛青夜空、金桂花点",
-    "rendering": "冷压水彩纸纹、边缘故意留白形成月光晕"
+    "art_style": "Mixing dry and wet watercolor application, outlining with fine pencil lines.",
+    "color_palette": "Persimmon red, moon white, indigo night sky, with dots of golden osmanthus.",
+    "rendering": "Cold-pressed watercolor paper texture, edges intentionally left white to create a moonlight halo"
   },
   "text_overlay": {
     "enabled": "true",
-    "text": "他忽然明白，团圆的味道，是风也桂花香。",
-    "position": "画面下缘居中，上留大夜空",
-    "font_style": "圆角手写体"
+    "text": "He suddenly understood that the taste of reunion is the fragrance of wind and osmanthus.",
+    "position": "Bottom edge of the screen centered, with a large night sky above",
+    "font_style": "Rounded Corner Handwritten Font"
   },
   "aspect_ratio": "4:3",
   "constraints": {
     "must_keep": [
-      "主角占据视觉动线最高对比处",
-      "文句在 20 字内、易读",
-      "不恐怖、不黑童话",
-      "无现实品牌与商标"
+      "The main character occupies the area of highest visual contrast.",
+      "Sentences are within 20 words and easy to read.",
+      "No horror, no dark fairy tales",
+      "No real brands and trademarks."
     ],
     "avoid": [
-      "把月亮画成带五官的表情化天体",
-      "满页塞满河灯成图案噪声",
-      "冷色调过强冲淡节庆暖"
+      "Draw the moon as an anthropomorphic celestial body with facial features",
+      "Full page filled with river lanterns forming pattern noise",
+      "Overly strong cool tones dilute the festive warmth"
     ]
   }
 }

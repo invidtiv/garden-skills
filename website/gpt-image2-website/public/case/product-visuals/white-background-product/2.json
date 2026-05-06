@@ -2,20 +2,20 @@
   "type": "White background e-commerce main image.",
   "goal": "Generate a white-background product image directly usable as the main graphic on e-commerce platforms, with the product as the absolute visual focus.",
   "subject": {
-    "product_name": "Dyson Supersonic Nural 吹风机",
-    "visual_description": "短枪式机身，主体为哑光墨玉色，尾部圆形进风网为深紫铜色金属圈，手柄上有三枚物理按键与一块小型状态灯区；旁边磁吸摆放一枚柔和干发风嘴与一枚造型风嘴，风嘴外圈为同色金属环",
+    "product_name": "Dyson Supersonic Nural Hair Dryer",
+    "visual_description": "Short gun-shaped body, main body in matte dark jade color, rear circular air intake mesh in deep purple copper color metal ring, handle has three physical buttons and a small status light area; beside it are magnetically placed a soft hair-drying nozzle and a styling nozzle, both with matching color metal rings",
     "label_text": "dyson supersonic nural",
-    "angle": "主机左下、风嘴右上成对角线排列的 3/4 侧视",
-    "scale": "占据画面 58%"
+    "angle": "The main machine is arranged in a diagonal line with the bottom left and the vent at the top right in a 3/4 side view.",
+    "scale": "Occupies 58% of the frame"
   },
   "background": {
-    "type": "纯白",
-    "shadow": "轻微底部柔光阴影，分离各件但不过重",
-    "reflection": "无"
+    "type": "Pure White",
+    "shadow": "Slight bottom soft light shadow, separating components but not too heavy.",
+    "reflection": "None"
   },
   "lighting": {
-    "key_light": "正面偏上柔光，强调进风网同心圆纹理",
-    "fill_light": "顺侧柔光降低金属环过曝"
+    "key_light": "Soft light slightly above the front, emphasizing the texture of the concentric circles of the air intake mesh.",
+    "fill_light": "Side soft light reduces overexposure on the metal ring"
   },
   "text_overlay": {
     "enabled": "false",
@@ -23,19 +23,19 @@
     "selling_point": ""
   },
   "style": {
-    "rendering": "高分辨率商业摄影 + 干净后期，没有任何场景元素",
-    "consistency": "颜色还原真实，质感还原真实"
+    "rendering": "High resolution commercial photography + clean post-processing, with no scene elements",
+    "consistency": "Colors restore authenticity, texture restores authenticity"
   },
   "constraints": {
     "must_keep": [
-      "纯净白底",
-      "进风网与按键区域细节清晰",
-      "磁吸风嘴与主机比例关系正确"
+      "Pure White Background",
+      "Clear details of the airflow network and button area.",
+      "The proportional relationship between the magnetic suction nozzle and the main unit is correct."
     ],
     "avoid": [
-      "金属环高光过曝成一条白线",
-      "阴影脏灰",
-      "配件飘浮感"
+      "Metal ring highlight overexposed into a white line.",
+      "Dirty gray shadow",
+      "Floating sensation of accessories."
     ]
   }
 }

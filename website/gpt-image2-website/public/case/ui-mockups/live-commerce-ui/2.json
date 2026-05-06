@@ -3,88 +3,88 @@
   "goal": "Generate a mockup of a live-stream screenshot for a celebrity's personal IP crossover merchandise, appearing as if taken by a fan from an actual mobile live broadcast.",
   "subject": {
     "source_mode": "anonymous-celebrity-style",
-    "description": "一位 30 岁左右的虚构金棕长卷发女歌手主体（鹅蛋脸、淡橄榄肤色、薄荷绿色针织衫、颈部佩戴小猫造型项链、妆容自然偏暖）的半身真人级肖像；不指向任何具体真实公众人物",
-    "pose": "略微侧身，双手轻轻捧着一只香水瓶，像在向镜头展示瓶身",
-    "expression": "微笑，眼神温柔看向镜头，像在跟粉丝聊天"
+    "description": "A fictional female singer subject around 30 years old (oval face, light olive skin tone, wearing a mint green knitted sweater, a small cat-shaped necklace around the neck, warm natural makeup) in a half-body realistic portrait; does not refer to any specific real public figure",
+    "pose": "Slightly turned sideways, gently holding a perfume bottle with both hands, as if showcasing it to the camera.",
+    "expression": "Smile, gentle gaze towards the camera, as if chatting with fans"
   },
   "scene": {
-    "background_style": "粉色与香槟金渐变的直播间布景，墙面挂着复古唱片与小吉他装饰",
-    "lighting": "柔和暖光顶灯 + 粉色补光，整体像 Vlog 灯光",
-    "extras": "桌面摆放干花、唱片、迷你蜡烛"
+    "background_style": "Pink and champagne gold gradient live stream room decor, with vintage records and small guitar decorations hanging on the wall",
+    "lighting": "Soft warm overhead light + pink fill light, overall like Vlog lighting.",
+    "extras": "The desktop displays dried flowers, records, and mini candles."
   },
   "product": {
-    "name": "Folklore 同名香水（限定首发）",
-    "category": "高端香氛",
+    "name": "Folklore same name perfume (limited debut)",
+    "category": "High-end fragrance",
     "price": "¥ 1,288",
     "selling_points": [
-      "森林木质调 + 香草尾香",
-      "全球限量 5,000 瓶",
-      "每瓶附亲笔签名卡片"
+      "Forest wood tone + vanilla undertone.",
+      "Global limited edition of 5,000 bottles",
+      "Each bottle comes with a handwritten signature card"
     ]
   },
   "ui_overlay": {
-    "platform_style": "通用中文直播带货平台（接近小红书直播 / 淘宝直播混合风格）",
+    "platform_style": "General Chinese live shopping platform (similar to Xiaohongshu live / Taobao live mixed style).",
     "top_header": {
-      "host_info": "圆形头像 + 名称 'Folklore 香氛官方'，副标题 '212.8万本场点赞'，红色 '+ 关注' 按钮",
-      "rank_badge": "金色 '全站第1名 · 美妆专场' 徽章",
-      "viewer_stats": "三位观众小头像 + '38.5w'、'27.1w'、'19.2w'，总在看 '156.8万'"
+      "host_info": "Circular avatar + Name 'Folklore Fragrance Official', Subtitle '2.128 Million Likes in This Venue', Red '+ Follow' Button",
+      "rank_badge": "Golden 'Site No. 1 · Beauty Special' badge.",
+      "viewer_stats": "Three small viewer avatars + '385k', '271k', '192k', total watching '1.568 million'"
     },
     "mid_left_gifts": {
       "count": 3,
       "items": [
-        "头像 '深夜歌迷'，'送出 玫瑰花海'，玫瑰图标 × 1314",
-        "头像 'Folklore 林深'，'送出 嘉年华'，烟花图标 × 520",
-        "头像 '十三号星期五'，'送出 友谊手环'，手环图标 × 99"
+        "Avatar 'Late Night Fan', 'Send Sea of Roses', rose icon × 1314.",
+        "Avatar 'Folklore Deep Forest', 'Send Carnival', firework icon × 520.",
+        "Avatar 'Friday the 13th', 'Send Friendship Bracelet', bracelet icon × 99."
       ]
     },
     "bottom_left_chat": {
-      "system_message": "44 级勋章 '永远的歌迷俱乐部 加入了直播间'",
+      "system_message": "44 level medal 'Forever Fan Club joined the live room'",
       "message_count": 7,
       "messages": [
-        "深夜歌迷: 终于等到这一刻 😭",
-        "Folklore_FAN: 这瓶香水我蹲了一整年！",
-        "深夜失眠: 想问问尾调持久度怎么样？",
-        "上海铁粉: 限量5000瓶能抢到吗 我手心出汗",
-        "13号星期五: 求问签名卡片是真的亲笔吗？",
-        "Lavender Haze: 主播今天好美 💛",
-        "下一站米兰: 海外歌迷报到！"
+        "Late-night fan: finally waiting for this moment 😭",
+        "Folklore_FAN: I have been waiting for this perfume for a whole year!",
+        "Late-night insomnia: wanting to ask about the lasting power of the base note?",
+        "Shanghai loyal fan: Will I be able to grab one of the limited 5000 bottles? My palms are sweating.",
+        "Friday the 13th: Is the signed card really handwritten?",
+        "Lavender Haze: The host looks beautiful today 💛",
+        "Next stop Milan: Overseas fans check in!"
       ]
     },
     "bottom_right_product_card": {
-      "hot_tag": "粉色 '限量首发 × 即将售罄'",
-      "image": "磨砂米色香水玻璃瓶，瓶身浮雕花藤与 'folklore' 字样",
-      "title": "Folklore 同名香水 50ml｜全球限定签名版",
+      "hot_tag": "Pink 'limited launch × soon to sell out'",
+      "image": "Matte beige perfume glass bottle, with an embossed floral vine on the bottle body and the word 'folklore'.",
+      "title": "Folklore same name perfume 50ml | Global limited signed edition",
       "price": "¥ 1,288",
-      "button": "粉红色圆角 '抢' 按钮",
-      "floating_animation": "金色五角星 + 玫瑰花瓣沿右侧上飘"
+      "button": "Pink rounded 'grab' button",
+      "floating_animation": "Golden pentagram + rose petals floating up along the right side."
     },
     "bottom_bar": {
-      "input_field": "'说点什么...'",
+      "input_field": "'Say something...'",
       "icons": [
-        "笑脸",
-        "三个点",
-        "购物车（红点 8）",
-        "礼物盒",
-        "分享"
+        "Smiley face",
+        "Three dots",
+        "Shopping cart (red dot 8)",
+        "Gift Box",
+        "Share"
       ]
     }
   },
   "style": {
-    "visual_target": "粉丝实时截屏感的直播带货样机，温柔、暖、明星粉丝私域氛围",
-    "rendering": "真人写真级人像 + 直播平台叠加 UI + 暖色商业灯光",
-    "color_tone": "香槟金 + 玫瑰粉 + 直播红"
+    "visual_target": "Live streaming model with a real-time screenshot feel for fans, gentle, warm, star fan private domain atmosphere",
+    "rendering": "Realistic portrait level + overlay UI of live streaming platform + warm commercial lighting",
+    "color_tone": "Champagne gold + rose pink + live broadcast red"
   },
   "constraints": {
     "must_keep": [
-      "主体形象可识别且亲和力强",
-      "商品卡颜色与主播服装、背景协调",
-      "聊天区、礼物区、商品卡都必须出现"
+      "The subject's image is recognizable and has strong affinity",
+      "Product card color coordinated with the host's clothing and background",
+      "Chat area, gift area, and product cards must all appear"
     ],
     "avoid": [
-      "UI 中文出现错字",
-      "主体脸部畸形或缺乏神态",
-      "礼物图标与品牌调性不符（不要出现猎奇图标）",
-      "刻意贴近任何具体真实公众人物的肖像细节"
+      "UI Chinese contains typos",
+      "The subject's face is deformed or lacks expression",
+      "Gift icon does not match brand tone (avoid using quirky icons).",
+      "Deliberately close to the portrait details of any specific real public figure"
     ]
   }
 }

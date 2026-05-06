@@ -3,38 +3,38 @@
   "goal": "Generate a main visual for a sports brand featuring a fictional tall male basketball player, with strong lighting and impactful copy, avoiding specific product SKUs to prevent misleading details.",
   "brand": {
     "name": "NIKE",
-    "industry": "运动服饰与鞋类"
+    "industry": "Sports apparel and footwear"
   },
   "visual_tone": {
-    "aesthetic": "街头与赛场混合的高能量肖像",
-    "color_palette": "黑 + 场边灰 + 荧光橙点缀",
-    "lighting": "侧上硬光制造肌肉体积感，空气中有细微尘埃微粒"
+    "aesthetic": "high-energy portrait blending street and competition",
+    "color_palette": "Black + sideline gray + fluorescent orange accents",
+    "lighting": "Side top hard light creating a sense of muscle volume, with fine dust particles in the air"
   },
   "centerpiece": {
-    "type": "人物",
-    "description": "一位 30 岁左右的虚构高大男子篮球运动员（强壮臂膀、深色短发与发带）半身，汗湿皮肤质感真实，着黑红配色无大 logo 的压缩训练上衣，双臂前伸似刚完成一次变向动作前的定格；背景为虚化的球馆与观众席光点",
-    "scale": "人物胸像到膝上，约占画幅 50%"
+    "type": "Character.",
+    "description": "A fictional tall male basketball player around 30 years old (strong arms, dark short hair with headband) in a half-body shot, realistic texture of sweaty skin, wearing a black and red color matching compression training top without large logos, both arms extended forward as if just completing a change of direction; background is blurred gymnasium and audience light spots",
+    "scale": "Character bust up to the knees, approximately 50% of the frame."
   },
   "slogan": {
-    "main": "上场，就把下一球打进",
-    "sub": "Just Do It · 2026 春季训练季"
+    "main": "On the field, just score the next ball",
+    "sub": "Just Do It · Spring Training Season 2026"
   },
   "logo_placement": {
-    "position": "左上角小型勾形标识与字标，符合常见比例",
-    "size": "品牌勾形在标题字高 0.3 左右"
+    "position": "Upper left corner with small hook-shaped icon and text, conforming to common proportions",
+    "size": "Brand checkmark shape around 0.3 in height relative to the title text"
   },
-  "aspect_ratio": "2:3 与 1:1 可裁，设计时主体居中",
+  "aspect_ratio": "2:3 and 1:1 can be cropped, with the main subject centered during design",
   "constraints": {
     "must_keep": [
-      "Slogan 主句不超过 12 字，英文副标一行内",
-      "品牌色在标题或背景线条中可呼应但不过曝",
-      "人物动态有张力但姿势自然"
+      "Slogan Main Sentence Not Exceeding 12 Words, English Subtitle in One Line",
+      "Brand color can echo in the title or background lines but not overexposed",
+      "Character's dynamics have tension but with a natural posture."
     ],
     "avoid": [
-      "与真实赛事照片逐像素复刻",
-      "在画面角落堆满联盟与第三品牌 logo",
-      "中文字用综艺花体",
-      "刻意贴近任何具体真实运动员的肖像细节"
+      "Pixel-perfect replication of real event photos",
+      "Stuff Alliance and Third-Party Brand Logos in the Corners of the Image",
+      "Chinese characters use a decorative cursive font.",
+      "Deliberately close to the portrait details of any specific real athlete"
     ]
   }
 }

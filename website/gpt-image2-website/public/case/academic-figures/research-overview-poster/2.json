@@ -9,46 +9,46 @@
   },
   "title_block": {
     "main_title": "Multimodal Foundation Models for Clinical Imaging Diagnosis",
-    "subtitle": "面向临床影像诊断的多模态大模型",
-    "occasion_label": "博士学位论文中期答辩",
+    "subtitle": "Multimodal large model for clinical image diagnosis",
+    "occasion_label": "Mid-term defense of doctoral dissertation",
     "position": "top-center, main_title in bold sans-serif 22pt, subtitle in regular 13pt below in gray, occasion_label in italic gray 10pt at top-right"
   },
   "background_section": {
     "label": "Background & Problem",
-    "summary": "现有医疗影像诊断系统多为单模态、专科专用，难以适配多模态场景与长尾病种",
-    "key_question": "如何在多模态影像-文本-报告联合表征下，实现可解释、可信的辅助诊断？",
+    "summary": "Existing medical imaging diagnostic systems are mostly unimodal and specialized, making it difficult to adapt to multimodal scenarios and long-tail diseases",
+    "key_question": "How to achieve interpretable and trustworthy auxiliary diagnosis under the joint representation of multimodal images, texts, and reports?",
     "position": "compact strip across the upper band, full width"
   },
   "objective_section": {
     "label": "Objective",
-    "summary": "构建跨模态、跨任务的医疗影像基础模型，并形成临床可用诊断辅助方案",
+    "summary": "Build a cross-modal, cross-task foundational medical imaging model and create clinically applicable diagnostic assistance solutions.",
     "position": "compact strip directly below background, centered, narrower than background"
   },
   "research_modules": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
       {
         "id": "RM1",
         "name": "Data & Pretraining",
-        "summary": "构建影像-报告大规模配对语料并完成跨模态预训练",
+        "summary": "Construct a large-scale paired corpus of image-report and complete cross-modal pre-training.",
         "method_hint": "CT / MRI / X-ray + report alignment"
       },
       {
         "id": "RM2",
         "name": "Diagnostic Tasks",
-        "summary": "针对病灶检测、报告生成、鉴别诊断等任务进行下游适配",
+        "summary": "Adapt downstream for tasks such as lesion detection, report generation, differential diagnosis, etc.",
         "method_hint": "instruction tuning + LoRA"
       },
       {
         "id": "RM3",
         "name": "Reliability",
-        "summary": "研究幻觉缓解、不确定性表征与可解释证据链",
+        "summary": "Research on alleviating illusions, representing uncertainty, and the explainable evidence chain.",
         "method_hint": "evidence alignment + calibration"
       },
       {
         "id": "RM4",
         "name": "Clinical Validation",
-        "summary": "联合医院在真实门诊与急诊场景完成可控临床试用",
+        "summary": "Unified Hospital completes controllable clinical trials in real outpatient and emergency scenarios",
         "method_hint": "multi-center retrospective + prospective trial"
       }
     ],
@@ -56,7 +56,7 @@
   },
   "expected_outcome_section": {
     "label": "Expected Outcomes",
-    "items": "多模态医疗影像基础模型权重、面向 5 类临床任务的诊断辅助系统、可解释证据链评估方法学",
+    "items": "Multi-modal medical imaging foundational model weights, diagnostic assistance system for five clinical task categories, explainable evidence chain evaluation methodology",
     "position": "below the left column, full-left-column width, visually distinct from research_modules but stylistically consistent"
   },
   "module_block_style": {

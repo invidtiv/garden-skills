@@ -1,65 +1,65 @@
 {
   "type": "Travel itinerary map.",
   "goal": "Generate a visual route map for a three-day classical itinerary in Kyoto, to be used as a cover image for social media guides and printed brochures.",
-  "style": "复古手绘与水彩、米色羊皮纸底，边缘有轻微火漆纹",
+  "style": "Vintage hand-drawn and watercolor, beige parchment background with slight wax seal texture on the edges",
   "title_section": {
-    "title_text": "京都三日·庭园与古街",
-    "subtitle": "D1–D3 不走回头路的步道与机铁"
+    "title_text": "Kyoto three days: gardens and ancient streets.",
+    "subtitle": "D1–D3 Trails and Tracks That Do Not Retrace"
   },
   "route": {
-    "transport": "HARUKA/京都地下铁 + 公交 + 步行",
+    "transport": "HARUKA/Kyoto subway + bus + walking",
     "stops": [
-      "D1 东山区：抵京都站 → 清水寺 → 三年坂·二年坂 → 八坂神社 → 祗园白川夕暮",
-      "D2 岚山与西郊：小火车嵯峨站 → 竹林小径 → 天龙寺庭园 → 渡月桥与河边茶屋 → 手打荞麦晚膳",
-      "D3 北山与下鸭：金阁寺镜面回游 → 北野天满宫与梅枝饼 → 下鸭糺森小径与河合神社 → 京都站茶渍饭收束"
+      "D1 Higashiyama District: Arrive at Kyoto Station → Kiyomizu-dera → Sannenzaka, Ninenzaka → Yasaka Shrine → Gion Shichinai at Dusk",
+      "D2 Arashiyama and the Western Suburbs: Small train at Saga Station → Bamboo Grove Path → Tenryu-ji Garden → Togetsu Bridge and riverside tea house → Handmade soba dinner",
+      "D3 Northern Mountains and Shimogamo: Kinkaku-ji mirror stroll → Kitano Tenmangu and plum blossom rice cakes → Shimogamo Path and Kawai Shrine → Kyoto Station tea-soaked rice conclusion"
     ],
-    "line_style": "朱红实线示当日主线，靛青虚线示跨区机动段，圆点编号与日期同色"
+    "line_style": "Crimson solid line indicates the main line of the day, indigo dashed line indicates the cross-zone maneuver segment, dotted numbers in the same color as the date"
   },
-  "stop_illustrations": "每处站点配小插画：三重塔、石灯笼、竹径、月桥、金阁倒影、手制梅枝饼、糺之森下鸭流",
+  "stop_illustrations": "Each site is accompanied by small illustrations: three-tiered pagoda, stone lantern, bamboo path, moon bridge, reflection of the Golden Pavilion, handmade plum branch cake, and stream of ducks under the Qizhi Forest",
   "side_panel": {
     "enabled": "true",
-    "position": "右侧竖栏",
-    "content_type": "每日要点 3 天 × 2–3 条"
+    "position": "Vertical bar on the right side",
+    "content_type": "Daily highlights for 3 days × 2-3 items"
   },
   "side_panel_bullets": {
     "D1": [
-      "清晨清水舞台避开人潮",
-      "白川通黄昏适合拍照",
-      "祗园餐饮需预约优先"
+      "Morning clear water stage avoiding the crowd",
+      "Shirakawa-dori at dusk is suitable for photography.",
+      "Gion dining requires prior reservation."
     ],
     "D2": [
-      "小火车与竹林建议预约时段",
-      "渡月桥风大可改室内茶屋",
-      "岚山豆腐与荞麦为当日主食线"
+      "Little train and bamboo forest, recommend booking time slots",
+      "If the wind is strong on the Togetsu Bridge, can change to indoor tea house",
+      "Lanshan tofu and buckwheat as the main food line of the day"
     ],
     "D3": [
-      "金阁以镜面池正面为必拍点",
-      "下鸭可顺访河合神社水签",
-      "返京都站可购茶渍与和菓子作手信"
+      "The golden pavilion's mirror pool front is a must-photo point.",
+      "Visiting the Kawai Shrine water sign can be done next",
+      "You can buy tea stains and wagashi souvenirs at Kyoto Station."
     ]
   },
   "legend": {
     "items": [
-      "朱红实线：当日主动线",
-      "靛青虚线：机铁/公交",
-      "绿色八角：必去世界遗看点",
-      "小叶子：可喝茶歇脚的町家或茶屋"
+      "Crimson solid line: Active line of the day",
+      "Indigo dashed line: Machinery rail/bus",
+      "Green Octagon: Must-visit world heritage point",
+      "Little leaves: a townhouse or tea house where one can have tea and take a break"
     ]
   },
   "extras": [
-    "和纸罗盘在左上",
-    "小字注：为手绘示意，非米级精确导航"
+    "Washi compass in the top left",
+    "Small text note: Hand-drawn illustration, not centimeter-level precise navigation"
   ],
   "constraints": {
     "must_keep": [
-      "D1→D3 顺序自洽、方位大致合理",
-      "每站有图与名",
-      "侧栏不挤压主图路线"
+      "D1→D3 Sequence self-consistent, orientation roughly reasonable",
+      "Each station has a picture and a name",
+      "Side bar does not compress the main image route"
     ],
     "avoid": [
-      "一天塞入过度景点",
-      "路线标签压在插画之上",
-      "五种以上线型"
+      "A day crammed with overly commercial attractions",
+      "Route label pressed over the illustration.",
+      "Five or more line types."
     ]
   }
 }

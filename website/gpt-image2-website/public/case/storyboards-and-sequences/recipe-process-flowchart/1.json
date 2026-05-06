@@ -2,67 +2,67 @@
   "type": "Recipe step diagrams",
   "goal": "Generate a step-by-step diagram for tomato scrambled eggs, suitable for WeChat, Xiaohongshu, or family recipe book pages.",
   "recipe": {
-    "name": "番茄炒蛋",
-    "subtitle": "5 分钟家常版",
-    "servings": "2 人份",
-    "time": "备料 2 分钟 + 烹制 3 分钟"
+    "name": "Tomato scrambled eggs.",
+    "subtitle": "5-minute home version",
+    "servings": "2 servings",
+    "time": "Preparation 2 minutes + cooking 3 minutes"
   },
   "ingredients": {
     "enabled": "true",
-    "position": "顶部右侧",
+    "position": "Top right side",
     "items": [
-      "番茄 2 个（约 300g）",
-      "鸡蛋 3 个",
-      "葱花 1 小把",
-      "盐 3g、糖 2g、植物油 20ml"
+      "2 tomatoes (approximately 300g).",
+      "3 eggs",
+      "1 small handful of green onion",
+      "Salt 3g, sugar 2g, vegetable oil 20ml"
     ],
-    "design": "每项左侧配迷你图标：番茄圆、蛋、葱、盐罐、油滴"
+    "design": "Each item has a mini icon on the left: tomato circle, egg, scallion, salt shaker, oil drop"
   },
   "steps": {
-    "count": "5",
+    "count": "Saturated and glaring background colors impact text recognition.",
     "items": [
       {
         "id": 1,
-        "scene": "番茄切滚刀块，鸡蛋加一撮盐打散至起小泡"
+        "scene": "Tomatoes cut into wedges, eggs beaten with a pinch of salt until small bubbles form."
       },
       {
         "id": 2,
-        "scene": "炒锅中火油烧至微冒烟，倒蛋液，用筷子划散至半凝固盛出"
+        "scene": "In the frying pan, heat oil until it slightly smokes, pour in the egg mixture, use chopsticks to stir until half coagulated, then serve out"
       },
       {
         "id": 3,
-        "scene": "补少许油，下番茄中大火煸至出沙、边缘微化"
+        "scene": "add a little oil, stir-fry tomatoes over high heat until they start to caramelize at the edges"
       },
       {
         "id": 4,
-        "scene": "倒回鸡蛋，加盐、少糖，快速翻匀 10 秒"
+        "scene": "Beat the eggs back, add salt, a little sugar, and quickly mix for 10 seconds"
       },
       {
         "id": 5,
-        "scene": "关火撒葱花，装盘淋少许锅气汁"
+        "scene": "Turn off the fire, sprinkle with green onions, plate and drizzle with a bit of pot juice"
       }
     ],
-    "step_block_style": "圆形编号 + 侧剖插图 + 一句说明"
+    "step_block_style": "Circular Number + Side Profile Illustration + A Brief Description"
   },
   "final_dish": {
     "enabled": "true",
-    "position": "底部居中大图"
+    "position": "Bottom Center Large Image"
   },
   "style": {
-    "art_style": "手绘水彩 + 淡米色水彩纸纹 + 细铅笔线稿感",
-    "color_palette": "番茄红、蛋黄、葱绿、米白"
+    "art_style": "Hand-painted watercolor + light beige watercolor paper texture + fine pencil line draft feel",
+    "color_palette": "Tomato red, egg yolk, green onion, rice white."
   },
   "aspect_ratio": "3:4",
   "constraints": {
     "must_keep": [
-      "1–5 编号连续、无跳号",
-      "每步说明不超过 15 字",
-      "食材列表与步骤动作对应",
-      "成品区饱和略高、吸引食欲"
+      "1–5 consecutively numbered, no skipped numbers",
+      "Each step description does not exceed 15 characters",
+      "Ingredient list corresponds with step actions",
+      "The finished product area is slightly oversaturated, appealing to appetite."
     ],
     "avoid": [
-      "单步出现与中餐无关的奇异设备",
-      "荧光蓝等反食物色为大面积主色"
+      "A bizarre device unrelated to Chinese food appears in a single step",
+      "Fluorescent blue and other food-related colors are the main colors covering large areas"
     ]
   }
 }

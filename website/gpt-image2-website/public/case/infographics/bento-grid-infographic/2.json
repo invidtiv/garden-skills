@@ -8,8 +8,8 @@
     "module_gap": "16px"
   },
   "header": {
-    "main_title": "Tesla Model Y 改款：续航·空间·智驾一图收齐",
-    "subtitle": "长续航 / 高性能差异、家用充电与官方标称值解读（图内为示意数字，以交付中心为准）",
+    "main_title": "Tesla Model Y facelift: range · space · smart driving summarized in one image",
+    "subtitle": "Long endurance / high performance differences, home charging and official nominal value interpretation (numbers in the image are illustrative, subject to delivery center standards)",
     "title_position": "top-left"
   },
   "palette": {
@@ -21,77 +21,77 @@
       "#C8D8F0",
       "#F2E4D0"
     ],
-    "rule": "accent 用于强调「长续航后驱」和「家充」"
+    "rule": "accent used to emphasize 'long-range rear drive' and 'home charging'"
   },
   "layout": {
-    "style": "asymmetric bento, hero 右下 2x2 银灰车侧",
-    "module_count": "8",
-    "grid": "左列 3 条窄条 + 右下 hero, 中区填充对比与表格式数据",
+    "style": "asymmetric bento, hero lower right 2x2 silver-gray car side",
+    "module_count": "Overexposed background obscures the outlines.",
+    "grid": "Left column has 3 narrow strips + bottom right hero, with the middle area filled with contrast and tabular data",
     "alignment": "strict grid"
   },
   "modules": [
     {
       "id": "M1-hero",
       "size": "large (2x2)",
-      "role": "主视觉+人群",
-      "content": "低角度 Model Y 侧影 + 一句「家第二台车 / 首台纯电 都可谈」+ 4.8/5 示意评分 + 3 个关键词: 空间 / 电耗 / OTA"
+      "role": "Main visuals + crowd.",
+      "content": "Low-angle silhouette of Model Y + a phrase 'Second car for home / First pure electric can be discussed' + 4.8/5 indicative rating + 3 keywords: Space / Power consumption / OTA"
     },
     {
       "id": "M2",
       "size": "small (1x1)",
-      "role": "CLTC 标称",
-      "content": "大数字 600+ km(示意) + 小字: CLTC, 实路受气温与脚法影响"
+      "role": "CLTC Standard",
+      "content": "Large number 600+ km (illustrative) + small text: CLTC, actual road affected by temperature and driving method."
     },
     {
       "id": "M3",
       "size": "small (1x1)",
-      "role": "百千米电耗",
-      "content": "13–15 kWh/100 km 带区间条, 小字: 城快 vs 高速"
+      "role": "Energy consumption per hundred kilometers",
+      "content": "13–15 kWh/100 km with range bar, small text: City Fast vs Highway"
     },
     {
       "id": "M4",
       "size": "medium (1x2)",
-      "role": "前备箱+后排放倒",
-      "content": "简笔容积条 + 露营模式关键词 + 1 个婴儿车示意图标"
+      "role": "Front trunk + rear seats folded down",
+      "content": "Simplified volume bar + camping mode keywords + 1 baby stroller icon"
     },
     {
       "id": "M5",
       "size": "medium (2x1)",
-      "role": "后驱长续航 vs 双电机",
-      "content": "两列对勾/叉或星级: 加速、雨雪抓地、预算; 不贬损竞品, 只陈述配置差"
+      "role": "Rear-wheel drive long range vs dual motor",
+      "content": "Two columns of checkmarks/crosses or star ratings: Acceleration, traction in rain and snow, budget; do not denigrate competing products, only state configuration differences."
     },
     {
       "id": "M6",
       "size": "small (1x1)",
-      "role": "家充",
-      "content": "7 kW(示意) + 「谷电预约」+ 小插头图标"
+      "role": "Home charging",
+      "content": "7 kW (illustration) + \"Off-peak electricity reservation\" + small plug icon"
     },
     {
       "id": "M7",
       "size": "medium (1x2)",
-      "role": "驾驶辅助",
-      "content": "AP/EAP 与 FSD(若购买) 分条; 用中文「辅助驾驶, 非自动驾驶」"
+      "role": "Driving assistance",
+      "content": "AP/EAP and FSD (if purchased) separated; in Chinese \"assisted driving, non-autonomous driving\""
     },
     {
       "id": "M8",
       "size": "small (1x1)",
       "role": "Footer",
-      "content": "微信读书式提示: 保存长图, 发家族群讨论"
+      "content": "WeChat Reading Style Prompt: Save Long Image, Discuss in Family Group"
     }
   ],
   "module_internal_style": {
     "padding": "18-22px",
-    "typography": "sans, clear hierarchy, numbers 等宽",
-    "rule": "每格 micro-title, 无空白贴纸格",
-    "imagery": "车影为简洁矢量剪影"
+    "typography": "Sans, clear hierarchy, numbers monospaced",
+    "rule": "Each grid has a micro-title, no blank sticker grids",
+    "imagery": "Car shadow as a simple vector silhouette."
   },
   "constraints": {
     "must_keep": [
-      "价格与官方权益若出现须注明示意",
-      "不与其他品牌实车对比拼贴真实前脸"
+      "Prices and official rights must be indicated if they appear.",
+      "No real front-face collage in comparison with other brands' real vehicles"
     ],
     "avoid": [
-      "全模块等高栅格"
+      "All modules are in equal-height grids"
     ]
   }
 }

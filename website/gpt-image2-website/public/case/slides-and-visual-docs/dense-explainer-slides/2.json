@@ -2,48 +2,48 @@
   "type": "High-density explanatory Slide",
   "goal": "Generate a single-page training handout explaining to an audience without an algorithm background how a typical AI agent completes a task in a software environment.",
   "style": {
-    "format": "单页多段讲解 + 中央流程锚点",
-    "blend": "Irasutoya 柔和温馨插画 + 商业咨询式信息分块",
-    "color_palette": "浅米白 + 靛青 + 炭灰"
+    "format": "Single page multiple segment explanation + central process anchor point",
+    "blend": "Irasutoya soft and warm illustration + business consulting style information chunking",
+    "color_palette": "Light off-white + indigo + charcoal gray."
   },
   "title_section": {
-    "main_title": "AI Agent 是怎么把一句话变成一连串动作的",
-    "subtitle": "从用户目标到工具调用与环境反馈，一页看懂闭环",
-    "language": "中文"
+    "main_title": "How does an AI Agent turn a sentence into a series of actions",
+    "subtitle": "From user goals to tool invocation and environmental feedback, a page to understand the closed loop.",
+    "language": "Chinese."
   },
   "centerpiece": {
     "enabled": "true",
-    "description": "中央是环形或顺时针弧形的五枚图标：耳朵（用户意图）、便签（任务拆解）、扳手（工具选择）、回形针（结果汇总）、翻页（记忆/日志），以柔和粗线连接成环，环心放一枚简约「机器人头」侧影插画"
+    "description": "At the center are five circular or clockwise arched icons: Ear (user intention), Notepad (task breakdown), Wrench (tool selection), Paperclip (result summary), Page-turning (memory/log), connected by soft thick lines into a ring, with a minimalist 'robot head' silhouette illustration at the center."
   },
   "sections": {
-    "count": "5",
+    "count": "Saturated and glaring background colors impact text recognition.",
     "items": [
-      "用户输入：把需求说清楚，包含约束（格式、时区、隐私）",
-      "规划：将目标拆为可检查子步骤，可显式或隐式在模型内部完成",
-      "工具与接口：按权限调用 API、搜索、计算、企业知识库，注意超时与重试",
-      "执行与自我纠错：读返回结果，若失败则改参数或改路径再试",
-      "记忆与审计：短期上下文 + 可配置的长期记忆，关键动作打日志备查"
+      "User input: Clearly state the requirements, including constraints (format, timezone, privacy)",
+      "planning: break down goals into checkable sub-steps, to be completed explicitly or implicitly within the model",
+      "Tools and interfaces: Call APIs according to permissions, search, compute, enterprise knowledge base, pay attention to timeouts and retries",
+      "Execution and self-correction: Read return results, if failed, adjust parameters or change path and try again",
+      "Memory and audit: short-term context + configurable long-term memory, log key actions for reference"
     ],
-    "section_block_style": "每节小插画为简约道具图标 + 一句标题 + 两句解释"
+    "section_block_style": "Each section's small illustration includes a minimalist prop icon + a title + two sentences of explanation"
   },
   "annotations": {
-    "style": "细线引线 + 编号小签",
-    "rule": "引线不穿越中央环状主图"
+    "style": "Fine Line Lead + Numbered Small Tag",
+    "rule": "Leads Do Not Cross Central Circular Main Image"
   },
   "footer": {
-    "summary": "Agent 的本质是「有权限、有目标、有反馈」的闭环，而不是多喊几次模型名称。"
+    "summary": "The essence of an Agent is a closed loop of 'having permissions, having goals, and having feedback,' rather than just calling the model name multiple times."
   },
   "constraints": {
     "must_keep": [
-      "高信息量仍保持可扫读，标题区与分栏区对比清晰",
-      "中央环形主图为唯一视觉中心",
-      "全页中文表述，科技术语保留英文词时在括号内用中文解释",
+      "High information density still remains scannable, with clear contrast between title area and column area",
+      "The central ring graphic is the only visual center.",
+      "Full page in Chinese, with technical terms retaining English words explained in Chinese in parentheses",
       "色板 ≤ 3 色"
     ],
     "avoid": [
-      "用真实公司界面截图造成版权歧义",
-      "步骤超过六段（本例固定为五段）",
-      "装饰性花纹干扰数字与术语阅读"
+      "Use screenshots of real company interfaces to create copyright ambiguity",
+      "Steps exceed six sections (this case is fixed at five sections).",
+      "decorative patterns interfere with reading numbers and terminology"
     ]
   }
 }

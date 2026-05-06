@@ -2,43 +2,43 @@
   "type": "Modern Business Professional Portrait",
   "goal": "Generate a public portrait of a CEO/business president of a global tech company, for use on summit guest walls, internal publication cover pages, and high-resolution LinkedIn images.",
   "subject": {
-    "gender": "以 Sundar Pichai 为公众熟知原型的南亚裔美国男性",
-    "age_range": "45-55 岁",
-    "appearance": "短发、整齐分线，可戴无框或半框眼镜，微笑含蓄",
-    "outfit": "中灰或炭灰单西、浅白衬衫、无领饰，内衬洁净"
+    "gender": "South Asian American male known to the public as the prototype of Sundar Pichai.",
+    "age_range": "45-55 years old",
+    "appearance": "Short hair, neatly parted, can wear rimless or semi-rimmed glasses, subtle smile",
+    "outfit": "Medium gray or charcoal gray single-breasted suit, light white shirt, no collar decoration, clean lining"
   },
   "expression": {
-    "mood": "友好、专业、无侵略性",
-    "gaze": "直视镜头，双眼等高对焦"
+    "mood": "Friendly, professional, non-aggressive",
+    "gaze": "Gaze into the camera, both eyes evenly focused"
   },
   "composition": {
     "shot": "胸像，双手不出画或只露折叠袖口在画幅下缘",
-    "framing": "标准居中到略偏左，头顶留白约一头高"
+    "framing": "Standard centered to slightly left, leaving about one head height of white space at the top."
   },
   "background": {
-    "type": "均匀暖灰无接缝背景或极柔渐变，无任何可识别 logo",
-    "depth_of_field": "中浅景深，背景有轻微明度从中心到边缘 5% 变化即可"
+    "type": "Uniform warm gray seamless background or extremely soft gradient, with no recognizable logo",
+    "depth_of_field": "Medium shallow depth of field, background with a slight brightness change of 5% from center to edge is sufficient"
   },
   "lighting": {
-    "key_light": "正偏左蝶形柔光，鼻下小阴影对称",
-    "fill_light": "右下低角度弱补，抬眼神反射点",
-    "rim_light": "无明显",
-    "color_temp": "中性到略暖 5000K"
+    "key_light": "Slightly left-oriented butterfly soft light, small symmetrical shadow below the nose.",
+    "fill_light": "Bottom right low-angle weak fill, raised eye reflection point",
+    "rim_light": "Not obvious.",
+    "color_temp": "Neutral to slightly warm 5000K."
   },
   "style": {
-    "rendering": "商业影棚高分辨率、肤色中性不偏红",
-    "post_processing": "去瑕疵保留痣与笑纹，整体对比克制"
+    "rendering": "Commercial studio high resolution, skin tone neutral without a reddish bias",
+    "post_processing": "Remove blemishes while retaining moles and smile lines, overall contrast is restrained"
   },
   "constraints": {
     "must_keep": [
-      "穿戴与行业匹配，不出现运动装",
+      "Attire matches the industry, no sportswear present.",
       "背景单一不抢肤",
-      "不佩戴政治或宗教强符号"
+      "No wearing of strong political or religious symbols"
     ],
     "avoid": [
-      "过饱和与 Instagram 风滤镜",
-      "双手抱胸的封闭姿态（除非用户要）",
-      "画面边缘出现可辨别的 Google 真实 logo 墙"
+      "Over-saturated with Instagram style filters.",
+      "Closed posture with arms crossed (unless the user requests)",
+      "A discernible real Google logo wall appears at the edge of the image."
     ]
   }
 }

@@ -4,45 +4,45 @@
   "canvas": {
     "aspect_ratio": "3:4 portrait",
     "background": "cream #FAF3E8",
-    "split_line": "中缝一杯竖切, 左燕麦奶色 #D8C1A0, 右乳白 #F5F5F0, 中缝有细线+小 'VS' 圆标"
+    "split_line": "Vertical cut of a cup in the middle seam, left oat milk color #D8C1A0, right milky white #F5F5F0, middle seam has fine line + small 'VS' round logo"
   },
   "header": {
-    "main_title": "燕麦奶 vs 牛奶: 7 个维度别盲选",
-    "subtitle": "乳糖不耐/环保/控脂/健身蛋白需求——先看表再决定囤哪一种"
+    "main_title": "Oat milk vs. cow's milk: Don't choose blindly across 7 dimensions",
+    "subtitle": "Lactose intolerant / eco-friendly / fat control / fitness protein needs—check the chart first before deciding which to stock up on."
   },
   "columns": [
     {
       "id": "left",
-      "name": "燕麦奶(强化钙维生素款)",
-      "color_theme": "燕麦金 #A67C52 + 深咖字",
-      "header_visual": "插吸管纸盒侧视简画+燕麦粒线稿",
-      "tagline": "植物、多数零乳糖(注意生产线)、咖啡友好"
+      "name": "Oat milk (fortified with calcium and vitamins)",
+      "color_theme": "Oat gold #A67C52 + Deep coffee letters",
+      "header_visual": "Side view sketch of a paper box with a straw + oat grain outline",
+      "tagline": "Plants, mostly lactose-free (note the production line), coffee-friendly."
     },
     {
       "id": "right",
-      "name": "全脂牛乳(巴氏/高温杀菌)",
-      "color_theme": "白瓶+靛字 #1B2538",
-      "header_visual": "玻璃奶瓶弧线+小奶牛简笔",
-      "tagline": "完全蛋白、天然钙、脂溶性维生素载体"
+      "name": "Whole milk (pasteurized/high temperature sterilization)",
+      "color_theme": "White bottle + indigo text #1B2538",
+      "header_visual": "Curved glass baby bottle + simple sketch of a little cow",
+      "tagline": "Complete protein, natural calcium, fat-soluble vitamin carrier"
     }
   ],
   "comparison_rows": {
-    "count": "7",
-    "structure": "中列维度+左右对比, 可 ✓/△/– 与颜色浅底",
+    "count": "Fluorescent blue-purple gradient background steals the spotlight.",
+    "structure": "Central column dimensions + left-right comparison, can use ✓/△/– with a light color background.",
     "items": [
-      "完全蛋白 PDCAAS",
-      "钙与 D 强化(读配料表)",
-      "饱和脂肪与总热量(每 250mL 示意级)",
-      "升糖/饱腹主观差异(不当作医学结论)",
-      "单价与可得性(超商常见度)",
-      "环境足迹(水/土/气层面定性)",
-      "咖啡拉花/茶拿铁适配(foam 质感)"
+      "Complete protein PDCAAS",
+      "Calcium and D fortified (read ingredient list).",
+      "Saturated fats and total calories (per 250mL indicative level)",
+      "Subjective differences in blood sugar/satiety (not to be taken as a medical conclusion)",
+      "Unit price and availability (convenience store commonality)",
+      "Environmental footprint (qualitative assessment in water/soil/atmospheric aspects)",
+      "Coffee latte art / tea latte adapted (foam texture)"
     ],
-    "marker_style": "对勾+三角+短横+浅琥珀高亮'需试喝'",
-    "highlight_winner_per_row": "true, 不固定同一侧赢, 以客观符号为准"
+    "marker_style": "Checkmark + triangle + short dash + light amber highlight 'need to sample'",
+    "highlight_winner_per_row": "true, not fixed on the same side winning, based on objective symbols"
   },
   "footer": {
-    "verdict": "补蛋白优先牛奶; 乳糖不适或要换口味时可用燕麦奶+均衡膳食。看配料表, 不迷信包装文案。",
+    "verdict": "prioritize milk for protein; when lactose intolerant or wanting a flavor switch, you can use oat milk + balanced diet. Check ingredient lists, don’t blindly trust packaging claims.",
     "winner_badge": {
       "enabled": "false",
       "label": "",
@@ -51,11 +51,11 @@
   },
   "constraints": {
     "must_keep": [
-      "中列维度名居中, 每行同高",
-      "不出现具体疾病疗效承诺"
+      "Central column dimension names centered, each line the same height.",
+      "No specific disease efficacy promises"
     ],
     "avoid": [
-      "用极端口号否定任一饮品"
+      "Use extreme slogans to deny any beverage"
     ]
   }
 }

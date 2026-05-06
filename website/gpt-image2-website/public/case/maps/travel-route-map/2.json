@@ -1,60 +1,60 @@
 {
   "type": "Travel itinerary map.",
   "goal": "Generate a main image for a classic seven-day road trip guide along Route 66 in America, suitable for landscape covers and long-format initial screens.",
-  "style": "做旧麻黄地图纸 + 丝网印刷式扁平色块，路边元素带美式公路漫画味",
+  "style": "Weathered yellow map paper + screen printed flat color blocks, roadside elements with American highway comic flavor",
   "title_section": {
-    "title_text": "Route 66 七日·西部光与尘",
-    "subtitle": "D1–D7 小镇·峡谷·终抵太平洋日落"
+    "title_text": "Route 66 Seven Days · Western Light and Dust",
+    "subtitle": "D1–D7 Towns, Canyons, until finally reaching the Pacific Sunset"
   },
   "route": {
-    "transport": "SUV/房车自驾为主",
+    "transport": "SUV/RV Self-Driving as Main Focus",
     "stops": [
-      "D1 阿尔伯克基：老镇霓虹与热气球博物馆 → 夜宿 66 公路汽车旅馆",
-      "D2 石化林与彩绘沙漠：东入口入园一日纵穿，宿霍尔布鲁克汽车旅馆与恐龙像合影",
-      "D3 塞多纳红岩与教堂岩：短徒步与日落，夜宿红岩下民宿",
-      "D4 大峡谷南缘：Mather Point 与光明天使径择一短走，图萨扬补给",
-      "D5 胡佛水坝与米德湖观景点 → 进拉斯维加斯大道夜游收束日",
-      "D6 莫哈维沙漠路段：金曼老路牌博物馆 → 安博伊至巴斯托一线沙漠公路片拍摄",
-      "D7 圣莫尼卡码头 66 终点牌与太平洋日落，机场或市区返程"
+      "D1 Albuquerque: Old Town Neon and Hot Air Balloon Museum → Overnight at Route 66 Motel",
+      "D2 Petrified Forest and Painted Desert: Enter through east entrance for a day crossing, stay at Holbrook motel and take a photo with dinosaur statue",
+      "D3 Sedona Red Rock and Cathedral Rock: Short hike and sunset, stay overnight at a lodge beneath the red rocks",
+      "D4 Grand Canyon South Rim: Short walk at Mather Point or Bright Angel Trail, supplies at Tusayan",
+      "D5 Hoover Dam and Lake Mead overlook → End the day with a night tour of Las Vegas Boulevard",
+      "D6 Mojave Desert route: Route 66 Museum in Kingman → Filming on the desert highway from Amboy to Barstow",
+      "D7 Santa Monica Pier Route 66 End sign and Pacific sunset, return to airport or downtown"
     ],
-    "line_style": "橘黄粗实线为主公路，白虚线示可选景观大道，星形钉示每晚住宿镇"
+    "line_style": "Orange-yellow thick solid line shows the main highway, white dashed line indicates optional scenic boulevard, star-shaped nails indicate lodging towns every night."
   },
-  "stop_illustrations": "热气球、石化木、红岩、峡谷断崖、水坝、霓虹赌场、路牌、码头摩天轮",
+  "stop_illustrations": "Hot air balloon, petrified wood, red rock, canyon cliffs, dam, neon casino, road sign, pier ferris wheel",
   "side_panel": {
     "enabled": "true",
-    "position": "下缘横带",
-    "content_type": "每天加油/补水/看日落提示 各 1 行"
+    "position": "Bottom edge horizontal band",
+    "content_type": "One line each for daily encouragement / hydration / sunset watching reminders"
   },
   "side_panel_bullets": {
     "notes": [
-      "沙漠段备双倍饮用水与防晒",
-      "大峡谷南北缘季节开放不同，图中为南缘常规线",
-      "拉斯住宿周末溢价高，宜提前订",
-      "金曼到巴斯托为长无服务段，油表半箱即加"
+      "Prepare double the drinking water and sunscreen for the desert segment.",
+      "The seasons of the Grand Canyon's north and south rims open differently; the image shows the south rim's regular line.",
+      "Las Vegas accommodation premium is high on weekends, should book in advance",
+      "Long no-service section from Kingman to Barstow, refuel when the gauge is half full."
     ]
   },
   "legend": {
     "items": [
-      "橘黄实线：Route 66 主行车线（示意段）",
-      "蓝色波纹：可顺访水体",
-      "红色三角：需购票的国家公园/景点入口",
-      "小床：建议住宿点"
+      "Orange-yellow solid line: Route 66 main roadway (illustrative section).",
+      "Blue ripples: can flow into bodies of water",
+      "Red Triangle: Entrance to National Parks/Sights Requiring Tickets",
+      "Small bed: recommended accommodation"
     ]
   },
   "extras": [
-    "复古 66 盾形路徽角标",
-    "免责声明：本图为旅行灵感示意，以实时路况与公园官网为准"
+    "Vintage 66 shield-shaped road badge",
+    "Disclaimer: This image is for travel inspiration illustration, based on real-time road conditions and the park's official website"
   ],
   "constraints": {
     "must_keep": [
       "自东向西推进感清楚",
-      "地质景观多样但不地理穿越矛盾",
-      "英文地名与中文并陈可读"
+      "Geological Landscapes Diverse but Not Geographically Contradictory",
+      "English place names and Chinese presented together are readable"
     ],
     "avoid": [
-      "把芝加哥与 LA 同屏画成一天可达",
+      "Draw Chicago and LA on the same screen as reachable in a day",
       "路线上文字密度盖过图",
-      "赛博或东亚元素误插入"
+      "Cyber or East Asian elements mistakenly inserted"
     ]
   }
 }

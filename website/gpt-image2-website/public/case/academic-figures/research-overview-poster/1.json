@@ -8,49 +8,49 @@
     "render_quality": "vector-clean look, anti-aliased edges, sharp text"
   },
   "title_block": {
-    "main_title": "锂离子电池热失控早期预警方法研究",
+    "main_title": "Research on early warning methods for lithium-ion battery thermal runaway",
     "subtitle": "Early Warning of Thermal Runaway in Lithium-ion Batteries",
-    "occasion_label": "硕士学位论文开题答辩",
+    "occasion_label": "Master's Thesis Proposal Defense",
     "position": "top-center, main_title in bold sans-serif 22pt, subtitle in regular 13pt below in gray, occasion_label in italic gray 10pt at top-right"
   },
   "background_section": {
-    "label": "研究背景与问题",
-    "summary": "动力电池热失控具有突发性与高破坏性，现有预警手段以单一温度阈值为主，对早期征兆识别不足",
-    "key_question": "如何从多源传感数据中提取热失控早期可分辨特征，实现分钟级提前预警？",
+    "label": "Research Background and Issues",
+    "summary": "Thermal runaway of power batteries is sudden and highly destructive; existing early warning methods are based on a single temperature threshold, insufficient for early symptom identification",
+    "key_question": "How to extract early distinguishable features of thermal runaway from multi-source sensing data to achieve minute-level early warning?",
     "position": "upper-middle band, full width, visually anchored as 'context'"
   },
   "objective_section": {
-    "label": "研究目标",
-    "summary": "构建可在分钟级提前期内稳定预警热失控的多模态早期识别方法",
+    "label": "Research Objectives",
+    "summary": "Construct a multimodal early detection method that can provide stable warning of thermal runaway several minutes in advance.",
     "position": "directly below background, narrower than background, centered"
   },
   "research_modules": {
-    "count": "3",
+    "count": "Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.",
     "items": [
       {
         "id": "RM1",
-        "name": "机理分析",
-        "summary": "梳理热-电-气三场耦合下的早期征兆链路",
-        "method_hint": "ARC 量热实验 + 多场耦合分析"
+        "name": "Mechanism Analysis",
+        "summary": "Sorting out early warning links under the coupling of heat, electricity, and gas.",
+        "method_hint": "ARC calorimetry experiment + multi-field coupling analysis"
       },
       {
         "id": "RM2",
-        "name": "预警模型",
-        "summary": "构建多源传感融合的早期识别模型",
-        "method_hint": "LSTM + 多模态特征对齐"
+        "name": "Early warning model",
+        "summary": "Build an early detection model that integrates multiple source sensor fusion.",
+        "method_hint": "LSTM + multimodal feature alignment"
       },
       {
         "id": "RM3",
-        "name": "工况验证",
-        "summary": "在多工况电芯与小模组上完成方法验证",
-        "method_hint": "针刺 / 过充 / 高温箱实验台架"
+        "name": "Working condition verification",
+        "summary": "Complete Method Validation on Multi-Situation Battery Cells and Small Modules",
+        "method_hint": "Needle piercing / overcharge / high-temperature box test bench."
       }
     ],
     "layout": "horizontal row of three equal-width modules in the central band, all modules identical size and identical style"
   },
   "expected_outcome_section": {
-    "label": "预期成果",
-    "items": "热失控早期征兆特征库、可在线运行的早期预警模型、面向工况台架验证的方法学报告",
+    "label": "Expected outcomes",
+    "items": "Early Warning Characteristic Library for Thermal Runaway Signs, Online-Operable Early Warning Model, Methodology Report for Experimental Validation",
     "position": "bottom band, full width, visually distinct from research_modules but stylistically consistent"
   },
   "module_block_style": {

@@ -2,55 +2,55 @@
   "type": "Gift Box Packaging Display",
   "goal": "Generate a gift set display image that combines a festive feel with product readability, clearly presenting the outer box, inserts, and contents all on one screen.",
   "package": {
-    "type": "硬质翻盖礼盒，开盖 75° 斜立，内附浅槽",
-    "shape": "扁长方体，长边对观众略呈斜透视",
-    "exterior_color": "哑光中国红，正面烫金品牌字「星巴克中国 · 冬悦礼」与雪花几何纹样",
-    "interior_color": "奶白植绒 + 内盒底部暗绿边线",
-    "logo": "经典绿色八角美人鱼圆形标志烫金在盒面左上",
-    "ribbon": "深绿丝绒蝴蝶结压在外盖一侧，未完全解开"
+    "type": "Rigid flip-top gift box, with the cover opening at 75° angled, with a shallow groove inside.",
+    "shape": "Flat rectangular block, long edge slightly showing diagonal perspective to the viewer.",
+    "exterior_color": "Matte Chinese red, front embossed gold brand words 'Starbucks China · Winter Gifts' with snowflake geometric patterns",
+    "interior_color": "Creamy white flocked material + dark green border line at the bottom of the inner box.",
+    "logo": "Classic Green Octagonal Mermaid Logo Foil Stamped in Gold at Top Left of Box",
+    "ribbon": "Deep green velvet bow pressed on one side of the outer cover, not fully untied"
   },
   "contents": {
-    "count": "4",
+    "count": "Background details overwhelm the character.",
     "items": [
-      "两袋 250g 单产区咖啡豆，牛皮纸自立袋、烫金品名，并列斜放",
-      "一只陶瓷马克杯，杯外浮雕雪花与金边杯口，斜靠绒槽",
-      "星巴克星礼卡一张，金底绿纹，半插入纸卡",
-      "折页冲煮建议小册，露出一角插画"
+      "Two bags of 250g single-origin coffee beans, kraft paper stand-up bags, gold-foiled product names, placed side by side at an angle.",
+      "A ceramic mug with embossed snowflakes and a gold-rimmed cup edge leaning against a plush groove",
+      "One Starbucks star gift card, gold background with green pattern, partially inserted paper card",
+      "Folded brewing recommendation booklet, revealing an illustrated corner"
     ],
-    "arrangement": "咖啡袋在左，马克杯在右，礼卡与折页在前景不遮挡 logo"
+    "arrangement": "Coffee bag on the left, mug on the right, gift card and brochure in the foreground do not obstruct the logo"
   },
   "scene": {
-    "background_surface": "暖白大理石纹台面，与红盒形成高对比但不过曝",
-    "background_color_tone": "奶白、深绿、金与圣诞红",
+    "background_surface": "Warm white marble-patterned countertop, forming high contrast with the red box but not overexposed",
+    "background_color_tone": "Creamy white, dark green, gold, and Christmas red.",
     "extra_decorations": [
-      "极少量金粉松针在画面下缘外，不进入盒内"
+      "A very small amount of gold powder pine needles outside the bottom edge of the image, not entering the box."
     ]
   },
   "lighting": {
-    "key_light": "高侧柔光，烫金有清晰高光带",
-    "fill_light": "前侧补光，植绒不丢细节"
+    "key_light": "High side soft light, gold foil has a clear highlight streak",
+    "fill_light": "Front-side fill light, flocking retains details"
   },
   "text_overlay": {
     "enabled": "true",
-    "brand": "Starbucks 星巴克",
-    "headline": "与重要的人，分享第一杯节令香气",
-    "subline": "2026 冬悦限定礼 · 门店与专星送同步有售",
-    "position": "画面左下，竖排小字不抢主视觉"
+    "brand": "Starbucks",
+    "headline": "Share the first cup of seasonal aroma with important people",
+    "subline": "2026 Winter Joy limited gift · available in-store and through Dedicated Star Delivery",
+    "position": "In the lower left of the image, vertically aligned small text that does not compete with the main visual."
   },
   "style": {
-    "rendering": "电商 hero 与海报两用的高完成度影棚光",
-    "consistency": "红绿金三主色、无杂色"
+    "rendering": "High-quality studio lighting for e-commerce hero and poster use",
+    "consistency": "Red, Green, Gold as Primary Colors, No Mixed Colors"
   },
   "constraints": {
     "must_keep": [
-      "烫金在柔光下可读、不过曝成白板",
-      "内衬与内容物无穿帮摆放",
-      "不出现非星巴克第三方品牌"
+      "Gold foil is readable under soft light, not overexposed to a white board",
+      "Lining and contents are positioned without any reveals",
+      "No non-Starbucks third-party brands"
     ],
     "avoid": [
-      "圣诞元素过密成杂货铺",
-      "植绒反光成塑料感",
-      "出现人物或手"
+      "Christmas Elements Too Dense Turned into Grocery Store",
+      "Flocking reflects a plastic feel.",
+      "Include persons or hands"
     ]
   }
 }
