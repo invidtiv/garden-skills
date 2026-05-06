@@ -16,8 +16,7 @@
           "title": "Horizontal 4-Section - Large Model Long Context Retrieval-Enhanced Q&A",
           "brief": "Graphical Abstract targeting ACL / EMNLP / TPAMI style, compressing 'Retrieval-Sorting-Inference in Long Context QA' into a four-part structure: Problem → Method → Mechanism → Outcome, ratio 2:1, fully in English annotations, gray-blue as the main color + a single warm color highlighting key results.",
           "format": "json",
-          "file": "academic-figures/graphical-abstract/1.json",
-          "has_image": true
+          "file": "academic-figures/graphical-abstract/1.json"
         },
         {
           "idx": 2,
@@ -684,7 +683,8 @@
           "title": "Comprehensive Analysis of iPhone 16 Pro ( Bento Grid 8 Modules)",
           "brief": "Apple Newsroom-Style Light Gray and White Background, Large Hero Featuring Natural Titanium Back with 'Why It’s Worth Upgrading' Three Points, Remaining for Specification Comparisons, Computational/Imaging Chips, Price Range, System Highlights, and Purchasing Tips. Suitable for Digital Media One-Image Flow.",
           "format": "json",
-          "file": "infographics/bento-grid-infographic/1.json"
+          "file": "infographics/bento-grid-infographic/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
