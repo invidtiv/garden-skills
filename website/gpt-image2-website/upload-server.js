@@ -4,6 +4,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import sharp from 'sharp';
 
 const execAsync = promisify(exec);
 const app = express();
@@ -24,19 +25,16 @@ app.use((req, res, next) => {
   next();
 });
 
-// File upload handler
+// File upload handler - store temporarily
 const upload = multer({
   storage: multer.diskStorage({
     destination: async (req, file, cb) => {
-      const { category, template, idx } = req.params;
-      const dir = path.join(CASE_ROOT, category, template);
+      const dir = path.join(SITE_ROOT, 'tmp-uploads');
       await fs.mkdir(dir, { recursive: true });
       cb(null, dir);
     },
     filename: (req, file, cb) => {
-      const { idx } = req.params;
-      const ext = path.extname(file.originalname) || '.png';
-      cb(null, `${idx}${ext}`);
+      cb(null, `upload-${Date.now()}${path.extname(file.originalname)}`);
     }
   }),
   limits: { fileSize: 10 * 1024 * 1024 }, // 10MB
@@ -58,47 +56,51 @@ app.post('/upload/:category/:template/:idx', upload.single('image'), async (req,
     }
 
     const { category, template, idx } = req.params;
-    const imagePath = path.join(CASE_ROOT, category, template, `${idx}${path.extname(req.file.originalname)}`);
+    const targetDir = path.join(CASE_ROOT, category, template);
+    await fs.mkdir(targetDir, { recursive: true });
 
-    // Update cases.json to mark this case as having an image
-    const casesJsonPath = path.join(SITE_ROOT, 'src', 'data', 'cases.json');
-    const casesData = JSON.parse(await fs.readFile(casesJsonPath, 'utf-8'));
+    const pngPath = path.join(targetDir, `${idx}.png`);
+    const thumbPath = path.join(targetDir, `${idx}-thumb.webp`);
+
+    // Convert to PNG (max 1600px width to keep files reasonable)
+    await sharp(req.file.path, { failOn: 'none' })
+      .rotate()
+      .resize({ width: 1600, withoutEnlargement: true })
+      .png({ compressionLevel: 6 })
+      .toFile(pngPath);
+
+    // Generate thumbnail
+    await sharp(pngPath, { failOn: 'none' })
+      .resize({ width: 800, withoutEnlargement: true })
+      .webp({ quality: 78, effort: 4 })
+      .toFile(thumbPath);
+
+    // Clean up temp file
+    await fs.unlink(req.file.path).catch(() => {});
+
+    // Update _mapping.json to mark as having image
+    const mappingPath = path.join(CASE_ROOT, '_mapping.json');
+    const mapping = JSON.parse(await fs.readFile(mappingPath, 'utf-8'));
     
-    // Find the case and update
-    let found = false;
-    for (const cat of casesData.categories || []) {
-      for (const c of cat.cases || []) {
-        if (c.file === `${category}/${template}/${idx}.json`) {
+    let mappingUpdated = false;
+    for (const item of mapping.items || []) {
+      if (item.category !== category || item.template_basename !== template) continue;
+      for (const c of item.cases || []) {
+        if (String(c.idx) === String(idx)) {
           c.has_image = true;
-          c.image = `${category}/${template}/${idx}${path.extname(req.file.originalname)}`;
-          found = true;
+          mappingUpdated = true;
           break;
         }
       }
-      if (found) break;
+    }
+    
+    if (mappingUpdated) {
+      await fs.writeFile(mappingPath, JSON.stringify(mapping, null, 2));
     }
 
-    if (!found) {
-      // Try to find by iterating items structure
-      for (const item of casesData.items || []) {
-        for (const c of item.cases || []) {
-          if (c.file === `${category}/${template}/${idx}.json`) {
-            c.has_image = true;
-            c.image = `${category}/${template}/${idx}${path.extname(req.file.originalname)}`;
-            found = true;
-            break;
-          }
-        }
-        if (found) break;
-      }
-    }
-
-    if (found) {
-      await fs.writeFile(casesJsonPath, JSON.stringify(casesData, null, 2));
-    }
-
-    // Trigger rebuild
+    // Rebuild cases.json and site
     try {
+      await execAsync('cd ' + SITE_ROOT + ' && npm run build:data', { timeout: 60000 });
       await execAsync('cd ' + SITE_ROOT + ' && npm run build', { timeout: 60000 });
     } catch (e) {
       console.warn('Rebuild warning:', e.message);
@@ -106,8 +108,10 @@ app.post('/upload/:category/:template/:idx', upload.single('image'), async (req,
 
     res.json({
       success: true,
-      path: imagePath,
-      url: `/case/${category}/${template}/${idx}${path.extname(req.file.originalname)}`
+      path: pngPath,
+      thumb: thumbPath,
+      url: `/case/${category}/${template}/${idx}.png`,
+      thumb_url: `/case/${category}/${template}/${idx}-thumb.webp`
     });
   } catch (err) {
     console.error('Upload error:', err);

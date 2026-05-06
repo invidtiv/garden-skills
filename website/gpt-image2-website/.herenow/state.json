@@ -17,6 +17,12 @@
       "claimToken": "f52a842fe08304a87e1ac3d053b4cac515fa9a7898fd53765d4b5d8e6b5e9d36",
       "claimUrl": "https://here.now/claim?slug=mystic-pickle-4vap&token=f52a842fe08304a87e1ac3d053b4cac515fa9a7898fd53765d4b5d8e6b5e9d36",
       "expiresAt": "2026-05-07T18:48:44.971Z"
+    },
+    "alpine-birch-wypt": {
+      "siteUrl": "https://alpine-birch-wypt.here.now/",
+      "claimToken": "543838cc28d714e212202a663043073b5d2b5d5b0838e3612dcbfb4a5e2a7c0b",
+      "claimUrl": "https://here.now/claim?slug=alpine-birch-wypt&token=543838cc28d714e212202a663043073b5d2b5d5b0838e3612dcbfb4a5e2a7c0b",
+      "expiresAt": "2026-05-07T22:27:17.607Z"
     }
   }
 }
