@@ -801,7 +801,8 @@
           "title": "7-step beginner guide to home fitness.",
           "brief": "No-equipment workout start, transitioning from warm-up, breathing, segment training to stretching and recovery, in mint, coral, and deep brown colors, suitable for novice athlete follow-along posters.",
           "format": "json",
-          "file": "infographics/step-by-step-infographic/1.json"
+          "file": "infographics/step-by-step-infographic/1.json",
+          "has_image": true
         },
         {
           "idx": 2,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T23:33:52.097Z",
+  "generated_at": "2026-05-06T23:41:52.386Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -108,7 +108,7 @@
         "infographics/step-by-step-infographic"
       ],
       "total": 12,
-      "ready": 2
+      "ready": 3
     },
     "maps": {
       "key": "maps",
@@ -1494,9 +1494,9 @@
       "prompt_path": "infographics/step-by-step-infographic/1.json",
       "prompt_url": "/case/infographics/step-by-step-infographic/1.json",
       "prompt_content": "{\n  \"type\": \"Step-by-Step Tutorial Infographic\",\n  \"goal\": \"7 Clear Steps for Readers to Start Practicing Safely at Home, Reminder to Act within Their Capabilities.\",\n  \"canvas\": {\n    \"aspect_ratio\": \"3:4 portrait\",\n    \"background\": \"warm cream #FAF6EE, subtle paper grain 5% opacity\"\n  },\n  \"header\": {\n    \"main_title\": \"Beginner home fitness 7-step guide (no equipment needed).\",\n    \"subtitle\": \"Each session lasts 20-30 minutes · First learn the quality of actions, then talk about intensity\",\n    \"optional_finished_image\": \"Top right corner rounded square: silhouette of a plank position + green check mark\"\n  },\n  \"palette\": {\n    \"primary\": \"mint #6BBF90\",\n    \"secondary\": \"coral #E07A5F\",\n    \"neutral\": \"deep brown #4A3A2E\",\n    \"rule\": \"3 main colors, each step's illustration in the same flat hand-drawn style\"\n  },\n  \"layout\": {\n    \"style\": \"vertical-zigzag\",\n    \"options_explained\": {\n      \"use\": \"Odd steps lean left, even steps lean right, connected by curved arrows.\"\n    }\n  },\n  \"steps\": {\n    \"count\": \"Fluorescent blue-purple gradient background steals the spotlight.\",\n    \"structure_per_step\": [\n      \"Large round number stamp.\",\n      \"4-8 bold small titles\",\n      \"Simplified character or equipment icons (yoga mat/chair)\",\n      \"1–2 lines of description (no more than this number of lines)\"\n    ],\n    \"items\": [\n      \"01 Clear the Area: Half Square Meter Non-slip Mat, Remove Clutter, Change to Sports Shoes\",\n      \"02 Joint Warm-up: Shoulder Circles, Cat-Cow Pose, Half Squat Circles, Each for 1 Minute\",\n      \"03 Breathing: Nose Inhale 4 Counts, Mouth Slow Exhale 6 Counts, Remember Breathing Throughout Without Screen Division\",\n      \"04 Squat basics: Chair sit-stand 12 times × 2 sets, knees not caving inward\",\n      \"05 Upper body push: Wall push-ups or kneeling position, 8–10 times × 2 sets\",\n      \"06 Core: Dead bug style or side plank, each for 20 seconds × 2, don’t hold your breath\",\n      \"07 Cool down: Forward bend stretch for the back of thighs and chest expansion, each for 20 seconds, drink warm water\"\n    ]\n  },\n  \"connectors\": {\n    \"style\": \"hand-drawn curved arrows with 2pt stroke in neutral brown\",\n    \"rule\": \"Small footprints can be added between steps.\"\n  },\n  \"footer\": {\n    \"tip\": \"If experiencing chest pain, dizziness, or sharp joint pain, stop training immediately and seek medical attention. Pregnant women and postoperative individuals should follow medical advice.\",\n    \"credit\": \"Family fitness cheat sheet · Can be sent to WeChat family group and friends\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"7 numbered items with consistent style\",\n      \"Each step illustration has the same style\",\n      \"No diamond decision frame\"\n    ],\n    \"avoid\": [\n      \"Helvetica pure typesetting\",\n      \"Write the steps in a 12-line long text\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/infographics/step-by-step-infographic/1.png",
+      "thumb_url": "/case/infographics/step-by-step-infographic/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "infographics/step-by-step-infographic/2",

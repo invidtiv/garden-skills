@@ -285,11 +285,12 @@
   font-size: 28px;
   line-height: 1.25;
   font-weight: 500;
-  margin: 0;
+  margin: var(--s-2) 0 0;
   color: var(--paper);
 }
-.cd-desc {
-  margin-top: var(--s-3);
+.cd-brief {
+  margin-top: var(--s-4);
+  margin-bottom: var(--s-4);
   font-size: 14px;
   line-height: 1.55;
   color: var(--text-mute);
@@ -299,7 +300,7 @@
 .cd-tabs {
   display: flex;
   gap: var(--s-1);
-  padding: 0 var(--s-6);
+  padding: var(--s-3) var(--s-6) 0;
   border-bottom: 1px solid var(--line);
   flex-shrink: 0;
 }
@@ -307,7 +308,7 @@
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: var(--s-3) var(--s-4);
+  padding: var(--s-4) var(--s-4) var(--s-3);
   background: transparent;
   border: 0;
   border-bottom: 2px solid transparent;
@@ -376,9 +377,10 @@
 .cd-meta {
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: var(--s-3) var(--s-5);
+  gap: var(--s-4) var(--s-5);
   font-size: 13px;
   margin-top: var(--s-5);
+  margin-bottom: var(--s-5);
 }
 .cd-meta dt {
   color: var(--text-faint);
