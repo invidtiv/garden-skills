@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T23:00:17.982Z",
+  "generated_at": "2026-05-06T23:08:35.886Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -108,7 +108,7 @@
         "infographics/step-by-step-infographic"
       ],
       "total": 12,
-      "ready": 1
+      "ready": 2
     },
     "maps": {
       "key": "maps",
@@ -1386,9 +1386,9 @@
       "prompt_path": "infographics/hand-drawn-infographic/1.txt",
       "prompt_url": "/case/infographics/hand-drawn-infographic/1.txt",
       "prompt_content": "A hand-drawn educational infographic in the style of a high-quality bullet journal page.\n\nTopic: 在家用全脂牛奶和少量市售酸奶作引子，12 小时做出浓稠希腊式酸奶的完整注意点。\n\nAspect ratio: 3:4 portrait.\n\nBackground:\n- Warm cream / off-white #F5F0E8 paper texture with subtle grain.\n- Optional washi-tape strips in the corners: diagonal soft mint and dusty rose stripes, muted only.\n- DO NOT use pure white or pure black background.\n\nColor palette:\n- macaron — warm cream #F5F0E8 background, muted blue #A8D8EA, lavender #D5C6E0, mint #B5E5CF, peach #F8D5C4, coral red #E8655A accent for tips.\n- Limit to 4–5 colors total. Accent color only for \"注意\"和食品安全提示.\n\nTitle:\n- 主标题「6 步在家希腊酸奶」用顶部大号手写体花字，放在手绘波浪线边框内.\n- 副题小字：全脂牛奶 1L · 种菌 2 大勺 · 约 8–12 小时\n\nBody:\n- 6 information items, each a hand-drawn rounded card with:\n  - 圆形编号章（1–6，线条略抖）\n  - 小标题加粗手写感\n  - 1–2 行说明（消毒容器、先加热到 85 °C 再降温到 40–45 °C、接种、密封发酵、过滤乳清、冷藏钝化）\n  - 一步一个小涂鸦：奶锅、温度计、玻璃罐、纱布滤网、玻璃碗装成品\n- Layout: 纵向蛇形，步与步之间用弯曲箭头连接，箭头旁可写「等待」\n\nDoodle decorations (sprinkled, not symmetric):\n- 小牛奶滴、优格勺、小星星; 在「勿频繁开盖」旁画一条可爱的禁止小手\n- 一句中文强调圈出：发酵中途不要大幅晃动罐子\n\nStyle enforcement:\n- ALL lines have visible hand-drawn wobble — never perfectly straight\n- Color fills stop short of the outline (hand-painted gap)\n- All text is hand-lettered — NO Helvetica, NO Arial, NO system UI fonts\n- Slight imperfection is intentional; single coherent notebook page\n\nComposition:\n- Whitespace about 30–40% of canvas; title > 步骤名 > 正文 > 装饰\n\nLanguage: 中文（手写体）；温标与单位保留阿拉伯数字和 °C。\n\nOptional mascot: 一只简笔小奶牛头像在左下角，只占画面宽度的 6%，不要抢主流程。\n",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/infographics/hand-drawn-infographic/1.png",
+      "thumb_url": "/case/infographics/hand-drawn-infographic/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "infographics/hand-drawn-infographic/2",

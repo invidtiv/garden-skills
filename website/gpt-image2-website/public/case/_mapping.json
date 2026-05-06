@@ -731,7 +731,8 @@
           "title": "How to Make Greek Yogurt at Home",
           "brief": "Kitchen Notebook Feel, Portrait 3:4, Suitable for Public Accounts or Xiaohongshu. 6 Steps, Clearly Written Ingredients and Duration, No Computer Font Requirements.",
           "format": "txt",
-          "file": "infographics/hand-drawn-infographic/1.txt"
+          "file": "infographics/hand-drawn-infographic/1.txt",
+          "has_image": true
         },
         {
           "idx": 2,
