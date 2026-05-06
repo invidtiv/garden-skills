@@ -16,7 +16,8 @@
           "title": "Horizontal 4-Section - Large Model Long Context Retrieval-Enhanced Q&A",
           "brief": "Graphical Abstract targeting ACL / EMNLP / TPAMI style, compressing 'Retrieval-Sorting-Inference in Long Context QA' into a four-part structure: Problem → Method → Mechanism → Outcome, ratio 2:1, fully in English annotations, gray-blue as the main color + a single warm color highlighting key results.",
           "format": "json",
-          "file": "academic-figures/graphical-abstract/1.json"
+          "file": "academic-figures/graphical-abstract/1.json",
+          "has_image": true
         },
         {
           "idx": 2,

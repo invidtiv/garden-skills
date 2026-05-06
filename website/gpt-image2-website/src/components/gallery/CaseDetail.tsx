@@ -19,6 +19,7 @@ export function CaseDetail({ id, navigate }: Props) {
   const [copied, setCopied] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [uploaded, setUploaded] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
   // Progressive image load: show the (already-cached) thumb instantly, then
   // crossfade to the full PNG once it decodes. Reset on case change.
   const [fullLoaded, setFullLoaded] = useState(false);
@@ -80,22 +81,48 @@ export function CaseDetail({ id, navigate }: Props) {
   const onUpload = async (file: File) => {
     if (!c || uploading) return;
     setUploading(true);
-    try {
-      const form = new FormData();
-      form.append('image', file);
-      const res = await fetch(`http://100.84.218.5:3002/upload/${c.category}/${c.template_key}/${c.idx}`, {
-        method: 'POST',
-        body: form,
-      });
-      if (res.ok) {
-        setUploaded(true);
-        setTimeout(() => window.location.reload(), 800);
+    setUploadError(null);
+    setUploaded(false);
+
+    // Try current origin first, then fallback to Tailscale IP
+    const apis = [
+      `${window.location.protocol}//${window.location.hostname}:3002`,
+      'http://100.84.218.5:3002',
+    ];
+
+    for (const apiBase of apis) {
+      try {
+        const form = new FormData();
+        form.append('image', file);
+        const res = await fetch(`${apiBase}/upload/${c.category}/${c.template_key}/${c.idx}`, {
+          method: 'POST',
+          body: form,
+        });
+        if (!res.ok) {
+          const errText = await res.text().catch(() => 'Upload failed');
+          throw new Error(errText);
+        }
+        const data = await res.json();
+        if (data.success) {
+          setUploaded(true);
+          setTimeout(() => window.location.reload(), 4000);
+          setUploading(false);
+          return;
+        }
+        throw new Error(data.error || 'Upload failed');
+      } catch (e: any) {
+        // Try next endpoint
+        if (e.message?.includes('Failed to fetch') || e.message?.includes('NetworkError')) {
+          continue;
+        }
+        setUploadError(e.message || 'Upload failed. If using HTTPS, switch to the Tailscale HTTP URL (100.84.218.5:8080).');
+        setUploading(false);
+        return;
       }
-    } catch {
-      // ignore
-    } finally {
-      setUploading(false);
     }
+
+    setUploadError('Could not reach upload server. Please access the site via http://100.84.218.5:8080/ (Tailscale) and try again.');
+    setUploading(false);
   };
 
   return (
@@ -170,11 +197,21 @@ export function CaseDetail({ id, navigate }: Props) {
                         if (file) onUpload(file);
                       }}
                     />
-                    <span className="btn btn-primary cd-upload-btn">
-                      {uploading ? 'Uploading…' : uploaded ? 'Uploaded!' : 'Upload Generated Image'}
+                    <span className={`btn btn-primary cd-upload-btn ${uploadError ? 'cd-upload-btn-error' : ''}`}>
+                      {uploading ? 'Uploading…' : uploaded ? 'Uploaded!' : uploadError ? 'Retry Upload' : 'Upload Generated Image'}
                     </span>
                   </label>
                   <p className="cd-upload-hint mono">PNG / JPG / WebP · max 10MB</p>
+                  {uploadError && (
+                    <p className="cd-upload-error" style={{ color: '#E8472C', fontSize: '13px', marginTop: '8px' }}>
+                      {uploadError}
+                    </p>
+                  )}
+                  {uploaded && (
+                    <p className="cd-upload-success" style={{ color: '#3B7A57', fontSize: '13px', marginTop: '8px' }}>
+                      Success! Reloading in a few seconds…
+                    </p>
+                  )}
                 </div>
               </div>
             )}

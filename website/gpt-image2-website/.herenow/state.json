@@ -23,6 +23,12 @@
       "claimToken": "543838cc28d714e212202a663043073b5d2b5d5b0838e3612dcbfb4a5e2a7c0b",
       "claimUrl": "https://here.now/claim?slug=alpine-birch-wypt&token=543838cc28d714e212202a663043073b5d2b5d5b0838e3612dcbfb4a5e2a7c0b",
       "expiresAt": "2026-05-07T22:27:17.607Z"
+    },
+    "zephyr-zephyr-pgg3": {
+      "siteUrl": "https://zephyr-zephyr-pgg3.here.now/",
+      "claimToken": "e92ff794f6a0fc0dd7b8e7a0e715ca33483ce88756130290eeebfb14a8c7244e",
+      "claimUrl": "https://here.now/claim?slug=zephyr-zephyr-pgg3&token=e92ff794f6a0fc0dd7b8e7a0e715ca33483ce88756130290eeebfb14a8c7244e",
+      "expiresAt": "2026-05-07T22:43:18.404Z"
     }
   }
 }
