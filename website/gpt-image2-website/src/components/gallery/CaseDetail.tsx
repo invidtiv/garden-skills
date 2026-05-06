@@ -20,6 +20,12 @@ export function CaseDetail({ id, navigate }: Props) {
   const [uploading, setUploading] = useState(false);
   const [uploaded, setUploaded] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
+  // Image zoom/pan state
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [dragging, setDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [panStart, setPanStart] = useState({ x: 0, y: 0 });
   // Progressive image load: show the (already-cached) thumb instantly, then
   // crossfade to the full PNG once it decodes. Reset on case change.
   const [fullLoaded, setFullLoaded] = useState(false);
@@ -46,10 +52,12 @@ export function CaseDetail({ id, navigate }: Props) {
     return () => window.removeEventListener('keydown', onKey);
   }, [navigate, prev, next]);
 
-  // Reset tab + scroll on case change.
+  // Reset tab + scroll + zoom on case change.
   useEffect(() => {
     setTab('prompt');
     setCopied(false);
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
   }, [id]);
 
   if (!c || !tpl) {
@@ -76,6 +84,44 @@ export function CaseDetail({ id, navigate }: Props) {
     } catch {
       // ignore
     }
+  };
+
+  // Zoom / pan handlers
+  const onWheelZoom = (e: React.WheelEvent) => {
+    if (!c?.has_image) return;
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.15 : 0.15;
+    setZoom((z) => {
+      const next = Math.min(3, Math.max(1, z + delta));
+      if (next === 1) setPan({ x: 0, y: 0 });
+      return next;
+    });
+  };
+
+  const onMouseDownPan = (e: React.MouseEvent) => {
+    if (!c?.has_image || zoom <= 1) return;
+    e.preventDefault();
+    setDragging(true);
+    setDragStart({ x: e.clientX, y: e.clientY });
+    setPanStart({ x: pan.x, y: pan.y });
+  };
+
+  const onMouseMovePan = (e: React.MouseEvent) => {
+    if (!dragging) return;
+    e.preventDefault();
+    setPan({
+      x: panStart.x + (e.clientX - dragStart.x),
+      y: panStart.y + (e.clientY - dragStart.y),
+    });
+  };
+
+  const onMouseUpPan = () => {
+    setDragging(false);
+  };
+
+  const onDoubleClickReset = () => {
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
   };
 
   const onUpload = async (file: File) => {
@@ -140,7 +186,16 @@ export function CaseDetail({ id, navigate }: Props) {
         <div className="cd-media">
           <div className="cd-media-frame">
             {c.has_image ? (
-              <div className={`cd-media-stack ${fullLoaded ? 'cd-media-loaded' : ''}`}>
+              <div
+                className={`cd-media-stack ${fullLoaded ? 'cd-media-loaded' : ''} ${zoom > 1 ? 'cd-media-zoomed' : ''} ${dragging ? 'cd-media-dragging' : ''}`}
+                onWheel={onWheelZoom}
+                onMouseDown={onMouseDownPan}
+                onMouseMove={onMouseMovePan}
+                onMouseUp={onMouseUpPan}
+                onMouseLeave={onMouseUpPan}
+                onDoubleClick={onDoubleClickReset}
+                title="Scroll to zoom, drag to pan, double-click to reset"
+              >
                 {!fullLoaded && !c.thumb_url && (
                   <span
                     className="cs-skel cd-media-skel"
@@ -168,6 +223,10 @@ export function CaseDetail({ id, navigate }: Props) {
                     alt=""
                     aria-hidden="true"
                     decoding="async"
+                    style={{
+                      transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+                      transition: dragging ? 'none' : 'transform 150ms ease',
+                    }}
                   />
                 )}
                 <img
@@ -177,9 +236,21 @@ export function CaseDetail({ id, navigate }: Props) {
                   loading="eager"
                   decoding="async"
                   onLoad={() => setFullLoaded(true)}
+                  style={{
+                    transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+                    transition: dragging ? 'none' : 'transform 150ms ease',
+                  }}
                   // @ts-expect-error: fetchpriority is a valid HTML hint, not yet in DOM types
                   fetchpriority="high"
                 />
+                {zoom > 1 && (
+                  <div className="cd-zoom-hud">
+                    <span className="mono">{Math.round(zoom * 100)}%</span>
+                    <button className="cd-zoom-reset" onClick={onDoubleClickReset} title="Reset zoom">
+                      Reset
+                    </button>
+                  </div>
+                )}
               </div>
             ) : (
               <div className="cd-media-empty">

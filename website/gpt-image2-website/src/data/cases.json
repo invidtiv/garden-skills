@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T22:55:02.001Z",
+  "generated_at": "2026-05-06T23:00:17.982Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -22,7 +22,7 @@
         "academic-figures/scientific-schematic"
       ],
       "total": 18,
-      "ready": 0
+      "ready": 1
     },
     "assets-and-props": {
       "key": "assets-and-props",
@@ -270,9 +270,9 @@
       "prompt_path": "academic-figures/graphical-abstract/1.json",
       "prompt_url": "/case/academic-figures/graphical-abstract/1.json",
       "prompt_content": "{\n  \"type\": \"Academic Journal Graphical Abstract\",\n  \"goal\": \"Create a Graphical Abstract for journal submission, extremely minimalist, white background, engineered restrained color scheme, readable within seconds, devoid of any marketing poster feel.\",\n  \"canvas\": {\n    \"aspect_ratio\": \"2:1\",\n    \"background\": \"pure white #FFFFFF\",\n    \"outer_padding\": \"60px around the diagram\",\n    \"render_quality\": \"vector-clean look, anti-aliased edges, sharp text, suitable for grayscale print\"\n  },\n  \"title_block\": {\n    \"enabled\": \"false\",\n    \"title\": \"\",\n    \"rule\": \"most journals do not allow titles inside the graphical abstract; enable only when user explicitly requested a title\"\n  },\n  \"sections\": [\n    {\n      \"id\": \"P1\",\n      \"role\": \"Problem\",\n      \"label\": \"Problem\",\n      \"summary\": \"long-context QA degrades when key evidence is buried in 100K+ token corpora\",\n      \"depiction\": \"a minimal line-art sketch of a tall stack of document pages with one tiny highlighted line, and a question mark glyph hovering above\"\n    },\n    {\n      \"id\": \"P2\",\n      \"role\": \"Method\",\n      \"label\": \"Method\",\n      \"summary\": \"two-stage retrieve-then-rerank with evidence-aware decoding\",\n      \"depiction\": \"a minimal schematic of a dense retriever feeding top-K chunks into a small reranker block, then into an LLM block, all line-art rectangles connected by thin arrows\"\n    },\n    {\n      \"id\": \"P3\",\n      \"role\": \"Process\",\n      \"label\": \"Key Mechanism\",\n      \"summary\": \"evidence-aware attention concentrates on top-ranked chunks during decoding\",\n      \"depiction\": \"a small attention strip showing K candidate chunk bars; only top-ranked bars receive denser attention lines pointing to the answer span; line-art style\"\n    },\n    {\n      \"id\": \"P4\",\n      \"role\": \"Result\",\n      \"label\": \"Outcome\",\n      \"summary\": \"consistent gains on multi-hop and needle-in-haystack benchmarks\",\n      \"depiction\": \"a minimal qualitative bar-chart sketch (no numerical tick labels) with two grouped bars per benchmark; the proposed method bars are slightly taller, drawn in line-art with a single warm tint fill\"\n    }\n  ],\n  \"section_block_style\": {\n    \"shape\": \"implicit columns separated by generous whitespace, NOT four heavy rectangles in a row\",\n    \"header_text\": \"section label in bold sans-serif, 12-13pt, top-aligned\",\n    \"summary_text\": \"single phrase, 10pt regular, max 2 lines, no period\",\n    \"depiction_size\": \"around 35-50% of column height, vertically centered\"\n  },\n  \"connectors\": {\n    \"style\": \"thin arrows (1.2px) with simple triangle arrowheads, dark gray #334155, between adjacent sections only\",\n    \"rule\": \"no crossing, no curved decorative arcs; arrows convey 'leads to' / 'analyzed by' relationships\",\n    \"label_arrows\": \"false\"\n  },\n  \"color_palette\": {\n    \"rule\": \"deep blue #1E3A8A as primary, slate blue #3B82F6 as secondary, charcoal #1F2937 for line-art and text; one low-saturation amber #F59E0B accent reserved exclusively for the Outcome bars in P4\",\n    \"must_print_grayscale_readable\": true\n  },\n  \"typography\": {\n    \"language\": \"english\",\n    \"rule\": \"english → Inter / Helvetica / Arial\",\n    \"consistency\": \"all section headers identical size; all summaries identical size; never mix serif and sans-serif\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"all four sections visually equal-weight, no section dominates\",\n      \"white background, no gradient, no decorative pattern, no photographic background\",\n      \"summaries are short phrases, never full sentences with periods\",\n      \"the figure must look like it could appear on an Elsevier / ACS / IEEE table of contents page\",\n      \"no fabricated numbers anywhere; the Outcome bars are qualitative shape only\"\n    ],\n    \"avoid\": [\n      \"marketing-poster aesthetics, brand campaign aesthetics, magazine cover aesthetics\",\n      \"3D effects, drop shadows, gradients, glossy fills, lens flare\",\n      \"cartoon mascots, emoji, decorative icons\",\n      \"stock-photo-style realistic backgrounds\",\n      \"fabricated numerical tick labels, fabricated percentages\",\n      \"saturated colors, more than 3 main colors plus 1 accent\",\n      \"watermarks, copyright stamps, vendor logos\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/academic-figures/graphical-abstract/1.png",
+      "thumb_url": "/case/academic-figures/graphical-abstract/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "academic-figures/graphical-abstract/2",
