@@ -27,8 +27,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(420px, 1fr);
   width: min(1480px, 100%);
-  height: 100dvh;
-  max-height: 100dvh;
+  height: 95dvh;
+  max-height: 95dvh;
   background: var(--ink-900);
   color: var(--paper);
   animation: scaleIn 0.45s var(--ease-out) both;
@@ -48,7 +48,7 @@
   padding: var(--s-6);
   gap: var(--s-5);
   height: 100%;
-  max-height: 100dvh;
+  max-height: 95dvh;
 }
 .cd-media-frame {
   position: relative;
@@ -68,7 +68,7 @@
   min-height: 420px;
   border-radius: var(--r-md);
   overflow: hidden;
-  max-height: calc(100dvh - 120px);
+  max-height: calc(95dvh - 120px);
 }
 .cd-media-frame img {
   max-width: 100%;
@@ -252,7 +252,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-height: 100dvh;
+  max-height: 95dvh;
   overflow: hidden;
 }
 .cd-header {
@@ -626,8 +626,8 @@
   .cd-card {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    height: 100dvh;
-    max-height: 100dvh;
+    height: 95dvh;
+    max-height: 95dvh;
   }
   .cd-media {
     border-right: 0;
@@ -635,10 +635,10 @@
     padding: var(--s-4);
     min-height: 280px;
     overflow-y: visible;
-    max-height: 50dvh;
+    max-height: 47.5dvh;
   }
-  .cd-media-frame { min-height: 280px; max-height: calc(50dvh - 60px); }
-  .cd-content { height: auto; max-height: 50dvh; }
+  .cd-media-frame { min-height: 280px; max-height: calc(47.5dvh - 60px); }
+  .cd-content { height: auto; max-height: 47.5dvh; }
 }
 
 /* Dialog */

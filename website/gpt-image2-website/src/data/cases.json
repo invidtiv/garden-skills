@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T23:50:36.035Z",
+  "generated_at": "2026-05-06T23:53:38.852Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -108,7 +108,7 @@
         "infographics/step-by-step-infographic"
       ],
       "total": 12,
-      "ready": 3
+      "ready": 4
     },
     "maps": {
       "key": "maps",
@@ -1458,9 +1458,9 @@
       "prompt_path": "infographics/legend-heavy-infographic/1.json",
       "prompt_url": "/case/infographics/legend-heavy-infographic/1.json",
       "prompt_content": "{\n  \"type\": \"High-density causal chain infographics poster\",\n  \"goal\": \"Generate a printable, illustrated infographic explaining how climate change affects staple crops through physical and agricultural economic chains.\",\n  \"style\": {\n    \"aesthetic\": \"A composite main visual of half-sectioned Earth and farmland from above, overlaid with clear arrows, fine line annotations, color codes commonly used by climatologists (but maintaining flat vectors) + radiating information blocks\",\n    \"color_palette\": \"Deep ocean blue, arid sand yellow, crop green, alert orange, light gray white background\",\n    \"language\": \"Bilingual Chinese + English subtitle\"\n  },\n  \"header\": {\n    \"main_title_cn\": \"When Climate Warming Meets the Rice Bowl: What Is Happening to Staple Grains?\",\n    \"main_title_en\": \"CLIMATE, CROPS, AND GLOBAL FOOD SECURITY — A CHAIN OF CAUSES\",\n    \"subtitle\": \"Taking wheat, corn, and rice as examples: How yield fluctuations transmit to prices and food security.\"\n  },\n  \"centerpiece\": {\n    \"description\": \"The center features a semi-transparent agricultural mosaic of the Southern and Northern Hemisphere, with a warming color band near the equator, overlaid with line drawings of wheat ears, corn cobs, and rice ears.\",\n    \"highlight\": \"Bright orange-red highlight points along the curved arrow from the '2 °C scenario' to downstream social modules.\"\n  },\n  \"sections\": {\n    \"count\": \"Bust portrait, slightly side profile, right hand holding a simplified, unmarked tablet.\",\n    \"items\": [\n      \"01 Global Average Temperature Rise Climate Model Constraints (CMIP6)\",\n      \"02 Increase in Extreme Heat Days / Heat Damage Days in the Region\",\n      \"03 Enhanced Evapotranspiration, Decrease in Soil Moisture, Increase in Irrigation Demand\",\n      \"04 Precipitation redistribution in semi-arid regions dry frequency\",\n      \"05 Crop growth period F phenology advancement or shortening\",\n      \"06 CO₂ fertilization effect and nutrient dilution (protein, Zn, Fe)\",\n      \"07 Geographic expansion of pest and crop diseases and pesticide input\",\n      \"08 Yield fluctuation with increased variance\",\n      \"09 Tradable volume of staple food and strategic reserves\",\n      \"10 International price transmission FAO Food Price Index\",\n      \"11 Population exposure vulnerability in low-income countries\",\n      \"12 Adaptation measures: Drought-resistant varieties, water-saving irrigation, optimization of planting and harvesting dates\"\n    ]\n  },\n  \"section_block_style\": {\n    \"components\": [\n      \"Number\",\n      \"Chinese short title.\",\n      \"English in one line\",\n      \"1–2 small icons\",\n      \"2 lines of inline description\"\n    ],\n    \"alignment\": \"Alternating arrangement around both sides of the Earth, odd numbers on the left, even numbers on the right, uniform line width\"\n  },\n  \"footer\": {\n    \"core_message\": \"Climate change is not simply the statement of 'it's getting hotter', but a causal chain from fields to markets.\",\n    \"core_message_en\": \"Climate change reshapes agroecosystems and markets together — not one headline number.\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"The central subject is the only visual focal point.\",\n      \"Number 01–12 continuous without skipping numbers\",\n      \"English as the secondary text, with slightly larger Chinese font size\"\n    ],\n    \"avoid\": [\n      \"Decorative illustrations unrelated to textbooks\",\n      \"More than three lines of small text within a single block\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/infographics/legend-heavy-infographic/1.png",
+      "thumb_url": "/case/infographics/legend-heavy-infographic/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "infographics/legend-heavy-infographic/2",

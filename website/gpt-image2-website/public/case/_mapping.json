@@ -778,7 +778,8 @@
           "title": "Causal Chain of Climate Change on Global Staple Crops",
           "brief": "Using half-sectioned Earth / agricultural area as a visual anchor, radiating numbered blocks explaining warming, CO₂ fertilization effects, water stress, pest damage, and price transmission, suitable for environmental economics lectures or institutional science communication long visuals.",
           "format": "json",
-          "file": "infographics/legend-heavy-infographic/1.json"
+          "file": "infographics/legend-heavy-infographic/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
