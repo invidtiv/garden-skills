@@ -1521,7 +1521,8 @@
           "title": "Core e-commerce data model (User · Address · Product · Order · Coupon).",
           "brief": "Covering `users` to `orders`, `order_items`, `skus`, as well as `payments`, `coupons`, and many-to-many `coupon_redemptions`. Types follow PostgreSQL conventions (`uuid`, `timestamptz`, `numeric(12,2)`), consistent with typical Prisma / SQLAlchemy models.",
           "format": "json",
-          "file": "technical-diagrams/er-diagram/1.json"
+          "file": "technical-diagrams/er-diagram/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
