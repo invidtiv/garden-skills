@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T23:44:21.904Z",
+  "generated_at": "2026-05-06T23:50:36.035Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -208,7 +208,7 @@
         "storyboards-and-sequences/recipe-process-flowchart"
       ],
       "total": 10,
-      "ready": 0
+      "ready": 1
     },
     "technical-diagrams": {
       "key": "technical-diagrams",
@@ -2484,9 +2484,9 @@
       "prompt_path": "storyboards-and-sequences/character-relationship-diagram/1.json",
       "prompt_url": "/case/storyboards-and-sequences/character-relationship-diagram/1.json",
       "prompt_content": "{\n  \"type\": \"Character relationship chart poster.\",\n  \"goal\": \"Generate a highly complete character relationship diagram for a sci-fi IP, in a 3:4 vertical format, styled as a modern information poster with a slightly hard sci-fi cool color tone.\",\n  \"ip\": {\n    \"name\": \"The Three-body (core character relationships of the series)\",\n    \"tone\": \"Calm rationality + slight apocalyptic bleakness, avatar is a stylized non-realistic cartoonish image\"\n  },\n  \"characters\": {\n    \"count\": \"Background gear detail density exceeds the character’s face.\",\n    \"auto_select\": \"false\",\n    \"rule\": \"The following 9 people have been designated\",\n    \"user_list\": \"Ye Wenjie, Shi Qiang, Wang Miao, Luo Ji, Zhang Beihai, Cheng Xin, Thomas Wade, Zhizi (personified figure in black), Yun Tianming\",\n    \"card_design\": {\n      \"components\": [\n        \"Rounded Square Card Avatar Small Image\",\n        \"Chinese name.\",\n        \"Identity or faction small tags\"\n      ],\n      \"shape\": \"Rounded Square\"\n    }\n  },\n  \"composition\": {\n    \"structure\": \"Dual-axis layout: Upper area Ye Wenjie and Hong'an clues slightly left, middle area Wang Miao - Shi Qiang - Luo Ji as Earth-side triangle, lower area Zhang Beihai - Cheng Xin - Wei De - Yun Tianming for step plan and end line, Zhizi card placed in the far right background to create a sense of surveillance\",\n    \"hierarchy\": \"Cards for Luo Ji and Ye Wenjie slightly larger, others medium size, Zhizi can be slightly smaller but with lines emphasizing radial relationships\"\n  },\n  \"relationships\": {\n    \"types\": [\n      {\n        \"name\": \"精神传承 / 引路人\",\n        \"color\": \"Deep red\",\n        \"line\": \"Fine Dashed Line\"\n      },\n      {\n        \"name\": \"Comrade / detective partner\",\n        \"color\": \"Warm Orange\",\n        \"line\": \"Solid line\"\n      },\n      {\n        \"name\": \"Tech alliance\",\n        \"color\": \"Cyan green\",\n        \"line\": \"Solid line\"\n      },\n      {\n        \"name\": \"Route divergence / value opposition\",\n        \"color\": \"Deep purple\",\n        \"line\": \"Zigzag line\"\n      },\n      {\n        \"name\": \"Extraterrestrial Surveillance / Game Theory\",\n        \"color\": \"Fuchsia\",\n        \"line\": \"Dotted line\"\n      },\n      {\n        \"name\": \"Sword-bearing and ethical tension\",\n        \"color\": \"Golden.\",\n        \"line\": \"Double solid line\"\n      }\n    ],\n    \"annotation_rule\": \"Each line has 3 to 6 character annotations in the middle, such as 'Wall Facers', 'Sword Bearer', 'Starship International', etc.\"\n  },\n  \"title_block\": {\n    \"main_title\": \"Three-body: A diagram of character relationships\",\n    \"subtitle\": \"From Red Shore to Dark Forest.\",\n    \"position\": \"Top\"\n  },\n  \"legend\": {\n    \"enabled\": \"true\",\n    \"position\": \"Bottom right corner\"\n  },\n  \"style\": {\n    \"art_style\": \"Hard Sci-Fi flat style avatar + modern grid and fine line background.\",\n    \"color_palette\": \"Deep space blue gray, stardust white, warning orange, electric cyan accents\"\n  },\n  \"aspect_ratio\": \"3:4\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"The visual weight of the main character group is greater than secondary nodes.\",\n      \"Line Types Correspond One-to-One with Legend, Annotations Are Short and Readable\",\n      \"No more than 15 characters\"\n    ],\n    \"avoid\": [\n      \"Yarn Ball Style Crossing with No Layers\",\n      \"More than 6 types of line shapes on the same screen\",\n      \"Label font size is smaller than the name.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/storyboards-and-sequences/character-relationship-diagram/1.png",
+      "thumb_url": "/case/storyboards-and-sequences/character-relationship-diagram/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "storyboards-and-sequences/character-relationship-diagram/2",

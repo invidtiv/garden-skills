@@ -572,10 +572,10 @@ function buildUsageDialog(c: { title: string; brief: string; template_label: str
       role: 'user',
       body: (
         <>
-          帮我用 gpt-image-2 Skill 出一张图：<strong>{c.title}</strong>。
+          Generate an image using the GPT-Image-2 Skill: <strong>{c.title}</strong>.
           <br />
-          风格 / 场景参考你的 <code className="mono">{c.category_label}</code> 分类下的{' '}
-          <code className="mono">{tplLabel}</code> 模板。
+          Style / scene reference: <code className="mono">{c.category_label}</code> category,{' '}
+          <code className="mono">{tplLabel}</code> template.
         </>
       ),
     },
@@ -583,33 +583,33 @@ function buildUsageDialog(c: { title: string; brief: string; template_label: str
       role: 'agent',
       body: (
         <>
-          收到。第一步先跑 <code className="mono">scripts/check-mode.js</code> 确认运行模式，
-          然后从 <code className="mono">references/{c.category_label}/</code>
-          下读取 <code className="mono">{tplLabel}.md</code> 模板。
+          Got it. First, run <code className="mono">scripts/check-mode.js</code> to confirm the run mode,
+          then read the <code className="mono">{tplLabel}.md</code> template from{' '}
+          <code className="mono">references/{c.category_label}/</code>.
           <br />
           <br />
-          目标识别为：<em>{c.brief}</em>
+          Target identified: <em>{c.brief}</em>
           <br />
-          模板里有几个关键字段需要确认（主体 / 文案 / 配色 / 比例…），
-          这些都已经在右侧 JSON 中填好。
+          The template has a few key fields to confirm (subject / copy / color / ratio…),
+          all already filled in the case JSON on the right.
         </>
       ),
     },
     {
       role: 'user',
-      body: <>就用现成的 JSON，直接出图。</>,
+      body: <>Use the existing JSON params, generate directly.</>,
     },
     {
       role: 'agent',
       body: (
         <>
-          好。三种模式分支：
+          Okay. Three mode branches:
           <ul>
-            <li><strong>Mode A</strong>：保存 prompt → 调 <code className="mono">generate.js</code> → 图片落到 <code className="mono">garden-gpt-image-2/image/</code>。</li>
-            <li><strong>Mode B</strong>：把 JSON 渲染成最终 prompt，调用我自己环境里的 image 工具。</li>
-            <li><strong>Mode C</strong>：只把 prompt 写好交给你，由你拿去任意 GPT-Image-2 / DALL·E 3 / Midjourney 中执行。</li>
+            <li><strong>Mode A</strong>: Save prompt → call <code className="mono">generate.js</code> → image saved to <code className="mono">garden-gpt-image-2/image/</code>.</li>
+            <li><strong>Mode B</strong>: Render JSON into final prompt, call host-native image tools.</li>
+            <li><strong>Mode C</strong>: Write the prompt for you, take it to any GPT-Image-2 / DALL·E 3 / Midjourney to execute.</li>
           </ul>
-          完成后会用一句话告诉你：当前模式、prompt 落在哪、图（如有）落在哪。
+          When done, a one-line summary tells you: current mode, prompt location, image location (if any).
         </>
       ),
     },

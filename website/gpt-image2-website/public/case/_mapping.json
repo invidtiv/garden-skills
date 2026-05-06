@@ -1430,7 +1430,8 @@
           "title": "Core Character Relationship Diagram of 'The Three-Body Problem' (9 Characters)",
           "brief": "Using Ye Wenjie, Wang Miao, Shi Qiang, Luo Ji, Zhang Beihai, Cheng Xin, Wei De, Zhi Zi (personified), and Yun Tianming as nodes, with colors and line styles to distinguish enemies, technology alliances, and sword-bearing relationships, suitable for science communication and 'getting into it' long visuals.",
           "format": "json",
-          "file": "storyboards-and-sequences/character-relationship-diagram/1.json"
+          "file": "storyboards-and-sequences/character-relationship-diagram/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
