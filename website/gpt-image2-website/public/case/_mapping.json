@@ -645,7 +645,8 @@
           "title": "9-Panel Self-Care Routine (Healing Illustration)",
           "brief": "3×3 Non-Narrative Checklist, Each Square with an Icon + Short Phrase, Soft Pink and Sage Green, Printable as a Check-in Sheet or for Sharing in Communities.",
           "format": "json",
-          "file": "grids-and-collages/lookbook-grid/2.json"
+          "file": "grids-and-collages/lookbook-grid/2.json",
+          "has_image": true
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T23:53:38.852Z",
+  "generated_at": "2026-05-07T00:07:26.466Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -92,7 +92,7 @@
         "grids-and-collages/mixed-style-multi-panel"
       ],
       "total": 8,
-      "ready": 0
+      "ready": 1
     },
     "infographics": {
       "key": "infographics",
@@ -1260,9 +1260,9 @@
       "prompt_path": "grids-and-collages/lookbook-grid/2.json",
       "prompt_url": "/case/grids-and-collages/lookbook-grid/2.json",
       "prompt_content": "{\n  \"type\": \"9-Panel Self-Care Checklist\",\n  \"goal\": \"Generate a 3×3 daily self-care infographic, with a Chinese title, unified illustration style, in a 3:4 vertical format.\",\n  \"title_block\": {\n    \"main_title\": \"9 gentle little things every day\",\n    \"subtitle\": \"Not all need to be done, completing 3 is also good\",\n    \"position\": \"Top centered\"\n  },\n  \"layout\": {\n    \"format\": \"3x3 grid equally divided, rounded corners 12px\",\n    \"panel_count\": 9\n  },\n  \"outfits\": [\n    {\n      \"label\": \"The background is simple and does not compete with the skin tone.\",\n      \"style\": \"8 cups of warm water, illustrated glass bottle and small droplets\"\n    },\n    {\n      \"label\": \"Replace the background with Times Square at night: in the foreground, there are slightly misty silhouettes of crowds and reflections on the pavement; in the mid-distance, there are dense LED billboards, intersections, and sparkling car lights, primarily in cool blue-purple neon, mixed with warm-colored light sources from advertisements.\",\n      \"style\": \"10 minutes of stretching, simple stick figure on yoga mat\"\n    },\n    {\n      \"label\": \"Replace the background with a warm-colored beach at sunset: in the foreground, there are delicate sand patterns and a few small seashells; in the mid-distance, the shallow water's retreating tide line is softly focused, and in the distance, the horizon features an orange-pink gradient sky with a low sun silhouette, with no people or branded items.\",\n      \"style\": \"Walking slowly for 15 minutes in the sunlight, small path and tree shadows\"\n    },\n    {\n      \"label\": \"Background details overwhelm the character.\",\n      \"style\": \"3 deep breaths, nasal airflow sketch lines\"\n    },\n    {\n      \"label\": \"Saturated and glaring background colors impact text recognition.\",\n      \"style\": \"Write down one thing to be grateful for, a small notebook and a pen\"\n    },\n    {\n      \"label\": \"Vivid magenta background steals the scene.\",\n      \"style\": \"Listening to an old song, headphones and notes\"\n    },\n    {\n      \"label\": \"Fluorescent blue-purple gradient background steals the spotlight.\",\n      \"style\": \"Send a greeting to family via WeChat, with a small phone and heart-shaped speech bubbles (abstract interface without specific avatars)\"\n    },\n    {\n      \"label\": \"Overexposed background obscures the outlines.\",\n      \"style\": \"Read a 10-page paper book, with the book pages and a teacup open\"\n    },\n    {\n      \"label\": \"Background gear detail density exceeds the character’s face.\",\n      \"style\": \"11 Lie down at 11, dim the bedside lamp and wear a sleep mask\"\n    }\n  ],\n  \"style\": {\n    \"art_style\": \"Flat soft illustration + large rounded corners + no outlines or very fine lines.\",\n    \"color_palette\": \"Fog Pink, Ash Green, Creamy White, Light Caramel\"\n  },\n  \"aspect_ratio\": \"3:4\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"9 boxes of equal area, with consistent icon style\",\n      \"The main text of each grid does not exceed 8 Chinese characters or equivalent length\",\n      \"No real person photos\"\n    ],\n    \"avoid\": [\n      \"High contrast warning color\",\n      \"Two types of illustration languages are mixed inside the framework.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/grids-and-collages/lookbook-grid/2.png",
+      "thumb_url": "/case/grids-and-collages/lookbook-grid/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "grids-and-collages/mixed-style-multi-panel/1",
