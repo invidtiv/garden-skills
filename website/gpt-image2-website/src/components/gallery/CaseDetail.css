@@ -32,8 +32,7 @@
   background: var(--ink-900);
   color: var(--paper);
   animation: scaleIn 0.45s var(--ease-out) both;
-  border-left: 1px solid var(--line);
-  border-right: 1px solid var(--line);
+  border: 1px solid var(--line);
   overflow: hidden;
 }
 
@@ -367,8 +366,6 @@
   font-size: 13px;
   line-height: 1.55;
   overflow-x: auto;
-  overflow-y: auto;
-  max-height: 55vh;
   white-space: pre-wrap;
   word-break: break-word;
   color: var(--text-mute);

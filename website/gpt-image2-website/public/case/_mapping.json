@@ -1641,7 +1641,8 @@
           "title": "B2C Main Order OMS State Machine (from Creation to Final State including Compensation)",
           "brief": "Includes 'In Distribution' and Payment Fulfillment Branch Post WeChat/Corporate Payments, Timeout Closed Orders and Full Refund End States, Aligning with `order_status` Enumeration, Idempotent Retries in Review, Is the Most Common 'One Image Aligning Full Warehouse' Main Machine in Transaction Domain.",
           "format": "json",
-          "file": "technical-diagrams/state-machine/1.json"
+          "file": "technical-diagrams/state-machine/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
@@ -1687,7 +1688,8 @@
           "title": "Contemporary Craft Exhibition of Mutual Learning Between East and West (Bilingual)",
           "brief": "Chinese main title is the largest, English is a stylish subtitle, followed by exhibition dates and venue, with the main visual in the lower right as an abstract landscape geometric cut, vermilion red + ancient paper color, suitable for art museum displays.",
           "format": "json",
-          "file": "typography-and-text-layout/bilingual-layout-visual/1.json"
+          "file": "typography-and-text-layout/bilingual-layout-visual/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
