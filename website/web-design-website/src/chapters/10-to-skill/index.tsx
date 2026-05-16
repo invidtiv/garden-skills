@@ -4,35 +4,35 @@ import { SceneFade } from '../../shared/SceneFade';
 import './ToSkill.css';
 
 /**
- * Chapter 10 · 过渡到 Skill
+ * Chapter 10 · Transition to Skill
  *
- * 口播原顺序（严格对齐）：
- *   1. "以上就是 Claude Design 提示词里最核心的东西。"
- *   2. "但有个现实问题 — Anthropic 的产品在国内用起来都非常的难。"
- *      "我自己被封了三个号，彻底放弃官方渠道了。"
- *      "而且没有 API，没法接到自己的工作流里。"
- *   3. "不过好消息是：它的提示词已经泄出来了。
- *       Claude Design 厉害的另一半，主要就这套提示词里。"
- *   4. "所以我做了个 Skill，叫 web-design-engineer，
- *       把这套提示词的精华提炼了出来。"
- *   5. "Claude Code、Cursor、Codex 都能直接用，人人都能成为顶级网页设计师。"
+ * Voiceover original order (strictly aligned):
+ *   1. "That's the most core stuff in the Claude Design prompt."
+ *   2. "But there's a real problem — Anthropic's products are very hard to use in China."
+ *      "I got three accounts banned myself, completely gave up on official channels."
+ *      "And there's no API, can't integrate it into my workflow."
+ *   3. "But the good news is: the prompt has already leaked.
+ *       Claude Design's other half of greatness is mainly in this prompt."
+ *   4. "So I made a Skill called web-design-engineer,
+ *       distilling the essence of this prompt."
+ *   5. "Claude Code, Cursor, Codex can all use it directly — anyone can become a top web designer."
  *
- * 节奏（6 步 / step 0..5）：
- *  0  回顾："以上 —— 提示词原文最核心的东西" + 五块小钩
- *  1  转折大字 "但..." + "Anthropic 在国内 —— 难"
- *  2  三张账号卡片依次倒下 + BANNED 红章 + "没 API"小注
- *  3  Pivot："好消息 —— 提示词 已经泄出来了"
- *  4  Skill 卡：web-design-engineer 终端式呈现 + 三个适用工具
- *  5  收尾大字 "人人都能成为 顶级网页设计师"
+ * Rhythm (6 steps / step 0..5):
+ *  0  Recap: "That covers — the most core stuff in the prompt" + five small hooks
+ *  1  Pivot large text "But..." + "Anthropic in China — hard"
+ *  2  Three account cards fall in sequence + BANNED red stamp + "No API" note
+ *  3  Pivot: "Good news — the prompt has already leaked"
+ *  4  Skill card: web-design-engineer terminal-style display + three applicable tools
+ *  5  Closing large text "Anyone can become a top web designer"
  */
 
 const RECAP_POINTS = [
-  '角色定位',
-  '工作流',
-  '去 AI 味',
-  'oklch 配色',
-  '内容克制',
-  '验证闭环',
+  'Role Definition',
+  'Workflow',
+  'De-AI Style',
+  'oklch Colors',
+  'Content Restraint',
+  'Verification Loop',
 ];
 
 const TOOLS = [
@@ -58,8 +58,8 @@ function ToSkill({ localStep }: ChapterContext) {
       <SceneFade active={sceneRecap} exitMs={420} enterDelayMs={120}>
         <div className="ts__recap">
           <Reveal kind="rise" duration={1100} delay={120} className="ts__recap-title" as="h1">
-            以上 —— 提示词里<br />
-            <em>最核心</em>的东西
+            That Covers the <em>Core</em><br />
+            of the Prompt
           </Reveal>
 
           <div className="ts__recap-list">
@@ -78,33 +78,33 @@ function ToSkill({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ════════ Scene PROBLEM（step 1）—— "但..." ════════ */}
+      {/* ════════ Scene PROBLEM（step 1）—— "But..." ════════ */}
       <SceneFade active={sceneProb} exitMs={420} enterDelayMs={420}>
         <div className="ts__prob">
           <Reveal kind="rise" duration={1100} delay={120} className="ts__prob-but" as="h1">
-            但 ——
+            But ——
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={680} className="ts__prob-line" as="h2">
-            Anthropic 的产品 ——<br />
-            在国内 <em>真的难用</em>
+            Anthropic Products ——<br />
+            <em>Really Hard</em> to Use Domestically
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1500} className="ts__prob-meta">
-            <span>无官方支付</span>
+            <span>No Official Payment</span>
             <span className="ts__prob-meta-dot" />
-            <span>无 API</span>
+            <span>No API</span>
             <span className="ts__prob-meta-dot" />
-            <span>账号易被封</span>
+            <span>Accounts Easily Banned</span>
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene BANNED（step 2）—— 三张账号倒下 ════════ */}
+      {/* ════════ Scene BANNED（step 2）—— three accounts fall ════════ */}
       <SceneFade active={sceneBanned} exitMs={420} enterDelayMs={420}>
         <div className="ts__banned-scene">
           <Reveal kind="fade" duration={620} delay={80} className="ts__banned-cap">
-            "我自己被封了 <em>三个号</em>，彻底放弃官方渠道了。"
+            "I got <em>three accounts</em> banned, completely gave up on official channels."
           </Reveal>
 
           <div className="ts__banned-row">
@@ -123,7 +123,7 @@ function ToSkill({ localStep }: ChapterContext) {
                 <div className="ts__card-body">
                   <div className="ts__card-avatar">{['F', 'G', 'H'][i]}</div>
                   <div className="ts__card-info">
-                    <div className="ts__card-name">花园老师 #{n}</div>
+                    <div className="ts__card-name">Gardener #{n}</div>
                     <div className="ts__card-mail">flower-{i + 1}@anthropic.user</div>
                     <div className="ts__card-plan">
                       <span className="ts__card-plan-tag">Pro</span>
@@ -131,7 +131,7 @@ function ToSkill({ localStep }: ChapterContext) {
                     </div>
                   </div>
                 </div>
-                {/* BANNED 印章 */}
+                {/* BANNED stamp */}
                 <div className="ts__stamp" aria-hidden>
                   <span className="ts__stamp-text">BANNED</span>
                   <span className="ts__stamp-sub">violation · #{n}</span>
@@ -142,28 +142,28 @@ function ToSkill({ localStep }: ChapterContext) {
 
           <Reveal kind="fade" duration={780} delay={1700} className="ts__banned-foot">
             <span className="ts__banned-foot-x">×</span>
-            而且 —— <em>没有 API</em>，接不进自己的工作流
+            Plus —— <em>No API</em>, Can't Integrate Into Your Workflow
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene PIVOT（step 3）—— "好消息" ════════ */}
+      {/* ════════ Scene PIVOT（step 3）—— "Good news" ════════ */}
       <SceneFade active={scenePivot} exitMs={420} enterDelayMs={420}>
         <div className="ts__pivot">
           <Reveal kind="fade" duration={620} delay={120} className="ts__pivot-eyebrow">
-            不过 ——
+            However ——
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={320} className="ts__pivot-good" as="h1">
-            <em>好消息</em>是：
+            <em>Good News</em>:
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={920} className="ts__pivot-line" as="h2">
-            提示词 —— <em>已经泄出来了</em>
+            The Prompt —— <em>Has Already Leaked</em>
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1700} className="ts__pivot-cap">
-            "Claude Design 厉害的另一半，主要就<em>这套提示词</em>里。"
+            "The other half of what makes Claude Design great is mainly in <em>this prompt</em>."
           </Reveal>
         </div>
       </SceneFade>
@@ -188,21 +188,21 @@ function ToSkill({ localStep }: ChapterContext) {
               <div className="ts__skill-tag">SKILL.md</div>
               <h2 className="ts__skill-name">web-design-engineer</h2>
               <p className="ts__skill-desc">
-                把 Claude Design 提示词的精华，<br />
-                提炼成一个<em>可复用</em>的 Skill
+                Distill the essence of the Claude Design prompt<br />
+                into a <em>reusable</em> Skill
               </p>
               <div className="ts__skill-meta">
-                <span>≈ 400 行</span>
+                <span>≈ 400 lines</span>
                 <span className="ts__skill-meta-dot" />
-                <span>开源</span>
+                <span>Open Source</span>
                 <span className="ts__skill-meta-dot" />
-                <span>免费</span>
+                <span>Free</span>
               </div>
             </div>
           </Reveal>
 
           <Reveal kind="fade" duration={620} delay={1100} className="ts__tools-cap">
-            <span>适用于 ——</span>
+            <span>Works With ——</span>
           </Reveal>
 
           <div className="ts__tools-row">
@@ -225,10 +225,10 @@ function ToSkill({ localStep }: ChapterContext) {
       <SceneFade active={sceneClose} exitMs={420} enterDelayMs={420}>
         <div className="ts__close">
           <Reveal kind="rise" duration={1100} delay={120} className="ts__close-l1" as="h1">
-            人人都能成为
+            Anyone Can Become
           </Reveal>
           <Reveal kind="rise" duration={1300} delay={760} className="ts__close-l2" as="h1">
-            <em>顶级网页设计师</em>
+            <em>a Top Web Designer</em>
           </Reveal>
         </div>
       </SceneFade>
@@ -238,7 +238,7 @@ function ToSkill({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'to-skill',
-  title: '过渡 · Skill 是怎么来的',
+  title: 'Transition · How the Skill Came to Be',
   eyebrow: '10',
   steps: 6,
   theme: 'light',

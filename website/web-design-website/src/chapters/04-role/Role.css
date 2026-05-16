@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 04 · 角色定位
-   light 主题 · 引文 → 高亮 → benefit → 名片翻 → 全卡 + 收尾
+   Chapter 04 · Role Definition
+   light theme · quote → highlight → benefit → card flip → all cards + wrap-up
    ========================================================= */
 
 .role {
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* 顶部 eyebrow 贯穿全章节 */
+/* Top eyebrow spans the whole chapter */
 .role__eyebrow {
   position: absolute;
   top: 56px;
@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-/* ===== prompt 源标签（mono 小字） ===== */
+/* ===== prompt source label (mono small text) ===== */
 .role__src {
   display: inline-flex;
   align-items: center;
@@ -248,7 +248,7 @@
   gap: 32px;
 }
 
-/* ===== 原文引用块（prompt 风） ===== */
+/* ===== original quote block (prompt style) ===== */
 .role__excerpt {
   width: 100%;
   max-width: 1280px;
@@ -336,7 +336,7 @@
   animation: roleUnderline 800ms 220ms cubic-bezier(.2,.8,.2,1) backwards;
 }
 
-/* 翻牌窗：3 张卡片层叠，translateY 控制可见状态 */
+/* Flip window: 3 cards stacked, translateY controls visibility */
 .role__flip-window {
   position: relative;
   width: 720px;
@@ -372,7 +372,7 @@
   filter: blur(4px);
 }
 
-/* 进度刻度（步进） */
+/* Progress ticks (steps) */
 .role__flip-ticks {
   display: flex;
   gap: 64px;
@@ -409,7 +409,7 @@
   font-style: italic;
 }
 
-/* ===================== Card 视觉 ===================== */
+/* ===================== Card visuals ===================== */
 
 .role__card {
   position: relative;
@@ -426,7 +426,7 @@
   overflow: hidden;
 }
 .role__card::before {
-  /* 纸感纹理 */
+  /* Paper texture */
   content: '';
   position: absolute;
   inset: 0;
@@ -549,7 +549,7 @@
   font-size: 11px;
 }
 
-/* 角注 */
+/* Corner marks */
 .role__card-corner {
   position: absolute;
   width: 12px;

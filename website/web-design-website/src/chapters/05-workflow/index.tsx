@@ -4,23 +4,23 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Workflow.css';
 
 /**
- * Chapter 05 · 第二部分：工作流
+ * Chapter 05 · Part Two: Workflow
  *
- * 口播主旨：
- *   - 六步流程：理解需求 → 探索资源 → 制定计划 → 搭建结构 → 完成验证 → 极简总结
- *   - 细节①：什么时候问 / 什么时候直接干 —— 信息够就干，不够才问
- *       用户: "做个 PPT"               → AI 先问几个问题
- *       用户: "做个 PPT, 工程全员 All Hands, 10 min" → AI 直接动手
- *   - 细节②：极简总结 —— "Summarize EXTREMELY BRIEFLY"
+ * Voiceover gist:
+ *   - Six-step flow: Understand needs → Explore resources → Make a plan → Build structure → Verify → Ultra-brief summary
+ *   - Detail ①: When to ask / when to just build —— build when informed, ask when unclear
+ *       User: "Make a presentation"               → AI asks a few questions first
+ *       User: "Make a presentation, engineering all-hands, 10 min" → AI starts building immediately
+ *   - Detail ②: Ultra-brief summary —— "Summarize EXTREMELY BRIEFLY"
  *
- * 节奏（7 步 / step 0..6）：
- *  0  环境（eyebrow）
- *  1  原文 prompt block + 六站流水线（空）
- *  2  点亮第 1-3 站（line 推进）
- *  3  点亮第 4-6 站
- *  4  pivot：细节① "何时问 vs 何时干"
- *  5  双栏对话气泡对比
- *  6  细节② "Summarize EXTREMELY BRIEFLY" 原文 + 反例 / 正例对比
+ * Pacing (7 steps / step 0..6):
+ *  0  Setup (eyebrow)
+ *  1  Original prompt block + six-station pipeline (empty)
+ *  2  Light up stations 1-3 (line advances)
+ *  3  Light up stations 4-6
+ *  4  pivot: Detail ① "When to ask vs when to build"
+ *  5  Two-column chat bubble comparison
+ *  6  Detail ② "Summarize EXTREMELY BRIEFLY" original + bad / good example comparison
  */
 
 interface Station {
@@ -30,23 +30,23 @@ interface Station {
 }
 
 const STATIONS: Station[] = [
-  { no: '1', en: 'Understand',  cn: '理解需求' },
-  { no: '2', en: 'Explore',     cn: '探索资源' },
-  { no: '3', en: 'Plan',        cn: '制定计划' },
-  { no: '4', en: 'Build',       cn: '搭建结构' },
-  { no: '5', en: 'Verify',      cn: '完成验证' },
-  { no: '6', en: 'Brief',       cn: '极简总结' },
+  { no: '1', en: 'Understand',  cn: 'Understand Needs' },
+  { no: '2', en: 'Explore',     cn: 'Explore Resources' },
+  { no: '3', en: 'Plan',        cn: 'Make a Plan' },
+  { no: '4', en: 'Build',       cn: 'Build Structure' },
+  { no: '5', en: 'Verify',      cn: 'Verify & Finish' },
+  { no: '6', en: 'Brief',       cn: 'Ultra-Brief Summary' },
 ];
 
 function Workflow({ localStep }: ChapterContext) {
   const at = (n: number) => localStep >= n;
 
-  // —— 三幕 ——
+  // —— Three acts ——
   const scenePipe    = localStep <= 3;
   const sceneDecide  = localStep === 4 || localStep === 5;
   const sceneSummary = localStep >= 6;
 
-  // 流水线点亮进度 0..6
+  // Pipeline lighting progress 0..6
   const litCount = (() => {
     if (localStep < 1) return 0;
     if (localStep === 1) return 0;
@@ -68,7 +68,7 @@ function Workflow({ localStep }: ChapterContext) {
                 <span className="wf__src-sep">·</span>
                 <span className="wf__src-line">L17-23</span>
                 <span className="wf__src-sep">/</span>
-                <span className="wf__src-mute">原文</span>
+                <span className="wf__src-mute">Original</span>
                 <span className="wf__src-bracket">]</span>
               </div>
               <div className="wf__excerpt-body">
@@ -87,12 +87,12 @@ function Workflow({ localStep }: ChapterContext) {
 
           {at(1) && (
             <Reveal kind="rise" duration={900} delay={520} className="wf__pipeline">
-              {/* 底部基线 */}
+              {/* Bottom baseline */}
               <div className="wf__line">
                 <div className="wf__line-fill" style={{ width: `${linePct}%` }} />
               </div>
 
-              {/* 6 站 */}
+              {/* 6 stations */}
               <div className="wf__stations">
                 {STATIONS.map((s, i) => {
                   const lit = i < litCount;
@@ -121,34 +121,34 @@ function Workflow({ localStep }: ChapterContext) {
       <SceneFade active={sceneDecide} exitMs={420} enterDelayMs={420}>
         <div className="wf__decide-scene">
           <Reveal kind="rise" duration={780} delay={80} className="wf__decide-head">
-            <span className="wf__decide-num">细节①</span>
+            <span className="wf__decide-num">Detail ①</span>
             <h2 className="wf__decide-title">
-              什么时候<em>问</em>？什么时候<em className="wf__decide-do">直接干</em>？
+              When to <em>Ask</em>? When to <em className="wf__decide-do">Just Build</em>?
             </h2>
             <div className="wf__decide-rule">
               <span className="wf__src-bracket">[</span>
               <span className="wf__src-label">RULE</span>
               <span className="wf__src-bracket">]</span>
-              <span className="wf__decide-rule-text">信息充足就干 · 信息不足才问</span>
+              <span className="wf__decide-rule-text">Build when informed · Ask when unclear</span>
             </div>
           </Reveal>
 
           <div className="wf__decide-grid">
-            {/* —— 左：模糊请求 → 反复问 —— */}
+            {/* —— Left: vague request → ask back —— */}
             <Reveal kind="rise" duration={780} delay={260} className="wf__chat wf__chat--ask">
               <div className="wf__chat-tag">
                 <span className="wf__chat-tag-dot" />
-                AMBIGUOUS · 模糊请求
+                AMBIGUOUS · Vague Request
               </div>
 
               <div className="wf__bubble wf__bubble--user">
                 <span className="wf__bubble-meta">USER</span>
-                <p>帮我做个 PPT</p>
+                <p>Make me a PPT</p>
               </div>
 
               <div className="wf__bubble wf__bubble--ai">
                 <span className="wf__bubble-meta">CLAUDE</span>
-                <p>受众？时长？正式度？品牌？数据有吗？...</p>
+                <p>Audience? Duration? Formality? Brand? Got data?...</p>
                 <div className="wf__qmarks">
                   <span style={{ animationDelay: '0ms'   }}>?</span>
                   <span style={{ animationDelay: '180ms' }}>?</span>
@@ -162,29 +162,29 @@ function Workflow({ localStep }: ChapterContext) {
               </div>
             </Reveal>
 
-            {/* —— 中央分隔 —— */}
+            {/* —— Center divider —— */}
             <div className="wf__decide-vs">
               <span className="wf__decide-vs-line" />
               <span className="wf__decide-vs-knob">vs</span>
               <span className="wf__decide-vs-line" />
             </div>
 
-            {/* —— 右：详细请求 → 直接动手 —— */}
+            {/* —— Right: detailed request → build now —— */}
             {at(5) && (
               <Reveal kind="rise" duration={780} delay={120} className="wf__chat wf__chat--do">
                 <div className="wf__chat-tag">
                   <span className="wf__chat-tag-dot wf__chat-tag-dot--do" />
-                  ENOUGH INFO · 信息够
+                  ENOUGH INFO · Sufficient Detail
                 </div>
 
                 <div className="wf__bubble wf__bubble--user">
                   <span className="wf__bubble-meta">USER</span>
-                  <p>帮我做个 PPT，工程全员 All Hands，10&nbsp;分钟</p>
+                  <p>Make me a PPT, engineering all-hands, 10&nbsp;min</p>
                 </div>
 
                 <div className="wf__bubble wf__bubble--ai">
                   <span className="wf__bubble-meta">CLAUDE</span>
-                  <p>好的，开始 ——</p>
+                  <p>Got it, starting ——</p>
                   <div className="wf__action">
                     <span className="wf__action-bar" />
                     <span className="wf__action-bar" />
@@ -205,12 +205,12 @@ function Workflow({ localStep }: ChapterContext) {
       <SceneFade active={sceneSummary} exitMs={420} enterDelayMs={420}>
         <div className="wf__sum-scene">
           <Reveal kind="fade" duration={620} delay={80} className="wf__sum-num">
-            细节②
+            Detail ②
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={180} className="wf__sum-hero" as="h1">
             <span className="wf__sum-hero-en">Summarize <em>EXTREMELY BRIEFLY</em></span>
-            <span className="wf__sum-hero-cn">只说 <em>注意事项</em> 与 <em>下一步</em>。</span>
+            <span className="wf__sum-hero-cn">Only <em>caveats</em> and <em>next steps</em>.</span>
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={520} className="wf__sum-source">
@@ -225,26 +225,26 @@ function Workflow({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={760} className="wf__sum-grid">
-            {/* 反例 */}
+            {/* Bad example */}
             <div className="wf__sum-card wf__sum-card--bad">
               <div className="wf__sum-card-tag">
-                <span className="wf__sum-x">×</span> 复述自己干了什么
+                <span className="wf__sum-x">×</span> Recapping what was done
               </div>
               <div className="wf__sum-card-body">
-                我先创建了 <s>Header.tsx</s>，然后又新增了 <s>Hero.tsx</s>，
-                接着把样式拆分到 <s>theme.ts</s>，又给按钮加了 hover ...
+                I first created <s>Header.tsx</s>, then added <s>Hero.tsx</s>,
+                then split styles into <s>theme.ts</s>, then added hover to buttons...
               </div>
               <div className="wf__sum-strike" />
             </div>
 
-            {/* 正例 */}
+            {/* Good example */}
             <div className="wf__sum-card wf__sum-card--good">
               <div className="wf__sum-card-tag">
-                <span className="wf__sum-check">✓</span> 注意事项 + 下一步
+                <span className="wf__sum-check">✓</span> Caveats + Next Steps
               </div>
               <div className="wf__sum-card-body">
-                <p><b>caveats</b> — 暂未做响应式 / 文案为占位</p>
-                <p><b>next</b> — 加 hover 状态 / 替换真实文案</p>
+                <p><b>caveats</b> — Responsive not yet done / Copy is placeholder</p>
+                <p><b>next</b> — Add hover states / Replace with real copy</p>
               </div>
             </div>
           </Reveal>
@@ -256,7 +256,7 @@ function Workflow({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'workflow',
-  title: '第二部分 · 工作流',
+  title: 'Part Two · Workflow',
   eyebrow: '05',
   steps: 7,
   theme: 'ink',

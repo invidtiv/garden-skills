@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T00:16:38.188Z",
+  "generated_at": "2026-05-16T00:28:43.013Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -150,7 +150,7 @@
         "poster-and-campaigns/editorial-cover"
       ],
       "total": 9,
-      "ready": 0
+      "ready": 6
     },
     "product-visuals": {
       "key": "product-visuals",
@@ -179,7 +179,7 @@
         "scenes-and-illustrations/picture-book-scene"
       ],
       "total": 8,
-      "ready": 0
+      "ready": 4
     },
     "slides-and-visual-docs": {
       "key": "slides-and-visual-docs",
@@ -252,7 +252,7 @@
         "ui-mockups/social-interface-mockup"
       ],
       "total": 13,
-      "ready": 0
+      "ready": 1
     }
   },
   "cases": [
@@ -1818,9 +1818,9 @@
       "prompt_path": "poster-and-campaigns/banner-hero/1.json",
       "prompt_url": "/case/poster-and-campaigns/banner-hero/1.json",
       "prompt_content": "{\n  \"type\": \"Web hero banner\",\n  \"goal\": \"Generate a 16:9 horizontal full-width website hero, directly compatible with a top navigation, excluding navigation and footer, only the central banner content area.\",\n  \"aspect_ratio\": \"16:9\",\n  \"layout\": {\n    \"left_column\": {\n      \"headline\": \"Keep knowledge and projects on the same whiteboard\",\n      \"subhead\": \"Databases, lists, and boards can reference each other, switching from personal notes to hundred-person collaboration on one screen.\",\n      \"cta\": {\n        \"text\": \"Free registration\",\n        \"color\": \"Solid bottom in coal black\",\n        \"secondary\": \"Appointment demonstration\"\n      }\n    },\n    \"right_column\": {\n      \"centerpiece\": \"A large screenshot of a collaborative document interface without specific trademarks: includes a left-side directory tree, central rich text, right-side database properties panel, slightly 3D stacked multiple windows, with soft reflections at the screen edges.\",\n      \"scale\": \"Occupies 78% of the right side, slightly tilting toward the center of the image\"\n    }\n  },\n  \"background\": {\n    \"type\": \"A gradient from light beige to slightly deeper gray-blue, with the top brighter to highlight the logo position in the upper left corner\",\n    \"decoration\": \"1-2% coverage minor noise and two very fine diagonal auxiliary lines, final draft does not distract\"\n  },\n  \"brand\": {\n    \"logo_position\": \"Upper left corner reserved 'N' shaped geometry and text small placement, not drawing actual corporate trademarks\",\n    \"navigation_hint\": \"Do not draw the top navigation, leave white space only for the connection between logo and hero in the image\"\n  },\n  \"safe_area\": {\n    \"rule\": \"Bottom 10% and far right 5% do not place key small text, to avoid full-width cuts and mobile edge cuts\",\n    \"mobile_consideration\": \"true, the title area remains fully readable in the upper half when folded into single-column mode\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"The main title is the largest in the left column, with a contrast ratio with the background of ≥4.5:1.\",\n      \"Main button shape clearly defined as a rounded rectangle solid button\",\n      \"Right column interface text uses indicative gray bars or blurred text, does not generate readable real UI mini essays\"\n    ],\n    \"avoid\": [\n      \"The main title overlaps with the 3D product block.\",\n      \"Left column has more than three lines of small text\",\n      \"背景荧光蓝紫渐变抢戏\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/banner-hero/1.png",
+      "thumb_url": "/case/poster-and-campaigns/banner-hero/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/banner-hero/2",
@@ -1836,9 +1836,9 @@
       "prompt_path": "poster-and-campaigns/banner-hero/2.json",
       "prompt_url": "/case/poster-and-campaigns/banner-hero/2.json",
       "prompt_content": "{\n  \"type\": \"Web hero banner\",\n  \"goal\": \"Generate a 21:9 ultra-wide first screen for high-resolution displays and website homepage tuning, strong dark colors, focused on research and collaboration tools.\",\n  \"aspect_ratio\": \"21:9\",\n  \"layout\": {\n    \"left_column\": {\n      \"headline\": \"Clarify the problems to make iterations controllable\",\n      \"subhead\": \"From Backlog to release, seeing dependencies, risks, and resources on a single timeline.\",\n      \"cta\": {\n        \"text\": \"Start Trial\",\n        \"color\": \"Solid electric cyan, weak outer glow 4px\",\n        \"secondary\": \"Read documents\"\n      }\n    },\n    \"right_column\": {\n      \"centerpiece\": \"Two floating unbranded interfaces on a dark panel: the front layer is a draggable issue column, the back layer is an iterative burn-down graph combining line and bar, with a 1px highlight edge\",\n      \"scale\": \"Occupies 70% of the right side of the frame, slightly sinking into the deep background\"\n    }\n  },\n  \"background\": {\n    \"type\": \"Radial gradient from near black to blue-gray, brightest in the mid-right area.\",\n    \"decoration\": \"Extremely sparse 6% brightness dot matrix, simulating a low-light machine room atmosphere.\"\n  },\n  \"brand\": {\n    \"logo_position\": \"Upper left with small placement of white geometry and text, style close to minimal engineering brands\",\n    \"navigation_hint\": \"No navigation drawing, only leave 8% high safety top edge\"\n  },\n  \"safe_area\": {\n    \"rule\": \"Bottom margin 8%, rightmost side 4% do not place key elements\",\n    \"mobile_consideration\": \"true\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"CTA with sufficient contrast against the background, easily clickable\",\n      \"The total amount of purple and cyan accents in the entire image does not exceed 20% of the frame\",\n      \"No real Git commit hashes or identifiable repository names\"\n    ],\n    \"avoid\": [\n      \"High saturation neon full screen\",\n      \"Cyberpunk-style character silhouette disrupts readability.\",\n      \"Full frame pure black dead black without gradation\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/banner-hero/2.png",
+      "thumb_url": "/case/poster-and-campaigns/banner-hero/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/banner-hero/3",
@@ -1854,9 +1854,9 @@
       "prompt_path": "poster-and-campaigns/banner-hero/3.json",
       "prompt_url": "/case/poster-and-campaigns/banner-hero/3.json",
       "prompt_content": "{\n  \"type\": \"Web hero banner\",\n  \"goal\": \"16:9 horizontal bright-tone promotional image generated for the open-source project Easy Dataset, suitable for GitHub README hero banner, homepage, WeChat official account cover, and technical sharing cover image.\",\n  \"aspect_ratio\": \"16:9\",\n  \"layout\": {\n    \"left_column\": {\n      \"headline\": \"Easy Dataset\",\n      \"subhead\": \"One-stop building of LLM fine-tuning, RAG, and evaluation datasets\",\n      \"slogan\": \"From documents to high-quality datasets.\",\n      \"badges\": [\n        \"Fine-tuning\",\n        \"RAG\",\n        \"Eval\"\n      ]\n    },\n    \"right_column\": {\n      \"centerpiece\": \"Bright SaaS workspace interface floating against a light-colored background, illustrating the process from multi-format document input to high-quality dataset output\",\n      \"input_cards\": [\n        \"PDF\",\n        \"Markdown\",\n        \"DOCX\",\n        \"TXT\",\n        \"EPUB\"\n      ],\n      \"workspace_elements\": [\n        \"Data table\",\n        \"QA Card\",\n        \"Cut panel\",\n        \"Evaluation scorecard\",\n        \"Export panel\"\n      ],\n      \"output_cards\": [\n        \"Fine-tuning Dataset\",\n        \"RAG Knowledge Base\",\n        \"Eval Benchmark\"\n      ],\n      \"scale\": \"Occupies 60% of the right side, using soft cyan green data lines connecting input, workbench, and output\"\n    },\n    \"bottom_feature_strip\": [\n      {\n        \"title\": \"Document analysis\",\n        \"caption\": \"Multiple format input\"\n      },\n      {\n        \"title\": \"Intelligent Segmentation\",\n        \"caption\": \"Structured Processing\"\n      },\n      {\n        \"title\": \"Question and answer generation\",\n        \"caption\": \"QA / Multi-Turn / COT\"\n      },\n      {\n        \"title\": \"Image QA\",\n        \"caption\": \"visual question-answering data\"\n      },\n      {\n        \"title\": \"自动评测\",\n        \"caption\": \"Judge Model\"\n      },\n      {\n        \"title\": \"Export integration\",\n        \"caption\": \"JSONL / ShareGPT / LLaMA Factory\"\n      }\n    ]\n  },\n  \"background\": {\n    \"type\": \"Warm White #F8FAFC and very light cyan #EAF7F6 bright background\",\n    \"decoration\": \"Light gray grid, soft data flow lines and slightly papery texture, maintaining a fresh white space.\"\n  },\n  \"style\": {\n    \"aesthetic\": \"Bright, upscale, open-source AI SaaS, clean product website visuals\",\n    \"palette\": [\n      \"#F8FAFC\",\n      \"#EAF7F6\",\n      \"#172033\",\n      \"#14B8A6\",\n      \"#F6B84B\",\n      \"#6366F1\"\n    ],\n    \"typography\": \"Modern sans-serif, Chinese similar to Source Han Sans, English similar to Inter\",\n    \"lighting\": \"soft daylight, clean shadows, subtle cyan glow\"\n  },\n  \"footer\": {\n    \"items\": [\n      \"github.com/ConardLi/easy-dataset\",\n      \"Open Source\",\n      \"AGPL-3.0\",\n      \"14k+ Stars\"\n    ],\n    \"placement\": \"Information area in the lower right corner or bottom, using a simple open-source badge style\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"16:9 horizontal composition stable\",\n      \"Overall, it has a bright, light color tone.\",\n      \"Easy Dataset title big and clearly readable\",\n      \"Fine-tuning / RAG / Eval three use cases prominent\",\n      \"The visual flow from document input to dataset output must be instantly understandable.\",\n      \"Text must be correct, concise, and readable.\"\n    ],\n    \"avoid\": [\n      \"Dark cyberpunk background\",\n      \"Large area of purple gradient.\",\n      \"Character or robot mascot.\",\n      \"Exaggerated 3D cartoon.\",\n      \"Code rain.\",\n      \"Forgery of authentic product screenshots.\",\n      \"Complex long paragraph\",\n      \"QR code.\",\n      \"Third-party brand logo, no real trademarks appearing except for GitHub text\",\n      \"Crowded tables or overly dense small print\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/banner-hero/3.png",
+      "thumb_url": "/case/poster-and-campaigns/banner-hero/3-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/brand-poster/1",
@@ -1872,9 +1872,9 @@
       "prompt_path": "poster-and-campaigns/brand-poster/1.json",
       "prompt_url": "/case/poster-and-campaigns/brand-poster/1.json",
       "prompt_content": "{\n  \"type\": \"Brand Main Poster\",\n  \"goal\": \"Generate a poster that can serve as the main image for a consumer electronics brand's single-node communication, featuring both the character and product as dual focal points, with a restrained overall design centered around a single Chinese slogan, achieving an Apple-like minimalist feel without copying any official logos.\",\n  \"brand\": {\n    \"name\": \"Innovators · Responsible Technology Annual Forum\",\n    \"industry\": \"Cross-disciplinary forum on technology, public policy, and developer ecosystem (main visuals should not impersonate Apple official release materials).\"\n  },\n  \"visual_tone\": {\n    \"aesthetic\": \"Extremely minimal futuristic feel + warm soft light portrait.\",\n    \"color_palette\": \"Deep space gray + silver white + very light cyan highlights\",\n    \"lighting\": \"Left front side soft light, facial contrast restrained, with delicate Fresnel highlights on the product edges\"\n  },\n  \"centerpiece\": {\n    \"type\": \"Character + Product.\",\n    \"description\": \"Tim Cook half-body frontal, smiling naturally, wearing a dark blue round-neck knit and a no-logo dark gray jacket; on his right side, a no-logo silver laptop is floating open, displaying an abstract multi-window interface; the person and the laptop together occupy about half the height of the picture, leaving space at the top and left for the title area.\",\n    \"scale\": \"Character including the computer occupies about 55% of the image.\"\n  },\n  \"slogan\": {\n    \"main\": \"Take one more step, and you will reach the next scene\",\n    \"sub\": \"Innovator Annual Meeting · Ecosystem and Responsibility Special Session\"\n  },\n  \"logo_placement\": {\n    \"position\": \"Small text in the lower right corner combined with geometric symbols\",\n    \"size\": \"Moderate and not stealing the main visual, only occupying about 6% of the screen width.\"\n  },\n  \"aspect_ratio\": \"3:4 vertical version, with 5% safe cutting margin all around\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"Main sentence within eight characters, readable at a glance\",\n      \"Character should be recognizable as a mild and professional public figure, not cartoonish or grotesque.\",\n      \"No recognizable real Apple trademarks, no official endorsement implications\",\n      \"The primary colors in the entire image do not exceed three major blocks\"\n    ],\n    \"avoid\": [\n      \"Stuff Multiple Models in One Image\",\n      \"More than two font families\",\n      \"Behind the character is piled with promotional stickers.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/brand-poster/1.png",
+      "thumb_url": "/case/poster-and-campaigns/brand-poster/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/brand-poster/2",
@@ -1890,9 +1890,9 @@
       "prompt_path": "poster-and-campaigns/brand-poster/2.json",
       "prompt_url": "/case/poster-and-campaigns/brand-poster/2.json",
       "prompt_content": "{\n  \"type\": \"Brand Main Poster\",\n  \"goal\": \"Generate a main visual for a sports brand featuring a fictional tall male basketball player, with strong lighting and impactful copy, avoiding specific product SKUs to prevent misleading details.\",\n  \"brand\": {\n    \"name\": \"NIKE\",\n    \"industry\": \"Sports apparel and footwear\"\n  },\n  \"visual_tone\": {\n    \"aesthetic\": \"high-energy portrait blending street and competition\",\n    \"color_palette\": \"Black + sideline gray + fluorescent orange accents\",\n    \"lighting\": \"Side top hard light creating a sense of muscle volume, with fine dust particles in the air\"\n  },\n  \"centerpiece\": {\n    \"type\": \"Character.\",\n    \"description\": \"A fictional tall male basketball player around 30 years old (strong arms, dark short hair with headband) in a half-body shot, realistic texture of sweaty skin, wearing a black and red color matching compression training top without large logos, both arms extended forward as if just completing a change of direction; background is blurred gymnasium and audience light spots\",\n    \"scale\": \"Character bust up to the knees, approximately 50% of the frame.\"\n  },\n  \"slogan\": {\n    \"main\": \"On the field, just score the next ball\",\n    \"sub\": \"Just Do It · Spring Training Season 2026\"\n  },\n  \"logo_placement\": {\n    \"position\": \"Upper left corner with small hook-shaped icon and text, conforming to common proportions\",\n    \"size\": \"Brand checkmark shape around 0.3 in height relative to the title text\"\n  },\n  \"aspect_ratio\": \"2:3 and 1:1 can be cropped, with the main subject centered during design\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"Slogan Main Sentence Not Exceeding 12 Words, English Subtitle in One Line\",\n      \"Brand color can echo in the title or background lines but not overexposed\",\n      \"Character's dynamics have tension but with a natural posture.\"\n    ],\n    \"avoid\": [\n      \"Pixel-perfect replication of real event photos\",\n      \"Stuff Alliance and Third-Party Brand Logos in the Corners of the Image\",\n      \"Chinese characters use a decorative cursive font.\",\n      \"Deliberately close to the portrait details of any specific real athlete\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/brand-poster/2.png",
+      "thumb_url": "/case/poster-and-campaigns/brand-poster/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/campaign-kv/1",
@@ -1908,9 +1908,9 @@
       "prompt_path": "poster-and-campaigns/campaign-kv/1.json",
       "prompt_url": "/case/poster-and-campaigns/campaign-kv/1.json",
       "prompt_content": "{\n  \"type\": \"Campaign Key Visual Main Visual System\",\n  \"goal\": \"Create an anchor image for the main campaign of summer beverages that can also showcase three commonly used compositional derivatives within the same image, used for alignment with media agencies.\",\n  \"campaign\": {\n    \"name\": \"Coca-Cola Refreshing Summer 2026\",\n    \"claim\": \"A bubble pauses the city's heat wave\",\n    \"duration\": \"2026.5.1 - 2026.8.31\"\n  },\n  \"visual_system\": {\n    \"color_palette\": \"Brand red + white + light gold bubble highlights\",\n    \"anchor_visual\": {\n      \"description\": \"A giant glass soda bottle with condensed water droplets is placed diagonally on a shallow depth of field beach wooden table, with a classic curve and no deformation, the background blurred into a summer seaside crowd and parasols; the left side of the image has 40% white space for Chinese claims and text labels\",\n      \"composition\": \"Bottle body occupies the center slightly to the right in vertical view, perspective slightly looking up enhances tension\"\n    },\n    \"graphic_motif\": \"Scattered minimalistic bubble dots and short arcs, repeating rhythm around the title without overshadowing the product.\"\n  },\n  \"claim_typography\": {\n    \"font_style\": \"Bold black sans-serif Chinese + slightly narrower European-style serif English sub-line\",\n    \"color\": \"Deep red text + gold thin underline for rhythm\"\n  },\n  \"derivative_layouts\": {\n    \"enabled\": \"true\",\n    \"items\": [\n      \"1:1 square image, closer crop of the bottle body, claim at the top center\",\n      \"9:16 vertical screen, full height of the bottle, bottom leaving a silhouette of two hands holding a cup\",\n      \"16:9 landscape, layered bottle and waves split left and right, claim in the left third\"\n    ],\n    \"rule\": \"Three small sketches arranged in a light gray frame below the main image block, with scale annotations in each box\"\n  },\n  \"logo_placement\": {\n    \"position\": \"anchor and child version unify the position of the small text label in the lower right corner\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"anchor shares the same color palette, bottle shape, and lighting direction as the three drafts\",\n      \"claim remains readable in small proportion sketches, not cut to the edges\",\n      \"The entire image does not contain any third-party logos unrelated to the beverage\"\n    ],\n    \"avoid\": [\n      \"The three-sketch style is not in the same dimensional feel as the main image\",\n      \"Text overlays at the densest highlight of the soda bottle.\",\n      \"Extra fluorescent colors\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/poster-and-campaigns/campaign-kv/1.png",
+      "thumb_url": "/case/poster-and-campaigns/campaign-kv/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "poster-and-campaigns/campaign-kv/2",
@@ -2160,9 +2160,9 @@
       "prompt_path": "scenes-and-illustrations/concept-scene/1.json",
       "prompt_url": "/case/scenes-and-illustrations/concept-scene/1.json",
       "prompt_content": "{\n  \"type\": \"Cinematic concept large scene.\",\n  \"goal\": \"Generate key art for a 3A open-world or cyberpunk series pilot poster depicting a futuristic night scene in Shanghai, without recognizable commercial logos.\",\n  \"world\": {\n    \"theme\": \"Cyberpunk Super City at the Yangtze River Estuary 2099\",\n    \"tone\": \"Acid rain, neon, ultra-high density, and humid air reflecting off the river surface.\"\n  },\n  \"composition\": {\n    \"foreground\": \"Black silhouette of a traveler holding a transparent kinetic umbrella, with faint self-luminous and rainwater sliding tracks on shoulders.\",\n    \"midground\": \"Layered commercial streets extending linearly along the Bund, magnetic levitation routes, and intersecting taxi flows, with a giant underwater dome at the Huangpu's eastern side entering the river mouth.\",\n    \"background\": \"A cluster of towers piercing through the low clouds and mist, with a three-legged suspended gantry crane, and a polyhedral holographic canopy casting pink and purple reflections between the buildings\",\n    \"perspective\": \"Low-angle wide shot looking up, with water on the ground acting as a mirror\"\n  },\n  \"lighting\": {\n    \"key_light\": \"Building Facade Strip Neon and Drone Formation Navigation Lights Scattering in Rain\",\n    \"fill_light\": \"Greenish-blue secondary reflections between the river surface and accumulated water on the road.\",\n    \"atmosphere\": \"Rain strands digitized, puddles on the road with scanned interference patterns, distant lightning afterglow without overpowering the subject\"\n  },\n  \"color_palette\": \"Fuchsia, electric cyan, deep墨黑, street amber warning light embellishments\",\n  \"title_safe_area\": \"Approximately one quarter of the top of the screen kept clean with a fog strip for typography\",\n  \"aspect_ratio\": \"21:9\",\n  \"style\": {\n    \"rendering\": \"Film-level digital painting, material details down to wet asphalt and wet metal\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"Clear and describable depth of field for the foreground, midground, and background\",\n      \"Main light source from above sign and river surface, direction consistent\",\n      \"No identifiable real company trademarks in Chinese or English\",\n      \"Character occupies less width than the scale of the building.\"\n    ],\n    \"avoid\": [\n      \"Foreground and midground blended into the same grayscale\",\n      \"Excessive detail leading to a lack of breathing space in the image.\",\n      \"The color palette features a fifth highly saturated main color\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/scenes-and-illustrations/concept-scene/1.png",
+      "thumb_url": "/case/scenes-and-illustrations/concept-scene/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "scenes-and-illustrations/concept-scene/2",
@@ -2178,9 +2178,9 @@
       "prompt_path": "scenes-and-illustrations/concept-scene/2.json",
       "prompt_url": "/case/scenes-and-illustrations/concept-scene/2.json",
       "prompt_content": "{\n  \"type\": \"Cinematic concept large scene.\",\n  \"goal\": \"Generate an outdoor scene of Mars in the morning, suitable for the main visual of a simulation game expansion on community building, with a solemn yet hopeful atmosphere.\",\n  \"world\": {\n    \"theme\": \"First expansion of the dome operations at the low-latitude Mars northern hemisphere colony\",\n    \"tone\": \"Just after the dust storm, extremely low saturation, the landscape is barren, with strong contrasting horizon light\"\n  },\n  \"composition\": {\n    \"foreground\": \"Two silhouette workers in exoskeletons facing away from the viewer, one squatting and one standing checking ground stake connections, with fine dust wind patterns in the landscape\",\n    \"midground\": \"Low-lying transparent composite dome and silver pipeline corridor, with distant tracked mining vehicles and signal towers forming geometric silhouettes in the dust and haze.\",\n    \"background\": \"Pale sun disk rising at the end of the reddish-brown plateau and thin high clouds dyed golden orange\",\n    \"perspective\": \"Slightly looking down towards the horizon, emphasizing the width of the ground.\"\n  },\n  \"lighting\": {\n    \"key_light\": \"自地平线向上的暖侧光，尘粒被照亮为体积雾\",\n    \"fill_light\": \"Cool blue fill light under the dome, from reflective film.\",\n    \"atmosphere\": \"Dust suspended in the air, distant light dust rolling but not obscuring the main sun.\"\n  },\n  \"color_palette\": \"Rust red, earth yellow, corona gold white, zenith deep blue, with partial cool cyan reflections on equipment\",\n  \"title_safe_area\": \"Top right dark void preserves title and English subtitle safe zone\",\n  \"aspect_ratio\": \"21:9\",\n  \"style\": {\n    \"rendering\": \"\\\"The Martian\\\" + next-gen game concept art blended, realistic materials\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"Humans are insignificant compared to planetary scales\",\n      \"Only one main light source: the sun is on one side of the image\",\n      \"No terrestrial vegetation and blue oceans.\",\n      \"No recognizable NASA/commercial logo, gear is designed in a general sci-fi style\"\n    ],\n    \"avoid\": [\n      \"Paint Mars in an indistinguishable gray-brown from Earth\",\n      \"Multiple large moons appearing at the zenith disrupt the sense of scale.\",\n      \"Foreground landscape overshadowed by flowers\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/scenes-and-illustrations/concept-scene/2.png",
+      "thumb_url": "/case/scenes-and-illustrations/concept-scene/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "scenes-and-illustrations/healing-scene/1",
@@ -2214,9 +2214,9 @@
       "prompt_path": "scenes-and-illustrations/healing-scene/2.json",
       "prompt_url": "/case/scenes-and-illustrations/healing-scene/2.json",
       "prompt_content": "{\n  \"type\": \"Healing-themed Daily Scene Illustration\",\n  \"goal\": \"Generate a healing scene with a warm lamp in a cabin and a beloved cat during a snowy twilight, suitable as the main image for home fragrance and winter seasonal joint events.\",\n  \"scene\": {\n    \"location\": \"The porch of a wooden guesthouse with a slanted roof on the hills of Eastern Hokkaido, with snow piled like cream in front, and thin mist over the distant cedar forest\",\n    \"season\": \"Winter · Light snow just stopped\",\n    \"time_of_day\": \"Around 16:00 before the blue hour\",\n    \"weather_or_mood\": \"Clear yet reassuring, the air sounds like the crunch of snow being stepped on\"\n  },\n  \"subject\": {\n    \"human_or_animal\": \"A fat orange cat curled up on the porch mat, paws crossed, squinting at the porch light\",\n    \"scale\": \"Occupies 28% of the frame\"\n  },\n  \"props\": {\n    \"items\": [\n      \"A wisp of steam rising from a rough pottery bowl of curry or stew (not emphasizing food type)\",\n      \"A corner of the wooden sign curtain is decorated with the Chinese character '凪' in calligraphy\",\n      \"A pair of snow boots and a hiking pole standing by the door\"\n    ]\n  },\n  \"lighting\": {\n    \"type\": \"自然冷光 + 门廊暖灯\",\n    \"direction\": \"Cold light reflects from the left snow surface, yellow light spills from the door to the edge of the cat's back\",\n    \"intensity\": \"Medium soft\",\n    \"color_temp\": \"The contrast of being cool outside and warm inside is clear but not glaring\"\n  },\n  \"style\": {\n    \"art_style\": \"Watercolor layering + slightly blurred edges.\",\n    \"rendering\": \"Snow powder particles, mist on window glass lightly coated\",\n    \"color_palette\": \"Fog Blue, Snow White, Deep Fir Green, Warm Yellow Light, Cat Orange\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"The cat has a clear focal point in the frame\",\n      \"Warm colors inside the door not overexposed into a yellow block\",\n      \"No characters, no eye contact with the camera.\"\n    ],\n    \"avoid\": [\n      \"Christmas Over-Decorated into American Festival\",\n      \"Blizzard disaster causing unease\",\n      \"A real hostel name that may infringe rights written on a wooden sign\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/scenes-and-illustrations/healing-scene/2.png",
+      "thumb_url": "/case/scenes-and-illustrations/healing-scene/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "scenes-and-illustrations/minimalist-mood-scene/1",
@@ -2232,9 +2232,9 @@
       "prompt_path": "scenes-and-illustrations/minimalist-mood-scene/1.json",
       "prompt_url": "/case/scenes-and-illustrations/minimalist-mood-scene/1.json",
       "prompt_content": "{\n  \"type\": \"Minimalist Blank Atmosphere Image\",\n  \"goal\": \"Generate a vertical illustration focused on an emotional narrative of a rainy night and small light sources, non-narrative and solely for feeling.\",\n  \"mood\": {\n    \"feeling\": \"Quiet, a little warmth taken in by the convenience store, the sound of rain like background music\",\n    \"one_sentence\": \"The entire city is raining, and only the automatic door says welcome.\"\n  },\n  \"subject\": {\n    \"description\": \"In the far lower right, a small chain convenience store with neon white and warm yellow light strips, a faint warm light strip over the shelves inside the glass door, without clear depiction of any trademark text.\",\n    \"scale\": \"Occupies 9% of the frame\",\n    \"position\": \"Lower right quadrant, near the bottom edge, leaving a large empty area on the left side\"\n  },\n  \"background\": {\n    \"type\": \"Wet asphalt road surface close to abstract gray, fading into thin layers of rain and fog in the distance\",\n    \"main_color\": \"Indigo gray 85%, dark warm gold 5%, the rest is near black wet road reflection lines\"\n  },\n  \"text_overlay\": {\n    \"enabled\": \"true\",\n    \"text\": \"The entire city is raining, and only the automatic door says welcome.\",\n    \"position\": \"Upper left slightly centered, with loose line spacing\",\n    \"font_style\": \"Ultra-thin sans-serif font, extremely light weight\",\n    \"color\": \"Medium gray, contrast not too strong\"\n  },\n  \"style\": {\n    \"rendering\": \"Flat color blocks + minimal diagonal rain line textures, not photorealistic.\",\n    \"lighting\": \"No dramatic top light, overall diffuse reflection.\",\n    \"color_palette\": \"Two-color main tone: indigo gray + embedded warm points.\"\n  },\n  \"aspect_ratio\": \"3:4\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"The subjective feeling of white space in the image ≥ 70%.\",\n      \"The subject is small but necessary, otherwise loses narrative anchor point\",\n      \"The entire text is only one sentence, with no subtitle added\"\n    ],\n    \"avoid\": [\n      \"Multiple buildings, multiple streetlights stealing the spotlight\",\n      \"Third primary color\",\n      \"Include recognizable real logos like 7-11\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/scenes-and-illustrations/minimalist-mood-scene/1.png",
+      "thumb_url": "/case/scenes-and-illustrations/minimalist-mood-scene/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "scenes-and-illustrations/minimalist-mood-scene/2",
@@ -3078,9 +3078,9 @@
       "prompt_path": "ui-mockups/short-video-cover-ui/1.json",
       "prompt_url": "/case/ui-mockups/short-video-cover-ui/1.json",
       "prompt_content": "{\n  \"type\": \"Short Video Science Popularization Cover Mockup\",\n  \"goal\": \"Generate a high click-rate video cover image for the knowledge section on Bilibili/YouTube, including a main title, subtitle, main visual, and bullet points.\",\n  \"platform\": \"General short video cover (adaptable to Bilibili / YouTube).\",\n  \"aspect_ratio\": \"16:9\",\n  \"background\": {\n    \"color_palette\": \"Deep blue gradient #0A1F44 → #1B3A6B + local bright yellow #FFD43B\",\n    \"texture\": \"Subtle Noise + Soft Light, Background Faintly Has Claude 'A' Logo and Code Symbol Outline\"\n  },\n  \"main_visual\": {\n    \"subject\": \"Asian male in his early 30s, clean short hair, black frame glasses, dark gray hoodie, right hand pointing to the left side title direction\",\n    \"position\": \"Right side of the image, 1/3.\",\n    \"expression\": \"Slightly surprised yet convincing, with raised eyebrows and an upward curve at the corners of the mouth.\"\n  },\n  \"title_block\": {\n    \"main_title\": \"99% 的人都不知道的\\nClaude 真实用法\",\n    \"title_style\": \"White background with bold black font, the phrase 'Real Usage' is highlighted with yellow outline + black shadow.\",\n    \"sub_title\": \"One move improves efficiency by 10 times\",\n    \"bullet_points\": {\n      \"count\": 3,\n      \"items\": [\n        \"✓ Automatically organize meeting minutes into action items\",\n        \"✓ Batch generate PPT outlines\",\n        \"✓ One-click to write sendable emails\"\n      ]\n    }\n  },\n  \"platform_marks\": {\n    \"logo_or_handle\": \"@Efficiency Guru\",\n    \"duration_label\": \"06:24\",\n    \"extras\": \"Bottom right corner small text 'BV1XX4y1xxxxx'\"\n  },\n  \"style\": {\n    \"rendering\": \"The cover image must look like a real video cover, not an ordinary poster\",\n    \"contrast\": \"Title is clear and readable in smartphone thumbnails from 1 meter away.\",\n    \"consistency\": \"Deep blue + bright yellow + white three-color match strictly unified\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"The visual weight of the main title is the highest.\",\n      \"The main visuals and title do not block each other.\",\n      \"Color contrast is sufficiently high\",\n      \"Chinese text has no typographical errors.\"\n    ],\n    \"avoid\": [\n      \"Too long a title causes chaotic line breaks.\",\n      \"The subject's expression is exaggerated to the point of losing quality\",\n      \"Include stacked emoji expressions\",\n      \"Stuffed with small font at the corners\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/ui-mockups/short-video-cover-ui/1.png",
+      "thumb_url": "/case/ui-mockups/short-video-cover-ui/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "ui-mockups/short-video-cover-ui/2",

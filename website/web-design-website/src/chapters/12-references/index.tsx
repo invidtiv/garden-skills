@@ -4,17 +4,17 @@ import { SceneFade } from '../../shared/SceneFade';
 import './References.css';
 
 /**
- * Chapter 12 · References 文件 · 高级模板库
+ * Chapter 12 · References File · Advanced Template Library
  *
- * 口播原文（article/口播稿.md L218）：
- *   "Skill 还附带一个 references 文件，里面包含了一些典型的代码模板，
- *    这里的灵感来源于 Claude Design 的 `copy_starter_component` 。"
+ * Voiceover source (article/voiceover-script.md L218):
+ *   "The Skill also comes with a references file, containing some typical code templates.
+ *    The inspiration comes from Claude Design's `copy_starter_component`."
  *
- * 节奏（4 步 / step 0..3）：
- *  0  hero · references / advanced-patterns.md 文件名大字 + 路径标签
- *  1  7 大模板分类 · 卡片瀑布依次浮入
- *  2  灵感来源 · Claude Design 的 copy_starter_component
- *  3  收尾："给 AI 提供高质量的起点脚手架 —— 而非从零硬画"
+ * Rhythm (4 steps / step 0..3):
+ *  0  hero · references / advanced-patterns.md filename large text + path tag
+ *  1  7 template categories · card waterfall fade in sequence
+ *  2  Inspiration source · Claude Design's copy_starter_component
+ *  3  Close: "Give AI high-quality starter scaffolding —— rather than drawing from scratch"
  */
 
 interface Tpl {
@@ -27,13 +27,13 @@ interface Tpl {
 }
 
 const TEMPLATES: Tpl[] = [
-  { id: 'slide',  num: '01', name: 'Responsive Slide Engine',     cn: '响应式幻灯片引擎', desc: '1920×1080 自适应缩放 / 1-indexed 标号 / localStorage 续播', glyph: '▭' },
-  { id: 'frame',  num: '02', name: 'Device Simulation Frames',    cn: '设备模拟外框',     desc: 'iPhone / Android / 浏览器窗口 —— 让原型像在真机里', glyph: '▢' },
-  { id: 'tweak',  num: '03', name: 'Tweaks Panel',                cn: '运行时参数面板',   desc: '右下角浮动面板：主题 / 字号 / 暗色 / 间距 一键切', glyph: '⚙' },
-  { id: 'time',   num: '04', name: 'Animation Timeline Engine',   cn: '动画时间线引擎',   desc: 'useTime + Easing + interpolate —— 时间轴可拖拽', glyph: '⌁' },
-  { id: 'canvas', num: '05', name: 'Design Canvas',               cn: '多方案对比画布',   desc: '把 N 个变体并排铺开，让用户一眼挑出来', glyph: '◫' },
-  { id: 'dark',   num: '06', name: 'Dark Mode Toggle',            cn: '暗色模式切换',     desc: 'prefers-color-scheme + 手动覆盖，token 一键翻面', glyph: '◐' },
-  { id: 'data',   num: '07', name: 'Data Visualization',          cn: '数据可视化模板',   desc: 'Chart.js / D3 / oklch palette —— data-ink 比优先', glyph: '◢' },
+  { id: 'slide',  num: '01', name: 'Responsive Slide Engine',     cn: 'Responsive Slide Deck', desc: '1920×1080 Auto-Scale / 1-Indexed Numbering / localStorage Resume', glyph: '▭' },
+  { id: 'frame',  num: '02', name: 'Device Simulation Frames',    cn: 'Device Simulation Frame',     desc: 'iPhone / Android / Browser Window —— Make Prototypes Feel Like Real Devices', glyph: '▢' },
+  { id: 'tweak',  num: '03', name: 'Tweaks Panel',                cn: 'Runtime Tweaks Panel',   desc: 'Floating Bottom-Right Panel: Theme / Font Size / Dark Mode / Spacing One-Click Switch', glyph: '⚙' },
+  { id: 'time',   num: '04', name: 'Animation Timeline Engine',   cn: 'Animation Timeline',   desc: 'useTime + Easing + Interpolate —— Draggable Timeline', glyph: '⌁' },
+  { id: 'canvas', num: '05', name: 'Design Canvas',               cn: 'Design Comparison Canvas',   desc: 'Lay N Variants Side by Side, Let Users Pick at a Glance', glyph: '◫' },
+  { id: 'dark',   num: '06', name: 'Dark Mode Toggle',            cn: 'Dark Mode Toggle',     desc: 'prefers-color-scheme + Manual Override, Token One-Click Flip', glyph: '◐' },
+  { id: 'data',   num: '07', name: 'Data Visualization',          cn: 'Data Visualization',   desc: 'Chart.js / D3 / oklch Palette —— Data-Ink Ratio First', glyph: '◢' },
 ];
 
 function References({ localStep }: ChapterContext) {
@@ -49,12 +49,12 @@ function References({ localStep }: ChapterContext) {
         <div className="rf__hero">
           <Reveal kind="fade" duration={620} delay={80} className="rf__hero-eyebrow">
             <span className="rf__src-bracket">[</span>
-            <span className="rf__src-label">SKILL · 附带文件</span>
+            <span className="rf__src-label">SKILL · BUNDLED FILE</span>
             <span className="rf__src-bracket">]</span>
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={260} className="rf__hero-pre" as="p">
-            Skill 还附带一个 ——
+            The Skill Also Bundles ——
           </Reveal>
 
           <Reveal kind="rise" duration={1300} delay={620} className="rf__hero-name" as="h1">
@@ -63,20 +63,20 @@ function References({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={1300} className="rf__hero-meta">
-            <span>≈ 520 行</span>
+            <span>≈ 520 lines</span>
             <span className="rf__hero-meta-dot" />
-            <span>7 大模板</span>
+            <span>7 Templates</span>
             <span className="rf__hero-meta-dot" />
-            <span>开箱即用</span>
+            <span>Ready to Use</span>
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene LIST（step 1）—— 7 大模板瀑布 ════════ */}
+      {/* ════════ Scene LIST（step 1）—— 7 template waterfall ════════ */}
       <SceneFade active={sceneList} exitMs={420} enterDelayMs={420}>
         <div className="rf__list-scene">
           <Reveal kind="fade" duration={620} delay={80} className="rf__list-cap">
-            7 套<em>典型代码模板</em> · 给 AI 起点脚手架
+            7 <em>Typical Code Templates</em> · Starter Scaffolding for AI
           </Reveal>
 
           <div className="rf__grid">
@@ -100,30 +100,30 @@ function References({ localStep }: ChapterContext) {
               </div>
             ))}
 
-            {/* 第 8 格补一个"摘自原始 Skill"的小标签 */}
+            {/* 8th slot: "Still Updating" small tag */}
             <div
               className="rf__card rf__card--hint"
               style={{ animationDelay: `${260 + 7 * 110}ms` }}
             >
-              <div className="rf__card-hint-eyebrow">+ 还在更新</div>
+              <div className="rf__card-hint-eyebrow">+ Still Updating</div>
               <div className="rf__card-hint-line">
-                每个模板都是<em>真实项目验证过</em>的，<br />
-                不是"AI 自由发挥"出来的。
+                Every Template Is <em>Battle-Tested in Real Projects</em>,<br />
+                Not "AI-Generated" Content.
               </div>
             </div>
           </div>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene ORIGIN（step 2）—— 灵感来源 ════════ */}
+      {/* ════════ Scene ORIGIN（step 2）—— Inspiration source ════════ */}
       <SceneFade active={sceneOrigin} exitMs={420} enterDelayMs={420}>
         <div className="rf__origin">
           <Reveal kind="fade" duration={620} delay={80} className="rf__origin-eyebrow">
-            灵感来源 ——
+            Inspired By ——
           </Reveal>
 
           <div className="rf__origin-row">
-            {/* 左：Claude Design 原始函数 */}
+            {/* Left: Claude Design original function */}
             <Reveal kind="rise" duration={780} delay={300} className="rf__origin-card rf__origin-card--src">
               <div className="rf__origin-card-tag">
                 <span className="rf__src-bracket">[</span>
@@ -135,19 +135,19 @@ function References({ localStep }: ChapterContext) {
                 <span className="rf__origin-card-fn-paren">()</span>
               </div>
               <div className="rf__origin-card-desc">
-                给 Agent 提供<em>高质量的起点脚手架</em> ——<br />
-                而不是让它从零开始 <em>"自由发挥"</em>。
+                Give Agents <em>High-Quality Starter Scaffolding</em> ——<br />
+                Instead of Letting Them <em>"Improvise"</em> From Scratch.
               </div>
             </Reveal>
 
-            {/* 中：箭头 */}
+            {/* Middle: arrow */}
             <Reveal kind="fade" duration={780} delay={780} className="rf__origin-arrow" as="span">
               <span className="rf__origin-arrow-line" />
-              <span className="rf__origin-arrow-text">提炼</span>
+              <span className="rf__origin-arrow-text">Distilled</span>
               <span className="rf__origin-arrow-head">→</span>
             </Reveal>
 
-            {/* 右：references */}
+            {/* Right: references */}
             <Reveal kind="rise" duration={780} delay={900} className="rf__origin-card rf__origin-card--dst">
               <div className="rf__origin-card-tag rf__origin-card-tag--dst">
                 <span className="rf__src-bracket">[</span>
@@ -158,14 +158,14 @@ function References({ localStep }: ChapterContext) {
                 <span className="rf__origin-card-fn-name">advanced-patterns.md</span>
               </div>
               <div className="rf__origin-card-desc">
-                7 套<em>开箱即用</em>的代码模板 ——<br />
-                Claude Code · Cursor · Codex 都能直接 import。
+                7 <em>Ready-to-Use</em> Code Templates ——<br />
+                Claude Code · Cursor · Codex Can All Import Directly.
               </div>
             </Reveal>
           </div>
 
           <Reveal kind="fade" duration={780} delay={1500} className="rf__origin-foot">
-            把 Anthropic 的<em>独家秘籍</em>，搬到任何工具里都能用
+            Take Anthropic's <em>Secret Sauce</em>, Use It in Any Tool
           </Reveal>
         </div>
       </SceneFade>
@@ -174,10 +174,10 @@ function References({ localStep }: ChapterContext) {
       <SceneFade active={sceneClose} exitMs={420} enterDelayMs={420}>
         <div className="rf__close">
           <Reveal kind="rise" duration={1100} delay={120} className="rf__close-l1" as="h1">
-            高质量的<em>起点脚手架</em>
+            High-Quality <em>Starter Scaffolding</em>
           </Reveal>
           <Reveal kind="rise" duration={1100} delay={780} className="rf__close-l2" as="h2">
-            ——&nbsp; 比让 AI <em>从零硬画</em>，强得多
+            ——&nbsp; Much Better Than Making AI <em>Draw From Scratch</em>
           </Reveal>
         </div>
       </SceneFade>
@@ -187,7 +187,7 @@ function References({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'references',
-  title: 'references · 高级模板库',
+  title: 'references · Advanced Template Library',
   eyebrow: '12',
   steps: 4,
   theme: 'light',

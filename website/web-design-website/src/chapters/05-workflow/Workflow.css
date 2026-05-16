@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 05 · 第二部分 · 工作流
-   ink 主题 · 流水线 → 问 vs 干 → 极简总结
+   Chapter 05 · Part Two · Workflow
+   ink theme · pipeline → ask vs build → ultra-brief summary
    ========================================================= */
 
 .wf {
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* —— 顶部 eyebrow —— */
+/* —— Top eyebrow —— */
 .wf__eyebrow {
   position: absolute;
   top: 56px;
@@ -43,7 +43,7 @@
 .wf__eyebrow-text { color: var(--fg); letter-spacing: 0.18em; }
 .wf__eyebrow-mute { color: var(--fg-faint); font-size: 13px; }
 
-/* —— 通用 prompt 源标签子部件 —— */
+/* —— Shared prompt source label sub-components —— */
 .wf__src-bracket { color: var(--accent); font-weight: 600; }
 .wf__src-label   { color: var(--fg);     font-weight: 600; letter-spacing: 0.22em; }
 .wf__src-sep     { color: var(--fg-faint); }
@@ -63,7 +63,7 @@
   gap: 80px;
 }
 
-/* 原文引用块（与 ch04 同款） */
+/* Original quote block (same as ch04) */
 .wf__excerpt {
   width: 100%;
   max-width: 1280px;
@@ -126,7 +126,7 @@
   padding: 0 2px;
 }
 
-/* —— 流水线 —— */
+/* —— Pipeline —— */
 .wf__pipeline {
   position: relative;
   width: 100%;
@@ -309,7 +309,7 @@
   letter-spacing: 0.16em;
 }
 
-/* —— 决策对比（两栏 + 中央 vs） —— */
+/* —— Decision comparison (two columns + center vs) —— */
 .wf__decide-grid {
   position: relative;
   display: grid;

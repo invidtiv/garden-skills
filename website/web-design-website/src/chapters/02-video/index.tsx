@@ -4,14 +4,14 @@ import { Reveal } from '../../shared/Reveal';
 import './Video.css';
 
 /**
- * Chapter 02 · Anthropic 官方宣传片嵌入
+ * Chapter 02 · Anthropic Official Promo Embed
  *
- * 浅色纸感背景 + 虚拟电视外框 + 16:9 视频。视频源：/video.mp4
+ * Light paper-textured background + virtual TV frame + 16:9 video. Source: /video.mp4
  *
- * 仅保留电视外框 —— 不放任何文案 / eyebrow / caption。
- * - 进入时静音自动播放（绕过浏览器策略），用户可通过 controls 解除静音 / 暂停
- * - TV + 底座 data-no-step，操作 controls 不会推进
- * - 点击 TV 之外的留白才会推进到 Ch03
+ * Keep only the TV frame —— no copy / eyebrow / caption.
+ * - Mute autoplay on entry (bypass browser policy); users can unmute / pause via controls
+ * - TV + stand data-no-step; operating controls won't advance
+ * - Clicking the margin outside the TV advances to Ch03
  */
 function VideoChapter(_: ChapterContext) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -22,7 +22,7 @@ function VideoChapter(_: ChapterContext) {
     v.currentTime = 0;
     const play = v.play();
     if (play && typeof play.catch === 'function') {
-      play.catch(() => {/* 用户必须自行点击播放 */});
+      play.catch(() => {/* user must click to play */});
     }
     return () => {
       v.pause();
@@ -33,13 +33,13 @@ function VideoChapter(_: ChapterContext) {
     <section className="vid">
       <Reveal kind="rise" duration={900} delay={120} className="vid__tv-wrap">
         <div className="vid__tv" data-no-step>
-          {/* 角注 4 颗螺丝 */}
+          {/* 4 corner screws */}
           <span className="vid__screw vid__screw--tl" />
           <span className="vid__screw vid__screw--tr" />
           <span className="vid__screw vid__screw--bl" />
           <span className="vid__screw vid__screw--br" />
 
-          {/* 顶部状态条 */}
+          {/* Top status bar */}
           <div className="vid__topstrip">
             <span className="vid__led" />
             <span>ON · CH · 02</span>
@@ -47,7 +47,7 @@ function VideoChapter(_: ChapterContext) {
             <span>SIGNAL · STABLE</span>
           </div>
 
-          {/* 屏幕 */}
+          {/* Screen */}
           <div className="vid__screen">
             <div className="vid__scanlines" aria-hidden />
             <video
@@ -61,14 +61,14 @@ function VideoChapter(_: ChapterContext) {
             />
           </div>
 
-          {/* 底部品牌条 */}
+          {/* Bottom brand bar */}
           <div className="vid__brandstrip">
             <span className="vid__brand-mark" />
             <span className="vid__brand-name">ANTHROPIC</span>
           </div>
         </div>
 
-        {/* 底座 */}
+        {/* Stand */}
         <div className="vid__stand" data-no-step>
           <span className="vid__stand-neck" />
           <span className="vid__stand-base" />
@@ -80,7 +80,7 @@ function VideoChapter(_: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'video',
-  title: '官方宣传片',
+  title: 'Official Promo',
   eyebrow: '02',
   steps: 1,
   theme: 'light',

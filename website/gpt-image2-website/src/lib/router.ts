@@ -4,18 +4,23 @@ import type { Route } from '../types';
 function parseHash(): Route {
   const h = window.location.hash.replace(/^#\/?/, '');
   if (!h) return { name: 'home' };
-  if (h === 'skills') return { name: 'skills' };
-  if (h.startsWith('case/')) {
-    const id = decodeURIComponent(h.slice('case/'.length));
+
+  const [path, search] = h.split('?');
+  const params = new URLSearchParams(search || '');
+  const query = params.get('query') || undefined;
+
+  if (path === 'skills') return { name: 'skills' };
+  if (path.startsWith('case/')) {
+    const id = decodeURIComponent(path.slice('case/'.length));
     return { name: 'case', id };
   }
-  return { name: 'home' };
+  return { name: 'home', query };
 }
 
 function routeToHash(route: Route): string {
   switch (route.name) {
     case 'home':
-      return '';
+      return route.query ? `#/home?query=${encodeURIComponent(route.query)}` : '';
     case 'skills':
       return '#/skills';
     case 'case':

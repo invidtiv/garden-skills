@@ -5,14 +5,17 @@ import fs from 'fs/promises';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import sharp from 'sharp';
+import { fileURLToPath } from 'url';
 
 const execAsync = promisify(exec);
 const app = express();
 const PORT = process.env.UPLOAD_PORT || 3002;
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 // Case root where images should be saved
-const CASE_ROOT = '/root/.openclaw/workspace/garden-skills/website/gpt-image2-website/public/case';
-const SITE_ROOT = '/root/.openclaw/workspace/garden-skills/website/gpt-image2-website';
+const CASE_ROOT = path.join(__dirname, 'public', 'case');
+const SITE_ROOT = __dirname;
 
 // Enable CORS for the frontend
 app.use((req, res, next) => {

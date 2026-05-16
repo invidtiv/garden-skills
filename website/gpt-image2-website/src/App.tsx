@@ -75,7 +75,7 @@ export function App() {
       ) : (
         <main>
           <Hero navigate={navigate} />
-          <Gallery navigate={navigate} />
+          <Gallery navigate={navigate} initialQuery={route.name === 'home' ? route.query : undefined} />
           <Footer navigate={navigate} />
         </main>
       )}

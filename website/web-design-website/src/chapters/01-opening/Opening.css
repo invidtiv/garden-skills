@@ -1,9 +1,9 @@
 /* =========================================================
-   Chapter 01 · Opening 「一则崩盘」
-   - ink 主题（深墨底）
-   - 4 幕全部由 SceneFade 包裹独立铺满 stage，互不重叠
-   - 没有任何"网页 chrome"（无顶部章节标记 / 底部 footer）
-   - 真实数据：LegalZoom -20% / CRCL -20% / CrowdStrike -7% / Figma -7%
+   Chapter 01 · Opening "A Crash"
+   - ink theme (dark ink background)
+   - 4 acts all wrapped by SceneFade, independently filling the stage, no overlap
+   - No "web chrome" (no top chapter mark / bottom footer)
+   - Real data: LegalZoom -20% / CRCL -20% / CrowdStrike -7% / Figma -7%
    ========================================================= */
 
 .opening {
@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-/* 每幕都是覆盖 stage 的全屏容器 */
+/* Each act is a full-screen container covering the stage */
 .opening__sceneA,
 .opening__sceneB,
 .opening__sceneC,
@@ -43,7 +43,7 @@
    SCENE A · Crash
    ========================================================= */
 
-/* LIVE 报价条（仅 Scene A 出现，作为"市场环境") */
+/* LIVE quote bar (appears only in Scene A, as "market context") */
 .opening__live {
   position: absolute;
   top: 90px;
@@ -110,7 +110,7 @@
   font-size: 14px;
 }
 
-/* "FIGMA" 巨字背景水印 */
+/* "FIGMA" giant background watermark */
 .opening__crash-mega {
   position: absolute;
   left: 100px;
@@ -127,7 +127,7 @@
   z-index: 1;
 }
 
-/* 引子小字 */
+/* Intro small text */
 .opening__crash-intro {
   position: absolute;
   top: 230px;
@@ -154,7 +154,7 @@
   color: var(--fg-soft);
 }
 
-/* 折线图 */
+/* Line chart */
 .opening__chart {
   position: absolute;
   inset: 320px 80px 280px;
@@ -221,7 +221,7 @@
   to { opacity: 1; }
 }
 
-/* 中文 headline */
+/* Headline */
 .opening__crash-headline {
   position: absolute;
   bottom: 140px;
@@ -249,7 +249,7 @@
   font-weight: 400;
 }
 
-/* 跌幅大数字 */
+/* Big drop number */
 .opening__crash-stat {
   position: absolute;
   right: 120px;
@@ -457,7 +457,7 @@
 }
 
 /* =========================================================
-   SCENE C · Claude Design 揭幕
+   SCENE C · Claude Design Unveiling
    ========================================================= */
 .opening__reveal-meta {
   display: flex;

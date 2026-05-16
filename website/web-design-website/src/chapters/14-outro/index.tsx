@@ -4,23 +4,23 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Outro.css';
 
 /**
- * Chapter 14 · Outro · 项目预告 + 三连
+ * Chapter 14 · Outro · Project Preview + Triple Action
  *
- * 口播原顺序（严格对齐 article/口播稿.md L284-295）：
- *   1. "Skill 的完整代码、原始参考的 Claude Design 的提示词、几个 DEMO 网站，
- *       我都已经打包到一起开源了。大家需要的可以到简介和评论区自取。"
- *   2. "最后推荐下我最近在做的 Easy Agent 开源项目。"
- *   3. "做这个项目的目的是 —— 学习 Claude Code 的 Harness 是如何做的，
- *       最终完整跟下来的同学都能具备从零开发企业级 Agent 的能力。"
- *   4. "如果本期教程对你有所帮助，希望得到一个免费的三连 ——"
- *   5. "我们下期见。"
+ * Narration order (strictly aligned with article/口播稿.md L284-295):
+ *   1. "The full Skill code, the original Claude Design reference prompt, and several demo websites
+ *       are all packaged together and open-sourced. Check the description and comments."
+ *   2. "Finally, let me recommend the Easy Agent open-source project I've been working on."
+ *   3. "The goal of this project is to learn how Claude Code's Harness is built,
+ *       so that anyone who follows through can develop enterprise-grade Agents from scratch."
+ *   4. "If this tutorial helped you, a free triple action would be appreciated —"
+ *   5. "See you next time."
  *
- * 节奏（5 步 / step 0..4）：
- *  0  开源资源卡 · "已打包开源" + 三个内容标签卡（Skill / Prompt / DEMOs）
- *  1  Easy Agent · 项目大字 hero + 副 "从零复刻 Claude Code · Harness"
- *  2  项目目标 · "完整跟下来 → 企业级 Agent 开发能力"
- *  3  三连 CTA · 自绘几何 like / star / follow（无 emoji）
- *  4  下期见 · 大字告别
+ * Rhythm (5 steps / step 0..4):
+ *  0  Open-source resource card · "All packaged & open-sourced" + three content tag cards (Skill / Prompt / DEMOs)
+ *  1  Easy Agent · Project hero + subtitle "Recreating Claude Code · Harness from scratch"
+ *  2  Project goal · "Follow through → Enterprise-grade Agent development capability"
+ *  3  Triple CTA · Self-drawn geometric like / star / follow (no emoji)
+ *  4  See you next time · Big farewell text
  */
 
 interface Resource {
@@ -32,16 +32,16 @@ interface Resource {
 }
 
 const RESOURCES: Resource[] = [
-  { id: 'skill',  num: '01', name: 'web-design-engineer',         cn: 'Skill 完整代码',  desc: '本期主角 · SKILL.md + references' },
-  { id: 'prompt', num: '02', name: 'claude-design / system.md',   cn: '原始参考 Prompt', desc: 'Claude Design 系统提示词原文 · ≈ 420 行' },
-  { id: 'demo',   num: '03', name: 'demos /',                     cn: '几个 DEMO 网站',  desc: '本期演示用到的所有产物站点' },
+  { id: 'skill',  num: '01', name: 'web-design-engineer',         cn: 'Full Skill Source Code',  desc: 'The star of the show · SKILL.md + references' },
+  { id: 'prompt', num: '02', name: 'claude-design / system.md',   cn: 'Original Reference Prompt', desc: 'Claude Design system prompt original · ≈ 420 lines' },
+  { id: 'demo',   num: '03', name: 'demos /',                     cn: 'Demo Websites',  desc: 'All output sites used in this demo' },
 ];
 
 /* ──────────────────────────────────────────────────────────────────
- * 自绘几何三连图标（line-art · 不用 emoji）
- *   - like:   拇指（圆角矩形 + 半圆）
- *   - star:   五角星
- *   - follow: 圆 + 内嵌 +
+ * Self-drawn geometric triple icons (line-art · no emoji)
+ *   - like:   thumb (rounded rect + semi-circle)
+ *   - star:   five-pointed star
+ *   - follow: circle + embedded +
  * ────────────────────────────────────────────────────────────────── */
 
 function IconLike() {
@@ -101,9 +101,9 @@ function IconFollow() {
 }
 
 const TRIPLE = [
-  { id: 'like',   icon: <IconLike   />, label: '点赞', mono: 'LIKE'    },
-  { id: 'star',   icon: <IconStar   />, label: '收藏', mono: 'COLLECT' },
-  { id: 'follow', icon: <IconFollow />, label: '关注', mono: 'FOLLOW'  },
+  { id: 'like',   icon: <IconLike   />, label: 'Like',    mono: 'LIKE'    },
+  { id: 'star',   icon: <IconStar   />, label: 'Collect', mono: 'COLLECT' },
+  { id: 'follow', icon: <IconFollow />, label: 'Follow',  mono: 'FOLLOW'  },
 ];
 
 function Outro({ localStep }: ChapterContext) {
@@ -115,15 +115,15 @@ function Outro({ localStep }: ChapterContext) {
 
   return (
     <section className="ot">
-      {/* ════════ Scene OPEN（step 0）—— 开源资源卡 ════════ */}
+      {/* ════════ Scene OPEN（step 0）—— Open-Source Resource Cards ════════ */}
       <SceneFade active={sceneOpen} exitMs={420} enterDelayMs={120}>
         <div className="ot__open">
           <Reveal kind="fade" duration={620} delay={80} className="ot__open-eyebrow">
-            最后 ——
+            Finally —
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={300} className="ot__open-title" as="h1">
-            <em>已打包开源</em> · 简介 / 评论区 自取
+            <em>All Packaged & Open-Sourced</em> · Check Description / Comments
           </Reveal>
 
           <div className="ot__open-grid">
@@ -146,22 +146,22 @@ function Outro({ localStep }: ChapterContext) {
           </div>
 
           <Reveal kind="fade" duration={780} delay={1500} className="ot__open-foot">
-            一键打包 —— 不用四处找
+            One-click bundle — no need to search around
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene EASY（step 1）—— Easy Agent 项目预告 ════════ */}
+      {/* ════════ Scene EASY（step 1）—— Easy Agent Project Preview ════════ */}
       <SceneFade active={sceneEasy} exitMs={420} enterDelayMs={420}>
         <div className="ot__easy">
           <Reveal kind="fade" duration={620} delay={80} className="ot__easy-eyebrow">
             <span className="ot__src-bracket">[</span>
-            <span className="ot__src-label">还在做的 · 开源项目</span>
+            <span className="ot__src-label">Work in Progress · Open Source Project</span>
             <span className="ot__src-bracket">]</span>
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={260} className="ot__easy-pre" as="p">
-            最后推荐 ——
+            Final recommendation —
           </Reveal>
 
           <Reveal kind="rise" duration={1300} delay={620} className="ot__easy-name" as="h1">
@@ -169,7 +169,7 @@ function Outro({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={1300} className="ot__easy-sub" as="h2">
-            从零复刻 Claude Code 的 <em>Harness</em>
+            Recreating Claude Code's <em>Harness</em> from Scratch
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1900} className="ot__easy-meta">
@@ -177,22 +177,22 @@ function Outro({ localStep }: ChapterContext) {
             <span className="ot__easy-meta-dot" />
             <span>step-by-step</span>
             <span className="ot__easy-meta-dot" />
-            <span>企业级 Agent</span>
+            <span>enterprise agent</span>
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene GOAL（step 2）—— 项目目标 ════════ */}
+      {/* ════════ Scene GOAL（step 2）—— Project Goal ════════ */}
       <SceneFade active={sceneGoal} exitMs={420} enterDelayMs={420}>
         <div className="ot__goal">
           <Reveal kind="fade" duration={620} delay={80} className="ot__goal-eyebrow">
-            完整跟下来 ——
+            Follow through to the end —
           </Reveal>
 
           <div className="ot__goal-flow">
             <Reveal kind="rise" duration={780} delay={260} className="ot__goal-step ot__goal-step--from">
-              <div className="ot__goal-step-tag">YOU · 现在</div>
-              <div className="ot__goal-step-line">想 转 AI Agent 开发</div>
+              <div className="ot__goal-step-tag">YOU · Now</div>
+              <div className="ot__goal-step-line">Want to switch to AI Agent development</div>
             </Reveal>
 
             <Reveal kind="fade" duration={780} delay={620} className="ot__goal-arrow" as="span">
@@ -202,26 +202,26 @@ function Outro({ localStep }: ChapterContext) {
             </Reveal>
 
             <Reveal kind="rise" duration={780} delay={900} className="ot__goal-step ot__goal-step--to">
-              <div className="ot__goal-step-tag ot__goal-step-tag--alt">YOU · 之后</div>
-              <div className="ot__goal-step-line">具备<em>企业级</em> Agent 开发能力</div>
+              <div className="ot__goal-step-tag ot__goal-step-tag--alt">YOU · After</div>
+              <div className="ot__goal-step-line">Have <em>enterprise-grade</em> Agent development skills</div>
             </Reveal>
           </div>
 
           <Reveal kind="fade" duration={780} delay={1500} className="ot__goal-foot">
-            "AI 转型 —— <em>不容错过</em>"
+            "AI Transition — <em>Don't Miss Out</em>"
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene TRIPLE（step 3）—— 自绘三连 ════════ */}
+      {/* ════════ Scene TRIPLE（step 3）—— Self-Drawn Triple ════════ */}
       <SceneFade active={sceneTriple} exitMs={420} enterDelayMs={420}>
         <div className="ot__triple">
           <Reveal kind="fade" duration={620} delay={80} className="ot__triple-eyebrow">
-            如果本期对你有帮助 ——
+            If this episode helped you —
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={260} className="ot__triple-title" as="h1">
-            希望得到一个 <em>免费的三连</em>
+            A <em>free triple action</em> would be appreciated
           </Reveal>
 
           <div className="ot__triple-row">
@@ -241,19 +241,19 @@ function Outro({ localStep }: ChapterContext) {
           </div>
 
           <Reveal kind="fade" duration={780} delay={1700} className="ot__triple-foot">
-            后续 —— 持续分享更多<em>有价值的 AI 教程</em>
+            More <em>valuable AI tutorials</em> to come
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene BYE（step 4）—— 下期见 ════════ */}
+      {/* ════════ Scene BYE（step 4）—— See You Next Time ════════ */}
       <SceneFade active={sceneBye} exitMs={420} enterDelayMs={420}>
         <div className="ot__bye">
           <Reveal kind="fade" duration={780} delay={120} className="ot__bye-eyebrow">
-            感谢观看 ——
+            Thanks for watching —
           </Reveal>
           <Reveal kind="rise" duration={1300} delay={500} className="ot__bye-line" as="h1">
-            我们 <em>下期见</em>
+            See you <em>next time</em>
             <span className="ot__bye-arrow">↗</span>
           </Reveal>
           <Reveal kind="fade" duration={780} delay={1500} className="ot__bye-sig">
@@ -269,7 +269,7 @@ function Outro({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'outro',
-  title: 'Outro · 项目预告 + 三连',
+  title: 'Outro · Project Preview + Triple Action',
   eyebrow: '14',
   steps: 5,
   theme: 'light',

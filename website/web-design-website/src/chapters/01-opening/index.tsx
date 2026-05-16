@@ -6,27 +6,27 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Opening.css';
 
 /**
- * Chapter 01 · Opening 「一则崩盘」
+ * Chapter 01 · Opening "A Crash"
  *
- * 4 幕 × 14 个 step：
- *  Scene A · Crash      (0..3)  Figma 股价崩盘
- *  Scene B · Victims    (4..8)  Anthropic 历次带崩列表
- *  Scene C · Reveal     (9..11) Claude Design 揭幕
- *  Scene D · Skill      (12..13) 我把它做成了 Skill
+ * 4 acts × 14 steps:
+ *  Scene A · Crash      (0..3)  Figma stock crash
+ *  Scene B · Victims    (4..8)  Anthropic crash history
+ *  Scene C · Reveal     (9..11) Claude Design unveiling
+ *  Scene D · Skill      (12..13) I made it a Skill
  *
- * 真实数据：LegalZoom -20% / CRCL -20% / CrowdStrike -7% / Figma -7%
+ * Real data: LegalZoom -20% / CRCL -20% / CrowdStrike -7% / Figma -7%
  *
- * 设计原则：
- *  - 没有任何"网页 chrome"（没有顶部章节标记 / 底部 footer / 永久 hint）
- *  - 每幕通过 SceneFade 优雅交叉淡入淡出，不会有重叠 bug
- *  - 每个 step 推进只增加 1 个新视觉元素
+ * Design principles:
+ *  - No "web chrome" (no top chapter mark / bottom footer / permanent hint)
+ *  - Each act cross-fades elegantly via SceneFade, no overlap bugs
+ *  - Each step advance adds only 1 new visual element
  */
 
 const VICTIMS = [
-  { product: 'Claude Cowork',        company: 'LegalZoom',       ticker: 'LZ',   drop: -20.0, field: '法律服务' },
-  { product: 'Claude Code Security', company: 'Circle Internet', ticker: 'CRCL', drop: -20.0, field: '云安全' },
-  { product: 'Claude Mythos',        company: 'CrowdStrike',     ticker: 'CRWD', drop: -7.0,  field: '终端安全' },
-  { product: 'Claude Design',        company: 'Figma',           ticker: 'FIG',  drop: -7.0,  field: '设计协作', current: true },
+  { product: 'Claude Cowork',        company: 'LegalZoom',       ticker: 'LZ',   drop: -20.0, field: 'Legal Services' },
+  { product: 'Claude Code Security', company: 'Circle Internet', ticker: 'CRCL', drop: -20.0, field: 'Cloud Security' },
+  { product: 'Claude Mythos',        company: 'CrowdStrike',     ticker: 'CRWD', drop: -7.0,  field: 'Endpoint Security' },
+  { product: 'Claude Design',        company: 'Figma',           ticker: 'FIG',  drop: -7.0,  field: 'Design Collaboration', current: true },
 ];
 
 function Opening({ localStep }: ChapterContext) {
@@ -43,7 +43,7 @@ function Opening({ localStep }: ChapterContext) {
       {/* ============== SCENE A · Crash (0..3) ============== */}
       <SceneFade active={sceneCrash}>
         <div className="opening__sceneA">
-          {/* LIVE 报价条 —— 仅在崩盘场景中作为"市场环境"出现 */}
+          {/* LIVE quote bar —— appears only in crash scene as "market context" */}
           <div className="opening__live">
             <span className="opening__live-dot" />
             <span className="opening__live-label">NASDAQ · LIVE</span>
@@ -56,33 +56,33 @@ function Opening({ localStep }: ChapterContext) {
             </span>
           </div>
 
-          {/* "FIGMA" 巨字背景 —— step 2 才显形 */}
+          {/* "FIGMA" giant background text —— reveals at step 2 */}
           {at(2) && (
             <Reveal kind="blur" duration={1200} delay={120}>
               <div className="opening__crash-mega">FIGMA</div>
             </Reveal>
           )}
 
-          {/* 引子小字 —— step 1 */}
+          {/* Intro text —— step 1 */}
           {at(1) && (
             <Reveal kind="rise" duration={620} className="opening__crash-intro">
               <span className="opening__crash-intro-tag">2026 · 04 · 17 · NASDAQ CLOSE</span>
-              <span className="opening__crash-intro-text">就在前两天 ——</span>
+              <span className="opening__crash-intro-text">Just two days ago —</span>
             </Reveal>
           )}
 
-          {/* 折线图 —— step 1 开始绘制历史 / step 2 崩盘 */}
+          {/* Line chart —— step 1 draws history / step 2 crash */}
           <CrashChart phase={localStep} />
 
-          {/* 中文 headline —— step 2 */}
+          {/* Headline —— step 2 */}
           {at(2) && (
             <Reveal kind="rise" duration={780} delay={620} className="opening__crash-headline">
               <span className="opening__crash-line">Figma</span>
-              <em className="opening__crash-emph">的股价崩了。</em>
+              <em className="opening__crash-emph">'s stock crashed.</em>
             </Reveal>
           )}
 
-          {/* −7.0% 大数字 —— step 3 */}
+          {/* −7.0% big number —— step 3 */}
           {at(3) && (
             <Reveal kind="rise" duration={520} className="opening__crash-stat">
               <div className="opening__crash-stat-num">
@@ -96,7 +96,7 @@ function Opening({ localStep }: ChapterContext) {
                 />
                 <span className="opening__crash-stat-pct">%</span>
               </div>
-              <div className="opening__crash-stat-label">单日跌幅 · 收盘</div>
+              <div className="opening__crash-stat-label">Daily Drop · Close</div>
             </Reveal>
           )}
         </div>
@@ -107,9 +107,9 @@ function Opening({ localStep }: ChapterContext) {
         <div className="opening__sceneB">
           <div className="opening__vics-eyebrow">
             <Reveal kind="rise" duration={680} className="opening__vics-eyebrow-inner">
-              <span>这已经是</span>
-              <em className="opening__vics-em">第 N 次</em>
-              <span>了 ——</span>
+              <span>This is already</span>
+              <em className="opening__vics-em">the Nth time</em>
+              <span> ——</span>
             </Reveal>
             <Reveal kind="fade" duration={520} delay={520} className="opening__vics-by">
               <span className="opening__vics-by-tag">CRASHED · BY</span>
@@ -144,7 +144,7 @@ function Opening({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ============== SCENE C · Claude Design 揭幕 (9..11) ============== */}
+      {/* ============== SCENE C · Claude Design Unveiling (9..11) ============== */}
       <SceneFade active={sceneReveal}>
         <div className="opening__sceneC">
           <Reveal kind="fall" duration={700} className="opening__reveal-meta">
@@ -178,7 +178,7 @@ function Opening({ localStep }: ChapterContext) {
           {at(10) && (
             <Reveal kind="rise" duration={720} delay={680} className="opening__reveal-sub">
               <span className="opening__reveal-tilde">——</span>
-              <span>设计师的 Claude Code</span>
+              <span>Claude Code for Designers</span>
             </Reveal>
           )}
 
@@ -191,7 +191,7 @@ function Opening({ localStep }: ChapterContext) {
                 <span>Pro · Max · Team · Enterprise</span>
               </Reveal>
               <Reveal kind="rise" duration={520} delay={240}>
-                <span>左侧聊天 · 右侧画布</span>
+                <span>Chat on the left · Canvas on the right</span>
               </Reveal>
             </div>
           )}
@@ -203,12 +203,12 @@ function Opening({ localStep }: ChapterContext) {
         <div className="opening__sceneD">
           <Reveal kind="rise" duration={620} className="opening__pivot-eyebrow">
             <span className="opening__pivot-eyebrow-bar" />
-            <span>于是 ——</span>
+            <span>So —</span>
           </Reveal>
 
           <h2 className="opening__pivot-title">
             <Reveal kind="blur" duration={900} delay={120}>
-              我把它做成了一个
+              I turned it into a
             </Reveal>
             <Reveal
               kind="blur"
@@ -216,7 +216,7 @@ function Opening({ localStep }: ChapterContext) {
               delay={520}
               className="opening__pivot-em"
             >
-              人人都能用的 Skill。
+              Skill anyone can use.
             </Reveal>
           </h2>
 
@@ -227,8 +227,8 @@ function Opening({ localStep }: ChapterContext) {
               </Reveal>
               <Reveal kind="rise" duration={720} delay={520} className="opening__pivot-aside">
                 <span className="opening__pivot-aside-q">"</span>
-                <span>人人都能成为</span>
-                <em>顶级网站设计师。</em>
+                <span>Anyone can become</span>
+                <em>a top-tier web designer.</em>
               </Reveal>
             </div>
           )}
@@ -238,7 +238,7 @@ function Opening({ localStep }: ChapterContext) {
   );
 }
 
-/* ────────────── 子组件 ────────────── */
+/* ────────────── Sub-components ────────────── */
 
 function CrashChart({ phase }: { phase: number }) {
   const showHistory = phase >= 1;
@@ -296,8 +296,8 @@ function CrashChart({ phase }: { phase: number }) {
         <g className="opening__chart-end">
           <line x1="0" y1="258" x2="1760" y2="258" strokeDasharray="2 8" strokeWidth="1" />
           <circle cx="1760" cy="510" r="6" />
-          <text x="1740" y="245" textAnchor="end">前日收盘 51.95</text>
-          <text x="1740" y="495" textAnchor="end">今日收盘 48.32</text>
+          <text x="1740" y="245" textAnchor="end">Prev Close 51.95</text>
+          <text x="1740" y="495" textAnchor="end">Today's Close 48.32</text>
         </g>
       )}
     </svg>
@@ -347,20 +347,20 @@ function SkillCard() {
       </div>
       <div className="opening__skill-card-body">
         <div className="opening__skill-card-row">
-          <span className="opening__skill-card-k">支持环境</span>
+          <span className="opening__skill-card-k">Environment</span>
           <span className="opening__skill-card-v">Cursor · Claude Code · Codex</span>
         </div>
         <div className="opening__skill-card-row">
-          <span className="opening__skill-card-k">体量</span>
-          <span className="opening__skill-card-v">≈ 400 行 · 含模板库 ≈ 520 行</span>
+          <span className="opening__skill-card-k">Size</span>
+          <span className="opening__skill-card-v">≈ 400 lines · incl. template library ≈ 520 lines</span>
         </div>
         <div className="opening__skill-card-row">
-          <span className="opening__skill-card-k">来源</span>
-          <span className="opening__skill-card-v">Claude Design 系统提示词 · 提炼 + 改良</span>
+          <span className="opening__skill-card-k">Source</span>
+          <span className="opening__skill-card-v">Claude Design system prompt · distilled + improved</span>
         </div>
         <div className="opening__skill-card-row">
-          <span className="opening__skill-card-k">效果</span>
-          <span className="opening__skill-card-v">85 → 95 分</span>
+          <span className="opening__skill-card-k">Result</span>
+          <span className="opening__skill-card-v">85 → 95 pts</span>
         </div>
       </div>
       <div className="opening__skill-card-foot">
@@ -373,7 +373,7 @@ function SkillCard() {
 
 const def: ChapterDef = {
   id: 'opening',
-  title: '开场 · 一则崩盘',
+  title: 'Opening · A Crash',
   eyebrow: '01',
   steps: 14,
   theme: 'ink',

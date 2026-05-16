@@ -55,6 +55,6 @@ export interface DocsManifest {
 }
 
 export type Route =
-  | { name: 'home' }
+  | { name: 'home'; query?: string }
   | { name: 'case'; id: string }
   | { name: 'skills' };

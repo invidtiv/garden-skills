@@ -5,39 +5,39 @@ import { SceneFade } from '../../shared/SceneFade';
 import './SkillChanges.css';
 
 /**
- * Chapter 11 · Skill 的关键改动（重做版）
+ * Chapter 11 · Key Skill Changes (Redux)
  *
- * 口播原顺序（严格对齐 article/口播稿.md）：
- *   "这个 Skill 大概 400 行，首先我把 Claude Design 中特有工具和环境的描述剥离了出去，
- *    只保留了其中能通用的、最有价值的部分，然后在这个基础上我还优化了几个地方："
- *   ① 写代码之前必须先用自然语言把设计系统说清楚 — 配色、字体、间距，全列出来。
- *   ② 要求它尽早拿出一个带假设和占位符的最小版本（v0）。
- *   ③ 在 Claude Design 的基础上，补充了更多的去除 AI 味的条目。
- *   ④ 加了几套经过验证的配色 × 字体的配对参考表 —— 给 AI 一个靠谱的起点。
+ * Voiceover original order (strictly aligned with article/voiceover-script.md):
+ *   "This Skill is about 400 lines. First, I stripped out Claude Design's proprietary tool and environment descriptions,
+ *    keeping only the universal, most valuable parts, and on top of that I optimized several areas:"
+ *   ① Before writing code, must first articulate the design system in natural language — colors, fonts, spacing, all listed out.
+ *   ② Require it to ship a minimal version with assumptions and placeholders early (v0).
+ *   ③ On top of Claude Design's foundation, added more de-AI-style items.
+ *   ④ Added several verified color × font pairing reference tables — giving AI a reliable starting point.
  *
- * 节奏（8 步 / step 0..7）：
- *  0  Skill 全貌 —— 文件目录树（SKILL.md ≈ 400 行 / references ≈ 520 行）
- *  1  SKILL.md 真原文滚动展示（虚假的编辑器持续 scroll）
- *  2  第一刀：剥离 —— 工具/环境 vs 通用精华
- *  3  + 改动 01 · 先宣告设计系统  + SKILL.md L79-91 原文摘录（关键高亮 / 上下文虚化）
- *  4  + 改动 02 · v0 半成品先出  + SKILL.md L93-101 原文摘录
- *  5  + 改动 03 · 反 AI 味扩展  + SKILL.md L200-219 原文摘录
- *  6  + 改动 04 · 配色 × 字体配对  + advanced-patterns.md L505-516 原文摘录
- *  7  收尾："给 AI 一个靠谱的起点 —— 比让它自由发挥稳定"
+ * Rhythm (8 steps / step 0..7):
+ *  0  Full Skill view —— file directory tree (SKILL.md ≈ 400 lines / references ≈ 520 lines)
+ *  1  SKILL.md real source scroll display (fake editor continuous scroll)
+ *  2  First cut: strip —— tools/environment vs universal essence
+ *  3  + Change 01 · Declare design system first  + SKILL.md L79-91 source excerpt (key highlight / context blur)
+ *  4  + Change 02 · v0 draft first  + SKILL.md L93-101 source excerpt
+ *  5  + Change 03 · Anti-AI style expansion  + SKILL.md L200-219 source excerpt
+ *  6  + Change 04 · Color × font pairings  + advanced-patterns.md L505-516 source excerpt
+ *  7  Close: "Give AI a reliable starting point —— more stable than letting it improvise"
  */
 
 /* ──────────────────────────────────────────────────────────────────
- * 复用：原文摘录代码面板（关键行高亮、上下文虚化模糊）
+ * Reusable: source excerpt code panel (key line highlight, context blur)
  * ────────────────────────────────────────────────────────────────── */
 
 interface CodeLine {
-  /** 真实行号（用于左侧 gutter） */
+  /** Real line number (for left gutter) */
   n: number;
-  /** 行内容 */
+  /** Line content */
   text: ReactNode;
-  /** 是否高亮（不模糊、不弱化） */
+  /** Whether highlighted (not blurred, not muted) */
   hi?: boolean;
-  /** 行视觉缩进（每级 16px） */
+  /** Visual indent per level (16px each) */
   indent?: number;
 }
 
@@ -81,7 +81,7 @@ function Excerpt({ filePath, range, caption, lines, pulseDelay = 600 }: ExcerptP
 }
 
 /* ──────────────────────────────────────────────────────────────────
- * SKILL.md 假滚动用的内容片段（接近真实，用于动态滚动展示）
+ * SKILL.md fake-scroll content fragment (close to real, for dynamic scroll display)
  * ────────────────────────────────────────────────────────────────── */
 
 const SCROLL_LINES: { t: ReactNode; hi?: boolean; mute?: boolean }[] = [
@@ -160,7 +160,7 @@ function SkillChanges({ localStep }: ChapterContext) {
 
   return (
     <section className="sk">
-      {/* ════════ Scene TREE（step 0）—— 文件目录全貌 ════════ */}
+      {/* ════════ Scene TREE（step 0）—— Full file directory view ════════ */}
       <SceneFade active={sceneTree} exitMs={420} enterDelayMs={120}>
         <div className="sk__tree-scene">
           <Reveal kind="fade" duration={620} delay={80} className="sk__tree-eyebrow">
@@ -170,7 +170,7 @@ function SkillChanges({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={260} className="sk__tree-title" as="h1">
-            Skill 全貌 ——
+            Full Skill Overview ——
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={620} className="sk__tree-card">
@@ -189,43 +189,43 @@ function SkillChanges({ localStep }: ChapterContext) {
               <div className="sk__tree-row sk__tree-row--file sk__tree-row--main" style={{ animationDelay: '1080ms' }}>
                 <span className="sk__tree-pipe">├──</span>
                 <span className="sk__tree-name sk__tree-name--md">SKILL.md</span>
-                <span className="sk__tree-tag">主文件</span>
-                <span className="sk__tree-meta sk__tree-meta--em">≈ 400 行</span>
+                <span className="sk__tree-tag">Main File</span>
+                <span className="sk__tree-meta sk__tree-meta--em">≈ 400 lines</span>
               </div>
               <div className="sk__tree-row sk__tree-row--dir sk__tree-row--sub" style={{ animationDelay: '1260ms' }}>
                 <span className="sk__tree-pipe">└──</span>
                 <span className="sk__tree-glyph">▾</span>
                 <span className="sk__tree-name">references<span className="sk__tree-slash">/</span></span>
-                <span className="sk__tree-tag">高级模板</span>
+                <span className="sk__tree-tag">Advanced Templates</span>
               </div>
               <div className="sk__tree-row sk__tree-row--file sk__tree-row--child" style={{ animationDelay: '1440ms' }}>
                 <span className="sk__tree-pipe sk__tree-pipe--child">└──</span>
                 <span className="sk__tree-name sk__tree-name--md">advanced-patterns.md</span>
-                <span className="sk__tree-tag">起点脚手架</span>
-                <span className="sk__tree-meta sk__tree-meta--em">≈ 520 行</span>
+                <span className="sk__tree-tag">Starter Scaffolding</span>
+                <span className="sk__tree-meta sk__tree-meta--em">≈ 520 lines</span>
               </div>
             </div>
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1700} className="sk__tree-foot">
-            两个文件，加起来 <em>≈ 920 行</em> —— 给 AI 全套<em>设计师手册</em>
+            Two files, <em>≈ 920 lines</em> total —— a complete <em>designer handbook</em> for AI
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene SCROLL（step 1）—— SKILL.md 假滚动 ════════ */}
+      {/* ════════ Scene SCROLL（step 1）—— SKILL.md fake scroll ════════ */}
       <SceneFade active={sceneScroll} exitMs={420} enterDelayMs={420}>
         <div className="sk__scroll-scene">
           <Reveal kind="fade" duration={620} delay={80} className="sk__scroll-eyebrow">
             <span className="sk__src-bracket">[</span>
             <span className="sk__src-label">FILE · SKILL.md</span>
             <span className="sk__src-sep">·</span>
-            <span className="sk__src-line">≈ 400 行</span>
+            <span className="sk__src-line">≈ 400 lines</span>
             <span className="sk__src-bracket">]</span>
           </Reveal>
 
           <Reveal kind="fade" duration={620} delay={260} className="sk__scroll-cap">
-            原文 ——「核心理念 / 工作流 / 反 AI 味 / 校验清单」<em>全在里面</em>
+            Source —— "Core Philosophy / Workflow / Anti-AI Style / Checklist" <em>All Inside</em>
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={460} className="sk__scroll-card">
@@ -238,7 +238,7 @@ function SkillChanges({ localStep }: ChapterContext) {
             </div>
             <div className="sk__scroll-frame">
               <div className="sk__scroll-stream">
-                {/* 重复两遍以做无缝循环 */}
+                {/* Repeat twice for seamless loop */}
                 {[0, 1].map((loop) => (
                   <div key={loop} className="sk__scroll-block">
                     {SCROLL_LINES.map((l, i) => (
@@ -253,44 +253,44 @@ function SkillChanges({ localStep }: ChapterContext) {
                   </div>
                 ))}
               </div>
-              {/* 顶/底渐隐遮罩、扫描线由 CSS 提供 */}
+              {/* Top/bottom fade masks, scan line provided by CSS */}
               <div className="sk__scroll-cursor" aria-hidden />
             </div>
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1100} className="sk__scroll-foot">
-            <span>下面把 ——</span>
-            <em>第一刀 · 4 个改动</em>
-            <span>—— 一一拆开看</span>
+            <span>Next ——</span>
+            <em>First Cut · 4 Changes</em>
+            <span>—— Let's Break Them Down</span>
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene STRIP（step 2）—— 第一刀：剥离 ════════ */}
+      {/* ════════ Scene STRIP（step 2）—— First cut: strip ════════ */}
       <SceneFade active={sceneStrip} exitMs={420} enterDelayMs={420}>
         <div className="sk__strip-scene">
           <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">
-            第一刀
+            First Cut
           </Reveal>
           <Reveal kind="rise" duration={1100} delay={240} className="sk__chg-title" as="h2">
-            <em>剥离</em> —— Claude Design 特有的工具 / 环境
+            <em>Strip Out</em> —— Claude Design-Specific Tools / Environment
           </Reveal>
 
           <div className="sk__strip">
-            {/* 左：留下 */}
+            {/* Left: keep */}
             <Reveal kind="rise" duration={780} delay={500} className="sk__strip-col sk__strip-col--keep">
               <div className="sk__strip-head">
                 <span className="sk__strip-mark sk__strip-mark--keep">✓</span>
-                <span>KEEP · 通用精华</span>
+                <span>KEEP · Universal Essence</span>
               </div>
               <ul className="sk__strip-list">
                 {[
-                  '动态角色 · 设计师身份切换',
-                  '六步工作流',
-                  '反 AI 味清单',
-                  'oklch 配色',
-                  '内容克制原则',
-                  '验证闭环',
+                  'Dynamic Role · Designer Identity Switch',
+                  'Six-Step Workflow',
+                  'Anti-AI Style Checklist',
+                  'oklch Colors',
+                  'Content Restraint Principles',
+                  'Verification Loop',
                 ].map((t, i) => (
                   <li
                     key={t}
@@ -304,18 +304,18 @@ function SkillChanges({ localStep }: ChapterContext) {
               </ul>
             </Reveal>
 
-            {/* 中间 X */}
+            {/* Middle X */}
             <div className="sk__strip-sep" aria-hidden>
               <span className="sk__strip-sep-line" />
               <span className="sk__strip-sep-knob">×</span>
               <span className="sk__strip-sep-line" />
             </div>
 
-            {/* 右：摘掉 */}
+            {/* Right: drop */}
             <Reveal kind="rise" duration={780} delay={680} className="sk__strip-col sk__strip-col--drop">
               <div className="sk__strip-head">
                 <span className="sk__strip-mark sk__strip-mark--drop">×</span>
-                <span>DROP · 特有工具 / 环境</span>
+                <span>DROP · Proprietary Tools / Environment</span>
               </div>
               <ul className="sk__strip-list">
                 {[
@@ -325,8 +325,8 @@ function SkillChanges({ localStep }: ChapterContext) {
                   'iframe sandbox',
                   'tweaks panel · runtime',
                   'pptx export',
-                  'GitHub 集成',
-                  'snip 工具',
+                  'GitHub integration',
+                  'snip tool',
                 ].map((t, i) => (
                   <li
                     key={t}
@@ -343,54 +343,54 @@ function SkillChanges({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ════════ Scene CHANGE 01（step 3）—— 先宣告设计系统 ════════ */}
+      {/* ════════ Scene CHANGE 01（step 3）—— Declare design system first ════════ */}
       <SceneFade active={sceneA} exitMs={420} enterDelayMs={420}>
         <div className="sk__chg-scene">
-          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ 改动 01</Reveal>
+          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ Change 01</Reveal>
           <Reveal kind="rise" duration={1100} delay={240} className="sk__chg-title" as="h2">
-            写代码之前 —— 先<em>宣告设计系统</em>
+            Before Writing Code —— <em>Declare the Design System</em> First
           </Reveal>
 
           <div className="sk__split">
-            {/* 左：流程对比 */}
+            {/* Left: flow comparison */}
             <Reveal kind="rise" duration={720} delay={500} className="sk__split-left">
               <div className="sk__chg-flow">
                 <div className="sk__chg-flow-col sk__chg-flow-col--bad">
                   <div className="sk__chg-flow-tag">
                     <span className="sk__chg-flow-mark sk__chg-flow-mark--bad">×</span>
-                    之前
+                    Before
                   </div>
-                  <div className="sk__chg-flow-step">需求</div>
+                  <div className="sk__chg-flow-step">Requirements</div>
                   <span className="sk__chg-flow-arrow">↓</span>
-                  <div className="sk__chg-flow-step sk__chg-flow-step--code">直接 写代码</div>
+                  <div className="sk__chg-flow-step sk__chg-flow-step--code">Write Code Directly</div>
                   <span className="sk__chg-flow-arrow">↓</span>
-                  <div className="sk__chg-flow-step sk__chg-flow-step--out">完整页面</div>
-                  <div className="sk__chg-flow-tip">方向不对 → <em>推翻重来</em></div>
+                  <div className="sk__chg-flow-step sk__chg-flow-step--out">Full Page</div>
+                  <div className="sk__chg-flow-tip">Wrong Direction → <em>Start Over</em></div>
                 </div>
 
                 <div className="sk__chg-flow-col sk__chg-flow-col--good">
                   <div className="sk__chg-flow-tag">
                     <span className="sk__chg-flow-mark sk__chg-flow-mark--good">✓</span>
-                    改动后
+                    After Change
                   </div>
-                  <div className="sk__chg-flow-step">需求</div>
+                  <div className="sk__chg-flow-step">Requirements</div>
                   <span className="sk__chg-flow-arrow">↓</span>
                   <div className="sk__chg-flow-step sk__chg-flow-step--system">
                     <div className="sk__chg-system">
-                      <div className="sk__chg-system-row"><span>palette</span><b>oklch · 暖棕</b></div>
+                      <div className="sk__chg-system-row"><span>palette</span><b>oklch · Warm Brown</b></div>
                       <div className="sk__chg-system-row"><span>fonts</span><b>Newsreader + Sora</b></div>
                       <div className="sk__chg-system-row"><span>spacing</span><b>4 / 8 / 16 / 32</b></div>
                       <div className="sk__chg-system-row"><span>radius</span><b>0 / 2 / 4</b></div>
                     </div>
                   </div>
                   <span className="sk__chg-flow-arrow">↓</span>
-                  <div className="sk__chg-flow-step sk__chg-flow-step--code">写代码</div>
-                  <div className="sk__chg-flow-tip">方向不对 → <em>提前纠偏</em></div>
+                  <div className="sk__chg-flow-step sk__chg-flow-step--code">Write Code</div>
+                  <div className="sk__chg-flow-tip">Wrong Direction → <em>Course-Correct Early</em></div>
                 </div>
               </div>
             </Reveal>
 
-            {/* 右：原文 excerpt */}
+            {/* Right: source excerpt */}
             <Reveal kind="rise" duration={780} delay={760} className="sk__split-right">
               <Excerpt
                 filePath="SKILL.md"
@@ -415,19 +415,19 @@ function SkillChanges({ localStep }: ChapterContext) {
                   { n: 92, text: '### Step 4: Show a v0 Draft Early' },
                   { n: 93, text: '' },
                 ]}
-                caption={<>"在写第一行代码之前 —— 先<em>说清楚</em>"</>}
+                caption={<><em>Made Explicit</em> the "AI Style" Claude Design Left Unsaid</>}
               />
             </Reveal>
           </div>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene CHANGE 02（step 4）—— v0 半成品 ════════ */}
+      {/* ════════ Scene CHANGE 02（step 4）—— v0 draft ════════ */}
       <SceneFade active={sceneB} exitMs={420} enterDelayMs={420}>
         <div className="sk__chg-scene">
-          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ 改动 02</Reveal>
+          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ Change 02</Reveal>
           <Reveal kind="rise" duration={1100} delay={240} className="sk__chg-title" as="h2">
-            尽早拿出 —— <em>v0 半成品</em>
+            Ship Early —— <em>v0 Draft</em>
           </Reveal>
 
           <div className="sk__split">
@@ -436,7 +436,7 @@ function SkillChanges({ localStep }: ChapterContext) {
                 <div className="sk__v-card sk__v-card--v0">
                   <div className="sk__v-tag">
                     <span className="sk__v-mark sk__v-mark--good">✓</span>
-                    v0 · 粗糙但<em>方向看得见</em>
+                    v0 · Rough but <em>Direction Is Clear</em>
                   </div>
                   <div className="sk__v-mock">
                     <span className="sk__v-mock-bar sk__v-mock-bar--w70" />
@@ -446,7 +446,7 @@ function SkillChanges({ localStep }: ChapterContext) {
                     </div>
                     <span className="sk__v-mock-bar sk__v-mock-bar--w40" />
                   </div>
-                  <div className="sk__v-foot">假设 + 占位符 → 用户能<em>立刻反馈</em></div>
+                  <div className="sk__v-foot">Assumptions + Placeholders → Users Can <em>Give Immediate Feedback</em></div>
                 </div>
 
                 <div className="sk__v-vs" aria-hidden>vs</div>
@@ -454,7 +454,7 @@ function SkillChanges({ localStep }: ChapterContext) {
                 <div className="sk__v-card sk__v-card--v1">
                   <div className="sk__v-tag">
                     <span className="sk__v-mark sk__v-mark--bad">×</span>
-                    精雕细琢的 v1
+                    Polished v1
                   </div>
                   <div className="sk__v-mock sk__v-mock--full">
                     <span className="sk__v-mock-h">Build the Future. Today.</span>
@@ -464,7 +464,7 @@ function SkillChanges({ localStep }: ChapterContext) {
                     </div>
                     <span className="sk__v-mock-cta">Get Started →</span>
                   </div>
-                  <div className="sk__v-foot">花 3 倍时间打磨 → 方向错了 <em>全推翻</em></div>
+                  <div className="sk__v-foot">3× Time Polishing → Wrong Direction <em>Scrap It All</em></div>
                   <div className="sk__v-strike" aria-hidden>
                     <span className="sk__v-strike-line" />
                   </div>
@@ -494,36 +494,36 @@ function SkillChanges({ localStep }: ChapterContext) {
                   { n: 104, text: <>that took <em>3x the time</em> — if direction is wrong, scrapped.</>, hi: true },
                   { n: 105, text: '' },
                 ]}
-                caption={<>"粗糙的 v0 → 用户能立刻看见<em>方向</em>"</>}
+                caption={<>"A Rough v0 → Users Can Immediately See the <em>Direction</em>"</>}
               />
             </Reveal>
           </div>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene CHANGE 03（step 5）—— 反 AI 味扩展 ════════ */}
+      {/* ════════ Scene CHANGE 03（step 5）—— Anti-AI style expansion ════════ */}
       <SceneFade active={sceneC} exitMs={420} enterDelayMs={420}>
         <div className="sk__chg-scene">
-          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ 改动 03</Reveal>
+          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ Change 03</Reveal>
           <Reveal kind="rise" duration={1100} delay={240} className="sk__chg-title" as="h2">
-            <em>更狠</em>的去 AI 味 —— 扩展条目
+            <em>Tougher</em> Anti-AI Style —— Expanded Items
           </Reveal>
 
           <div className="sk__split">
             <Reveal kind="rise" duration={720} delay={500} className="sk__split-left">
               <div className="sk__cd-col">
                 <div className="sk__cd-tag">
-                  <span className="sk__cd-mark">+ 新增</span>
-                  常见 AI 味 · 一刀切
+                  <span className="sk__cd-mark">+ New</span>
+                  Common AI Style · Cut Them All
                 </div>
                 <ul className="sk__cd-anti">
                   {[
-                    '紫粉蓝渐变背景',
-                    '渐变按钮 + 大圆角卡片组合',
-                    '凭空 logo 墙 / 假好评 / 假数据',
-                    '无意义 stats / 数字 / 图标堆砌',
-                    'emoji 当 icon 替身',
-                    '老掉牙字体 Inter / Roboto / Arial',
+                    'Purple-Pink-Blue Gradient Backgrounds',
+                    'Gradient Buttons + Large-Radius Card Combos',
+                    'Fake Logo Walls / Fake Reviews / Fake Data',
+                    'Meaningless Stats / Numbers / Icon Spam',
+                    'Emoji as Icon Substitutes',
+                    'Tired Fonts Inter / Roboto / Arial',
                   ].map((t, i) => (
                     <li
                       key={t}
@@ -564,35 +564,35 @@ function SkillChanges({ localStep }: ChapterContext) {
                   { n: 215, text: '- × Using emoji as icon substitutes' },
                   { n: 216, text: '- × Using emoji as decorative filler' },
                 ]}
-                caption={<>把 Claude Design 没明说的"AI 味"<em>列具体了</em></>}
+                caption={<>Made Explicit the "AI Style" Claude Design Left Unsaid —— <em>Listed Concretely</em></>}
               />
             </Reveal>
           </div>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene CHANGE 04（step 6）—— 配色 × 字体配对 ════════ */}
+      {/* ════════ Scene CHANGE 04（step 6）—— Color × font pairings ════════ */}
       <SceneFade active={sceneD} exitMs={420} enterDelayMs={420}>
         <div className="sk__chg-scene">
-          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ 改动 04</Reveal>
+          <Reveal kind="fade" duration={620} delay={80} className="sk__chg-num">+ Change 04</Reveal>
           <Reveal kind="rise" duration={1100} delay={240} className="sk__chg-title" as="h2">
-            <em>配色 × 字体</em> 配对参考表
+            <em>Color × Font</em> Pairing Reference
           </Reveal>
 
           <div className="sk__split">
             <Reveal kind="rise" duration={720} delay={500} className="sk__split-left">
               <div className="sk__cd-col">
                 <div className="sk__cd-tag">
-                  <span className="sk__cd-mark">+ 新增</span>
-                  经过验证 · 5 套起点
+                  <span className="sk__cd-mark">+ New</span>
+                  Battle-Tested · 5 Starting Points
                 </div>
                 <div className="sk__pairs">
                   {[
-                    { tag: '优雅杂志风',  color: 'oklch 暖棕',   font: 'Newsreader + Outfit' },
-                    { tag: '高端品牌',    color: 'oklch 近黑',   font: 'Sora + Plus Jakarta Sans' },
-                    { tag: '极简专业',    color: 'oklch 青蓝',   font: 'Outfit + Space Grotesk' },
-                    { tag: '活泼消费',    color: 'oklch 珊瑚',   font: 'Plus Jakarta Sans + Outfit' },
-                    { tag: '手作温度',    color: 'oklch 焦糖',   font: 'Caveat + Newsreader' },
+                    { tag: 'Elegant Editorial',  color: 'oklch Warm Brown',   font: 'Newsreader + Outfit' },
+                    { tag: 'Premium Brand',      color: 'oklch Near-Black',   font: 'Sora + Plus Jakarta Sans' },
+                    { tag: 'Minimal Pro',        color: 'oklch Teal-Blue',    font: 'Outfit + Space Grotesk' },
+                    { tag: 'Lively Consumer',    color: 'oklch Coral',        font: 'Plus Jakarta Sans + Outfit' },
+                    { tag: 'Artisan Warmth',     color: 'oklch Caramel',      font: 'Caveat + Newsreader' },
                   ].map((p, i) => (
                     <div
                       key={p.tag}
@@ -626,10 +626,10 @@ function SkillChanges({ localStep }: ChapterContext) {
                   { n: 511, text: <>| <b>Minimal pro</b> | oklch(0.50 0.15 200) teal-blue | <em>Outfit + Space Grotesk</em> | Data, B2B |</>, hi: true },
                   { n: 512, text: <>| <b>Artisan warmth</b> | oklch(0.55 0.15 80) caramel | <em>Caveat + Newsreader</em> | Food, education |</>, hi: true },
                   { n: 513, text: '' },
-                  { n: 514, text: '> 这些配对的核心：给 AI 一个有品位的<em>起点</em>。', hi: true, },
+                  { n: 514, text: '> The core of these pairings: giving AI a tasteful <em>starting point</em>.', hi: true, },
                   { n: 515, text: '' },
                 ]}
-                caption={<>给 AI 一个<em>靠谱</em>的起点 → 比让它自由发挥稳定</>}
+                caption={<>Give AI a <em>Solid</em> Starting Point → More Stable Than Letting It Improvise</>}
               />
             </Reveal>
           </div>
@@ -640,10 +640,10 @@ function SkillChanges({ localStep }: ChapterContext) {
       <SceneFade active={sceneClose} exitMs={420} enterDelayMs={420}>
         <div className="sk__close">
           <Reveal kind="rise" duration={1100} delay={120} className="sk__close-l1" as="h1">
-            给 AI 一个<em>靠谱的起点</em>
+            Give AI a <em>Solid Starting Point</em>
           </Reveal>
           <Reveal kind="rise" duration={1100} delay={780} className="sk__close-l2" as="h2">
-            比让它<em>自由发挥</em> —— 稳得多
+            More Stable Than Letting It <em>Improvise</em>
           </Reveal>
         </div>
       </SceneFade>
@@ -653,7 +653,7 @@ function SkillChanges({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'skill-changes',
-  title: 'Skill 的关键改动',
+  title: 'Key Skill Changes',
   eyebrow: '11',
   steps: 8,
   theme: 'light',

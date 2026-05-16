@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 10 · 过渡到 Skill
-   light 主题 · 回顾 → 但 → 三号被封 → 好消息 → Skill 卡 → 收尾
+   Chapter 10 · Transition to Skill
+   light theme · recap → but → accounts banned → good news → skill card → close
    ========================================================= */
 
 .ts {
@@ -297,7 +297,7 @@
   font-weight: 600;
 }
 
-/* —— BANNED 印章 —— */
+/* —— BANNED stamp —— */
 .ts__stamp {
   position: absolute;
   top: 50%;

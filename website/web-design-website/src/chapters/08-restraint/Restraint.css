@@ -1,7 +1,7 @@
 /* =========================================================
-   Chapter 08 · 第五部分 · 内容克制
-   light 主题 · 顺序对齐口播稿:
-     乔布斯 1000No/1Yes 开场 → 落地页 → 塞满 → 砍 → 立原则 → 收尾
+   Chapter 08 · Part Five · Content Restraint
+   light theme · aligned with voiceover script:
+     Jobs 1000No/1Yes opening → landing page → stuff full → cut → state principle → closing
    ========================================================= */
 
 .re {
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-/* —— 通用 prompt 源标签 —— */
+/* —— Shared prompt source labels —— */
 .re__src-bracket { color: var(--accent); font-weight: 600; }
 .re__src-label   { color: var(--fg);     font-weight: 600; letter-spacing: 0.22em; }
 .re__src-sep     { color: var(--fg-faint); }
@@ -165,7 +165,7 @@
   color: var(--fg-soft);
 }
 
-/* —— 浏览器外框 —— */
+/* —— Browser chrome —— */
 .re__browser {
   width: 100%;
   max-width: 1500px;
@@ -206,7 +206,7 @@
   overflow: hidden;
 }
 
-/* —— 6 段 section —— */
+/* —— 6 sections —— */
 .re__page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -281,7 +281,7 @@
 .re__sec-bar--w70 { width: 70%; }
 .re__sec-bar--w50 { width: 50%; }
 
-/* —— Filler 内容（视觉上"塞满"）—— */
+/* —— Filler content (visually "stuffed full") —— */
 .re__filler {
   display: flex;
   width: 100%;
@@ -458,7 +458,7 @@
   border-radius: 2px;
 }
 
-/* —— 红 × 修剪覆盖层 —— */
+/* —— Red × prune overlay —— */
 .re__sec-prune {
   position: absolute;
   inset: 0;
@@ -501,7 +501,7 @@
   to { transform: translateY(-50%) scaleX(1); }
 }
 
-/* 错开 6 段被砍的节奏 */
+/* Stagger timing of the 6 sections being cut */
 .re__sec:nth-child(1).is-pruned .re__sec-prune-mark,
 .re__sec:nth-child(1).is-pruned .re__sec-prune-line { animation-delay: 80ms;  }
 .re__sec:nth-child(2).is-pruned .re__sec-prune-mark,

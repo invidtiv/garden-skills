@@ -137,6 +137,10 @@ export default defineConfig({
     fs: {
       allow: ['..', '../..'],
     },
+    proxy: {
+      '/upload': 'http://localhost:3002',
+      '/health': 'http://localhost:3002',
+    },
   },
   resolve: {
     preserveSymlinks: false,

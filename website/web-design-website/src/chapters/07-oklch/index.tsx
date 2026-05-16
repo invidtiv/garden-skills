@@ -4,27 +4,27 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Oklch.css';
 
 /**
- * Chapter 07 · 第四部分：oklch 配色
+ * Chapter 07 · Part Four: oklch Color
  *
- * 口播原顺序（严格对齐）：
- *   1. "他的配色策略分成了：优先用品牌色；不够就用 oklch 派生衍生色；绝对不要凭空编新色。"
- *   2. "为什么是 oklch 呢？"
- *   3. "传统的 HSL色彩空间有个大问题 — 感知不均匀。"
- *      "同样的亮度值，黄色看着比蓝色亮一大截。"
- *   4. "oklch 是感知均匀的色彩空间。保持亮度和色度不变，只转色相角，出来的颜色自然就和谐。"
- *   5. "这个细节看着小，但网页端高级感一下就上来了。"
+ * Voiceover script (strictly aligned):
+ *   1. "His color strategy is divided into: prioritize brand colors; if not enough, use oklch derived colors; never invent new colors from scratch."
+ *   2. "Why oklch?"
+ *   3. "Traditional HSL color space has a big problem — perceptual non-uniformity."
+ *      "The same lightness value, yellow looks much brighter than blue."
+ *   4. "oklch is a perceptually uniform color space. Keep lightness and chroma fixed, only rotate hue angle, and the resulting colors are naturally harmonious."
+ *   5. "This detail looks small, but the sense of refinement on the web page instantly elevates."
  *
- * 节奏（5 步 / step 0..4）：
- *  0  原文 prompt（L41-43）三段被逐句"点亮" —— 引出策略原文
- *  1  三层策略卡：① 品牌色 ② oklch 派生 ③ 禁止凭空造色
- *  2  pivot 大字 "为什么是 oklch ？" + 副："HSL 有个大问题 —— 感知不均匀"
- *  3  HSL vs OKLCH 双色相条对比 + 感知亮度曲线 + 黄色 spotlight
- *  4  收尾："网页端 高级感 ↑"
+ * Pacing (5 steps / step 0..4):
+ *  0  Original prompt (L41-43) three paragraphs lit up sentence by sentence —— introducing the strategy source
+ *  1  Three-layer strategy cards: ① Brand colors ② oklch derivatives ③ Ban inventing colors from scratch
+ *  2  pivot big text "Why oklch?" + sub: "HSL has a big problem —— perceptual non-uniformity"
+ *  3  HSL vs OKLCH dual hue strip comparison + perceived brightness curve + yellow spotlight
+ *  4  Closing: "Web refinement ↑"
  */
 
 const HUES = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330];
 
-/** HSL 感知亮度（粗略 sRGB BT.709 相对亮度） */
+/** HSL perceived brightness (rough sRGB BT.709 relative luminance) */
 function hslPerceived(h: number): number {
   const s = 0.7;
   const l = 0.6;
@@ -44,8 +44,6 @@ function hslPerceived(h: number): number {
 }
 
 function Oklch({ localStep }: ChapterContext) {
-  const at = (n: number) => localStep >= n;
-
   const sceneSrc     = localStep <= 0;
   const sceneRules   = localStep === 1;
   const scenePivot   = localStep === 2;
@@ -54,7 +52,7 @@ function Oklch({ localStep }: ChapterContext) {
 
   return (
     <section className="ok">
-      {/* ════════ Scene SOURCE（step 0）—— 原文先出 ════════ */}
+      {/* ════════ Scene SOURCE (step 0) —— original text first ════════ */}
       <SceneFade active={sceneSrc} exitMs={420} enterDelayMs={120}>
         <div className="ok__src-scene">
           <Reveal kind="fade" duration={620} delay={80} className="ok__src-eyebrow">
@@ -63,7 +61,7 @@ function Oklch({ localStep }: ChapterContext) {
             <span className="ok__src-sep">·</span>
             <span className="ok__src-line">L41-43</span>
             <span className="ok__src-sep">/</span>
-            <span className="ok__src-mute">Color Strategy 原文</span>
+            <span className="ok__src-mute">Color Strategy Original</span>
             <span className="ok__src-bracket">]</span>
           </Reveal>
 
@@ -93,25 +91,25 @@ function Oklch({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={2200} className="ok__src-foot">
-            三段 —— 一套<em>分层</em>的配色策略
+            Three paragraphs —— a <em>layered</em> color strategy
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene RULES（step 1）—— 三层策略 ════════ */}
+      {/* ════════ Scene RULES (step 1) —— three-layer strategy ════════ */}
       <SceneFade active={sceneRules} exitMs={420} enterDelayMs={420}>
         <div className="ok__rules-scene">
           <Reveal kind="rise" duration={780} delay={80} className="ok__rules-head" as="h2">
-            配色策略 —— <em>三层防线</em>
+            Color Strategy —— <em>Three Lines of Defense</em>
           </Reveal>
 
           <div className="ok__rules">
-            {/* 第 1 层 */}
+            {/* Layer 1 */}
             <Reveal kind="rise" duration={780} delay={220} className="ok__rule ok__rule--good">
               <div className="ok__rule-num">01</div>
               <div className="ok__rule-body">
-                <div className="ok__rule-title">优先品牌色</div>
-                <div className="ok__rule-desc">已有 design system → 直接复用，别"再创造"</div>
+                <div className="ok__rule-title">Prioritize Brand Colors</div>
+                <div className="ok__rule-desc">Existing design system → reuse directly, don't "reinvent"</div>
                 <div className="ok__rule-swatches">
                   <span style={{ background: 'oklch(0.965 0.018 78)' }} />
                   <span style={{ background: 'oklch(0.700 0.170 42)' }} />
@@ -121,12 +119,12 @@ function Oklch({ localStep }: ChapterContext) {
               <div className="ok__rule-mark ok__rule-mark--good">✓</div>
             </Reveal>
 
-            {/* 第 2 层 */}
+            {/* Layer 2 */}
             <Reveal kind="rise" duration={780} delay={420} className="ok__rule ok__rule--ok">
               <div className="ok__rule-num">02</div>
               <div className="ok__rule-body">
-                <div className="ok__rule-title">不够用？<em>oklch 派生</em></div>
-                <div className="ok__rule-desc">L / C 不变，h 旋转 —— 自动得到和谐衍生色</div>
+                <div className="ok__rule-title">Not enough? <em>oklch Derivatives</em></div>
+                <div className="ok__rule-desc">Keep L / C fixed, rotate h —— automatically get harmonious derivatives</div>
                 <div className="ok__rule-swatches">
                   {[42, 90, 150, 200, 260, 320].map((h) => (
                     <span key={h} style={{ background: `oklch(0.70 0.15 ${h})` }} />
@@ -136,12 +134,12 @@ function Oklch({ localStep }: ChapterContext) {
               <div className="ok__rule-mark ok__rule-mark--good">✓</div>
             </Reveal>
 
-            {/* 第 3 层 */}
+            {/* Layer 3 */}
             <Reveal kind="rise" duration={780} delay={620} className="ok__rule ok__rule--bad">
               <div className="ok__rule-num">03</div>
               <div className="ok__rule-body">
-                <div className="ok__rule-title">禁止凭空造色</div>
-                <div className="ok__rule-desc">"我觉得这个紫色挺好看" —— 这就是 AI 味的源头</div>
+                <div className="ok__rule-title">Never Invent Colors from Scratch</div>
+                <div className="ok__rule-desc">"I think this purple looks nice" —— that's the source of the AI look</div>
                 <div className="ok__rule-swatches">
                   <span style={{ background: '#a78bfa' }} />
                   <span style={{ background: '#f0abfc' }} />
@@ -155,36 +153,36 @@ function Oklch({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ════════ Scene PIVOT（step 2）—— 大字提问 ════════ */}
+      {/* ════════ Scene PIVOT (step 2) —— big question ════════ */}
       <SceneFade active={scenePivot} exitMs={420} enterDelayMs={420}>
         <div className="ok__pivot">
           <Reveal kind="rise" duration={1100} delay={120} className="ok__pivot-q" as="h1">
-            为什么是 <em className="ok__pivot-em">oklch</em> ？
+            Why <em className="ok__pivot-em">oklch</em>?
           </Reveal>
 
           <Reveal kind="rise" duration={780} delay={780} className="ok__pivot-sub" as="p">
             <span className="ok__pivot-strike">HSL</span>
-            &nbsp;有个大问题 ——
+            &nbsp;has a big problem ——
           </Reveal>
 
           <Reveal kind="tight" duration={1100} delay={1200} className="ok__pivot-issue" as="h2">
-            感知<em>不均匀</em>
+            Perceptually <em>Non-Uniform</em>
           </Reveal>
         </div>
       </SceneFade>
 
-      {/* ════════ Scene COMPARE（step 3）—— 双色相条 + 曲线 ════════ */}
+      {/* ════════ Scene COMPARE (step 3) —— dual hue strips + curves ════════ */}
       <SceneFade active={sceneCompare} exitMs={420} enterDelayMs={420}>
         <div className="ok__cmp-scene">
           <Reveal kind="fade" duration={620} delay={80} className="ok__cmp-cap">
-            同一组亮度 / 饱和度 · 12 个色相 —— 看人眼对哪种更<em>舒服</em>
+            Same lightness / saturation · 12 hues —— which looks <em>better</em> to the human eye
           </Reveal>
 
           <div className="ok__cmp-grid">
-            {/* HSL 行 */}
+            {/* HSL row */}
             <div className="ok__cmp-row">
               <div className="ok__cmp-row-head">
-                <span className="ok__cmp-row-tag ok__cmp-row-tag--bad">HSL · 老</span>
+                <span className="ok__cmp-row-tag ok__cmp-row-tag--bad">HSL · Old</span>
                 <span className="ok__cmp-row-formula">hsl(h, 70%, 60%)</span>
               </div>
               <div className="ok__cmp-strip">
@@ -224,14 +222,14 @@ function Oklch({ localStep }: ChapterContext) {
               </svg>
               <div className="ok__cmp-callout ok__cmp-callout--bad">
                 <span className="ok__cmp-callout-arrow">↑</span>
-                <span>同 60% 亮度 —— 黄色看着像被打了灯</span>
+                <span>Same 60% lightness —— yellow looks spotlit</span>
               </div>
             </div>
 
-            {/* OKLCH 行 */}
+            {/* OKLCH row */}
             <div className="ok__cmp-row">
               <div className="ok__cmp-row-head">
-                <span className="ok__cmp-row-tag ok__cmp-row-tag--good">OKLCH · 新</span>
+                <span className="ok__cmp-row-tag ok__cmp-row-tag--good">OKLCH · New</span>
                 <span className="ok__cmp-row-formula">oklch(0.70 0.15 h)</span>
               </div>
               <div className="ok__cmp-strip">
@@ -263,7 +261,7 @@ function Oklch({ localStep }: ChapterContext) {
               </svg>
               <div className="ok__cmp-callout ok__cmp-callout--good">
                 <span className="ok__cmp-callout-arrow">→</span>
-                <span>L / C 不变，只转 h —— 亮度自动一致</span>
+                <span>L / C unchanged, only rotate h —— lightness stays consistent</span>
               </div>
             </div>
           </div>
@@ -274,11 +272,11 @@ function Oklch({ localStep }: ChapterContext) {
       <SceneFade active={sceneClose} exitMs={420} enterDelayMs={420}>
         <div className="ok__close">
           <Reveal kind="fade" duration={780} delay={120} className="ok__close-eyebrow">
-            细节看着小 ——
+            A small detail ——
           </Reveal>
 
           <Reveal kind="rise" duration={1300} delay={460} className="ok__close-line" as="h1">
-            网页端<em>高级感</em>
+            Web <em>Refinement</em>
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={1080} className="ok__close-arrow" as="span">
@@ -286,7 +284,7 @@ function Oklch({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1500} className="ok__close-caption" as="p">
-            一下就上来了
+            Instantly elevated
           </Reveal>
         </div>
       </SceneFade>
@@ -296,7 +294,7 @@ function Oklch({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'oklch',
-  title: '第四部分 · oklch 配色',
+  title: 'Part Four · oklch Color',
   eyebrow: '07',
   steps: 5,
   theme: 'light',

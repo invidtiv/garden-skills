@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 06 · 第三部分 · 去 AI 味
-   light 主题 · hero → 反面教材 grid + 红斜线 → 字体黑名单 / 替代
+   Chapter 06 · Part Three · De-AI-ing
+   light theme · hero → anti-pattern grid + red slash → font blacklist / alternatives
    ========================================================= */
 
 .aa {
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* —— 顶部 eyebrow —— */
+/* —— Top eyebrow —— */
 .aa__eyebrow {
   position: absolute;
   top: 56px;
@@ -43,7 +43,7 @@
 .aa__eyebrow-text { color: var(--fg); letter-spacing: 0.18em; }
 .aa__eyebrow-mute { color: var(--fg-faint); font-size: 13px; }
 
-/* —— 通用 prompt 源标签子部件 —— */
+/* —— Shared prompt source label sub-components —— */
 .aa__src-bracket { color: var(--accent); font-weight: 600; }
 .aa__src-label   { color: var(--fg);     font-weight: 600; letter-spacing: 0.22em; }
 .aa__src-sep     { color: var(--fg-faint); }
@@ -215,7 +215,7 @@
   overflow: hidden;
 }
 
-/* —— 反面教材 1：紫粉蓝渐变 —— */
+/* —— Anti-pattern 1: purple-pink-blue gradient —— */
 .aa__bad-gradient {
   position: absolute;
   inset: 14px;
@@ -224,7 +224,7 @@
   box-shadow: 0 12px 36px -10px oklch(0.6 0.18 320 / 0.4);
 }
 
-/* —— 反面教材 2：Emoji 滥用 —— */
+/* —— Anti-pattern 2: emoji abuse —— */
 .aa__bad-emoji {
   display: flex;
   gap: 12px;
@@ -233,7 +233,7 @@
   filter: drop-shadow(0 2px 4px oklch(0 0 0 / 0.15));
 }
 
-/* —— 反面教材 3：左侧色条卡 —— */
+/* —— Anti-pattern 3: left color bar cards —— */
 .aa__bad-leftbar {
   position: relative;
   width: 220px;
@@ -270,7 +270,7 @@
 }
 .aa__bad-leftbar-l--short { width: 60%; }
 
-/* —— 反面教材 4：烂大街字体 —— */
+/* —— Anti-pattern 4: overused fonts —— */
 .aa__bad-font {
   display: flex;
   flex-direction: column;
@@ -281,7 +281,7 @@
 }
 .aa__bad-font span:first-child { font-weight: 600; font-size: 26px; }
 
-/* —— 反面教材 5：data slop —— */
+/* —— Anti-pattern 5: data slop —— */
 .aa__bad-data {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -307,14 +307,14 @@
   color: var(--fg);
 }
 
-/* —— 反面教材 6：复杂 SVG —— */
+/* —— Anti-pattern 6: over-drawn SVG —— */
 .aa__bad-svg {
   width: 130px;
   height: 130px;
   filter: drop-shadow(0 6px 12px oklch(0.6 0.18 320 / 0.35));
 }
 
-/* —— 红斜杠 —— */
+/* —— Red slash —— */
 .aa__bad-slash {
   position: absolute;
   inset: 0;
@@ -349,7 +349,7 @@
   to   { transform: rotate(-18deg) scaleX(1); }
 }
 
-/* 错开每张卡的斜线触发节奏 */
+/* Stagger slash trigger timing per card */
 .aa__grid-slot:nth-child(1) .aa__bad-slash-line { animation-delay: 80ms;  }
 .aa__grid-slot:nth-child(2) .aa__bad-slash-line { animation-delay: 180ms; }
 .aa__grid-slot:nth-child(3) .aa__bad-slash-line { animation-delay: 280ms; }

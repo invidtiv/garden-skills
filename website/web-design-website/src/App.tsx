@@ -13,7 +13,7 @@ function App() {
   return (
     <div
       onClick={(e) => {
-        // 任何带 data-no-step 的祖先都不触发推进
+        // Any ancestor with data-no-step does not trigger advancement
         const target = e.target as HTMLElement;
         if (target.closest('[data-no-step]')) return;
         stepStore.next();

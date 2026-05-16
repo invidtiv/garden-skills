@@ -1,7 +1,7 @@
 /* =========================================================
-   Chapter 07 · 第四部分 · oklch 配色
-   light 主题 · 顺序对齐口播稿:
-     原文 prompt → 三层策略 → 大字提问 → 双色相条对比 → 收尾
+   Chapter 07 · Part Four · oklch Color
+   light theme · aligned with voiceover script:
+     original prompt → three-layer strategy → big question → dual hue strip comparison → closing
    ========================================================= */
 
 .ok {
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-/* —— 通用 prompt 源标签 —— */
+/* —— Shared prompt source labels —— */
 .ok__src-bracket { color: var(--accent); font-weight: 600; }
 .ok__src-label   { color: var(--fg);     font-weight: 600; letter-spacing: 0.22em; }
 .ok__src-sep     { color: var(--fg-faint); }
@@ -408,7 +408,7 @@
   box-shadow: inset 0 0 0 1px oklch(0 0 0 / 0.06);
   animation: okSwatchIn 620ms cubic-bezier(.2,.8,.2,1) backwards;
 }
-/* HSL 行的"黄色"格子单独脉冲一下 */
+/* Pulse the "yellow" cell in the HSL row individually */
 .ok__cmp-swatch.is-spot {
   animation: okSwatchIn 620ms cubic-bezier(.2,.8,.2,1) backwards,
              okSpotPulse 1600ms 1400ms ease-in-out infinite;
@@ -441,7 +441,7 @@
   color: var(--fg-faint);
 }
 
-/* —— 感知亮度曲线 —— */
+/* —— Perceived brightness curve —— */
 .ok__cmp-curve {
   position: absolute;
   bottom: 28px;

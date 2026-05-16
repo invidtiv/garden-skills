@@ -4,23 +4,23 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Role.css';
 
 /**
- * Chapter 04 · 第一部分：角色定位
+ * Chapter 04 · Part 1: Role Definition
  *
- * 口播主旨：
- *   "你是一个专家设计师，用户是你的产品经理。"
- *   - 不说 "AI 助手"，说 designer / manager 关系 → 决策果断 + 关键征询
- *   - 而且角色还会变：动画时 = Motion Designer；原型时 = UX Designer；幻灯时 = Deck Designer
- *   - 好的角色定位 = 动态的
+ * Voiceover theme:
+ *   "You are an expert designer, the user is your product manager."
+ *   - Don't say "AI assistant", say designer / manager relationship → decisive + key consultation
+ *   - And the role changes: when animating = Motion Designer; when prototyping = UX Designer; when decking = Deck Designer
+ *   - Good role definition = dynamic
  *
- * 节奏（8 步 / step 0..7）：
- *  0  环境（eyebrow）
- *  1  hero 引文（英文 italic + 中文）
- *  2  关键词高亮（designer / manager 圈出）
- *  3  双 benefit 卡片（果断 / 征询）
- *  4  名片切到 Motion Designer
+ * Pacing (8 steps / step 0..7):
+ *  0  Environment (eyebrow)
+ *  1  Hero quote (English italic + translation)
+ *  2  Keyword highlight (designer / manager circled)
+ *  3  Dual benefit cards (decisive / consult)
+ *  4  Card switches to Motion Designer
  *  5  → UX Designer
  *  6  → Deck Designer
- *  7  收尾：三张名片并列 + 结论"好的角色定位 · 是动态的"
+ *  7  Wrap-up: three cards side by side + conclusion "Good role definition · is dynamic"
  */
 
 interface Role {
@@ -33,9 +33,9 @@ interface Role {
 }
 
 const ROLES: Role[] = [
-  { id: 'motion', en: 'Motion Designer',  cn: '动效设计师',   ctx: '做动画时',     ctxEn: 'when animating',     icon: 'motion' },
-  { id: 'ux',     en: 'UX Designer',      cn: 'UX 设计师',    ctx: '做原型时',     ctxEn: 'when prototyping',   icon: 'ux'     },
-  { id: 'deck',   en: 'Deck Designer',    cn: 'Deck 设计师',  ctx: '做幻灯片时',   ctxEn: 'when decking',       icon: 'deck'   },
+  { id: 'motion', en: 'Motion Designer',  cn: 'Motion Designer',   ctx: 'When animating',     ctxEn: 'when animating',     icon: 'motion' },
+  { id: 'ux',     en: 'UX Designer',      cn: 'UX Designer',    ctx: 'When prototyping',     ctxEn: 'when prototyping',   icon: 'ux'     },
+  { id: 'deck',   en: 'Deck Designer',    cn: 'Deck Designer',  ctx: 'When decking',   ctxEn: 'when decking',       icon: 'deck'   },
 ];
 
 function RoleIcon({ kind }: { kind: Role['icon'] }) {
@@ -104,7 +104,7 @@ function RoleCard({ role, size = 'lg' }: { role: Role; size?: 'lg' | 'sm' }) {
 function Role({ localStep }: ChapterContext) {
   const at = (n: number) => localStep >= n;
 
-  // 三幕：引文 / 单卡片切换 / 收尾全卡
+  // Three acts: quote / single card flip / wrap-up all cards
   const sceneQuote = localStep <= 3;
   const sceneFlip  = localStep >= 4 && localStep <= 6;
   const sceneAll   = localStep >= 7;
@@ -123,7 +123,7 @@ function Role({ localStep }: ChapterContext) {
               <span className="role__src-sep">·</span>
               <span className="role__src-line">L01</span>
               <span className="role__src-sep">/</span>
-              <span className="role__src-mute">原文</span>
+              <span className="role__src-mute">Original</span>
               <span className="role__src-bracket">]</span>
             </Reveal>
           )}
@@ -148,17 +148,17 @@ function Role({ localStep }: ChapterContext) {
 
           {at(1) && (
             <Reveal kind="rise" duration={900} delay={420} className="role__quote-cn" as="p">
-              <span>你是一个专家</span>
-              <span className={`role__quote-cn-key ${at(2) ? 'is-marked' : ''}`}>设计师</span>
-              <span> ——  而用户，是你的</span>
-              <span className={`role__quote-cn-key role__quote-cn-key--alt ${at(2) ? 'is-marked' : ''}`}>产品经理</span>
+              <span>You are an expert</span>
+              <span className={`role__quote-cn-key ${at(2) ? 'is-marked' : ''}`}>designer</span>
+              <span> ——  and the user is your</span>
+              <span className={`role__quote-cn-key role__quote-cn-key--alt ${at(2) ? 'is-marked' : ''}`}>product manager</span>
               <span>。</span>
             </Reveal>
           )}
 
           {at(2) && (
             <Reveal kind="fade" duration={620} delay={120} className="role__quote-note">
-              注意 —— 这里 <u>没有</u> 说 "你是一个 AI 助手"
+              Note —— it <u>never</u> says "you are an AI assistant"
             </Reveal>
           )}
 
@@ -166,19 +166,19 @@ function Role({ localStep }: ChapterContext) {
             <div className="role__benefits">
               <Reveal kind="rise" duration={780} delay={80} className="role__benefit">
                 <div className="role__benefit-num">A</div>
-                <div className="role__benefit-title">决策更果断</div>
+                <div className="role__benefit-title">More Decisive</div>
                 <div className="role__benefit-desc">
-                  设计师本就该有判断力 —— AI 不再事事征询，<br />
-                  能直接拍板的，自己拍。
+                  A designer should have judgment —— the AI no longer asks about everything,<br />
+                  when it can decide, it decides.
                 </div>
               </Reveal>
 
               <Reveal kind="rise" duration={780} delay={220} className="role__benefit">
                 <div className="role__benefit-num">B</div>
-                <div className="role__benefit-title">关键节点 · 请示你</div>
+                <div className="role__benefit-title">Key Nodes · Consult You</div>
                 <div className="role__benefit-desc">
-                  因为你是 PM —— 在方向 / 取舍 / 命名这种<br />
-                  关键节点上，最终还是你说了算。
+                  Because you are the PM —— on direction / trade-offs / naming,<br />
+                  at key nodes, you have the final say.
                 </div>
               </Reveal>
             </div>
@@ -189,7 +189,7 @@ function Role({ localStep }: ChapterContext) {
       {/* ═════════ Scene FLIP（step 4..6）═════════ */}
       <SceneFade active={sceneFlip} exitMs={420} enterDelayMs={420}>
         <div className="role__flip-scene">
-          {/* 原文参考块 —— 来自系统提示词 L04 */}
+          {/* Original reference block —— from system prompt L04 */}
           <Reveal kind="rise" duration={780} delay={80} className="role__excerpt">
             <div className="role__excerpt-head">
               <span className="role__src-bracket">[</span>
@@ -197,7 +197,7 @@ function Role({ localStep }: ChapterContext) {
               <span className="role__src-sep">·</span>
               <span className="role__src-line">L04</span>
               <span className="role__src-sep">/</span>
-              <span className="role__src-mute">紧接下一句</span>
+              <span className="role__src-mute">Next line</span>
               <span className="role__src-bracket">]</span>
             </div>
             <div className="role__excerpt-body">
@@ -215,11 +215,11 @@ function Role({ localStep }: ChapterContext) {
 
           <Reveal kind="fade" duration={520} delay={520} className="role__flip-eyebrow">
             <span className="role__flip-eyebrow-arrow">↓</span>
-            <span>翻成大白话 ——</span>
-            <span className="role__flip-eyebrow-em">角色，还会变</span>
+            <span>In plain words ——</span>
+            <span className="role__flip-eyebrow-em">Roles keep changing</span>
           </Reveal>
 
-          {/* 名片"翻牌"窗 */}
+          {/* Card "flip" window */}
           <div className="role__flip-window">
             {ROLES.map((r, i) => {
               const state = i === roleIndex
@@ -237,7 +237,7 @@ function Role({ localStep }: ChapterContext) {
             })}
           </div>
 
-          {/* 步进刻度 */}
+          {/* Step ticks */}
           <div className="role__flip-ticks">
             {ROLES.map((r, i) => (
               <div
@@ -268,16 +268,16 @@ function Role({ localStep }: ChapterContext) {
           </Reveal>
 
           <Reveal kind="rise" duration={900} delay={520} className="role__all-takeaway" as="h2">
-            好的角色定位 ——<br />
-            <em>不是固定的，而是 <span className="role__all-em">动态</span> 的。</em>
+            Good role definition ——<br />
+            <em>is not fixed, but <span className="role__all-em">dynamic</span>.</em>
           </Reveal>
 
           <Reveal kind="fade" duration={620} delay={900} className="role__all-foot">
-            <span>不会用做网页的脑子做 PPT</span>
+            <span>Won't use a web-design mindset for PPTs</span>
             <span className="role__all-foot-dot" />
-            <span>不会给动画加页脚</span>
+            <span>Won't add footers to animations</span>
             <span className="role__all-foot-dot" />
-            <span>不会给幻灯片加导航栏</span>
+            <span>Won't add navbars to slides</span>
           </Reveal>
         </div>
       </SceneFade>
@@ -287,7 +287,7 @@ function Role({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'role',
-  title: '第一部分 · 角色定位',
+  title: 'Part 1 · Role Definition',
   eyebrow: '04',
   steps: 8,
   theme: 'light',

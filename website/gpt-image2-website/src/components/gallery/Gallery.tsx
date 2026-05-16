@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { cases, ORDERED_CATEGORIES } from '../../lib/data';
 import type { PromptCase, Route } from '../../types';
 import { MasonryView } from './MasonryView';
@@ -10,13 +10,23 @@ type Filter = 'all' | 'ready';
 
 interface Props {
   navigate: (r: Route) => void;
+  initialQuery?: string;
 }
 
-export function Gallery({ navigate }: Props) {
+export function Gallery({ navigate, initialQuery }: Props) {
   const [mode, setMode] = useState<Mode>('masonry');
   const [filter, setFilter] = useState<Filter>('ready');
   const [activeCat, setActiveCat] = useState<string>('all');
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(initialQuery || '');
+
+  useEffect(() => {
+    if (initialQuery) {
+      const el = document.getElementById('gallery');
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100);
+      }
+    }
+  }, [initialQuery]);
 
   const allReady = cases.cases.filter((c) => c.has_image);
 

@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 02 · Anthropic 官方宣传片
-   light 主题 · 米色纸感底 · 中央虚拟显示器外框
+   Chapter 02 · Anthropic Official Promo
+   light theme · beige paper-textured background · central virtual monitor frame
    ========================================================= */
 
 .vid {
@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-/* TV 外壳 */
+/* TV shell */
 .vid__tv-wrap {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
     inset 0 -1px 0 oklch(0.180 0.014 60 / 0.6);
 }
 
-/* 角落螺丝 */
+/* Corner screws */
 .vid__screw {
   position: absolute;
   width: 8px;
@@ -60,7 +60,7 @@
 .vid__screw--bl { bottom: 14px; left: 12px; }
 .vid__screw--br { bottom: 14px; right: 12px; }
 
-/* 顶部状态条 */
+/* Top status bar */
 .vid__topstrip {
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@
   flex: 1;
 }
 
-/* 屏幕（视频容器） */
+/* Screen (video container) */
 .vid__screen {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -108,7 +108,7 @@
   background: #000;
 }
 
-/* 微弱扫描线 */
+/* Subtle scanlines */
 .vid__scanlines {
   position: absolute;
   inset: 0;
@@ -125,7 +125,7 @@
   opacity: 0.6;
 }
 
-/* 底部品牌条 */
+/* Bottom brand bar */
 .vid__brandstrip {
   display: flex;
   align-items: center;
@@ -150,7 +150,7 @@
   letter-spacing: 0.22em;
 }
 
-/* 底座 */
+/* Stand */
 .vid__stand {
   display: flex;
   flex-direction: column;

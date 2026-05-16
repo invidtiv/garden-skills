@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 03 · 核心观点
-   ink 主题 · hero → 50/50 split → 提示词倾泻 → leaked → pivot
+   Chapter 03 · Core Point
+   ink theme · hero → 50/50 split → prompt cascade → leaked → pivot
    ========================================================= */
 
 .cp {
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* 背景网格氛围 */
+/* Background grid vibe */
 .cp__grid {
   position: absolute;
   inset: 0;
@@ -25,7 +25,7 @@
   opacity: 0.5;
 }
 
-/* 角落坐标十字 */
+/* Corner coordinate cross */
 .cp__cornerTL,
 .cp__cornerBR {
   position: absolute;
@@ -135,7 +135,7 @@
   letter-spacing: 0;
 }
 
-/* 分隔线（中央） */
+/* Divider (center) */
 .cp__split-divider {
   position: absolute;
   top: 220px;
@@ -173,7 +173,7 @@
   margin: 14px 0;
 }
 
-/* 两栏 */
+/* Two columns */
 .cp__columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,7 +244,7 @@
   max-width: 540px;
 }
 
-/* 左：进度计 */
+/* Left: progress meter */
 .cp__col-meter {
   position: relative;
   height: 32px;
@@ -293,7 +293,7 @@
   border-radius: var(--r-pill);
 }
 
-/* 右：文档预览 */
+/* Right: doc preview */
 .cp__doc {
   margin-top: 4px;
   max-width: 620px;
@@ -363,7 +363,7 @@
   51%, 100% { opacity: 0; }
 }
 
-/* leaked 徽章 */
+/* Leaked badge */
 .cp__leaked {
   position: absolute;
   bottom: 130px;
@@ -439,7 +439,7 @@
   color: var(--fg-soft);
 }
 
-/* pivot 转场指引 */
+/* Pivot transition cue */
 .cp__pivot {
   position: absolute;
   bottom: 56px;

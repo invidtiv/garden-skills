@@ -4,23 +4,23 @@ import { SceneFade } from '../../shared/SceneFade';
 import './Restraint.css';
 
 /**
- * Chapter 08 · 第五部分：内容克制
+ * Chapter 08 · Part Five: Content Restraint
  *
- * 口播原顺序（严格对齐）：
- *   1. "提示词里引了乔布斯一句经典的话：'一千个 No 换一个 Yes'。"
- *   2. "AI 做设计有个毛病——恨不得把空间塞满。"
- *      "Hero、特性、评价、数据、FAQ、联系方式…一股脑全上了，但每块都很平庸。"
- *   3. "Claude Design 的态度很明确：每个元素得证明自己为什么该在那。"
- *   4. "想加东西？先问用户。页面看着空？那是排版的问题，用留白来解决，别靠塞东西。"
- *   5. "一个大胆的留白，比十个凑数的板块有表现力得多。"
+ * Voiceover script (strictly aligned):
+ *   1. "The prompt quotes a classic Steve Jobs line: 'A thousand No's for every Yes'."
+ *   2. "AI has a bad habit when designing —— it can't wait to fill every inch of space."
+ *      "Hero, features, testimonials, data, FAQ, contact info… everything at once, but each block is mediocre."
+ *   3. "Claude Design's stance is clear: every element must justify why it deserves to be there."
+ *   4. "Want to add something? Ask the user first. Page looks empty? That's a layout problem, solve it with whitespace, not by stuffing more content."
+ *   5. "One bold whitespace is far more expressive than ten filler sections."
  *
- * 节奏（6 步 / step 0..5）：
- *  0  hero "1000 No · 1 Yes" 大字开场 + Steve Jobs + 原文 prompt(L75)
- *  1  转场到 AI 落地页：6 段 section 线框依次出现
- *  2  filler 内容塞满（"恨不得把空间塞满"）
- *  3  红 × 一段段砍掉（"每个元素得证明自己"）
- *  4  留白后中央立原则: "想加？先问。空？用留白" + earn-its-place 提示词
- *  5  收尾: "一个大胆的留白 > 十个凑数的板块"
+ * Pacing (6 steps / step 0..5):
+ *  0  hero "1000 No · 1 Yes" big opening + Steve Jobs + original prompt (L75)
+ *  1  Transition to AI landing page: 6 section wireframes appear in sequence
+ *  2  filler content stuffed full ("can't wait to fill every inch")
+ *  3  Red × cuts them one by one ("every element must justify itself")
+ *  4  State principle at center after whitespace: "Want to add? Ask first. Empty? Use whitespace" + earn-its-place prompt
+ *  5  Closing: "One bold whitespace > ten filler sections"
  */
 
 interface Section {
@@ -30,12 +30,12 @@ interface Section {
 }
 
 const SECTIONS: Section[] = [
-  { id: 'hero',     label: 'HERO',         cn: '主视觉' },
-  { id: 'feat',     label: 'FEATURES',     cn: '6 大特性' },
-  { id: 'social',   label: 'TESTIMONIALS', cn: '客户评价' },
-  { id: 'data',     label: 'DATA',         cn: '数据展示' },
-  { id: 'faq',      label: 'FAQ',          cn: '常见问题' },
-  { id: 'contact',  label: 'CONTACT',      cn: '联系方式' },
+  { id: 'hero',     label: 'HERO',         cn: 'Hero' },
+  { id: 'feat',     label: 'FEATURES',     cn: '6 Key Features' },
+  { id: 'social',   label: 'TESTIMONIALS', cn: 'Testimonials' },
+  { id: 'data',     label: 'DATA',         cn: 'Data Showcase' },
+  { id: 'faq',      label: 'FAQ',          cn: 'FAQ' },
+  { id: 'contact',  label: 'CONTACT',      cn: 'Contact' },
 ];
 
 function SectionBlock({
@@ -142,11 +142,11 @@ function Restraint({ localStep }: ChapterContext) {
 
   return (
     <section className="re">
-      {/* ════════ Scene JOBS（step 0）—— 乔布斯名言开场 ════════ */}
+      {/* ════════ Scene JOBS (step 0) —— Jobs quote opening ════════ */}
       <SceneFade active={sceneJobs} exitMs={420} enterDelayMs={120}>
         <div className="re__jobs">
           <Reveal kind="fade" duration={780} delay={120} className="re__jobs-by">
-            —— STEVE JOBS · 提示词原文引用
+            —— STEVE JOBS · Prompt Original Quote
           </Reveal>
 
           <div className="re__jobs-row">
@@ -156,7 +156,7 @@ function Restraint({ localStep }: ChapterContext) {
             </Reveal>
 
             <Reveal kind="fade" duration={780} delay={760} className="re__jobs-arrow" as="span">
-              换
+              for
             </Reveal>
 
             <Reveal kind="rise" duration={1100} delay={1000} className="re__jobs-num re__jobs-num--yes">
@@ -181,16 +181,16 @@ function Restraint({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ════════ Scene PAGE（step 1..3）—— AI 把 6 段塞满 → 砍 ════════ */}
+      {/* ════════ Scene PAGE (step 1..3) —— AI stuffs 6 sections full → cuts ════════ */}
       <SceneFade active={scenePage} exitMs={420} enterDelayMs={420}>
         <div className="re__page-scene">
           <Reveal kind="fade" duration={620} delay={80} className="re__page-cap">
             <span className="re__page-cap-tag">A TYPICAL "AI" LANDING PAGE</span>
             <span className="re__page-cap-sep">/</span>
             <span className="re__page-cap-text">
-              {!filled && 'AI 一上来就把 6 段全摆好了 ——'}
-              {filled && !pruned && '然后把每一格都塞满 ——'}
-              {pruned && '一一拷问：你为什么在这？'}
+              {!filled && 'AI lays out all 6 sections at once ——'}
+              {filled && !pruned && 'Then fills every slot to the brim ——'}
+              {pruned && 'Interrogate each one: why are you here?'}
             </span>
           </Reveal>
 
@@ -219,33 +219,33 @@ function Restraint({ localStep }: ChapterContext) {
           {pruned && (
             <Reveal kind="fade" duration={620} delay={620} className="re__page-verdict">
               <span className="re__page-verdict-mark">×</span>
-              每一块都"还行"，加在一起 —— 还是<em>平庸</em>
+              Each block is "fine", but together —— still <em>mediocre</em>
             </Reveal>
           )}
         </div>
       </SceneFade>
 
-      {/* ════════ Scene PRINCIPLE（step 4）—— 立原则 ════════ */}
+      {/* ════════ Scene PRINCIPLE (step 4) —— state principle ════════ */}
       <SceneFade active={scenePrinc} exitMs={420} enterDelayMs={420}>
         <div className="re__princ">
           <Reveal kind="rise" duration={780} delay={80} className="re__princ-head" as="h2">
-            Claude Design 的态度 ——
+            Claude Design's Stance ——
           </Reveal>
 
           <Reveal kind="rise" duration={1100} delay={360} className="re__princ-line" as="p">
-            每个元素，得<em>证明自己</em>为什么该在那。
+            Every element must <em>justify</em> why it deserves to be there.
           </Reveal>
 
           <div className="re__princ-rules">
             <Reveal kind="rise" duration={720} delay={760} className="re__princ-rule">
-              <span className="re__princ-q">想加东西？</span>
+              <span className="re__princ-q">Want to add something?</span>
               <span className="re__princ-arrow">→</span>
-              <span className="re__princ-a">先问用户</span>
+              <span className="re__princ-a">Ask the user first</span>
             </Reveal>
             <Reveal kind="rise" duration={720} delay={1000} className="re__princ-rule">
-              <span className="re__princ-q">页面看着空？</span>
+              <span className="re__princ-q">Page looks empty?</span>
               <span className="re__princ-arrow">→</span>
-              <span className="re__princ-a">用<em>留白</em>解决，不是塞内容</span>
+              <span className="re__princ-a">Solve it with <em>whitespace</em>, not more content</span>
             </Reveal>
           </div>
 
@@ -269,21 +269,21 @@ function Restraint({ localStep }: ChapterContext) {
         </div>
       </SceneFade>
 
-      {/* ════════ Scene CLOSE（step 5）—— 大胆留白 ════════ */}
+      {/* ════════ Scene CLOSE (step 5) —— bold whitespace ════════ */}
       <SceneFade active={sceneClose} exitMs={420} enterDelayMs={420}>
         <div className="re__close">
           <Reveal kind="rise" duration={1300} delay={120} className="re__close-line" as="h1">
-            一个大胆的<em>留白</em>，
+            One bold <em>whitespace</em>,
           </Reveal>
 
           <Reveal kind="rise" duration={1300} delay={780} className="re__close-line re__close-line--alt" as="h1">
-            比十个凑数的板块更有<em>表现力</em>。
+            is more <em>expressive</em> than ten filler sections.
           </Reveal>
 
           <Reveal kind="fade" duration={780} delay={1700} className="re__close-foot">
-            <span>留白</span>
+            <span>Whitespace</span>
             <span className="re__close-foot-eq">=</span>
-            <span>设计</span>
+            <span>Design</span>
           </Reveal>
         </div>
       </SceneFade>
@@ -293,7 +293,7 @@ function Restraint({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'restraint',
-  title: '第五部分 · 内容克制',
+  title: 'Part Five · Content Restraint',
   eyebrow: '08',
   steps: 6,
   theme: 'light',

@@ -378,7 +378,20 @@ export function SkillsPage({ navigate }: Props) {
                 </header>
                 <ul className="sp-cat-tpls">
                   {tpls.map((t) => (
-                    <li key={t} className="sp-cat-tpl">
+                    <li
+                      key={t}
+                      className="sp-cat-tpl"
+                      onClick={() => navigate({ name: 'home', query: t })}
+                      style={{ cursor: 'pointer' }}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          navigate({ name: 'home', query: t });
+                        }
+                      }}
+                    >
                       <span className="sp-cat-tpl-bullet" />
                       {t}
                     </li>

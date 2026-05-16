@@ -1011,21 +1011,24 @@
           "title": "Notion-style 'A Whiteboard Capturing Team Memories' (Light Hero)",
           "brief": "Typical SaaS homepage: left column with title, subtitle, and dual CTAs; right column features a 3D light perspective of 'multi-block product interface' with beige gradient and low noise, suitable for Bilibili landing pages and A/B testing for official homepage.",
           "format": "json",
-          "file": "poster-and-campaigns/banner-hero/1.json"
+          "file": "poster-and-campaigns/banner-hero/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
           "title": "Linear Style Dark Engineering Efficiency Hero (Full Width Horizontal Bar)",
           "brief": "Dark Background + High Contrast Purple-Cyan Accents, Main Visual is an Abstract Interface of 'Problem List + Sprint Burnout', Strong R&D Vibe, Suitable for Workflow / DevOps Category Landing Page.",
           "format": "json",
-          "file": "poster-and-campaigns/banner-hero/2.json"
+          "file": "poster-and-campaigns/banner-hero/2.json",
+          "has_image": true
         },
         {
           "idx": 3,
           "title": "Easy Dataset Open Source AI Dataset Workbench Hero (Bright Horizontal Layout)",
           "brief": "16:9 bright-tone README / homepage promotional image generated for ConardLi/easy-dataset. The left side highlights Easy Dataset, Fine-tuning / RAG / Eval three scenarios, while the right side uses a SaaS workspace to express the process from multi-format documents to high-quality datasets.",
           "format": "json",
-          "file": "poster-and-campaigns/banner-hero/3.json"
+          "file": "poster-and-campaigns/banner-hero/3.json",
+          "has_image": true
         }
       ]
     },
@@ -1041,14 +1044,16 @@
           "title": "Apple Legacy × Tim Cook (Main Visual of 'One More Step')",
           "brief": "In a legal context, use brand essence words with character portraits and products together; main sentences should be short, and the color palette consistent with the official website's silver-gray, suitable for social media banners after press conferences or offline lightboxes.",
           "format": "json",
-          "file": "poster-and-campaigns/brand-poster/1.json"
+          "file": "poster-and-campaigns/brand-poster/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
           "title": "Nike Sports Spirit × LeBron James (Urban Morning Run Main Visual)",
           "brief": "Use the portrait of a basketball superstar and a Chinese slogan to convey the main narrative of 'the will of the people', with classic black and red contrast; the main visual is portrait format, suitable for splash screens and elevator posters.",
           "format": "json",
-          "file": "poster-and-campaigns/brand-poster/2.json"
+          "file": "poster-and-campaigns/brand-poster/2.json",
+          "has_image": true
         }
       ]
     },
@@ -1064,7 +1069,8 @@
           "title": "Coca-Cola Summer Refreshing Season (Omnichannel KV System Graphic)",
           "brief": "Predominantly Red and White, Single Anchor Large Glass Bottle Visual, Claim in Chinese Summer Promotion Context, Below 1:1, 9:16, 16:9 Three-Grid Line Frame Mockups Showcase Same System Extension.",
           "format": "json",
-          "file": "poster-and-campaigns/campaign-kv/1.json"
+          "file": "poster-and-campaigns/campaign-kv/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
@@ -1225,14 +1231,16 @@
           "title": "Cyberpunk Shanghai 2099 · Rainy Night at the Bund",
           "brief": "Eastern Metropolis × High-Density Neon Sci-Fi Theme; foreground pedestrian silhouettes, mid-ground suspended road and river traces, background towering Lujiazui structures and holographic ads, color palette of magenta + electric cyan + rainy gray, representing conceptual scene templates in 'Near-Future East Asian Urban' themes.",
           "format": "json",
-          "file": "scenes-and-illustrations/concept-scene/1.json"
+          "file": "scenes-and-illustrations/concept-scene/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
           "title": "Mars Dawn - Dome Exoskeleton Worker Facing the Sun",
           "brief": "Epic of Space Pioneering: Close-up silhouettes of small Mars suits, mid-range trajectories of mining vehicles and oxygen station pipelines, high-pressure orange fog outside the dome with the pale sun just rising on the distant horizon, addressing 'non-Earth scale' and 'the first rays of industrial dawn.'",
           "format": "json",
-          "file": "scenes-and-illustrations/concept-scene/2.json"
+          "file": "scenes-and-illustrations/concept-scene/2.json",
+          "has_image": true
         }
       ]
     },
@@ -1255,7 +1263,8 @@
           "title": "Hokkaido's First Snow: Wooden Cabin and Orange Cat",
           "brief": "Composed of snow, warm lights, and the imagery of gathering around a stove to create a 'sense of comfort on the first snow day'; featuring no people, only animals, suitable for seasonal posters and nighttime social media posts.",
           "format": "json",
-          "file": "scenes-and-illustrations/healing-scene/2.json"
+          "file": "scenes-and-illustrations/healing-scene/2.json",
+          "has_image": true
         }
       ]
     },
@@ -1271,7 +1280,8 @@
           "title": "Rainy Night Tokyo · Convenience Store Neon Lights Scattered in Puddles",
           "brief": "Juxtaposing urban loneliness and safety: a small subject of warm light from the distant convenience store porch, large areas of cold rainy grey whitespace, accompanied by a Chinese caption, suitable as a late-night post's ending image and lock screen emotional wallpaper.",
           "format": "json",
-          "file": "scenes-and-illustrations/minimalist-mood-scene/1.json"
+          "file": "scenes-and-illustrations/minimalist-mood-scene/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
@@ -1811,7 +1821,8 @@
           "title": "Knowledge popular science cover — 'The Claude usage 99% of people don't know' (high contrast eye-catching style).",
           "brief": "Typical cover for a 'Knowledge Popularization/Tool Tutorial' short video, featuring a dark gradient, bright yellow title, main character, and three key points, representing the template's most iconic 'High-Click-Through Rate Knowledge Account' use case.",
           "format": "json",
-          "file": "ui-mockups/short-video-cover-ui/1.json"
+          "file": "ui-mockups/short-video-cover-ui/1.json",
+          "has_image": true
         },
         {
           "idx": 2,

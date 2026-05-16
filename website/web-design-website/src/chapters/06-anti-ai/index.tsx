@@ -4,21 +4,21 @@ import { SceneFade } from '../../shared/SceneFade';
 import './AntiAi.css';
 
 /**
- * Chapter 06 · 第三部分：去 AI 味
+ * Chapter 06 · Part Three: De-AI-ing
  *
- * 口播主旨：
- *   - "AI 味" 来自一组反复出现的视觉套路：渐变 / Emoji / 左侧色条卡 / 烂大街字体 / data slop / 复杂硬画 SVG
- *   - 单个看都行，反复出现就成了"味道"
- *   - 字体清单：重点不是该用什么，是别用什么 (Inter / Roboto / Arial / Fraunces / system-ui)
- *   - 替代方案给了小众但品质高的字体 (Plus Jakarta Sans / Space Grotesk / Sora / Newsreader)
+ * Voiceover gist:
+ *   - "AI look" comes from recurring visual tropes: gradients / Emoji / left color bar cards / overused fonts / data slop / over-drawn SVG
+ *   - Any one alone is fine, repeated use becomes a "look"
+ *   - Font list: the point isn't what to use, it's what NOT to use (Inter / Roboto / Arial / Fraunces / system-ui)
+ *   - Alternatives are niche but high-quality fonts (Plus Jakarta Sans / Space Grotesk / Sora / Newsreader)
  *
- * 节奏（6 步 / step 0..5）：
- *  0  环境（eyebrow）
- *  1  hero "什么是 AI 味？" + 原文 prompt block
- *  2  6 张反面教材依次出现（stagger）
- *  3  全部被红色斜杠"叉掉"
- *  4  字体小专题：黑名单（实际字体渲染）
- *  5  推荐替代（实际字体渲染）+ takeaway
+ * Pacing (6 steps / step 0..5):
+ *  0  Setup (eyebrow)
+ *  1  hero "What is that AI look?" + original prompt block
+ *  2  6 anti-pattern cards appear in sequence (stagger)
+ *  3  All slashed with red lines
+ *  4  Font mini-topic: blacklist (actual font rendering)
+ *  5  Recommended alternatives (actual font rendering) + takeaway
  */
 
 interface AntiPattern {
@@ -28,12 +28,12 @@ interface AntiPattern {
 }
 
 const PATTERNS: AntiPattern[] = [
-  { id: 'gradient', cn: '紫粉蓝渐变背景',  en: 'PASTEL GRADIENT' },
-  { id: 'emoji',    cn: 'Emoji 当图标',     en: 'EMOJI ICONS'    },
-  { id: 'leftbar',  cn: '左侧彩色色条卡',   en: 'LEFT COLOR BAR' },
-  { id: 'font',     cn: '烂大街字体',       en: 'STOCK FONTS'    },
-  { id: 'data',     cn: '堆砌假数据',       en: 'DATA SLOP'      },
-  { id: 'svg',      cn: '复杂硬画 SVG',     en: 'OVER-DRAWN SVG' },
+  { id: 'gradient', cn: 'Pastel Gradient Background',  en: 'PASTEL GRADIENT' },
+  { id: 'emoji',    cn: 'Emoji as Icons',     en: 'EMOJI ICONS'    },
+  { id: 'leftbar',  cn: 'Left Color Bar Cards',   en: 'LEFT COLOR BAR' },
+  { id: 'font',     cn: 'Overused Fonts',       en: 'STOCK FONTS'    },
+  { id: 'data',     cn: 'Fake Data Slop',       en: 'DATA SLOP'      },
+  { id: 'svg',      cn: 'Over-Drawn SVG',     en: 'OVER-DRAWN SVG' },
 ];
 
 const BANNED_FONTS = [
@@ -46,12 +46,12 @@ const BANNED_FONTS = [
 
 const BETTER_FONTS = [
   { name: 'Plus Jakarta Sans', family: '"Plus Jakarta Sans", sans-serif', sample: 'AaBbCc 123', tag: 'sans · workhorse' },
-  { name: 'Space Grotesk',     family: '"Space Grotesk", sans-serif',     sample: 'AaBbCc 123', tag: 'sans · 工程感'    },
-  { name: 'Sora',              family: '"Sora", sans-serif',              sample: 'AaBbCc 123', tag: 'sans · 现代克制'  },
-  { name: 'Newsreader',        family: '"Newsreader", serif',             sample: 'AaBbCc 123', tag: 'serif · 编辑感'  },
+  { name: 'Space Grotesk',     family: '"Space Grotesk", sans-serif',     sample: 'AaBbCc 123', tag: 'sans · engineering feel'    },
+  { name: 'Sora',              family: '"Sora", sans-serif',              sample: 'AaBbCc 123', tag: 'sans · modern restraint'  },
+  { name: 'Newsreader',        family: '"Newsreader", serif',             sample: 'AaBbCc 123', tag: 'serif · editorial feel'  },
 ];
 
-/** 单个反面教材小卡片 —— 视觉示意 + 名称 + (后期) 红斜线 */
+/** Single anti-pattern card —— visual demo + name + (later) red slash */
 function BadCard({ p, slashed }: { p: AntiPattern; slashed: boolean }) {
   return (
     <div className={`aa__bad ${slashed ? 'is-slashed' : ''}`} data-id={p.id}>
@@ -108,7 +108,7 @@ function BadCard({ p, slashed }: { p: AntiPattern; slashed: boolean }) {
           </svg>
         )}
 
-        {/* 红色斜杠覆盖层 */}
+        {/* Red slash overlay */}
         <div className="aa__bad-slash" aria-hidden>
           <span className="aa__bad-slash-line" />
         </div>
@@ -140,12 +140,12 @@ function AntiAi({ localStep }: ChapterContext) {
           {at(1) && (
             <>
               <Reveal kind="rise" duration={1100} delay={120} className="aa__hero-title" as="h1">
-                什么是 <em className="aa__hero-em">AI 味</em>？
+                What is that <em className="aa__hero-em">AI look</em>?
               </Reveal>
 
               <Reveal kind="rise" duration={780} delay={520} className="aa__hero-sub" as="p">
-                单看每一条都不算错 ——<br />
-                <em>反复堆在一起，就成了一种味道。</em>
+                Any one alone isn't wrong ——<br />
+                <em>Stack them repeatedly, and it becomes a "look".</em>
               </Reveal>
 
               <Reveal kind="rise" duration={780} delay={820} className="aa__excerpt">
@@ -173,7 +173,7 @@ function AntiAi({ localStep }: ChapterContext) {
       <SceneFade active={sceneGrid} exitMs={420} enterDelayMs={420}>
         <div className="aa__grid-scene">
           <Reveal kind="fade" duration={620} delay={80} className="aa__grid-cap">
-            举几个 AI 反复用的"老套路" —— 一看就知道
+            A few old tropes AI uses over and over —— instantly recognizable
           </Reveal>
 
           <div className="aa__grid">
@@ -191,7 +191,7 @@ function AntiAi({ localStep }: ChapterContext) {
           {at(3) && (
             <Reveal kind="fade" duration={620} delay={620} className="aa__grid-verdict">
               <span className="aa__grid-verdict-mark">×</span>
-              Claude Design 把这些雷区<em>一条条列出来</em>，逼着 AI 走新路。
+              Claude Design lists these pitfalls <em>one by one</em>, forcing AI to take a new path.
             </Reveal>
           )}
         </div>
@@ -201,18 +201,18 @@ function AntiAi({ localStep }: ChapterContext) {
       <SceneFade active={sceneFonts} exitMs={420} enterDelayMs={420}>
         <div className="aa__fonts-scene">
           <Reveal kind="rise" duration={780} delay={80} className="aa__fonts-head">
-            <span className="aa__fonts-num">小专题</span>
+            <span className="aa__fonts-num">Mini Topic</span>
             <h2 className="aa__fonts-title">
-              字体推荐 —— 重点是 <em>别用什么</em>
+              Font Recommendations —— The Point Is <em>What Not to Use</em>
             </h2>
           </Reveal>
 
           <div className="aa__fonts-grid">
-            {/* 黑名单 */}
+            {/* Blacklist */}
             <Reveal kind="rise" duration={780} delay={260} className="aa__fonts-col aa__fonts-col--ban">
               <div className="aa__fonts-col-tag">
                 <span className="aa__fonts-col-mark">×</span>
-                BLACKLIST · 别用
+                BLACKLIST · Do Not Use
               </div>
               <div className="aa__fonts-list">
                 {BANNED_FONTS.map((f, i) => (
@@ -233,12 +233,12 @@ function AntiAi({ localStep }: ChapterContext) {
               </div>
             </Reveal>
 
-            {/* 推荐替代 */}
+            {/* Recommended alternatives */}
             {showAlt && (
               <Reveal kind="rise" duration={900} delay={120} className="aa__fonts-col aa__fonts-col--alt">
                 <div className="aa__fonts-col-tag">
                   <span className="aa__fonts-col-mark aa__fonts-col-mark--ok">✓</span>
-                  ALTERNATIVES · 替代方案
+                  ALTERNATIVES · Better Options
                 </div>
                 <div className="aa__fonts-list">
                   {BETTER_FONTS.map((f, i) => (
@@ -263,13 +263,13 @@ function AntiAi({ localStep }: ChapterContext) {
 
           {showAlt && (
             <Reveal kind="fade" duration={620} delay={620} className="aa__fonts-foot">
-              <span>小众</span>
+              <span>Niche</span>
               <span className="aa__fonts-foot-dot" />
-              <span>免费</span>
+              <span>Free</span>
               <span className="aa__fonts-foot-dot" />
-              <span>品质高</span>
+              <span>High Quality</span>
               <span className="aa__fonts-foot-dot" />
-              <span>立刻去掉 AI 味</span>
+              <span>Removes the AI look instantly</span>
             </Reveal>
           )}
         </div>
@@ -280,7 +280,7 @@ function AntiAi({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'anti-ai',
-  title: '第三部分 · 去 AI 味',
+  title: 'Part Three · De-AI-ing',
   eyebrow: '06',
   steps: 6,
   theme: 'light',

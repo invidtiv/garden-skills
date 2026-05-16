@@ -5,19 +5,19 @@ import { NumberTicker } from '../../shared/NumberTicker';
 import './CorePoint.css';
 
 /**
- * Chapter 03 · 核心观点
+ * Chapter 03 · Core Point
  *
- * 口播主旨：
- *  「Claude Design 之所以强，一半靠 Opus 4.7，另一半靠精心设计的提示词。
- *   上线不到 24 小时，完整系统提示词被扒出来。下面，我们逐条拆解。」
+ * Voiceover theme:
+ *  "Claude Design is strong because half is Opus 4.7, the other half is carefully crafted prompts.
+ *   Launched less than 24 hours, the full system prompt was leaked. Next, we break it down line by line."
  *
- * 节奏（6 步 / step 0..5）：
- *  0  环境（深墨底 + 网格氛围，一行小标 eyebrow）
- *  1  hero 问句："Claude Design · 为什么这么强？"
- *  2  答案展开：50/50 分屏，左 OPUS 4.7 / 右 SYSTEM PROMPT
- *  3  右侧"提示词从天而降"——真实片段逐条落入文档预览
- *  4  leaked 事件徽章："< 24 HOURS · LEAKED"
- *  5  转场指引："下面，我们逐条拆解 ↓"
+ * Pacing (6 steps / step 0..5):
+ *  0  Environment (dark ink background + grid vibe, one-line eyebrow)
+ *  1  Hero question: "Claude Design · Why so strong?"
+ *  2  Answer unfolds: 50/50 split, left OPUS 4.7 / right SYSTEM PROMPT
+ *  3  Right side "prompts fall from the sky" — real snippets drop into doc preview one by one
+ *  4  Leaked event badge: "< 24 HOURS · LEAKED"
+ *  5  Transition cue: "Next, we break it down line by line ↓"
  */
 
 const PROMPT_LINES: string[] = [
@@ -36,13 +36,13 @@ const PROMPT_LINES: string[] = [
 function CorePoint({ localStep }: ChapterContext) {
   const at = (n: number) => localStep >= n;
 
-  // 场景：1+ 进入分析；2 之前是单独 hero 居中
+  // Scene: 1+ enters analysis; before 2 is solo hero centered
   const sceneHero = localStep <= 1;
   const sceneSplit = localStep >= 2;
 
   return (
     <section className="cp">
-      {/* 装饰性背景网格 + 角落坐标 */}
+      {/* Decorative background grid + corner coordinates */}
       <div className="cp__grid" aria-hidden />
       <div className="cp__cornerTL" aria-hidden>
         <span /><span />
@@ -56,14 +56,14 @@ function CorePoint({ localStep }: ChapterContext) {
         <div className="cp__hero">
           <Reveal kind="fade" duration={700} delay={120} className="cp__hero-eyebrow">
             <span className="cp__hero-eyebrow-bar" />
-            <span>03 · 核心观点</span>
+            <span>03 · Core Point</span>
             <span className="cp__hero-eyebrow-bar" />
           </Reveal>
 
           {at(1) && (
             <Reveal kind="rise" duration={1100} delay={80} className="cp__hero-title" as="h1">
               Claude Design<br />
-              <em className="cp__hero-em">为什么这么强？</em>
+              <em className="cp__hero-em">Why so strong?</em>
             </Reveal>
           )}
         </div>
@@ -72,14 +72,14 @@ function CorePoint({ localStep }: ChapterContext) {
       {/* ───────── Scene SPLIT（step 2..5）───────── */}
       <SceneFade active={sceneSplit} exitMs={420} enterDelayMs={420}>
         <div className="cp__split">
-          {/* 顶部留下问句的小回响（不再是大字） */}
+          {/* Small echo of the question at top (no longer big text) */}
           <Reveal kind="fade" duration={620} delay={120} className="cp__split-eyebrow">
-            <span>为什么这么强？</span>
+            <span>Why so strong?</span>
             <span className="cp__split-eyebrow-arrow">→</span>
-            <span>答案是</span>
+            <span>The answer is</span>
           </Reveal>
 
-          {/* 中央分隔线 */}
+          {/* Central divider */}
           <Reveal kind="fade" duration={900} delay={300} className="cp__split-divider">
             <span className="cp__split-divider-line" />
             <span className="cp__split-divider-knob">+</span>
@@ -87,7 +87,7 @@ function CorePoint({ localStep }: ChapterContext) {
           </Reveal>
 
           <div className="cp__columns">
-            {/* —— 左：OPUS 4.7 —— */}
+            {/* —— Left: OPUS 4.7 —— */}
             <Reveal kind="rise" duration={900} delay={420} className="cp__col cp__col--left">
               <div className="cp__col-pct">
                 <NumberTicker to={50} duration={1100} decimals={0} />
@@ -96,8 +96,8 @@ function CorePoint({ localStep }: ChapterContext) {
               <div className="cp__col-kicker">MODEL</div>
               <h2 className="cp__col-title">Opus 4.7</h2>
               <p className="cp__col-desc">
-                Anthropic 当前旗舰模型 ——<br />
-                决策力、品味、长链推理与代码能力的综合上限
+                Anthropic's current flagship model ——<br />
+                The combined ceiling of decision-making, taste, long-chain reasoning, and coding ability
               </p>
 
               <div className="cp__col-meter">
@@ -114,20 +114,20 @@ function CorePoint({ localStep }: ChapterContext) {
               </div>
             </Reveal>
 
-            {/* —— 右：SYSTEM PROMPT —— */}
+            {/* —— Right: SYSTEM PROMPT —— */}
             <Reveal kind="rise" duration={900} delay={560} className="cp__col cp__col--right">
               <div className="cp__col-pct">
                 <NumberTicker to={50} duration={1100} delay={140} decimals={0} />
                 <span className="cp__col-pct-sign">%</span>
               </div>
               <div className="cp__col-kicker">SYSTEM PROMPT</div>
-              <h2 className="cp__col-title">提示词工程</h2>
+              <h2 className="cp__col-title">Prompt Engineering</h2>
               <p className="cp__col-desc">
-                ~420 行专家级 system prompt ——<br />
-                对模型的"角色 / 流程 / 边界 / 品味"做了极强约束
+                ~420 lines of expert-level system prompt ——<br />
+                Strong constraints on the model's "role / workflow / boundaries / taste"
               </p>
 
-              {/* 文档预览 */}
+              {/* Doc preview */}
               <div className="cp__doc">
                 <div className="cp__doc-bar">
                   <span className="cp__doc-bar-dot" />
@@ -158,7 +158,7 @@ function CorePoint({ localStep }: ChapterContext) {
             </Reveal>
           </div>
 
-          {/* leaked 徽章 */}
+          {/* Leaked badge */}
           {at(4) && (
             <Reveal kind="rise" duration={780} className="cp__leaked">
               <div className="cp__leaked-stamp">
@@ -172,18 +172,18 @@ function CorePoint({ localStep }: ChapterContext) {
                   <span className="cp__leaked-meta-unit">HOURS</span>
                 </div>
                 <div className="cp__leaked-meta-text">
-                  上线不到 24 小时，完整系统提示词被扒出，<br />
-                  在安全 / 提示词圈广为流传
+                  Launched less than 24 hours, the full system prompt was leaked,<br />
+                  widely circulated in security / prompt engineering circles
                 </div>
               </div>
             </Reveal>
           )}
 
-          {/* 转场指引 */}
+          {/* Transition cue */}
           {at(5) && (
             <Reveal kind="rise" duration={760} delay={120} className="cp__pivot">
               <span className="cp__pivot-arrow" />
-              <span className="cp__pivot-text">下面，我们逐条拆解这套提示词</span>
+              <span className="cp__pivot-text">Next, we break down this prompt line by line</span>
             </Reveal>
           )}
         </div>
@@ -194,7 +194,7 @@ function CorePoint({ localStep }: ChapterContext) {
 
 const def: ChapterDef = {
   id: 'core-point',
-  title: '核心观点',
+  title: 'Core Point',
   eyebrow: '03',
   steps: 6,
   theme: 'ink',

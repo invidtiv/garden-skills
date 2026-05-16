@@ -1,6 +1,6 @@
 /* =========================================================
    Chapter 12 · References / advanced-patterns.md
-   light 主题 · Hero → 7 大模板瀑布 → 灵感来源 → 收尾
+   light theme · Hero → 7 Template Waterfall → Inspiration Source → Close
    ========================================================= */
 
 .rf {
@@ -215,7 +215,7 @@
   font-size: 14px;
 }
 
-/* —— 第 8 格 hint —— */
+/* —— 8th slot hint —— */
 .rf__card--hint {
   background: oklch(0.700 0.170 42 / 0.06);
   border: 1px dashed var(--accent);
@@ -338,7 +338,7 @@
   font-style: italic;
 }
 
-/* —— 中间提炼箭头 —— */
+/* —— Center distillation arrow —— */
 .rf__origin-arrow {
   position: relative;
   display: flex;

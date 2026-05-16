@@ -1,6 +1,6 @@
 /* =========================================================
-   Chapter 09 · 第六部分 · 验证闭环
-   ink 主题 · prompt 原文 → 主 Agent 自循环 → fork → 检查 → 收尾
+   Chapter 09 · Part 6 · Verification Loop
+   ink theme · prompt source → main Agent self-loop → fork → check → close
    ========================================================= */
 
 .vf {
@@ -129,7 +129,7 @@
   padding: 0 60px;
 }
 
-/* —— Agent 节点 —— */
+/* —— Agent Node —— */
 .vf__node {
   position: relative;
   display: flex;
@@ -190,7 +190,7 @@
   letter-spacing: 0.06em;
 }
 
-/* —— 自循环 SVG —— */
+/* —— Self-loop SVG —— */
 .vf__loop {
   position: absolute;
   inset: -60px;
@@ -207,7 +207,7 @@
   to   { transform: rotate(360deg); }
 }
 
-/* —— 自言自语气泡 —— */
+/* —— Self-talk bubble —— */
 .vf__bubble {
   position: absolute;
   top: -68px;
@@ -318,7 +318,7 @@
   to { stroke-dashoffset: 0; }
 }
 
-/* —— 子 Agent 模拟 iframe —— */
+/* —— Sub-Agent simulated iframe —— */
 .vf__node-iframe {
   margin-top: 10px;
   width: 240px;
@@ -553,7 +553,7 @@
   to   { opacity: 1; transform: scale(1); }
 }
 
-/* 错峰：spinner 跑完才显示对勾 */
+/* Staggered: tick appears after spinner finishes */
 .vf__check-row:nth-child(1) .vf__check-mark-spin { animation: vfSpin 700ms linear 1; }
 .vf__check-row:nth-child(2) .vf__check-mark-spin { animation: vfSpin 700ms 220ms linear 1; }
 .vf__check-row:nth-child(3) .vf__check-mark-spin { animation: vfSpin 700ms 440ms linear 1; }
@@ -567,7 +567,7 @@
 .vf__check-row:nth-child(3) .vf__check-mark-tick { animation-delay: 1460ms; }
 .vf__check-row:nth-child(4) .vf__check-mark-tick { animation-delay: 1680ms; }
 
-/* spinner 在对勾出现时淡出 */
+/* spinner fades out when tick appears */
 .vf__check-row:nth-child(1) .vf__check-mark-spin { animation: vfSpin 700ms linear 1, vfSpinOut 240ms 1020ms forwards; }
 .vf__check-row:nth-child(2) .vf__check-mark-spin { animation: vfSpin 700ms 220ms linear 1, vfSpinOut 240ms 1240ms forwards; }
 .vf__check-row:nth-child(3) .vf__check-mark-spin { animation: vfSpin 700ms 440ms linear 1, vfSpinOut 240ms 1460ms forwards; }
