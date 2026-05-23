@@ -224,7 +224,8 @@
           "title": "Open World Fantasy RPG Over-the-Shoulder View of Twilight Snowfield",
           "brief": "The bottom left resource bar, bottom right skill wheel, top left mini-map, and top right task tracker represent the modern 3A open-world default HUD quadrants, with this example enhancing the sense of 'currently playing' through a female ranger seen from behind.",
           "format": "json",
-          "file": "assets-and-props/game-screenshot-mockup/1.json"
+          "file": "assets-and-props/game-screenshot-mockup/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
@@ -622,7 +623,8 @@
           "title": "Starbucks China 'Seasonal Special Drinks' 2×2.",
           "brief": "Four themes: Spring Cherry / Summer Cold Brew / Autumn Maple Latte / Winter Roasted Tea, featuring the same brand color bands and fonts, with each section showcasing a beverage hero + ambient lighting, suitable for social media and mini-programs.",
           "format": "json",
-          "file": "grids-and-collages/banner-grid-2x2/2.json"
+          "file": "grids-and-collages/banner-grid-2x2/2.json",
+          "has_image": true
         }
       ]
     },
@@ -662,7 +664,8 @@
           "title": "Five Portrait Styles of the Same Chinese Woman (Photography / Japanese Manga / Ink / Oil Painting / Cyberpunk)",
           "brief": "28-Year-Old Shoulder-Length Black Hair, Beige Shirt as Cross-Grid Recognition Anchor; Central Square is Soft Light Photography, Corners Feature Japanese Anime, Bold Ink Wash, Rembrandt-Style Classical Oil Painting, Cyber Neon Atmosphere, A Single Image Showcasing a Media Experiment Wall of the Same Face.",
           "format": "json",
-          "file": "grids-and-collages/mixed-style-multi-panel/1.json"
+          "file": "grids-and-collages/mixed-style-multi-panel/1.json",
+          "has_image": true
         },
         {
           "idx": 2,
@@ -834,7 +837,8 @@
           "title": "Shinjuku, Tokyo - Late Night Ramen and Izakaya Alley Map",
           "brief": "High-density nighttime dining district: inspired by Kabukicho and East Exit Ramen Alley, using symbols like 'steam, red lanterns, bowls, ramen, yakitori', paired with Japanese vintage parchment, suitable for Japanese cuisine media and travel guide covers.",
           "format": "json",
-          "file": "maps/food-map/2.json"
+          "file": "maps/food-map/2.json",
+          "has_image": true
         }
       ]
     },
@@ -1798,7 +1802,8 @@
           "title": "DERMA CALM Sensitive Skin Serum — Clinical Feel Landing Page Hero (Targeting Women's Skincare)",
           "brief": "Typical main visual of an e-commerce detail page for a 'Sensitive Skin Skincare Brand,' featuring a three-column structure, clinical color scheme, models, products, and selling point badges, representing the template's most iconic female-centered skincare use case.",
           "format": "json",
-          "file": "ui-mockups/product-card-overlay/1.json"
+          "file": "ui-mockups/product-card-overlay/1.json",
+          "has_image": true
         },
         {
           "idx": 2,

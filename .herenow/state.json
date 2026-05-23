@@ -1,0 +1,10 @@
+{
+  "publishes": {
+    "bold-moment-g3a9": {
+      "siteUrl": "https://bold-moment-g3a9.here.now/",
+      "claimToken": "0e7a4c1cb9c6f781e917fc584d643322a81f92c660cd81ce46e0b3288717f767",
+      "claimUrl": "https://here.now/claim?slug=bold-moment-g3a9&token=0e7a4c1cb9c6f781e917fc584d643322a81f92c660cd81ce46e0b3288717f767",
+      "expiresAt": "2026-05-17T00:34:27.089Z"
+    }
+  }
+}

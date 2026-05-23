@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T00:28:43.013Z",
+  "generated_at": "2026-05-16T00:47:51.416Z",
   "summary": {
     "templates": 79,
     "cases": 162
@@ -34,7 +34,7 @@
         "assets-and-props/retro-skeuomorphic-icons"
       ],
       "total": 4,
-      "ready": 0
+      "ready": 1
     },
     "avatars-and-profile": {
       "key": "avatars-and-profile",
@@ -92,7 +92,7 @@
         "grids-and-collages/mixed-style-multi-panel"
       ],
       "total": 8,
-      "ready": 1
+      "ready": 3
     },
     "infographics": {
       "key": "infographics",
@@ -122,7 +122,7 @@
         "maps/travel-route-map"
       ],
       "total": 8,
-      "ready": 0
+      "ready": 1
     },
     "portraits-and-characters": {
       "key": "portraits-and-characters",
@@ -252,7 +252,7 @@
         "ui-mockups/social-interface-mockup"
       ],
       "total": 13,
-      "ready": 1
+      "ready": 2
     }
   },
   "cases": [
@@ -594,9 +594,9 @@
       "prompt_path": "assets-and-props/game-screenshot-mockup/1.json",
       "prompt_url": "/case/assets-and-props/game-screenshot-mockup/1.json",
       "prompt_content": "{\n  \"type\": \"Open World Game Screenshot\",\n  \"goal\": \"Generate a 16:9 horizontal image, resembling a screenshot of Unreal-level PBR real-time graphics rather than a pre-rendered poster, including fully recognizable Chinese UI.\",\n  \"game_meta\": {\n    \"game_name\": \"Chronicles of Frost and Fire · The Northern Volume\",\n    \"engine_feel\": \"Modern 3A (approaching the Unreal 5 Nanite + Lumen visual experience)\",\n    \"perspective\": \"Third person over shoulder about 2.5m away\"\n  },\n  \"scene\": {\n    \"environment\": \"snow-covered coniferous forest edge, mid-ground glacial river with broken bridge, distant snow-capped mountains and solitary tower\",\n    \"time_of_day\": \"The blue-toned moment will soon end, with the western sky's warmth framed in gold\",\n    \"weather\": \"Little snow and wind swirling snow mist\",\n    \"lighting\": \"Cool cyan main light + warm gold rim light + subsurface scattering on snow\"\n  },\n  \"character\": {\n    \"description\": \"Female ranger protagonist, silver-gray long braid, fur-collared leather armor and quiver, slightly turned left shoulder away from the camera, right hand holding an undrawn bow.\",\n    \"position\": \"Lower third of the screen centered slightly to the left, leaving space on the front right side\"\n  },\n  \"ui_elements\": {\n    \"hud\": {\n      \"enabled\": true,\n      \"items\": [\n        \"Lower left: red bar for health + blue bar for stamina + circular simple outline of avatar\",\n        \"Lower right: four-section fan-shaped skill icons + potion and food shortcut bar\",\n        \"Upper left: circular small map with compass and current coordinates (Chinese area name 'Melting Snow Valley')\",\n        \"Top right: Task tracking box with three lines 'Main line: Find the Spring Dew', '420m to target', 'Press M to open the large map'\"\n      ]\n    },\n    \"subtitle\": {\n      \"enabled\": true,\n      \"speaker\": \"Spirit fox partner\",\n      \"text\": \"The icy suspension bridge in front is missing a section, be careful not to slip down.\"\n    },\n    \"interaction_prompt\": {\n      \"enabled\": true,\n      \"text\": \"Press [E] to secure the rope\"\n    }\n  },\n  \"style\": {\n    \"rendering\": \"PBR + ACES style tonemapping + light film grain\",\n    \"color_palette\": \"Ice blue + moon white + warm gold road signs\"\n  },\n  \"aspect_ratio\": \"16:9\",\n  \"constraints\": {\n    \"must_keep\": [\n      \"HUD consistent with scene perspective, no floating misalignment\",\n      \"Chinese has no garbled text and no English machine translation tone.\"\n    ],\n    \"avoid\": [\n      \"Pure illustration feel with no HUD.\",\n      \"More than 8 main elements of UI components on the same screen\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/assets-and-props/game-screenshot-mockup/1.png",
+      "thumb_url": "/case/assets-and-props/game-screenshot-mockup/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "assets-and-props/game-screenshot-mockup/2",
@@ -1224,9 +1224,9 @@
       "prompt_path": "grids-and-collages/banner-grid-2x2/2.json",
       "prompt_url": "/case/grids-and-collages/banner-grid-2x2/2.json",
       "prompt_content": "{\n  \"type\": \"2x2 Course Banner Set\",\n  \"goal\": \"Generate a 2×2 seasonal beverage banner set, overall 1:1, in a Starbucks-style green palette, with primarily Chinese text.\",\n  \"brand\": {\n    \"name\": \"Starbucks · Seasonal Special Drinks 2026\",\n    \"logo_position\": \"Each grid has a green circular mermaid simplified emblem + logo at the top left\",\n    \"primary_color\": \"#00704A\",\n    \"secondary_color\": \"#27251F\"\n  },\n  \"layout\": {\n    \"format\": \"2x2 grid\",\n    \"panel_count\": 4,\n    \"gap\": \"16px light milk white separation\",\n    \"panel_aspect_ratio\": \"4:5\",\n    \"overall_aspect_ratio\": \"1:1\"\n  },\n  \"panels\": [\n    {\n      \"position\": \"top-left\",\n      \"course\": \"Spring\",\n      \"headline\": \"Cherry blossom white peach latte returns.\",\n      \"visual\": \"Pink-white gradient drink cup, petals and wooden table with shallow depth of field, morning light from the side window\",\n      \"cta\": \"A drink upon arrival\"\n    },\n    {\n      \"position\": \"top-right\",\n      \"course\": \"Summer\",\n      \"headline\": \"Lime cold brew, bubbles awaken the afternoon\",\n      \"visual\": \"Glass goblet, ice cubes and lime slices, close-up of condensation droplets\",\n      \"cta\": \"Order Now\"\n    },\n    {\n      \"position\": \"bottom-left\",\n      \"course\": \"Autumn\",\n      \"headline\": \"Maple Sugar Fluffy Cloud Latte\",\n      \"visual\": \"Amber milk foam surface with maple sugar pattern, warm autumn leaves blurred background, holding the cup\",\n      \"cta\": \"Try seasonal limited\"\n    },\n    {\n      \"position\": \"bottom-right\",\n      \"course\": \"Winter\",\n      \"headline\": \"Roasted tea rice milk, warm and easy on the stomach\",\n      \"visual\": \"Terracotta color paper cup, steam, scarf and initially snowy street view with soft focus\",\n      \"cta\": \"Share with friends\"\n    }\n  ],\n  \"style\": {\n    \"art_style\": \"Warm food photography feel + slight grain + high saturation but not excessive\",\n    \"typography\": \"Chinese rounded title + English small subtitle, with a unified CTA green outlined white core button.\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"Four sections with the same green primary color and dark brown secondary color\",\n      \"Each grid has a clear main beverage, not obscured by text\",\n      \"CTA Copy Within 4 Characters\"\n    ],\n    \"avoid\": [\n      \"The color temperature differences in each box are large enough to resemble four brands\",\n      \"Text should not be stacked irrationally than the main area of the beverage.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/grids-and-collages/banner-grid-2x2/2.png",
+      "thumb_url": "/case/grids-and-collages/banner-grid-2x2/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "grids-and-collages/lookbook-grid/1",
@@ -1278,9 +1278,9 @@
       "prompt_path": "grids-and-collages/mixed-style-multi-panel/1.json",
       "prompt_url": "/case/grids-and-collages/mixed-style-multi-panel/1.json",
       "prompt_content": "{\n  \"type\": \"5-Panel Mixed Style Collage\",\n  \"goal\": \"Generate a multi-style collage featuring the same Chinese woman as the sole subject, with variations in artistic style, the central box being the largest.\",\n  \"subject\": {\n    \"description\": \"The same East Asian woman, about 28 years old, with shoulder-length straight black hair, fine eyebrows, off-white cotton shirt, hands naturally crossed in front of her abdomen, expression calm with a slight smile. Changing hairstyle and shirt color is prohibited for cross-box recognition.\",\n    \"consistency_rule\": \"In the five frames, the facial proportions and clothing styles are consistent, with only the rendering methods differing.\"\n  },\n  \"layout\": {\n    \"format\": \"Central large square + small corner squares, overall set against a light beige-gray paper texture.\",\n    \"panel_count\": 5,\n    \"label_position\": \"Centered at the bottom edge of each grid\",\n    \"label_design\": \"9pt monospaced uppercase English + Chinese subheading, black text on white background with rounded corners\"\n  },\n  \"panels\": [\n    {\n      \"position\": \"center\",\n      \"style\": \"High resolution soft light studio photography, white background, discernible skin texture and fabric folds\",\n      \"label\": \"PHOTO · Portrait\"\n    },\n    {\n      \"position\": \"top-left\",\n      \"style\": \"Modern Japanese anime cel shading, clear line art, flat coloring, blush lines\",\n      \"label\": \"ANIME · Japanese anime\"\n    },\n    {\n      \"position\": \"top-right\",\n      \"style\": \"Freehand light ink wash with reserved white smoke effect, only the face slightly tinted with ochre.\",\n      \"label\": \"INK · Ink wash\"\n    },\n    {\n      \"position\": \"bottom-left\",\n      \"style\": \"Classical oil painting, Rembrandt-style side light, deep brown background, visible thick brush strokes\",\n      \"label\": \"OIL · Oil painting\"\n    },\n    {\n      \"position\": \"bottom-right\",\n      \"style\": \"Cyberpunk, neon magenta and electric cyan rim light, slight glitch textures and fine mesh HUD, only for atmosphere and not blocking the face\",\n      \"label\": \"CYBER · Cyber\"\n    }\n  ],\n  \"global_constraints\": {\n    \"background\": \"The entire background has a uniform #F2EFE8 fine grain paper texture, with 10px light gray seams between small grids.\",\n    \"spacing\": \"White seam anchoring to avoid unrelated background colors for each grid\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"One glance in the five frames is of different styles from the same group rather than five individuals.\",\n      \"Cyborgs do not excessively add masks and prosthetics, keeping the face recognizable\",\n      \"Label does not obscure the center of facial features.\"\n    ],\n    \"avoid\": [\n      \"One section changes to male or children's clothing.\",\n      \"Ink wash style comic symbols appear in dialogue boxes.\",\n      \"The central square is too dark, drowning out the recognition anchor.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/grids-and-collages/mixed-style-multi-panel/1.png",
+      "thumb_url": "/case/grids-and-collages/mixed-style-multi-panel/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "grids-and-collages/mixed-style-multi-panel/2",
@@ -1548,9 +1548,9 @@
       "prompt_path": "maps/food-map/2.json",
       "prompt_url": "/case/maps/food-map/2.json",
       "prompt_content": "{\n  \"type\": \"Hand-Drawn Map Infographic\",\n  \"goal\": \"Generate an illustrated map of nighttime food in Shinjuku, Tokyo, styled like a vintage travel poster.\",\n  \"style\": \"Brown-yellow dyed parchment + watercolor ink lines, with local vermilion and squid ink dotting the night scene\",\n  \"title_section\": {\n    \"city\": \"Tokyo, Japan · From Shinjuku Station East Exit to Kabukicho area\",\n    \"title_text\": \"Shinjuku late-night diner walk illustration.\",\n    \"mascot\": \"A cartoon noodle dumpling picked up with chopsticks, wearing a mini towel headband.\"\n  },\n  \"border\": \"Rope texture paper edge + small lantern string + sake cup silhouette\",\n  \"layout\": {\n    \"background\": \"Deep gray as nighttime road, vermilion dots for izakaya entrance lanterns, gold lines indicating approximate direction of elevated structures and circular platforms, not pursuing geographical precision\",\n    \"sections\": [\n      {\n        \"title\": \"Landmark Building\",\n        \"count\": 6,\n        \"illustrations\": \"Shinjuku East Exit large screen, simplified version of Godzilla head sculpture building, Twin Towers of the Tokyo Metropolitan Government, torii gate of Shinjuku Gyoen, Central Street neon sign, silhouette of Odakyu Department Store.\",\n        \"labels\": \"Shinjuku East Exit, Godzilla Street, Tokyo Metropolitan Government Building Observatory, Shinjuku Gyoen, Kabukicho Ichibangai entrance, Odakyu connecting corridor.\"\n      },\n      {\n        \"title\": \"Gourmet location\",\n        \"count\": 12,\n        \"illustrations\": \"Tonkotsu white broth ramen, oil mixed noodles, dipping noodles, stand-up grilled chicken, oden, beef tongue set meal, Calpis soda, fried dumplings, karaage chicken pieces, mentaiko rice ball, tempura set meal, matcha pudding\",\n        \"labels\": \"1 Kabukicho · Famous Miso Ramen; 2 East Exit · Late Night Dipping Noodles Specialty; 3 Memory Alley · Mini Oden; 4 Yakitori Alley; 5 Beef Tongue Specialty Store; 6 Abura Soba Specialty; 7 Tempura Stand; 8 Fried Chicken Izakaya; 9 Mentaiko Rice Bowl Fast Food Stand; 10 Shinjuku Samachome · Gyoza Izakaya; 11 Late Night Dessert Shop · Matcha; 12 Before Last Train · Rice Bowl Specialty\"\n      },\n      {\n        \"title\": \"Legend\",\n        \"position\": \"Bottom right corner\",\n        \"items\": [\n          \"Red Dot: Dining Recommendations\",\n          \"Golden circle: must-eat specialties.\",\n          \"Deep gray line: main action line\",\n          \"Purple Star: Can Enter Store Before Last Train\"\n        ]\n      }\n    ],\n    \"centerpiece\": \"In the center of the screen is a steaming bowl of ramen, behind it a simplified neon arcade of Kabukicho\",\n    \"extras\": [\n      \"Showa Flavor Compass\",\n      \"Disclaimer: Please adhere to local drinking and late-night neighborhood etiquette, some stores only accept cash.\"\n    ]\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"Night market scene is recognizable, lanterns and road layers are clear\",\n      \"Chinese can be distinguished in mixed Japanese text\",\n      \"No copying real copyrighted signage\"\n    ],\n    \"avoid\": [\n      \"Overly sexualized entertainment-oriented depiction of Kabukicho.\",\n      \"Map Drawn as Navigable Precise Street Blocks\",\n      \"色块过花失去手绘统一感\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/maps/food-map/2.png",
+      "thumb_url": "/case/maps/food-map/2-thumb.webp",
+      "has_image": true
     },
     {
       "id": "maps/illustrated-city-map/1",
@@ -3042,9 +3042,9 @@
       "prompt_path": "ui-mockups/product-card-overlay/1.json",
       "prompt_url": "/case/ui-mockups/product-card-overlay/1.json",
       "prompt_content": "{\n  \"type\": \"E-commerce landing page hero product card overlay prototype.\",\n  \"goal\": \"Generate an image that can serve as the main visual for a sensitive skin serum detail page or marketing landing page hero section, including four elements: character, product, selling points, and price information.\",\n  \"brand\": {\n    \"name\": \"DERMA CALM\",\n    \"subtext\": \"Sensitive skin research | Co-developed by dermatologists.\"\n  },\n  \"color_palette\": {\n    \"base\": \"Pure White\",\n    \"primary\": \"Deep navy blue #1B3A6B\",\n    \"accent\": \"Mint light blue #C5E2EB\"\n  },\n  \"layout\": {\n    \"header\": {\n      \"logo\": \"Upper left corner 'DERMA CALM' serif logo + one line of small text below 'Sensitive Skin Research'\",\n      \"navigation_links\": \"ABOUT · PRODUCT · INGREDIENT · SCIENCE · VOICE · Q&A\",\n      \"cta_buttons\": \"My page · Buy now (dark blue filled button)\"\n    },\n    \"hero\": {\n      \"left_column\": {\n        \"headline\": \"Gentle barrier care safe for sensitive skin to use daily.\",\n        \"subtext\": \"低刺激 · 持久保湿 · 无香料 · 无酒精\\n临床实验表明，连续使用 28 天泛红改善率 87.3%\",\n        \"buttons\": [\n          \"Buy Now ¥ 358\",\n          \"Understand the formula.\"\n        ]\n      },\n      \"center_column\": {\n        \"product\": \"White frosted glass pump bottle 30ml, with 'Moisture Barrier Serum' inscribed in serif font + light blue color block\",\n        \"props\": [\n          \"Close-up of a droplet of transparent lotion texture on the lower right of the bottle body\",\n          \"Circular Dark Blue Badge 'Supervised by Dermatologist'\"\n        ]\n      },\n      \"right_column\": {\n        \"subject\": \"Young East Asian woman in her early 30s, natural complexion, skin glowing naturally, left hand gently touching cheek, looking softly left (towards product direction)\",\n        \"background\": \"Blurred laboratory glassware and light blue spots, bright and clean\"\n      }\n    },\n    \"bottom_features_panel\": {\n      \"left_cards\": {\n        \"count\": 3,\n        \"items\": [\n          \"★★★★★ 95% of users gave 5-star reviews (based on 12,438 real reviews)\",\n          \"Shield icon + 'Low-irritation formula passed 12 allergen tests'\",\n          \"Water droplet icon + '24h Barrier Repair | Continuous Hydration'.\"\n        ]\n      },\n      \"right_badges\": {\n        \"count\": 3,\n        \"items\": [\n          \"No fragrance\",\n          \"No alcohol\",\n          \"Sensitive skin test passed\"\n        ]\n      },\n      \"footer\": \"Bottom small text: * Clinical data from a third-party dermatology institution 28-day test in 2025, individual differences may exist\"\n    }\n  },\n  \"style\": {\n    \"rendering\": \"Clean, clinical feel, commercial-grade rendering, like a real high-end skincare brand website screenshot\",\n    \"consistency\": \"The color palette strictly follows: pure white + deep navy blue + mint light blue, with no additional bright colors\"\n  },\n  \"constraints\": {\n    \"must_keep\": [\n      \"Three-column structure is clear, with text / product / model each occupying visual focus\",\n      \"Product is centered in the frame as a visual anchor point.\",\n      \"Model's pose appears natural with no forced smile.\",\n      \"Chinese text is clear and readable.\"\n    ],\n    \"avoid\": [\n      \"Extremely crowded layout\",\n      \"Colors appear warm or fluorescent\",\n      \"The badge is larger than the logo\",\n      \"Model's gaze is misaligned.\"\n    ]\n  }\n}",
-      "image_url": null,
-      "thumb_url": null,
-      "has_image": false
+      "image_url": "/case/ui-mockups/product-card-overlay/1.png",
+      "thumb_url": "/case/ui-mockups/product-card-overlay/1-thumb.webp",
+      "has_image": true
     },
     {
       "id": "ui-mockups/product-card-overlay/2",
